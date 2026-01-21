@@ -29,17 +29,19 @@ def get_base64_image(image_path):
 
 # Carregar imagem de fundo
 bg_image = get_base64_image("AJ.jpg")
-bg_style = ""
+
+# Construir CSS do background separadamente (evita problemas com f-string)
+bg_css = ""
 if bg_image:
-    bg_style = f"""
-    [data-testid="stAppViewContainer"] {{
-        background-image: url("data:image/jpeg;base64,{bg_image}");
+    bg_css = '''
+    [data-testid="stAppViewContainer"] {
+        background-image: url("data:image/jpeg;base64,''' + bg_image + '''");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-    }}
+    }
 
-    [data-testid="stAppViewContainer"]::before {{
+    [data-testid="stAppViewContainer"]::before {
         content: "";
         position: fixed;
         top: 0;
@@ -48,13 +50,13 @@ if bg_image:
         height: 100%;
         background-color: rgba(255, 255, 255, 0.85);
         z-index: -1;
-    }}
-    """
+    }
+    '''
 
 # CSS customizado - Compatível com Streamlit Cloud
-st.markdown(f"""
+st.markdown("""
 <style>
-    {bg_style}
+    """ + bg_css + """
     /* Header principal */
     .main-header {
         font-size: 2.2rem;
@@ -243,14 +245,20 @@ except Exception as e:
     st.stop()
 
 # Sidebar
-# Logo - carrega se existir arquivo PNG ou SVG
+# Logo - carrega GIF ou outros formatos
 logo_path = None
-for ext in ['png', 'svg', 'jpg']:
-    if os.path.exists(f"AJFans-logo.{ext}"):
-        logo_path = f"AJFans-logo.{ext}"
-        break
-    if os.path.exists(f"logo.{ext}"):
-        logo_path = f"logo.{ext}"
+logo_files = [
+    "AJ-AJFANS V2 - GIF.gif",
+    "AJFans-logo.gif",
+    "AJFans-logo.png",
+    "AJFans-logo.svg",
+    "logo.gif",
+    "logo.png",
+    "logo.svg"
+]
+for logo_file in logo_files:
+    if os.path.exists(logo_file):
+        logo_path = logo_file
         break
 
 if logo_path:
