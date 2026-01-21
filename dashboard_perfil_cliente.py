@@ -18,120 +18,116 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# CSS customizado
+# CSS customizado - Compatível com Streamlit Cloud
 st.markdown("""
 <style>
+    /* Header principal */
     .main-header {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         font-weight: bold;
-        color: #1E3A5F;
+        color: #1E3A5F !important;
         text-align: center;
         margin-bottom: 1rem;
-    }
-    .shopping-header {
-        font-size: 1.8rem;
-        color: #2C3E50;
-        border-bottom: 3px solid #3498DB;
-        padding-bottom: 0.5rem;
-    }
-
-    /* Estilo para os cards de métricas */
-    [data-testid="stMetric"] {
-        background-color: #1E3A5F;
-        padding: 1rem 1.5rem;
+        padding: 0.5rem;
+        background-color: #f0f2f6;
         border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    [data-testid="stMetric"] label {
-        color: #B0C4DE !important;
-        font-size: 0.9rem !important;
-    }
-
-    [data-testid="stMetric"] [data-testid="stMetricValue"] {
-        color: #FFFFFF !important;
+    /* Cards de métricas */
+    [data-testid="stMetricValue"] {
         font-size: 1.8rem !important;
         font-weight: bold !important;
+        color: #1E3A5F !important;
     }
 
-    [data-testid="stMetric"] [data-testid="stMetricDelta"] {
-        color: #90EE90 !important;
+    [data-testid="stMetricLabel"] {
+        font-size: 1rem !important;
+        color: #333333 !important;
+        font-weight: 600 !important;
     }
 
-    /* Cards alternativos com cores diferentes */
-    div[data-testid="column"]:nth-child(1) [data-testid="stMetric"] {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    [data-testid="stMetricDelta"] {
+        font-size: 0.85rem !important;
+        color: #28a745 !important;
     }
 
-    div[data-testid="column"]:nth-child(2) [data-testid="stMetric"] {
-        background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
-    }
-
-    div[data-testid="column"]:nth-child(3) [data-testid="stMetric"] {
-        background: linear-gradient(135deg, #ee0979 0%, #ff6a00 100%);
-    }
-
-    div[data-testid="column"]:nth-child(4) [data-testid="stMetric"] {
-        background: linear-gradient(135deg, #4568dc 0%, #b06ab3 100%);
+    /* Container das métricas */
+    [data-testid="metric-container"] {
+        background-color: #f8f9fa !important;
+        border: 2px solid #e0e0e0 !important;
+        border-radius: 10px !important;
+        padding: 1rem !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
     }
 
     /* Sidebar */
-    [data-testid="stSidebar"] {
-        background-color: #1E3A5F;
+    section[data-testid="stSidebar"] {
+        background-color: #1E3A5F !important;
     }
 
-    [data-testid="stSidebar"] .stMarkdown {
-        color: #FFFFFF;
+    section[data-testid="stSidebar"] * {
+        color: #FFFFFF !important;
     }
 
-    [data-testid="stSidebar"] [data-testid="stMetric"] {
-        background-color: rgba(255,255,255,0.1);
+    section[data-testid="stSidebar"] [data-testid="stMetricValue"] {
+        color: #FFFFFF !important;
+    }
+
+    section[data-testid="stSidebar"] [data-testid="stMetricLabel"] {
+        color: #B0C4DE !important;
     }
 
     /* Títulos */
-    h1, h2, h3 {
-        color: #1E3A5F;
+    .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
+        color: #1E3A5F !important;
     }
 
     /* Tabs */
-    .stTabs [data-baseweb="tab-list"] {
-        gap: 8px;
-        background-color: transparent;
-    }
-
-    .stTabs [data-baseweb="tab"] {
+    button[data-baseweb="tab"] {
         background-color: #2C3E50 !important;
-        border-radius: 8px !important;
-        padding: 12px 24px !important;
         color: #FFFFFF !important;
+        border-radius: 8px !important;
+        margin-right: 5px !important;
+        padding: 10px 20px !important;
         font-weight: 500 !important;
+        border: none !important;
     }
 
-    .stTabs [data-baseweb="tab"]:hover {
+    button[data-baseweb="tab"]:hover {
         background-color: #34495E !important;
     }
 
-    .stTabs [aria-selected="true"] {
+    button[data-baseweb="tab"][aria-selected="true"] {
         background-color: #3498DB !important;
         color: #FFFFFF !important;
     }
 
-    .stTabs [data-baseweb="tab-panel"] {
-        padding-top: 1rem;
+    /* Texto das tabs */
+    button[data-baseweb="tab"] div {
+        color: #FFFFFF !important;
     }
 
-    /* Selectbox */
-    .stSelectbox > div > div {
-        background-color: #f8f9fa;
-        border: 2px solid #1E3A5F;
+    /* Selectbox e Multiselect */
+    .stSelectbox label, .stMultiSelect label {
+        color: #1E3A5F !important;
+        font-weight: 600 !important;
+    }
+
+    /* Radio buttons no sidebar */
+    section[data-testid="stSidebar"] .stRadio label {
+        color: #FFFFFF !important;
+    }
+
+    /* Dataframe */
+    .stDataFrame {
+        border: 1px solid #e0e0e0;
         border-radius: 8px;
     }
 
-    /* Multiselect */
-    .stMultiSelect > div > div {
-        background-color: #f8f9fa;
-        border: 2px solid #1E3A5F;
-        border-radius: 8px;
+    /* Subheader */
+    .stMarkdown h2, .stMarkdown h3 {
+        border-bottom: 2px solid #3498DB;
+        padding-bottom: 0.5rem;
     }
 </style>
 """, unsafe_allow_html=True)
