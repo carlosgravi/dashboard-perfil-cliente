@@ -1,0 +1,2503 @@
+﻿cliente_id,valor_total,qtd_compras,genero,faixa_etaria,segmento_preferido,loja_preferida,ranking
+130539,76279.6,145,Masculino,40-54 (Gen X),Moda,Colcci,1
+105206,73257.5,117,Masculino,40-54 (Gen X),Moda,Colcci,2
+128639,69713.68000000001,122,Feminino,40-54 (Gen X),Moda,Luz da Lua,3
+126892,64968.66,52,Feminino,40-54 (Gen X),Moda,Colcci,4
+119412,51184.29,98,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,5
+412799,50759.65,250,Masculino,Nao Informado,Gastronomia,Las Leñas Parrilla Uruguaya,6
+415460,48865.04,101,Masculino,55-69 (Boomers),Gastronomia,Las Leñas Parrilla Uruguaya,7
+96103,44421.99,119,Feminino,40-54 (Gen X),Casa e Decoração,Camicado,8
+117093,44200.56,236,Feminino,55-69 (Boomers),Gastronomia,Mini Kalzone,9
+142314,43365.24,206,Feminino,40-54 (Gen X),Moda,Café Cultura,10
+413062,43050.35,38,Feminino,40-54 (Gen X),Beleza e Bem-estar,Essence Parfums,11
+119289,39298.85,241,Feminino,25-39 (Millennials),Gastronomia,McDonald's,12
+113540,38763.42,167,Feminino,40-54 (Gen X),Livrarias,Livraria Catarinense ,13
+226943,38380.67,23,Feminino,40-54 (Gen X),Gastronomia,Vivara,14
+449359,36900.0,1,Feminino,55-69 (Boomers),Joalheria,Vivara,15
+119473,35075.19,51,Feminino,25-39 (Millennials),Moda,Centauro,16
+272691,34079.35,42,Feminino,16-24 (Gen Z),Gastronomia,Griletto,17
+92294,33530.23,65,Feminino,25-39 (Millennials),Moda,Fátima Bebê,18
+64426,33454.34,232,Feminino,25-39 (Millennials),Gastronomia,Cantinho Grill,19
+238834,33133.1,142,Masculino,40-54 (Gen X),Eletrodomésticos,Americanas,20
+370950,32940.270000000004,9,Feminino,25-39 (Millennials),Esportes,Centauro,21
+112675,30893.04,36,Masculino,40-54 (Gen X),Gastronomia,Café Cultura,22
+142325,29205.06,108,Masculino,40-54 (Gen X),Gastronomia,Las Leñas Parrilla Uruguaya,23
+103190,28938.7,5,Feminino,25-39 (Millennials),Joalheria,Vivara,24
+122021,28689.1,41,Feminino,40-54 (Gen X),Moda,Plié,25
+173665,28681.19,76,Feminino,16-24 (Gen Z),Beleza e Bem-estar,Essence Parfums,26
+148317,28179.3,38,Feminino,40-54 (Gen X),Moda,Empório Du Homem,27
+214172,27390.82,35,Feminino,40-54 (Gen X),Moda,Farm,28
+129899,26789.9,67,Feminino,40-54 (Gen X),Gastronomia,Farm,29
+73460,25358.05,19,Feminino,40-54 (Gen X),Calçados Femininos,Luz da Lua,30
+368551,25195.16,13,Masculino,25-39 (Millennials),Beleza e Bem-estar,Cobasi,31
+232555,24985.88,58,Feminino,40-54 (Gen X),Gastronomia,Las Leñas Parrilla Uruguaya,32
+14376,24497.62,204,Masculino,25-39 (Millennials),Gastronomia,Mini Kalzone,33
+152977,24395.79,80,Masculino,25-39 (Millennials),Gastronomia,Livraria Catarinense ,34
+120429,24133.59,96,Feminino,40-54 (Gen X),Moda,Cobasi,35
+284476,24000.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,36
+273118,23696.58,311,Feminino,25-39 (Millennials),Gastronomia,Lug's,37
+90885,23453.17,64,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,38
+121003,23215.55,92,Feminino,25-39 (Millennials),Pets,Cobasi,39
+196327,22979.65,97,Feminino,40-54 (Gen X),Moda,Renner,40
+249598,22778.05,32,Feminino,25-39 (Millennials),Gastronomia,JAH Açaí,41
+366184,22297.32,4,Feminino,40-54 (Gen X),Joalheria,Vivara,42
+202984,22055.24,56,Masculino,25-39 (Millennials),Moda,Békko,43
+229343,21766.96,13,Feminino,25-39 (Millennials),Gastronomia,Vivara,44
+219802,21623.9,88,Masculino,25-39 (Millennials),Moda,Fátima Papelaria,45
+140588,21597.1,110,Feminino,40-54 (Gen X),Moda,Panda Sushi,46
+184642,21526.25,226,Masculino,25-39 (Millennials),Gastronomia,Café Cultura,47
+224384,21207.65,13,Feminino,40-54 (Gen X),Moda,Luz da Lua,48
+129224,20983.86,123,Feminino,25-39 (Millennials),Gastronomia,Camarão Express,49
+62532,20891.72,53,Masculino,25-39 (Millennials),Gastronomia,Calvin Klein e Tommy Hilfiger,50
+260832,20856.56,9,Masculino,25-39 (Millennials),Beleza e Bem-estar,Avatim,51
+157089,20574.49,7,Masculino,40-54 (Gen X),Presentes e Acessórios,Cases e Capas,52
+9686,20437.6,16,Masculino,25-39 (Millennials),Moda,Empório Du Homem,53
+83284,20373.24,66,Feminino,40-54 (Gen X),Moda,Cobasi,54
+271689,20345.42,1,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,55
+225572,20187.9,13,Feminino,25-39 (Millennials),Eletrônicos,Samsung,56
+231783,20111.23,123,Feminino,25-39 (Millennials),Gastronomia,Mini Kalzone,57
+196148,19937.07,13,Masculino,25-39 (Millennials),Gastronomia,JAH Açaí,58
+311858,19867.91,4,Masculino,40-54 (Gen X),Joalheria,Vivara,59
+144336,19340.06,23,Feminino,40-54 (Gen X),Moda,Cobasi,60
+140433,18946.72,62,Feminino,40-54 (Gen X),Moda,JAH Açaí,61
+100928,18851.16,20,Masculino,25-39 (Millennials),Infantil,Fátima Bebê,62
+8920,18845.85,152,Feminino,25-39 (Millennials),Gastronomia,BelShop,63
+257869,18644.15,20,Masculino,25-39 (Millennials),Moda,Empório Du Homem,64
+59741,18573.350000000002,107,Masculino,25-39 (Millennials),Gastronomia,Livraria Catarinense ,65
+130159,18504.03,41,Feminino,40-54 (Gen X),Moda,C&A,66
+168127,18497.74,110,Feminino,25-39 (Millennials),Gastronomia,Cobasi,67
+276125,18424.28,13,Masculino,25-39 (Millennials),Gastronomia,Burger King,68
+233598,18411.21,24,Feminino,40-54 (Gen X),Moda,Békko,69
+186420,18383.69,40,Feminino,55-69 (Boomers),Gastronomia,JAH Açaí,70
+221263,18271.44,32,Feminino,40-54 (Gen X),Moda,GrandVision by Fototica,71
+4094,18263.24,56,Feminino,40-54 (Gen X),Gastronomia,Arezzo,72
+7640,18256.44,119,Feminino,40-54 (Gen X),Gastronomia,Renner,73
+254813,18177.739999999998,15,Masculino,55-69 (Boomers),Moda,Luz da Lua,74
+219251,18167.65,45,Feminino,40-54 (Gen X),Moda,Arezzo,75
+130618,18116.6,73,Masculino,25-39 (Millennials),Gastronomia,Mini Kalzone,76
+89789,18114.23,125,Feminino,40-54 (Gen X),Gastronomia,Cobasi,77
+36483,18061.31,22,Feminino,25-39 (Millennials),Moda,Renner,78
+119743,18034.3,57,Feminino,40-54 (Gen X),Moda,Renner,79
+130196,17933.83,87,Masculino,25-39 (Millennials),Gastronomia,Renner,80
+156164,17850.18,56,Masculino,40-54 (Gen X),Gastronomia,Café Cultura,81
+201361,17627.86,92,Feminino,40-54 (Gen X),Moda,Renner,82
+221341,17574.86,191,Masculino,25-39 (Millennials),Gastronomia,Café Cultura,83
+232344,17557.1,185,Masculino,16-24 (Gen Z),Gastronomia,Americanas,84
+170852,17325.32,27,Feminino,25-39 (Millennials),Gastronomia,Cobasi,85
+228095,17257.38,40,Feminino,25-39 (Millennials),Moda,Me Linda,86
+115325,17228.55,15,Masculino,40-54 (Gen X),Moda,Fátima Bebê,87
+441842,17203.29,8,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,88
+396581,17197.0,3,Masculino,40-54 (Gen X),Eletrônicos,Samsung,89
+138582,17094.35,56,Feminino,25-39 (Millennials),Moda,Renner,90
+120147,17074.73,61,Feminino,25-39 (Millennials),Moda,Renner,91
+30720,16986.97,46,Masculino,25-39 (Millennials),Moda,Estacionamento - Nações Shopping,92
+233953,16855.46,43,Feminino,25-39 (Millennials),Moda,Centauro,93
+105416,16850.59,74,Feminino,25-39 (Millennials),Infantil,Ri Happy,94
+160565,16798.55,29,Feminino,55-69 (Boomers),Moda,Renner,95
+245195,16797.96,34,Feminino,16-24 (Gen Z),Moda,Dudalina,96
+180647,16725.93,184,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,97
+221717,16707.75,12,Feminino,40-54 (Gen X),Moda,Colcci,98
+91728,16583.01,137,Feminino,40-54 (Gen X),Moda,Renner,99
+353696,16538.24,15,Feminino,25-39 (Millennials),Moda,Tokaia,100
+425726,16500.0,1,Feminino,25-39 (Millennials),Joalheria,Vivara,101
+367066,16440.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,102
+153948,16373.11,27,Feminino,40-54 (Gen X),Moda,Colcci,103
+274966,16298.470000000001,4,Masculino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,104
+122411,16255.89,90,Feminino,40-54 (Gen X),Gastronomia,Cobasi,105
+134639,16255.34,246,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,106
+121060,16242.72,49,Feminino,16-24 (Gen Z),Moda,Renner,107
+20324,16211.03,118,Feminino,25-39 (Millennials),Moda,Renner,108
+4624,16208.03,90,Feminino,40-54 (Gen X),Gastronomia,Lug's,109
+117524,16190.56,337,Masculino,25-39 (Millennials),Gastronomia,Café Cultura,110
+213448,16152.43,13,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,111
+203450,16144.19,131,Feminino,40-54 (Gen X),Moda,Renner,112
+186301,16121.06,69,Masculino,25-39 (Millennials),Gastronomia,Santo Boteco,113
+146788,16045.37,93,Feminino,40-54 (Gen X),Moda,Renner,114
+366069,16020.43,14,Masculino,40-54 (Gen X),Gastronomia,JAH Açaí,115
+8849,16005.81,67,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,116
+45794,15960.17,14,Feminino,25-39 (Millennials),Joalheria,Pandora,117
+229594,15910.42,40,Feminino,25-39 (Millennials),Moda,Colcci,118
+242796,15907.789999999999,74,Feminino,40-54 (Gen X),Gastronomia,Pandora,119
+267464,15900.84,16,Feminino,25-39 (Millennials),Moda,Hope Nacoes Shopping,120
+31476,15858.87,113,Feminino,25-39 (Millennials),Gastronomia,Camarão Express,121
+4682,15844.64,222,Feminino,25-39 (Millennials),Gastronomia,McDonald's,122
+164,15804.89,103,Feminino,55-69 (Boomers),Gastronomia,Mini Kalzone,123
+3019,15793.56,110,Masculino,25-39 (Millennials),Gastronomia,Renner,124
+187174,15761.87,19,Feminino,40-54 (Gen X),Gastronomia,JAH Açaí,125
+85011,15759.550000000001,15,Masculino,25-39 (Millennials),Moda,Camicado,126
+9512,15729.49,26,Feminino,40-54 (Gen X),Moda,Empório Du Homem,127
+18647,15660.99,4,Masculino,40-54 (Gen X),Eletrônicos,Cacau Show,128
+157326,15609.81,17,Feminino,40-54 (Gen X),Moda,Camicado,129
+84626,15539.71,53,Feminino,55-69 (Boomers),Moda,McDonald's,130
+75943,15443.87,93,Feminino,40-54 (Gen X),Moda,Renner,131
+121165,15397.199999999999,38,Masculino,40-54 (Gen X),Moda,Renner,132
+155649,15371.32,22,Feminino,40-54 (Gen X),Moda,Colcci,133
+131151,15317.880000000001,18,Feminino,40-54 (Gen X),Moda,Colcci,134
+195230,15302.51,103,Masculino,25-39 (Millennials),Gastronomia,Café Cultura,135
+229493,15282.52,239,Feminino,25-39 (Millennials),Gastronomia,Mini Kalzone,136
+379360,15279.8,2,Masculino,55-69 (Boomers),Joalheria,Renner,137
+232775,15236.01,15,Feminino,25-39 (Millennials),Joalheria,Pandora,138
+15600,15090.04,96,Feminino,40-54 (Gen X),Gastronomia,Renner,139
+2643,15011.87,97,Feminino,40-54 (Gen X),Gastronomia,McDonald's,140
+116084,15001.52,41,Feminino,40-54 (Gen X),Esportes,Centauro,141
+160099,14966.18,20,Feminino,40-54 (Gen X),Calçados Femininos,Luz da Lua,142
+159507,14966.14,92,Feminino,40-54 (Gen X),Moda,Renner,143
+343126,14919.019999999999,32,Feminino,40-54 (Gen X),Moda,Riachuelo,144
+370514,14883.82,11,Feminino,40-54 (Gen X),Gastronomia,Café Cultura,145
+121643,14813.07,24,Feminino,40-54 (Gen X),Moda,z Naçoes Shopping Participações - Estacionamento,146
+194596,14812.6,2,Feminino,40-54 (Gen X),Joalheria,Vivara,147
+77789,14811.32,48,Masculino,40-54 (Gen X),Gastronomia,Békko,148
+184596,14787.07,15,Feminino,40-54 (Gen X),Moda,Arezzo,149
+227919,14718.26,64,Feminino,40-54 (Gen X),Moda,Farm,150
+78058,14711.68,27,Masculino,40-54 (Gen X),Gastronomia,Mini Kalzone,151
+167691,14641.880000000001,18,Feminino,40-54 (Gen X),Moda,Ri Happy,152
+232439,14596.2,99,Feminino,25-39 (Millennials),Gastronomia,Mini Kalzone,153
+274816,14536.08,15,Masculino,25-39 (Millennials),Moda,z Naçoes Shopping Participações - Estacionamento,154
+224615,14409.15,12,Masculino,25-39 (Millennials),Moda,Békko,155
+184417,14365.32,44,Feminino,40-54 (Gen X),Moda,C&A,156
+132372,14323.44,28,Feminino,40-54 (Gen X),Moda,Fátima Criança,157
+93477,14295.98,57,Feminino,40-54 (Gen X),Moda,Cobasi,158
+136440,14286.2,115,Masculino,55-69 (Boomers),Gastronomia,Adcos,159
+86653,14264.87,72,Masculino,55-69 (Boomers),Moda,Renner,160
+387275,14227.58,5,Feminino,40-54 (Gen X),Calçados,Arezzo,161
+12714,14137.41,121,Masculino,25-39 (Millennials),Gastronomia,Café Cultura,162
+69465,14046.8,104,Feminino,40-54 (Gen X),Gastronomia,Café Cultura,163
+147709,14017.6,61,Feminino,40-54 (Gen X),Moda,Café Cultura,164
+302032,14000.0,2,Feminino,55-69 (Boomers),Moda,Empório Du Homem,165
+258120,13987.11,3,Feminino,40-54 (Gen X),Beleza e Bem-estar,Cassol Centerlar,166
+240455,13985.33,1,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,167
+125865,13951.06,35,Feminino,40-54 (Gen X),Pets,Cobasi,168
+134803,13925.27,90,Feminino,25-39 (Millennials),Gastronomia,Mini Kalzone,169
+15653,13899.88,101,Feminino,25-39 (Millennials),Gastronomia,Mini Kalzone,170
+225630,13870.960000000001,22,Feminino,25-39 (Millennials),Moda,Luz da Lua,171
+124897,13852.82,62,Masculino,25-39 (Millennials),Gastronomia,McDonald's,172
+224207,13810.7,6,Feminino,40-54 (Gen X),Eletrônicos,Samsung,173
+232200,13792.74,29,Feminino,40-54 (Gen X),Moda,Renner,174
+138197,13790.62,37,Feminino,40-54 (Gen X),Moda,Cobasi,175
+230319,13750.23,64,Masculino,16-24 (Gen Z),Moda,Lupo,176
+142078,13664.49,66,Feminino,25-39 (Millennials),Beleza e Bem-estar,Estacionamento - Nações Shopping,177
+303842,13658.06,25,Masculino,55-69 (Boomers),Moda,Las Leñas Parrilla Uruguaya,178
+366237,13645.0,3,Masculino,40-54 (Gen X),Eletrônicos,Samsung,179
+122348,13605.16,36,Feminino,40-54 (Gen X),Gastronomia,McDonald's,180
+224470,13581.97,4,Masculino,25-39 (Millennials),Joalheria,Vivara,181
+130313,13574.65,25,Feminino,40-54 (Gen X),Moda,Café Cultura,182
+103644,13532.39,216,Masculino,25-39 (Millennials),Gastronomia,Mini Kalzone,183
+427434,13495.3,4,Feminino,25-39 (Millennials),Hub da Saúde,Ortobom ,184
+160911,13465.91,58,Feminino,40-54 (Gen X),Moda,Renner,185
+169787,13454.17,2,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,186
+154526,13399.09,46,Masculino,40-54 (Gen X),Gastronomia,Livraria Catarinense ,187
+262662,13378.63,6,Feminino,16-24 (Gen Z),Joalheria,Acuo,188
+157989,13284.23,104,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,189
+188140,13282.28,104,Masculino,40-54 (Gen X),Gastronomia,Mini Kalzone,190
+141275,13251.29,16,Masculino,25-39 (Millennials),Moda,Békko,191
+249460,13217.06,8,Masculino,25-39 (Millennials),Moda,Avatim,192
+266927,13200.0,2,Masculino,25-39 (Millennials),Joalheria,Vivara,193
+242883,13197.75,9,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,194
+241367,13121.85,36,Feminino,40-54 (Gen X),Moda,Camarão Express,195
+129278,13084.810000000001,43,Feminino,40-54 (Gen X),Moda,Beagle,196
+229450,13082.0,1,Masculino,40-54 (Gen X),Eletrônicos,Samsung,197
+159365,13078.75,24,Masculino,40-54 (Gen X),Gastronomia,Las Leñas Parrilla Uruguaya,198
+299362,13077.9,33,Feminino,25-39 (Millennials),Moda,FATIMA ESPORTES,199
+127050,13014.04,19,Feminino,40-54 (Gen X),Moda,Camicado,200
+224983,13000.0,3,Masculino,25-39 (Millennials),Moda,Empório Du Homem,201
+403772,12989.81,13,Masculino,40-54 (Gen X),Beleza e Bem-estar,Essence Parfums,202
+201991,12979.13,12,Feminino,40-54 (Gen X),Beleza e Bem-estar,Luz da Lua,203
+33930,12949.05,4,Masculino,25-39 (Millennials),Moda,Calvin Klein e Tommy Hilfiger,204
+204508,12891.19,12,Feminino,25-39 (Millennials),Moda,Empório Du Homem,205
+6417,12847.67,7,Masculino,55-69 (Boomers),Moda,Empório Du Homem,206
+250897,12818.79,105,Feminino,40-54 (Gen X),Gastronomia,Santo Boteco,207
+230891,12752.16,42,Masculino,25-39 (Millennials),Moda,Renner,208
+145187,12717.9,53,Feminino,40-54 (Gen X),Gastronomia,Cassol Centerlar,209
+186071,12665.03,44,Masculino,40-54 (Gen X),Gastronomia,Santo Boteco,210
+204468,12640.46,56,Feminino,40-54 (Gen X),Moda,Ri Happy,211
+231458,12626.57,9,Masculino,40-54 (Gen X),Infantil,FATIMA ESPORTES,212
+77556,12624.15,39,Feminino,25-39 (Millennials),Moda,Renner,213
+10910,12623.55,43,Feminino,40-54 (Gen X),Gastronomia,Renner,214
+51063,12610.380000000001,40,Feminino,25-39 (Millennials),Moda,Renner,215
+189059,12608.99,13,Masculino,55-69 (Boomers),Beleza e Bem-estar,O Boticário,216
+234258,12573.19,68,Feminino,40-54 (Gen X),Gastronomia,Mini Kalzone,217
+103316,12526.1,17,Masculino,40-54 (Gen X),Gastronomia,Camarão Express,218
+90784,12506.28,18,Feminino,40-54 (Gen X),Calçados,Arezzo,219
+112544,12495.69,24,Feminino,25-39 (Millennials),Joalheria,Pandora,220
+93795,12468.16,27,Feminino,40-54 (Gen X),Calçados,Arezzo,221
+110136,12440.0,3,Feminino,40-54 (Gen X),Moda,Empório Du Homem,222
+149725,12419.63,29,Feminino,40-54 (Gen X),Moda,Centauro,223
+224826,12388.95,1,Masculino,40-54 (Gen X),Eletrônicos,Samsung,224
+221490,12331.39,19,Feminino,25-39 (Millennials),Moda,Cobasi,225
+266947,12324.0,1,Masculino,25-39 (Millennials),Eletrônicos,Samsung,226
+126517,12291.54,28,Feminino,40-54 (Gen X),Moda,Plié,227
+375823,12265.26,2,Feminino,40-54 (Gen X),Joalheria,Vivara,228
+205369,12260.8,5,Masculino,40-54 (Gen X),Eletrônicos,Samsung,229
+166473,12241.95,7,Feminino,25-39 (Millennials),Calçados,Americanas,230
+126961,12200.98,66,Feminino,40-54 (Gen X),Moda,Renner,231
+254552,12151.94,7,Feminino,16-24 (Gen Z),Eletrônicos,Samsung,232
+2714,12135.6,57,Feminino,25-39 (Millennials),Gastronomia,Renner,233
+201087,12085.09,11,Feminino,55-69 (Boomers),Moda,Live!,234
+208901,12040.09,93,Feminino,40-54 (Gen X),Gastronomia,Mini Kalzone,235
+255570,11981.28,39,Feminino,40-54 (Gen X),Gastronomia,Santo Boteco,236
+125364,11975.6,12,Feminino,40-54 (Gen X),Moda,Damyller,237
+120242,11963.86,45,Feminino,16-24 (Gen Z),Moda,Renner,238
+19788,11949.07,19,Feminino,25-39 (Millennials),Moda,z Naçoes Shopping Participações - Estacionamento,239
+187582,11918.94,41,Feminino,25-39 (Millennials),Moda,Renner,240
+55008,11915.76,23,Feminino,25-39 (Millennials),Gastronomia,Békko,241
+4322,11915.46,70,Masculino,40-54 (Gen X),Gastronomia,Mini Kalzone,242
+174497,11914.92,3,Masculino,25-39 (Millennials),Eletrônicos,Centauro,243
+4315,11889.41,20,Feminino,25-39 (Millennials),Moda,C&A,244
+307154,11885.0,6,Feminino,25-39 (Millennials),Moda,Calvin Klein e Tommy Hilfiger,245
+369935,11849.289999999999,13,Masculino,25-39 (Millennials),Calçados,Centauro,246
+227193,11843.75,84,Feminino,25-39 (Millennials),Gastronomia,McDonald's,247
+230065,11837.699999999999,71,Feminino,25-39 (Millennials),Gastronomia,Griletto,248
+118063,11818.27,16,Feminino,40-54 (Gen X),Moda,Farm,249
+207876,11777.49,19,Feminino,40-54 (Gen X),Beleza e Bem-estar,Avatim,250
+161704,11756.61,84,Feminino,25-39 (Millennials),Gastronomia,Santo Boteco,251
+30246,11751.69,98,Masculino,25-39 (Millennials),Gastronomia,Café Cultura,252
+153216,11727.84,14,Feminino,40-54 (Gen X),Calçados Femininos,Luz da Lua,253
+146101,11713.99,68,Masculino,40-54 (Gen X),Moda,C&A,254
+189139,11713.720000000001,3,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,255
+132908,11695.91,44,Feminino,40-54 (Gen X),Moda,C&A,256
+473561,11670.22,18,Feminino,40-54 (Gen X),Não informado,Kopenhagen,257
+128034,11653.83,42,Feminino,40-54 (Gen X),Moda,BelShop,258
+156078,11649.0,301,Feminino,25-39 (Millennials),Gastronomia,Mini Kalzone,259
+142857,11639.53,36,Masculino,40-54 (Gen X),Moda,Cassol Centerlar,260
+134884,11633.16,5,Feminino,25-39 (Millennials),Moda,C&A,261
+190196,11622.57,13,Feminino,40-54 (Gen X),Moda,Tokaia,262
+62545,11622.47,37,Feminino,40-54 (Gen X),Gastronomia,Farm,263
+136565,11620.68,29,Feminino,40-54 (Gen X),Moda,Renner,264
+53831,11562.64,213,Feminino,25-39 (Millennials),Gastronomia,Donna Mirô,265
+33996,11536.34,7,Masculino,25-39 (Millennials),Gastronomia - Sorvetes,Milkymoo,266
+355702,11516.33,59,Feminino,16-24 (Gen Z),Gastronomia,Las Leñas Parrilla Uruguaya,267
+185939,11488.869999999999,4,Masculino,55-69 (Boomers),Moda,Empório Du Homem,268
+139184,11487.39,60,Masculino,25-39 (Millennials),Moda,Natura,269
+149221,11457.88,47,Masculino,40-54 (Gen X),Gastronomia,Calvin Klein e Tommy Hilfiger,270
+297652,11456.68,8,Feminino,25-39 (Millennials),Moda,Live!,271
+128028,11452.33,42,Masculino,25-39 (Millennials),Moda,Renner,272
+281025,11397.119999999999,10,Feminino,40-54 (Gen X),Moda,Colcci,273
+100531,11388.46,21,Masculino,55-69 (Boomers),Beleza e Bem-estar,Livraria Catarinense ,274
+368618,11378.050000000001,13,Feminino,25-39 (Millennials),Gastronomia,Havaianas,275
+117419,11363.35,14,Feminino,40-54 (Gen X),Moda,Colcci,276
+125663,11323.93,45,Feminino,40-54 (Gen X),Moda,Renner,277
+221684,11313.09,6,Feminino,25-39 (Millennials),Eletrônicos,Chope do Mestre,278
+244979,11300.36,8,Feminino,40-54 (Gen X),Joalheria,Vivara,279
+2185,11294.460000000001,36,Feminino,25-39 (Millennials),Gastronomia,Panvel Farmácias,280
+367649,11283.0,3,Masculino,55-69 (Boomers),Eletrônicos,Samsung,281
+85771,11264.15,18,Feminino,40-54 (Gen X),Joalheria,Vivara,282
+310445,11257.98,5,Masculino,55-69 (Boomers),Beleza e Bem-estar,Fátima Criança,283
+214190,11249.57,159,Feminino,40-54 (Gen X),Gastronomia,Cantinho Grill,284
+140815,11245.16,69,Masculino,55-69 (Boomers),Gastronomia,JAH Açaí,285
+134426,11212.68,56,Feminino,70+ (Silent),Moda,Renner,286
+147883,11198.64,43,Feminino,25-39 (Millennials),Moda,Cobasi,287
+170474,11186.87,23,Feminino,40-54 (Gen X),Moda,Uebel Make Up,288
+125926,11169.62,101,Feminino,55-69 (Boomers),Gastronomia,Renner,289
+118740,11168.66,89,Feminino,40-54 (Gen X),Gastronomia,JAH Açaí,290
+151353,11146.289999999999,6,Masculino,16-24 (Gen Z),Joalheria,Riachuelo,291
+224268,11119.64,30,Masculino,55-69 (Boomers),Calçados,World Tennis,292
+187621,11102.85,4,Masculino,25-39 (Millennials),Moda,Empório Du Homem,293
+53031,11095.35,57,Feminino,16-24 (Gen Z),Gastronomia,Santo Boteco,294
+70595,11018.24,36,Masculino,25-39 (Millennials),Moda,Avatim,295
+273875,10974.0,1,Masculino,40-54 (Gen X),Eletrônicos,Samsung,296
+294735,10944.72,57,Feminino,25-39 (Millennials),Moda,C&A,297
+167646,10936.289999999999,39,Masculino,25-39 (Millennials),Gastronomia,Café Cultura,298
+223851,10899.93,62,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,299
+368334,10888.56,72,Feminino,40-54 (Gen X),Moda,Renner,300
+220371,10861.46,33,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,301
+246207,10859.66,19,Feminino,40-54 (Gen X),Moda,Camarão Express,302
+54940,10853.539999999999,4,Masculino,40-54 (Gen X),Moda,Empório Du Homem,303
+91258,10821.57,26,Feminino,40-54 (Gen X),Moda,C&A,304
+260402,10796.29,46,Feminino,25-39 (Millennials),Infantil,Centauro,305
+237342,10787.23,48,Feminino,40-54 (Gen X),Moda,Renner,306
+304911,10777.78,113,Feminino,25-39 (Millennials),Gastronomia,JAH Açaí,307
+219406,10762.130000000001,2,Masculino,40-54 (Gen X),Eletrônicos,Reserva Nacoes Shopping,308
+251220,10761.56,20,Masculino,25-39 (Millennials),Moda,Lança Perfume,309
+4236,10744.12,29,Feminino,40-54 (Gen X),Moda,Renner,310
+224951,10744.09,6,Masculino,16-24 (Gen Z),Moda,Cassol Centerlar,311
+224448,10733.74,23,Feminino,40-54 (Gen X),Calçados,World Tennis,312
+187490,10686.08,52,Feminino,40-54 (Gen X),Moda,Riachuelo,313
+256952,10675.0,4,Feminino,40-54 (Gen X),Moda,Dudalina,314
+227658,10658.52,45,Masculino,40-54 (Gen X),Gastronomia,Camarão Express,315
+216910,10650.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,316
+366064,10627.0,1,Masculino,25-39 (Millennials),Eletrônicos,Samsung,317
+188284,10602.1,90,Feminino,25-39 (Millennials),Gastronomia,Ri Happy,318
+304106,10602.0,1,Masculino,40-54 (Gen X),Joalheria,Vivara,319
+165957,10571.35,45,Feminino,55-69 (Boomers),Moda,Renner,320
+179217,10561.15,117,Feminino,16-24 (Gen Z),Gastronomia,Cantinho Grill,321
+126975,10553.01,27,Feminino,25-39 (Millennials),Moda,Lupo,322
+227157,10552.86,78,Feminino,40-54 (Gen X),Moda,Renner,323
+225080,10510.1,7,Feminino,40-54 (Gen X),Moda,Colcci,324
+22208,10495.92,165,Feminino,40-54 (Gen X),Gastronomia,Donna Mirô,325
+116739,10488.35,29,Feminino,25-39 (Millennials),Moda,Riachuelo,326
+287310,10425.0,3,Feminino,25-39 (Millennials),Joalheria,Vivara,327
+249149,10421.28,46,Masculino,40-54 (Gen X),Gastronomia,Cobasi,328
+122080,10411.1,71,Feminino,40-54 (Gen X),Moda,Café Cultura,329
+259896,10347.09,3,Feminino,25-39 (Millennials),Joalheria,Vivara,330
+133670,10308.58,34,Masculino,25-39 (Millennials),Gastronomia,Ri Happy,331
+195110,10306.8,67,Masculino,25-39 (Millennials),Gastronomia,Café Cultura,332
+60643,10300.57,85,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,333
+372798,10300.0,1,Masculino,70+ (Silent),Joalheria,Vivara,334
+147026,10274.5,43,Feminino,40-54 (Gen X),Moda,Renner,335
+129573,10273.19,16,Feminino,40-54 (Gen X),Moda,Luz da Lua,336
+232509,10222.72,31,Feminino,40-54 (Gen X),Moda,Békko,337
+99589,10209.289999999999,26,Feminino,25-39 (Millennials),Calçados,Arezzo,338
+232383,10205.76,11,Feminino,40-54 (Gen X),Beleza e Bem-estar,Farm,339
+125022,10204.9,9,Feminino,55-69 (Boomers),Moda,Tokaia,340
+325002,10197.0,1,Feminino,40-54 (Gen X),Hub da Saúde,Ortobom ,341
+163754,10154.92,38,Feminino,40-54 (Gen X),Moda,Renner,342
+51890,10113.470000000001,3,Masculino,25-39 (Millennials),Infantil,Fátima Papelaria,343
+366446,10102.119999999999,5,Masculino,16-24 (Gen Z),Joalheria,Vivara,344
+182985,10079.82,27,Masculino,25-39 (Millennials),Moda,Dudalina,345
+127636,10014.46,95,Feminino,40-54 (Gen X),Gastronomia,Cobasi,346
+152659,10003.36,5,Masculino,40-54 (Gen X),Moda,Békko,347
+228193,9984.83,71,Masculino,40-54 (Gen X),Gastronomia,Big Jack Cervejaria,348
+169638,9927.46,32,Feminino,40-54 (Gen X),Moda,Café Cultura,349
+425755,9920.67,18,Feminino,55-69 (Boomers),Moda,Farm,350
+133206,9912.58,3,Feminino,40-54 (Gen X),Beleza e Bem-estar,BelShop,351
+366329,9908.48,2,Masculino,55-69 (Boomers),Casa e Decoração,Camarão Express,352
+166884,9906.43,36,Feminino,55-69 (Boomers),Moda,JAH Açaí,353
+5114,9904.12,117,Feminino,40-54 (Gen X),Moda,C&A,354
+409435,9895.9,2,Masculino,25-39 (Millennials),Gastronomia,McDonald's,355
+221596,9892.0,1,Masculino,55-69 (Boomers),Eletrônicos,Samsung,356
+396493,9888.41,7,Feminino,55-69 (Boomers),Moda,Hope Nacoes Shopping,357
+223547,9885.9,3,Masculino,55-69 (Boomers),Calçados,Crocs,358
+173470,9852.59,89,Feminino,40-54 (Gen X),Gastronomia,Avatim,359
+154213,9849.84,3,Feminino,40-54 (Gen X),Moda,Beagle,360
+2358,9837.24,21,Feminino,40-54 (Gen X),Moda,Renner,361
+166022,9830.05,74,Feminino,25-39 (Millennials),Gastronomia,Renner,362
+204480,9826.82,63,Feminino,25-39 (Millennials),Moda,Café Cultura,363
+172486,9823.86,30,Feminino,16-24 (Gen Z),Moda,Renner,364
+260199,9817.5,1,Feminino,40-54 (Gen X),Joalheria,Vivara,365
+360309,9805.15,14,Feminino,40-54 (Gen X),Moda,Colcci,366
+222284,9773.39,53,Feminino,25-39 (Millennials),Moda,Renner,367
+129287,9772.01,19,Feminino,40-54 (Gen X),Moda,Luz da Lua,368
+248377,9739.48,16,Feminino,40-54 (Gen X),Moda,Youcom,369
+239983,9686.460000000001,103,Feminino,25-39 (Millennials),Gastronomia,JAH Açaí,370
+194857,9657.06,52,Feminino,40-54 (Gen X),Moda,Renner,371
+218436,9650.17,48,Feminino,25-39 (Millennials),Gastronomia,Camarão Express,372
+380869,9650.0,1,Feminino,40-54 (Gen X),Joalheria,Vivara,373
+134172,9644.09,28,Feminino,55-69 (Boomers),Moda,Colcci,374
+222142,9619.1,36,Feminino,25-39 (Millennials),Moda,Pittol,375
+204118,9613.17,5,Masculino,55-69 (Boomers),Gastronomia,JAH Açaí,376
+266833,9612.369999999999,6,Feminino,40-54 (Gen X),Gastronomia,Pandora,377
+425195,9611.95,32,Feminino,25-39 (Millennials),Gastronomia,Outback SteakHouse,378
+11021,9596.210000000001,45,Feminino,25-39 (Millennials),Moda,C&A,379
+142071,9591.960000000001,35,Masculino,40-54 (Gen X),Esportes,Centauro,380
+53327,9588.32,102,Feminino,25-39 (Millennials),Moda,Renner,381
+231246,9561.32,13,Feminino,40-54 (Gen X),Moda,Renner,382
+114565,9552.31,97,Feminino,25-39 (Millennials),Gastronomia,Americanas,383
+276764,9531.13,32,Feminino,25-39 (Millennials),Moda,Outback SteakHouse,384
+418194,9527.59,9,Masculino,25-39 (Millennials),Moda,Empório Du Homem,385
+120566,9488.87,135,Feminino,40-54 (Gen X),Gastronomia,Renner,386
+158620,9483.43,49,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,387
+138069,9444.93,30,Feminino,55-69 (Boomers),Moda,Riachuelo,388
+113864,9414.31,62,Feminino,40-54 (Gen X),Moda,Renner,389
+60873,9412.91,50,Feminino,40-54 (Gen X),Moda,Renner,390
+347708,9371.7,90,Feminino,40-54 (Gen X),Gastronomia,Las Leñas Parrilla Uruguaya,391
+352631,9365.3,2,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,392
+58668,9360.48,154,Masculino,25-39 (Millennials),Gastronomia,Mini Kalzone,393
+91741,9358.24,88,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,394
+399977,9356.0,1,Masculino,25-39 (Millennials),Hub da Saúde,Ortobom ,395
+160155,9347.99,3,Masculino,40-54 (Gen X),Casa e Decoração,Exclusiva Colchões,396
+68350,9338.31,34,Feminino,40-54 (Gen X),Moda,Renner,397
+196817,9331.38,162,Feminino,40-54 (Gen X),Eletrodomésticos,Americanas,398
+299912,9325.05,17,Feminino,55-69 (Boomers),Moda,Renner,399
+154322,9300.13,60,Feminino,55-69 (Boomers),Gastronomia,Riachuelo,400
+129750,9296.35,3,Masculino,40-54 (Gen X),Esportes,Tigre Maniacos Volt,401
+44834,9293.6,92,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,402
+120977,9291.039999999999,37,Feminino,55-69 (Boomers),Beleza e Bem-estar,Livraria Catarinense ,403
+137411,9274.65,25,Feminino,25-39 (Millennials),Moda,Renner,404
+192432,9268.98,4,Masculino,25-39 (Millennials),Moda,Békko,405
+320543,9247.0,1,Feminino,25-39 (Millennials),Eletrônicos,Samsung,406
+195115,9236.08,8,Feminino,55-69 (Boomers),Moda,Camarão Express,407
+230633,9210.199999999999,4,Feminino,25-39 (Millennials),Hub da Saúde,Ortobom ,408
+133892,9206.67,5,Feminino,55-69 (Boomers),Calçados Femininos,Luz da Lua,409
+244922,9204.4,32,Feminino,40-54 (Gen X),Moda,Renner,410
+360008,9200.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,411
+142434,9196.0,3,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,412
+64330,9189.08,8,Feminino,55-69 (Boomers),Moda,Reserva Nacoes Shopping,413
+322999,9184.86,19,Feminino,25-39 (Millennials),Moda,Lança Perfume,414
+286459,9137.18,13,Masculino,40-54 (Gen X),Moda,Centauro,415
+165387,9127.39,63,Feminino,25-39 (Millennials),Casa e Decoração,Americanas,416
+376125,9126.0,1,Feminino,25-39 (Millennials),Joalheria,Vivara,417
+224779,9118.3,2,Masculino,25-39 (Millennials),Eletrônicos,Renner,418
+150862,9110.15,44,Feminino,40-54 (Gen X),Moda,Beagle,419
+390768,9107.18,10,Masculino,25-39 (Millennials),Livrarias,Livraria Catarinense ,420
+124388,9078.25,6,Feminino,25-39 (Millennials),Moda,Beagle,421
+151067,9057.0,8,Feminino,25-39 (Millennials),Moda,Arezzo,422
+271652,9044.22,21,Feminino,25-39 (Millennials),Moda,Camarão Express,423
+60670,9038.11,21,Feminino,25-39 (Millennials),Gastronomia,Camarão Express,424
+5737,9022.57,51,Masculino,40-54 (Gen X),Moda,Riachuelo,425
+307148,9009.49,10,Masculino,40-54 (Gen X),Moda,Reserva Nacoes Shopping,426
+282599,9000.0,2,Feminino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,427
+429347,8993.68,15,Feminino,25-39 (Millennials),Gastronomia,z Bob's - Quiosque 2,428
+266028,8990.0,1,Masculino,40-54 (Gen X),Joalheria,Vivara,429
+309543,8984.22,26,Feminino,40-54 (Gen X),Moda,C&A,430
+192042,8980.0,1,Feminino,25-39 (Millennials),Joalheria,Vivara,431
+264024,8973.6,6,Feminino,40-54 (Gen X),Calçados Femininos,Estacionamento - Nações Shopping,432
+146908,8970.6,57,Feminino,40-54 (Gen X),Gastronomia,Café Cultura,433
+145613,8967.060000000001,8,Masculino,40-54 (Gen X),Moda,Renner,434
+244403,8963.73,10,Masculino,40-54 (Gen X),Moda,Acuo,435
+132063,8949.16,108,Feminino,25-39 (Millennials),Gastronomia,Mini Kalzone,436
+264961,8949.0,3,Masculino,40-54 (Gen X),Eletrônicos,Dudalina,437
+299746,8941.5,21,Feminino,40-54 (Gen X),Moda,Acuo,438
+152496,8938.3,14,Feminino,40-54 (Gen X),Moda,Renner,439
+135454,8918.2,22,Feminino,40-54 (Gen X),Moda,C&A,440
+142658,8915.33,59,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,441
+303583,8885.26,7,Feminino,25-39 (Millennials),Moda,Tokaia,442
+210763,8884.72,39,Feminino,25-39 (Millennials),Gastronomia,Santo Boteco,443
+182731,8878.78,30,Feminino,25-39 (Millennials),Moda,Renner,444
+227720,8865.47,19,Feminino,55-69 (Boomers),Moda,Pandora,445
+24210,8859.79,58,Masculino,40-54 (Gen X),Gastronomia,Santo Boteco,446
+298196,8842.68,155,Masculino,25-39 (Millennials),Gastronomia,Mini Kalzone,447
+14984,8825.41,49,Feminino,25-39 (Millennials),Moda,C&A,448
+126059,8820.2,23,Masculino,25-39 (Millennials),Moda,Centauro,449
+159472,8818.44,21,Feminino,55-69 (Boomers),Moda,Camarão Express,450
+225011,8814.54,108,Feminino,55-69 (Boomers),Gastronomia,Dez Pastéis,451
+245482,8806.35,5,Masculino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,452
+151115,8805.54,30,Feminino,55-69 (Boomers),Moda,Renner,453
+461096,8805.3,2,Feminino,25-39 (Millennials),Moda,Acuo,454
+133845,8804.05,4,Feminino,55-69 (Boomers),Joalheria,Vivara,455
+333523,8800.97,13,Masculino,40-54 (Gen X),Esportes,Centauro,456
+282480,8796.0,1,Feminino,55-69 (Boomers),Moda,Tokaia,457
+293860,8756.12,26,Feminino,25-39 (Millennials),Moda,Renner,458
+361723,8740.0,1,Feminino,40-54 (Gen X),Joalheria,Vivara,459
+152992,8718.7,35,Feminino,40-54 (Gen X),Gastronomia,Panvel Farmácias,460
+265260,8708.73,24,Masculino,16-24 (Gen Z),Beleza e Bem-estar,Essence Parfums,461
+140976,8702.3,15,Feminino,25-39 (Millennials),Gastronomia,Estacionamento - Nações Shopping,462
+232190,8701.31,39,Feminino,25-39 (Millennials),Moda,Renner,463
+163574,8700.6,7,Feminino,40-54 (Gen X),Beleza e Bem-estar,Essence Parfums,464
+231457,8690.06,18,Feminino,25-39 (Millennials),Moda,Renner,465
+233771,8683.89,31,Feminino,16-24 (Gen Z),Gastronomia,Las Leñas Parrilla Uruguaya,466
+127907,8679.37,47,Masculino,40-54 (Gen X),Moda,Renner,467
+262055,8669.2,5,Feminino,55-69 (Boomers),Moda,Damyller,468
+343822,8653.029999999999,11,Masculino,25-39 (Millennials),Moda,Kings ,469
+215409,8652.93,16,Feminino,40-54 (Gen X),Moda,Riachuelo,470
+23904,8642.69,67,Masculino,40-54 (Gen X),Gastronomia,McDonald's,471
+116872,8639.12,39,Feminino,40-54 (Gen X),Moda,Cobasi,472
+429252,8636.91,2,Masculino,25-39 (Millennials),Beleza e Bem-estar,O Boticário,473
+53825,8633.84,122,Masculino,25-39 (Millennials),Gastronomia,BelShop,474
+389327,8626.0,2,Masculino,40-54 (Gen X),Eletrônicos,Samsung,475
+143953,8624.46,34,Feminino,40-54 (Gen X),Gastronomia,Cobasi,476
+115669,8617.54,41,Feminino,25-39 (Millennials),Moda,Santo Boteco,477
+126718,8614.84,61,Feminino,25-39 (Millennials),Moda,Renner,478
+248691,8609.81,12,Feminino,40-54 (Gen X),Moda,Hope Nacoes Shopping,479
+64753,8608.82,69,Feminino,25-39 (Millennials),Gastronomia,C&A,480
+233214,8600.0,1,Masculino,25-39 (Millennials),Moda,Empório Du Homem,481
+224859,8600.0,1,Masculino,25-39 (Millennials),Eletrônicos,Samsung,482
+231997,8594.03,28,Feminino,40-54 (Gen X),Casa e Decoração,Camicado,483
+266886,8590.61,47,Feminino,25-39 (Millennials),Moda,JAH Açaí,484
+153204,8580.08,12,Feminino,40-54 (Gen X),Moda,C&A,485
+289462,8580.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,486
+221893,8569.63,48,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,487
+4728,8564.59,24,Masculino,40-54 (Gen X),Moda,Cobasi,488
+305895,8555.630000000001,26,Masculino,40-54 (Gen X),Moda,Renner,489
+350025,8537.460000000001,13,Masculino,25-39 (Millennials),Esportes,FATIMA ESPORTES,490
+50390,8533.73,56,Feminino,25-39 (Millennials),Moda,Renner,491
+73711,8523.66,5,Masculino,25-39 (Millennials),Calçados Femininos,Luz da Lua,492
+82139,8496.06,8,Feminino,40-54 (Gen X),Moda,Beagle,493
+232567,8489.18,25,Feminino,25-39 (Millennials),Moda,Beagle,494
+7928,8482.22,49,Feminino,25-39 (Millennials),Moda,Cobasi,495
+215899,8481.73,16,Feminino,40-54 (Gen X),Moda,Colcci,496
+230979,8461.92,9,Masculino,40-54 (Gen X),Moda,Cassol Centerlar,497
+179177,8451.48,88,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,498
+224988,8448.2,62,Feminino,40-54 (Gen X),Gastronomia,Café Cultura,499
+62058,8444.08,23,Feminino,25-39 (Millennials),Moda,Camicado,500
+141209,8438.81,17,Feminino,40-54 (Gen X),Moda,Centauro,501
+108281,8420.89,84,Feminino,25-39 (Millennials),Pets,Cobasi,502
+128825,8418.85,25,Masculino,55-69 (Boomers),Moda,Colcci,503
+12397,8412.85,19,Feminino,25-39 (Millennials),Moda,Renner,504
+396531,8405.0,2,Masculino,70+ (Silent),Eletrônicos,Samsung,505
+191082,8394.01,9,Masculino,55-69 (Boomers),Gastronomia,Cobasi,506
+25756,8382.66,48,Feminino,40-54 (Gen X),Gastronomia,Natureza Bistrô,507
+483986,8382.0,14,Feminino,40-54 (Gen X),Infantil,Fátima Criança,508
+231250,8363.380000000001,12,Feminino,25-39 (Millennials),Moda,Acuo,509
+247453,8323.92,27,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,510
+18452,8315.88,8,Masculino,25-39 (Millennials),Moda,Cassol Centerlar,511
+219860,8302.6,21,Feminino,40-54 (Gen X),Moda,Live!,512
+193411,8300.29,4,Masculino,40-54 (Gen X),Casa e Decoração,Casa Maria,513
+214880,8291.91,19,Feminino,40-54 (Gen X),Gastronomia,Estacionamento - Nações Shopping,514
+187998,8282.01,36,Feminino,25-39 (Millennials),Moda,Riachuelo,515
+124816,8272.83,30,Feminino,40-54 (Gen X),Gastronomia,Me Linda,516
+194739,8269.58,12,Feminino,25-39 (Millennials),Moda,Renner,517
+172526,8262.42,11,Feminino,55-69 (Boomers),Moda,Arezzo,518
+349070,8257.029999999999,9,Masculino,25-39 (Millennials),Gastronomia,Renner,519
+225400,8250.44,6,Feminino,40-54 (Gen X),Moda,Empório Du Homem,520
+231245,8242.7,6,Feminino,25-39 (Millennials),Moda,Tokaia,521
+90972,8237.85,4,Feminino,40-54 (Gen X),Outros,Hope Nacoes Shopping,522
+230765,8211.63,6,Masculino,25-39 (Millennials),Casa e Decoração,Camicado,523
+80775,8199.93,71,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,524
+218880,8198.58,35,Feminino,25-39 (Millennials),Beleza e Bem-estar,Renner,525
+249929,8183.07,25,Feminino,40-54 (Gen X),Moda,Riachuelo,526
+206261,8158.5199999999995,38,Masculino,25-39 (Millennials),Casa e Decoração,Camicado,527
+244741,8157.65,1,Feminino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,528
+283690,8154.01,31,Feminino,16-24 (Gen Z),Moda,Avatim,529
+200707,8152.58,17,Feminino,25-39 (Millennials),Calçados,Arezzo,530
+40363,8148.65,51,Feminino,40-54 (Gen X),Gastronomia,Livraria Catarinense ,531
+193138,8146.98,3,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,532
+228663,8136.01,42,Feminino,40-54 (Gen X),Gastronomia,JAH Açaí,533
+121481,8120.27,45,Masculino,40-54 (Gen X),Gastronomia,Santo Boteco,534
+157115,8117.48,8,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,535
+75882,8114.23,70,Feminino,40-54 (Gen X),Gastronomia,JAH Açaí,536
+244703,8106.2,29,Feminino,25-39 (Millennials),Moda,Americanas,537
+233583,8097.83,12,Feminino,25-39 (Millennials),Moda,Bagaggio,538
+265573,8097.0,1,Masculino,55-69 (Boomers),Eletrônicos,Samsung,539
+128111,8096.19,42,Masculino,40-54 (Gen X),Moda,Renner,540
+151551,8093.27,8,Feminino,25-39 (Millennials),Moda,Arezzo,541
+402781,8086.9,2,Feminino,40-54 (Gen X),Hub da Saúde,Ortobom ,542
+232333,8064.0,1,Feminino,55-69 (Boomers),Eletrônicos,Samsung,543
+273621,8058.62,57,Feminino,40-54 (Gen X),Gastronomia,Mini Kalzone,544
+300068,8052.0,3,Feminino,40-54 (Gen X),Moda,Colcci,545
+243897,8042.73,17,Feminino,25-39 (Millennials),Moda,Live!,546
+249818,8026.570000000001,25,Feminino,40-54 (Gen X),Gastronomia,McDonald's,547
+112133,8005.13,22,Feminino,40-54 (Gen X),Moda,Calvin Klein e Tommy Hilfiger,548
+356556,8004.91,3,Masculino,25-39 (Millennials),Joalheria,Vivara,549
+299414,8001.58,73,Feminino,25-39 (Millennials),Gastronomia,Donna Mirô,550
+230993,7999.01,1,Feminino,25-39 (Millennials),Eletrônicos,Samsung,551
+320539,7999.0,1,Masculino,40-54 (Gen X),Eletrônicos,Samsung,552
+221695,7988.26,44,Feminino,40-54 (Gen X),Moda,Renner,553
+231235,7984.889999999999,4,Feminino,70+ (Silent),Moda,Tokaia,554
+91488,7980.89,18,Feminino,25-39 (Millennials),Moda,Luz da Lua,555
+128768,7975.379999999999,8,Masculino,25-39 (Millennials),Gastronomia,Mini Kalzone,556
+234625,7965.77,29,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,557
+226910,7962.57,5,Masculino,25-39 (Millennials),Esportes,Centauro,558
+93173,7962.31,24,Feminino,40-54 (Gen X),Gastronomia,Renner,559
+215966,7960.18,1,Masculino,40-54 (Gen X),Joalheria,Vivara,560
+167930,7958.78,14,Feminino,40-54 (Gen X),Moda,Renner,561
+229353,7949.7,24,Feminino,25-39 (Millennials),Gastronomia,Las Leñas Parrilla Uruguaya,562
+355804,7942.4,41,Masculino,40-54 (Gen X),Gastronomia,Las Leñas Parrilla Uruguaya,563
+148748,7935.71,9,Feminino,40-54 (Gen X),Casa e Decoração,Camicado,564
+331459,7930.1900000000005,6,Feminino,40-54 (Gen X),Moda,Avatim,565
+399558,7930.0,2,Masculino,25-39 (Millennials),Moda,Empório Du Homem,566
+228097,7926.21,8,Masculino,25-39 (Millennials),Casa e Decoração,Calvin Klein e Tommy Hilfiger,567
+273220,7921.719999999999,8,Masculino,16-24 (Gen Z),Moda,Dudalina,568
+191926,7920.76,16,Feminino,40-54 (Gen X),Moda,Riachuelo,569
+287176,7901.1,7,Masculino,40-54 (Gen X),Moda,BelShop,570
+100929,7884.42,49,Feminino,40-54 (Gen X),Gastronomia,Acuo,571
+155662,7868.08,18,Feminino,40-54 (Gen X),Moda,Pittol,572
+75792,7862.95,71,Masculino,40-54 (Gen X),Gastronomia,Natureza Bistrô,573
+320409,7856.7300000000005,10,Feminino,25-39 (Millennials),Moda,Baummer,574
+170629,7845.92,7,Masculino,40-54 (Gen X),Eletrônicos,Samsung,575
+230039,7837.34,9,Feminino,40-54 (Gen X),Moda,Acuo,576
+77612,7830.42,7,Masculino,40-54 (Gen X),Moda,Renner,577
+132864,7816.7300000000005,15,Feminino,25-39 (Millennials),Moda,C&A,578
+115898,7804.64,16,Masculino,25-39 (Millennials),Beleza e Bem-estar,Natura,579
+258321,7750.62,53,Feminino,25-39 (Millennials),Moda,Renner,580
+309206,7740.0,1,Feminino,40-54 (Gen X),Joalheria,Vivara,581
+215879,7739.98,3,Masculino,40-54 (Gen X),Moda,Beagle,582
+23205,7738.4,31,Masculino,25-39 (Millennials),Gastronomia,Mini Kalzone,583
+224009,7725.42,64,Feminino,40-54 (Gen X),Moda,Renner,584
+214122,7706.63,24,Feminino,25-39 (Millennials),Gastronomia,Santo Boteco,585
+369972,7702.25,3,Masculino,55-69 (Boomers),Moda,Calvin Klein e Tommy Hilfiger,586
+189808,7698.42,37,Feminino,25-39 (Millennials),Moda,Avatim,587
+329666,7680.22,75,Feminino,40-54 (Gen X),Gastronomia,McDonald's,588
+126322,7673.55,56,Feminino,25-39 (Millennials),Moda,C&A,589
+247619,7669.68,24,Feminino,55-69 (Boomers),Moda,Renner,590
+101086,7665.969999999999,8,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,591
+393060,7660.13,2,Masculino,25-39 (Millennials),Beleza e Bem-estar,Empório Du Homem,592
+311023,7651.24,132,Masculino,55-69 (Boomers),Gastronomia,Café Cultura,593
+170826,7649.51,11,Feminino,40-54 (Gen X),Moda,Renner,594
+34027,7640.18,22,Feminino,55-69 (Boomers),Gastronomia,Cacau Show,595
+117018,7614.45,29,Feminino,25-39 (Millennials),Eletrodomésticos,Americanas,596
+228258,7608.27,43,Feminino,25-39 (Millennials),Gastronomia,Americanas,597
+149723,7606.91,15,Feminino,16-24 (Gen Z),Moda,Cobasi,598
+269176,7601.2,38,Feminino,25-39 (Millennials),Moda,Fátima Papelaria,599
+258677,7600.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,600
+147915,7598.79,23,Feminino,25-39 (Millennials),Moda,Renner,601
+189661,7598.36,27,Feminino,40-54 (Gen X),Moda,Riachuelo,602
+135665,7594.24,27,Feminino,70+ (Silent),Moda,Renner,603
+185615,7591.47,111,Feminino,40-54 (Gen X),Gastronomia,Burger King,604
+360371,7584.3,3,Masculino,40-54 (Gen X),Moda,Empório Du Homem,605
+156520,7569.469999999999,12,Masculino,40-54 (Gen X),Moda,Centauro,606
+127186,7568.1900000000005,45,Feminino,25-39 (Millennials),Moda,Renner,607
+354326,7559.639999999999,25,Masculino,25-39 (Millennials),Infantil,Fátima Criança,608
+223036,7558.0,2,Masculino,40-54 (Gen X),Eletrônicos,Samsung,609
+268502,7544.31,20,Masculino,40-54 (Gen X),Moda,Beagle,610
+129848,7544.04,32,Feminino,25-39 (Millennials),Moda,Renner,611
+4152,7529.12,36,Feminino,40-54 (Gen X),Gastronomia,Café Cultura,612
+55140,7528.97,73,Feminino,40-54 (Gen X),Moda,Americanas,613
+157442,7528.38,23,Feminino,40-54 (Gen X),Esportes,Centauro,614
+162427,7526.75,64,Masculino,40-54 (Gen X),Gastronomia,Burger King,615
+306715,7523.150000000001,5,Masculino,40-54 (Gen X),Livrarias,Livraria Catarinense ,616
+377360,7500.0,1,Masculino,40-54 (Gen X),Moda,Empório Du Homem,617
+230872,7497.67,18,Feminino,25-39 (Millennials),Moda,Acuo,618
+501889,7495.0,2,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,619
+215272,7482.17,44,Feminino,25-39 (Millennials),Gastronomia,Casa Maria,620
+265844,7472.09,8,Feminino,55-69 (Boomers),Moda,Acuo,621
+113372,7458.68,50,Feminino,25-39 (Millennials),Moda,Renner,622
+210285,7457.8,3,Feminino,40-54 (Gen X),Eletrônicos,Samsung,623
+112998,7455.69,24,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,624
+169428,7452.59,14,Feminino,40-54 (Gen X),Gastronomia,Santo Boteco,625
+133222,7451.4400000000005,46,Feminino,40-54 (Gen X),Gastronomia,JAH Açaí,626
+223858,7450.47,18,Feminino,25-39 (Millennials),Moda,Renner,627
+265606,7450.26,1,Masculino,70+ (Silent),Casa e Decoração,Cassol Centerlar,628
+191718,7449.63,29,Masculino,40-54 (Gen X),Gastronomia,Las Leñas Parrilla Uruguaya,629
+249994,7448.09,48,Masculino,55-69 (Boomers),Gastronomia,Natureza Bistrô,630
+269505,7447.73,146,Feminino,25-39 (Millennials),Gastronomia,Camarão Express,631
+139252,7427.93,34,Masculino,55-69 (Boomers),Moda,C&A,632
+230391,7421.58,18,Feminino,25-39 (Millennials),Moda,Renner,633
+338857,7418.9800000000005,3,Feminino,25-39 (Millennials),Moda,Békko,634
+155482,7403.17,29,Feminino,55-69 (Boomers),Moda,Dudalina,635
+107256,7402.0,36,Feminino,25-39 (Millennials),Moda,Cobasi,636
+241431,7401.92,73,Feminino,40-54 (Gen X),Gastronomia,Estação do Doce,637
+182558,7397.9800000000005,52,Feminino,25-39 (Millennials),Moda,Centauro,638
+241939,7385.21,100,Feminino,25-39 (Millennials),Gastronomia,JAH Açaí,639
+106353,7378.5,31,Feminino,40-54 (Gen X),Moda,Youcom,640
+159468,7364.35,20,Feminino,40-54 (Gen X),Moda,Renner,641
+115915,7353.26,7,Feminino,40-54 (Gen X),Eletrônicos,Livraria Catarinense ,642
+156143,7348.87,3,Masculino,25-39 (Millennials),Moda,JCanedo,643
+308014,7344.54,7,Feminino,25-39 (Millennials),Beleza e Bem-estar,Avatim,644
+188071,7332.35,24,Feminino,40-54 (Gen X),Moda,Renner,645
+171207,7330.83,2,Masculino,40-54 (Gen X),Eletrônicos,JCANEDO,646
+342920,7327.0,2,Masculino,40-54 (Gen X),Eletrônicos,Ophicina Foot Wear,647
+106140,7308.86,6,Masculino,16-24 (Gen Z),Moda,Empório Du Homem,648
+159292,7307.64,56,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,649
+351713,7298.47,14,Feminino,40-54 (Gen X),Moda,Colcci,650
+322007,7298.0,1,Masculino,40-54 (Gen X),Eletrônicos,Samsung,651
+15376,7281.32,36,Feminino,40-54 (Gen X),Moda,Estacionamento - Nações Shopping,652
+318810,7281.22,9,Feminino,40-54 (Gen X),Moda,Cobasi,653
+375942,7271.0,1,Feminino,40-54 (Gen X),Eletrônicos,Samsung,654
+256704,7265.97,2,Masculino,40-54 (Gen X),Infantil,Ri Happy,655
+201781,7264.92,14,Masculino,40-54 (Gen X),Moda,Pittol,656
+189788,7248.78,140,Masculino,25-39 (Millennials),Gastronomia,JAH Açaí,657
+210435,7248.27,11,Feminino,16-24 (Gen Z),Gastronomia,JAH Açaí,658
+119396,7241.1,14,Feminino,25-39 (Millennials),Moda,Luz da Lua,659
+352931,7227.46,105,Feminino,25-39 (Millennials),Gastronomia,Burger King,660
+238516,7222.29,13,Masculino,25-39 (Millennials),Gastronomia,Cassol Centerlar,661
+166733,7209.08,44,Masculino,40-54 (Gen X),Gastronomia,Santo Boteco,662
+2911,7208.58,10,Feminino,40-54 (Gen X),Moda,Kings ,663
+168274,7201.93,20,Feminino,40-54 (Gen X),Moda,Colcci,664
+19221,7189.8,2,Masculino,25-39 (Millennials),Infantil,Fátima Bebê,665
+187194,7186.68,49,Feminino,25-39 (Millennials),Moda,C&A,666
+437206,7184.679999999999,3,Feminino,40-54 (Gen X),Esportes,Beagle,667
+143173,7184.25,25,Masculino,25-39 (Millennials),Gastronomia,Café Cultura,668
+267557,7177.0,1,Masculino,25-39 (Millennials),Eletrônicos,Samsung,669
+202941,7171.39,62,Feminino,40-54 (Gen X),Gastronomia,Camarão Express,670
+52643,7166.19,43,Feminino,40-54 (Gen X),Gastronomia,Donna Mirô,671
+377022,7163.67,6,Feminino,40-54 (Gen X),Moda,Beagle,672
+327560,7162.389999999999,5,Masculino,40-54 (Gen X),Moda,Lupo,673
+259655,7162.07,81,Feminino,40-54 (Gen X),Gastronomia,Camarão Express,674
+99718,7159.62,59,Feminino,25-39 (Millennials),Gastronomia,Natureza Bistrô,675
+277730,7153.14,3,Feminino,40-54 (Gen X),Eletrônicos,Samsung,676
+118605,7145.79,19,Feminino,55-69 (Boomers),Moda,BelShop,677
+288834,7145.51,16,Masculino,40-54 (Gen X),Beleza e Bem-estar,Fátima Criança,678
+243681,7141.320000000001,18,Feminino,40-54 (Gen X),Moda,Ri Happy,679
+220842,7137.66,11,Feminino,40-54 (Gen X),Moda,Centauro,680
+3453,7137.63,30,Feminino,40-54 (Gen X),Moda,Renner,681
+21860,7136.57,82,Masculino,55-69 (Boomers),Gastronomia,Camarão Express,682
+406524,7136.23,23,Masculino,25-39 (Millennials),Gastronomia,Outback SteakHouse,683
+101187,7124.5,2,Masculino,40-54 (Gen X),Joalheria,Estacionamento - Nações Shopping,684
+102400,7119.96,3,Feminino,40-54 (Gen X),Moda,Casa Maria,685
+298287,7119.2,11,Feminino,40-54 (Gen X),Joalheria,Vivara,686
+204342,7115.5,1,Feminino,40-54 (Gen X),Joalheria,Vivara,687
+137596,7110.24,34,Feminino,40-54 (Gen X),Gastronomia,Camarão Express,688
+127491,7108.1,21,Feminino,40-54 (Gen X),Moda,Arezzo,689
+259785,7106.1900000000005,22,Feminino,40-54 (Gen X),Moda,Renner,690
+43618,7105.0,3,Feminino,40-54 (Gen X),Moda,Colcci,691
+268529,7079.4,2,Feminino,40-54 (Gen X),Eletrônicos,Riachuelo,692
+33437,7075.52,97,Feminino,40-54 (Gen X),Gastronomia,Mini Kalzone,693
+149708,7075.46,40,Feminino,25-39 (Millennials),Moda,Renner,694
+362741,7063.61,2,Feminino,40-54 (Gen X),Calçados,Arezzo,695
+326977,7058.06,8,Feminino,40-54 (Gen X),Beleza e Bem-estar,GNC Cinemas,696
+258766,7057.51,7,Masculino,40-54 (Gen X),Moda,Bagaggio,697
+129461,7057.05,80,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,698
+58242,7047.61,29,Feminino,40-54 (Gen X),Gastronomia,Renner,699
+241771,7047.110000000001,22,Feminino,25-39 (Millennials),Livrarias,Livraria Catarinense ,700
+142215,7038.42,39,Feminino,25-39 (Millennials),Moda,Renner,701
+112683,7038.36,21,Feminino,25-39 (Millennials),Moda,Renner,702
+140165,7030.650000000001,29,Masculino,40-54 (Gen X),Moda,Beagle,703
+3832,7027.85,19,Feminino,25-39 (Millennials),Moda,Centauro,704
+18003,7025.1900000000005,43,Masculino,40-54 (Gen X),Gastronomia,Cobasi,705
+129723,7012.63,19,Feminino,25-39 (Millennials),Moda,Renner,706
+313175,7000.0,1,Masculino,25-39 (Millennials),Moda,Empório Du Homem,707
+6682,6999.0,1,Masculino,25-39 (Millennials),Eletrônicos,Samsung,708
+168764,6998.2300000000005,16,Masculino,40-54 (Gen X),Gastronomia,Fátima Papelaria,709
+281431,6989.0,2,Masculino,25-39 (Millennials),Eletrônicos,Empório Du Homem,710
+166082,6980.19,8,Masculino,40-54 (Gen X),Moda,Calvin Klein e Tommy Hilfiger,711
+67554,6972.3,13,Feminino,40-54 (Gen X),Moda,Renner,712
+85854,6968.84,53,Masculino,55-69 (Boomers),Gastronomia,Camarão Express,713
+255197,6967.150000000001,25,Feminino,40-54 (Gen X),Moda,Youcom,714
+227512,6954.63,7,Feminino,70+ (Silent),Moda,Cobasi,715
+264082,6954.49,8,Masculino,25-39 (Millennials),Gastronomia,Vivara,716
+302682,6953.86,29,Feminino,16-24 (Gen Z),Moda,Youcom,717
+221560,6948.8,12,Feminino,25-39 (Millennials),Moda,Colcci,718
+129186,6947.99,62,Feminino,55-69 (Boomers),Gastronomia,Santo Boteco,719
+337806,6942.83,32,Feminino,25-39 (Millennials),Gastronomia,Via Pian Food,720
+150419,6940.73,37,Feminino,40-54 (Gen X),Moda,Renner,721
+232967,6940.46,35,Masculino,25-39 (Millennials),Gastronomia,Camarão Express,722
+259024,6935.460000000001,11,Masculino,25-39 (Millennials),Gastronomia,Renner,723
+114180,6935.0,1,Masculino,25-39 (Millennials),Hub da Saúde,Ortobom ,724
+192457,6924.3,11,Feminino,40-54 (Gen X),Moda,C&A,725
+231107,6921.0,1,Feminino,40-54 (Gen X),Joalheria,Vivara,726
+395615,6920.93,51,Feminino,40-54 (Gen X),Gastronomia,Donna Mirô,727
+126223,6920.47,65,Feminino,25-39 (Millennials),Gastronomia,Americanas,728
+383802,6916.2,26,Masculino,55-69 (Boomers),Moda,Beagle,729
+162640,6905.0,1,Masculino,40-54 (Gen X),Moda,Tokaia,730
+440635,6898.0,1,Masculino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,731
+365209,6890.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,732
+309574,6889.8,9,Feminino,25-39 (Millennials),Infantil,Fátima Bebê,733
+393762,6888.1900000000005,17,Masculino,25-39 (Millennials),Moda,Mini Kalzone,734
+433549,6887.3,23,Masculino,25-39 (Millennials),Gastronomia,Las Leñas Parrilla Uruguaya,735
+198324,6883.41,13,Feminino,40-54 (Gen X),Gastronomia,Café Cultura,736
+194852,6882.02,2,Masculino,40-54 (Gen X),Eletrônicos,Damyller,737
+320924,6877.76,3,Feminino,40-54 (Gen X),Eletrônicos,Renner,738
+439684,6877.0,2,Masculino,25-39 (Millennials),Eletrônicos,Samsung,739
+133030,6862.1,78,Feminino,25-39 (Millennials),Infantil,Ri Happy,740
+204872,6850.7,33,Feminino,40-54 (Gen X),Gastronomia,Mini Kalzone,741
+226642,6840.41,15,Feminino,40-54 (Gen X),Moda,Café Cultura,742
+227814,6837.81,33,Feminino,16-24 (Gen Z),Beleza e Bem-estar,Uebel Make Up,743
+346159,6836.2,39,Masculino,16-24 (Gen Z),Moda,C&A,744
+227159,6816.75,37,Feminino,25-39 (Millennials),Moda,Strutura,745
+323766,6803.87,29,Feminino,40-54 (Gen X),Moda,Camicado,746
+160261,6802.85,40,Feminino,40-54 (Gen X),Moda,Renner,747
+379801,6790.58,27,Feminino,25-39 (Millennials),Moda,Farm,748
+187597,6781.53,8,Feminino,40-54 (Gen X),Moda,Aramis,749
+221203,6771.28,15,Feminino,40-54 (Gen X),Casa e Decoração,Camicado,750
+399195,6769.360000000001,3,Feminino,16-24 (Gen Z),Moda,KStore Acessórios,751
+123668,6766.99,18,Feminino,40-54 (Gen X),Moda,Renner,752
+198036,6761.38,44,Feminino,25-39 (Millennials),Gastronomia,Livraria Catarinense ,753
+109231,6759.16,19,Masculino,16-24 (Gen Z),Moda,Renner,754
+4828,6756.54,16,Feminino,25-39 (Millennials),Moda,Tigre Maniacos Volt,755
+227951,6751.86,12,Feminino,40-54 (Gen X),Moda,Renner,756
+36473,6751.0199999999995,23,Masculino,55-69 (Boomers),Não informado,Kopenhagen,757
+286239,6749.700000000001,4,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,758
+468899,6748.339999999999,3,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,759
+164831,6745.58,16,Masculino,40-54 (Gen X),Moda,Livraria Catarinense ,760
+228914,6710.69,7,Feminino,55-69 (Boomers),Pets,Cobasi,761
+113115,6707.62,8,Masculino,40-54 (Gen X),Beleza e Bem-estar,Avatim,762
+229971,6704.7,2,Masculino,40-54 (Gen X),Moda,Empório Du Homem,763
+119146,6690.12,24,Feminino,40-54 (Gen X),Gastronomia,Camarão Express,764
+117863,6672.56,36,Feminino,40-54 (Gen X),Gastronomia,C&A,765
+327506,6664.85,10,Feminino,25-39 (Millennials),Moda,Damyller,766
+3655,6660.32,22,Feminino,40-54 (Gen X),Moda,Renner,767
+286404,6659.6,16,Feminino,40-54 (Gen X),Moda,Youcom,768
+333974,6659.02,28,Feminino,40-54 (Gen X),Gastronomia,Livraria Catarinense ,769
+385147,6657.1,43,Feminino,25-39 (Millennials),Moda,Renner,770
+134678,6656.72,15,Masculino,25-39 (Millennials),Moda,Damyller,771
+282769,6650.22,23,Feminino,40-54 (Gen X),Gastronomia,Café Cultura,772
+435976,6650.0,1,Masculino,25-39 (Millennials),Eletrônicos,Samsung,773
+416078,6642.65,18,Feminino,25-39 (Millennials),Gastronomia,JAH Açaí,774
+249855,6631.65,6,Masculino,40-54 (Gen X),Joalheria,Cobasi,775
+328543,6618.3,9,Feminino,55-69 (Boomers),Calçados Femininos,Luz da Lua,776
+233759,6617.38,3,Feminino,25-39 (Millennials),Infantil,Fátima Bebê,777
+187839,6605.75,29,Feminino,25-39 (Millennials),Moda,Youcom,778
+382189,6603.7,5,Masculino,40-54 (Gen X),Eletrônicos,Samsung,779
+228741,6599.0,1,Masculino,55-69 (Boomers),Eletrônicos,Samsung,780
+203186,6591.16,18,Feminino,25-39 (Millennials),Gastronomia,Camarão Express,781
+27729,6590.45,14,Masculino,40-54 (Gen X),Gastronomia,Santo Boteco,782
+303762,6587.27,23,Feminino,25-39 (Millennials),Moda,Me Linda,783
+250661,6587.02,6,Masculino,55-69 (Boomers),Gastronomia,Camarão Express,784
+108041,6583.4,30,Feminino,16-24 (Gen Z),Moda,Renner,785
+282650,6581.0,2,Feminino,40-54 (Gen X),Joalheria,Vivara,786
+277659,6578.98,7,Feminino,55-69 (Boomers),Gastronomia,Café Cultura,787
+171092,6576.47,16,Feminino,40-54 (Gen X),Moda,Beagle,788
+324760,6550.35,7,Masculino,25-39 (Millennials),Moda,Empório Du Homem,789
+279423,6540.62,18,Feminino,40-54 (Gen X),Moda,C&A,790
+354484,6537.23,1,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,791
+229586,6522.51,10,Feminino,25-39 (Millennials),Moda,C&A,792
+138807,6517.58,12,Feminino,40-54 (Gen X),Calçados,Arezzo,793
+293799,6517.22,8,Masculino,25-39 (Millennials),Moda,Renner,794
+155087,6508.3099999999995,21,Feminino,40-54 (Gen X),Beleza e Bem-estar,Centauro,795
+265253,6500.0,1,Masculino,55-69 (Boomers),Moda,Empório Du Homem,796
+203110,6497.55,19,Feminino,25-39 (Millennials),Moda,Renner,797
+258071,6490.97,7,Feminino,40-54 (Gen X),Esportes,Colcci,798
+142101,6489.46,33,Feminino,40-54 (Gen X),Gastronomia,Baummer,799
+96102,6486.62,25,Feminino,40-54 (Gen X),Moda,Strutura,800
+384576,6474.07,14,Masculino,40-54 (Gen X),Moda,Crocs,801
+120003,6471.02,3,Masculino,40-54 (Gen X),Moda,Beagle,802
+356203,6470.48,8,Masculino,40-54 (Gen X),Moda,Pittol,803
+366155,6470.31,11,Feminino,25-39 (Millennials),Esportes,FATIMA ESPORTES,804
+127125,6458.23,28,Feminino,25-39 (Millennials),Moda,Livraria Catarinense ,805
+328781,6454.89,3,Feminino,25-39 (Millennials),Joalheria,C&A,806
+291477,6442.37,10,Feminino,25-39 (Millennials),Gastronomia,Milkymoo,807
+209119,6425.38,128,Feminino,25-39 (Millennials),Gastronomia,Lug's,808
+350349,6423.95,14,Feminino,40-54 (Gen X),Moda,C&A,809
+312026,6416.8,4,Masculino,25-39 (Millennials),Moda,Empório Du Homem,810
+170,6416.23,21,Masculino,25-39 (Millennials),Moda,Youcom,811
+231227,6410.15,5,Feminino,25-39 (Millennials),Joalheria,Vivara,812
+186878,6409.4,3,Masculino,55-69 (Boomers),Moda,Calvin Klein e Tommy Hilfiger,813
+386848,6391.74,4,Feminino,40-54 (Gen X),Moda,Live!,814
+85796,6391.0,2,Masculino,40-54 (Gen X),Eletrônicos,Békko,815
+367557,6386.0,1,Feminino,40-54 (Gen X),Eletrônicos,Samsung,816
+434661,6384.34,11,Feminino,16-24 (Gen Z),Gastronomia,Camarão Express,817
+182154,6377.88,15,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,818
+166911,6371.1,7,Feminino,25-39 (Millennials),Moda,Natura,819
+112499,6364.12,10,Feminino,40-54 (Gen X),Moda,Avatim,820
+233273,6360.62,9,Feminino,25-39 (Millennials),Moda,Damyller,821
+232891,6359.2,1,Feminino,40-54 (Gen X),Moda,Dudalina,822
+183301,6358.93,17,Masculino,25-39 (Millennials),Gastronomia,Békko,823
+194431,6353.32,8,Feminino,40-54 (Gen X),Moda,Casa Maria,824
+220726,6322.05,16,Feminino,25-39 (Millennials),Gastronomia,Las Leñas Parrilla Uruguaya,825
+220395,6317.17,22,Feminino,25-39 (Millennials),Moda,Arezzo,826
+319823,6316.35,6,Masculino,40-54 (Gen X),Calçados,Casa Maria,827
+230855,6314.24,61,Masculino,70+ (Silent),Infantil,Fátima Bebê,828
+264796,6308.02,3,Feminino,55-69 (Boomers),Calçados,Arezzo,829
+370280,6307.02,7,Masculino,25-39 (Millennials),Beleza e Bem-estar,BelShop,830
+15079,6297.9400000000005,4,Masculino,40-54 (Gen X),Moda,Calvin Klein e Tommy Hilfiger,831
+276385,6297.4400000000005,18,Feminino,40-54 (Gen X),Moda,Plié,832
+221250,6281.81,17,Feminino,40-54 (Gen X),Calçados,World Tennis,833
+403634,6281.09,13,Feminino,25-39 (Millennials),Moda,Me Linda,834
+280379,6280.15,13,Feminino,25-39 (Millennials),Calçados Femininos,Luz da Lua,835
+335229,6275.87,9,Feminino,25-39 (Millennials),Moda,Riachuelo,836
+206398,6273.82,22,Feminino,40-54 (Gen X),Beleza e Bem-estar,O Boticário,837
+250113,6272.3,1,Feminino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,838
+305533,6271.71,53,Feminino,40-54 (Gen X),Gastronomia,McDonald's,839
+330393,6254.86,4,Masculino,25-39 (Millennials),Moda,C&A,840
+220173,6253.87,71,Masculino,40-54 (Gen X),Eletrodomésticos,Americanas,841
+229899,6250.0,1,Masculino,40-54 (Gen X),Joalheria,Vivara,842
+120895,6240.58,18,Feminino,25-39 (Millennials),Moda,Ri Happy,843
+267796,6238.23,10,Masculino,25-39 (Millennials),Gastronomia,Camarão Express,844
+139099,6231.25,41,Feminino,40-54 (Gen X),Moda,C&A,845
+366156,6227.8,2,Masculino,40-54 (Gen X),Eletrônicos,Renner,846
+224733,6227.41,76,Masculino,25-39 (Millennials),Gastronomia,Camarão Express,847
+307003,6216.0,3,Feminino,70+ (Silent),Ótica,GrandVision by Fototica,848
+295967,6213.89,6,Masculino,40-54 (Gen X),Moda,Calvin Klein e Tommy Hilfiger,849
+275375,6213.51,14,Feminino,40-54 (Gen X),Moda,Renner,850
+222366,6202.02,28,Feminino,25-39 (Millennials),Gastronomia,Burger King,851
+351130,6201.83,26,Masculino,40-54 (Gen X),Gastronomia,Santo Boteco,852
+286391,6199.0,1,Feminino,55-69 (Boomers),Eletrônicos,Samsung,853
+203117,6198.93,5,Feminino,25-39 (Millennials),Moda,C&A,854
+374224,6189.46,3,Masculino,25-39 (Millennials),Ótica,GrandVision by Fototica,855
+271216,6186.0,1,Feminino,40-54 (Gen X),Moda,Tokaia,856
+227412,6179.18,15,Feminino,40-54 (Gen X),Gastronomia,Las Leñas Parrilla Uruguaya,857
+96631,6166.49,38,Feminino,25-39 (Millennials),Gastronomia,Americanas,858
+128664,6162.84,29,Feminino,40-54 (Gen X),Gastronomia,Panvel Farmácias,859
+18932,6159.12,38,Feminino,25-39 (Millennials),Moda,C&A,860
+67703,6155.75,155,Feminino,25-39 (Millennials),Gastronomia,Americanas,861
+96416,6154.95,10,Feminino,40-54 (Gen X),Moda,Centauro,862
+152381,6148.19,29,Feminino,25-39 (Millennials),Moda,Riachuelo,863
+216554,6146.24,4,Masculino,55-69 (Boomers),Moda,Kings ,864
+16016,6146.12,25,Masculino,25-39 (Millennials),Gastronomia,Santo Boteco,865
+139377,6140.72,28,Feminino,55-69 (Boomers),Moda,Renner,866
+216177,6132.3,4,Feminino,40-54 (Gen X),Livrarias,Livraria Catarinense ,867
+105360,6132.01,3,Masculino,25-39 (Millennials),Eletrônicos,Samsung,868
+128712,6127.21,20,Masculino,16-24 (Gen Z),Gastronomia,BelShop,869
+169958,6118.879999999999,6,Feminino,40-54 (Gen X),Joalheria,Vivara,870
+392966,6114.01,15,Masculino,55-69 (Boomers),Gastronomia,Outback SteakHouse,871
+308138,6113.530000000001,6,Masculino,40-54 (Gen X),Infantil,Ri Happy,872
+301098,6112.19,15,Masculino,40-54 (Gen X),Moda,Me Linda,873
+124802,6111.76,14,Masculino,40-54 (Gen X),Moda,Cassol Centerlar,874
+231123,6107.5,17,Feminino,25-39 (Millennials),Beleza e Bem-estar,Farm,875
+362330,6090.15,16,Feminino,40-54 (Gen X),Gastronomia,Panda Sushi,876
+360972,6087.79,7,Masculino,25-39 (Millennials),Joalheria,Vivara,877
+366336,6082.7,9,Feminino,40-54 (Gen X),Gastronomia,Mini Kalzone,878
+211118,6080.3099999999995,5,Feminino,25-39 (Millennials),Beleza e Bem-estar,O Boticário,879
+30566,6063.31,25,Feminino,25-39 (Millennials),Moda,C&A,880
+169021,6052.11,84,Feminino,25-39 (Millennials),Gastronomia,Americanas,881
+231831,6045.55,41,Masculino,16-24 (Gen Z),Serviços,Estacionamento - Nações Shopping,882
+311749,6044.98,6,Masculino,40-54 (Gen X),Infantil,Ri Happy,883
+264610,6040.92,15,Feminino,25-39 (Millennials),Moda,Camicado,884
+59618,6036.42,29,Feminino,16-24 (Gen Z),Moda,Renner,885
+101669,6023.34,21,Feminino,25-39 (Millennials),Moda,Strutura,886
+113549,6022.93,27,Feminino,40-54 (Gen X),Beleza e Bem-estar,Natura,887
+198079,6021.46,16,Feminino,40-54 (Gen X),Esportes,Centauro,888
+229494,6020.74,13,Feminino,16-24 (Gen Z),Gastronomia,Las Leñas Parrilla Uruguaya,889
+19781,6019.96,36,Feminino,25-39 (Millennials),Beleza e Bem-estar,Casa Maria,890
+121491,6018.05,20,Feminino,55-69 (Boomers),Beleza e Bem-estar,Farm,891
+246364,6000.0,1,Feminino,55-69 (Boomers),Joalheria,Vivara,892
+224574,6000.0,1,Feminino,25-39 (Millennials),Moda,Empório Du Homem,893
+302336,6000.0,1,Masculino,40-54 (Gen X),Moda,Empório Du Homem,894
+445509,5999.0,1,Masculino,25-39 (Millennials),Eletrônicos,Samsung,895
+260902,5990.450000000001,7,Feminino,40-54 (Gen X),Moda,Beagle,896
+249098,5989.11,11,Feminino,40-54 (Gen X),Moda,Live!,897
+397588,5983.82,34,Masculino,40-54 (Gen X),Gastronomia,Cassol Centerlar,898
+186986,5983.01,6,Masculino,40-54 (Gen X),Moda,Renner,899
+117081,5982.49,47,Feminino,25-39 (Millennials),Gastronomia,C&A,900
+382603,5982.26,3,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,901
+280681,5979.9,2,Feminino,25-39 (Millennials),Moda,Empório Du Homem,902
+200530,5977.88,16,Feminino,25-39 (Millennials),Moda,Renner,903
+409826,5974.13,49,Feminino,40-54 (Gen X),Gastronomia,z Kfc,904
+214762,5969.09,8,Feminino,40-54 (Gen X),Moda,Colcci,905
+386940,5959.81,4,Feminino,40-54 (Gen X),Moda,Colcci,906
+62118,5953.4,19,Feminino,25-39 (Millennials),Moda,Beagle,907
+160279,5951.83,2,Feminino,25-39 (Millennials),Casa e Decoração,Camicado,908
+7238,5951.71,1,Masculino,25-39 (Millennials),Hub da Saúde,Ortobom ,909
+194528,5937.76,8,Masculino,25-39 (Millennials),Moda,Dudalina,910
+342935,5935.47,32,Feminino,16-24 (Gen Z),Moda,Me Linda,911
+195589,5925.839999999999,13,Feminino,25-39 (Millennials),Beleza e Bem-estar,BelShop,912
+101629,5925.41,25,Feminino,25-39 (Millennials),Gastronomia,JAH Açaí,913
+308534,5922.91,63,Feminino,25-39 (Millennials),Gastronomia,Lug's,914
+205922,5921.85,16,Feminino,25-39 (Millennials),Moda,Renner,915
+227597,5920.91,3,Feminino,40-54 (Gen X),Calçados Femininos,Luz da Lua,916
+251645,5913.96,22,Feminino,16-24 (Gen Z),Serviços,Estacionamento - Nações Shopping,917
+120976,5904.42,16,Feminino,40-54 (Gen X),Moda,Mar de Maria ,918
+374736,5900.9,14,Feminino,40-54 (Gen X),Moda,Café Cultura,919
+247672,5899.42,1,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,920
+268864,5897.0,2,Feminino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,921
+310667,5896.98,15,Feminino,40-54 (Gen X),Moda,Live!,922
+53271,5895.73,17,Feminino,40-54 (Gen X),Moda,Arezzo,923
+204581,5894.36,39,Masculino,55-69 (Boomers),Moda,C&A,924
+434397,5890.0,1,Masculino,40-54 (Gen X),Eletrônicos,Yan Eletroeletrônicos,925
+266113,5881.12,6,Masculino,55-69 (Boomers),Eletrônicos,Samsung,926
+286730,5880.87,16,Masculino,55-69 (Boomers),Moda,Avatim,927
+367860,5878.99,3,Feminino,40-54 (Gen X),Beleza e Bem-estar,Beagle,928
+329341,5876.58,72,Masculino,40-54 (Gen X),Gastronomia,Santo Boteco,929
+201798,5876.0,2,Feminino,55-69 (Boomers),Moda,Tokaia,930
+254476,5866.0599999999995,11,Feminino,40-54 (Gen X),Casa e Decoração,Camicado,931
+3499,5865.71,11,Feminino,40-54 (Gen X),Calçados,Pandora,932
+293003,5862.5,6,Feminino,55-69 (Boomers),Moda,Colcci,933
+252019,5852.07,36,Feminino,40-54 (Gen X),Moda,Renner,934
+88626,5848.43,6,Masculino,40-54 (Gen X),Gastronomia,Santo Boteco,935
+233466,5836.0,1,Masculino,70+ (Silent),Eletrônicos,Samsung,936
+184489,5831.93,18,Masculino,40-54 (Gen X),Moda,Renner,937
+390954,5823.6,7,Feminino,40-54 (Gen X),Moda,Me Linda,938
+142114,5809.73,23,Feminino,40-54 (Gen X),Livrarias,Livraria Catarinense ,939
+308654,5806.21,12,Feminino,25-39 (Millennials),Pets,Cobasi,940
+288242,5805.400000000001,5,Feminino,40-54 (Gen X),Moda,Acuo,941
+171672,5805.23,9,Feminino,40-54 (Gen X),Moda,Damyller,942
+283167,5795.0,2,Masculino,40-54 (Gen X),Moda,Calvin Klein e Tommy Hilfiger,943
+191803,5794.04,6,Masculino,40-54 (Gen X),Moda,Cassol Centerlar,944
+296383,5791.9,2,Masculino,55-69 (Boomers),Calçados Femininos,Luz da Lua,945
+249188,5785.33,22,Feminino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,946
+422860,5785.0,1,Masculino,16-24 (Gen Z),Eletrônicos,Samsung,947
+137258,5780.75,19,Masculino,40-54 (Gen X),Moda,FATIMA ESPORTES,948
+246525,5778.9,12,Feminino,40-54 (Gen X),Infantil,Fátima Criança,949
+396369,5778.78,16,Masculino,25-39 (Millennials),Gastronomia,Café Cultura,950
+124637,5777.0,1,Feminino,40-54 (Gen X),Eletrônicos,Samsung,951
+149475,5775.28,23,Feminino,40-54 (Gen X),Moda,Camicado,952
+88366,5772.18,7,Feminino,25-39 (Millennials),Moda,C&A,953
+9383,5760.4,5,Masculino,40-54 (Gen X),Farmácias,Me Linda,954
+187210,5755.13,9,Masculino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,955
+332257,5750.54,6,Feminino,25-39 (Millennials),Moda,Acuo,956
+359310,5750.0,1,Feminino,40-54 (Gen X),Moda,Empório Du Homem,957
+171209,5749.46,9,Feminino,25-39 (Millennials),Moda,Renner,958
+185734,5748.85,9,Masculino,55-69 (Boomers),Moda,Cacau Show,959
+153440,5748.34,36,Feminino,40-54 (Gen X),Gastronomia,Cantinho Grill,960
+101915,5747.5,36,Feminino,16-24 (Gen Z),Moda,Americanas,961
+310053,5738.51,7,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,962
+26117,5735.8,12,Masculino,25-39 (Millennials),Moda,Damyller,963
+118104,5729.62,17,Masculino,25-39 (Millennials),Moda,Colcci,964
+169076,5725.99,10,Feminino,40-54 (Gen X),Beleza e Bem-estar,Adcos,965
+230354,5716.13,12,Feminino,40-54 (Gen X),Moda,Cobasi,966
+185562,5713.63,9,Masculino,40-54 (Gen X),Moda,Café Cultura,967
+223242,5712.89,33,Feminino,55-69 (Boomers),Moda,Renner,968
+123618,5712.759999999999,9,Feminino,40-54 (Gen X),Moda,Békko,969
+297904,5708.0,31,Feminino,40-54 (Gen X),Moda,C&A,970
+162105,5707.8,82,Feminino,40-54 (Gen X),Livrarias,Livraria Catarinense ,971
+370935,5700.0,3,Masculino,25-39 (Millennials),Moda,Empório Du Homem,972
+188033,5696.45,17,Feminino,25-39 (Millennials),Moda,Centauro,973
+231328,5693.24,14,Feminino,25-39 (Millennials),Moda,Renner,974
+262849,5689.8,9,Masculino,55-69 (Boomers),Joalheria,Calvin Klein e Tommy Hilfiger,975
+347898,5686.99,16,Feminino,25-39 (Millennials),Moda,C&A,976
+203064,5686.1900000000005,7,Feminino,25-39 (Millennials),Moda,Empório Du Homem,977
+134514,5682.06,21,Feminino,40-54 (Gen X),Moda,Mar de Maria ,978
+254804,5680.33,7,Masculino,40-54 (Gen X),Joalheria,Centauro,979
+108325,5674.82,7,Feminino,25-39 (Millennials),Moda,Me Linda,980
+159129,5670.1900000000005,20,Feminino,25-39 (Millennials),Gastronomia,Livraria Catarinense ,981
+221194,5669.16,42,Feminino,40-54 (Gen X),Pets,Cobasi,982
+266893,5667.0,1,Feminino,25-39 (Millennials),Eletrônicos,Samsung,983
+163478,5661.96,25,Feminino,25-39 (Millennials),Moda,Cobasi,984
+143208,5655.49,8,Masculino,40-54 (Gen X),Moda,Fátima Papelaria,985
+44745,5651.6,10,Masculino,40-54 (Gen X),Lazer,GNC Cinemas,986
+134552,5647.4,4,Feminino,55-69 (Boomers),Joalheria,Vivara,987
+169933,5646.19,7,Feminino,25-39 (Millennials),Moda,Colcci,988
+366171,5646.0,1,Masculino,55-69 (Boomers),Eletrônicos,Samsung,989
+276597,5635.46,15,Masculino,16-24 (Gen Z),Moda,Avatim,990
+225263,5632.99,3,Feminino,40-54 (Gen X),Calçados Femininos,Luz da Lua,991
+232451,5627.900000000001,11,Feminino,25-39 (Millennials),Casa e Decoração,Camicado,992
+123737,5624.23,6,Feminino,40-54 (Gen X),Moda,Calvin Klein e Tommy Hilfiger,993
+233787,5619.3,1,Masculino,55-69 (Boomers),Moda,Békko,994
+229473,5619.0,5,Feminino,25-39 (Millennials),Moda,Colcci,995
+177766,5615.62,93,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,996
+4065,5614.13,8,Masculino,40-54 (Gen X),Moda,Livraria Catarinense ,997
+233536,5614.05,12,Feminino,40-54 (Gen X),Beleza e Bem-estar,Café Cultura,998
+244936,5613.030000000001,9,Feminino,40-54 (Gen X),Joalheria,Vivara,999
+228580,5613.0199999999995,95,Feminino,25-39 (Millennials),Gastronomia,Camarão Express,1000
+147250,5601.66,10,Feminino,25-39 (Millennials),Moda,Dudalina,1001
+302417,5600.78,10,Feminino,25-39 (Millennials),Moda,Arezzo,1002
+162438,5598.17,31,Feminino,25-39 (Millennials),Gastronomia,Cacau Show,1003
+386875,5591.9,3,Masculino,16-24 (Gen Z),Beleza e Bem-estar,Essence Parfums,1004
+101226,5590.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,1005
+307284,5584.99,2,Feminino,25-39 (Millennials),Calçados,Vivara,1006
+114193,5581.99,37,Feminino,25-39 (Millennials),Beleza e Bem-estar,Livraria Catarinense ,1007
+195200,5576.32,12,Feminino,40-54 (Gen X),Moda,Pittol,1008
+202966,5575.29,12,Feminino,40-54 (Gen X),Moda,Avatim,1009
+263487,5574.54,9,Feminino,55-69 (Boomers),Gastronomia,Cobasi,1010
+187119,5570.39,6,Masculino,40-54 (Gen X),Beleza e Bem-estar,Avatim,1011
+191459,5564.1,27,Masculino,25-39 (Millennials),Gastronomia,Café Cultura,1012
+319255,5563.42,23,Feminino,25-39 (Millennials),Gastronomia,Las Leñas Parrilla Uruguaya,1013
+225241,5562.31,24,Feminino,25-39 (Millennials),Moda,Cases e Capas,1014
+256254,5555.73,8,Feminino,55-69 (Boomers),Moda,Arezzo,1015
+229945,5550.39,37,Feminino,25-39 (Millennials),Moda,C&A,1016
+116486,5546.43,30,Feminino,40-54 (Gen X),Gastronomia,Las Leñas Parrilla Uruguaya,1017
+228143,5544.29,77,Feminino,25-39 (Millennials),Gastronomia,Camarão Express,1018
+125493,5541.28,18,Feminino,40-54 (Gen X),Beleza e Bem-estar,Avatim,1019
+301550,5537.46,14,Feminino,40-54 (Gen X),Moda,Fátima Papelaria,1020
+188271,5537.0,3,Feminino,55-69 (Boomers),Moda,Calvin Klein e Tommy Hilfiger,1021
+366808,5536.86,4,Feminino,55-69 (Boomers),Eletrônicos,Cacau Show,1022
+227551,5534.54,20,Feminino,40-54 (Gen X),Moda,Riachuelo,1023
+2720,5529.04,20,Feminino,25-39 (Millennials),Serviços,Estacionamento - Nações Shopping,1024
+291739,5524.9,3,Feminino,40-54 (Gen X),Beleza e Bem-estar,BelShop,1025
+271985,5519.8,3,Feminino,25-39 (Millennials),Calçados Femininos,Luz da Lua,1026
+135026,5519.73,13,Feminino,25-39 (Millennials),Gastronomia,Empório Du Homem,1027
+348352,5517.3,3,Masculino,25-39 (Millennials),Moda,Empório Du Homem,1028
+219003,5516.25,22,Masculino,40-54 (Gen X),Gastronomia,Camarão Express,1029
+112842,5511.03,42,Feminino,25-39 (Millennials),Gastronomia,Mini Kalzone,1030
+1167,5509.42,63,Feminino,40-54 (Gen X),Gastronomia,Café Cultura,1031
+437797,5507.0,2,Feminino,16-24 (Gen Z),Eletrônicos,Samsung,1032
+145456,5506.9800000000005,15,Feminino,40-54 (Gen X),Moda,Natura,1033
+146867,5501.77,25,Feminino,25-39 (Millennials),Moda,Riachuelo,1034
+225008,5499.6,5,Feminino,16-24 (Gen Z),Moda,Empório Du Homem,1035
+112202,5495.0,9,Feminino,25-39 (Millennials),Moda,Panvel Farmácias,1036
+352081,5494.1,2,Masculino,55-69 (Boomers),Moda,Békko,1037
+188200,5485.6,3,Feminino,40-54 (Gen X),Moda,Ortobom ,1038
+406253,5484.07,32,Feminino,25-39 (Millennials),Moda,Riachuelo,1039
+310247,5477.74,62,Feminino,40-54 (Gen X),Gastronomia,Cantinho Grill,1040
+320242,5477.0,1,Feminino,40-54 (Gen X),Eletrônicos,Samsung,1041
+329869,5476.25,7,Feminino,25-39 (Millennials),Calçados Femininos,Luz da Lua,1042
+348294,5473.65,32,Feminino,25-39 (Millennials),Gastronomia,Americanas,1043
+293452,5471.56,10,Feminino,40-54 (Gen X),Moda,Plié,1044
+427485,5471.4,25,Feminino,55-69 (Boomers),Gastronomia,Estação do Doce,1045
+251203,5471.33,25,Feminino,25-39 (Millennials),Infantil,Fátima Bebê,1046
+197627,5468.58,39,Feminino,25-39 (Millennials),Gastronomia,Officina Gelatiera,1047
+241802,5467.67,20,Feminino,25-39 (Millennials),Moda,Renner,1048
+303523,5462.5,3,Feminino,55-69 (Boomers),Moda,Live!,1049
+367392,5461.91,10,Feminino,25-39 (Millennials),Moda,Renner,1050
+240235,5456.97,63,Feminino,40-54 (Gen X),Gastronomia,Livraria Catarinense ,1051
+52421,5455.71,10,Feminino,25-39 (Millennials),Calçados Femininos,Luz da Lua,1052
+114307,5446.37,33,Masculino,40-54 (Gen X),Moda,BelShop,1053
+64017,5445.87,14,Feminino,25-39 (Millennials),Moda,Centauro,1054
+303684,5443.9,3,Feminino,40-54 (Gen X),Calçados,Arezzo,1055
+187964,5437.9800000000005,3,Masculino,40-54 (Gen X),Beleza e Bem-estar,BelShop,1056
+372911,5434.9,2,Masculino,40-54 (Gen X),Beleza e Bem-estar,Natura,1057
+438428,5432.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,1058
+426800,5430.0,1,Feminino,25-39 (Millennials),Moda,Tokaia,1059
+225619,5428.0,12,Masculino,40-54 (Gen X),Gastronomia,Las Leñas Parrilla Uruguaya,1060
+164749,5427.07,21,Feminino,55-69 (Boomers),Moda,Renner,1061
+383937,5426.92,7,Feminino,25-39 (Millennials),Gastronomia,Camarão Express,1062
+257399,5425.42,9,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,1063
+258725,5423.84,3,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1064
+194118,5423.65,15,Feminino,25-39 (Millennials),Moda,C&A,1065
+201564,5419.89,18,Masculino,40-54 (Gen X),Calçados,Pittol,1066
+360745,5413.14,1,Masculino,40-54 (Gen X),Hub da Saúde,Ortobom ,1067
+229324,5407.9,56,Feminino,40-54 (Gen X),Gastronomia,Camarão Express,1068
+258864,5405.64,6,Masculino,25-39 (Millennials),Moda,BelShop,1069
+139909,5399.47,20,Masculino,40-54 (Gen X),Moda,Camicado,1070
+332226,5394.0,1,Masculino,16-24 (Gen Z),Joalheria,Vivara,1071
+145026,5390.57,32,Feminino,40-54 (Gen X),Gastronomia,Griletto,1072
+200533,5386.13,3,Feminino,55-69 (Boomers),Moda,Békko,1073
+281113,5380.74,11,Feminino,25-39 (Millennials),Moda,Renner,1074
+375792,5377.0,1,Masculino,70+ (Silent),Eletrônicos,Samsung,1075
+257466,5373.01,9,Feminino,40-54 (Gen X),Moda,Renner,1076
+273812,5372.61,61,Masculino,25-39 (Millennials),Gastronomia,Burger King,1077
+225017,5359.6,5,Masculino,40-54 (Gen X),Moda,Empório Du Homem,1078
+127669,5354.9,6,Feminino,40-54 (Gen X),Moda,Renner,1079
+227544,5352.0,3,Feminino,25-39 (Millennials),Moda,Colcci,1080
+142210,5349.06,16,Feminino,25-39 (Millennials),Moda,Renner,1081
+155961,5343.87,9,Feminino,40-54 (Gen X),Moda,Me Linda,1082
+129688,5343.15,7,Feminino,40-54 (Gen X),Moda,Calvin Klein e Tommy Hilfiger,1083
+320428,5338.76,3,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1084
+231199,5338.67,19,Feminino,40-54 (Gen X),Moda,Riachuelo,1085
+214971,5338.08,7,Masculino,25-39 (Millennials),Beleza e Bem-estar,Vialaser,1086
+141012,5333.29,23,Masculino,25-39 (Millennials),Moda,Avatim,1087
+56813,5331.43,62,Feminino,40-54 (Gen X),Livrarias,Livraria Catarinense ,1088
+230286,5328.08,23,Masculino,25-39 (Millennials),Gastronomia,JAH Açaí,1089
+320254,5327.0,1,Masculino,55-69 (Boomers),Eletrônicos,Samsung,1090
+155175,5324.2,3,Masculino,55-69 (Boomers),Farmácias,Fátima Criança,1091
+297263,5318.5599999999995,3,Feminino,40-54 (Gen X),Moda,Békko,1092
+210298,5313.72,19,Feminino,40-54 (Gen X),Moda,C&A,1093
+210439,5301.04,87,Feminino,16-24 (Gen Z),Gastronomia,Mini Kalzone,1094
+242514,5300.89,41,Feminino,40-54 (Gen X),Gastronomia,Café Cultura,1095
+227395,5299.0,1,Feminino,55-69 (Boomers),Eletrônicos,Samsung,1096
+428838,5291.45,79,Masculino,25-39 (Millennials),Farmácias,Me Linda,1097
+192829,5286.52,15,Feminino,25-39 (Millennials),Moda,Lupo,1098
+400481,5283.9,4,Masculino,40-54 (Gen X),Eletrônicos,Samsung,1099
+4195,5280.75,27,Masculino,40-54 (Gen X),Infantil,Ri Happy,1100
+302242,5278.22,24,Feminino,40-54 (Gen X),Beleza e Bem-estar,O Boticário,1101
+14038,5277.0,1,Masculino,25-39 (Millennials),Eletrônicos,Samsung,1102
+350293,5273.68,42,Feminino,40-54 (Gen X),Gastronomia,Cacau Show,1103
+244796,5270.1,23,Feminino,55-69 (Boomers),Moda,Renner,1104
+168208,5269.099999999999,9,Feminino,25-39 (Millennials),Calçados Femininos,Luz da Lua,1105
+279577,5256.95,6,Feminino,25-39 (Millennials),Esportes,Centauro,1106
+243426,5255.87,7,Feminino,25-39 (Millennials),Casa e Decoração,Camicado,1107
+366066,5255.77,4,Feminino,25-39 (Millennials),Infantil,Fátima Bebê,1108
+305882,5252.46,25,Feminino,25-39 (Millennials),Gastronomia,Estacionamento - Nações Shopping,1109
+293235,5252.08,7,Feminino,25-39 (Millennials),Moda,Renner,1110
+138478,5251.07,14,Feminino,25-39 (Millennials),Moda,Ri Happy,1111
+432878,5247.0,3,Masculino,70+ (Silent),Moda,Tokaia,1112
+75238,5244.9,3,Feminino,40-54 (Gen X),Calçados Femininos,Luz da Lua,1113
+263084,5243.379999999999,6,Feminino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,1114
+299576,5240.23,11,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,1115
+279010,5239.5599999999995,20,Feminino,40-54 (Gen X),Moda,Mar de Maria ,1116
+272012,5238.72,11,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,1117
+258033,5237.85,2,Masculino,40-54 (Gen X),Gastronomia,Empório Du Homem,1118
+231571,5237.62,11,Masculino,40-54 (Gen X),Moda,C&A,1119
+194527,5237.36,13,Feminino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,1120
+255579,5230.47,11,Feminino,55-69 (Boomers),Moda,Colcci,1121
+128869,5230.04,25,Feminino,40-54 (Gen X),Moda,Cassol Centerlar,1122
+228462,5228.31,16,Masculino,25-39 (Millennials),Moda,Beagle,1123
+229507,5225.62,32,Feminino,55-69 (Boomers),Casa e Decoração,Camicado,1124
+4504,5221.9,28,Feminino,40-54 (Gen X),Gastronomia,Acuo,1125
+60189,5219.45,6,Masculino,25-39 (Millennials),Joalheria,Vivara,1126
+286416,5216.48,7,Feminino,25-39 (Millennials),Moda,Acuo,1127
+181646,5211.57,52,Feminino,25-39 (Millennials),Gastronomia,Mini Kalzone,1128
+229096,5209.78,25,Feminino,16-24 (Gen Z),Casa e Decoração,Camicado,1129
+129174,5208.5,18,Feminino,40-54 (Gen X),Beleza e Bem-estar,Camarão Express,1130
+300325,5208.38,10,Feminino,55-69 (Boomers),Moda,Farm,1131
+242728,5206.81,15,Feminino,25-39 (Millennials),Beleza e Bem-estar,Adcos,1132
+295105,5198.0,2,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,1133
+135232,5197.96,43,Feminino,40-54 (Gen X),Beleza e Bem-estar,Café Cultura,1134
+210401,5196.65,9,Feminino,25-39 (Millennials),Moda,Live!,1135
+449528,5195.1900000000005,5,Feminino,55-69 (Boomers),Moda,Dudalina,1136
+217742,5194.01,28,Feminino,40-54 (Gen X),Moda,Renner,1137
+122627,5192.59,26,Feminino,25-39 (Millennials),Moda,Mini Kalzone,1138
+356343,5189.7,4,Feminino,25-39 (Millennials),Moda,Damyller,1139
+180744,5188.07,27,Feminino,25-39 (Millennials),Moda,Renner,1140
+108211,5187.27,77,Masculino,16-24 (Gen Z),Gastronomia,z Bob's - Quiosque 2,1141
+149364,5187.16,19,Feminino,55-69 (Boomers),Moda,Avatim,1142
+254389,5186.37,11,Feminino,25-39 (Millennials),Moda,Renner,1143
+171711,5185.860000000001,3,Masculino,25-39 (Millennials),Calçados Femininos,Luz da Lua,1144
+224496,5180.030000000001,8,Feminino,55-69 (Boomers),Moda,Renner,1145
+349274,5179.599999999999,8,Masculino,25-39 (Millennials),Moda,Las Leñas Parrilla Uruguaya,1146
+262582,5176.0,1,Masculino,40-54 (Gen X),Eletrônicos,Samsung,1147
+199232,5166.67,9,Masculino,25-39 (Millennials),Moda,Casa Maria,1148
+273216,5166.0,1,Masculino,55-69 (Boomers),Eletrônicos,Samsung,1149
+356690,5163.0,3,Feminino,40-54 (Gen X),Moda,Tokaia,1150
+429366,5161.0,2,Masculino,25-39 (Millennials),Eletrônicos,Inspire Predrarias,1151
+114681,5153.67,5,Feminino,40-54 (Gen X),Casa e Decoração,Camicado,1152
+157816,5152.43,6,Feminino,40-54 (Gen X),Moda,Camicado,1153
+155789,5147.87,11,Feminino,25-39 (Millennials),Beleza e Bem-estar,Arezzo,1154
+147184,5143.83,20,Feminino,55-69 (Boomers),Calçados,Centauro,1155
+173754,5143.4,77,Feminino,40-54 (Gen X),Gastronomia,Casa Maria,1156
+128311,5140.57,35,Masculino,25-39 (Millennials),Não informado,z Naçoes Shopping Participações - Estacionamento,1157
+137313,5138.46,14,Feminino,25-39 (Millennials),Infantil,Café Cultura,1158
+232211,5137.82,49,Feminino,25-39 (Millennials),Gastronomia,Mini Kalzone,1159
+406887,5136.14,20,Feminino,16-24 (Gen Z),Gastronomia,Outback SteakHouse,1160
+260119,5134.0,16,Feminino,55-69 (Boomers),Beleza e Bem-estar,Café Cultura,1161
+232164,5133.5199999999995,7,Feminino,40-54 (Gen X),Moda,Colcci,1162
+34061,5132.38,36,Feminino,40-54 (Gen X),Gastronomia,Avatim,1163
+40522,5131.07,15,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,1164
+87515,5129.5199999999995,14,Feminino,40-54 (Gen X),Moda,Dudalina,1165
+217358,5128.14,32,Feminino,25-39 (Millennials),Gastronomia,JAH Açaí,1166
+279588,5122.31,1,Feminino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1167
+168984,5117.92,20,Feminino,25-39 (Millennials),Moda,Ri Happy,1168
+140514,5117.44,22,Feminino,40-54 (Gen X),Moda,Renner,1169
+289174,5114.75,23,Masculino,25-39 (Millennials),Gastronomia,Camarão Express,1170
+12885,5111.27,21,Masculino,25-39 (Millennials),Gastronomia,Damyller,1171
+148643,5109.5,8,Feminino,25-39 (Millennials),Calçados Femininos,Luz da Lua,1172
+192945,5104.88,16,Masculino,40-54 (Gen X),Moda,Polo Wear,1173
+251492,5104.55,6,Feminino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1174
+293809,5098.79,12,Feminino,40-54 (Gen X),Moda,Colcci,1175
+270090,5094.28,12,Feminino,40-54 (Gen X),Moda,Fátima Papelaria,1176
+6406,5089.82,31,Feminino,25-39 (Millennials),Infantil,Livraria Catarinense ,1177
+218857,5088.46,34,Feminino,25-39 (Millennials),Gastronomia,Renner,1178
+220964,5085.9,4,Feminino,55-69 (Boomers),Eletrônicos,Livraria Catarinense ,1179
+328579,5084.9800000000005,46,Feminino,25-39 (Millennials),Gastronomia,Renner,1180
+185158,5080.16,17,Feminino,25-39 (Millennials),Moda,Arezzo,1181
+222907,5077.2,2,Masculino,40-54 (Gen X),Joalheria,Békko,1182
+420560,5072.64,7,Feminino,25-39 (Millennials),Calçados,Crocs,1183
+380259,5070.54,15,Feminino,25-39 (Millennials),Gastronomia,JAH Açaí,1184
+128552,5069.88,22,Masculino,25-39 (Millennials),Gastronomia,Mini Kalzone,1185
+188100,5068.98,58,Masculino,40-54 (Gen X),Gastronomia,Dez Pastéis,1186
+116248,5067.8,10,Masculino,40-54 (Gen X),Casa e Decoração,Burger King,1187
+81693,5067.45,4,Feminino,25-39 (Millennials),Moda,Kings ,1188
+481873,5065.9,93,Masculino,40-54 (Gen X),Gastronomia,Burger King,1189
+353359,5065.62,1,Feminino,16-24 (Gen Z),Beleza e Bem-estar,Vialaser,1190
+233217,5061.03,16,Feminino,16-24 (Gen Z),Moda,Me Linda,1191
+9080,5053.95,18,Feminino,70+ (Silent),Moda,Renner,1192
+354200,5053.34,3,Feminino,25-39 (Millennials),Beleza e Bem-estar,Casa Maria,1193
+404703,5051.0,2,Feminino,40-54 (Gen X),Moda,Damyller,1194
+244314,5050.78,1,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1195
+433792,5050.200000000001,4,Masculino,40-54 (Gen X),Gastronomia,Békko,1196
+331893,5050.13,12,Feminino,55-69 (Boomers),Moda,Vivara,1197
+372473,5045.76,50,Feminino,25-39 (Millennials),Moda,Riachuelo,1198
+112067,5039.18,8,Feminino,40-54 (Gen X),Beleza e Bem-estar,Essence Parfums,1199
+95780,5038.3,19,Feminino,40-54 (Gen X),Gastronomia,JAH Açaí,1200
+149601,5037.96,42,Feminino,40-54 (Gen X),Gastronomia,Renner,1201
+244066,5037.54,20,Masculino,40-54 (Gen X),Gastronomia,McDonald's,1202
+442832,5037.0,9,Masculino,40-54 (Gen X),Gastronomia,St.Chicken,1203
+395507,5034.99,4,Feminino,55-69 (Boomers),Moda,Lupo,1204
+138065,5030.98,77,Feminino,40-54 (Gen X),Gastronomia,Mini Kalzone,1205
+285129,5028.0,1,Feminino,40-54 (Gen X),Eletrônicos,Samsung,1206
+310169,5026.56,12,Feminino,25-39 (Millennials),Moda,Arezzo,1207
+177232,5019.51,23,Feminino,40-54 (Gen X),Beleza e Bem-estar,Avatim,1208
+218181,5018.4800000000005,45,Masculino,40-54 (Gen X),Infantil,Fátima Bebê,1209
+12531,5015.29,15,Masculino,25-39 (Millennials),Moda,Camarão Express,1210
+194489,5013.67,13,Masculino,55-69 (Boomers),Casa e Decoração,Casa Maria,1211
+357238,5010.13,25,Feminino,40-54 (Gen X),Gastronomia,JAH Açaí,1212
+144184,5009.66,11,Feminino,40-54 (Gen X),Moda,Estacionamento - Nações Shopping,1213
+219461,5008.93,2,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1214
+273429,5007.0,1,Feminino,40-54 (Gen X),Eletrônicos,Samsung,1215
+230701,5006.67,11,Masculino,25-39 (Millennials),Moda,C&A,1216
+264806,5004.37,1,Feminino,70+ (Silent),Casa e Decoração,Cassol Centerlar,1217
+193519,5000.0,1,Feminino,25-39 (Millennials),Joalheria,Vivara,1218
+231343,4999.0,1,Masculino,40-54 (Gen X),Eletrônicos,Samsung,1219
+224994,4999.0,1,Feminino,40-54 (Gen X),Eletrônicos,Samsung,1220
+264483,4998.0,1,Feminino,25-39 (Millennials),Eletrônicos,Samsung,1221
+151781,4992.63,22,Masculino,25-39 (Millennials),Moda,Centauro,1222
+184630,4990.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,1223
+227198,4990.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,1224
+50674,4988.97,4,Feminino,40-54 (Gen X),Moda,Arezzo,1225
+159639,4988.17,6,Masculino,40-54 (Gen X),Moda,Reserva Nacoes Shopping,1226
+362070,4986.62,5,Feminino,25-39 (Millennials),Moda,Renner,1227
+160329,4984.93,20,Feminino,40-54 (Gen X),Moda,Riachuelo,1228
+185735,4980.9,2,Masculino,40-54 (Gen X),Joalheria,Békko,1229
+355879,4979.74,4,Masculino,40-54 (Gen X),Moda,Beagle,1230
+106325,4975.84,15,Feminino,25-39 (Millennials),Livrarias,Livraria Catarinense ,1231
+348656,4974.780000000001,27,Feminino,25-39 (Millennials),Moda,Americanas,1232
+368222,4968.98,11,Feminino,40-54 (Gen X),Moda,Renner,1233
+417443,4962.12,8,Feminino,25-39 (Millennials),Presentes e Acessórios,Bagaggio,1234
+261226,4961.46,5,Feminino,25-39 (Millennials),Moda,C&A,1235
+114570,4955.14,48,Masculino,40-54 (Gen X),Gastronomia,Americanas,1236
+120222,4954.46,16,Feminino,40-54 (Gen X),Moda,Luz da Lua,1237
+394770,4949.9,2,Masculino,25-39 (Millennials),Joalheria,Békko,1238
+207708,4949.4,4,Feminino,25-39 (Millennials),Moda,Acuo,1239
+157943,4948.68,5,Feminino,40-54 (Gen X),Moda,Damyller,1240
+371180,4947.45,2,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1241
+221802,4946.8,2,Feminino,70+ (Silent),Moda,Colcci,1242
+272622,4945.43,9,Masculino,40-54 (Gen X),Gastronomia,Mini Kalzone,1243
+323105,4941.8,1,Masculino,25-39 (Millennials),Joalheria,Vivara,1244
+342775,4941.0,9,Feminino,25-39 (Millennials),Moda,Renner,1245
+394595,4938.9400000000005,9,Feminino,55-69 (Boomers),Moda,Békko,1246
+219217,4938.5,5,Feminino,55-69 (Boomers),Moda,Békko,1247
+90482,4927.62,8,Masculino,40-54 (Gen X),Moda,Békko,1248
+369873,4927.26,6,Feminino,55-69 (Boomers),Moda,Renner,1249
+186368,4925.83,2,Feminino,40-54 (Gen X),Calçados Femininos,Luz da Lua,1250
+144203,4923.34,9,Feminino,40-54 (Gen X),Esportes,FATIMA ESPORTES,1251
+174465,4922.69,17,Feminino,25-39 (Millennials),Moda,Cacau Show,1252
+506,4919.63,56,Feminino,25-39 (Millennials),Eletrodomésticos,Americanas,1253
+435875,4918.7,7,Masculino,40-54 (Gen X),Calçados,Pittol,1254
+294327,4918.679999999999,7,Masculino,25-39 (Millennials),Esportes,Calvin Klein e Tommy Hilfiger,1255
+194594,4917.16,31,Feminino,25-39 (Millennials),Moda,Renner,1256
+320805,4915.64,16,Feminino,25-39 (Millennials),Moda,Renner,1257
+218089,4915.23,9,Feminino,25-39 (Millennials),Moda,C&A,1258
+376552,4914.0,1,Masculino,40-54 (Gen X),Moda,Calvin Klein e Tommy Hilfiger,1259
+307275,4908.95,3,Feminino,40-54 (Gen X),Moda,Acuo,1260
+138838,4908.76,15,Feminino,40-54 (Gen X),Pets,Cobasi,1261
+168931,4906.23,21,Feminino,40-54 (Gen X),Beleza e Bem-estar,Livraria Catarinense ,1262
+190270,4905.13,24,Feminino,25-39 (Millennials),Gastronomia,Vivara,1263
+88458,4904.18,31,Masculino,40-54 (Gen X),Moda,Renner,1264
+267713,4899.0,1,Masculino,55-69 (Boomers),Eletrônicos,Samsung,1265
+239812,4899.0,1,Feminino,25-39 (Millennials),Eletrônicos,Samsung,1266
+266515,4898.89,4,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,1267
+224529,4897.0,2,Feminino,40-54 (Gen X),Eletrônicos,Samsung,1268
+83093,4894.35,21,Masculino,25-39 (Millennials),Moda,Békko,1269
+139085,4889.400000000001,33,Feminino,25-39 (Millennials),Moda,Renner,1270
+227948,4888.85,13,Feminino,25-39 (Millennials),Moda,Renner,1271
+196375,4880.92,24,Feminino,40-54 (Gen X),Moda,Youcom,1272
+233721,4878.3099999999995,8,Feminino,40-54 (Gen X),Moda,Beagle,1273
+88711,4878.11,11,Masculino,55-69 (Boomers),Moda,Colcci,1274
+246234,4872.799999999999,2,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1275
+138477,4871.02,9,Feminino,55-69 (Boomers),Moda,BelShop,1276
+318206,4867.47,21,Masculino,25-39 (Millennials),Moda,Polo Wear,1277
+154484,4864.84,5,Feminino,40-54 (Gen X),Calçados Femininos,Luz da Lua,1278
+270737,4864.4,4,Feminino,55-69 (Boomers),Moda,Dudalina,1279
+385429,4857.0,1,Masculino,55-69 (Boomers),Hub da Saúde,Ortobom ,1280
+100891,4853.44,16,Feminino,25-39 (Millennials),Moda,C&A,1281
+232166,4852.01,8,Feminino,25-39 (Millennials),Calçados Femininos,Luz da Lua,1282
+214193,4852.01,21,Feminino,16-24 (Gen Z),Gastronomia,Cantinho Grill,1283
+156720,4849.38,79,Feminino,40-54 (Gen X),Gastronomia,Estação do Doce,1284
+421826,4846.88,31,Feminino,40-54 (Gen X),Gastronomia,JAH Açaí,1285
+250040,4846.17,70,Masculino,40-54 (Gen X),Gastronomia,Camarão Express,1286
+2025,4842.29,30,Masculino,40-54 (Gen X),Gastronomia,Café Cultura,1287
+402806,4839.9,3,Masculino,25-39 (Millennials),Eletrônicos,Samsung,1288
+199556,4837.89,22,Feminino,25-39 (Millennials),Moda,Renner,1289
+261950,4837.11,24,Feminino,40-54 (Gen X),Moda,Farm,1290
+57933,4833.64,3,Masculino,40-54 (Gen X),Beleza e Bem-estar,Essence Parfums,1291
+79564,4832.94,15,Feminino,25-39 (Millennials),Moda,Renner,1292
+225284,4832.53,13,Feminino,25-39 (Millennials),Moda,Farm,1293
+255707,4824.75,29,Feminino,40-54 (Gen X),Gastronomia,Cantinho Grill,1294
+362600,4820.38,10,Masculino,25-39 (Millennials),Moda,C&A,1295
+194769,4818.46,31,Feminino,55-69 (Boomers),Moda,C&A,1296
+330539,4817.14,21,Feminino,40-54 (Gen X),Moda,Riachuelo,1297
+262996,4814.88,1,Feminino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,1298
+248117,4812.820000000001,3,Feminino,40-54 (Gen X),Beleza e Bem-estar,Cassol Centerlar,1299
+271172,4804.2699999999995,10,Feminino,25-39 (Millennials),Moda,Renner,1300
+61888,4800.4,7,Feminino,40-54 (Gen X),Moda,Renner,1301
+273277,4800.31,15,Feminino,40-54 (Gen X),Moda,Lupo,1302
+219159,4799.0,1,Feminino,55-69 (Boomers),Eletrônicos,Samsung,1303
+232061,4798.0,1,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1304
+169517,4795.86,30,Feminino,25-39 (Millennials),Gastronomia,Camarão Express,1305
+204091,4793.0,3,Feminino,55-69 (Boomers),Moda,Tokaia,1306
+116902,4792.83,15,Feminino,25-39 (Millennials),Farmácias,Me Linda,1307
+273484,4791.07,5,Feminino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1308
+146569,4790.0,1,Feminino,40-54 (Gen X),Joalheria,Vivara,1309
+127751,4786.21,29,Feminino,25-39 (Millennials),Gastronomia,Lug's,1310
+141841,4786.09,12,Feminino,55-69 (Boomers),Moda,Calvin Klein e Tommy Hilfiger,1311
+240306,4785.05,8,Masculino,25-39 (Millennials),Moda,Youcom,1312
+453611,4785.0,3,Masculino,40-54 (Gen X),Joalheria,Pandora,1313
+62105,4785.0,18,Masculino,55-69 (Boomers),Gastronomia,Cobasi,1314
+123803,4779.92,29,Feminino,40-54 (Gen X),Moda,Mini Kalzone,1315
+64348,4779.43,24,Feminino,25-39 (Millennials),Gastronomia,Camarão Express,1316
+302132,4779.12,21,Masculino,25-39 (Millennials),Moda,Cacau Show,1317
+215305,4778.89,6,Feminino,25-39 (Millennials),Moda,Mar de Maria ,1318
+219533,4778.24,55,Feminino,25-39 (Millennials),Gastronomia,Panvel Farmácias,1319
+344126,4775.57,10,Masculino,25-39 (Millennials),Gastronomia,Santo Boteco,1320
+92716,4775.41,19,Feminino,25-39 (Millennials),Moda,Acuo,1321
+160878,4770.56,32,Feminino,40-54 (Gen X),Moda,JAH Açaí,1322
+272329,4769.9,24,Masculino,25-39 (Millennials),Gastronomia,z Naçoes Shopping Participações - Estacionamento,1323
+385270,4763.7,8,Feminino,40-54 (Gen X),Moda,Hope Nacoes Shopping,1324
+275161,4760.88,16,Feminino,40-54 (Gen X),Moda,Cobasi,1325
+314497,4758.55,8,Feminino,40-54 (Gen X),Moda,Arezzo,1326
+360709,4752.0,2,Masculino,40-54 (Gen X),Gastronomia,Empório Du Homem,1327
+127119,4750.25,21,Masculino,25-39 (Millennials),Gastronomia - Sorvetes,Cobasi,1328
+438427,4750.0,1,Feminino,16-24 (Gen Z),Joalheria,Vivara,1329
+130094,4749.79,24,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,1330
+59631,4749.51,19,Feminino,16-24 (Gen Z),Beleza e Bem-estar,Uebel Make Up,1331
+367701,4748.77,8,Masculino,55-69 (Boomers),Gastronomia,Las Leñas Parrilla Uruguaya,1332
+452253,4740.0,1,Masculino,55-69 (Boomers),Joalheria,Vivara,1333
+496498,4740.0,1,Masculino,55-69 (Boomers),Joalheria,Vivara,1334
+127140,4735.39,14,Feminino,55-69 (Boomers),Moda,Renner,1335
+287904,4732.38,4,Masculino,40-54 (Gen X),Moda,Békko,1336
+253319,4724.21,31,Feminino,55-69 (Boomers),Gastronomia,Café Cultura,1337
+2337,4720.59,14,Masculino,40-54 (Gen X),Calçados,Casa Maria,1338
+396897,4719.35,6,Feminino,25-39 (Millennials),Joalheria,Vivara,1339
+112144,4717.95,4,Masculino,25-39 (Millennials),Gastronomia,Las Leñas Parrilla Uruguaya,1340
+384169,4717.1900000000005,7,Feminino,25-39 (Millennials),Calçados,Arezzo,1341
+170683,4716.9,12,Feminino,40-54 (Gen X),Calçados Femininos,Luz da Lua,1342
+355866,4716.150000000001,7,Masculino,40-54 (Gen X),Gastronomia,Acuo,1343
+406689,4714.73,4,Feminino,40-54 (Gen X),Moda,C&A,1344
+442548,4714.14,2,Feminino,70+ (Silent),Casa e Decoração,Cassol Centerlar,1345
+230323,4713.99,13,Feminino,25-39 (Millennials),Moda,Békko,1346
+319165,4711.74,12,Feminino,25-39 (Millennials),Moda,Renner,1347
+407833,4711.530000000001,13,Feminino,25-39 (Millennials),Calçados,Arezzo,1348
+370571,4710.179999999999,13,Masculino,40-54 (Gen X),Livrarias,Livraria Catarinense ,1349
+121697,4709.3,23,Feminino,40-54 (Gen X),Beleza e Bem-estar,Cobasi,1350
+73696,4709.08,34,Feminino,40-54 (Gen X),Eletrodomésticos,Americanas,1351
+221592,4708.5,7,Masculino,40-54 (Gen X),Gastronomia,Café Cultura,1352
+220868,4706.11,41,Masculino,16-24 (Gen Z),Não informado,Kopenhagen,1353
+14496,4704.11,1,Feminino,25-39 (Millennials),Joalheria,Gisdany,1354
+115692,4702.52,21,Feminino,25-39 (Millennials),Infantil,Fátima Criança,1355
+128638,4699.0,1,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,1356
+279985,4698.24,6,Feminino,55-69 (Boomers),Beleza e Bem-estar,Café Cultura,1357
+239339,4697.06,60,Feminino,25-39 (Millennials),Gastronomia,z Naçoes Shopping Participações - Estacionamento,1358
+413233,4693.99,4,Masculino,40-54 (Gen X),Gastronomia,Café Cultura,1359
+219130,4693.67,1,Masculino,25-39 (Millennials),Joalheria,Vivara,1360
+375453,4692.13,2,Masculino,25-39 (Millennials),Ótica,GrandVision by Fototica,1361
+320111,4689.59,17,Feminino,25-39 (Millennials),Moda,Renner,1362
+403647,4687.72,14,Feminino,40-54 (Gen X),Gastronomia,Panda Sushi,1363
+229838,4687.19,12,Feminino,40-54 (Gen X),Gastronomia,Milkymoo,1364
+138868,4684.84,10,Feminino,40-54 (Gen X),Gastronomia,Griletto,1365
+269614,4677.55,27,Feminino,40-54 (Gen X),Moda,McDonald's,1366
+194943,4672.29,97,Feminino,25-39 (Millennials),Gastronomia,Lug's,1367
+152083,4667.85,10,Feminino,40-54 (Gen X),Moda,Acuo,1368
+154321,4664.08,33,Masculino,40-54 (Gen X),Moda,Renner,1369
+232804,4663.04,50,Masculino,25-39 (Millennials),Beleza e Bem-estar,O Boticário,1370
+141775,4660.21,21,Feminino,40-54 (Gen X),Moda,Luz da Lua,1371
+116144,4659.77,10,Feminino,25-39 (Millennials),Esportes,Centauro,1372
+334384,4659.0,2,Masculino,25-39 (Millennials),Hub da Saúde,Ortobom ,1373
+159779,4647.37,12,Feminino,25-39 (Millennials),Moda,Renner,1374
+198052,4645.35,12,Feminino,25-39 (Millennials),Moda,Riachuelo,1375
+304437,4645.23,16,Feminino,55-69 (Boomers),Moda,Damyller,1376
+271392,4643.900000000001,19,Feminino,40-54 (Gen X),Moda,Griletto,1377
+290092,4640.8,3,Feminino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1378
+170290,4638.14,14,Feminino,40-54 (Gen X),Beleza e Bem-estar,BelShop,1379
+111650,4635.36,13,Feminino,16-24 (Gen Z),Moda,C&A,1380
+220304,4634.41,11,Feminino,40-54 (Gen X),Moda,Camicado,1381
+175324,4630.82,16,Feminino,25-39 (Millennials),Infantil,Ri Happy,1382
+154923,4630.14,24,Masculino,55-69 (Boomers),Moda,Beagle,1383
+230438,4627.54,12,Feminino,40-54 (Gen X),Gastronomia,Cassol Centerlar,1384
+146510,4624.5199999999995,17,Feminino,16-24 (Gen Z),Moda,Centauro,1385
+407729,4623.27,18,Feminino,40-54 (Gen X),Casa e Decoração,Americanas,1386
+323795,4620.9,19,Feminino,25-39 (Millennials),Moda,Livraria Catarinense ,1387
+97040,4620.62,20,Feminino,25-39 (Millennials),Gastronomia,Mini Kalzone,1388
+304587,4617.53,12,Masculino,25-39 (Millennials),Moda,Renner,1389
+233625,4617.0,1,Feminino,40-54 (Gen X),Eletrônicos,Samsung,1390
+190238,4615.5199999999995,9,Feminino,55-69 (Boomers),Moda,BelShop,1391
+138454,4614.88,10,Feminino,25-39 (Millennials),Moda,Békko,1392
+188080,4609.18,5,Feminino,25-39 (Millennials),Beleza e Bem-estar,Dudalina,1393
+185897,4607.22,7,Feminino,25-39 (Millennials),Moda,Dudalina,1394
+441720,4606.74,7,Masculino,16-24 (Gen Z),Moda,Pittol,1395
+332087,4599.46,17,Feminino,55-69 (Boomers),Moda,C&A,1396
+57444,4598.7,5,Feminino,25-39 (Millennials),Gastronomia,Casa Maria,1397
+23788,4598.63,16,Masculino,40-54 (Gen X),Esportes,Centauro,1398
+410472,4593.47,25,Masculino,40-54 (Gen X),Farmácias,Me Linda,1399
+229861,4590.95,19,Masculino,25-39 (Millennials),Gastronomia,Las Leñas Parrilla Uruguaya,1400
+244027,4589.320000000001,2,Feminino,25-39 (Millennials),Presentes e Acessórios,Bagaggio,1401
+389924,4586.0,2,Masculino,70+ (Silent),Eletrônicos,Samsung,1402
+177108,4582.25,17,Masculino,16-24 (Gen Z),Papelaria,Fátima Papelaria,1403
+389097,4582.05,2,Masculino,25-39 (Millennials),Moda,Békko,1404
+35394,4579.49,38,Feminino,40-54 (Gen X),Gastronomia,Americanas,1405
+230771,4579.45,6,Feminino,25-39 (Millennials),Casa e Decoração,Camicado,1406
+171048,4574.2,40,Feminino,25-39 (Millennials),Gastronomia,Estacionamento - Nações Shopping,1407
+233921,4569.65,17,Masculino,25-39 (Millennials),Gastronomia,Estacionamento - Nações Shopping,1408
+426306,4567.98,4,Masculino,25-39 (Millennials),Moda,C&A,1409
+357999,4566.74,60,Feminino,25-39 (Millennials),Gastronomia,JAH Açaí,1410
+184761,4564.72,8,Feminino,25-39 (Millennials),Calçados,Arezzo,1411
+239065,4563.6900000000005,6,Feminino,25-39 (Millennials),Moda,Colcci,1412
+439853,4556.99,3,Feminino,25-39 (Millennials),Moda,Empório Du Homem,1413
+62696,4555.1900000000005,17,Feminino,40-54 (Gen X),Moda,C&A,1414
+109667,4547.21,15,Feminino,25-39 (Millennials),Moda,Renner,1415
+191910,4542.6,2,Feminino,40-54 (Gen X),Joalheria,Livraria Catarinense ,1416
+167402,4542.08,23,Feminino,25-39 (Millennials),Moda,Livraria Catarinense ,1417
+252059,4534.68,16,Masculino,40-54 (Gen X),Gastronomia,Camarão Express,1418
+188690,4534.42,15,Feminino,40-54 (Gen X),Moda,Renner,1419
+56816,4530.92,40,Feminino,25-39 (Millennials),Gastronomia,Cacau Show,1420
+295043,4529.39,2,Feminino,25-39 (Millennials),Infantil,Fátima Bebê,1421
+362290,4527.4,4,Feminino,25-39 (Millennials),Moda,Lança Perfume,1422
+194613,4526.76,7,Masculino,40-54 (Gen X),Moda,Youcom,1423
+88619,4526.24,3,Feminino,40-54 (Gen X),Beleza e Bem-estar,Farm,1424
+218594,4525.45,7,Masculino,40-54 (Gen X),Infantil,Arezzo,1425
+183686,4525.06,26,Feminino,40-54 (Gen X),Moda,Renner,1426
+280427,4523.64,5,Feminino,40-54 (Gen X),Moda,Camicado,1427
+327273,4518.13,11,Feminino,40-54 (Gen X),Moda,Renner,1428
+286673,4517.98,5,Feminino,40-54 (Gen X),Moda,Mar de Maria ,1429
+156517,4510.62,15,Feminino,40-54 (Gen X),Moda,Ri Happy,1430
+120527,4510.39,17,Masculino,40-54 (Gen X),Beleza e Bem-estar,Natura,1431
+37282,4509.41,22,Feminino,16-24 (Gen Z),Livrarias,Livraria Catarinense ,1432
+283429,4509.04,30,Feminino,40-54 (Gen X),Gastronomia,Mini Kalzone,1433
+137915,4504.64,10,Feminino,55-69 (Boomers),Moda,Beagle,1434
+149195,4503.92,16,Feminino,25-39 (Millennials),Moda,FATIMA ESPORTES,1435
+187526,4500.0,1,Masculino,40-54 (Gen X),Moda,Empório Du Homem,1436
+301287,4500.0,1,Feminino,25-39 (Millennials),Joalheria,Vivara,1437
+224176,4499.0,1,Masculino,25-39 (Millennials),Eletrônicos,Samsung,1438
+185954,4498.84,2,Masculino,40-54 (Gen X),Beleza e Bem-estar,BelShop,1439
+133815,4498.29,6,Feminino,40-54 (Gen X),Calçados,Arezzo,1440
+128469,4498.0,1,Feminino,25-39 (Millennials),Moda,Tokaia,1441
+357703,4498.0,1,Masculino,40-54 (Gen X),Moda,Tokaia,1442
+366051,4494.75,17,Feminino,40-54 (Gen X),Moda,Pittol,1443
+39005,4491.4,2,Masculino,40-54 (Gen X),Eletrônicos,Livraria Catarinense ,1444
+387125,4490.37,8,Masculino,40-54 (Gen X),Gastronomia,Camarão Express,1445
+230793,4490.0,1,Masculino,40-54 (Gen X),Joalheria,Vivara,1446
+302856,4487.3,6,Masculino,55-69 (Boomers),Beleza e Bem-estar,FATIMA ESPORTES,1447
+232878,4486.26,9,Feminino,40-54 (Gen X),Moda,Estacionamento - Nações Shopping,1448
+308821,4485.78,13,Feminino,25-39 (Millennials),Moda,Renner,1449
+106254,4484.38,15,Feminino,25-39 (Millennials),Moda,C&A,1450
+184507,4482.13,31,Feminino,55-69 (Boomers),Gastronomia,Mini Kalzone,1451
+289650,4480.39,11,Feminino,40-54 (Gen X),Moda,C&A,1452
+133542,4479.2,3,Feminino,25-39 (Millennials),Moda,Lança Perfume,1453
+158558,4470.83,36,Feminino,16-24 (Gen Z),Gastronomia,McDonald's,1454
+246728,4470.72,9,Feminino,40-54 (Gen X),Moda,C&A,1455
+226545,4469.5,5,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,1456
+442292,4466.85,1,Feminino,25-39 (Millennials),Hub da Saúde,Ortobom ,1457
+296122,4464.4800000000005,28,Feminino,40-54 (Gen X),Gastronomia,McDonald's,1458
+171127,4461.01,20,Feminino,40-54 (Gen X),Moda,C&A,1459
+122376,4454.24,7,Masculino,40-54 (Gen X),Moda,Youcom,1460
+320649,4453.62,15,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,1461
+233772,4452.65,7,Feminino,40-54 (Gen X),Moda,Cobasi,1462
+227631,4452.1900000000005,18,Feminino,55-69 (Boomers),Gastronomia,Cobasi,1463
+185781,4448.84,15,Feminino,25-39 (Millennials),Gastronomia,Riachuelo,1464
+12083,4448.06,9,Feminino,25-39 (Millennials),Moda,Pandora,1465
+193266,4446.83,12,Feminino,55-69 (Boomers),Moda,Renner,1466
+6780,4444.24,12,Feminino,40-54 (Gen X),Beleza e Bem-estar,O Boticário,1467
+100912,4440.71,28,Feminino,40-54 (Gen X),Gastronomia,Griletto,1468
+355073,4440.13,15,Feminino,16-24 (Gen Z),Moda,Burger King,1469
+139403,4436.58,7,Feminino,40-54 (Gen X),Calçados,Havaianas,1470
+402744,4435.38,4,Feminino,16-24 (Gen Z),Moda,Ortobom ,1471
+313045,4435.0,2,Feminino,55-69 (Boomers),Ótica,GrandVision by Fototica,1472
+187758,4430.71,8,Masculino,25-39 (Millennials),Moda,Luz da Lua,1473
+247690,4428.1,4,Masculino,40-54 (Gen X),Moda,Empório Du Homem,1474
+405264,4424.87,4,Feminino,40-54 (Gen X),Moda,Essence Parfums,1475
+366462,4424.13,4,Feminino,25-39 (Millennials),Moda,Békko,1476
+403152,4419.8099999999995,3,Masculino,25-39 (Millennials),Moda,Békko,1477
+228591,4419.5,2,Masculino,70+ (Silent),Moda,Békko,1478
+3428,4419.35,31,Feminino,40-54 (Gen X),Livrarias,Livraria Catarinense ,1479
+382428,4417.36,7,Feminino,40-54 (Gen X),Moda,Bagaggio,1480
+184205,4416.75,9,Feminino,25-39 (Millennials),Moda,C&A,1481
+221362,4415.7,25,Feminino,25-39 (Millennials),Beleza e Bem-estar,Natura,1482
+309298,4415.57,50,Feminino,40-54 (Gen X),Gastronomia,McDonald's,1483
+349445,4413.81,9,Feminino,40-54 (Gen X),Moda,Renner,1484
+176589,4411.99,22,Feminino,25-39 (Millennials),Infantil,Fátima Criança,1485
+231393,4409.36,7,Feminino,40-54 (Gen X),Moda,Acuo,1486
+287549,4404.08,18,Feminino,40-54 (Gen X),Beleza e Bem-estar,Natura,1487
+321572,4401.2,3,Feminino,40-54 (Gen X),Moda,Colcci,1488
+239261,4400.27,50,Feminino,40-54 (Gen X),Gastronomia,Americanas,1489
+386375,4400.0,1,Feminino,25-39 (Millennials),Joalheria,Vivara,1490
+233733,4399.77,30,Feminino,55-69 (Boomers),Moda,Lupo,1491
+223708,4398.66,23,Feminino,25-39 (Millennials),Gastronomia,Camarão Express,1492
+81399,4394.69,8,Masculino,25-39 (Millennials),Gastronomia,Santo Boteco,1493
+114992,4392.2,25,Masculino,25-39 (Millennials),Gastronomia,C&A,1494
+140684,4391.52,35,Masculino,40-54 (Gen X),Pets,Cobasi,1495
+195435,4389.099999999999,3,Feminino,40-54 (Gen X),Moda,Empório Du Homem,1496
+137869,4387.35,6,Feminino,40-54 (Gen X),Moda,Youcom,1497
+230841,4386.89,4,Feminino,25-39 (Millennials),Moda,Békko,1498
+243055,4385.68,4,Masculino,16-24 (Gen Z),Esportes,Centauro,1499
+230556,4384.38,15,Feminino,40-54 (Gen X),Moda,Camarão Express,1500
+202659,4383.97,9,Feminino,25-39 (Millennials),Moda,Renner,1501
+254965,4381.42,16,Feminino,40-54 (Gen X),Moda,Renner,1502
+240533,4380.5,9,Masculino,40-54 (Gen X),Beleza e Bem-estar,Essence Parfums,1503
+192390,4380.0,2,Masculino,40-54 (Gen X),Moda,Tokaia,1504
+320552,4379.69,4,Masculino,25-39 (Millennials),Moda,Burger King,1505
+379486,4378.42,13,Masculino,70+ (Silent),Moda,Avatim,1506
+191314,4371.33,17,Feminino,40-54 (Gen X),Moda,Riachuelo,1507
+385579,4368.0,17,Masculino,25-39 (Millennials),Gastronomia,Santo Boteco,1508
+224350,4366.82,25,Feminino,40-54 (Gen X),Gastronomia,Café Cultura,1509
+410906,4362.08,14,Masculino,40-54 (Gen X),Calçados,Arezzo,1510
+225223,4358.38,30,Masculino,25-39 (Millennials),Gastronomia,Camarão Express,1511
+434202,4358.33,5,Feminino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,1512
+224985,4358.0,1,Feminino,55-69 (Boomers),Moda,Colcci,1513
+302414,4356.66,10,Feminino,40-54 (Gen X),Moda,Renner,1514
+381739,4353.0,1,Feminino,25-39 (Millennials),Moda,Lança Perfume,1515
+218576,4351.0,2,Feminino,40-54 (Gen X),Moda,Damyller,1516
+118798,4349.74,16,Masculino,25-39 (Millennials),Moda,Renner,1517
+253960,4349.0,2,Feminino,25-39 (Millennials),Moda,Colcci,1518
+206616,4348.77,33,Feminino,40-54 (Gen X),Moda,Americanas,1519
+300743,4346.11,1,Feminino,25-39 (Millennials),Calçados Femininos,Luz da Lua,1520
+281976,4342.29,17,Feminino,40-54 (Gen X),Moda,Youcom,1521
+399834,4342.099999999999,6,Masculino,25-39 (Millennials),Gastronomia,Livraria Catarinense ,1522
+225550,4339.5,19,Feminino,25-39 (Millennials),Infantil,Cobasi,1523
+359215,4339.08,31,Feminino,25-39 (Millennials),Gastronomia,Kopenhagen,1524
+411611,4337.4,91,Feminino,25-39 (Millennials),Gastronomia,McDonald's,1525
+278493,4333.67,13,Masculino,25-39 (Millennials),Moda,Renner,1526
+135480,4333.2,17,Feminino,25-39 (Millennials),Moda,Renner,1527
+368159,4332.95,11,Feminino,40-54 (Gen X),Gastronomia,Renner,1528
+191745,4332.8,2,Masculino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,1529
+354419,4329.59,9,Feminino,16-24 (Gen Z),Moda,Lupo,1530
+434269,4325.23,5,Masculino,40-54 (Gen X),Infantil,Fátima Criança,1531
+112467,4324.0,2,Masculino,25-39 (Millennials),Joalheria,Cobasi,1532
+310851,4321.610000000001,8,Feminino,40-54 (Gen X),Moda,Pittol,1533
+416220,4320.17,37,Feminino,16-24 (Gen Z),Gastronomia,C&A,1534
+368605,4319.3099999999995,3,Feminino,25-39 (Millennials),Moda,Tokaia,1535
+407316,4319.13,39,Feminino,40-54 (Gen X),Eletrodomésticos,Americanas,1536
+167003,4316.03,11,Feminino,40-54 (Gen X),Gastronomia,JAH Açaí,1537
+232288,4313.96,10,Feminino,40-54 (Gen X),Moda,Fátima Criança,1538
+302097,4311.44,8,Feminino,25-39 (Millennials),Beleza e Bem-estar,Essence Parfums,1539
+227753,4310.9,29,Feminino,40-54 (Gen X),Gastronomia,Chope do Mestre,1540
+228998,4309.74,7,Feminino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1541
+15273,4309.7,44,Feminino,25-39 (Millennials),Gastronomia,The BBurgers,1542
+230010,4309.5,1,Masculino,40-54 (Gen X),Joalheria,Vivara,1543
+117933,4309.150000000001,6,Feminino,40-54 (Gen X),Calçados,Havaianas,1544
+293280,4308.200000000001,18,Feminino,25-39 (Millennials),Moda,Renner,1545
+407314,4307.8,15,Masculino,40-54 (Gen X),Farmácias,Panvel Farmácias,1546
+230803,4307.34,22,Feminino,55-69 (Boomers),Moda,Las Leñas Parrilla Uruguaya,1547
+154961,4306.8,7,Masculino,25-39 (Millennials),Calçados,Centauro,1548
+127384,4306.72,7,Masculino,40-54 (Gen X),Casa e Decoração,Camicado,1549
+366188,4306.5,14,Feminino,25-39 (Millennials),Moda,Renner,1550
+307043,4305.4,4,Feminino,40-54 (Gen X),Calçados,Arezzo,1551
+109428,4302.1900000000005,24,Feminino,40-54 (Gen X),Casa e Decoração,Casa Maria,1552
+192690,4301.34,27,Feminino,40-54 (Gen X),Pets,Cobasi,1553
+210185,4300.35,97,Feminino,40-54 (Gen X),Gastronomia,Mini Kalzone,1554
+217001,4300.0,1,Masculino,25-39 (Millennials),Moda,Empório Du Homem,1555
+435423,4299.04,1,Feminino,40-54 (Gen X),Hub da Saúde,Ortobom ,1556
+433589,4297.62,9,Feminino,25-39 (Millennials),Moda,Farm,1557
+171776,4296.7,61,Masculino,25-39 (Millennials),Gastronomia,McDonald's,1558
+502258,4294.4400000000005,10,Masculino,55-69 (Boomers),Gastronomia,Las Leñas Parrilla Uruguaya,1559
+128063,4294.25,40,Feminino,25-39 (Millennials),Serviços,Estacionamento - Nações Shopping,1560
+305658,4289.0,1,Masculino,40-54 (Gen X),Joalheria,Vivara,1561
+98006,4288.37,17,Feminino,40-54 (Gen X),Gastronomia,Donna Mirô,1562
+291492,4286.75,34,Masculino,25-39 (Millennials),Gastronomia,Café Cultura,1563
+440056,4283.2,10,Feminino,55-69 (Boomers),Moda,C&A,1564
+183727,4282.799999999999,5,Masculino,40-54 (Gen X),Moda,GrandVision by Fototica,1565
+194347,4279.67,4,Masculino,55-69 (Boomers),Moda,C&A,1566
+444504,4279.47,1,Masculino,40-54 (Gen X),Presentes e Acessórios,Bagaggio,1567
+268592,4279.070000000001,12,Feminino,40-54 (Gen X),Moda,Renner,1568
+255510,4277.7,6,Feminino,25-39 (Millennials),Calçados Femininos,Luz da Lua,1569
+187089,4270.41,4,Masculino,55-69 (Boomers),Moda,C&A,1570
+446923,4270.0,3,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1571
+282505,4266.23,28,Masculino,70+ (Silent),Gastronomia,Mini Kalzone,1572
+367378,4265.66,5,Feminino,40-54 (Gen X),Moda,Cassol Centerlar,1573
+197973,4265.61,13,Feminino,25-39 (Millennials),Moda,Renner,1574
+36967,4265.29,14,Feminino,40-54 (Gen X),Moda,Havaianas,1575
+40116,4264.58,13,Masculino,40-54 (Gen X),Esportes,Livraria Catarinense ,1576
+1303,4263.16,26,Feminino,40-54 (Gen X),Moda,Renner,1577
+439873,4256.46,1,Feminino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,1578
+397878,4256.0,1,Masculino,40-54 (Gen X),Eletrônicos,Samsung,1579
+225232,4256.0,1,Masculino,40-54 (Gen X),Eletrônicos,Samsung,1580
+249504,4254.78,12,Masculino,25-39 (Millennials),Infantil,Ri Happy,1581
+409240,4253.55,13,Feminino,25-39 (Millennials),Moda,C&A,1582
+218320,4253.25,15,Feminino,25-39 (Millennials),Moda,Avatim,1583
+310440,4250.0,1,Masculino,40-54 (Gen X),Joalheria,Vivara,1584
+115716,4249.360000000001,2,Feminino,40-54 (Gen X),Calçados Femininos,Luz da Lua,1585
+414197,4249.2,3,Masculino,25-39 (Millennials),Moda,Dudalina,1586
+302455,4246.96,3,Feminino,55-69 (Boomers),Calçados,Arezzo,1587
+221848,4244.25,17,Feminino,55-69 (Boomers),Moda,Café Cultura,1588
+362164,4244.05,5,Feminino,25-39 (Millennials),Moda,Empório Du Homem,1589
+202774,4243.47,12,Feminino,40-54 (Gen X),Moda,Avatim,1590
+186215,4243.05,1,Feminino,40-54 (Gen X),Beleza e Bem-estar,Vialaser,1591
+6622,4241.99,10,Feminino,40-54 (Gen X),Gastronomia,JAH Açaí,1592
+4497,4241.39,12,Feminino,40-54 (Gen X),Livrarias,Livraria Catarinense ,1593
+164498,4241.12,18,Feminino,25-39 (Millennials),Moda,C&A,1594
+241727,4238.74,30,Feminino,40-54 (Gen X),Beleza e Bem-estar,Burger King,1595
+300675,4236.18,25,Feminino,40-54 (Gen X),Beleza e Bem-estar,Avatim,1596
+230152,4231.95,9,Feminino,40-54 (Gen X),Moda,Renner,1597
+222175,4228.3099999999995,13,Feminino,40-54 (Gen X),Gastronomia,Mini Kalzone,1598
+162677,4226.26,14,Masculino,40-54 (Gen X),Moda,Youcom,1599
+245483,4224.0,1,Masculino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,1600
+278155,4221.0,2,Masculino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,1601
+268750,4219.08,24,Feminino,40-54 (Gen X),Moda,Baummer,1602
+189515,4217.71,16,Feminino,40-54 (Gen X),Gastronomia,Ri Happy,1603
+306029,4216.7,13,Feminino,40-54 (Gen X),Moda,Renner,1604
+191923,4215.17,6,Feminino,40-54 (Gen X),Moda,Renner,1605
+263388,4214.42,10,Masculino,25-39 (Millennials),Moda,Dudalina,1606
+156654,4214.2,13,Feminino,40-54 (Gen X),Infantil,Fátima Bebê,1607
+222655,4212.17,7,Feminino,25-39 (Millennials),Moda,Damyller,1608
+185429,4212.15,5,Feminino,40-54 (Gen X),Calçados Femininos,Luz da Lua,1609
+230390,4210.18,4,Masculino,55-69 (Boomers),Beleza e Bem-estar,Bagaggio,1610
+128908,4209.45,17,Masculino,40-54 (Gen X),Moda,Renner,1611
+217628,4208.81,10,Feminino,40-54 (Gen X),Calçados,Casa Maria,1612
+245970,4206.29,26,Feminino,25-39 (Millennials),Gastronomia,Santo Boteco,1613
+98334,4205.3099999999995,6,Masculino,55-69 (Boomers),Moda,Beagle,1614
+320145,4204.9,8,Masculino,40-54 (Gen X),Gastronomia,Cases e Capas,1615
+390672,4200.47,15,Feminino,25-39 (Millennials),Gastronomia,Renner,1616
+395181,4200.0,2,Masculino,40-54 (Gen X),Moda,Empório Du Homem,1617
+446203,4198.8,2,Masculino,25-39 (Millennials),Calçados Femininos,Luz da Lua,1618
+506667,4195.48,10,Masculino,25-39 (Millennials),Moda,Avatim,1619
+55650,4194.89,19,Feminino,25-39 (Millennials),Gastronomia,z Naçoes Shopping Participações - Estacionamento,1620
+158743,4191.37,1,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,1621
+230227,4186.77,8,Feminino,40-54 (Gen X),Moda,Strutura,1622
+30361,4176.47,7,Masculino,40-54 (Gen X),Moda,Acuo,1623
+140803,4175.78,37,Feminino,25-39 (Millennials),Gastronomia,Pittol,1624
+170910,4175.73,7,Feminino,40-54 (Gen X),Moda,Farm,1625
+126493,4174.36,7,Feminino,40-54 (Gen X),Esportes,Centauro,1626
+59413,4174.36,4,Masculino,25-39 (Millennials),Pets,Cobasi,1627
+259654,4173.67,7,Masculino,40-54 (Gen X),Moda,Renner,1628
+199375,4171.8,5,Masculino,40-54 (Gen X),Moda,Beagle,1629
+393327,4171.12,8,Feminino,40-54 (Gen X),Beleza e Bem-estar,Essence Parfums,1630
+150081,4167.72,24,Feminino,25-39 (Millennials),Gastronomia,Las Leñas Parrilla Uruguaya,1631
+428099,4167.02,3,Masculino,40-54 (Gen X),Beleza e Bem-estar,Avatim,1632
+407631,4165.37,57,Masculino,40-54 (Gen X),Eletrodomésticos,Americanas,1633
+379014,4163.38,3,Masculino,25-39 (Millennials),Moda,Beagle,1634
+112850,4161.89,34,Feminino,25-39 (Millennials),Gastronomia,JAH Açaí,1635
+231251,4160.0,1,Feminino,40-54 (Gen X),Joalheria,Vivara,1636
+231500,4160.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,1637
+430351,4159.49,10,Feminino,25-39 (Millennials),Moda,Renner,1638
+49196,4158.41,6,Masculino,25-39 (Millennials),Joalheria,Gisdany,1639
+213379,4158.34,35,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,1640
+390295,4156.2699999999995,9,Feminino,40-54 (Gen X),Gastronomia,Natureza Bistrô,1641
+186740,4155.8,7,Feminino,25-39 (Millennials),Infantil,Ri Happy,1642
+128849,4153.0,2,Feminino,40-54 (Gen X),Moda,Colcci,1643
+153091,4152.42,11,Feminino,40-54 (Gen X),Calçados,Havaianas,1644
+290589,4148.4,8,Masculino,40-54 (Gen X),Moda,Pittol,1645
+366004,4148.0,1,Feminino,40-54 (Gen X),Eletrônicos,Samsung,1646
+185374,4144.27,35,Feminino,55-69 (Boomers),Moda,Renner,1647
+173955,4141.74,45,Feminino,25-39 (Millennials),Gastronomia,JAH Açaí,1648
+257056,4140.14,22,Feminino,25-39 (Millennials),Moda,Renner,1649
+115704,4139.81,13,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,1650
+198745,4139.45,13,Feminino,40-54 (Gen X),Pets,Cobasi,1651
+256724,4135.66,20,Feminino,40-54 (Gen X),Infantil,Ri Happy,1652
+327688,4134.53,3,Masculino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,1653
+291411,4130.77,14,Feminino,25-39 (Millennials),Moda,Renner,1654
+143338,4130.68,52,Feminino,25-39 (Millennials),Gastronomia,JAH Açaí,1655
+233018,4129.91,11,Feminino,25-39 (Millennials),Moda,Renner,1656
+367911,4128.0,4,Masculino,16-24 (Gen Z),Moda,Renner,1657
+299481,4127.98,2,Feminino,25-39 (Millennials),Infantil,Colcci,1658
+195586,4127.94,33,Feminino,25-39 (Millennials),Moda,Livraria Catarinense ,1659
+163537,4126.66,5,Feminino,25-39 (Millennials),Moda,Renner,1660
+351228,4126.58,20,Masculino,25-39 (Millennials),Gastronomia,Cassol Centerlar,1661
+355051,4126.0,1,Feminino,25-39 (Millennials),Hub da Saúde,Ortobom ,1662
+396454,4120.99,4,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1663
+187539,4114.4,5,Feminino,40-54 (Gen X),Beleza e Bem-estar,Farm,1664
+255068,4112.59,1,Masculino,25-39 (Millennials),Beleza e Bem-estar,Vialaser,1665
+264947,4111.73,26,Feminino,40-54 (Gen X),Gastronomia,McDonald's,1666
+298824,4111.65,19,Masculino,25-39 (Millennials),Eletrodomésticos,Americanas,1667
+164978,4110.42,12,Feminino,40-54 (Gen X),Moda,Renner,1668
+219350,4110.3,22,Feminino,25-39 (Millennials),Esportes,Livraria Catarinense ,1669
+266951,4100.0,1,Masculino,40-54 (Gen X),Moda,Empório Du Homem,1670
+198707,4099.59,19,Feminino,40-54 (Gen X),Moda,Subway,1671
+232128,4099.0,1,Masculino,40-54 (Gen X),Eletrônicos,Samsung,1672
+201961,4098.37,24,Masculino,40-54 (Gen X),Gastronomia,Camarão Express,1673
+373228,4095.5,2,Masculino,40-54 (Gen X),Ótica,GrandVision by Fototica,1674
+171541,4095.37,8,Feminino,40-54 (Gen X),Calçados,Arezzo,1675
+307878,4094.5,18,Masculino,25-39 (Millennials),Gastronomia,Cacau Show,1676
+122016,4091.4500000000003,25,Feminino,40-54 (Gen X),Gastronomia,Livraria Catarinense ,1677
+138926,4088.8,16,Feminino,25-39 (Millennials),Moda,Renner,1678
+160235,4087.89,7,Feminino,25-39 (Millennials),Moda,Renner,1679
+228549,4085.71,17,Feminino,25-39 (Millennials),Moda,Renner,1680
+231274,4084.42,26,Feminino,40-54 (Gen X),Beleza e Bem-estar,Camarão Express,1681
+134912,4079.67,6,Feminino,55-69 (Boomers),Beleza e Bem-estar,BelShop,1682
+355813,4077.45,4,Masculino,25-39 (Millennials),Gastronomia,Bagaggio,1683
+147732,4076.41,23,Feminino,25-39 (Millennials),Moda,Renner,1684
+224334,4074.15,47,Feminino,55-69 (Boomers),Gastronomia,Café Cultura,1685
+224135,4071.29,7,Masculino,25-39 (Millennials),Beleza e Bem-estar,Luz da Lua,1686
+322393,4069.74,5,Masculino,25-39 (Millennials),Beleza e Bem-estar,Centauro,1687
+348670,4069.5,1,Masculino,25-39 (Millennials),Moda,Békko,1688
+220025,4069.34,18,Masculino,40-54 (Gen X),Moda,Avatim,1689
+210735,4068.71,70,Masculino,25-39 (Millennials),Gastronomia,z Kfc,1690
+357638,4068.15,5,Feminino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1691
+195078,4066.02,28,Feminino,55-69 (Boomers),Moda,Riachuelo,1692
+304921,4065.26,20,Feminino,25-39 (Millennials),Moda,Café Cultura,1693
+149016,4065.13,14,Feminino,25-39 (Millennials),Moda,Mini Kalzone,1694
+97755,4064.7900000000004,38,Feminino,40-54 (Gen X),Gastronomia,Mini Kalzone,1695
+444466,4059.9,2,Feminino,40-54 (Gen X),Gastronomia,Camarão Express,1696
+155212,4057.92,21,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,1697
+200269,4056.79,4,Masculino,40-54 (Gen X),Moda,Békko,1698
+380514,4054.4,2,Feminino,25-39 (Millennials),Calçados Femininos,Lança Perfume,1699
+282342,4051.09,15,Feminino,40-54 (Gen X),Moda,Renner,1700
+14210,4050.0,2,Masculino,25-39 (Millennials),Moda,Riachuelo,1701
+366105,4048.0,1,Masculino,25-39 (Millennials),Eletrônicos,Samsung,1702
+219439,4044.68,10,Masculino,40-54 (Gen X),Moda,Colcci,1703
+258975,4042.95,41,Feminino,16-24 (Gen Z),Gastronomia,Kopenhagen,1704
+186750,4040.91,15,Feminino,25-39 (Millennials),Moda,Renner,1705
+261142,4040.1,59,Masculino,40-54 (Gen X),Gastronomia,Mini Kalzone,1706
+302073,4037.92,29,Feminino,40-54 (Gen X),Moda,C&A,1707
+167236,4037.5699999999997,8,Feminino,40-54 (Gen X),Moda,Renner,1708
+240755,4037.33,13,Masculino,25-39 (Millennials),Moda,Fátima Criança,1709
+287149,4036.0,3,Masculino,40-54 (Gen X),Moda,Calvin Klein e Tommy Hilfiger,1710
+302954,4035.71,17,Feminino,40-54 (Gen X),Moda,Fátima Criança,1711
+218737,4034.0299999999997,6,Feminino,25-39 (Millennials),Joalheria,Pandora,1712
+154283,4033.57,47,Feminino,25-39 (Millennials),Gastronomia,Estacionamento - Nações Shopping,1713
+77772,4031.2,21,Masculino,16-24 (Gen Z),Moda,Pittol,1714
+155268,4030.98,16,Feminino,40-54 (Gen X),Moda,BelShop,1715
+127645,4026.86,5,Masculino,40-54 (Gen X),Eletrodomésticos,Americanas,1716
+200870,4026.7799999999997,32,Feminino,25-39 (Millennials),Moda,Renner,1717
+113971,4026.52,22,Feminino,40-54 (Gen X),Gastronomia,Camarão Express,1718
+98009,4025.27,16,Feminino,40-54 (Gen X),Moda,Avatim,1719
+154219,4024.05,9,Feminino,40-54 (Gen X),Livrarias,Livraria Catarinense ,1720
+142825,4018.9,2,Feminino,55-69 (Boomers),Calçados Femininos,Luz da Lua,1721
+195263,4018.79,6,Feminino,40-54 (Gen X),Moda,Live!,1722
+227971,4018.6800000000003,3,Feminino,25-39 (Millennials),Beleza e Bem-estar,BelShop,1723
+110870,4017.72,21,Feminino,40-54 (Gen X),Moda,C&A,1724
+152516,4016.93,9,Feminino,40-54 (Gen X),Moda,C&A,1725
+221217,4016.32,4,Feminino,40-54 (Gen X),Gastronomia,Camarão Express,1726
+251070,4015.49,46,Feminino,25-39 (Millennials),Gastronomia,Natureza Bistrô,1727
+115096,4011.86,7,Masculino,25-39 (Millennials),Joalheria,Vivara,1728
+56335,4008.9700000000003,26,Masculino,40-54 (Gen X),Gastronomia,Café Cultura,1729
+161050,4008.9300000000003,19,Feminino,40-54 (Gen X),Moda,C&A,1730
+298273,4006.19,12,Feminino,40-54 (Gen X),Moda,C&A,1731
+244421,4006.0,4,Masculino,40-54 (Gen X),Moda,Calvin Klein e Tommy Hilfiger,1732
+416119,4003.81,23,Feminino,25-39 (Millennials),Gastronomia,Cacau Show,1733
+239842,4003.37,27,Feminino,25-39 (Millennials),Moda,Beagle,1734
+410411,4002.96,11,Feminino,16-24 (Gen Z),Farmácias,Me Linda,1735
+166074,4001.98,42,Feminino,25-39 (Millennials),Gastronomia,Burger King,1736
+230516,3999.99,2,Masculino,40-54 (Gen X),Esportes,FATIMA ESPORTES,1737
+225127,3999.0,1,Feminino,16-24 (Gen Z),Eletrônicos,Samsung,1738
+184893,3998.55,9,Feminino,55-69 (Boomers),Moda,Renner,1739
+373091,3998.0,1,Feminino,25-39 (Millennials),Moda,Tokaia,1740
+120743,3998.0,2,Feminino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,1741
+347744,3997.24,3,Feminino,25-39 (Millennials),Joalheria,Live!,1742
+368060,3995.89,9,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,1743
+348282,3993.9900000000002,5,Feminino,25-39 (Millennials),Moda,Kings ,1744
+412665,3992.7000000000003,35,Feminino,16-24 (Gen Z),Gastronomia,Fábrica Di Chocolate,1745
+325443,3989.82,15,Masculino,25-39 (Millennials),Moda,C&A,1746
+385674,3983.18,2,Masculino,55-69 (Boomers),Beleza e Bem-estar,Békko,1747
+354117,3980.93,7,Masculino,40-54 (Gen X),Beleza e Bem-estar,Casa Maria,1748
+228251,3980.68,31,Masculino,25-39 (Millennials),Moda,Renner,1749
+33515,3980.2,7,Feminino,25-39 (Millennials),Gastronomia,Acuo,1750
+327529,3980.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,1751
+389612,3980.0,1,Feminino,25-39 (Millennials),Joalheria,Vivara,1752
+96543,3979.63,124,Masculino,25-39 (Millennials),Gastronomia,Mini Kalzone,1753
+263801,3978.66,3,Feminino,55-69 (Boomers),Beleza e Bem-estar,Live!,1754
+366127,3978.2200000000003,4,Masculino,40-54 (Gen X),Beleza e Bem-estar,BelShop,1755
+109304,3977.19,33,Feminino,40-54 (Gen X),Gastronomia,JAH Açaí,1756
+233307,3973.17,38,Feminino,55-69 (Boomers),Infantil,Fátima Bebê,1757
+5938,3969.07,16,Feminino,40-54 (Gen X),Moda,C&A,1758
+218580,3966.99,2,Masculino,55-69 (Boomers),Eletrônicos,C&A,1759
+287671,3964.9,14,Feminino,55-69 (Boomers),Moda,C&A,1760
+295298,3963.62,27,Feminino,40-54 (Gen X),Moda,Renner,1761
+110153,3953.1800000000003,29,Feminino,25-39 (Millennials),Moda,Renner,1762
+156776,3951.04,8,Masculino,40-54 (Gen X),Moda,Café Cultura,1763
+119063,3947.23,4,Feminino,40-54 (Gen X),Casa e Decoração,Camicado,1764
+231477,3945.81,2,Feminino,40-54 (Gen X),Casa e Decoração,Camicado,1765
+153123,3942.8800000000006,8,Masculino,25-39 (Millennials),Calçados,Havaianas,1766
+101252,3942.7599999999998,15,Feminino,25-39 (Millennials),Moda,BelShop,1767
+382766,3942.7,3,Masculino,25-39 (Millennials),Beleza e Bem-estar,Me Linda,1768
+304761,3941.95,3,Masculino,40-54 (Gen X),Esportes,GrandVision by Fototica,1769
+249283,3941.2,7,Feminino,40-54 (Gen X),Moda,Renner,1770
+448743,3939.29,9,Feminino,25-39 (Millennials),Calçados,Baummer,1771
+114970,3939.28,29,Feminino,55-69 (Boomers),Gastronomia,Camarão Express,1772
+130701,3939.17,22,Feminino,40-54 (Gen X),Moda,Renner,1773
+282909,3939.0,1,Feminino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1774
+265622,3937.9300000000003,9,Masculino,25-39 (Millennials),Esportes,Maxmuscle,1775
+202108,3933.45,16,Masculino,25-39 (Millennials),Gastronomia,Kitsu Box,1776
+407449,3933.0,2,Masculino,40-54 (Gen X),Joalheria,Guzzatti,1777
+237946,3932.82,1,Masculino,16-24 (Gen Z),Beleza e Bem-estar,Espaço Laser,1778
+142004,3931.58,11,Feminino,40-54 (Gen X),Moda,Beagle,1779
+329300,3929.96,10,Masculino,25-39 (Millennials),Gastronomia,Camarão Express,1780
+230373,3929.8,2,Feminino,40-54 (Gen X),Calçados Femininos,Empório Du Homem,1781
+263234,3927.92,7,Feminino,25-39 (Millennials),Farmácias,Baummer,1782
+158008,3927.89,21,Feminino,25-39 (Millennials),Livrarias,Livraria Catarinense ,1783
+167113,3927.77,36,Feminino,25-39 (Millennials),Gastronomia,Lug's,1784
+276522,3926.37,4,Feminino,25-39 (Millennials),Beleza e Bem-estar,Camicado,1785
+320223,3924.5499999999997,8,Masculino,25-39 (Millennials),Moda,Békko,1786
+275592,3924.04,28,Feminino,40-54 (Gen X),Gastronomia,JAH Açaí,1787
+389111,3919.56,51,Feminino,55-69 (Boomers),Gastronomia,Camarão Express,1788
+198287,3915.58,8,Feminino,40-54 (Gen X),Moda,Acuo,1789
+161276,3915.5299999999997,12,Feminino,40-54 (Gen X),Moda,Avatim,1790
+228506,3914.11,22,Feminino,25-39 (Millennials),Moda,Casa Maria,1791
+299622,3913.31,8,Feminino,55-69 (Boomers),Calçados,Arezzo,1792
+241105,3913.13,12,Feminino,25-39 (Millennials),Moda,Hope Nacoes Shopping,1793
+257871,3911.1099999999997,6,Masculino,55-69 (Boomers),Beleza e Bem-estar,BelShop,1794
+141047,3905.6,8,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1795
+281916,3905.45,5,Feminino,40-54 (Gen X),Moda,Acuo,1796
+323369,3905.1800000000003,20,Feminino,25-39 (Millennials),Moda,C&A,1797
+277790,3901.91,51,Masculino,55-69 (Boomers),Gastronomia,Mini Kalzone,1798
+88981,3901.55,10,Feminino,25-39 (Millennials),Moda,Youcom,1799
+450642,3900.0,1,Feminino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,1800
+152786,3899.11,8,Feminino,25-39 (Millennials),Infantil,Ri Happy,1801
+221993,3899.0,1,Masculino,40-54 (Gen X),Eletrônicos,Samsung,1802
+117152,3899.0,1,Masculino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,1803
+224968,3898.84,10,Feminino,25-39 (Millennials),Moda,Acuo,1804
+244157,3894.52,11,Feminino,25-39 (Millennials),Moda,Riachuelo,1805
+283186,3894.15,41,Feminino,25-39 (Millennials),Gastronomia,Mini Kalzone,1806
+174019,3892.51,9,Feminino,40-54 (Gen X),Moda,Dudalina,1807
+55560,3890.88,19,Masculino,40-54 (Gen X),Gastronomia,Kopenhagen,1808
+307833,3888.48,12,Feminino,55-69 (Boomers),Moda,Adcos,1809
+381579,3888.29,17,Masculino,25-39 (Millennials),Infantil,Fátima Criança,1810
+12893,3887.73,9,Masculino,40-54 (Gen X),Livrarias,Livraria Catarinense ,1811
+221295,3887.2,8,Feminino,55-69 (Boomers),Moda,Colcci,1812
+220361,3881.39,5,Feminino,40-54 (Gen X),Moda,Lupo,1813
+138961,3879.55,8,Feminino,40-54 (Gen X),Beleza e Bem-estar,Arezzo,1814
+389752,3878.06,1,Masculino,55-69 (Boomers),Hub da Saúde,Ortobom ,1815
+190904,3877.31,11,Masculino,25-39 (Millennials),Esportes,Centauro,1816
+8283,3876.92,36,Masculino,40-54 (Gen X),Gastronomia,Americanas,1817
+132060,3876.8,16,Feminino,25-39 (Millennials),Moda,Renner,1818
+62614,3872.56,22,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,1819
+24121,3872.19,19,Feminino,40-54 (Gen X),Moda,JAH Açaí,1820
+260736,3868.8,15,Masculino,40-54 (Gen X),Moda,C&A,1821
+274183,3868.0,18,Feminino,25-39 (Millennials),Moda,Renner,1822
+230558,3867.5,1,Masculino,25-39 (Millennials),Joalheria,Vivara,1823
+153275,3861.98,35,Feminino,40-54 (Gen X),Serviços,Estacionamento - Nações Shopping,1824
+304151,3860.7200000000003,19,Feminino,40-54 (Gen X),Calçados,Pittol,1825
+229128,3857.84,14,Feminino,25-39 (Millennials),Beleza e Bem-estar,Cobasi,1826
+65264,3854.67,21,Feminino,25-39 (Millennials),Moda,Riachuelo,1827
+147683,3851.6400000000003,20,Feminino,55-69 (Boomers),Gastronomia,Café Cultura,1828
+321369,3850.0,1,Masculino,16-24 (Gen Z),Joalheria,Vivara,1829
+308165,3849.23,12,Feminino,25-39 (Millennials),Moda,Renner,1830
+214554,3848.0099999999998,33,Feminino,25-39 (Millennials),Gastronomia,Panda Sushi,1831
+377856,3847.0299999999997,32,Feminino,16-24 (Gen Z),Gastronomia,Cacau Show,1832
+410493,3845.91,37,Feminino,25-39 (Millennials),Gastronomia,C&A,1833
+422494,3845.87,32,Outro,16-24 (Gen Z),Não informado,Kopenhagen,1834
+314539,3841.88,37,Feminino,40-54 (Gen X),Gastronomia,Café Cultura,1835
+157337,3841.2999999999997,5,Feminino,40-54 (Gen X),Calçados Femininos,Café Cultura,1836
+427255,3840.41,7,Masculino,25-39 (Millennials),Moda,Riachuelo,1837
+112682,3839.21,8,Feminino,16-24 (Gen Z),Gastronomia,Beagle,1838
+227094,3838.51,10,Masculino,40-54 (Gen X),Moda,Americanas,1839
+308924,3835.41,18,Masculino,40-54 (Gen X),Gastronomia,Camarão Express,1840
+319596,3835.38,13,Feminino,40-54 (Gen X),Gastronomia,JAH Açaí,1841
+406094,3834.0099999999998,10,Feminino,55-69 (Boomers),Gastronomia,Outback SteakHouse,1842
+320427,3833.31,4,Masculino,40-54 (Gen X),Moda,Renner,1843
+122076,3833.27,8,Masculino,25-39 (Millennials),Moda,Pittol,1844
+198973,3831.16,13,Feminino,40-54 (Gen X),Moda,Renner,1845
+169538,3831.05,50,Feminino,40-54 (Gen X),Gastronomia,Mini Kalzone,1846
+359181,3830.46,2,Masculino,40-54 (Gen X),Hub da Saúde,Colcci,1847
+269071,3830.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,1848
+309208,3829.92,18,Feminino,25-39 (Millennials),Moda,C&A,1849
+319394,3829.7200000000003,7,Masculino,40-54 (Gen X),Moda,Strutura,1850
+231889,3829.52,59,Masculino,25-39 (Millennials),Casa e Decoração,Americanas,1851
+3318,3827.81,3,Masculino,40-54 (Gen X),Calçados,Békko,1852
+2091,3827.34,25,Masculino,25-39 (Millennials),Gastronomia,z Kfc,1853
+236512,3827.11,21,Feminino,40-54 (Gen X),Infantil,Fátima Criança,1854
+183802,3826.7000000000003,15,Feminino,55-69 (Boomers),Moda,C&A,1855
+152951,3825.41,13,Feminino,40-54 (Gen X),Moda,Renner,1856
+295518,3824.71,7,Feminino,55-69 (Boomers),Moda,Live!,1857
+190666,3823.06,10,Masculino,40-54 (Gen X),Moda,Farm,1858
+134826,3822.8,6,Feminino,40-54 (Gen X),Moda,Colcci,1859
+377001,3820.6,5,Masculino,55-69 (Boomers),Gastronomia,Camarão Express,1860
+226743,3819.29,5,Masculino,40-54 (Gen X),Joalheria,Vivara,1861
+286195,3817.8100000000004,3,Masculino,40-54 (Gen X),Beleza e Bem-estar,BelShop,1862
+250660,3816.8,25,Feminino,40-54 (Gen X),Gastronomia,Cobasi,1863
+152669,3816.44,11,Feminino,55-69 (Boomers),Livrarias,Cobasi,1864
+436335,3816.22,7,Masculino,25-39 (Millennials),Moda,Riachuelo,1865
+208354,3816.21,20,Masculino,40-54 (Gen X),Gastronomia,Santo Boteco,1866
+190560,3814.1,10,Masculino,25-39 (Millennials),Beleza e Bem-estar,Essence Parfums,1867
+150683,3813.8,4,Feminino,40-54 (Gen X),Moda,Damyller,1868
+409641,3812.9,49,Feminino,40-54 (Gen X),Gastronomia,Dez Pastéis,1869
+232177,3809.39,9,Feminino,25-39 (Millennials),Moda,Renner,1870
+238079,3807.1099999999997,10,Feminino,40-54 (Gen X),Moda,Estacionamento - Nações Shopping,1871
+17102,3806.98,21,Feminino,40-54 (Gen X),Casa e Decoração,Renner,1872
+372754,3803.2,7,Masculino,55-69 (Boomers),Moda,C&A,1873
+294547,3803.09,18,Feminino,25-39 (Millennials),Moda,C&A,1874
+224570,3800.0,1,Masculino,40-54 (Gen X),Moda,Empório Du Homem,1875
+202324,3799.4300000000003,5,Masculino,40-54 (Gen X),Moda,Beagle,1876
+154550,3799.25,16,Masculino,40-54 (Gen X),Gastronomia,Centauro,1877
+192972,3799.04,18,Feminino,40-54 (Gen X),Moda,Renner,1878
+320021,3799.0,1,Feminino,25-39 (Millennials),Eletrônicos,Samsung,1879
+366302,3799.0,1,Masculino,40-54 (Gen X),Eletrônicos,Samsung,1880
+320087,3799.0,1,Masculino,55-69 (Boomers),Eletrônicos,Samsung,1881
+132708,3796.9,3,Masculino,40-54 (Gen X),Moda,Empório Du Homem,1882
+296273,3796.5499999999997,11,Masculino,40-54 (Gen X),Gastronomia,JAH Açaí,1883
+222864,3793.95,26,Feminino,25-39 (Millennials),Moda,Renner,1884
+137622,3790.23,13,Feminino,40-54 (Gen X),Moda,Renner,1885
+407281,3789.67,13,Feminino,25-39 (Millennials),Gastronomia,Outback SteakHouse,1886
+64510,3788.35,11,Feminino,55-69 (Boomers),Moda,Beagle,1887
+326410,3787.85,11,Feminino,40-54 (Gen X),Moda,Renner,1888
+164356,3786.02,3,Masculino,25-39 (Millennials),Beleza e Bem-estar,Essence Parfums,1889
+150780,3782.63,14,Masculino,25-39 (Millennials),Serviços,Estacionamento - Nações Shopping,1890
+168770,3779.73,28,Feminino,25-39 (Millennials),Gastronomia,Senhor Garibaldi,1891
+401731,3779.34,3,Feminino,40-54 (Gen X),Moda,Essence Parfums,1892
+232067,3778.75,24,Masculino,25-39 (Millennials),Beleza e Bem-estar,Békko,1893
+395655,3778.0,1,Feminino,25-39 (Millennials),Hub da Saúde,Ortobom ,1894
+348698,3775.86,12,Feminino,25-39 (Millennials),Moda,Renner,1895
+260634,3775.45,2,Feminino,25-39 (Millennials),Casa e Decoração,C&A,1896
+228405,3774.78,10,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1897
+18985,3774.3999999999996,5,Masculino,25-39 (Millennials),Moda,Renner,1898
+306188,3774.06,12,Feminino,40-54 (Gen X),Beleza e Bem-estar,Milkymoo,1899
+348984,3773.42,13,Feminino,25-39 (Millennials),Moda,O Boticário,1900
+378406,3773.28,16,Feminino,25-39 (Millennials),Infantil,Fátima Criança,1901
+186530,3772.0,30,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,1902
+214465,3771.34,60,Masculino,25-39 (Millennials),Gastronomia,Café Cultura,1903
+140095,3770.3199999999997,4,Feminino,40-54 (Gen X),Calçados,Arezzo,1904
+401890,3770.29,1,Feminino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,1905
+297099,3770.28,8,Masculino,40-54 (Gen X),Beleza e Bem-estar,Samsung,1906
+224765,3766.09,16,Feminino,16-24 (Gen Z),Beleza e Bem-estar,Renner,1907
+230139,3765.02,26,Feminino,40-54 (Gen X),Gastronomia,Mini Kalzone,1908
+300632,3762.62,9,Feminino,25-39 (Millennials),Moda,Calvin Klein e Tommy Hilfiger,1909
+279390,3761.79,14,Feminino,55-69 (Boomers),Moda,Renner,1910
+283158,3760.56,30,Feminino,25-39 (Millennials),Gastronomia,Camarão Express,1911
+407491,3759.7599999999998,13,Masculino,25-39 (Millennials),Gastronomia,Outback SteakHouse,1912
+224649,3756.25,32,Feminino,40-54 (Gen X),Gastronomia,C&A,1913
+276803,3755.73,10,Feminino,55-69 (Boomers),Moda,C&A,1914
+246976,3753.83,6,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,1915
+367596,3753.68,25,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,1916
+126052,3750.92,28,Feminino,40-54 (Gen X),Moda,Lupo,1917
+424966,3749.71,22,Feminino,25-39 (Millennials),Moda,Renner,1918
+143917,3749.61,50,Masculino,25-39 (Millennials),Gastronomia,Mini Kalzone,1919
+183830,3748.55,18,Feminino,40-54 (Gen X),Beleza e Bem-estar,Fátima Papelaria,1920
+64128,3748.11,15,Feminino,40-54 (Gen X),Moda,Renner,1921
+222936,3747.94,17,Feminino,25-39 (Millennials),Gastronomia,Santo Boteco,1922
+154200,3747.7,10,Feminino,25-39 (Millennials),Moda,Renner,1923
+139301,3746.06,14,Feminino,40-54 (Gen X),Moda,Acuo,1924
+161277,3745.34,5,Feminino,25-39 (Millennials),Moda,Beagle,1925
+260079,3741.41,12,Feminino,25-39 (Millennials),Moda,Youcom,1926
+154277,3739.0499999999997,22,Feminino,40-54 (Gen X),Moda,C&A,1927
+215512,3738.86,2,Feminino,40-54 (Gen X),Beleza e Bem-estar,BelShop,1928
+233058,3736.42,4,Feminino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,1929
+399837,3736.2999999999997,7,Feminino,25-39 (Millennials),Calçados,Arezzo,1930
+241188,3728.9900000000002,8,Masculino,25-39 (Millennials),Moda,Gisdany,1931
+146360,3728.0,3,Feminino,25-39 (Millennials),Beleza e Bem-estar,Adcos,1932
+366246,3726.29,7,Feminino,40-54 (Gen X),Moda,Centauro,1933
+286038,3721.01,5,Feminino,25-39 (Millennials),Moda,Acuo,1934
+123110,3720.77,5,Feminino,55-69 (Boomers),Moda,Bagaggio,1935
+414046,3717.6,17,Feminino,25-39 (Millennials),Moda,C&A,1936
+135848,3717.28,32,Feminino,25-39 (Millennials),Moda,Café Cultura,1937
+259332,3715.34,14,Feminino,40-54 (Gen X),Outros,Hope Nacoes Shopping,1938
+352269,3714.41,13,Feminino,25-39 (Millennials),Moda,C&A,1939
+18980,3714.15,20,Masculino,25-39 (Millennials),Gastronomia,Estacionamento - Nações Shopping,1940
+373993,3713.6000000000004,2,Masculino,55-69 (Boomers),Casa e Decoração,Camicado,1941
+259478,3713.51,11,Feminino,40-54 (Gen X),Esportes,Centauro,1942
+318869,3710.6,7,Feminino,25-39 (Millennials),Moda,Uebel Make Up,1943
+185512,3706.62,19,Feminino,25-39 (Millennials),Gastronomia,Livraria Catarinense ,1944
+142124,3706.19,14,Masculino,40-54 (Gen X),Moda,Camicado,1945
+375372,3705.93,14,Feminino,40-54 (Gen X),Gastronomia,Las Leñas Parrilla Uruguaya,1946
+231280,3705.5299999999997,3,Feminino,40-54 (Gen X),Calçados Femininos,Luz da Lua,1947
+327543,3702.3,4,Masculino,16-24 (Gen Z),Casa e Decoração,Camicado,1948
+5390,3700.21,7,Feminino,40-54 (Gen X),Moda,Acuo,1949
+442015,3700.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,1950
+508130,3698.7,30,Masculino,25-39 (Millennials),Gastronomia,z Kfc,1951
+232315,3696.1400000000003,8,Feminino,25-39 (Millennials),Moda,Riachuelo,1952
+108302,3694.9900000000002,11,Masculino,25-39 (Millennials),Gastronomia,Santo Boteco,1953
+224766,3694.2000000000003,25,Feminino,40-54 (Gen X),Gastronomia,McDonald's,1954
+310674,3693.8,3,Feminino,55-69 (Boomers),Moda,Damyller,1955
+259171,3692.72,66,Feminino,25-39 (Millennials),Gastronomia,Mini Kalzone,1956
+434807,3692.6600000000003,6,Feminino,16-24 (Gen Z),Presentes e Acessórios,KStore Acessórios,1957
+382338,3692.51,5,Masculino,40-54 (Gen X),Gastronomia,Santo Boteco,1958
+431581,3691.24,5,Masculino,40-54 (Gen X),Moda,Beagle,1959
+39089,3690.8,20,Feminino,25-39 (Millennials),Moda,Renner,1960
+194343,3690.0099999999998,25,Feminino,25-39 (Millennials),Gastronomia,Mini Kalzone,1961
+301686,3690.0,1,Masculino,25-39 (Millennials),Moda,Tokaia,1962
+193735,3685.37,14,Feminino,25-39 (Millennials),Moda,Renner,1963
+282387,3685.28,3,Feminino,16-24 (Gen Z),Beleza e Bem-estar,Avatim,1964
+217822,3684.0,2,Masculino,40-54 (Gen X),Joalheria,Damyller,1965
+217187,3682.74,8,Feminino,40-54 (Gen X),Moda,Riachuelo,1966
+126768,3682.3,4,Feminino,55-69 (Boomers),Beleza e Bem-estar,Cassol Centerlar,1967
+349502,3681.8,9,Masculino,16-24 (Gen Z),Calçados,Havaianas,1968
+1316,3679.96,49,Masculino,55-69 (Boomers),Gastronomia,Santo Boteco,1969
+217887,3678.84,18,Feminino,40-54 (Gen X),Moda,Renner,1970
+219239,3678.0,1,Masculino,40-54 (Gen X),Eletrônicos,Samsung,1971
+328680,3677.9,2,Masculino,40-54 (Gen X),Eletrônicos,Riachuelo,1972
+261930,3675.1800000000003,3,Feminino,55-69 (Boomers),Moda,Live!,1973
+427336,3674.07,13,Masculino,25-39 (Millennials),Moda,Renner,1974
+221983,3673.0099999999998,3,Masculino,40-54 (Gen X),Ótica,GrandVision by Fototica,1975
+287616,3671.83,5,Masculino,55-69 (Boomers),Casa e Decoração,Calvin Klein e Tommy Hilfiger,1976
+311640,3671.83,10,Feminino,40-54 (Gen X),Moda,Farm,1977
+302385,3671.75,13,Masculino,25-39 (Millennials),Moda,C&A,1978
+158561,3670.91,6,Feminino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,1979
+231085,3670.85,65,Feminino,55-69 (Boomers),Gastronomia,Lupo,1980
+349559,3669.71,10,Feminino,25-39 (Millennials),Beleza e Bem-estar,BelShop,1981
+230969,3667.0,1,Masculino,25-39 (Millennials),Eletrônicos,Samsung,1982
+144246,3666.93,2,Feminino,25-39 (Millennials),Beleza e Bem-estar,Essence Parfums,1983
+199644,3665.6400000000003,12,Feminino,25-39 (Millennials),Moda,Renner,1984
+227250,3663.94,7,Feminino,40-54 (Gen X),Moda,Cacau Show,1985
+277861,3663.5499999999997,16,Feminino,55-69 (Boomers),Moda,Riachuelo,1986
+136416,3660.8599999999997,4,Feminino,25-39 (Millennials),Beleza e Bem-estar,Adcos,1987
+257504,3659.7,16,Feminino,40-54 (Gen X),Moda,Youcom,1988
+121100,3656.95,20,Masculino,40-54 (Gen X),Moda,Renner,1989
+71388,3655.9,28,Feminino,16-24 (Gen Z),Gastronomia,z Kfc,1990
+435476,3654.64,7,Masculino,40-54 (Gen X),Moda,Sapataria do Futuro,1991
+358355,3654.1,3,Masculino,40-54 (Gen X),Beleza e Bem-estar,Essence Parfums,1992
+259391,3652.57,10,Masculino,55-69 (Boomers),Calçados,Pittol,1993
+446309,3652.0,2,Masculino,40-54 (Gen X),Moda,Calvin Klein e Tommy Hilfiger,1994
+424825,3651.8999999999996,10,Masculino,16-24 (Gen Z),Moda,C&A,1995
+360189,3651.83,9,Feminino,25-39 (Millennials),Moda,Pittol,1996
+372989,3649.9,2,Masculino,40-54 (Gen X),Calçados,Arezzo,1997
+251635,3649.05,16,Masculino,40-54 (Gen X),Moda,Camarão Express,1998
+406533,3644.7999999999997,11,Feminino,55-69 (Boomers),Gastronomia,Outback SteakHouse,1999
+452406,3644.08,4,Feminino,40-54 (Gen X),Beleza e Bem-estar,Essence Parfums,2000
+229180,3642.67,15,Feminino,25-39 (Millennials),Moda,Livraria Catarinense ,2001
+303810,3640.62,16,Feminino,25-39 (Millennials),Calçados,Americanas,2002
+12540,3639.3,41,Feminino,25-39 (Millennials),Gastronomia,Estacionamento - Nações Shopping,2003
+245330,3638.2599999999998,30,Feminino,40-54 (Gen X),Gastronomia,Camarão Express,2004
+3451,3636.5299999999997,9,Masculino,40-54 (Gen X),Moda,Camarão Express,2005
+301853,3635.76,19,Feminino,25-39 (Millennials),Gastronomia,Cacau Show,2006
+124369,3634.75,4,Feminino,25-39 (Millennials),Moda,C&A,2007
+233730,3631.5,4,Feminino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,2008
+194459,3631.1,7,Feminino,25-39 (Millennials),Infantil,Fátima Bebê,2009
+51325,3630.0,3,Masculino,25-39 (Millennials),Beleza e Bem-estar,Avatim,2010
+275236,3627.05,5,Feminino,55-69 (Boomers),Moda,Dudalina,2011
+430057,3626.8,1,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,2012
+232042,3621.25,8,Feminino,16-24 (Gen Z),Moda,C&A,2013
+197449,3621.02,7,Feminino,55-69 (Boomers),Moda,Beagle,2014
+21633,3618.24,11,Feminino,25-39 (Millennials),Moda,C&A,2015
+367803,3617.54,25,Masculino,25-39 (Millennials),Gastronomia,Mini Kalzone,2016
+183640,3617.4700000000003,14,Masculino,40-54 (Gen X),Moda,Centauro,2017
+269365,3617.45,1,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,2018
+84530,3611.77,12,Feminino,25-39 (Millennials),Moda,Panvel Farmácias,2019
+227798,3611.41,9,Masculino,25-39 (Millennials),Gastronomia,Kitsu Box,2020
+362739,3606.13,15,Feminino,40-54 (Gen X),Livrarias,Livraria Catarinense ,2021
+154317,3604.84,5,Masculino,25-39 (Millennials),Moda,Beagle,2022
+144630,3604.79,31,Feminino,40-54 (Gen X),Gastronomia,C&A,2023
+379264,3603.69,6,Feminino,40-54 (Gen X),Moda,Colcci,2024
+145226,3601.69,14,Feminino,40-54 (Gen X),Moda,Centauro,2025
+370559,3601.12,16,Masculino,25-39 (Millennials),Moda,Empório Du Homem,2026
+266376,3600.8900000000003,9,Feminino,40-54 (Gen X),Moda,Empório Du Homem,2027
+367996,3600.0,1,Masculino,40-54 (Gen X),Moda,Empório Du Homem,2028
+378812,3599.98,1,Feminino,40-54 (Gen X),Ótica,GrandVision by Fototica,2029
+431701,3599.71,19,Feminino,40-54 (Gen X),Moda,BelShop,2030
+10871,3598.14,10,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,2031
+231468,3597.8,1,Feminino,40-54 (Gen X),Moda,Youcom,2032
+122146,3595.95,10,Feminino,25-39 (Millennials),Moda,Békko,2033
+310782,3593.59,10,Masculino,40-54 (Gen X),Moda,Avatim,2034
+241224,3591.85,32,Feminino,16-24 (Gen Z),Gastronomia,McDonald's,2035
+327247,3591.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,2036
+298303,3590.0,1,Masculino,40-54 (Gen X),Joalheria,Vivara,2037
+352802,3589.66,5,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,2038
+5389,3588.49,5,Feminino,25-39 (Millennials),Moda,Acuo,2039
+256366,3586.17,5,Masculino,40-54 (Gen X),Gastronomia,Mini Kalzone,2040
+302884,3585.91,6,Masculino,25-39 (Millennials),Moda,Centauro,2041
+230016,3583.48,8,Feminino,40-54 (Gen X),Moda,C&A,2042
+287879,3583.11,13,Feminino,40-54 (Gen X),Moda,Pittol,2043
+441139,3582.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,2044
+158287,3580.57,4,Masculino,40-54 (Gen X),Moda,Békko,2045
+155057,3580.12,10,Feminino,40-54 (Gen X),Moda,Adcos,2046
+271802,3579.86,1,Masculino,40-54 (Gen X),Moda,Beagle,2047
+188403,3579.47,8,Feminino,40-54 (Gen X),Moda,Damyller,2048
+243576,3578.9,2,Feminino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,2049
+453727,3578.6,2,Masculino,25-39 (Millennials),Calçados Femininos,Luz da Lua,2050
+426791,3578.0,1,Masculino,25-39 (Millennials),Moda,Calvin Klein e Tommy Hilfiger,2051
+168589,3575.48,16,Feminino,25-39 (Millennials),Beleza e Bem-estar,Arezzo,2052
+450226,3573.9,4,Feminino,40-54 (Gen X),Moda,Renner,2053
+223056,3573.9,2,Masculino,16-24 (Gen Z),Moda,Empório Du Homem,2054
+310677,3573.51,4,Feminino,40-54 (Gen X),Moda,Centauro,2055
+152199,3573.19,12,Feminino,40-54 (Gen X),Moda,Lupo,2056
+402515,3573.0,1,Masculino,40-54 (Gen X),Joalheria,Vivara,2057
+201010,3572.4300000000003,5,Feminino,25-39 (Millennials),Moda,Damyller,2058
+15756,3572.13,9,Feminino,25-39 (Millennials),Moda,Arezzo,2059
+345478,3570.73,19,Feminino,16-24 (Gen Z),Moda,C&A,2060
+324240,3568.2000000000003,5,Feminino,55-69 (Boomers),Beleza e Bem-estar,Arezzo,2061
+241315,3567.6,1,Feminino,70+ (Silent),Casa e Decoração,Cassol Centerlar,2062
+21391,3567.32,23,Masculino,40-54 (Gen X),Calçados,Pittol,2063
+184751,3566.3,22,Feminino,25-39 (Millennials),Moda,Renner,2064
+312357,3565.94,6,Feminino,25-39 (Millennials),Moda,Renner,2065
+308207,3565.58,5,Masculino,25-39 (Millennials),Moda,Strutura,2066
+351956,3565.33,13,Feminino,55-69 (Boomers),Beleza e Bem-estar,Kopenhagen,2067
+138590,3565.2599999999998,14,Feminino,40-54 (Gen X),Moda,Renner,2068
+420399,3565.0,3,Masculino,40-54 (Gen X),Moda,Békko,2069
+366256,3562.96,16,Feminino,25-39 (Millennials),Moda,C&A,2070
+83739,3561.8,21,Feminino,40-54 (Gen X),Esportes,Centauro,2071
+297082,3558.6,20,Feminino,25-39 (Millennials),Calçados,FATIMA ESPORTES,2072
+228785,3554.9,2,Feminino,25-39 (Millennials),Calçados Femininos,Empório Du Homem,2073
+355280,3554.87,11,Masculino,25-39 (Millennials),Moda,Renner,2074
+307258,3554.7200000000003,5,Feminino,25-39 (Millennials),Moda,Avatim,2075
+232756,3554.02,12,Feminino,25-39 (Millennials),Moda,FATIMA ESPORTES,2076
+260115,3551.67,6,Feminino,25-39 (Millennials),Moda,Arezzo,2077
+350542,3550.71,14,Feminino,55-69 (Boomers),Moda,Youcom,2078
+187002,3549.34,19,Feminino,40-54 (Gen X),Gastronomia,C&A,2079
+324555,3548.29,8,Feminino,55-69 (Boomers),Moda,Calvin Klein e Tommy Hilfiger,2080
+429374,3547.91,4,Masculino,40-54 (Gen X),Esportes,Centauro,2081
+211322,3545.14,4,Masculino,25-39 (Millennials),Gastronomia,Békko,2082
+394732,3544.4,3,Feminino,25-39 (Millennials),Moda,Calvin Klein e Tommy Hilfiger,2083
+307332,3541.14,4,Feminino,16-24 (Gen Z),Moda,Fátima Criança,2084
+307557,3539.41,4,Feminino,40-54 (Gen X),Casa e Decoração,Camicado,2085
+145545,3536.9700000000003,16,Feminino,40-54 (Gen X),Moda,Riachuelo,2086
+245022,3535.9100000000003,4,Masculino,40-54 (Gen X),Infantil,Ri Happy,2087
+74715,3534.88,12,Feminino,25-39 (Millennials),Moda,Riachuelo,2088
+390135,3534.0,2,Masculino,16-24 (Gen Z),Moda,Empório Du Homem,2089
+158285,3533.64,18,Feminino,25-39 (Millennials),Moda,C&A,2090
+232219,3532.7,3,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,2091
+97030,3532.25,4,Feminino,25-39 (Millennials),Moda,Acuo,2092
+129895,3531.41,3,Feminino,40-54 (Gen X),Moda,Tokaia,2093
+312645,3529.8,2,Feminino,40-54 (Gen X),Gastronomia,Griletto,2094
+275139,3528.5,6,Masculino,40-54 (Gen X),Calçados,Havaianas,2095
+366173,3528.45,1,Masculino,40-54 (Gen X),Moda,Empório Du Homem,2096
+231854,3527.88,17,Masculino,25-39 (Millennials),Moda,C&A,2097
+197959,3527.7400000000002,22,Feminino,40-54 (Gen X),Moda,Cacau Show,2098
+145181,3527.07,5,Feminino,40-54 (Gen X),Moda,Dudalina,2099
+224058,3523.71,4,Feminino,55-69 (Boomers),Moda,C&A,2100
+192370,3519.4,5,Masculino,40-54 (Gen X),Moda,Renner,2101
+390201,3519.4,7,Feminino,25-39 (Millennials),Moda,Americanas,2102
+230672,3516.3500000000004,8,Feminino,40-54 (Gen X),Moda,Renner,2103
+279847,3516.1099999999997,11,Masculino,25-39 (Millennials),Moda,Americanas,2104
+385064,3514.95,1,Masculino,25-39 (Millennials),Hub da Saúde,Ortobom ,2105
+188628,3514.0,9,Masculino,25-39 (Millennials),Moda,Renner,2106
+123892,3511.15,4,Feminino,40-54 (Gen X),Moda,Fátima Papelaria,2107
+222239,3510.2400000000002,16,Masculino,40-54 (Gen X),Moda,C&A,2108
+126598,3509.29,16,Feminino,25-39 (Millennials),Moda,Livraria Catarinense ,2109
+226689,3509.2000000000003,30,Feminino,25-39 (Millennials),Casa e Decoração,Americanas,2110
+194417,3507.09,85,Masculino,25-39 (Millennials),Gastronomia,JAH Açaí,2111
+151869,3507.05,20,Feminino,25-39 (Millennials),Moda,Renner,2112
+183013,3506.4300000000003,5,Masculino,25-39 (Millennials),Casa e Decoração,C&A,2113
+252088,3505.87,18,Feminino,40-54 (Gen X),Moda,Renner,2114
+194503,3505.78,1,Feminino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,2115
+202058,3504.43,4,Feminino,40-54 (Gen X),Beleza e Bem-estar,Cacau Show,2116
+374336,3504.11,4,Feminino,40-54 (Gen X),Eletrônicos,Samsung,2117
+194293,3503.46,11,Masculino,40-54 (Gen X),Gastronomia,Panda Sushi,2118
+135731,3500.0,1,Masculino,25-39 (Millennials),Moda,Békko,2119
+320215,3499.0,1,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,2120
+256684,3498.78,5,Feminino,16-24 (Gen Z),Gastronomia,Baummer,2121
+221568,3498.64,6,Feminino,40-54 (Gen X),Esportes,Cacau Show,2122
+433711,3498.6000000000004,10,Feminino,40-54 (Gen X),Gastronomia,Cacau Show,2123
+438673,3496.74,4,Feminino,40-54 (Gen X),Esportes,Fátima Esportes,2124
+277695,3495.47,3,Masculino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,2125
+101013,3494.81,14,Feminino,25-39 (Millennials),Moda,Centauro,2126
+249617,3494.81,7,Masculino,40-54 (Gen X),Moda,C&A,2127
+320181,3494.5899999999997,9,Feminino,25-39 (Millennials),Moda,Renner,2128
+302962,3493.9700000000003,5,Masculino,40-54 (Gen X),Moda,Beagle,2129
+302066,3492.95,11,Feminino,25-39 (Millennials),Moda,Renner,2130
+378669,3491.5,2,Feminino,25-39 (Millennials),Moda,Empório Du Homem,2131
+119136,3491.05,8,Feminino,40-54 (Gen X),Moda,C&A,2132
+441621,3490.06,1,Masculino,25-39 (Millennials),Hub da Saúde,Ortobom ,2133
+230673,3488.79,6,Feminino,25-39 (Millennials),Moda,Renner,2134
+354185,3488.3,14,Feminino,16-24 (Gen Z),Moda,Live!,2135
+145477,3488.11,57,Masculino,25-39 (Millennials),Gastronomia,Estacionamento - Nações Shopping,2136
+20354,3487.13,5,Feminino,25-39 (Millennials),Moda,Colcci,2137
+246582,3487.0,4,Masculino,40-54 (Gen X),Moda,Békko,2138
+4061,3486.12,7,Feminino,40-54 (Gen X),Moda,Beagle,2139
+309042,3484.98,7,Feminino,25-39 (Millennials),Moda,Centauro,2140
+369319,3480.86,2,Masculino,25-39 (Millennials),Beleza e Bem-estar,Empório Du Homem,2141
+132773,3480.78,15,Feminino,25-39 (Millennials),Infantil,Ri Happy,2142
+230298,3480.59,2,Masculino,25-39 (Millennials),Joalheria,Vivara,2143
+134968,3480.0,8,Feminino,40-54 (Gen X),Moda,Aramis,2144
+193295,3478.86,15,Feminino,40-54 (Gen X),Moda,Centauro,2145
+260801,3478.64,19,Feminino,25-39 (Millennials),Casa e Decoração,Casa Maria,2146
+85041,3477.88,17,Feminino,25-39 (Millennials),Moda,Renner,2147
+119421,3477.7200000000003,6,Feminino,40-54 (Gen X),Moda,Békko,2148
+219282,3477.0,1,Masculino,40-54 (Gen X),Eletrônicos,Samsung,2149
+13318,3476.15,14,Feminino,40-54 (Gen X),Calçados,Renner,2150
+56783,3473.94,50,Feminino,25-39 (Millennials),Gastronomia,Mini Kalzone,2151
+385517,3473.7200000000003,3,Feminino,40-54 (Gen X),Calçados Femininos,Empório Du Homem,2152
+480953,3472.8900000000003,8,Feminino,40-54 (Gen X),Moda,Cacau Show,2153
+196787,3469.95,2,Feminino,40-54 (Gen X),Infantil,Fátima Bebê,2154
+186087,3467.24,10,Feminino,40-54 (Gen X),Gastronomia,Santo Boteco,2155
+165023,3466.51,10,Feminino,40-54 (Gen X),Moda,Camarão Express,2156
+253557,3461.06,1,Feminino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,2157
+12742,3461.0,4,Masculino,40-54 (Gen X),Serviços,Estacionamento - Nações Shopping,2158
+232813,3460.63,5,Feminino,55-69 (Boomers),Calçados,Arezzo,2159
+315544,3460.29,5,Masculino,40-54 (Gen X),Infantil,Fátima Criança,2160
+267310,3458.8,1,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,2161
+291176,3454.96,16,Feminino,55-69 (Boomers),Moda,C&A,2162
+221722,3453.57,27,Feminino,25-39 (Millennials),Moda,Livraria Catarinense ,2163
+291697,3450.53,7,Feminino,40-54 (Gen X),Beleza e Bem-estar,Colcci,2164
+42231,3450.14,23,Feminino,40-54 (Gen X),Gastronomia,Youcom,2165
+233135,3450.0,1,Feminino,16-24 (Gen Z),Moda,Empório Du Homem,2166
+89447,3449.99,2,Feminino,25-39 (Millennials),Gastronomia,Calvin Klein e Tommy Hilfiger,2167
+227659,3447.84,5,Feminino,40-54 (Gen X),Moda,Luz da Lua,2168
+378266,3447.79,4,Feminino,40-54 (Gen X),Moda,Acuo,2169
+334089,3445.32,3,Masculino,25-39 (Millennials),Moda,Empório Du Homem,2170
+360358,3442.82,8,Feminino,25-39 (Millennials),Moda,Renner,2171
+114878,3439.2799999999997,4,Masculino,40-54 (Gen X),Eletrônicos,Centauro,2172
+255654,3436.34,5,Feminino,25-39 (Millennials),Moda,Camicado,2173
+986,3434.08,55,Feminino,25-39 (Millennials),Eletrodomésticos,Americanas,2174
+162818,3432.88,4,Feminino,40-54 (Gen X),Moda,Colcci,2175
+133195,3431.8,31,Feminino,25-39 (Millennials),Gastronomia,Estacionamento - Nações Shopping,2176
+366114,3431.37,3,Masculino,40-54 (Gen X),Calçados Femininos,Centauro,2177
+141451,3431.02,22,Feminino,40-54 (Gen X),Gastronomia,Renner,2178
+144691,3429.02,23,Masculino,40-54 (Gen X),Moda,O Boticário,2179
+324441,3428.12,18,Feminino,40-54 (Gen X),Gastronomia,Camarão Express,2180
+357654,3427.0,3,Feminino,25-39 (Millennials),Moda,Live!,2181
+138899,3426.04,11,Feminino,40-54 (Gen X),Moda,BelShop,2182
+350786,3426.0,1,Masculino,40-54 (Gen X),Moda,Tokaia,2183
+91284,3423.28,10,Feminino,40-54 (Gen X),Beleza e Bem-estar,Uebel Make Up,2184
+270860,3423.17,3,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,2185
+378217,3423.0,2,Masculino,25-39 (Millennials),Joalheria,Calvin Klein e Tommy Hilfiger,2186
+132900,3422.04,33,Feminino,25-39 (Millennials),Moda,z Naçoes Shopping Participações - Estacionamento,2187
+62337,3421.12,15,Feminino,25-39 (Millennials),Gastronomia,Beagle,2188
+353920,3421.01,9,Feminino,40-54 (Gen X),Gastronomia,z Bob's - Quiosque 2,2189
+219512,3420.39,6,Feminino,40-54 (Gen X),Eletrônicos,FATIMA ESPORTES,2190
+228252,3417.0,1,Masculino,25-39 (Millennials),Eletrônicos,Samsung,2191
+218925,3416.0,8,Feminino,25-39 (Millennials),Moda,Acuo,2192
+225457,3415.29,9,Feminino,25-39 (Millennials),Moda,Cobasi,2193
+30537,3413.8900000000003,4,Masculino,16-24 (Gen Z),Moda,C&A,2194
+54757,3413.75,2,Feminino,25-39 (Millennials),Casa e Decoração,Calvin Klein e Tommy Hilfiger,2195
+192881,3412.86,4,Feminino,25-39 (Millennials),Moda,Tokaia,2196
+146341,3412.45,13,Feminino,25-39 (Millennials),Beleza e Bem-estar,Avatim,2197
+256765,3411.8,4,Feminino,40-54 (Gen X),Beleza e Bem-estar,Avatim,2198
+326030,3411.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,2199
+2982,3409.9500000000003,37,Masculino,40-54 (Gen X),Infantil,Ri Happy,2200
+332935,3409.79,6,Feminino,40-54 (Gen X),Calçados Femininos,Luz da Lua,2201
+349204,3407.2799999999997,2,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,2202
+472488,3407.0,1,Feminino,25-39 (Millennials),Esportes,Centauro,2203
+357095,3406.8500000000004,6,Feminino,25-39 (Millennials),Beleza e Bem-estar,Avatim,2204
+279234,3406.7,5,Masculino,40-54 (Gen X),Infantil,Fátima Criança,2205
+123629,3405.5,22,Feminino,25-39 (Millennials),Moda,Cacau Show,2206
+188092,3405.41,10,Feminino,40-54 (Gen X),Moda,Baummer,2207
+207624,3404.22,3,Feminino,25-39 (Millennials),Moda,Calvin Klein e Tommy Hilfiger,2208
+291950,3404.0,19,Feminino,25-39 (Millennials),Gastronomia,Ri Happy,2209
+311935,3402.4,7,Feminino,25-39 (Millennials),Moda,Renner,2210
+145717,3402.02,15,Masculino,40-54 (Gen X),Calçados,Pittol,2211
+245983,3401.79,9,Feminino,40-54 (Gen X),Moda,Békko,2212
+222959,3401.0,1,Masculino,25-39 (Millennials),Eletrônicos,Samsung,2213
+172862,3398.04,8,Feminino,25-39 (Millennials),Moda,Acuo,2214
+285979,3397.76,7,Feminino,55-69 (Boomers),Moda,Renner,2215
+230612,3396.92,4,Feminino,55-69 (Boomers),Moda,Renner,2216
+436638,3396.6,7,Feminino,25-39 (Millennials),Beleza e Bem-estar,Arezzo,2217
+280765,3394.5,2,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,2218
+277277,3394.4300000000003,44,Masculino,25-39 (Millennials),Gastronomia,Mini Kalzone,2219
+188332,3393.54,8,Feminino,25-39 (Millennials),Beleza e Bem-estar,Uebel Make Up,2220
+369529,3393.27,3,Feminino,25-39 (Millennials),Moda,C&A,2221
+60928,3392.9,13,Feminino,25-39 (Millennials),Gastronomia,JAH Açaí,2222
+293225,3392.14,13,Feminino,40-54 (Gen X),Moda,Cobasi,2223
+11547,3390.71,11,Feminino,25-39 (Millennials),Infantil,Fátima Criança,2224
+232645,3389.3,1,Outro,40-54 (Gen X),Moda,Empório Du Homem,2225
+268381,3388.62,3,Feminino,16-24 (Gen Z),Moda,Riachuelo,2226
+194452,3388.05,9,Masculino,40-54 (Gen X),Moda,Pittol,2227
+366126,3387.44,12,Masculino,40-54 (Gen X),Moda,C&A,2228
+321028,3387.38,8,Feminino,25-39 (Millennials),Moda,Acuo,2229
+401267,3386.92,13,Feminino,55-69 (Boomers),Moda,Me Linda,2230
+147300,3386.88,4,Masculino,25-39 (Millennials),Casa e Decoração,Casa Maria,2231
+373987,3386.24,10,Feminino,25-39 (Millennials),Moda,Me Linda,2232
+201317,3384.25,14,Feminino,25-39 (Millennials),Moda,McDonald's,2233
+268572,3383.7,17,Feminino,25-39 (Millennials),Infantil,Fátima Bebê,2234
+128634,3380.77,22,Feminino,40-54 (Gen X),Gastronomia,Avatim,2235
+128693,3379.57,7,Feminino,55-69 (Boomers),Beleza e Bem-estar,Camarão Express,2236
+130881,3378.69,92,Feminino,55-69 (Boomers),Gastronomia,Mini Kalzone,2237
+323361,3376.8900000000003,2,Feminino,25-39 (Millennials),Beleza e Bem-estar,Essence Parfums,2238
+351645,3376.3,19,Masculino,40-54 (Gen X),Moda,Donna Mirô,2239
+306275,3374.82,15,Feminino,25-39 (Millennials),Moda,Pittol,2240
+10401,3374.14,74,Feminino,40-54 (Gen X),Gastronomia,Mini Kalzone,2241
+153257,3374.11,12,Masculino,40-54 (Gen X),Moda,Renner,2242
+350628,3374.1099999999997,8,Feminino,25-39 (Millennials),Moda,Baummer,2243
+320138,3372.5,1,Masculino,40-54 (Gen X),Joalheria,Vivara,2244
+67535,3371.8900000000003,8,Feminino,55-69 (Boomers),Moda,Renner,2245
+287664,3371.5,4,Feminino,55-69 (Boomers),Calçados,Arezzo,2246
+278117,3370.9,3,Masculino,25-39 (Millennials),Beleza e Bem-estar,Avatim,2247
+233382,3370.68,10,Feminino,55-69 (Boomers),Gastronomia,Camarão Express,2248
+37250,3368.97,20,Feminino,25-39 (Millennials),Moda,Livraria Catarinense ,2249
+380835,3368.8199999999997,3,Feminino,40-54 (Gen X),Calçados,Pittol,2250
+227760,3368.1400000000003,8,Feminino,55-69 (Boomers),Calçados Femininos,Luz da Lua,2251
+245236,3364.58,7,Masculino,40-54 (Gen X),Esportes,Centauro,2252
+431237,3363.5,5,Feminino,40-54 (Gen X),Moda,Calvin Klein e Tommy Hilfiger,2253
+148284,3362.79,11,Feminino,40-54 (Gen X),Gastronomia,Café Cultura,2254
+145610,3361.73,11,Feminino,40-54 (Gen X),Gastronomia,Camarão Express,2255
+144892,3360.04,26,Feminino,40-54 (Gen X),Moda,C&A,2256
+242235,3358.91,18,Feminino,40-54 (Gen X),Gastronomia,McDonald's,2257
+441433,3358.9,2,Feminino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,2258
+187695,3358.5,2,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,2259
+150005,3357.95,12,Feminino,40-54 (Gen X),Moda,Acuo,2260
+453121,3357.5,3,Feminino,40-54 (Gen X),Moda,Empório Du Homem,2261
+201457,3355.99,2,Masculino,25-39 (Millennials),Eletrônicos,C&A,2262
+309326,3355.98,6,Masculino,25-39 (Millennials),Moda,Damyller,2263
+13840,3353.16,11,Feminino,25-39 (Millennials),Moda,Estacionamento - Nações Shopping,2264
+195402,3352.8799999999997,9,Feminino,40-54 (Gen X),Moda,Riachuelo,2265
+158404,3352.4700000000003,8,Feminino,25-39 (Millennials),Moda,MOTOROLA,2266
+291793,3352.33,7,Feminino,25-39 (Millennials),Moda,Arezzo,2267
+188927,3351.94,6,Masculino,70+ (Silent),Moda,Calvin Klein e Tommy Hilfiger,2268
+78564,3351.61,37,Masculino,40-54 (Gen X),Gastronomia,z Bob's - Quiosque 2,2269
+227190,3350.6,6,Feminino,40-54 (Gen X),Beleza e Bem-estar,Arezzo,2270
+232616,3350.33,8,Feminino,25-39 (Millennials),Calçados,Pittol,2271
+466990,3349.9300000000003,4,Feminino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,2272
+137687,3349.69,6,Feminino,40-54 (Gen X),Moda,Acuo,2273
+284739,3349.67,7,Feminino,40-54 (Gen X),Moda,BelShop,2274
+209417,3349.4,2,Feminino,16-24 (Gen Z),Moda,Békko,2275
+353848,3349.35,10,Feminino,25-39 (Millennials),Beleza e Bem-estar,FATIMA ESPORTES,2276
+224403,3345.04,14,Feminino,25-39 (Millennials),Moda,Colcci,2277
+487440,3344.45,8,Feminino,25-39 (Millennials),Beleza e Bem-estar,Pandora,2278
+394144,3344.05,19,Feminino,25-39 (Millennials),Gastronomia,Camarão Express,2279
+191014,3344.0299999999997,33,Feminino,25-39 (Millennials),Gastronomia,Santo Boteco,2280
+417271,3343.55,36,Feminino,25-39 (Millennials),Pets,Cobasi,2281
+137877,3341.41,8,Feminino,40-54 (Gen X),Moda,Renner,2282
+189153,3341.19,13,Feminino,16-24 (Gen Z),Moda,Renner,2283
+186442,3340.75,5,Masculino,40-54 (Gen X),Calçados,Cacau Show,2284
+141975,3340.4100000000003,33,Feminino,25-39 (Millennials),Gastronomia,Santo Boteco,2285
+157007,3339.99,7,Feminino,55-69 (Boomers),Moda,Renner,2286
+249820,3338.71,6,Feminino,16-24 (Gen Z),Moda,Havaianas,2287
+170112,3338.67,10,Feminino,25-39 (Millennials),Gastronomia,Camarão Express,2288
+244344,3337.06,13,Feminino,40-54 (Gen X),Moda,Centauro,2289
+141386,3335.3,5,Feminino,40-54 (Gen X),Moda,Cases e Capas,2290
+255283,3332.73,5,Feminino,40-54 (Gen X),Moda,Renner,2291
+230282,3330.29,19,Feminino,25-39 (Millennials),Moda,C&A,2292
+256813,3329.9,17,Feminino,55-69 (Boomers),Moda,Americanas,2293
+244628,3328.5299999999997,16,Feminino,40-54 (Gen X),Moda,C&A,2294
+205463,3328.5099999999998,31,Feminino,16-24 (Gen Z),Gastronomia,McDonald's,2295
+325654,3328.4500000000003,4,Feminino,25-39 (Millennials),Moda,Riachuelo,2296
+268205,3328.33,10,Masculino,40-54 (Gen X),Beleza e Bem-estar,Cobasi,2297
+220100,3325.15,9,Feminino,25-39 (Millennials),Beleza e Bem-estar,Uebel Make Up,2298
+86627,3323.42,16,Feminino,40-54 (Gen X),Moda,Dudalina,2299
+122324,3322.66,7,Feminino,25-39 (Millennials),Infantil,Ri Happy,2300
+230661,3320.85,13,Feminino,25-39 (Millennials),Moda,Renner,2301
+189003,3318.81,14,Feminino,55-69 (Boomers),Moda,Renner,2302
+286864,3318.2,3,Feminino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,2303
+322555,3315.84,17,Feminino,25-39 (Millennials),Gastronomia,Riachuelo,2304
+330061,3313.97,1,Masculino,25-39 (Millennials),Ótica,GrandVision by Fototica,2305
+238519,3312.2000000000003,9,Feminino,40-54 (Gen X),Moda,C&A,2306
+253497,3312.2000000000003,5,Masculino,55-69 (Boomers),Moda,Beagle,2307
+192137,3311.3900000000003,4,Masculino,40-54 (Gen X),Calçados,Arezzo,2308
+198197,3309.65,4,Feminino,25-39 (Millennials),Calçados,Pittol,2309
+259082,3308.6,1,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,2310
+146231,3307.55,32,Feminino,40-54 (Gen X),Gastronomia,JAH Açaí,2311
+129502,3306.3100000000004,14,Masculino,40-54 (Gen X),Gastronomia,Kopenhagen,2312
+393953,3305.43,9,Feminino,25-39 (Millennials),Moda,Renner,2313
+192582,3304.83,15,Feminino,40-54 (Gen X),Moda,Renner,2314
+305608,3303.09,9,Feminino,25-39 (Millennials),Moda,Acuo,2315
+341062,3302.2999999999997,19,Feminino,40-54 (Gen X),Moda,Riachuelo,2316
+308396,3301.85,5,Feminino,55-69 (Boomers),Gastronomia,Burger King,2317
+381448,3300.1699999999996,5,Feminino,70+ (Silent),Beleza e Bem-estar,Renner,2318
+332205,3299.0,1,Masculino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,2319
+140168,3298.79,9,Feminino,25-39 (Millennials),Gastronomia,Arezzo,2320
+413170,3298.58,18,Feminino,25-39 (Millennials),Moda,Renner,2321
+164890,3297.65,13,Feminino,25-39 (Millennials),Esportes,Centauro,2322
+432744,3297.12,3,Feminino,40-54 (Gen X),Esportes,Centauro,2323
+291850,3297.0,16,Feminino,16-24 (Gen Z),Moda,Polo Wear,2324
+310314,3296.92,6,Feminino,40-54 (Gen X),Casa e Decoração,Camicado,2325
+123364,3295.78,40,Feminino,40-54 (Gen X),Moda,Panvel Farmácias,2326
+150741,3294.05,18,Feminino,40-54 (Gen X),Moda,Renner,2327
+112596,3293.61,23,Feminino,25-39 (Millennials),Beleza e Bem-estar,BelShop,2328
+379312,3293.61,3,Feminino,25-39 (Millennials),Casa e Decoração,Calvin Klein e Tommy Hilfiger,2329
+58831,3292.6,3,Masculino,25-39 (Millennials),Calçados Femininos,Damyller,2330
+284120,3291.6800000000003,5,Feminino,40-54 (Gen X),Moda,Cacau Show,2331
+401550,3291.59,10,Masculino,25-39 (Millennials),Moda,O Boticário,2332
+129145,3289.0,1,Masculino,55-69 (Boomers),Eletrônicos,Samsung,2333
+125122,3287.97,10,Feminino,40-54 (Gen X),Gastronomia,Casa Maria,2334
+126719,3287.8100000000004,4,Feminino,25-39 (Millennials),Moda,Acuo,2335
+199072,3287.0,4,Feminino,25-39 (Millennials),Joalheria,Pandora,2336
+284406,3286.98,8,Feminino,40-54 (Gen X),Moda,Livraria Catarinense ,2337
+230398,3284.8900000000003,7,Feminino,55-69 (Boomers),Moda,C&A,2338
+231475,3284.8,1,Feminino,40-54 (Gen X),Moda,Empório Du Homem,2339
+126137,3283.23,25,Feminino,40-54 (Gen X),Moda,Renner,2340
+161351,3282.31,18,Feminino,55-69 (Boomers),Beleza e Bem-estar,JAH Açaí,2341
+115866,3282.25,2,Feminino,40-54 (Gen X),Casa e Decoração,Exclusiva Colchões,2342
+452166,3282.0,7,Masculino,40-54 (Gen X),Moda,Renner,2343
+231232,3279.58,3,Feminino,40-54 (Gen X),Calçados Femininos,Luz da Lua,2344
+356083,3278.96,3,Feminino,25-39 (Millennials),Joalheria,Vivara,2345
+189740,3278.37,14,Feminino,55-69 (Boomers),Moda,GNC Cinemas,2346
+444666,3276.0,2,Masculino,25-39 (Millennials),Joalheria,Calvin Klein e Tommy Hilfiger,2347
+210726,3275.56,5,Feminino,25-39 (Millennials),Moda,Renner,2348
+288267,3272.19,13,Feminino,25-39 (Millennials),Moda,Panvel Farmácias,2349
+54900,3267.28,6,Masculino,40-54 (Gen X),Beleza e Bem-estar,Natura,2350
+227344,3265.5699999999997,2,Masculino,25-39 (Millennials),Casa e Decoração,Americanas,2351
+300462,3265.38,8,Masculino,40-54 (Gen X),Moda,Calvin Klein e Tommy Hilfiger,2352
+263821,3264.02,5,Feminino,40-54 (Gen X),Moda,Burger King,2353
+224601,3262.48,3,Feminino,55-69 (Boomers),Beleza e Bem-estar,Bagaggio,2354
+28966,3262.1400000000003,31,Feminino,25-39 (Millennials),Moda,Cobasi,2355
+187818,3261.8900000000003,3,Masculino,55-69 (Boomers),Esportes,Centauro,2356
+274856,3261.73,11,Feminino,25-39 (Millennials),Moda,Centauro,2357
+231968,3261.3,2,Feminino,40-54 (Gen X),Calçados Femininos,Luz da Lua,2358
+418398,3259.81,7,Feminino,25-39 (Millennials),Infantil,Fátima Criança,2359
+15327,3258.1,18,Masculino,70+ (Silent),Gastronomia,Mamma Mia Galeto,2360
+227974,3257.65,2,Feminino,25-39 (Millennials),Moda,Renner,2361
+201839,3257.6000000000004,5,Feminino,25-39 (Millennials),Moda,Arezzo,2362
+72977,3256.91,6,Feminino,25-39 (Millennials),Moda,C&A,2363
+446802,3255.37,1,Masculino,25-39 (Millennials),Presentes e Acessórios,Bagaggio,2364
+248137,3254.88,4,Feminino,40-54 (Gen X),Moda,Empório Du Homem,2365
+233694,3253.07,37,Feminino,40-54 (Gen X),Gastronomia,McDonald's,2366
+153311,3248.87,7,Feminino,70+ (Silent),Moda,Renner,2367
+331005,3246.0,1,Masculino,40-54 (Gen X),Moda,Colcci,2368
+319998,3245.65,15,Feminino,40-54 (Gen X),Moda,Renner,2369
+327690,3244.66,3,Feminino,25-39 (Millennials),Moda,Calvin Klein e Tommy Hilfiger,2370
+97186,3243.66,15,Feminino,40-54 (Gen X),Moda,Centauro,2371
+294409,3243.0,2,Masculino,55-69 (Boomers),Joalheria,Vivara,2372
+415195,3242.4,10,Feminino,25-39 (Millennials),Moda,C&A,2373
+376328,3240.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,2374
+232572,3240.0,1,Masculino,40-54 (Gen X),Joalheria,Vivara,2375
+100058,3239.46,16,Masculino,40-54 (Gen X),Gastronomia,Mini Kalzone,2376
+263530,3238.51,8,Masculino,25-39 (Millennials),Gastronomia,Santo Boteco,2377
+228414,3237.39,13,Feminino,25-39 (Millennials),Beleza e Bem-estar,Livraria Catarinense ,2378
+241576,3237.25,11,Masculino,25-39 (Millennials),Moda,Renner,2379
+229825,3237.11,9,Masculino,25-39 (Millennials),Gastronomia,Las Leñas Parrilla Uruguaya,2380
+298150,3236.74,10,Feminino,55-69 (Boomers),Moda,C&A,2381
+115469,3236.4,5,Masculino,16-24 (Gen Z),Gastronomia,Las Leñas Parrilla Uruguaya,2382
+238499,3234.98,11,Feminino,25-39 (Millennials),Moda,z Naçoes Shopping Participações - Estacionamento,2383
+1445,3233.95,2,Masculino,40-54 (Gen X),Esportes,Centauro,2384
+359931,3232.73,9,Masculino,40-54 (Gen X),Gastronomia,Acuo,2385
+24107,3232.48,43,Feminino,16-24 (Gen Z),Gastronomia,Burger King,2386
+464855,3232.47,16,Feminino,40-54 (Gen X),Gastronomia,Cacau Show,2387
+146889,3231.32,8,Feminino,55-69 (Boomers),Calçados,Acuo,2388
+167079,3228.08,4,Masculino,25-39 (Millennials),Esportes,TIGRE MANIACOS VOLT,2389
+320026,3227.9900000000002,15,Feminino,25-39 (Millennials),Moda,Renner,2390
+197787,3227.5099999999998,15,Feminino,40-54 (Gen X),Moda,C&A,2391
+184158,3227.0099999999998,12,Masculino,25-39 (Millennials),Gastronomia,St.Chicken,2392
+116733,3226.09,15,Feminino,25-39 (Millennials),Gastronomia,McDonald's,2393
+281017,3225.5,4,Feminino,25-39 (Millennials),Moda,Lupo,2394
+189028,3223.85,7,Feminino,25-39 (Millennials),Moda,C&A,2395
+215205,3222.4800000000005,12,Feminino,55-69 (Boomers),Gastronomia,Camarão Express,2396
+230005,3221.94,17,Feminino,25-39 (Millennials),Moda,Me Linda,2397
+306898,3220.1000000000004,4,Feminino,40-54 (Gen X),Moda,Renner,2398
+239442,3219.82,28,Feminino,25-39 (Millennials),Moda,Centauro,2399
+9326,3219.67,2,Feminino,40-54 (Gen X),Esportes,Centauro,2400
+125333,3219.34,10,Feminino,40-54 (Gen X),Gastronomia,Mini Kalzone,2401
+262237,3219.0,2,Feminino,25-39 (Millennials),Moda,Damyller,2402
+441917,3218.8,3,Masculino,40-54 (Gen X),Gastronomia,Santo Boteco,2403
+230646,3217.52,3,Masculino,40-54 (Gen X),Joalheria,Guzzatti,2404
+128630,3217.05,27,Feminino,40-54 (Gen X),Gastronomia,z Kfc,2405
+228936,3216.26,23,Feminino,40-54 (Gen X),Gastronomia,Camarão Express,2406
+350122,3216.19,6,Masculino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,2407
+273389,3214.54,17,Feminino,25-39 (Millennials),Infantil,Ri Happy,2408
+120291,3214.49,32,Masculino,25-39 (Millennials),Gastronomia,McDonald's,2409
+158028,3213.76,16,Feminino,25-39 (Millennials),Moda,C&A,2410
+104710,3212.02,19,Feminino,25-39 (Millennials),Beleza e Bem-estar,Avatim,2411
+224116,3211.3900000000003,10,Masculino,40-54 (Gen X),Moda,Renner,2412
+129774,3210.3900000000003,17,Feminino,40-54 (Gen X),Moda,Renner,2413
+194458,3209.82,3,Masculino,25-39 (Millennials),Calçados Femininos,Casa Maria,2414
+202987,3207.19,40,Masculino,25-39 (Millennials),Gastronomia,Café Cultura,2415
+361766,3206.37,12,Feminino,40-54 (Gen X),Gastronomia,Donna Mirô,2416
+14023,3205.33,39,Feminino,25-39 (Millennials),Gastronomia,Natureza Bistrô,2417
+243727,3203.44,10,Masculino,25-39 (Millennials),Moda,Beagle,2418
+98158,3202.78,6,Feminino,40-54 (Gen X),Infantil,Café Cultura,2419
+223622,3202.54,5,Feminino,25-39 (Millennials),Moda,Renner,2420
+218529,3202.4,7,Feminino,40-54 (Gen X),Moda,Mar de Maria ,2421
+131204,3202.0,2,Masculino,25-39 (Millennials),Moda,Calvin Klein e Tommy Hilfiger,2422
+233570,3201.5,3,Masculino,Nao Informado,Moda,Kings ,2423
+425529,3199.0,1,Feminino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,2424
+230242,3198.9,2,Feminino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,2425
+224200,3198.87,12,Feminino,25-39 (Millennials),Moda,Livraria Catarinense ,2426
+162889,3198.79,9,Feminino,25-39 (Millennials),Moda,Beagle,2427
+277170,3198.44,6,Masculino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,2428
+435214,3198.0,2,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,2429
+443404,3198.0,2,Masculino,40-54 (Gen X),Casa e Decoração,Cassol Centerlar,2430
+216133,3197.12,3,Feminino,40-54 (Gen X),Calçados Femininos,Luz da Lua,2431
+425745,3195.56,8,Masculino,55-69 (Boomers),Calçados,Pittol,2432
+114947,3194.2,36,Feminino,55-69 (Boomers),Gastronomia,McDonald's,2433
+151425,3190.65,4,Feminino,25-39 (Millennials),Calçados,Arezzo,2434
+317225,3190.39,14,Feminino,25-39 (Millennials),Moda,Youcom,2435
+12715,3186.62,15,Masculino,25-39 (Millennials),Gastronomia,Las Leñas Parrilla Uruguaya,2436
+425778,3186.14,4,Masculino,40-54 (Gen X),Moda,Renner,2437
+446,3185.98,12,Masculino,25-39 (Millennials),Pets,Cobasi,2438
+128441,3184.36,12,Feminino,40-54 (Gen X),Gastronomia,Camarão Express,2439
+193265,3183.05,20,Masculino,40-54 (Gen X),Gastronomia,Café Cultura,2440
+349160,3182.58,11,Feminino,25-39 (Millennials),Moda,Americanas,2441
+1501,3180.63,6,Masculino,25-39 (Millennials),Gastronomia,JAH Açaí,2442
+192312,3180.43,22,Feminino,25-39 (Millennials),Gastronomia,Café Cultura,2443
+310753,3178.33,7,Feminino,25-39 (Millennials),Moda,C&A,2444
+233981,3177.94,16,Feminino,40-54 (Gen X),Gastronomia,Camarão Express,2445
+231950,3177.9,1,Feminino,40-54 (Gen X),Moda,Renner,2446
+242273,3177.79,4,Feminino,25-39 (Millennials),Joalheria,Pandora,2447
+325260,3177.34,10,Feminino,40-54 (Gen X),Moda,C&A,2448
+367113,3176.37,8,Feminino,40-54 (Gen X),Moda,C&A,2449
+360421,3175.8199999999997,4,Masculino,16-24 (Gen Z),Beleza e Bem-estar,Essence Parfums,2450
+379633,3175.08,3,Feminino,25-39 (Millennials),Infantil,Cobasi,2451
+286522,3173.26,14,Feminino,40-54 (Gen X),Moda,C&A,2452
+100962,3173.1400000000003,9,Feminino,25-39 (Millennials),Moda,Riachuelo,2453
+448807,3172.89,7,Feminino,25-39 (Millennials),Moda,C&A,2454
+184304,3172.6,19,Feminino,40-54 (Gen X),Gastronomia,Camarão Express,2455
+260566,3171.2,8,Feminino,25-39 (Millennials),Moda,Renner,2456
+293048,3168.75,28,Feminino,25-39 (Millennials),Moda,Renner,2457
+229216,3168.0,1,Feminino,55-69 (Boomers),Eletrônicos,Samsung,2458
+356180,3167.52,2,Feminino,25-39 (Millennials),Calçados,Pittol,2459
+272289,3164.13,11,Feminino,40-54 (Gen X),Moda,Riachuelo,2460
+297647,3163.6,2,Feminino,25-39 (Millennials),Infantil,Fátima Bebê,2461
+119215,3162.21,13,Feminino,25-39 (Millennials),Não informado,z Naçoes Shopping Participações - Estacionamento,2462
+1079,3162.0699999999997,9,Feminino,40-54 (Gen X),Moda,Estacionamento - Nações Shopping,2463
+368931,3162.0,3,Feminino,55-69 (Boomers),Casa e Decoração,Cassol Centerlar,2464
+166208,3159.81,14,Feminino,25-39 (Millennials),Moda,Live!,2465
+301240,3158.88,4,Masculino,25-39 (Millennials),Moda,Beagle,2466
+114909,3158.73,15,Feminino,40-54 (Gen X),Infantil,Livraria Catarinense ,2467
+272664,3158.6800000000003,4,Feminino,40-54 (Gen X),Moda,Centauro,2468
+280715,3158.35,11,Feminino,40-54 (Gen X),Moda,C&A,2469
+133675,3157.0,26,Feminino,40-54 (Gen X),Gastronomia,Cobasi,2470
+86136,3156.5,4,Masculino,40-54 (Gen X),Esportes,Centauro,2471
+286192,3156.0,2,Masculino,55-69 (Boomers),Moda,Calvin Klein e Tommy Hilfiger,2472
+125608,3155.7999999999997,14,Feminino,55-69 (Boomers),Moda,Renner,2473
+366287,3154.6,2,Feminino,40-54 (Gen X),Joalheria,Baummer,2474
+219196,3153.82,2,Feminino,70+ (Silent),Moda,Dudalina,2475
+164817,3153.38,16,Feminino,55-69 (Boomers),Moda,C&A,2476
+63701,3151.73,97,Feminino,40-54 (Gen X),Gastronomia,Cobasi,2477
+263191,3150.0,1,Masculino,25-39 (Millennials),Joalheria,Vivara,2478
+374666,3149.87,2,Feminino,16-24 (Gen Z),Calçados,Pittol,2479
+382820,3147.98,4,Masculino,40-54 (Gen X),Moda,Beagle,2480
+233564,3146.31,14,Feminino,40-54 (Gen X),Beleza e Bem-estar,Avatim,2481
+135907,3144.8,12,Masculino,25-39 (Millennials),Moda,Riachuelo,2482
+251252,3143.88,4,Feminino,25-39 (Millennials),Moda,Youcom,2483
+133934,3142.83,12,Feminino,25-39 (Millennials),Beleza e Bem-estar,Avatim,2484
+231816,3142.1,5,Feminino,25-39 (Millennials),Moda,Youcom,2485
+139249,3141.17,24,Masculino,40-54 (Gen X),Moda,Mini Kalzone,2486
+304154,3140.0,1,Feminino,55-69 (Boomers),Moda,Tokaia,2487
+334430,3139.61,8,Feminino,40-54 (Gen X),Calçados,Baummer,2488
+12747,3138.22,6,Feminino,40-54 (Gen X),Moda,BelShop,2489
+127705,3137.85,29,Feminino,40-54 (Gen X),Pets,Cobasi,2490
+27799,3136.8,5,Masculino,25-39 (Millennials),Casa e Decoração,Cassol Centerlar,2491
+242370,3136.0,4,Feminino,40-54 (Gen X),Beleza e Bem-estar,Adcos,2492
+223591,3135.42,14,Feminino,25-39 (Millennials),Moda,Youcom,2493
+144157,3135.03,23,Masculino,40-54 (Gen X),Moda,Centauro,2494
+122869,3134.2000000000003,2,Feminino,40-54 (Gen X),Moda,Renner,2495
+453615,3133.4,6,Feminino,40-54 (Gen X),Casa e Decoração,Camicado,2496
+428394,3133.0,1,Masculino,40-54 (Gen X),Beleza e Bem-estar,Essence Parfums,2497
+229802,3132.99,2,Masculino,25-39 (Millennials),Casa e Decoração,Camicado,2498
+362071,3130.81,7,Masculino,25-39 (Millennials),Moda,Renner,2499
+268485,3128.9,2,Masculino,25-39 (Millennials),Casa e Decoração,Békko,2500
+374406,3128.63,7,Feminino,25-39 (Millennials),Moda,Camicado,2501
+240916,3128.55,14,Masculino,25-39 (Millennials),Moda,Casa Maria,2502
