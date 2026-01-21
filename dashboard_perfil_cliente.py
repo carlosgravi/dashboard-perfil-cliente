@@ -9,6 +9,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import os
+import base64
 
 # Configuração da página
 st.set_page_config(
@@ -18,9 +19,42 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Função para converter imagem para base64
+def get_base64_image(image_path):
+    try:
+        with open(image_path, "rb") as img_file:
+            return base64.b64encode(img_file.read()).decode()
+    except:
+        return None
+
+# Carregar imagem de fundo
+bg_image = get_base64_image("AJ.jpg")
+bg_style = ""
+if bg_image:
+    bg_style = f"""
+    [data-testid="stAppViewContainer"] {{
+        background-image: url("data:image/jpeg;base64,{bg_image}");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }}
+
+    [data-testid="stAppViewContainer"]::before {{
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.85);
+        z-index: -1;
+    }}
+    """
+
 # CSS customizado - Compatível com Streamlit Cloud
-st.markdown("""
+st.markdown(f"""
 <style>
+    {bg_style}
     /* Header principal */
     .main-header {
         font-size: 2.2rem;
@@ -29,8 +63,18 @@ st.markdown("""
         text-align: center;
         margin-bottom: 1rem;
         padding: 0.5rem;
-        background-color: #f0f2f6;
+        background-color: rgba(240, 242, 246, 0.95);
         border-radius: 10px;
+        backdrop-filter: blur(5px);
+    }
+
+    /* Main content area */
+    .main .block-container {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        padding: 2rem;
+        margin-top: 1rem;
+        backdrop-filter: blur(10px);
     }
 
     /* Cards de métricas */
@@ -53,16 +97,21 @@ st.markdown("""
 
     /* Container das métricas */
     [data-testid="metric-container"] {
-        background-color: #f8f9fa !important;
+        background-color: rgba(255, 255, 255, 0.95) !important;
         border: 2px solid #e0e0e0 !important;
         border-radius: 10px !important;
         padding: 1rem !important;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.15) !important;
+        backdrop-filter: blur(5px) !important;
     }
 
     /* Sidebar */
     section[data-testid="stSidebar"] {
-        background-color: #1E3A5F !important;
+        background: linear-gradient(180deg, #1E3A5F 0%, #2C3E50 100%) !important;
+    }
+
+    section[data-testid="stSidebar"] > div:first-child {
+        background: transparent !important;
     }
 
     section[data-testid="stSidebar"] * {
@@ -194,6 +243,27 @@ except Exception as e:
     st.stop()
 
 # Sidebar
+# Logo - carrega se existir arquivo PNG ou SVG
+logo_path = None
+for ext in ['png', 'svg', 'jpg']:
+    if os.path.exists(f"AJFans-logo.{ext}"):
+        logo_path = f"AJFans-logo.{ext}"
+        break
+    if os.path.exists(f"logo.{ext}"):
+        logo_path = f"logo.{ext}"
+        break
+
+if logo_path:
+    st.sidebar.image(logo_path, use_container_width=True)
+else:
+    # Placeholder com estilo para o logo
+    st.sidebar.markdown("""
+    <div style="text-align: center; padding: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; margin-bottom: 1rem;">
+        <h2 style="color: white; margin: 0; font-size: 1.5rem;">AJ FANS</h2>
+        <p style="color: rgba(255,255,255,0.8); margin: 0; font-size: 0.8rem;">Almeida Junior</p>
+    </div>
+    """, unsafe_allow_html=True)
+
 st.sidebar.title("🛍️ Almeida Junior")
 st.sidebar.markdown("**Dashboard Perfil de Cliente**")
 st.sidebar.markdown("---")
