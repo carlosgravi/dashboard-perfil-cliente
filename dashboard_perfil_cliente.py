@@ -9,7 +9,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import os
-import base64
 
 # Configuração da página
 st.set_page_config(
@@ -19,166 +18,112 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Função para converter imagem para base64
-def get_base64_image(image_path):
-    try:
-        with open(image_path, "rb") as img_file:
-            return base64.b64encode(img_file.read()).decode()
-    except:
-        return None
-
-# Carregar imagem de fundo
-bg_image = get_base64_image("AJ.jpg")
-
-# Construir CSS do background separadamente (evita problemas com f-string)
-bg_css = ""
-if bg_image:
-    bg_css = '''
-    [data-testid="stAppViewContainer"] {
-        background-image: url("data:image/jpeg;base64,''' + bg_image + '''");
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
-
-    [data-testid="stAppViewContainer"]::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.85);
-        z-index: -1;
-    }
-    '''
-
-# CSS customizado - Compatível com Streamlit Cloud
+# CSS customizado - Simples e funcional
 st.markdown("""
 <style>
-    """ + bg_css + """
     /* Header principal */
     .main-header {
         font-size: 2.2rem;
         font-weight: bold;
-        color: #1E3A5F !important;
+        color: #1E3A5F;
         text-align: center;
         margin-bottom: 1rem;
         padding: 0.5rem;
-        background-color: rgba(240, 242, 246, 0.95);
+        background-color: #f0f2f6;
         border-radius: 10px;
-        backdrop-filter: blur(5px);
-    }
-
-    /* Main content area */
-    .main .block-container {
-        background-color: rgba(255, 255, 255, 0.9);
-        border-radius: 15px;
-        padding: 2rem;
-        margin-top: 1rem;
-        backdrop-filter: blur(10px);
     }
 
     /* Cards de métricas */
     [data-testid="stMetricValue"] {
-        font-size: 1.8rem !important;
-        font-weight: bold !important;
-        color: #1E3A5F !important;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #1E3A5F;
     }
 
     [data-testid="stMetricLabel"] {
-        font-size: 1rem !important;
-        color: #333333 !important;
-        font-weight: 600 !important;
+        font-size: 1rem;
+        color: #333333;
+        font-weight: 600;
     }
 
     [data-testid="stMetricDelta"] {
-        font-size: 0.85rem !important;
-        color: #28a745 !important;
+        font-size: 0.85rem;
     }
 
     /* Container das métricas */
     [data-testid="metric-container"] {
-        background-color: rgba(255, 255, 255, 0.95) !important;
-        border: 2px solid #e0e0e0 !important;
-        border-radius: 10px !important;
-        padding: 1rem !important;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.15) !important;
-        backdrop-filter: blur(5px) !important;
+        background-color: #f8f9fa;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        padding: 1rem;
     }
 
     /* Sidebar */
     section[data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #1E3A5F 0%, #2C3E50 100%) !important;
-    }
-
-    section[data-testid="stSidebar"] > div:first-child {
-        background: transparent !important;
+        background-color: #1E3A5F;
     }
 
     section[data-testid="stSidebar"] * {
-        color: #FFFFFF !important;
+        color: #FFFFFF;
     }
 
     section[data-testid="stSidebar"] [data-testid="stMetricValue"] {
-        color: #FFFFFF !important;
+        color: #FFFFFF;
     }
 
     section[data-testid="stSidebar"] [data-testid="stMetricLabel"] {
-        color: #B0C4DE !important;
+        color: #B0C4DE;
     }
 
-    /* Títulos */
-    .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
-        color: #1E3A5F !important;
+    /* Títulos na área principal */
+    .main h1, .main h2, .main h3, .main .stMarkdown h1, .main .stMarkdown h2, .main .stMarkdown h3 {
+        color: #1E3A5F;
+    }
+
+    /* Subheaders */
+    .main [data-testid="stSubheader"] {
+        color: #1E3A5F;
     }
 
     /* Tabs */
     button[data-baseweb="tab"] {
-        background-color: #2C3E50 !important;
-        color: #FFFFFF !important;
-        border-radius: 8px !important;
-        margin-right: 5px !important;
-        padding: 10px 20px !important;
-        font-weight: 500 !important;
-        border: none !important;
+        background-color: #2C3E50;
+        color: #FFFFFF;
+        border-radius: 8px;
+        margin-right: 5px;
+        padding: 10px 20px;
+        font-weight: 500;
+        border: none;
     }
 
     button[data-baseweb="tab"]:hover {
-        background-color: #34495E !important;
+        background-color: #34495E;
     }
 
     button[data-baseweb="tab"][aria-selected="true"] {
-        background-color: #3498DB !important;
-        color: #FFFFFF !important;
+        background-color: #3498DB;
+        color: #FFFFFF;
     }
 
-    /* Texto das tabs */
     button[data-baseweb="tab"] div {
-        color: #FFFFFF !important;
+        color: #FFFFFF;
     }
 
-    /* Selectbox e Multiselect */
+    /* Labels de selectbox */
     .stSelectbox label, .stMultiSelect label {
-        color: #1E3A5F !important;
-        font-weight: 600 !important;
+        color: #1E3A5F;
+        font-weight: 600;
     }
 
     /* Radio buttons no sidebar */
     section[data-testid="stSidebar"] .stRadio label {
-        color: #FFFFFF !important;
+        color: #FFFFFF;
     }
 
     /* Dataframe */
     .stDataFrame {
         border: 1px solid #e0e0e0;
         border-radius: 8px;
-    }
-
-    /* Subheader */
-    .stMarkdown h2, .stMarkdown h3 {
-        border-bottom: 2px solid #3498DB;
-        padding-bottom: 0.5rem;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -245,32 +190,10 @@ except Exception as e:
     st.stop()
 
 # Sidebar
-# Logo - carrega GIF ou outros formatos
-logo_path = None
-logo_files = [
-    "AJ-AJFANS V2 - GIF.gif",
-    "AJFans-logo.gif",
-    "AJFans-logo.png",
-    "AJFans-logo.svg",
-    "logo.gif",
-    "logo.png",
-    "logo.svg"
-]
-for logo_file in logo_files:
-    if os.path.exists(logo_file):
-        logo_path = logo_file
-        break
-
-if logo_path:
-    st.sidebar.image(logo_path, use_container_width=True)
-else:
-    # Placeholder com estilo para o logo
-    st.sidebar.markdown("""
-    <div style="text-align: center; padding: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; margin-bottom: 1rem;">
-        <h2 style="color: white; margin: 0; font-size: 1.5rem;">AJ FANS</h2>
-        <p style="color: rgba(255,255,255,0.8); margin: 0; font-size: 0.8rem;">Almeida Junior</p>
-    </div>
-    """, unsafe_allow_html=True)
+# Logo - carrega GIF
+logo_file = "AJ-AJFANS V2 - GIF.gif"
+if os.path.exists(logo_file):
+    st.sidebar.image(logo_file, use_container_width=True)
 
 st.sidebar.title("🛍️ Almeida Junior")
 st.sidebar.markdown("**Dashboard Perfil de Cliente**")
