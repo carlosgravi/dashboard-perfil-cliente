@@ -214,8 +214,9 @@ st.sidebar.title("🛍️ Almeida Junior")
 st.sidebar.markdown("**Dashboard Perfil de Cliente**")
 st.sidebar.markdown("---")
 
-# Seletor de Período
+# Seletor de Período (Multiselect para comparação)
 st.sidebar.markdown("### 📅 Período de Análise")
+st.sidebar.caption("Selecione 1 período para análise ou 2+ para comparar")
 indice_periodos = carregar_indice_periodos()
 
 if indice_periodos is not None and len(indice_periodos) > 0:
@@ -231,7 +232,7 @@ if indice_periodos is not None and len(indice_periodos) > 0:
             opcoes_periodo[tipo] = []
         opcoes_periodo[tipo].append({'codigo': codigo, 'nome': nome, 'pasta': pasta})
 
-    # Criar lista de opções para selectbox
+    # Criar lista de opções para multiselect
     lista_periodos = []
     mapa_periodos = {}
 
@@ -244,22 +245,49 @@ if indice_periodos is not None and len(indice_periodos) > 0:
                 lista_periodos.append(label)
                 mapa_periodos[label] = p['pasta']
 
-    periodo_selecionado = st.sidebar.selectbox(
-        "Selecione o período:",
+    periodos_selecionados = st.sidebar.multiselect(
+        "Selecione período(s):",
         options=lista_periodos,
-        index=0  # Período Completo como padrão
+        default=["Período Completo"],  # Período Completo como padrão
+        max_selections=4  # Limitar a 4 para não sobrecarregar
     )
 
-    periodo_pasta = mapa_periodos[periodo_selecionado]
+    # Garantir que pelo menos um período esteja selecionado
+    if not periodos_selecionados:
+        periodos_selecionados = ["Período Completo"]
+        st.sidebar.warning("Selecionando Período Completo como padrão")
+
+    # Mapear períodos selecionados para pastas
+    periodos_pasta = {p: mapa_periodos[p] for p in periodos_selecionados}
+
+    # Modo de visualização
+    modo_comparativo = len(periodos_selecionados) > 1
+
+    # Para compatibilidade com código existente (quando 1 período)
+    periodo_selecionado = periodos_selecionados[0]
+    periodo_pasta = periodos_pasta[periodo_selecionado]
 else:
+    periodos_selecionados = ["Período Completo"]
+    periodos_pasta = {"Período Completo": "Completo"}
     periodo_selecionado = "Período Completo"
     periodo_pasta = "Completo"
+    modo_comparativo = False
 
 st.sidebar.markdown("---")
 
-# Carregar dados do período selecionado
+# Carregar dados dos períodos selecionados
 try:
-    dados = carregar_dados(periodo_pasta)
+    if modo_comparativo:
+        # Carregar dados de múltiplos períodos
+        dados_periodos = {}
+        for nome_periodo, pasta in periodos_pasta.items():
+            dados_periodos[nome_periodo] = carregar_dados(pasta)
+        # Usar o primeiro período como referência para páginas não comparativas
+        dados = dados_periodos[periodos_selecionados[0]]
+    else:
+        # Carregar dados de um único período
+        dados = carregar_dados(periodo_pasta)
+        dados_periodos = {periodo_selecionado: dados}
 except Exception as e:
     st.error(f"Erro ao carregar dados: {e}")
     st.stop()
@@ -270,211 +298,431 @@ pagina = st.sidebar.radio(
 )
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("### 📊 Totais do Período")
-st.sidebar.metric("Clientes", f"{dados['resumo']['clientes'].sum():,}")
-st.sidebar.metric("Valor Total", f"R$ {dados['resumo']['valor_total'].sum()/1e6:.1f}M")
+if modo_comparativo:
+    st.sidebar.markdown(f"### 📊 Comparando {len(periodos_selecionados)} períodos")
+    for nome_p in periodos_selecionados:
+        d = dados_periodos[nome_p]
+        st.sidebar.markdown(f"**{nome_p}:**")
+        st.sidebar.caption(f"Clientes: {d['resumo']['clientes'].sum():,} | Valor: R$ {d['resumo']['valor_total'].sum()/1e6:.1f}M")
+else:
+    st.sidebar.markdown("### 📊 Totais do Período")
+    st.sidebar.metric("Clientes", f"{dados['resumo']['clientes'].sum():,}")
+    st.sidebar.metric("Valor Total", f"R$ {dados['resumo']['valor_total'].sum()/1e6:.1f}M")
+
+# Cores para períodos (para comparação)
+CORES_PERIODOS = ['#E74C3C', '#3498DB', '#2ECC71', '#9B59B6']
 
 # ============================================================================
 # PÁGINA: VISÃO GERAL
 # ============================================================================
 if pagina == "📊 Visão Geral":
     st.markdown('<p class="main-header">📊 Visão Geral - Perfil de Cliente</p>', unsafe_allow_html=True)
-    st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
-    # Métricas principais
-    col1, col2, col3, col4 = st.columns(4)
+    if modo_comparativo:
+        # === MODO COMPARATIVO ===
+        st.markdown(f"**Comparando:** {' vs '.join(periodos_selecionados)}")
 
-    with col1:
-        st.metric(
-            "Total de Clientes",
-            f"{dados['resumo']['clientes'].sum():,}",
-            delta="6 shoppings"
-        )
+        # Preparar dados para comparação
+        df_comparativo = []
+        for nome_p in periodos_selecionados:
+            d = dados_periodos[nome_p]
+            df_comparativo.append({
+                'Período': nome_p,
+                'Clientes': d['resumo']['clientes'].sum(),
+                'Valor Total': d['resumo']['valor_total'].sum(),
+                'Ticket Médio': d['resumo']['valor_total'].sum() / d['resumo']['clientes'].sum(),
+                'High Spenders': d['resumo']['qtd_high_spenders'].sum()
+            })
+        df_comp = pd.DataFrame(df_comparativo)
 
-    with col2:
-        st.metric(
-            "Valor Total",
-            f"R$ {dados['resumo']['valor_total'].sum()/1e6:.1f}M",
-            delta=f"Ticket: R$ {dados['resumo']['valor_total'].sum()/dados['resumo']['clientes'].sum():,.0f}"
-        )
+        # Métricas comparativas
+        st.subheader("📊 Comparativo de Métricas")
+        cols = st.columns(len(periodos_selecionados))
+        for i, nome_p in enumerate(periodos_selecionados):
+            with cols[i]:
+                d = dados_periodos[nome_p]
+                st.markdown(f"**{nome_p}**")
+                st.metric("Clientes", f"{d['resumo']['clientes'].sum():,}")
+                st.metric("Valor Total", f"R$ {d['resumo']['valor_total'].sum()/1e6:.1f}M")
+                ticket = d['resumo']['valor_total'].sum() / d['resumo']['clientes'].sum()
+                st.metric("Ticket Médio", f"R$ {ticket:,.0f}")
+                st.metric("High Spenders", f"{d['resumo']['qtd_high_spenders'].sum():,}")
 
-    with col3:
-        st.metric(
-            "High Spenders",
-            f"{dados['resumo']['qtd_high_spenders'].sum():,}",
-            delta=f"{dados['resumo']['qtd_high_spenders'].sum()/dados['resumo']['clientes'].sum()*100:.1f}% do total"
-        )
+        st.markdown("---")
 
-    with col4:
-        ticket_medio_geral = dados['resumo']['valor_total'].sum() / dados['resumo']['clientes'].sum()
-        st.metric(
-            "Ticket Médio",
-            f"R$ {ticket_medio_geral:,.0f}",
-            delta="valor total / clientes"
-        )
+        # Gráficos comparativos
+        col1, col2 = st.columns(2)
 
-    st.markdown("---")
+        with col1:
+            st.subheader("💰 Valor Total por Período")
+            fig = px.bar(
+                df_comp,
+                x='Período',
+                y='Valor Total',
+                color='Período',
+                color_discrete_sequence=CORES_PERIODOS[:len(periodos_selecionados)],
+                text=df_comp['Valor Total'].apply(lambda x: f'R$ {x/1e6:.1f}M')
+            )
+            fig.update_layout(showlegend=False, height=400)
+            fig.update_traces(textposition='outside')
+            st.plotly_chart(fig, use_container_width=True)
 
-    # Gráficos lado a lado
-    col1, col2 = st.columns(2)
+        with col2:
+            st.subheader("👥 Clientes por Período")
+            fig = px.bar(
+                df_comp,
+                x='Período',
+                y='Clientes',
+                color='Período',
+                color_discrete_sequence=CORES_PERIODOS[:len(periodos_selecionados)],
+                text=df_comp['Clientes'].apply(lambda x: f'{x:,}')
+            )
+            fig.update_layout(showlegend=False, height=400)
+            fig.update_traces(textposition='outside')
+            st.plotly_chart(fig, use_container_width=True)
 
-    with col1:
-        st.subheader("💰 Valor Total por Shopping")
+        st.markdown("---")
+
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.subheader("🎫 Ticket Médio por Período")
+            fig = px.bar(
+                df_comp,
+                x='Período',
+                y='Ticket Médio',
+                color='Período',
+                color_discrete_sequence=CORES_PERIODOS[:len(periodos_selecionados)],
+                text=df_comp['Ticket Médio'].apply(lambda x: f'R$ {x:,.0f}')
+            )
+            fig.update_layout(showlegend=False, height=400)
+            fig.update_traces(textposition='outside')
+            st.plotly_chart(fig, use_container_width=True)
+
+        with col2:
+            st.subheader("⭐ High Spenders por Período")
+            fig = px.bar(
+                df_comp,
+                x='Período',
+                y='High Spenders',
+                color='Período',
+                color_discrete_sequence=CORES_PERIODOS[:len(periodos_selecionados)],
+                text=df_comp['High Spenders'].apply(lambda x: f'{x:,}')
+            )
+            fig.update_layout(showlegend=False, height=400)
+            fig.update_traces(textposition='outside')
+            st.plotly_chart(fig, use_container_width=True)
+
+        st.markdown("---")
+
+        # Comparativo por Shopping
+        st.subheader("🏬 Valor por Shopping - Comparativo entre Períodos")
+        df_shop_comp = []
+        for nome_p in periodos_selecionados:
+            d = dados_periodos[nome_p]
+            for _, row in d['resumo'].iterrows():
+                df_shop_comp.append({
+                    'Período': nome_p,
+                    'Shopping': row['sigla'],
+                    'Valor': row['valor_total']
+                })
+        df_shop = pd.DataFrame(df_shop_comp)
+
         fig = px.bar(
-            dados['resumo'].sort_values('valor_total', ascending=True),
-            x='valor_total',
-            y='sigla',
-            orientation='h',
-            color='sigla',
-            color_discrete_map=CORES_SHOPPING,
-            text=dados['resumo'].sort_values('valor_total', ascending=True)['valor_total'].apply(lambda x: f'R$ {x/1e6:.1f}M')
+            df_shop,
+            x='Shopping',
+            y='Valor',
+            color='Período',
+            barmode='group',
+            color_discrete_sequence=CORES_PERIODOS[:len(periodos_selecionados)],
+            text=df_shop['Valor'].apply(lambda x: f'R$ {x/1e6:.1f}M')
         )
-        fig.update_layout(showlegend=False, height=400)
+        fig.update_layout(height=450)
         fig.update_traces(textposition='outside')
         st.plotly_chart(fig, use_container_width=True)
 
-    with col2:
-        st.subheader("👥 Clientes por Shopping")
-        fig = px.pie(
-            dados['resumo'],
-            values='clientes',
-            names='sigla',
-            color='sigla',
-            color_discrete_map=CORES_SHOPPING,
-            hole=0.4
-        )
-        fig.update_layout(height=400)
-        st.plotly_chart(fig, use_container_width=True)
+        # Tabela resumo
+        st.subheader("📋 Tabela Comparativa")
+        df_comp_display = df_comp.copy()
+        df_comp_display['Valor Total'] = df_comp_display['Valor Total'].apply(lambda x: f'R$ {x:,.2f}')
+        df_comp_display['Ticket Médio'] = df_comp_display['Ticket Médio'].apply(lambda x: f'R$ {x:,.2f}')
+        df_comp_display['Clientes'] = df_comp_display['Clientes'].apply(lambda x: f'{x:,}')
+        df_comp_display['High Spenders'] = df_comp_display['High Spenders'].apply(lambda x: f'{x:,}')
+        st.dataframe(df_comp_display, use_container_width=True, hide_index=True)
 
-    # Tabela resumo
-    st.subheader("📋 Resumo por Shopping")
-    df_display = dados['resumo'][['shopping', 'sigla', 'clientes', 'valor_total', 'ticket_medio', 'qtd_high_spenders']].copy()
-    df_display['valor_total'] = df_display['valor_total'].apply(lambda x: f'R$ {x:,.2f}')
-    df_display['ticket_medio'] = df_display['ticket_medio'].apply(lambda x: f'R$ {x:,.2f}')
-    df_display.columns = ['Shopping', 'Sigla', 'Clientes', 'Valor Total', 'Ticket Médio', 'High Spenders']
-    st.dataframe(df_display, use_container_width=True, hide_index=True)
+    else:
+        # === MODO NORMAL (1 período) ===
+        st.markdown(f"**Período selecionado:** {periodo_selecionado}")
+
+        # Métricas principais
+        col1, col2, col3, col4 = st.columns(4)
+
+        with col1:
+            st.metric(
+                "Total de Clientes",
+                f"{dados['resumo']['clientes'].sum():,}",
+                delta="6 shoppings"
+            )
+
+        with col2:
+            st.metric(
+                "Valor Total",
+                f"R$ {dados['resumo']['valor_total'].sum()/1e6:.1f}M",
+                delta=f"Ticket: R$ {dados['resumo']['valor_total'].sum()/dados['resumo']['clientes'].sum():,.0f}"
+            )
+
+        with col3:
+            st.metric(
+                "High Spenders",
+                f"{dados['resumo']['qtd_high_spenders'].sum():,}",
+                delta=f"{dados['resumo']['qtd_high_spenders'].sum()/dados['resumo']['clientes'].sum()*100:.1f}% do total"
+            )
+
+        with col4:
+            ticket_medio_geral = dados['resumo']['valor_total'].sum() / dados['resumo']['clientes'].sum()
+            st.metric(
+                "Ticket Médio",
+                f"R$ {ticket_medio_geral:,.0f}",
+                delta="valor total / clientes"
+            )
+
+        st.markdown("---")
+
+        # Gráficos lado a lado
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.subheader("💰 Valor Total por Shopping")
+            fig = px.bar(
+                dados['resumo'].sort_values('valor_total', ascending=True),
+                x='valor_total',
+                y='sigla',
+                orientation='h',
+                color='sigla',
+                color_discrete_map=CORES_SHOPPING,
+                text=dados['resumo'].sort_values('valor_total', ascending=True)['valor_total'].apply(lambda x: f'R$ {x/1e6:.1f}M')
+            )
+            fig.update_layout(showlegend=False, height=400)
+            fig.update_traces(textposition='outside')
+            st.plotly_chart(fig, use_container_width=True)
+
+        with col2:
+            st.subheader("👥 Clientes por Shopping")
+            fig = px.pie(
+                dados['resumo'],
+                values='clientes',
+                names='sigla',
+                color='sigla',
+                color_discrete_map=CORES_SHOPPING,
+                hole=0.4
+            )
+            fig.update_layout(height=400)
+            st.plotly_chart(fig, use_container_width=True)
+
+        # Tabela resumo
+        st.subheader("📋 Resumo por Shopping")
+        df_display = dados['resumo'][['shopping', 'sigla', 'clientes', 'valor_total', 'ticket_medio', 'qtd_high_spenders']].copy()
+        df_display['valor_total'] = df_display['valor_total'].apply(lambda x: f'R$ {x:,.2f}')
+        df_display['ticket_medio'] = df_display['ticket_medio'].apply(lambda x: f'R$ {x:,.2f}')
+        df_display.columns = ['Shopping', 'Sigla', 'Clientes', 'Valor Total', 'Ticket Médio', 'High Spenders']
+        st.dataframe(df_display, use_container_width=True, hide_index=True)
 
 # ============================================================================
 # PÁGINA: PERSONAS
 # ============================================================================
 elif pagina == "🎭 Personas":
     st.markdown('<p class="main-header">🎭 Personas de Clientes</p>', unsafe_allow_html=True)
-    st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
     st.markdown("""
     As **Personas** representam perfis comportamentais de clientes, agrupados por características
     similares de consumo, frequência e valor gasto.
     """)
 
-    # Métricas das principais personas
-    col1, col2, col3 = st.columns(3)
-    top3 = dados['personas'].head(3)
+    if modo_comparativo:
+        # === MODO COMPARATIVO ===
+        st.markdown(f"**Comparando:** {' vs '.join(periodos_selecionados)}")
 
-    with col1:
-        st.metric(
-            top3.iloc[0]['persona'],
-            f"{top3.iloc[0]['pct_clientes']:.1f}% dos clientes",
-            delta=f"R$ {top3.iloc[0]['ticket_medio']:,.0f} ticket médio"
-        )
-    with col2:
-        st.metric(
-            top3.iloc[1]['persona'],
-            f"{top3.iloc[1]['pct_clientes']:.1f}% dos clientes",
-            delta=f"R$ {top3.iloc[1]['ticket_medio']:,.0f} ticket médio"
-        )
-    with col3:
-        st.metric(
-            top3.iloc[2]['persona'],
-            f"{top3.iloc[2]['pct_clientes']:.1f}% dos clientes",
-            delta=f"R$ {top3.iloc[2]['ticket_medio']:,.0f} ticket médio"
-        )
+        # Comparar valor total por persona entre períodos
+        st.subheader("📊 Valor por Persona - Comparativo entre Períodos")
 
-    st.markdown("---")
+        df_personas_comp = []
+        for nome_p in periodos_selecionados:
+            d = dados_periodos[nome_p]
+            for _, row in d['personas'].iterrows():
+                df_personas_comp.append({
+                    'Período': nome_p,
+                    'Persona': row['persona'],
+                    'Clientes': row['qtd_clientes'],
+                    'Valor': row['valor_total'],
+                    'Ticket': row['ticket_medio']
+                })
+        df_pers = pd.DataFrame(df_personas_comp)
 
-    # Gráficos
-    col1, col2 = st.columns(2)
+        # Top 5 personas por valor (baseado no primeiro período)
+        top_personas = dados['personas'].nlargest(5, 'valor_total')['persona'].tolist()
+        df_pers_top = df_pers[df_pers['Persona'].isin(top_personas)]
 
-    with col1:
-        st.subheader("📊 Distribuição de Clientes por Persona")
-        fig = px.pie(
-            dados['personas'],
-            values='qtd_clientes',
-            names='persona',
-            hole=0.4
+        fig = px.bar(
+            df_pers_top,
+            x='Persona',
+            y='Valor',
+            color='Período',
+            barmode='group',
+            color_discrete_sequence=CORES_PERIODOS[:len(periodos_selecionados)],
+            text=df_pers_top['Valor'].apply(lambda x: f'R$ {x/1e6:.1f}M')
         )
         fig.update_layout(height=450)
-        st.plotly_chart(fig, use_container_width=True)
-
-    with col2:
-        st.subheader("💰 Valor Total por Persona")
-        fig = px.bar(
-            dados['personas'].sort_values('valor_total', ascending=True),
-            x='valor_total',
-            y='persona',
-            orientation='h',
-            color='valor_total',
-            color_continuous_scale='Blues',
-            text=dados['personas'].sort_values('valor_total', ascending=True)['valor_total'].apply(lambda x: f'R$ {x/1e6:.1f}M')
-        )
-        fig.update_layout(height=450, showlegend=False)
         fig.update_traces(textposition='outside')
         st.plotly_chart(fig, use_container_width=True)
 
-    st.markdown("---")
+        st.markdown("---")
 
-    # Comparativo de métricas por persona
-    st.subheader("📈 Comparativo de Métricas por Persona")
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.markdown("**Ticket Médio por Persona**")
+        # Comparar clientes por persona
+        st.subheader("👥 Clientes por Persona - Comparativo")
         fig = px.bar(
-            dados['personas'].sort_values('ticket_medio', ascending=True),
-            x='ticket_medio',
-            y='persona',
-            orientation='h',
-            color='ticket_medio',
-            color_continuous_scale='Greens',
-            text=dados['personas'].sort_values('ticket_medio', ascending=True)['ticket_medio'].apply(lambda x: f'R$ {x:,.0f}')
+            df_pers_top,
+            x='Persona',
+            y='Clientes',
+            color='Período',
+            barmode='group',
+            color_discrete_sequence=CORES_PERIODOS[:len(periodos_selecionados)],
+            text=df_pers_top['Clientes'].apply(lambda x: f'{x:,}')
         )
-        fig.update_layout(height=400, showlegend=False)
+        fig.update_layout(height=450)
         fig.update_traces(textposition='outside')
         st.plotly_chart(fig, use_container_width=True)
 
-    with col2:
-        st.markdown("**Frequência Média de Compras**")
-        fig = px.bar(
-            dados['personas'].sort_values('freq_media', ascending=True),
-            x='freq_media',
-            y='persona',
-            orientation='h',
-            color='freq_media',
-            color_continuous_scale='Oranges',
-            text=dados['personas'].sort_values('freq_media', ascending=True)['freq_media'].apply(lambda x: f'{x:.1f}x')
-        )
-        fig.update_layout(height=400, showlegend=False)
-        fig.update_traces(textposition='outside')
-        st.plotly_chart(fig, use_container_width=True)
+        st.markdown("---")
 
-    # Tabela detalhada
-    st.subheader("📋 Detalhes das Personas")
-    df_personas = dados['personas'].copy()
-    df_personas['valor_total'] = df_personas['valor_total'].apply(lambda x: f'R$ {x:,.2f}')
-    df_personas['ticket_medio'] = df_personas['ticket_medio'].apply(lambda x: f'R$ {x:,.2f}')
-    df_personas['freq_media'] = df_personas['freq_media'].apply(lambda x: f'{x:.1f}')
-    df_personas['idade_media'] = df_personas['idade_media'].apply(lambda x: f'{x:.0f} anos')
-    df_personas['pct_clientes'] = df_personas['pct_clientes'].apply(lambda x: f'{x:.1f}%')
-    df_personas['pct_valor'] = df_personas['pct_valor'].apply(lambda x: f'{x:.1f}%')
-    df_personas.columns = ['Persona', 'Clientes', 'Valor Total', 'Ticket Médio', 'Freq. Média', 'Idade Média', '% Clientes', '% Valor']
-    st.dataframe(df_personas, use_container_width=True, hide_index=True)
+        # Tabelas lado a lado
+        st.subheader("📋 Detalhes por Período")
+        cols = st.columns(len(periodos_selecionados))
+        for i, nome_p in enumerate(periodos_selecionados):
+            with cols[i]:
+                st.markdown(f"**{nome_p}**")
+                df_p = dados_periodos[nome_p]['personas'][['persona', 'qtd_clientes', 'valor_total', 'pct_valor']].copy()
+                df_p['valor_total'] = df_p['valor_total'].apply(lambda x: f'R$ {x/1e6:.1f}M')
+                df_p['pct_valor'] = df_p['pct_valor'].apply(lambda x: f'{x:.1f}%')
+                df_p.columns = ['Persona', 'Clientes', 'Valor', '% Valor']
+                st.dataframe(df_p.head(6), use_container_width=True, hide_index=True)
+
+    else:
+        # === MODO NORMAL (1 período) ===
+        st.markdown(f"**Período selecionado:** {periodo_selecionado}")
+
+        # Métricas das principais personas
+        col1, col2, col3 = st.columns(3)
+        top3 = dados['personas'].head(3)
+
+        with col1:
+            st.metric(
+                top3.iloc[0]['persona'],
+                f"{top3.iloc[0]['pct_clientes']:.1f}% dos clientes",
+                delta=f"R$ {top3.iloc[0]['ticket_medio']:,.0f} ticket médio"
+            )
+        with col2:
+            st.metric(
+                top3.iloc[1]['persona'],
+                f"{top3.iloc[1]['pct_clientes']:.1f}% dos clientes",
+                delta=f"R$ {top3.iloc[1]['ticket_medio']:,.0f} ticket médio"
+            )
+        with col3:
+            st.metric(
+                top3.iloc[2]['persona'],
+                f"{top3.iloc[2]['pct_clientes']:.1f}% dos clientes",
+                delta=f"R$ {top3.iloc[2]['ticket_medio']:,.0f} ticket médio"
+            )
+
+        st.markdown("---")
+
+        # Gráficos
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.subheader("📊 Distribuição de Clientes por Persona")
+            fig = px.pie(
+                dados['personas'],
+                values='qtd_clientes',
+                names='persona',
+                hole=0.4
+            )
+            fig.update_layout(height=450)
+            st.plotly_chart(fig, use_container_width=True)
+
+        with col2:
+            st.subheader("💰 Valor Total por Persona")
+            fig = px.bar(
+                dados['personas'].sort_values('valor_total', ascending=True),
+                x='valor_total',
+                y='persona',
+                orientation='h',
+                color='valor_total',
+                color_continuous_scale='Blues',
+                text=dados['personas'].sort_values('valor_total', ascending=True)['valor_total'].apply(lambda x: f'R$ {x/1e6:.1f}M')
+            )
+            fig.update_layout(height=450, showlegend=False)
+            fig.update_traces(textposition='outside')
+            st.plotly_chart(fig, use_container_width=True)
+
+        st.markdown("---")
+
+        # Comparativo de métricas por persona
+        st.subheader("📈 Comparativo de Métricas por Persona")
+
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.markdown("**Ticket Médio por Persona**")
+            fig = px.bar(
+                dados['personas'].sort_values('ticket_medio', ascending=True),
+                x='ticket_medio',
+                y='persona',
+                orientation='h',
+                color='ticket_medio',
+                color_continuous_scale='Greens',
+                text=dados['personas'].sort_values('ticket_medio', ascending=True)['ticket_medio'].apply(lambda x: f'R$ {x:,.0f}')
+            )
+            fig.update_layout(height=400, showlegend=False)
+            fig.update_traces(textposition='outside')
+            st.plotly_chart(fig, use_container_width=True)
+
+        with col2:
+            st.markdown("**Frequência Média de Compras**")
+            fig = px.bar(
+                dados['personas'].sort_values('freq_media', ascending=True),
+                x='freq_media',
+                y='persona',
+                orientation='h',
+                color='freq_media',
+                color_continuous_scale='Oranges',
+                text=dados['personas'].sort_values('freq_media', ascending=True)['freq_media'].apply(lambda x: f'{x:.1f}x')
+            )
+            fig.update_layout(height=400, showlegend=False)
+            fig.update_traces(textposition='outside')
+            st.plotly_chart(fig, use_container_width=True)
+
+        # Tabela detalhada
+        st.subheader("📋 Detalhes das Personas")
+        df_personas = dados['personas'].copy()
+        df_personas['valor_total'] = df_personas['valor_total'].apply(lambda x: f'R$ {x:,.2f}')
+        df_personas['ticket_medio'] = df_personas['ticket_medio'].apply(lambda x: f'R$ {x:,.2f}')
+        df_personas['freq_media'] = df_personas['freq_media'].apply(lambda x: f'{x:.1f}')
+        df_personas['idade_media'] = df_personas['idade_media'].apply(lambda x: f'{x:.0f} anos')
+        df_personas['pct_clientes'] = df_personas['pct_clientes'].apply(lambda x: f'{x:.1f}%')
+        df_personas['pct_valor'] = df_personas['pct_valor'].apply(lambda x: f'{x:.1f}%')
+        df_personas.columns = ['Persona', 'Clientes', 'Valor Total', 'Ticket Médio', 'Freq. Média', 'Idade Média', '% Clientes', '% Valor']
+        st.dataframe(df_personas, use_container_width=True, hide_index=True)
 
 # ============================================================================
 # PÁGINA: POR SHOPPING
 # ============================================================================
 elif pagina == "🏬 Por Shopping":
     st.markdown('<p class="main-header">🏬 Análise por Shopping</p>', unsafe_allow_html=True)
-    st.markdown(f"**Período selecionado:** {periodo_selecionado}")
+    if modo_comparativo:
+        st.markdown(f"**Comparando:** {' vs '.join(periodos_selecionados)}")
+        st.info("Para análise detalhada por shopping, selecione apenas 1 período.")
+    else:
+        st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
     # Seletor de shopping
     shopping_selecionado = st.selectbox(
@@ -609,7 +857,10 @@ elif pagina == "🏬 Por Shopping":
 # ============================================================================
 elif pagina == "👥 Perfil Demográfico":
     st.markdown('<p class="main-header">👥 Perfil Demográfico</p>', unsafe_allow_html=True)
-    st.markdown(f"**Período selecionado:** {periodo_selecionado}")
+    if modo_comparativo:
+        st.markdown(f"**Comparando:** {' vs '.join(periodos_selecionados)}")
+    else:
+        st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
     tab1, tab2 = st.tabs(["Por Gênero", "Por Faixa Etária"])
 
@@ -687,197 +938,293 @@ elif pagina == "👥 Perfil Demográfico":
 # ============================================================================
 elif pagina == "⭐ High Spenders":
     st.markdown('<p class="main-header">⭐ High Spenders</p>', unsafe_allow_html=True)
-    st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
     st.markdown("""
     **High Spenders** são os clientes no **Top 10%** em valor de compras de cada shopping.
     Eles representam aproximadamente **40% do faturamento total**.
     """)
 
-    # Métricas gerais
-    col1, col2, col3 = st.columns(3)
+    if modo_comparativo:
+        # === MODO COMPARATIVO ===
+        st.markdown(f"**Comparando:** {' vs '.join(periodos_selecionados)}")
 
-    total_hs = dados['resumo']['qtd_high_spenders'].sum()
-    total_clientes = dados['resumo']['clientes'].sum()
+        # Preparar dados comparativos
+        df_hs_comp = []
+        for nome_p in periodos_selecionados:
+            d = dados_periodos[nome_p]
+            total_hs = d['resumo']['qtd_high_spenders'].sum()
+            total_cli = d['resumo']['clientes'].sum()
+            df_hs_comp.append({
+                'Período': nome_p,
+                'High Spenders': total_hs,
+                '% do Total': total_hs / total_cli * 100,
+                'Total Clientes': total_cli
+            })
+        df_hs = pd.DataFrame(df_hs_comp)
 
-    with col1:
-        st.metric("Total High Spenders", f"{total_hs:,}")
-    with col2:
-        st.metric("% dos Clientes", f"{total_hs/total_clientes*100:.1f}%")
-    with col3:
-        st.metric("Média por Shopping", f"{total_hs//6:,}")
-
-    st.markdown("---")
-
-    # Gráfico de HS por shopping
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.subheader("High Spenders por Shopping")
-        fig = px.bar(
-            dados['resumo'].sort_values('qtd_high_spenders', ascending=True),
-            x='qtd_high_spenders',
-            y='sigla',
-            orientation='h',
-            color='sigla',
-            color_discrete_map=CORES_SHOPPING,
-            text='qtd_high_spenders'
-        )
-        fig.update_layout(showlegend=False, height=400)
-        fig.update_traces(textposition='outside')
-        st.plotly_chart(fig, use_container_width=True)
-
-    with col2:
-        st.subheader("Threshold High Spender (R$)")
-        fig = px.bar(
-            dados['resumo'].sort_values('threshold_hs', ascending=True),
-            x='threshold_hs',
-            y='sigla',
-            orientation='h',
-            color='sigla',
-            color_discrete_map=CORES_SHOPPING,
-            text=dados['resumo'].sort_values('threshold_hs', ascending=True)['threshold_hs'].apply(lambda x: f'R$ {x:,.0f}')
-        )
-        fig.update_layout(showlegend=False, height=400)
-        fig.update_traces(textposition='outside')
-        st.plotly_chart(fig, use_container_width=True)
-
-    # Tabela comparativa
-    st.subheader("📋 Resumo High Spenders por Shopping")
-    df_hs = dados['resumo'][['sigla', 'shopping', 'clientes', 'qtd_high_spenders', 'threshold_hs']].copy()
-    df_hs['pct_hs'] = (df_hs['qtd_high_spenders'] / df_hs['clientes'] * 100).round(1)
-    df_hs['threshold_hs'] = df_hs['threshold_hs'].apply(lambda x: f'R$ {x:,.2f}')
-    df_hs.columns = ['Sigla', 'Shopping', 'Total Clientes', 'High Spenders', 'Threshold', '% HS']
-    st.dataframe(df_hs, use_container_width=True, hide_index=True)
-
-    st.markdown("---")
-
-    # Tabs para análises detalhadas
-    tab1, tab2, tab3 = st.tabs(["👥 Por Gênero", "📊 Por Faixa Etária", "🔄 HS vs Demais"])
-
-    with tab1:
-        st.subheader("High Spenders por Gênero")
-        col1, col2 = st.columns(2)
-
-        with col1:
-            fig = px.pie(
-                dados['hs_por_genero'],
-                values='qtd_hs',
-                names='genero',
-                color='genero',
-                color_discrete_map={'Feminino': '#E91E63', 'Masculino': '#2196F3', 'Nao Informado': '#9E9E9E', 'Outro': '#4CAF50'},
-                title='Distribuição por Gênero'
-            )
-            st.plotly_chart(fig, use_container_width=True)
-
-        with col2:
-            fig = px.bar(
-                dados['hs_por_genero'].sort_values('valor_total', ascending=True),
-                x='valor_total',
-                y='genero',
-                orientation='h',
-                color='genero',
-                color_discrete_map={'Feminino': '#E91E63', 'Masculino': '#2196F3', 'Nao Informado': '#9E9E9E', 'Outro': '#4CAF50'},
-                title='Valor Total por Gênero',
-                text=dados['hs_por_genero'].sort_values('valor_total', ascending=True)['valor_total'].apply(lambda x: f'R$ {x/1e6:.1f}M')
-            )
-            fig.update_layout(showlegend=False)
-            fig.update_traces(textposition='outside')
-            st.plotly_chart(fig, use_container_width=True)
-
-        # Tabela
-        df_hs_gen = dados['hs_por_genero'].copy()
-        df_hs_gen['valor_total'] = df_hs_gen['valor_total'].apply(lambda x: f'R$ {x:,.2f}')
-        df_hs_gen['ticket_medio'] = df_hs_gen['ticket_medio'].apply(lambda x: f'R$ {x:,.2f}')
-        df_hs_gen['pct_hs'] = df_hs_gen['pct_hs'].apply(lambda x: f'{x:.2f}%')
-        df_hs_gen.columns = ['Gênero', 'Qtd HS', 'Valor Total', 'Ticket Médio', '% do Total']
-        st.dataframe(df_hs_gen, use_container_width=True, hide_index=True)
-
-    with tab2:
-        st.subheader("High Spenders por Faixa Etária")
-        col1, col2 = st.columns(2)
-
-        with col1:
-            fig = px.pie(
-                dados['hs_por_faixa'],
-                values='qtd_hs',
-                names='faixa_etaria',
-                title='Distribuição por Faixa Etária'
-            )
-            st.plotly_chart(fig, use_container_width=True)
-
-        with col2:
-            fig = px.bar(
-                dados['hs_por_faixa'],
-                x='faixa_etaria',
-                y='ticket_medio',
-                color='ticket_medio',
-                color_continuous_scale='Greens',
-                title='Ticket Médio por Faixa Etária',
-                text=dados['hs_por_faixa']['ticket_medio'].apply(lambda x: f'R$ {x:,.0f}')
-            )
-            fig.update_layout(showlegend=False, xaxis_tickangle=-45)
-            fig.update_traces(textposition='outside')
-            st.plotly_chart(fig, use_container_width=True)
-
-        # Tabela
-        df_hs_faixa = dados['hs_por_faixa'].copy()
-        df_hs_faixa['valor_total'] = df_hs_faixa['valor_total'].apply(lambda x: f'R$ {x:,.2f}')
-        df_hs_faixa['ticket_medio'] = df_hs_faixa['ticket_medio'].apply(lambda x: f'R$ {x:,.2f}')
-        df_hs_faixa['pct_hs'] = df_hs_faixa['pct_hs'].apply(lambda x: f'{x:.2f}%')
-        df_hs_faixa.columns = ['Faixa Etária', 'Qtd HS', 'Valor Total', 'Ticket Médio', '% do Total']
-        st.dataframe(df_hs_faixa, use_container_width=True, hide_index=True)
-
-    with tab3:
-        st.subheader("Comparação: High Spenders vs Demais Clientes")
-
-        # Preparar dados para comparação
-        comp = dados['comparacao_hs'].set_index('Metrica')
-
-        col1, col2 = st.columns(2)
-
-        with col1:
-            st.markdown("**High Spenders**")
-            st.metric("Quantidade", f"{comp.loc['Qtd Clientes', 'High Spenders']:,.0f}")
-            st.metric("Valor Total", f"R$ {comp.loc['Valor Total (R$)', 'High Spenders']/1e6:.1f}M")
-            st.metric("Ticket Médio", f"R$ {comp.loc['Ticket Medio (R$)', 'High Spenders']:,.0f}")
-            st.metric("Freq. Média", f"{comp.loc['Freq Media Compras', 'High Spenders']:.1f} compras")
-            st.metric("% Feminino", f"{comp.loc['% Feminino', 'High Spenders']:.1f}%")
-
-        with col2:
-            st.markdown("**Demais Clientes**")
-            st.metric("Quantidade", f"{comp.loc['Qtd Clientes', 'Demais Clientes']:,.0f}")
-            st.metric("Valor Total", f"R$ {comp.loc['Valor Total (R$)', 'Demais Clientes']/1e6:.1f}M")
-            st.metric("Ticket Médio", f"R$ {comp.loc['Ticket Medio (R$)', 'Demais Clientes']:,.0f}")
-            st.metric("Freq. Média", f"{comp.loc['Freq Media Compras', 'Demais Clientes']:.1f} compras")
-            st.metric("% Feminino", f"{comp.loc['% Feminino', 'Demais Clientes']:.1f}%")
+        # Métricas lado a lado
+        cols = st.columns(len(periodos_selecionados))
+        for i, nome_p in enumerate(periodos_selecionados):
+            with cols[i]:
+                d = dados_periodos[nome_p]
+                total_hs = d['resumo']['qtd_high_spenders'].sum()
+                total_cli = d['resumo']['clientes'].sum()
+                st.markdown(f"**{nome_p}**")
+                st.metric("High Spenders", f"{total_hs:,}")
+                st.metric("% do Total", f"{total_hs/total_cli*100:.1f}%")
 
         st.markdown("---")
 
         # Gráfico comparativo
-        st.subheader("Comparativo Visual")
-        metricas_comp = ['Ticket Medio (R$)', 'Freq Media Compras', 'Idade Media']
-        df_comp_chart = dados['comparacao_hs'][dados['comparacao_hs']['Metrica'].isin(metricas_comp)].melt(
-            id_vars='Metrica', var_name='Grupo', value_name='Valor'
-        )
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.subheader("⭐ High Spenders por Período")
+            fig = px.bar(
+                df_hs,
+                x='Período',
+                y='High Spenders',
+                color='Período',
+                color_discrete_sequence=CORES_PERIODOS[:len(periodos_selecionados)],
+                text=df_hs['High Spenders'].apply(lambda x: f'{x:,}')
+            )
+            fig.update_layout(showlegend=False, height=400)
+            fig.update_traces(textposition='outside')
+            st.plotly_chart(fig, use_container_width=True)
+
+        with col2:
+            st.subheader("📊 % High Spenders por Período")
+            fig = px.bar(
+                df_hs,
+                x='Período',
+                y='% do Total',
+                color='Período',
+                color_discrete_sequence=CORES_PERIODOS[:len(periodos_selecionados)],
+                text=df_hs['% do Total'].apply(lambda x: f'{x:.1f}%')
+            )
+            fig.update_layout(showlegend=False, height=400)
+            fig.update_traces(textposition='outside')
+            st.plotly_chart(fig, use_container_width=True)
+
+        st.markdown("---")
+
+        # HS por Shopping comparativo
+        st.subheader("🏬 High Spenders por Shopping - Comparativo")
+        df_hs_shop = []
+        for nome_p in periodos_selecionados:
+            d = dados_periodos[nome_p]
+            for _, row in d['resumo'].iterrows():
+                df_hs_shop.append({
+                    'Período': nome_p,
+                    'Shopping': row['sigla'],
+                    'High Spenders': row['qtd_high_spenders']
+                })
+        df_hs_s = pd.DataFrame(df_hs_shop)
 
         fig = px.bar(
-            df_comp_chart,
-            x='Metrica',
-            y='Valor',
-            color='Grupo',
+            df_hs_s,
+            x='Shopping',
+            y='High Spenders',
+            color='Período',
             barmode='group',
-            color_discrete_map={'High Spenders': '#E74C3C', 'Demais Clientes': '#3498DB'}
+            color_discrete_sequence=CORES_PERIODOS[:len(periodos_selecionados)],
+            text=df_hs_s['High Spenders'].apply(lambda x: f'{x:,}')
         )
-        fig.update_layout(height=400)
+        fig.update_layout(height=450)
+        fig.update_traces(textposition='outside')
         st.plotly_chart(fig, use_container_width=True)
+
+    else:
+        # === MODO NORMAL (1 período) ===
+        st.markdown(f"**Período selecionado:** {periodo_selecionado}")
+
+        # Métricas gerais
+        col1, col2, col3 = st.columns(3)
+
+        total_hs = dados['resumo']['qtd_high_spenders'].sum()
+        total_clientes = dados['resumo']['clientes'].sum()
+
+        with col1:
+            st.metric("Total High Spenders", f"{total_hs:,}")
+        with col2:
+            st.metric("% dos Clientes", f"{total_hs/total_clientes*100:.1f}%")
+        with col3:
+            st.metric("Média por Shopping", f"{total_hs//6:,}")
+
+        st.markdown("---")
+
+        # Gráfico de HS por shopping
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.subheader("High Spenders por Shopping")
+            fig = px.bar(
+                dados['resumo'].sort_values('qtd_high_spenders', ascending=True),
+                x='qtd_high_spenders',
+                y='sigla',
+                orientation='h',
+                color='sigla',
+                color_discrete_map=CORES_SHOPPING,
+                text='qtd_high_spenders'
+            )
+            fig.update_layout(showlegend=False, height=400)
+            fig.update_traces(textposition='outside')
+            st.plotly_chart(fig, use_container_width=True)
+
+        with col2:
+            st.subheader("Threshold High Spender (R$)")
+            fig = px.bar(
+                dados['resumo'].sort_values('threshold_hs', ascending=True),
+                x='threshold_hs',
+                y='sigla',
+                orientation='h',
+                color='sigla',
+                color_discrete_map=CORES_SHOPPING,
+                text=dados['resumo'].sort_values('threshold_hs', ascending=True)['threshold_hs'].apply(lambda x: f'R$ {x:,.0f}')
+            )
+            fig.update_layout(showlegend=False, height=400)
+            fig.update_traces(textposition='outside')
+            st.plotly_chart(fig, use_container_width=True)
+
+        # Tabela comparativa
+        st.subheader("📋 Resumo High Spenders por Shopping")
+        df_hs = dados['resumo'][['sigla', 'shopping', 'clientes', 'qtd_high_spenders', 'threshold_hs']].copy()
+        df_hs['pct_hs'] = (df_hs['qtd_high_spenders'] / df_hs['clientes'] * 100).round(1)
+        df_hs['threshold_hs'] = df_hs['threshold_hs'].apply(lambda x: f'R$ {x:,.2f}')
+        df_hs.columns = ['Sigla', 'Shopping', 'Total Clientes', 'High Spenders', 'Threshold', '% HS']
+        st.dataframe(df_hs, use_container_width=True, hide_index=True)
+
+        st.markdown("---")
+
+        # Tabs para análises detalhadas
+        tab1, tab2, tab3 = st.tabs(["👥 Por Gênero", "📊 Por Faixa Etária", "🔄 HS vs Demais"])
+
+        with tab1:
+            st.subheader("High Spenders por Gênero")
+            col1, col2 = st.columns(2)
+
+            with col1:
+                fig = px.pie(
+                    dados['hs_por_genero'],
+                    values='qtd_hs',
+                    names='genero',
+                    color='genero',
+                    color_discrete_map={'Feminino': '#E91E63', 'Masculino': '#2196F3', 'Nao Informado': '#9E9E9E', 'Outro': '#4CAF50'},
+                    title='Distribuição por Gênero'
+                )
+                st.plotly_chart(fig, use_container_width=True)
+
+            with col2:
+                fig = px.bar(
+                    dados['hs_por_genero'].sort_values('valor_total', ascending=True),
+                    x='valor_total',
+                    y='genero',
+                    orientation='h',
+                    color='genero',
+                    color_discrete_map={'Feminino': '#E91E63', 'Masculino': '#2196F3', 'Nao Informado': '#9E9E9E', 'Outro': '#4CAF50'},
+                    title='Valor Total por Gênero',
+                    text=dados['hs_por_genero'].sort_values('valor_total', ascending=True)['valor_total'].apply(lambda x: f'R$ {x/1e6:.1f}M')
+                )
+                fig.update_layout(showlegend=False)
+                fig.update_traces(textposition='outside')
+                st.plotly_chart(fig, use_container_width=True)
+
+            # Tabela
+            df_hs_gen = dados['hs_por_genero'].copy()
+            df_hs_gen['valor_total'] = df_hs_gen['valor_total'].apply(lambda x: f'R$ {x:,.2f}')
+            df_hs_gen['ticket_medio'] = df_hs_gen['ticket_medio'].apply(lambda x: f'R$ {x:,.2f}')
+            df_hs_gen['pct_hs'] = df_hs_gen['pct_hs'].apply(lambda x: f'{x:.2f}%')
+            df_hs_gen.columns = ['Gênero', 'Qtd HS', 'Valor Total', 'Ticket Médio', '% do Total']
+            st.dataframe(df_hs_gen, use_container_width=True, hide_index=True)
+
+        with tab2:
+            st.subheader("High Spenders por Faixa Etária")
+            col1, col2 = st.columns(2)
+
+            with col1:
+                fig = px.pie(
+                    dados['hs_por_faixa'],
+                    values='qtd_hs',
+                    names='faixa_etaria',
+                    title='Distribuição por Faixa Etária'
+                )
+                st.plotly_chart(fig, use_container_width=True)
+
+            with col2:
+                fig = px.bar(
+                    dados['hs_por_faixa'],
+                    x='faixa_etaria',
+                    y='ticket_medio',
+                    color='ticket_medio',
+                    color_continuous_scale='Greens',
+                    title='Ticket Médio por Faixa Etária',
+                    text=dados['hs_por_faixa']['ticket_medio'].apply(lambda x: f'R$ {x:,.0f}')
+                )
+                fig.update_layout(showlegend=False, xaxis_tickangle=-45)
+                fig.update_traces(textposition='outside')
+                st.plotly_chart(fig, use_container_width=True)
+
+            # Tabela
+            df_hs_faixa = dados['hs_por_faixa'].copy()
+            df_hs_faixa['valor_total'] = df_hs_faixa['valor_total'].apply(lambda x: f'R$ {x:,.2f}')
+            df_hs_faixa['ticket_medio'] = df_hs_faixa['ticket_medio'].apply(lambda x: f'R$ {x:,.2f}')
+            df_hs_faixa['pct_hs'] = df_hs_faixa['pct_hs'].apply(lambda x: f'{x:.2f}%')
+            df_hs_faixa.columns = ['Faixa Etária', 'Qtd HS', 'Valor Total', 'Ticket Médio', '% do Total']
+            st.dataframe(df_hs_faixa, use_container_width=True, hide_index=True)
+
+        with tab3:
+            st.subheader("Comparação: High Spenders vs Demais Clientes")
+
+            # Preparar dados para comparação
+            comp = dados['comparacao_hs'].set_index('Metrica')
+
+            col1, col2 = st.columns(2)
+
+            with col1:
+                st.markdown("**High Spenders**")
+                st.metric("Quantidade", f"{comp.loc['Qtd Clientes', 'High Spenders']:,.0f}")
+                st.metric("Valor Total", f"R$ {comp.loc['Valor Total (R$)', 'High Spenders']/1e6:.1f}M")
+                st.metric("Ticket Médio", f"R$ {comp.loc['Ticket Medio (R$)', 'High Spenders']:,.0f}")
+                st.metric("Freq. Média", f"{comp.loc['Freq Media Compras', 'High Spenders']:.1f} compras")
+                st.metric("% Feminino", f"{comp.loc['% Feminino', 'High Spenders']:.1f}%")
+
+            with col2:
+                st.markdown("**Demais Clientes**")
+                st.metric("Quantidade", f"{comp.loc['Qtd Clientes', 'Demais Clientes']:,.0f}")
+                st.metric("Valor Total", f"R$ {comp.loc['Valor Total (R$)', 'Demais Clientes']/1e6:.1f}M")
+                st.metric("Ticket Médio", f"R$ {comp.loc['Ticket Medio (R$)', 'Demais Clientes']:,.0f}")
+                st.metric("Freq. Média", f"{comp.loc['Freq Media Compras', 'Demais Clientes']:.1f} compras")
+                st.metric("% Feminino", f"{comp.loc['% Feminino', 'Demais Clientes']:.1f}%")
+
+            st.markdown("---")
+
+            # Gráfico comparativo
+            st.subheader("Comparativo Visual")
+            metricas_comp = ['Ticket Medio (R$)', 'Freq Media Compras', 'Idade Media']
+            df_comp_chart = dados['comparacao_hs'][dados['comparacao_hs']['Metrica'].isin(metricas_comp)].melt(
+                id_vars='Metrica', var_name='Grupo', value_name='Valor'
+            )
+
+            fig = px.bar(
+                df_comp_chart,
+                x='Metrica',
+                y='Valor',
+                color='Grupo',
+                barmode='group',
+                color_discrete_map={'High Spenders': '#E74C3C', 'Demais Clientes': '#3498DB'}
+            )
+            fig.update_layout(height=400)
+            st.plotly_chart(fig, use_container_width=True)
 
 # ============================================================================
 # PÁGINA: SEGMENTOS
 # ============================================================================
 elif pagina == "🛒 Segmentos":
     st.markdown('<p class="main-header">🛒 Análise por Segmentos</p>', unsafe_allow_html=True)
-    st.markdown(f"**Período selecionado:** {periodo_selecionado}")
+    if modo_comparativo:
+        st.markdown(f"**Comparando:** {' vs '.join(periodos_selecionados)}")
+    else:
+        st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
     st.markdown("""
     Análise detalhada dos **segmentos de consumo** por gênero e faixa etária,
@@ -989,7 +1336,10 @@ elif pagina == "🛒 Segmentos":
 # ============================================================================
 elif pagina == "⏰ Comportamento":
     st.markdown('<p class="main-header">⏰ Comportamento de Compra</p>', unsafe_allow_html=True)
-    st.markdown(f"**Período selecionado:** {periodo_selecionado}")
+    if modo_comparativo:
+        st.markdown(f"**Comparando:** {' vs '.join(periodos_selecionados)}")
+    else:
+        st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
     st.markdown("""
     Análise do **comportamento de compra** dos clientes por período do dia e dia da semana,
@@ -1133,7 +1483,10 @@ elif pagina == "⏰ Comportamento":
 # ============================================================================
 elif pagina == "📈 Comparativo":
     st.markdown('<p class="main-header">📈 Comparativo entre Shoppings</p>', unsafe_allow_html=True)
-    st.markdown(f"**Período selecionado:** {periodo_selecionado}")
+    if modo_comparativo:
+        st.markdown(f"**Comparando períodos:** {' vs '.join(periodos_selecionados)}")
+    else:
+        st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
     # Seletor de shoppings para comparar
     shoppings_comparar = st.multiselect(
@@ -1459,9 +1812,10 @@ elif pagina == "📚 Documentação":
 
 # Footer
 st.markdown("---")
+footer_periodo = ' vs '.join(periodos_selecionados) if modo_comparativo else periodo_selecionado
 st.markdown(f"""
 <div style='text-align: center; color: #666;'>
     <p>Dashboard de Perfil de Cliente - Almeida Junior Shoppings</p>
-    <p>Período selecionado: {periodo_selecionado}</p>
+    <p>{'Comparando: ' if modo_comparativo else 'Período: '}{footer_periodo}</p>
 </div>
 """, unsafe_allow_html=True)
