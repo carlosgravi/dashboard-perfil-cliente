@@ -214,7 +214,7 @@ st.sidebar.markdown("---")
 
 pagina = st.sidebar.radio(
     "Selecione a visão:",
-    ["📊 Visão Geral", "🎭 Personas", "🏬 Por Shopping", "👥 Perfil Demográfico", "⭐ High Spenders", "🛒 Segmentos", "⏰ Comportamento", "📈 Comparativo"]
+    ["📊 Visão Geral", "🎭 Personas", "🏬 Por Shopping", "👥 Perfil Demográfico", "⭐ High Spenders", "🛒 Segmentos", "⏰ Comportamento", "📈 Comparativo", "📚 Documentação"]
 )
 
 st.sidebar.markdown("---")
@@ -1152,6 +1152,251 @@ elif pagina == "📈 Comparativo":
             st.plotly_chart(fig, use_container_width=True)
     else:
         st.warning("Selecione pelo menos 2 shoppings para comparar.")
+
+# ============================================================================
+# PÁGINA: DOCUMENTAÇÃO
+# ============================================================================
+elif pagina == "📚 Documentação":
+    st.markdown('<p class="main-header">📚 Documentação do Dashboard</p>', unsafe_allow_html=True)
+
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(["📋 Visão Geral", "📊 Métricas", "🎭 Personas & HS", "📁 Dados", "❓ Glossário"])
+
+    with tab1:
+        st.markdown("""
+        ## Sobre o Dashboard
+
+        O **Dashboard de Perfil de Cliente** é uma ferramenta de Business Intelligence desenvolvida para analisar
+        o comportamento de consumo dos clientes da rede **Almeida Junior Shoppings**.
+
+        ### Período dos Dados
+        **11/12/2022 a 19/01/2026**
+
+        ### Shoppings Analisados
+
+        | Sigla | Shopping | Cidade/Região |
+        |-------|----------|---------------|
+        | BS | Balneário Shopping | Balneário Camboriú |
+        | CS | Continente Shopping | São José |
+        | GS | Garten Shopping | Joinville |
+        | NK | Neumarkt Shopping | Blumenau |
+        | NR | Norte Shopping | Blumenau |
+        | NS | Nações Shopping | Criciúma |
+
+        ### Resumo Geral
+
+        | Métrica | Valor |
+        |---------|-------|
+        | Total de Clientes | 271.110 |
+        | Total de Transações | 1.643.751 |
+        | Valor Total | R$ 550.508.465 |
+        | Ticket Médio | R$ 2.031 |
+        | High Spenders | 27.115 (10%) |
+
+        ### Páginas do Dashboard
+
+        1. **📊 Visão Geral** - Panorama consolidado de todos os shoppings
+        2. **🎭 Personas** - 9 perfis comportamentais de clientes
+        3. **🏬 Por Shopping** - Análise detalhada de cada unidade
+        4. **👥 Perfil Demográfico** - Distribuição por gênero e faixa etária
+        5. **⭐ High Spenders** - Clientes top 10% em valor
+        6. **🛒 Segmentos** - Análise por categoria de produto
+        7. **⏰ Comportamento** - Padrões temporais de compra
+        8. **📈 Comparativo** - Comparação entre shoppings
+        """)
+
+    with tab2:
+        st.markdown("""
+        ## Cálculo das Métricas
+
+        ### Métricas Básicas
+
+        | Métrica | Fórmula |
+        |---------|---------|
+        | **Total Clientes** | Contagem de clientes únicos |
+        | **Valor Total** | Soma de todas as transações |
+        | **Ticket Médio** | Valor Total ÷ Total de Clientes |
+        | **Frequência Média** | Total Transações ÷ Total Clientes |
+
+        ### Distribuições Demográficas
+
+        **Por Gênero:**
+        ```
+        % Gênero = (Clientes do Gênero / Total Clientes) × 100
+        ```
+
+        **Por Faixa Etária:**
+
+        | Faixa | Geração | Nascidos |
+        |-------|---------|----------|
+        | 16-24 | Gen Z | 2001-2009 |
+        | 25-39 | Millennials | 1986-2000 |
+        | 40-54 | Gen X | 1971-1985 |
+        | 55-69 | Boomers | 1956-1970 |
+        | 70+ | Silent | Antes de 1956 |
+
+        ### Métricas de Segmentos
+
+        Os segmentos são definidos pela categoria da loja:
+        - **Moda** - Vestuário, acessórios
+        - **Beleza e Bem-estar** - Cosméticos, perfumaria
+        - **Calçados** - Sapatos, tênis, sandálias
+        - **Joalheria** - Joias, relógios, óticas
+        - **Gastronomia** - Restaurantes, fast-food
+        - **Telefonia** - Celulares, acessórios
+        - **Eletrônicos** - Informática, eletrodomésticos
+        - **Casa e Decoração** - Móveis, decoração
+
+        ### Comportamento Temporal
+
+        **Períodos do Dia:**
+        - Manhã: 6h às 12h
+        - Tarde: 12h às 18h
+        - Noite: 18h às 22h
+
+        **Dias da Semana:**
+        - Segunda a Domingo
+        """)
+
+    with tab3:
+        st.markdown("""
+        ## Personas de Clientes
+
+        As personas foram identificadas através de **análise de cluster (K-Means)** considerando:
+        - Valor total gasto
+        - Frequência de compras
+        - Ticket médio
+        - Idade
+        - Gênero
+
+        ### 9 Personas Identificadas
+
+        | Persona | % Clientes | % Valor | Perfil |
+        |---------|------------|---------|--------|
+        | **Mãe Moderna** | 20,5% | 26,5% | Mulheres 35-45, alta frequência |
+        | **Cliente Regular** | 40,4% | 20,8% | Perfil diverso, ticket baixo |
+        | **Executivo Exigente** | 3,3% | 15,7% | Alta renda, ticket alto |
+        | **Fashionista Premium** | 2,2% | 10,5% | Jovens, foco em moda |
+        | **Senior Tradicional** | 12,7% | 6,7% | 55+ anos, baixa frequência |
+        | **Comprador Seletivo** | 4,1% | 6,4% | Compras pontuais de alto valor |
+        | **Senior VIP** | 1,1% | 5,7% | 60+ anos, alto poder aquisitivo |
+        | **Jovem Engajado** | 4,2% | 4,1% | 18-25, alta frequência |
+        | **Jovem Explorer** | 11,6% | 3,6% | 18-25, explorando marcas |
+
+        ---
+
+        ## High Spenders
+
+        ### Definição
+        Um cliente é **High Spender** se está no **percentil 90** de gastos do seu shopping.
+
+        ### Cálculo
+        ```python
+        threshold = valor_por_cliente.quantile(0.90)
+        high_spenders = clientes[valor >= threshold]
+        ```
+
+        ### Thresholds por Shopping
+
+        | Shopping | Threshold |
+        |----------|-----------|
+        | BS | R$ 5.800 |
+        | NK | R$ 5.177 |
+        | GS | R$ 4.299 |
+        | CS | R$ 4.000 |
+        | NR | R$ 3.266 |
+        | NS | R$ 3.129 |
+
+        ### Comparação HS vs Demais
+
+        | Métrica | High Spenders | Demais |
+        |---------|---------------|--------|
+        | % Clientes | 10% | 90% |
+        | % Valor | 49% | 51% |
+        | Ticket Médio | R$ 9.899 | R$ 1.126 |
+        | Freq. Média | 24,8x | 4,0x |
+        | % Feminino | 66,8% | 62,0% |
+        """)
+
+    with tab4:
+        st.markdown("""
+        ## Arquivos de Dados
+
+        ### Dados Consolidados (Resultados/)
+
+        | Arquivo | Descrição |
+        |---------|-----------|
+        | `resumo_por_shopping.csv` | Métricas consolidadas por shopping |
+        | `personas_clientes.csv` | 9 personas identificadas |
+        | `comparacao_high_spenders.csv` | HS vs Demais Clientes |
+        | `high_spenders_por_genero.csv` | HS por gênero |
+        | `high_spenders_por_faixa.csv` | HS por faixa etária |
+        | `matriz_clientes_genero_idade.csv` | Matriz cruzada clientes |
+        | `matriz_valor_genero_idade.csv` | Matriz cruzada valor |
+        | `matriz_ticket_genero_idade.csv` | Matriz cruzada ticket |
+        | `top_segmentos_por_genero.csv` | Top 5 segmentos/gênero |
+        | `top_segmentos_por_faixa.csv` | Top segmentos/faixa |
+        | `comportamento_periodo_dia.csv` | Dados por período |
+        | `comportamento_dia_semana.csv` | Dados por dia |
+        | `consolidado_genero_por_shopping.csv` | Gênero por shopping |
+        | `consolidado_faixa_etaria_por_shopping.csv` | Faixa por shopping |
+
+        ### Dados por Shopping (Resultados/Por_Shopping/{SIGLA}/)
+
+        Cada shopping possui:
+        - `perfil_genero.csv`
+        - `perfil_faixa_etaria.csv`
+        - `top_segmentos.csv`
+        - `top_lojas.csv`
+        - `comportamento_periodo.csv`
+        - `comportamento_dia_semana.csv`
+        - `high_spenders_stats.csv`
+        - `lista_high_spenders.csv`
+        - `base_clientes.csv`
+
+        ### Tecnologias
+
+        | Tecnologia | Uso |
+        |------------|-----|
+        | Python 3.11+ | Linguagem principal |
+        | Streamlit 1.28+ | Framework web |
+        | Plotly 5.18+ | Gráficos interativos |
+        | Pandas 2.0+ | Manipulação de dados |
+        """)
+
+    with tab5:
+        st.markdown("""
+        ## Glossário de Termos
+
+        | Termo | Definição |
+        |-------|-----------|
+        | **Ticket Médio** | Valor médio gasto por cliente (Valor Total / Clientes) |
+        | **High Spender** | Cliente no top 10% de gastos do shopping |
+        | **Threshold** | Valor mínimo para ser High Spender |
+        | **Persona** | Perfil comportamental de cliente baseado em cluster |
+        | **Frequência** | Número médio de compras por cliente |
+        | **Segmento** | Categoria de produto/serviço da loja |
+        | **Faixa Etária** | Agrupamento de clientes por idade |
+        | **Gen Z** | Geração nascida entre 2001-2009 (16-24 anos) |
+        | **Millennials** | Geração nascida entre 1986-2000 (25-39 anos) |
+        | **Gen X** | Geração nascida entre 1971-1985 (40-54 anos) |
+        | **Boomers** | Geração nascida entre 1956-1970 (55-69 anos) |
+        | **Silent** | Geração nascida antes de 1956 (70+ anos) |
+        | **Matriz Cruzada** | Tabela que cruza duas dimensões (ex: gênero x idade) |
+        | **Heatmap** | Mapa de calor visual para identificar padrões |
+        | **Radar Chart** | Gráfico radar para comparar múltiplas métricas |
+
+        ---
+
+        ## Contato
+
+        **Desenvolvido para:** Almeida Junior Shoppings
+
+        **Repositório:** [github.com/carlosgravi/dashboard-perfil-cliente](https://github.com/carlosgravi/dashboard-perfil-cliente)
+
+        ---
+
+        *Documentação atualizada em Janeiro/2026*
+        """)
 
 # Footer
 st.markdown("---")
