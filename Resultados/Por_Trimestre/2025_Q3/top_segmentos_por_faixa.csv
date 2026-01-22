@@ -1,0 +1,31 @@
+faixa_etaria,segmento,valor,clientes,ranking
+40-54 (Gen X),Moda,2138419.13,2385,1
+40-54 (Gen X),Gastronomia,794531.81,2386,2
+40-54 (Gen X),Calçados,422348.8,863,3
+40-54 (Gen X),Beleza e Bem-estar,419827.35,1137,4
+40-54 (Gen X),Esportes,383447.89,829,5
+25-39 (Millennials),Moda,2384059.95,3161,1
+25-39 (Millennials),Gastronomia,868178.19,3126,2
+25-39 (Millennials),Calçados,471814.19,1089,3
+25-39 (Millennials),Beleza e Bem-estar,446944.15,1472,4
+25-39 (Millennials),Casa e Decoração,365773.72,978,5
+55-69 (Boomers),Moda,274895.34,333,1
+55-69 (Boomers),Gastronomia,133961.48,290,2
+55-69 (Boomers),Joalheria,73135.02,22,3
+55-69 (Boomers),Moda Feminina,71952.11,30,4
+55-69 (Boomers),Beleza e Bem-estar,62776.56,161,5
+16-24 (Gen Z),Moda,383695.82,573,1
+16-24 (Gen Z),Gastronomia,273162.64,752,2
+16-24 (Gen Z),Beleza e Bem-estar,87367.06,304,3
+16-24 (Gen Z),Eletrodomésticos,81108.59,240,4
+16-24 (Gen Z),Calçados,73102.57,190,5
+70+ (Silent),Moda,32394.81,31,1
+70+ (Silent),Gastronomia,15362.85,38,2
+70+ (Silent),Joalheria,14767.74,8,3
+70+ (Silent),Calçados Femininos,9029.83,2,4
+70+ (Silent),Ótica,6878.0,2,5
+Nao Informado,Gastronomia,26172.16,43,1
+Nao Informado,Moda,21430.59,38,2
+Nao Informado,Beleza e Bem-estar,5116.71,20,3
+Nao Informado,Serviços,4215.219999999999,6,4
+Nao Informado,Esportes,3607.09,11,5

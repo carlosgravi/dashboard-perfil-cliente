@@ -1,0 +1,31 @@
+faixa_etaria,segmento,valor,clientes,ranking
+40-54 (Gen X),Moda,683950.86,1022,1
+40-54 (Gen X),Gastronomia,247123.87,1189,2
+40-54 (Gen X),Beleza e Bem-estar,149777.06,505,3
+40-54 (Gen X),Calçados,132630.93,338,4
+40-54 (Gen X),Infantil,107408.63,348,5
+25-39 (Millennials),Moda,744347.16,1328,1
+25-39 (Millennials),Gastronomia,270062.04,1549,2
+25-39 (Millennials),Casa e Decoração,175414.1,488,3
+25-39 (Millennials),Beleza e Bem-estar,155443.65,586,4
+25-39 (Millennials),Calçados,151452.49,453,5
+55-69 (Boomers),Moda,97756.76,126,1
+55-69 (Boomers),Joalheria,76785.27,7,2
+55-69 (Boomers),Gastronomia,67075.81,156,3
+55-69 (Boomers),Calçados,20854.44,41,4
+55-69 (Boomers),Moda Feminina,19553.67,12,5
+16-24 (Gen Z),Moda,125832.13,216,1
+16-24 (Gen Z),Gastronomia,90760.25,337,2
+16-24 (Gen Z),Moda Feminina,40841.92,10,3
+16-24 (Gen Z),Beleza e Bem-estar,32318.06,108,4
+16-24 (Gen Z),Joalheria,31207.07,21,5
+70+ (Silent),Moda,16635.73,19,1
+70+ (Silent),Beleza e Bem-estar,5004.0,11,2
+70+ (Silent),Moda Feminina,4796.25,3,3
+70+ (Silent),Gastronomia,4287.5,21,4
+70+ (Silent),Casa e Decoração,4224.67,8,5
+Nao Informado,Gastronomia,12949.35,25,1
+Nao Informado,Moda,3331.42,11,2
+Nao Informado,Casa e Decoração,1427.96,3,3
+Nao Informado,Beleza e Bem-estar,1299.27,6,4
+Nao Informado,Infantil,1022.83,6,5

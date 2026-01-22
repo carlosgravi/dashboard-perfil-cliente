@@ -1,0 +1,18 @@
+genero,segmento,valor,clientes,ranking
+Feminino,Moda,1118077.02,1792,1
+Feminino,Casa e Decoração,463829.42,735,2
+Feminino,Beleza e Bem-estar,279949.03,871,3
+Feminino,Gastronomia,258094.68,1307,4
+Feminino,Eletrodomésticos,247898.26,375,5
+Masculino,Moda,535910.47,717,1
+Masculino,Casa e Decoração,278883.52,314,2
+Masculino,Eletrodomésticos,189165.49,173,3
+Masculino,Eletrônicos,144791.59,56,4
+Masculino,Gastronomia,127134.55,484,5
+Outro,Moda,3523.8,6,1
+Outro,Supermercado,1932.65,3,2
+Outro,Beleza e Bem-estar,1697.9,3,3
+Outro,Presentes e Acessórios,1299.9,1,4
+Outro,Casa e Decoração,1279.7,3,5
+Nao Informado,Moda,17.99,1,1
+Nao Informado,Gastronomia,15.9,1,2

@@ -1,0 +1,21 @@
+genero,segmento,valor,clientes,ranking
+Feminino,Moda,2018914.42,2794,1
+Feminino,Joalheria,485746.36,251,2
+Feminino,Calçados,354483.38,740,3
+Feminino,Beleza e Bem-estar,348039.27999999997,937,4
+Feminino,Moda Feminina,246065.08,239,5
+Masculino,Moda,791640.51,1004,1
+Masculino,Joalheria,414956.85,204,2
+Masculino,Telefonia,143089.88,35,3
+Masculino,Esportes,124736.2,283,4
+Masculino,Calçados,118929.23,244,5
+Outro,Moda,4572.65,5,1
+Outro,Beleza e Bem-estar,2148.06,4,2
+Outro,Gastronomia,351.19,4,3
+Outro,Joalheria,248.0,1,4
+Outro,Infantil,229.98,1,5
+Nao Informado,Telefonia,4199.0,1,1
+Nao Informado,Moda,1073.5,1,2
+Nao Informado,Papelaria,494.9,1,3
+Nao Informado,Eletrodomésticos,54.44,1,4
+Nao Informado,Gastronomia,18.85,1,5

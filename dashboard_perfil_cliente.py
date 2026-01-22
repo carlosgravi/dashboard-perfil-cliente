@@ -147,10 +147,19 @@ NOMES_SHOPPING = {
     'NS': 'Nações Shopping'
 }
 
+# Função para carregar índice de períodos
+@st.cache_data
+def carregar_indice_periodos():
+    try:
+        df = pd.read_csv('Resultados/indice_periodos.csv')
+        return df
+    except:
+        return None
+
 # Função para carregar dados
 @st.cache_data
-def carregar_dados():
-    base_path = 'Resultados'
+def carregar_dados(periodo_pasta='Completo'):
+    base_path = f'Resultados/{periodo_pasta}'
 
     dados = {}
 
@@ -195,13 +204,6 @@ def carregar_dados():
 
     return dados
 
-# Carregar dados
-try:
-    dados = carregar_dados()
-except Exception as e:
-    st.error(f"Erro ao carregar dados: {e}")
-    st.stop()
-
 # Sidebar
 # Logo - carrega GIF
 logo_file = "AJ-AJFANS V2 - GIF.gif"
@@ -212,16 +214,63 @@ st.sidebar.title("🛍️ Almeida Junior")
 st.sidebar.markdown("**Dashboard Perfil de Cliente**")
 st.sidebar.markdown("---")
 
+# Seletor de Período
+st.sidebar.markdown("### 📅 Período de Análise")
+indice_periodos = carregar_indice_periodos()
+
+if indice_periodos is not None and len(indice_periodos) > 0:
+    # Criar opções agrupadas por tipo
+    opcoes_periodo = {}
+    for _, row in indice_periodos.iterrows():
+        tipo = row['tipo']
+        codigo = row['codigo']
+        nome = row['nome']
+        pasta = row['pasta']
+
+        if tipo not in opcoes_periodo:
+            opcoes_periodo[tipo] = []
+        opcoes_periodo[tipo].append({'codigo': codigo, 'nome': nome, 'pasta': pasta})
+
+    # Criar lista de opções para selectbox
+    lista_periodos = []
+    mapa_periodos = {}
+
+    # Adicionar na ordem: Completo, Ano, Trimestre, Mês
+    ordem_tipos = ['Completo', 'Ano', 'Trimestre', 'Mes']
+    for tipo in ordem_tipos:
+        if tipo in opcoes_periodo:
+            for p in opcoes_periodo[tipo]:
+                label = f"{p['nome']}"
+                lista_periodos.append(label)
+                mapa_periodos[label] = p['pasta']
+
+    periodo_selecionado = st.sidebar.selectbox(
+        "Selecione o período:",
+        options=lista_periodos,
+        index=0  # Período Completo como padrão
+    )
+
+    periodo_pasta = mapa_periodos[periodo_selecionado]
+else:
+    periodo_selecionado = "Período Completo"
+    periodo_pasta = "Completo"
+
+st.sidebar.markdown("---")
+
+# Carregar dados do período selecionado
+try:
+    dados = carregar_dados(periodo_pasta)
+except Exception as e:
+    st.error(f"Erro ao carregar dados: {e}")
+    st.stop()
+
 pagina = st.sidebar.radio(
     "Selecione a visão:",
     ["📊 Visão Geral", "🎭 Personas", "🏬 Por Shopping", "👥 Perfil Demográfico", "⭐ High Spenders", "🛒 Segmentos", "⏰ Comportamento", "📈 Comparativo", "📚 Documentação"]
 )
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("### 📅 Período da Base")
-st.sidebar.markdown("**11/12/2022 a 19/01/2026**")
-st.sidebar.markdown("---")
-st.sidebar.markdown("### 📊 Total Geral")
+st.sidebar.markdown("### 📊 Totais do Período")
 st.sidebar.metric("Clientes", f"{dados['resumo']['clientes'].sum():,}")
 st.sidebar.metric("Valor Total", f"R$ {dados['resumo']['valor_total'].sum()/1e6:.1f}M")
 
@@ -230,6 +279,7 @@ st.sidebar.metric("Valor Total", f"R$ {dados['resumo']['valor_total'].sum()/1e6:
 # ============================================================================
 if pagina == "📊 Visão Geral":
     st.markdown('<p class="main-header">📊 Visão Geral - Perfil de Cliente</p>', unsafe_allow_html=True)
+    st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
     # Métricas principais
     col1, col2, col3, col4 = st.columns(4)
@@ -309,6 +359,7 @@ if pagina == "📊 Visão Geral":
 # ============================================================================
 elif pagina == "🎭 Personas":
     st.markdown('<p class="main-header">🎭 Personas de Clientes</p>', unsafe_allow_html=True)
+    st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
     st.markdown("""
     As **Personas** representam perfis comportamentais de clientes, agrupados por características
@@ -423,6 +474,7 @@ elif pagina == "🎭 Personas":
 # ============================================================================
 elif pagina == "🏬 Por Shopping":
     st.markdown('<p class="main-header">🏬 Análise por Shopping</p>', unsafe_allow_html=True)
+    st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
     # Seletor de shopping
     shopping_selecionado = st.selectbox(
@@ -557,6 +609,7 @@ elif pagina == "🏬 Por Shopping":
 # ============================================================================
 elif pagina == "👥 Perfil Demográfico":
     st.markdown('<p class="main-header">👥 Perfil Demográfico</p>', unsafe_allow_html=True)
+    st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
     tab1, tab2 = st.tabs(["Por Gênero", "Por Faixa Etária"])
 
@@ -634,6 +687,7 @@ elif pagina == "👥 Perfil Demográfico":
 # ============================================================================
 elif pagina == "⭐ High Spenders":
     st.markdown('<p class="main-header">⭐ High Spenders</p>', unsafe_allow_html=True)
+    st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
     st.markdown("""
     **High Spenders** são os clientes no **Top 10%** em valor de compras de cada shopping.
@@ -823,6 +877,7 @@ elif pagina == "⭐ High Spenders":
 # ============================================================================
 elif pagina == "🛒 Segmentos":
     st.markdown('<p class="main-header">🛒 Análise por Segmentos</p>', unsafe_allow_html=True)
+    st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
     st.markdown("""
     Análise detalhada dos **segmentos de consumo** por gênero e faixa etária,
@@ -866,7 +921,7 @@ elif pagina == "🛒 Segmentos":
 
         # Ler dados de segmentos por faixa
         try:
-            df_seg_faixa = pd.read_csv('Resultados/top_segmentos_por_faixa.csv')
+            df_seg_faixa = pd.read_csv(f'Resultados/{periodo_pasta}/top_segmentos_por_faixa.csv')
 
             ordem_faixas = ['16-24 (Gen Z)', '25-39 (Millennials)', '40-54 (Gen X)', '55-69 (Boomers)', '70+ (Silent)']
 
@@ -934,6 +989,7 @@ elif pagina == "🛒 Segmentos":
 # ============================================================================
 elif pagina == "⏰ Comportamento":
     st.markdown('<p class="main-header">⏰ Comportamento de Compra</p>', unsafe_allow_html=True)
+    st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
     st.markdown("""
     Análise do **comportamento de compra** dos clientes por período do dia e dia da semana,
@@ -1077,6 +1133,7 @@ elif pagina == "⏰ Comportamento":
 # ============================================================================
 elif pagina == "📈 Comparativo":
     st.markdown('<p class="main-header">📈 Comparativo entre Shoppings</p>', unsafe_allow_html=True)
+    st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
     # Seletor de shoppings para comparar
     shoppings_comparar = st.multiselect(
@@ -1169,7 +1226,9 @@ elif pagina == "📚 Documentação":
         o comportamento de consumo dos clientes da rede **Almeida Junior Shoppings**.
 
         ### Período dos Dados
-        **11/12/2022 a 19/01/2026**
+        **Base completa:** 11/12/2022 a 19/01/2026
+
+        **Filtros disponíveis:** Período Completo, Por Ano, Por Trimestre, Por Mês
 
         ### Shoppings Analisados
 
@@ -1400,9 +1459,9 @@ elif pagina == "📚 Documentação":
 
 # Footer
 st.markdown("---")
-st.markdown("""
+st.markdown(f"""
 <div style='text-align: center; color: #666;'>
     <p>Dashboard de Perfil de Cliente - Almeida Junior Shoppings</p>
-    <p>Dados atualizados em Janeiro/2026</p>
+    <p>Período selecionado: {periodo_selecionado}</p>
 </div>
 """, unsafe_allow_html=True)

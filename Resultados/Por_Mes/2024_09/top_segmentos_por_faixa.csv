@@ -1,0 +1,31 @@
+faixa_etaria,segmento,valor,clientes,ranking
+25-39 (Millennials),Moda,715115.97,1113,1
+25-39 (Millennials),Casa e Decoração,290330.45,444,2
+25-39 (Millennials),Gastronomia,165449.24,801,3
+25-39 (Millennials),Joalheria,155962.54,81,4
+25-39 (Millennials),Eletrodomésticos,141106.54,232,5
+55-69 (Boomers),Moda,168681.11000000002,248,1
+55-69 (Boomers),Casa e Decoração,91408.32,109,2
+55-69 (Boomers),Eletrodomésticos,62874.36,48,3
+55-69 (Boomers),Eletrônicos,52633.9,21,4
+55-69 (Boomers),Beleza e Bem-estar,43046.1,102,5
+40-54 (Gen X),Moda,665631.54,985,1
+40-54 (Gen X),Casa e Decoração,296069.87,400,2
+40-54 (Gen X),Eletrodomésticos,169542.96,193,3
+40-54 (Gen X),Gastronomia,143012.57,712,4
+40-54 (Gen X),Beleza e Bem-estar,140170.76,422,5
+16-24 (Gen Z),Moda,85244.11,144,1
+16-24 (Gen Z),Casa e Decoração,43276.0,74,2
+16-24 (Gen Z),Gastronomia,43180.8,135,3
+16-24 (Gen Z),Eletrodomésticos,35816.56,54,4
+16-24 (Gen Z),Calçados,25773.78,56,5
+Nao Informado,Moda,2876.73,4,1
+Nao Informado,Calçados,1139.88,2,2
+Nao Informado,Gastronomia,637.8399999999999,2,3
+Nao Informado,Presentes e Acessórios,587.0,1,4
+Nao Informado,Esportes,449.99,1,5
+70+ (Silent),Eletrodomésticos,27689.35,20,1
+70+ (Silent),Casa e Decoração,22548.030000000002,23,2
+70+ (Silent),Moda,19979.82,22,3
+70+ (Silent),Esportes,4368.73,8,4
+70+ (Silent),Calçados,3958.33,11,5

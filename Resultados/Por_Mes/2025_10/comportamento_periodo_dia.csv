@@ -1,0 +1,19 @@
+faixa_etaria,periodo_dia,valor,transacoes
+16-24 (Gen Z),Manha (6h-12h),57797.38,328
+16-24 (Gen Z),Noite (18h-22h),246677.75,1356
+16-24 (Gen Z),Tarde (12h-18h),211547.86000000002,1390
+25-39 (Millennials),Manha (6h-12h),370483.27,1986
+25-39 (Millennials),Noite (18h-22h),1086535.68,5812
+25-39 (Millennials),Tarde (12h-18h),961045.93,5747
+40-54 (Gen X),Manha (6h-12h),418289.36,1959
+40-54 (Gen X),Noite (18h-22h),893151.41,4477
+40-54 (Gen X),Tarde (12h-18h),794402.87,4583
+55-69 (Boomers),Manha (6h-12h),56138.95,240
+55-69 (Boomers),Noite (18h-22h),204532.80000000002,582
+55-69 (Boomers),Tarde (12h-18h),119499.59,765
+70+ (Silent),Manha (6h-12h),8066.96,36
+70+ (Silent),Noite (18h-22h),19482.82,71
+70+ (Silent),Tarde (12h-18h),14367.17,62
+Nao Informado,Manha (6h-12h),3844.46,17
+Nao Informado,Noite (18h-22h),12111.58,83
+Nao Informado,Tarde (12h-18h),6924.09,59
