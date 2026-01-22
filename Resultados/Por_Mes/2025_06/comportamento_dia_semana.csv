@@ -1,43 +1,43 @@
 faixa_etaria,dia_semana,valor,transacoes
-16-24 (Gen Z),Domingo,584872.39,1847
-16-24 (Gen Z),Quarta,202066.13,640
-16-24 (Gen Z),Quinta,184718.97,618
-16-24 (Gen Z),Sabado,373954.16,1129
-16-24 (Gen Z),Segunda,210853.47,767
-16-24 (Gen Z),Sexta,174497.62,592
-16-24 (Gen Z),Terca,188168.58,556
-25-39 (Millennials),Domingo,4607059.94,12828
-25-39 (Millennials),Quarta,1644443.71,4440
-25-39 (Millennials),Quinta,1603793.92,4306
-25-39 (Millennials),Sabado,2964882.62,7913
-25-39 (Millennials),Segunda,1845872.97,5055
-25-39 (Millennials),Sexta,1726944.95,4429
-25-39 (Millennials),Terca,1378840.0,3833
-40-54 (Gen X),Domingo,4870777.38,13879
-40-54 (Gen X),Quarta,2309441.45,4933
-40-54 (Gen X),Quinta,2031526.24,4900
-40-54 (Gen X),Sabado,3216210.83,8632
-40-54 (Gen X),Segunda,2432913.99,5826
-40-54 (Gen X),Sexta,1860808.24,5058
-40-54 (Gen X),Terca,1636119.99,4143
-55-69 (Boomers),Domingo,1349566.54,3173
-55-69 (Boomers),Quarta,668322.78,1414
-55-69 (Boomers),Quinta,639486.53,1452
-55-69 (Boomers),Sabado,1066660.6,2354
-55-69 (Boomers),Segunda,653179.97,1550
-55-69 (Boomers),Sexta,644308.59,1333
-55-69 (Boomers),Terca,543070.66,1212
-70+ (Silent),Domingo,214350.21,547
-70+ (Silent),Quarta,105464.0,240
-70+ (Silent),Quinta,132818.38,229
-70+ (Silent),Sabado,199679.74,424
-70+ (Silent),Segunda,102243.56,229
-70+ (Silent),Sexta,113978.84,249
-70+ (Silent),Terca,139677.41999999998,226
-Nao Informado,Domingo,22908.09,42
+Boomers (1946-1964),Domingo,715910.28,1773
+Boomers (1946-1964),Quarta,377617.41,862
+Boomers (1946-1964),Quinta,396750.1,861
+Boomers (1946-1964),Sabado,641761.97,1431
+Boomers (1946-1964),Segunda,380893.74,903
+Boomers (1946-1964),Sexta,449151.85,875
+Boomers (1946-1964),Terca,397018.89,799
+Gen X (1965-1980),Domingo,3519056.75,9563
+Gen X (1965-1980),Quarta,1758863.38,3526
+Gen X (1965-1980),Quinta,1506967.62,3535
+Gen X (1965-1980),Sabado,2492600.05,6182
+Gen X (1965-1980),Segunda,1711586.09,4155
+Gen X (1965-1980),Sexta,1375499.18,3539
+Gen X (1965-1980),Terca,1194682.56,3057
+Gen Z (1997-2012),Domingo,1446101.84,4200
+Gen Z (1997-2012),Quarta,480057.56,1454
+Gen Z (1997-2012),Quinta,476622.82,1469
+Gen Z (1997-2012),Sabado,848895.83,2575
+Gen Z (1997-2012),Segunda,551176.06,1641
+Gen Z (1997-2012),Sexta,522554.77,1407
+Gen Z (1997-2012),Terca,441196.48,1353
+Millennials (1981-1996),Domingo,5926858.81,16692
+Millennials (1981-1996),Quarta,2304684.21,5798
+Millennials (1981-1996),Quinta,2196853.48,5615
+Millennials (1981-1996),Sabado,3822065.59,10223
+Millennials (1981-1996),Segunda,2586557.5100000002,6692
+Millennials (1981-1996),Sexta,2158583.44,5799
+Millennials (1981-1996),Terca,1840457.37,4743
+Nao Informado,Domingo,22378.11,41
 Nao Informado,Quarta,10494.41,30
-Nao Informado,Quinta,10698.17,44
-Nao Informado,Sabado,5405.36,11
+Nao Informado,Quinta,7714.31,37
+Nao Informado,Sabado,3155.66,9
 Nao Informado,Segunda,29005.08,59
 Nao Informado,Sexta,5285.18,22
-Nao Informado,Terca,8590.35,19
+Nao Informado,Terca,5240.75,17
+Silent (antes 1946),Domingo,19228.76,47
+Silent (antes 1946),Quarta,8515.51,27
+Silent (antes 1946),Quinta,18133.88,32
+Silent (antes 1946),Sabado,18314.21,43
+Silent (antes 1946),Segunda,14850.56,36
+Silent (antes 1946),Sexta,14749.0,41
+Silent (antes 1946),Terca,15870.95,20

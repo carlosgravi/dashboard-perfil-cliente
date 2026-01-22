@@ -1,30 +1,29 @@
 faixa_etaria,segmento,valor,clientes,ranking
-40-54 (Gen X),Moda,1682155.98,2152,1
-40-54 (Gen X),Joalheria,409721.2,190,2
-40-54 (Gen X),Eletrônicos,301782.0,108,3
-40-54 (Gen X),Calçados,283604.86,572,4
-40-54 (Gen X),Esportes,242551.76,556,5
-25-39 (Millennials),Moda,1249896.71,1808,1
-25-39 (Millennials),Joalheria,258670.39,145,2
-25-39 (Millennials),Beleza e Bem-estar,209305.43,582,3
-25-39 (Millennials),Calçados,199803.38,460,4
-25-39 (Millennials),Esportes,187883.93,418,5
-55-69 (Boomers),Moda,412659.51,514,1
-55-69 (Boomers),Joalheria,173923.93,61,2
-55-69 (Boomers),Eletrônicos,103471.51,36,3
-55-69 (Boomers),Ótica,85900.01,40,4
-55-69 (Boomers),Casa e Decoração,62353.89,149,5
-Nao Informado,Moda,1203.97,2,1
-Nao Informado,Calçados,239.99,1,2
-Nao Informado,Gastronomia,177.3,2,3
-Nao Informado,Farmácias,43.97,1,4
-16-24 (Gen Z),Moda,125651.41,174,1
-16-24 (Gen Z),Eletrônicos,39161.5,12,2
-16-24 (Gen Z),Calçados,27170.75,59,3
-16-24 (Gen Z),Beleza e Bem-estar,26932.95,75,4
-16-24 (Gen Z),Gastronomia,21359.83,123,5
-70+ (Silent),Moda,66142.43,74,1
-70+ (Silent),Eletrônicos,22887.3,9,2
-70+ (Silent),Ótica,14016.0,5,3
-70+ (Silent),Joalheria,12862.53,6,4
-70+ (Silent),Beleza e Bem-estar,12409.17,22,5
+Gen X (1965-1980),Moda,1231454.45,1467,1
+Gen X (1965-1980),Joalheria,328466.79,151,2
+Gen X (1965-1980),Eletrônicos,261586.89,89,3
+Gen X (1965-1980),Calçados,210051.62,379,4
+Gen X (1965-1980),Esportes,178213.09,377,5
+Millennials (1981-1996),Moda,1732488.55,2459,1
+Millennials (1981-1996),Joalheria,374201.07,197,2
+Millennials (1981-1996),Calçados,273478.32,625,3
+Millennials (1981-1996),Beleza e Bem-estar,271169.71,730,4
+Millennials (1981-1996),Eletrônicos,270729.46,102,5
+Gen Z (1997-2012),Moda,337306.02,494,1
+Gen Z (1997-2012),Beleza e Bem-estar,72137.63,199,2
+Gen Z (1997-2012),Joalheria,71791.83,40,3
+Gen Z (1997-2012),Eletrônicos,62673.51,21,4
+Gen Z (1997-2012),Calçados,61446.1,145,5
+Nao Informado,Moda,194.98,1,1
+Nao Informado,Gastronomia,177.3,2,2
+Nao Informado,Farmácias,43.97,1,3
+Boomers (1946-1964),Moda,226212.33,294,1
+Boomers (1946-1964),Joalheria,93864.33,29,2
+Boomers (1946-1964),Eletrônicos,51483.74,21,3
+Boomers (1946-1964),Ótica,40038.58,21,4
+Boomers (1946-1964),Beleza e Bem-estar,35020.74,94,5
+Silent (antes 1946),Ótica,11521.0,3,1
+Silent (antes 1946),Moda,10053.68,9,2
+Silent (antes 1946),Esportes,2759.8,1,3
+Silent (antes 1946),Beleza e Bem-estar,2697.38,3,4
+Silent (antes 1946),Casa e Decoração,1843.27,4,5

@@ -1,31 +1,31 @@
 faixa_etaria,segmento,valor,clientes,ranking
-25-39 (Millennials),Moda,933839.01,1571,1
-25-39 (Millennials),Gastronomia,326880.33,1742,2
-25-39 (Millennials),Calçados,189233.36,489,3
-25-39 (Millennials),Beleza e Bem-estar,176387.72,697,4
-25-39 (Millennials),Esportes,172139.47,414,5
-40-54 (Gen X),Moda,786434.85,1239,1
-40-54 (Gen X),Gastronomia,296571.07,1358,2
-40-54 (Gen X),Esportes,171694.99,397,3
-40-54 (Gen X),Calçados,169499.35,388,4
-40-54 (Gen X),Beleza e Bem-estar,161067.82,556,5
-55-69 (Boomers),Moda,102411.87,150,1
-55-69 (Boomers),Gastronomia,39453.22,157,2
-55-69 (Boomers),Joalheria,27308.37,11,3
-55-69 (Boomers),Ótica,25900.989999999998,4,4
-55-69 (Boomers),Calçados,20997.59,48,5
-16-24 (Gen Z),Moda,164314.32,278,1
-16-24 (Gen Z),Gastronomia,114121.26,416,2
-16-24 (Gen Z),Eletrônicos,37278.5,20,3
-16-24 (Gen Z),Esportes,31118.2,71,4
-16-24 (Gen Z),Beleza e Bem-estar,30069.8,149,5
-Nao Informado,Gastronomia,12647.15,22,1
-Nao Informado,Moda,6999.24,14,2
-Nao Informado,Serviços,4127.219999999999,3,3
-Nao Informado,Beleza e Bem-estar,3170.89,8,4
-Nao Informado,Casa e Decoração,1681.89,5,5
-70+ (Silent),Ótica,6878.0,2,1
-70+ (Silent),Moda,6647.27,15,2
-70+ (Silent),Telefonia,6378.0,2,3
-70+ (Silent),Gastronomia,4990.37,21,4
-70+ (Silent),Moda Feminina,3594.0,1,5
+Millennials (1981-1996),Moda,1133943.65,1907,1
+Millennials (1981-1996),Gastronomia,396245.04,2106,2
+Millennials (1981-1996),Calçados,243793.45,589,3
+Millennials (1981-1996),Esportes,220539.6,530,4
+Millennials (1981-1996),Beleza e Bem-estar,212371.19,825,5
+Gen X (1965-1980),Moda,440232.82,661,1
+Gen X (1965-1980),Gastronomia,181086.53,731,2
+Gen X (1965-1980),Beleza e Bem-estar,103404.35,318,3
+Gen X (1965-1980),Joalheria,99738.72,54,4
+Gen X (1965-1980),Esportes,97810.1,228,5
+Gen Z (1997-2012),Moda,374352.9,611,1
+Gen Z (1997-2012),Gastronomia,197490.21,789,2
+Gen Z (1997-2012),Beleza e Bem-estar,68196.68,312,3
+Gen Z (1997-2012),Esportes,67901.79000000001,153,4
+Gen Z (1997-2012),Casa e Decoração,59183.81,210,5
+Boomers (1946-1964),Moda,48390.89,82,1
+Boomers (1946-1964),Ótica,21496.01,5,2
+Boomers (1946-1964),Gastronomia,17971.95,82,3
+Boomers (1946-1964),Eletrodomésticos,13379.17,18,4
+Boomers (1946-1964),Calçados,11361.6,22,5
+Nao Informado,Serviços,4094.22,1,1
+Nao Informado,Moda,3240.48,5,2
+Nao Informado,Beleza e Bem-estar,1638.0,2,3
+Nao Informado,Gastronomia,1309.25,6,4
+Nao Informado,Eletrônicos,1068.8,1,5
+Silent (antes 1946),Beleza e Bem-estar,1084.99,1,1
+Silent (antes 1946),Joalheria,953.0,1,2
+Silent (antes 1946),Gastronomia,560.42,2,3
+Silent (antes 1946),Moda,485.82,1,4
+Silent (antes 1946),Farmácias,83.98,1,5

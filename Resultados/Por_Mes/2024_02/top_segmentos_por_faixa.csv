@@ -1,27 +1,21 @@
 faixa_etaria,segmento,valor,clientes,ranking
-25-39 (Millennials),Moda,215413.69,420,1
-25-39 (Millennials),Gastronomia,53632.21,396,2
-25-39 (Millennials),Calçados,44186.01,134,3
-25-39 (Millennials),Beleza e Bem-estar,43436.83,179,4
-25-39 (Millennials),Casa e Decoração,36898.57,108,5
-55-69 (Boomers),Moda,46634.64,86,1
-55-69 (Boomers),Moda Feminina,14287.65,11,2
-55-69 (Boomers),Casa e Decoração,11203.89,26,3
-55-69 (Boomers),Eletrônicos,10492.0,2,4
-55-69 (Boomers),Gastronomia,9779.74,74,5
-40-54 (Gen X),Moda,255463.41,429,1
-40-54 (Gen X),Gastronomia,60466.89,421,2
-40-54 (Gen X),Calçados,54294.01,127,3
-40-54 (Gen X),Esportes,46673.78,126,4
-40-54 (Gen X),Beleza e Bem-estar,41572.49,170,5
-16-24 (Gen Z),Moda,18601.02,46,1
-16-24 (Gen Z),Beleza e Bem-estar,10065.82,17,2
-16-24 (Gen Z),Telefonia,8253.99,2,3
-16-24 (Gen Z),Gastronomia,4240.47,46,4
-16-24 (Gen Z),Esportes,4111.76,9,5
-70+ (Silent),Moda,4119.08,7,1
-70+ (Silent),Gastronomia,2388.12,9,2
-70+ (Silent),Eletrônicos,2000.0,1,3
-70+ (Silent),Calçados,558.96,1,4
-70+ (Silent),Casa e Decoração,429.97,1,5
-Nao Informado,Beleza e Bem-estar,15.0,1,1
+Millennials (1981-1996),Moda,283288.73,536,1
+Millennials (1981-1996),Gastronomia,70019.05,509,2
+Millennials (1981-1996),Calçados,51290.9,165,3
+Millennials (1981-1996),Casa e Decoração,45986.74,134,4
+Millennials (1981-1996),Beleza e Bem-estar,45053.53,216,5
+Gen X (1965-1980),Moda,176332.59,279,1
+Gen X (1965-1980),Gastronomia,41544.53,276,2
+Gen X (1965-1980),Calçados,33981.49,68,3
+Gen X (1965-1980),Beleza e Bem-estar,33777.45,116,4
+Gen X (1965-1980),Casa e Decoração,32565.25,77,5
+Gen Z (1997-2012),Moda,57472.3,129,1
+Gen Z (1997-2012),Beleza e Bem-estar,20959.93,53,2
+Gen Z (1997-2012),Calçados,19291.94,41,3
+Gen Z (1997-2012),Gastronomia,12194.1,120,4
+Gen Z (1997-2012),Casa e Decoração,9075.0,32,5
+Boomers (1946-1964),Moda,23138.22,44,1
+Boomers (1946-1964),Eletrônicos,12352.0,2,2
+Boomers (1946-1964),Gastronomia,6749.75,41,3
+Boomers (1946-1964),Moda Feminina,5205.97,6,4
+Boomers (1946-1964),Joalheria,4726.1,5,5

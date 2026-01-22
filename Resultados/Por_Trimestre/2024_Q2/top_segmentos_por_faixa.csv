@@ -1,31 +1,31 @@
 faixa_etaria,segmento,valor,clientes,ranking
-40-54 (Gen X),Moda,4144986.48,4959,1
-40-54 (Gen X),Joalheria,1518533.22,758,2
-40-54 (Gen X),Calçados,788420.93,1600,3
-40-54 (Gen X),Beleza e Bem-estar,712876.22,1867,4
-40-54 (Gen X),Esportes,563683.56,1222,5
-25-39 (Millennials),Moda,3250471.96,4394,1
-25-39 (Millennials),Joalheria,962338.79,586,2
-25-39 (Millennials),Calçados,640054.88,1382,3
-25-39 (Millennials),Beleza e Bem-estar,569576.57,1670,4
-25-39 (Millennials),Esportes,407057.97000000003,962,5
-55-69 (Boomers),Moda,1261756.3800000001,1446,1
-55-69 (Boomers),Joalheria,358633.93,164,2
-55-69 (Boomers),Calçados,244592.6,449,3
-55-69 (Boomers),Moda Feminina,199401.46,186,4
-55-69 (Boomers),Beleza e Bem-estar,174929.95,493,5
+Gen X (1965-1980),Moda,3111716.55,3646,1
+Gen X (1965-1980),Joalheria,1113610.47,547,2
+Gen X (1965-1980),Calçados,595135.07,1163,3
+Gen X (1965-1980),Beleza e Bem-estar,525832.77,1349,4
+Gen X (1965-1980),Esportes,421454.69,891,5
+Millennials (1981-1996),Moda,4391397.97,5742,1
+Millennials (1981-1996),Joalheria,1443402.24,793,2
+Millennials (1981-1996),Calçados,843129.43,1811,3
+Millennials (1981-1996),Beleza e Bem-estar,753625.22,2151,4
+Millennials (1981-1996),Esportes,571533.46,1321,5
+Gen Z (1997-2012),Moda,936774.02,1273,1
+Gen Z (1997-2012),Joalheria,200575.45,174,2
+Gen Z (1997-2012),Calçados,190637.38999999998,397,3
+Gen Z (1997-2012),Beleza e Bem-estar,169462.22,530,4
+Gen Z (1997-2012),Gastronomia,118376.44,678,5
 Nao Informado,Telefonia,4199.0,1,1
-Nao Informado,Calçados,3699.61,2,2
-Nao Informado,Joalheria,2950.0,1,3
-Nao Informado,Esportes,2754.79,2,4
-Nao Informado,Moda,2568.9,4,5
-16-24 (Gen Z),Moda,352882.68,508,1
-16-24 (Gen Z),Joalheria,89418.64,77,2
-16-24 (Gen Z),Calçados,64448.76,145,3
-16-24 (Gen Z),Beleza e Bem-estar,58325.84,218,4
-16-24 (Gen Z),Gastronomia,48569.44,284,5
-70+ (Silent),Joalheria,203653.5,20,1
-70+ (Silent),Moda,162991.75,233,2
-70+ (Silent),Beleza e Bem-estar,43630.76,85,3
-70+ (Silent),Calçados,41610.45,73,4
-70+ (Silent),Moda Feminina,34846.81,31,5
+Nao Informado,Papelaria,494.9,1,2
+Nao Informado,Esportes,404.98,1,3
+Nao Informado,Moda,161.91,1,4
+Nao Informado,Eletrodomésticos,140.17000000000002,1,5
+Boomers (1946-1964),Moda,724944.63,862,1
+Boomers (1946-1964),Joalheria,370299.92,90,2
+Boomers (1946-1964),Calçados,149397.12,271,3
+Boomers (1946-1964),Moda Feminina,117997.95,116,4
+Boomers (1946-1964),Beleza e Bem-estar,109046.78,299,5
+Silent (antes 1946),Moda,10663.07,20,1
+Silent (antes 1946),Joalheria,7640.0,2,2
+Silent (antes 1946),Casa e Decoração,6666.02,7,3
+Silent (antes 1946),Ótica,5989.0,2,4
+Silent (antes 1946),Calçados,4528.22,9,5

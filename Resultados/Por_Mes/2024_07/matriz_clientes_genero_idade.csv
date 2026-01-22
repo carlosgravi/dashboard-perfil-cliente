@@ -1,7 +1,7 @@
 faixa_etaria,Feminino,Masculino,Nao Informado,Outro
-16-24 (Gen Z),192,73,0,2
-25-39 (Millennials),1439,633,2,4
-40-54 (Gen X),1527,728,0,2
-55-69 (Boomers),355,194,0,0
-70+ (Silent),52,31,0,0
-Nao Informado,1,2,1,0
+Boomers (1946-1964),202,113,0,0
+Gen X (1965-1980),1047,498,0,2
+Gen Z (1997-2012),471,178,2,2
+Millennials (1981-1996),1843,866,1,4
+Nao Informado,0,2,0,0
+Silent (antes 1946),3,4,0,0

@@ -899,7 +899,7 @@ elif pagina == "👥 Perfil Demográfico":
     with tab2:
         st.subheader("Distribuição por Faixa Etária - Todos os Shoppings")
 
-        ordem_faixas = ['16-24 (Gen Z)', '25-39 (Millennials)', '40-54 (Gen X)', '55-69 (Boomers)', '70+ (Silent)', 'Nao Informado']
+        ordem_faixas = ['Gen Z (1997-2012)', 'Millennials (1981-1996)', 'Gen X (1965-1980)', 'Boomers (1946-1964)', 'Silent (antes 1946)', 'Nao Informado']
         dados['faixa']['ordem'] = dados['faixa']['faixa_etaria'].map({f: i for i, f in enumerate(ordem_faixas)})
         df_faixa_sorted = dados['faixa'].sort_values(['sigla', 'ordem'])
 
@@ -1270,7 +1270,7 @@ elif pagina == "🛒 Segmentos":
         try:
             df_seg_faixa = pd.read_csv(f'Resultados/{periodo_pasta}/top_segmentos_por_faixa.csv')
 
-            ordem_faixas = ['16-24 (Gen Z)', '25-39 (Millennials)', '40-54 (Gen X)', '55-69 (Boomers)', '70+ (Silent)']
+            ordem_faixas = ['Gen Z (1997-2012)', 'Millennials (1981-1996)', 'Gen X (1965-1980)', 'Boomers (1946-1964)', 'Silent (antes 1946)']
 
             for faixa in ordem_faixas:
                 df_f = df_seg_faixa[df_seg_faixa['faixa_etaria'] == faixa].head(5)
@@ -1399,7 +1399,7 @@ elif pagina == "⏰ Comportamento":
             columns='periodo_dia',
             fill_value=0
         )
-        ordem_faixas = ['16-24 (Gen Z)', '25-39 (Millennials)', '40-54 (Gen X)', '55-69 (Boomers)', '70+ (Silent)', 'Nao Informado']
+        ordem_faixas = ['Gen Z (1997-2012)', 'Millennials (1981-1996)', 'Gen X (1965-1980)', 'Boomers (1946-1964)', 'Silent (antes 1946)', 'Nao Informado']
         df_periodo_pivot = df_periodo_pivot.reindex([f for f in ordem_faixas if f in df_periodo_pivot.index])
 
         fig = px.imshow(
@@ -1640,11 +1640,11 @@ elif pagina == "📚 Documentação":
 
         | Faixa | Geração | Nascidos |
         |-------|---------|----------|
-        | 16-24 | Gen Z | 2001-2009 |
-        | 25-39 | Millennials | 1986-2000 |
-        | 40-54 | Gen X | 1971-1985 |
-        | 55-69 | Boomers | 1956-1970 |
-        | 70+ | Silent | Antes de 1956 |
+        | Gen Z | 1997-2012 | 14-29 anos |
+        | Millennials | 1981-1996 | 30-45 anos |
+        | Gen X | 1965-1980 | 46-61 anos |
+        | Boomers | 1946-1964 | 62-80 anos |
+        | Silent | Antes de 1946 | 81+ anos |
 
         ### Métricas de Segmentos
 
@@ -1788,11 +1788,11 @@ elif pagina == "📚 Documentação":
         | **Frequência** | Número médio de compras por cliente |
         | **Segmento** | Categoria de produto/serviço da loja |
         | **Faixa Etária** | Agrupamento de clientes por idade |
-        | **Gen Z** | Geração nascida entre 2001-2009 (16-24 anos) |
-        | **Millennials** | Geração nascida entre 1986-2000 (25-39 anos) |
-        | **Gen X** | Geração nascida entre 1971-1985 (40-54 anos) |
-        | **Boomers** | Geração nascida entre 1956-1970 (55-69 anos) |
-        | **Silent** | Geração nascida antes de 1956 (70+ anos) |
+        | **Gen Z** | Geração nascida entre 1997-2012 |
+        | **Millennials** | Geração nascida entre 1981-1996 |
+        | **Gen X** | Geração nascida entre 1965-1980 |
+        | **Boomers** | Geração nascida entre 1946-1964 |
+        | **Silent** | Geração nascida antes de 1946 |
         | **Matriz Cruzada** | Tabela que cruza duas dimensões (ex: gênero x idade) |
         | **Heatmap** | Mapa de calor visual para identificar padrões |
         | **Radar Chart** | Gráfico radar para comparar múltiplas métricas |

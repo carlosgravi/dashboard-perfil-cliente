@@ -1,18 +1,16 @@
 faixa_etaria,periodo_dia,valor,transacoes
-16-24 (Gen Z),Manha (6h-12h),9135.35,18
-16-24 (Gen Z),Noite (18h-22h),8724.67,21
-16-24 (Gen Z),Tarde (12h-18h),13458.21,23
-25-39 (Millennials),Manha (6h-12h),105607.35,242
-25-39 (Millennials),Noite (18h-22h),140709.71,337
-25-39 (Millennials),Tarde (12h-18h),179867.87,327
-40-54 (Gen X),Manha (6h-12h),158619.47,299
-40-54 (Gen X),Noite (18h-22h),295755.94,433
-40-54 (Gen X),Tarde (12h-18h),306491.93,387
-55-69 (Boomers),Manha (6h-12h),67736.51,101
-55-69 (Boomers),Noite (18h-22h),86194.45999999999,127
-55-69 (Boomers),Tarde (12h-18h),72806.17,125
-70+ (Silent),Manha (6h-12h),6191.17,11
-70+ (Silent),Noite (18h-22h),11903.44,22
-70+ (Silent),Tarde (12h-18h),13476.7,15
+Boomers (1946-1964),Manha (6h-12h),45646.840000000004,57
+Boomers (1946-1964),Noite (18h-22h),54717.12,78
+Boomers (1946-1964),Tarde (12h-18h),31923.04,61
+Gen X (1965-1980),Manha (6h-12h),119528.32,226
+Gen X (1965-1980),Noite (18h-22h),235281.49,349
+Gen X (1965-1980),Tarde (12h-18h),223080.98,321
+Gen Z (1997-2012),Manha (6h-12h),22220.12,48
+Gen Z (1997-2012),Noite (18h-22h),26124.17,74
+Gen Z (1997-2012),Tarde (12h-18h),29978.13,66
+Millennials (1981-1996),Manha (6h-12h),159894.57,340
+Millennials (1981-1996),Noite (18h-22h),227165.44,439
+Millennials (1981-1996),Tarde (12h-18h),300558.98,428
 Nao Informado,Noite (18h-22h),343.99,1
 Nao Informado,Tarde (12h-18h),193.01999999999998,6
+Silent (antes 1946),Tarde (12h-18h),559.75,1

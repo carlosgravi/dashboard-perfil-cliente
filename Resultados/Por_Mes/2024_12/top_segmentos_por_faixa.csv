@@ -1,31 +1,31 @@
 faixa_etaria,segmento,valor,clientes,ranking
-40-54 (Gen X),Moda,16273596.88,19518,1
-40-54 (Gen X),Joalheria,4416001.67,2261,2
-40-54 (Gen X),Beleza e Bem-estar,3279658.26,8190,3
-40-54 (Gen X),Calçados,3263337.44,7456,4
-40-54 (Gen X),Gastronomia,2335285.19,10822,5
-25-39 (Millennials),Moda,13201908.69,18286,1
-25-39 (Millennials),Joalheria,3276194.81,1789,2
-25-39 (Millennials),Beleza e Bem-estar,2678407.2,7404,3
-25-39 (Millennials),Calçados,2571090.47,6622,4
-25-39 (Millennials),Gastronomia,1820182.23,9122,5
-55-69 (Boomers),Moda,5628891.77,6480,1
-55-69 (Boomers),Joalheria,1754619.41,707,2
-55-69 (Boomers),Calçados,1076097.35,2285,3
-55-69 (Boomers),Beleza e Bem-estar,965236.51,2355,4
-55-69 (Boomers),Casa e Decoração,886676.77,1640,5
-16-24 (Gen Z),Moda,1590679.2,2540,1
-16-24 (Gen Z),Beleza e Bem-estar,417631.34,1202,2
-16-24 (Gen Z),Joalheria,323729.63,310,3
-16-24 (Gen Z),Calçados,317007.43,884,4
-16-24 (Gen Z),Gastronomia,216726.97,1223,5
-70+ (Silent),Moda,904901.56,1087,1
-70+ (Silent),Joalheria,402849.01,142,2
-70+ (Silent),Calçados,212364.68,393,3
-70+ (Silent),Casa e Decoração,147440.54,304,4
-70+ (Silent),Telefonia,145915.48,37,5
-Nao Informado,Moda,15308.91,12,1
-Nao Informado,Esportes,2303.7400000000002,6,2
-Nao Informado,Moda Feminina,1567.4399999999998,1,3
-Nao Informado,Calçados,1304.81,3,4
-Nao Informado,Presentes e Acessórios,1052.3,3,5
+Gen X (1965-1980),Moda,12698156.82,14811,1
+Gen X (1965-1980),Joalheria,3651846.68,1763,2
+Gen X (1965-1980),Calçados,2572053.92,5549,3
+Gen X (1965-1980),Beleza e Bem-estar,2535065.13,6180,4
+Gen X (1965-1980),Gastronomia,1769591.31,8104,5
+Millennials (1981-1996),Moda,17391156.79,22846,1
+Millennials (1981-1996),Joalheria,4512907.48,2308,2
+Millennials (1981-1996),Beleza e Bem-estar,3437181.51,9156,3
+Millennials (1981-1996),Calçados,3384818.1,8454,4
+Millennials (1981-1996),Infantil,2472123.47,6545,5
+Gen Z (1997-2012),Moda,4031864.47,6182,1
+Gen Z (1997-2012),Beleza e Bem-estar,964321.21,2793,2
+Gen Z (1997-2012),Joalheria,831640.73,677,3
+Gen Z (1997-2012),Calçados,809938.07,2218,4
+Gen Z (1997-2012),Gastronomia,540538.42,2988,5
+Boomers (1946-1964),Moda,3416646.65,3982,1
+Boomers (1946-1964),Joalheria,1136934.96,450,2
+Boomers (1946-1964),Calçados,639716.9,1386,3
+Boomers (1946-1964),Telefonia,537970.22,136,4
+Boomers (1946-1964),Casa e Decoração,536655.38,1041,5
+Nao Informado,Moda,2575.8,6,1
+Nao Informado,Presentes e Acessórios,974.4,2,2
+Nao Informado,Gastronomia,482.31,3,3
+Nao Informado,Calçados,459.93000000000006,1,4
+Nao Informado,Beleza e Bem-estar,457.9,3,5
+Silent (antes 1946),Moda,74886.48,96,1
+Silent (antes 1946),Joalheria,40064.68,11,2
+Silent (antes 1946),Calçados,34215.259999999995,35,3
+Silent (antes 1946),Serviços,29828.2,6,4
+Silent (antes 1946),Eletrônicos,24477.2,5,5
