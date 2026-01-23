@@ -10,6 +10,67 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import os
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+
+# Função para enviar email via SMTP
+def enviar_email(destinatario, assunto, corpo, remetente_nome, remetente_email):
+    """
+    Envia email usando SMTP do Gmail.
+    Requer configuração dos secrets no Streamlit Cloud:
+    - SMTP_EMAIL: email do remetente (Gmail)
+    - SMTP_PASSWORD: senha de app do Gmail
+    """
+    try:
+        # Verificar se os secrets estão configurados
+        if "SMTP_EMAIL" not in st.secrets or "SMTP_PASSWORD" not in st.secrets:
+            return False, "Configuração de email não encontrada. Entre em contato diretamente."
+
+        smtp_email = st.secrets["SMTP_EMAIL"]
+        smtp_password = st.secrets["SMTP_PASSWORD"]
+
+        # Configurar mensagem
+        msg = MIMEMultipart()
+        msg['From'] = f"{remetente_nome} <{smtp_email}>"
+        msg['To'] = destinatario
+        msg['Subject'] = assunto
+        msg['Reply-To'] = remetente_email
+
+        # Corpo do email em HTML
+        corpo_html = f"""
+        <html>
+        <body style="font-family: Arial, sans-serif; line-height: 1.6;">
+            <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
+                <h2 style="color: #1E3A5F; border-bottom: 2px solid #1E3A5F; padding-bottom: 10px;">
+                    📊 Nova Mensagem do Dashboard
+                </h2>
+                <div style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; margin: 15px 0;">
+                    {corpo.replace(chr(10), '<br>')}
+                </div>
+                <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
+                <p style="color: #666; font-size: 12px;">
+                    Esta mensagem foi enviada através do Dashboard de Perfil de Cliente - Almeida Junior Shoppings
+                </p>
+            </div>
+        </body>
+        </html>
+        """
+
+        msg.attach(MIMEText(corpo_html, 'html', 'utf-8'))
+
+        # Conectar e enviar
+        with smtplib.SMTP('smtp.gmail.com', 587) as server:
+            server.starttls()
+            server.login(smtp_email, smtp_password)
+            server.send_message(msg)
+
+        return True, "Email enviado com sucesso!"
+
+    except smtplib.SMTPAuthenticationError:
+        return False, "Erro de autenticação. Verifique as credenciais de email."
+    except Exception as e:
+        return False, f"Erro ao enviar email: {str(e)}"
 
 # Configuração da página
 st.set_page_config(
@@ -2107,50 +2168,71 @@ elif pagina == "🤖 Assistente":
                 else:
                     # Criar corpo do email formatado
                     corpo_email = f"""
-Nova mensagem do Dashboard de Perfil de Cliente
+<strong>Dados do Remetente:</strong>
+• Nome: {nome}
+• E-mail: {email}
+• Departamento: {departamento}
+• Shopping: {shopping_ref}
 
-Nome: {nome}
-E-mail: {email}
-Departamento: {departamento}
-Shopping: {shopping_ref}
-Assunto: {assunto}
-Período do Dashboard: {periodo_selecionado}
+<strong>Informações da Solicitação:</strong>
+• Assunto: {assunto}
+• Período do Dashboard: {periodo_selecionado}
 
-Mensagem:
+<strong>Mensagem:</strong>
 {mensagem}
                     """.strip()
 
-                    # Criar link mailto (funciona em qualquer ambiente)
-                    import urllib.parse
-                    assunto_encoded = urllib.parse.quote(f"[Dashboard Perfil Cliente] {assunto}")
-                    corpo_encoded = urllib.parse.quote(corpo_email)
-                    mailto_link = f"mailto:carlos.gravi@almeidajunior.com.br?subject={assunto_encoded}&body={corpo_encoded}"
+                    # Tentar enviar email automaticamente
+                    with st.spinner("Enviando mensagem..."):
+                        sucesso, msg_retorno = enviar_email(
+                            destinatario="carlos.gravi@almeidajunior.com.br",
+                            assunto=f"[Dashboard Perfil Cliente] {assunto}",
+                            corpo=corpo_email,
+                            remetente_nome=nome,
+                            remetente_email=email
+                        )
 
-                    st.success("✅ Formulário preenchido com sucesso!")
-                    st.markdown(f"""
-                    **Clique no botão abaixo para enviar sua mensagem:**
+                    if sucesso:
+                        st.success("✅ Mensagem enviada com sucesso!")
+                        st.balloons()
+                        st.info(f"""
+                        **Sua mensagem foi enviada para nossa equipe.**
 
-                    <a href="{mailto_link}" target="_blank">
-                        <button style="
-                            background-color: #1E3A5F;
-                            color: white;
-                            padding: 10px 20px;
-                            border: none;
-                            border-radius: 5px;
-                            cursor: pointer;
-                            font-size: 16px;
-                        ">
-                            📧 Abrir E-mail para Enviar
-                        </button>
-                    </a>
+                        📧 Você receberá uma resposta em **carlos.gravi@almeidajunior.com.br**
 
-                    ---
+                        Respondendo para: **{email}**
 
-                    **Ou copie as informações abaixo e envie manualmente para:**
-                    `carlos.gravi@almeidajunior.com.br`
-                    """, unsafe_allow_html=True)
+                        *Prazo de resposta: até 2 dias úteis*
+                        """)
+                    else:
+                        # Fallback para mailto se SMTP falhar
+                        st.warning(f"⚠️ {msg_retorno}")
+                        st.markdown("**Use o método alternativo abaixo:**")
 
-                    st.code(corpo_email, language=None)
+                        import urllib.parse
+                        corpo_texto = corpo_email.replace('<strong>', '').replace('</strong>', '')
+                        assunto_encoded = urllib.parse.quote(f"[Dashboard Perfil Cliente] {assunto}")
+                        corpo_encoded = urllib.parse.quote(corpo_texto)
+                        mailto_link = f"mailto:carlos.gravi@almeidajunior.com.br?subject={assunto_encoded}&body={corpo_encoded}"
+
+                        st.markdown(f"""
+                        <a href="{mailto_link}" target="_blank">
+                            <button style="
+                                background-color: #1E3A5F;
+                                color: white;
+                                padding: 10px 20px;
+                                border: none;
+                                border-radius: 5px;
+                                cursor: pointer;
+                                font-size: 16px;
+                                width: 100%;
+                            ">
+                                📧 Abrir Cliente de E-mail
+                            </button>
+                        </a>
+                        """, unsafe_allow_html=True)
+
+                        st.code(corpo_texto, language=None)
 
         st.markdown("---")
 
