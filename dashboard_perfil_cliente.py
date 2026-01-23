@@ -1,6 +1,7 @@
 """
 DASHBOARD - PERFIL DE CLIENTE POR SHOPPING
 Visualização interativa dos dados de perfil de cliente
+Atualizado em: 2026-01-23 - Correção de mapeamento de shoppings
 """
 
 import streamlit as st
