@@ -295,7 +295,7 @@ except Exception as e:
 
 pagina = st.sidebar.radio(
     "Selecione a visão:",
-    ["📊 Visão Geral", "🎭 Personas", "🏬 Por Shopping", "👥 Perfil Demográfico", "⭐ High Spenders", "🛒 Segmentos", "⏰ Comportamento", "📈 Comparativo", "📥 Exportar Dados", "📚 Documentação"]
+    ["📊 Visão Geral", "🎭 Personas", "🏬 Por Shopping", "👥 Perfil Demográfico", "⭐ High Spenders", "🛒 Segmentos", "⏰ Comportamento", "📈 Comparativo", "📥 Exportar Dados", "🤖 Assistente", "📚 Documentação"]
 )
 
 st.sidebar.markdown("---")
@@ -1865,6 +1865,306 @@ elif pagina == "📥 Exportar Dados":
 
     st.markdown("---")
     st.info("💡 **Dica:** Os arquivos CSV podem ser abertos diretamente no Excel. Para melhores resultados, use 'Dados > De Texto/CSV' no Excel.")
+
+# ============================================================================
+# PÁGINA: ASSISTENTE
+# ============================================================================
+elif pagina == "🤖 Assistente":
+    st.markdown('<p class="main-header">🤖 Assistente do Dashboard</p>', unsafe_allow_html=True)
+
+    st.markdown("""
+    Bem-vindo ao **Assistente do Dashboard de Perfil de Cliente**!
+    Aqui você pode tirar dúvidas sobre os dados, métricas e análises apresentadas.
+    """)
+
+    # Tabs para organizar
+    tab_chat, tab_faq, tab_contato = st.tabs(["💬 Perguntas Frequentes", "📖 Guia Rápido", "📧 Fale Conosco"])
+
+    with tab_chat:
+        st.subheader("💬 Perguntas Frequentes")
+
+        # FAQ expandível
+        with st.expander("❓ O que é um High Spender?", expanded=False):
+            st.markdown("""
+            **High Spenders** são os clientes que estão no **Top 10%** em valor de compras de cada shopping.
+
+            - Representam aproximadamente **10% dos clientes**
+            - Respondem por cerca de **40-50% do faturamento total**
+            - São identificados pelo percentil 90 de gastos
+
+            **Exemplo:** Se o threshold do BS é R$ 5.800, qualquer cliente que gastou R$ 5.800 ou mais é considerado High Spender nesse shopping.
+            """)
+
+        with st.expander("❓ Como são definidas as Personas?", expanded=False):
+            st.markdown("""
+            As **9 Personas** foram identificadas através de **análise de cluster (K-Means)** considerando:
+
+            - Valor total gasto
+            - Frequência de compras
+            - Ticket médio
+            - Idade média
+            - Gênero predominante
+
+            **Principais Personas:**
+            | Persona | % Clientes | Perfil |
+            |---------|------------|--------|
+            | Mãe Moderna | 20,5% | Mulheres 35-45, alta frequência |
+            | Cliente Regular | 40,4% | Perfil diverso, ticket baixo |
+            | Executivo Exigente | 3,3% | Alta renda, ticket alto |
+            | Fashionista Premium | 2,2% | Jovens, foco em moda |
+            """)
+
+        with st.expander("❓ O que significa cada faixa etária?", expanded=False):
+            st.markdown("""
+            As faixas etárias são baseadas nas **gerações**:
+
+            | Geração | Nascidos | Idade Atual |
+            |---------|----------|-------------|
+            | **Gen Z** | 1997-2012 | 14-29 anos |
+            | **Millennials** | 1981-1996 | 30-45 anos |
+            | **Gen X** | 1965-1980 | 46-61 anos |
+            | **Boomers** | 1946-1964 | 62-80 anos |
+            | **Silent** | Antes de 1946 | 81+ anos |
+            """)
+
+        with st.expander("❓ Como é calculado o Ticket Médio?", expanded=False):
+            st.markdown("""
+            O **Ticket Médio** é calculado pela fórmula:
+
+            ```
+            Ticket Médio = Valor Total de Compras / Número de Clientes
+            ```
+
+            **Importante:** O ticket médio varia significativamente entre shoppings devido a:
+            - Mix de lojas diferentes
+            - Perfil socioeconômico da região
+            - Tipo de produtos predominantes
+            """)
+
+        with st.expander("❓ O que são os Segmentos?", expanded=False):
+            st.markdown("""
+            Os **Segmentos** representam as categorias de produtos/serviços das lojas:
+
+            - **Moda** - Vestuário, roupas, acessórios de moda
+            - **Beleza e Bem-estar** - Cosméticos, perfumaria, estética
+            - **Calçados** - Sapatos, tênis, sandálias
+            - **Joalheria** - Joias, relógios, óticas
+            - **Gastronomia** - Restaurantes, fast-food, cafeterias
+            - **Telefonia** - Celulares, operadoras, acessórios
+            - **Eletrônicos** - Informática, eletrodomésticos
+            - **Casa e Decoração** - Móveis, itens de decoração
+            """)
+
+        with st.expander("❓ Qual o período dos dados?", expanded=False):
+            st.markdown(f"""
+            **Período completo:** 11/12/2022 a 19/01/2026
+
+            **Período selecionado atualmente:** {periodo_selecionado}
+
+            Os dados são atualizados periodicamente e você pode filtrar por:
+            - Período Completo
+            - Por Ano
+            - Por Trimestre
+            - Por Mês
+            """)
+
+        with st.expander("❓ O que significam as siglas dos shoppings?", expanded=False):
+            st.markdown("""
+            | Sigla | Shopping | Cidade |
+            |-------|----------|--------|
+            | **BS** | Balneário Shopping | Balneário Camboriú |
+            | **CS** | Continente Shopping | São José |
+            | **GS** | Garten Shopping | Joinville |
+            | **NK** | Neumarkt Shopping | Blumenau |
+            | **NR** | Norte Shopping | Blumenau |
+            | **NS** | Nações Shopping | Criciúma |
+            """)
+
+        with st.expander("❓ Como exportar os dados?", expanded=False):
+            st.markdown("""
+            Você pode exportar os dados de várias formas:
+
+            1. **Página "📥 Exportar Dados"** - Acesse pelo menu lateral
+            2. **Relatório Completo (Excel)** - Todas as análises em um arquivo
+            3. **CSVs Individuais** - Baixe cada relatório separadamente
+            4. **Por Shopping** - Dados específicos de cada unidade
+
+            💡 **Dica:** Os arquivos CSV podem ser abertos diretamente no Excel.
+            """)
+
+    with tab_faq:
+        st.subheader("📖 Guia Rápido de Navegação")
+
+        st.markdown("""
+        ### Como usar o Dashboard
+
+        **1. Selecione o Período**
+        - No menu lateral, escolha o período de análise
+        - Você pode selecionar múltiplos períodos para comparar
+
+        **2. Navegue pelas Páginas**
+        - Use o menu lateral para acessar diferentes análises
+        - Cada página oferece uma visão específica dos dados
+
+        **3. Interaja com os Gráficos**
+        - Passe o mouse sobre os gráficos para ver detalhes
+        - Alguns gráficos permitem zoom e filtros
+
+        **4. Exporte os Dados**
+        - Acesse "📥 Exportar Dados" para baixar relatórios
+        - Disponível em Excel e CSV
+
+        ---
+
+        ### Páginas Disponíveis
+
+        | Página | O que mostra |
+        |--------|--------------|
+        | 📊 Visão Geral | Panorama consolidado de todos os shoppings |
+        | 🎭 Personas | 9 perfis comportamentais de clientes |
+        | 🏬 Por Shopping | Análise detalhada de cada unidade |
+        | 👥 Perfil Demográfico | Distribuição por gênero e idade |
+        | ⭐ High Spenders | Clientes top 10% em valor |
+        | 🛒 Segmentos | Análise por categoria de produto |
+        | ⏰ Comportamento | Padrões temporais de compra |
+        | 📈 Comparativo | Comparação entre shoppings |
+        | 📥 Exportar Dados | Download de relatórios |
+        | 📚 Documentação | Documentação completa |
+        """)
+
+        st.markdown("---")
+
+        st.markdown("""
+        ### Dicas de Análise
+
+        🎯 **Para identificar oportunidades:**
+        - Compare o ticket médio entre shoppings
+        - Analise quais segmentos têm maior crescimento
+        - Identifique gaps demográficos (faixas etárias pouco atendidas)
+
+        📈 **Para acompanhar performance:**
+        - Use a comparação de períodos
+        - Acompanhe a evolução dos High Spenders
+        - Monitore mudanças nas personas
+
+        🔍 **Para análises específicas:**
+        - Use "Por Shopping" para dados detalhados de cada unidade
+        - Exporte os dados para análises customizadas
+        """)
+
+    with tab_contato:
+        st.subheader("📧 Fale Conosco")
+
+        st.markdown("""
+        Não encontrou a resposta que procurava? Tem uma dúvida específica sobre os dados?
+
+        Preencha o formulário abaixo e nossa equipe entrará em contato.
+        """)
+
+        # Formulário de contato
+        with st.form("formulario_contato", clear_on_submit=True):
+            col1, col2 = st.columns(2)
+
+            with col1:
+                nome = st.text_input("Nome *", placeholder="Seu nome completo")
+                email = st.text_input("E-mail *", placeholder="seu.email@empresa.com")
+
+            with col2:
+                departamento = st.selectbox(
+                    "Departamento",
+                    ["Marketing", "Comercial", "Operações", "TI", "Diretoria", "Outro"]
+                )
+                shopping_ref = st.selectbox(
+                    "Shopping de Referência",
+                    ["Todos", "BS - Balneário Shopping", "CS - Continente Shopping",
+                     "GS - Garten Shopping", "NK - Neumarkt Shopping",
+                     "NR - Norte Shopping", "NS - Nações Shopping"]
+                )
+
+            assunto = st.selectbox(
+                "Assunto *",
+                ["Dúvida sobre os dados", "Solicitação de análise específica",
+                 "Problema técnico no dashboard", "Sugestão de melhoria",
+                 "Solicitação de acesso", "Outro"]
+            )
+
+            mensagem = st.text_area(
+                "Mensagem *",
+                placeholder="Descreva sua dúvida ou solicitação em detalhes...",
+                height=150
+            )
+
+            # Campos ocultos para contexto
+            st.markdown(f"*Período selecionado: {periodo_selecionado}*")
+
+            enviado = st.form_submit_button("📤 Enviar Mensagem", use_container_width=True)
+
+            if enviado:
+                if not nome or not email or not mensagem:
+                    st.error("Por favor, preencha todos os campos obrigatórios (*)")
+                elif "@" not in email:
+                    st.error("Por favor, insira um e-mail válido")
+                else:
+                    # Criar corpo do email formatado
+                    corpo_email = f"""
+Nova mensagem do Dashboard de Perfil de Cliente
+
+Nome: {nome}
+E-mail: {email}
+Departamento: {departamento}
+Shopping: {shopping_ref}
+Assunto: {assunto}
+Período do Dashboard: {periodo_selecionado}
+
+Mensagem:
+{mensagem}
+                    """.strip()
+
+                    # Criar link mailto (funciona em qualquer ambiente)
+                    import urllib.parse
+                    assunto_encoded = urllib.parse.quote(f"[Dashboard Perfil Cliente] {assunto}")
+                    corpo_encoded = urllib.parse.quote(corpo_email)
+                    mailto_link = f"mailto:carlos.gravi@almeidajunior.com.br?subject={assunto_encoded}&body={corpo_encoded}"
+
+                    st.success("✅ Formulário preenchido com sucesso!")
+                    st.markdown(f"""
+                    **Clique no botão abaixo para enviar sua mensagem:**
+
+                    <a href="{mailto_link}" target="_blank">
+                        <button style="
+                            background-color: #1E3A5F;
+                            color: white;
+                            padding: 10px 20px;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            font-size: 16px;
+                        ">
+                            📧 Abrir E-mail para Enviar
+                        </button>
+                    </a>
+
+                    ---
+
+                    **Ou copie as informações abaixo e envie manualmente para:**
+                    `carlos.gravi@almeidajunior.com.br`
+                    """, unsafe_allow_html=True)
+
+                    st.code(corpo_email, language=None)
+
+        st.markdown("---")
+
+        st.markdown("""
+        ### Contato Direto
+
+        📧 **E-mail:** carlos.gravi@almeidajunior.com.br
+
+        💡 **Horário de atendimento:** Segunda a Sexta, 9h às 18h
+
+        ---
+
+        *Sua mensagem será respondida em até 2 dias úteis.*
+        """)
 
 # ============================================================================
 # PÁGINA: DOCUMENTAÇÃO
