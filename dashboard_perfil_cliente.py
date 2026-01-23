@@ -295,7 +295,7 @@ except Exception as e:
 
 pagina = st.sidebar.radio(
     "Selecione a visão:",
-    ["📊 Visão Geral", "🎭 Personas", "🏬 Por Shopping", "👥 Perfil Demográfico", "⭐ High Spenders", "🛒 Segmentos", "⏰ Comportamento", "📈 Comparativo", "📚 Documentação"]
+    ["📊 Visão Geral", "🎭 Personas", "🏬 Por Shopping", "👥 Perfil Demográfico", "⭐ High Spenders", "🛒 Segmentos", "⏰ Comportamento", "📈 Comparativo", "📥 Exportar Dados", "📚 Documentação"]
 )
 
 st.sidebar.markdown("---")
@@ -1563,6 +1563,308 @@ elif pagina == "📈 Comparativo":
             st.plotly_chart(fig, use_container_width=True)
     else:
         st.warning("Selecione pelo menos 2 shoppings para comparar.")
+
+# ============================================================================
+# PÁGINA: EXPORTAR DADOS
+# ============================================================================
+elif pagina == "📥 Exportar Dados":
+    st.markdown('<p class="main-header">📥 Exportar Relatórios</p>', unsafe_allow_html=True)
+
+    st.markdown(f"**Período selecionado:** {periodo_selecionado}")
+
+    st.markdown("""
+    Nesta página você pode baixar os **relatórios completos** que alimentam o dashboard.
+    Os dados são exportados em formato CSV, compatível com Excel e outras ferramentas de análise.
+    """)
+
+    st.markdown("---")
+
+    # Função para converter DataFrame para CSV
+    @st.cache_data
+    def converter_para_csv(df):
+        return df.to_csv(index=False, encoding='utf-8-sig').encode('utf-8-sig')
+
+    # Função para criar Excel com múltiplas abas
+    @st.cache_data
+    def criar_excel_completo(dados_dict, periodo):
+        import io
+        output = io.BytesIO()
+        with pd.ExcelWriter(output, engine='openpyxl') as writer:
+            for nome, df in dados_dict.items():
+                # Limitar nome da aba a 31 caracteres
+                sheet_name = nome[:31]
+                df.to_excel(writer, sheet_name=sheet_name, index=False)
+        return output.getvalue()
+
+    # ========== SEÇÃO 1: RELATÓRIO COMPLETO (EXCEL) ==========
+    st.subheader("📊 Relatório Completo (Excel)")
+    st.markdown("Arquivo Excel com **todas as análises** em abas separadas.")
+
+    # Preparar dados para Excel completo
+    dados_excel = {
+        'Resumo por Shopping': dados['resumo'],
+        'Personas': dados['personas'],
+        'Genero por Shopping': dados['genero'],
+        'Faixa Etaria por Shopping': dados['faixa'],
+        'Segmentos por Shopping': dados['segmentos'],
+        'High Spenders por Genero': dados['hs_por_genero'],
+        'High Spenders por Faixa': dados['hs_por_faixa'],
+        'Comparacao HS vs Demais': dados['comparacao_hs'],
+        'Matriz Clientes': dados['matriz_clientes'],
+        'Matriz Valor': dados['matriz_valor'],
+        'Matriz Ticket': dados['matriz_ticket'],
+        'Segmentos por Genero': dados['segmentos_por_genero'],
+        'Segmentos por Faixa': dados['segmentos_por_faixa'],
+        'Comportamento Periodo': dados['comportamento_periodo'],
+        'Comportamento Dia Semana': dados['comportamento_dia']
+    }
+
+    excel_completo = criar_excel_completo(dados_excel, periodo_selecionado)
+
+    st.download_button(
+        label="⬇️ Baixar Relatório Completo (Excel)",
+        data=excel_completo,
+        file_name=f"relatorio_perfil_cliente_{periodo_pasta}.xlsx",
+        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        help="Download do arquivo Excel com todas as análises"
+    )
+
+    st.markdown("---")
+
+    # ========== SEÇÃO 2: RELATÓRIOS INDIVIDUAIS ==========
+    st.subheader("📁 Relatórios Individuais (CSV)")
+    st.markdown("Baixe cada relatório separadamente conforme sua necessidade.")
+
+    # Organizar em tabs
+    tab1, tab2, tab3, tab4 = st.tabs(["📊 Resumos", "👥 Demografia", "⭐ High Spenders", "🛒 Comportamento"])
+
+    with tab1:
+        st.markdown("#### Resumos Gerais")
+
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.markdown("**Resumo por Shopping**")
+            st.caption("Métricas consolidadas de cada shopping")
+            st.download_button(
+                label="⬇️ Baixar CSV",
+                data=converter_para_csv(dados['resumo']),
+                file_name="resumo_por_shopping.csv",
+                mime="text/csv",
+                key="download_resumo"
+            )
+
+            st.markdown("**Personas de Clientes**")
+            st.caption("9 perfis comportamentais identificados")
+            st.download_button(
+                label="⬇️ Baixar CSV",
+                data=converter_para_csv(dados['personas']),
+                file_name="personas_clientes.csv",
+                mime="text/csv",
+                key="download_personas"
+            )
+
+        with col2:
+            st.markdown("**Segmentos por Shopping**")
+            st.caption("Top segmentos de cada shopping")
+            st.download_button(
+                label="⬇️ Baixar CSV",
+                data=converter_para_csv(dados['segmentos']),
+                file_name="segmentos_por_shopping.csv",
+                mime="text/csv",
+                key="download_segmentos"
+            )
+
+    with tab2:
+        st.markdown("#### Análises Demográficas")
+
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.markdown("**Distribuição por Gênero**")
+            st.caption("Clientes por gênero em cada shopping")
+            st.download_button(
+                label="⬇️ Baixar CSV",
+                data=converter_para_csv(dados['genero']),
+                file_name="distribuicao_genero.csv",
+                mime="text/csv",
+                key="download_genero"
+            )
+
+            st.markdown("**Matriz Clientes (Gênero x Idade)**")
+            st.caption("Quantidade de clientes por combinação")
+            st.download_button(
+                label="⬇️ Baixar CSV",
+                data=converter_para_csv(dados['matriz_clientes']),
+                file_name="matriz_clientes_genero_idade.csv",
+                mime="text/csv",
+                key="download_matriz_cli"
+            )
+
+        with col2:
+            st.markdown("**Distribuição por Faixa Etária**")
+            st.caption("Clientes por geração em cada shopping")
+            st.download_button(
+                label="⬇️ Baixar CSV",
+                data=converter_para_csv(dados['faixa']),
+                file_name="distribuicao_faixa_etaria.csv",
+                mime="text/csv",
+                key="download_faixa"
+            )
+
+            st.markdown("**Matriz Valor (Gênero x Idade)**")
+            st.caption("Valor total por combinação")
+            st.download_button(
+                label="⬇️ Baixar CSV",
+                data=converter_para_csv(dados['matriz_valor']),
+                file_name="matriz_valor_genero_idade.csv",
+                mime="text/csv",
+                key="download_matriz_val"
+            )
+
+    with tab3:
+        st.markdown("#### Análises de High Spenders")
+
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.markdown("**High Spenders por Gênero**")
+            st.caption("Distribuição dos top 10% por gênero")
+            st.download_button(
+                label="⬇️ Baixar CSV",
+                data=converter_para_csv(dados['hs_por_genero']),
+                file_name="high_spenders_por_genero.csv",
+                mime="text/csv",
+                key="download_hs_genero"
+            )
+
+            st.markdown("**Comparação HS vs Demais**")
+            st.caption("Métricas comparativas")
+            st.download_button(
+                label="⬇️ Baixar CSV",
+                data=converter_para_csv(dados['comparacao_hs']),
+                file_name="comparacao_high_spenders.csv",
+                mime="text/csv",
+                key="download_hs_comp"
+            )
+
+        with col2:
+            st.markdown("**High Spenders por Faixa Etária**")
+            st.caption("Distribuição dos top 10% por idade")
+            st.download_button(
+                label="⬇️ Baixar CSV",
+                data=converter_para_csv(dados['hs_por_faixa']),
+                file_name="high_spenders_por_faixa.csv",
+                mime="text/csv",
+                key="download_hs_faixa"
+            )
+
+    with tab4:
+        st.markdown("#### Análises de Comportamento")
+
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.markdown("**Comportamento por Período do Dia**")
+            st.caption("Manhã, Tarde e Noite")
+            st.download_button(
+                label="⬇️ Baixar CSV",
+                data=converter_para_csv(dados['comportamento_periodo']),
+                file_name="comportamento_periodo_dia.csv",
+                mime="text/csv",
+                key="download_periodo"
+            )
+
+            st.markdown("**Segmentos por Gênero**")
+            st.caption("Top 5 segmentos preferidos por gênero")
+            st.download_button(
+                label="⬇️ Baixar CSV",
+                data=converter_para_csv(dados['segmentos_por_genero']),
+                file_name="segmentos_por_genero.csv",
+                mime="text/csv",
+                key="download_seg_genero"
+            )
+
+        with col2:
+            st.markdown("**Comportamento por Dia da Semana**")
+            st.caption("Segunda a Domingo")
+            st.download_button(
+                label="⬇️ Baixar CSV",
+                data=converter_para_csv(dados['comportamento_dia']),
+                file_name="comportamento_dia_semana.csv",
+                mime="text/csv",
+                key="download_dia"
+            )
+
+            st.markdown("**Segmentos por Faixa Etária**")
+            st.caption("Top segmentos por geração")
+            st.download_button(
+                label="⬇️ Baixar CSV",
+                data=converter_para_csv(dados['segmentos_por_faixa']),
+                file_name="segmentos_por_faixa.csv",
+                mime="text/csv",
+                key="download_seg_faixa"
+            )
+
+    st.markdown("---")
+
+    # ========== SEÇÃO 3: DADOS POR SHOPPING ==========
+    st.subheader("🏬 Dados por Shopping")
+    st.markdown("Baixe os dados detalhados de cada shopping individualmente.")
+
+    shopping_export = st.selectbox(
+        "Selecione o Shopping:",
+        options=list(NOMES_SHOPPING.keys()),
+        format_func=lambda x: f"{x} - {NOMES_SHOPPING[x]}",
+        key="shopping_export"
+    )
+
+    if shopping_export in dados['por_shopping']:
+        shop_data = dados['por_shopping'][shopping_export]
+
+        # Criar Excel com dados do shopping
+        dados_shop_excel = {
+            'Perfil Genero': shop_data['genero'],
+            'Perfil Faixa Etaria': shop_data['faixa'],
+            'Top Segmentos': shop_data['segmentos'],
+            'Top Lojas': shop_data['lojas'],
+            'Comportamento Periodo': shop_data['periodo'],
+            'Comportamento Dia Semana': shop_data['dia_semana']
+        }
+
+        excel_shopping = criar_excel_completo(dados_shop_excel, shopping_export)
+
+        col1, col2, col3 = st.columns(3)
+
+        with col1:
+            st.download_button(
+                label=f"⬇️ Relatório Completo {shopping_export} (Excel)",
+                data=excel_shopping,
+                file_name=f"relatorio_{shopping_export}_{periodo_pasta}.xlsx",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                key="download_shop_excel"
+            )
+
+        with col2:
+            st.download_button(
+                label=f"⬇️ Top Lojas {shopping_export} (CSV)",
+                data=converter_para_csv(shop_data['lojas']),
+                file_name=f"top_lojas_{shopping_export}.csv",
+                mime="text/csv",
+                key="download_shop_lojas"
+            )
+
+        with col3:
+            st.download_button(
+                label=f"⬇️ Top Segmentos {shopping_export} (CSV)",
+                data=converter_para_csv(shop_data['segmentos']),
+                file_name=f"top_segmentos_{shopping_export}.csv",
+                mime="text/csv",
+                key="download_shop_seg"
+            )
+
+    st.markdown("---")
+    st.info("💡 **Dica:** Os arquivos CSV podem ser abertos diretamente no Excel. Para melhores resultados, use 'Dados > De Texto/CSV' no Excel.")
 
 # ============================================================================
 # PÁGINA: DOCUMENTAÇÃO
