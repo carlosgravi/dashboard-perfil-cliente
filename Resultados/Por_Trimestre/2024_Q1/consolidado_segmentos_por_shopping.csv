@@ -1,44 +1,44 @@
 sigla,segmento,valor,clientes
-BS,Moda,776370.79,1339
-BS,Gastronomia,218878.41,1102
-BS,Joalheria,180099.44,104
-BS,Telefonia,173412.85,49
-BS,Esportes,155097.74,460
-BS,Casa e Decoração,138076.75,114
-BS,Calçados,137100.18,420
-BS,Infantil,102890.68,283
-BS,Beleza e Bem-estar,100909.29,492
-BS,Eletrodomésticos,75785.81,278
-BS,Papelaria,66128.89,372
-BS,Moda Feminina,64060.35,127
-BS,Livrarias,46214.45,329
-BS,Ótica,45425.04,45
-BS,Eletrônicos,37814.8,24
-BS,Pets,32379.54,207
-BS,Presentes e Acessórios,29662.08,127
-BS,Farmácias,22877.66,244
-BS,Serviços,5636.9,2
-BS,Lazer,158.8,2
-CS,Moda,1241420.89,1319
-CS,Beleza e Bem-estar,304888.27,642
-CS,Moda Feminina,189339.6,199
-CS,Calçados,179859.72,334
-CS,Joalheria,161584.2,90
-CS,Gastronomia,147187.6,685
-CS,Infantil,133870.67,345
-CS,Presentes e Acessórios,128504.66,262
-CS,Casa e Decoração,127854.66,199
-CS,Esportes,92676.25,237
-CS,Eletrônicos,83897.57,50
-CS,Papelaria,59836.090000000004,246
-CS,Livrarias,45704.69,263
-CS,Telefonia,41224.16,8
-CS,Ótica,25573.83,29
-CS,Eletrodomésticos,17271.07,13
-CS,Farmácias,11827.789999999999,91
-CS,Supermercado,11246.31,131
-CS,Gastronomia - Restaurante,569.0,8
-CS,Serviços,273.5,3
+CS,Moda,776370.79,1339
+CS,Gastronomia,218878.41,1102
+CS,Joalheria,180099.44,104
+CS,Telefonia,173412.85,49
+CS,Esportes,155097.74,460
+CS,Casa e Decoração,138076.75,114
+CS,Calçados,137100.18,420
+CS,Infantil,102890.68,283
+CS,Beleza e Bem-estar,100909.29,492
+CS,Eletrodomésticos,75785.81,278
+CS,Papelaria,66128.89,372
+CS,Moda Feminina,64060.35,127
+CS,Livrarias,46214.45,329
+CS,Ótica,45425.04,45
+CS,Eletrônicos,37814.8,24
+CS,Pets,32379.54,207
+CS,Presentes e Acessórios,29662.08,127
+CS,Farmácias,22877.66,244
+CS,Serviços,5636.9,2
+CS,Lazer,158.8,2
+BS,Moda,1241420.89,1319
+BS,Beleza e Bem-estar,304888.27,642
+BS,Moda Feminina,189339.6,199
+BS,Calçados,179859.72,334
+BS,Joalheria,161584.2,90
+BS,Gastronomia,147187.6,685
+BS,Infantil,133870.67,345
+BS,Presentes e Acessórios,128504.66,262
+BS,Casa e Decoração,127854.66,199
+BS,Esportes,92676.25,237
+BS,Eletrônicos,83897.57,50
+BS,Papelaria,59836.090000000004,246
+BS,Livrarias,45704.69,263
+BS,Telefonia,41224.16,8
+BS,Ótica,25573.83,29
+BS,Eletrodomésticos,17271.07,13
+BS,Farmácias,11827.789999999999,91
+BS,Supermercado,11246.31,131
+BS,Gastronomia - Restaurante,569.0,8
+BS,Serviços,273.5,3
 NK,Moda,823775.4,1287
 NK,Joalheria,250150.66,180
 NK,Gastronomia,155029.19,838
@@ -59,45 +59,45 @@ NK,Pets,51786.61,186
 NK,Farmácias,31874.88,199
 NK,Serviços,1495.4,4
 NK,Salão de Beleza | Barbearia,994.03,3
-GS,Moda,168870.68,354
-GS,Eletrodomésticos,111256.61,178
-GS,Eletrônicos,101747.74,46
-GS,Casa e Decoração,63505.04,168
-GS,Joalheria,61419.53,64
-GS,Supermercado,57388.12,178
-GS,Telefonia,52983.36,16
-GS,Papelaria,39100.34,159
-GS,Esportes,38980.91,105
-GS,Gastronomia,37973.29,281
-GS,Calçados,36719.41,111
-GS,Beleza e Bem-estar,25372.59,115
-GS,Livrarias,13588.66,85
-GS,Pets,11453.26,92
-GS,Infantil,10905.17,38
-GS,Ótica,2882.8,5
-GS,Lazer,2503.1,10
-GS,Presentes e Acessórios,1587.2,30
-GS,Gastronomia - Sorvetes,678.8,21
-NR,Moda,832004.68,1371
-NR,Joalheria,335624.52,135
-NR,Gastronomia,163078.22,1036
-NR,Telefonia,142834.16,52
-NR,Casa e Decoração,139852.37,421
-NR,Calçados,132080.91,406
-NR,Esportes,118892.27,321
-NR,Beleza e Bem-estar,108987.14,349
-NR,Serviços,99446.9,9
-NR,Moda Feminina,75559.75,97
-NR,Presentes e Acessórios,61951.18,257
-NR,Infantil,60816.68,243
-NR,Papelaria,53887.82,334
-NR,Eletrônicos,41869.35,79
-NR,Ótica,40810.270000000004,48
-NR,Livrarias,39341.84,316
-NR,Eletrodomésticos,37399.81,25
-NR,Farmácias,24459.579999999998,149
-NR,Pets,21528.54,156
-NR,Kids,273.69,3
+NR,Moda,168870.68,354
+NR,Eletrodomésticos,111256.61,178
+NR,Eletrônicos,101747.74,46
+NR,Casa e Decoração,63505.04,168
+NR,Joalheria,61419.53,64
+NR,Supermercado,57388.12,178
+NR,Telefonia,52983.36,16
+NR,Papelaria,39100.34,159
+NR,Esportes,38980.91,105
+NR,Gastronomia,37973.29,281
+NR,Calçados,36719.41,111
+NR,Beleza e Bem-estar,25372.59,115
+NR,Livrarias,13588.66,85
+NR,Pets,11453.26,92
+NR,Infantil,10905.17,38
+NR,Ótica,2882.8,5
+NR,Lazer,2503.1,10
+NR,Presentes e Acessórios,1587.2,30
+NR,Gastronomia - Sorvetes,678.8,21
+GS,Moda,832004.68,1371
+GS,Joalheria,335624.52,135
+GS,Gastronomia,163078.22,1036
+GS,Telefonia,142834.16,52
+GS,Casa e Decoração,139852.37,421
+GS,Calçados,132080.91,406
+GS,Esportes,118892.27,321
+GS,Beleza e Bem-estar,108987.14,349
+GS,Serviços,99446.9,9
+GS,Moda Feminina,75559.75,97
+GS,Presentes e Acessórios,61951.18,257
+GS,Infantil,60816.68,243
+GS,Papelaria,53887.82,334
+GS,Eletrônicos,41869.35,79
+GS,Ótica,40810.270000000004,48
+GS,Livrarias,39341.84,316
+GS,Eletrodomésticos,37399.81,25
+GS,Farmácias,24459.579999999998,149
+GS,Pets,21528.54,156
+GS,Kids,273.69,3
 NS,Moda,299112.74,476
 NS,Casa e Decoração,60129.46,138
 NS,Gastronomia,44036.68,281

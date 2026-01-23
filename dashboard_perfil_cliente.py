@@ -1711,11 +1711,11 @@ elif pagina == "📚 Documentação":
 
         | Shopping | Threshold |
         |----------|-----------|
-        | BS | R$ 5.800 |
+        | CS | R$ 5.800 |
         | NK | R$ 5.177 |
-        | GS | R$ 4.299 |
-        | CS | R$ 4.000 |
-        | NR | R$ 3.266 |
+        | NR | R$ 4.299 |
+        | BS | R$ 4.000 |
+        | GS | R$ 3.266 |
         | NS | R$ 3.129 |
 
         ### Comparação HS vs Demais
@@ -1723,10 +1723,10 @@ elif pagina == "📚 Documentação":
         | Métrica | High Spenders | Demais |
         |---------|---------------|--------|
         | % Clientes | 10% | 90% |
-        | % Valor | 49% | 51% |
-        | Ticket Médio | R$ 9.899 | R$ 1.126 |
-        | Freq. Média | 24,8x | 4,0x |
-        | % Feminino | 66,8% | 62,0% |
+        | % Valor | 50% | 50% |
+        | Ticket Médio | R$ 10.792 | R$ 1.209 |
+        | Freq. Média | 26,1x | 4,3x |
+        | % Feminino | 66,9% | 61,6% |
         """)
 
     with tab4:
