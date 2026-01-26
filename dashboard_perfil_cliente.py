@@ -1130,7 +1130,8 @@ elif pagina == "⭐ High Spenders":
             st.metric("Média por Shopping", f"{hs_por_shopping//6:,}")
         with col4:
             st.metric("Clientes Únicos", f"{clientes_unicos:,}",
-                     help="Cada cliente contado uma única vez, independente de quantos shoppings frequenta")
+                     delta=f"Por shopping: {dados['clientes_por_shopping']:,}",
+                     help="Clientes únicos: cada cliente contado uma vez. Por shopping: soma inclui quem compra em múltiplos shoppings")
 
         st.markdown("---")
 
