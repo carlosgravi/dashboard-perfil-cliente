@@ -375,7 +375,11 @@ else:
     st.sidebar.markdown("### 📊 Totais do Período")
     st.sidebar.metric("Clientes Únicos", f"{dados['clientes_unicos']:,}")
     st.sidebar.metric("Valor Total", f"R$ {dados['resumo']['valor_total'].sum()/1e6:.1f}M")
-    st.sidebar.caption(f"Por shopping: {dados['clientes_por_shopping']:,}")
+    # HS únicos
+    hs_unicos_sidebar = int(dados['comparacao_hs'].loc[dados['comparacao_hs']['Metrica'] == 'Qtd Clientes', 'High Spenders'].values[0])
+    hs_por_shopping_sidebar = int(dados['resumo']['qtd_high_spenders'].sum())
+    st.sidebar.metric("High Spenders", f"{hs_unicos_sidebar:,}", delta=f"Por shopping: {hs_por_shopping_sidebar:,}")
+    st.sidebar.caption(f"Clientes por shopping: {dados['clientes_por_shopping']:,}")
 
 # Cores para períodos (para comparação)
 CORES_PERIODOS = ['#E74C3C', '#3498DB', '#2ECC71', '#9B59B6']
