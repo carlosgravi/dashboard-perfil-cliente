@@ -1113,16 +1113,21 @@ elif pagina == "⭐ High Spenders":
         # Métricas gerais
         col1, col2, col3, col4 = st.columns(4)
 
-        total_hs = dados['resumo']['qtd_high_spenders'].sum()
+        # HS únicos vem do comparacao_high_spenders (cliente contado uma vez)
+        hs_unicos = int(dados['comparacao_hs'].loc[dados['comparacao_hs']['Metrica'] == 'Qtd Clientes', 'High Spenders'].values[0])
+        # HS por shopping (soma, inclui duplicação)
+        hs_por_shopping = dados['resumo']['qtd_high_spenders'].sum()
         clientes_unicos = dados['clientes_unicos']
 
         with col1:
-            st.metric("Total High Spenders", f"{total_hs:,}")
+            st.metric("High Spenders Únicos", f"{hs_unicos:,}",
+                     delta=f"Por shopping: {hs_por_shopping:,}",
+                     help="HS únicos: cada cliente contado uma vez. Por shopping: soma inclui quem é HS em múltiplos shoppings")
         with col2:
-            st.metric("% dos Clientes Únicos", f"{total_hs/clientes_unicos*100:.1f}%",
-                     help="Percentual sobre clientes únicos (253.946)")
+            st.metric("% dos Clientes", f"{hs_unicos/clientes_unicos*100:.1f}%",
+                     help=f"Percentual sobre {clientes_unicos:,} clientes únicos")
         with col3:
-            st.metric("Média por Shopping", f"{total_hs//6:,}")
+            st.metric("Média por Shopping", f"{hs_por_shopping//6:,}")
         with col4:
             st.metric("Clientes Únicos", f"{clientes_unicos:,}",
                      help="Cada cliente contado uma única vez, independente de quantos shoppings frequenta")
