@@ -546,10 +546,13 @@ if pagina == "📊 Visão Geral":
             )
 
         with col3:
+            hs_unicos_visao = int(dados['comparacao_hs'].loc[dados['comparacao_hs']['Metrica'] == 'Qtd Clientes', 'High Spenders'].values[0])
+            hs_por_shopping_visao = int(dados['resumo']['qtd_high_spenders'].sum())
             st.metric(
                 "High Spenders",
-                f"{dados['resumo']['qtd_high_spenders'].sum():,}",
-                delta=f"{dados['resumo']['qtd_high_spenders'].sum()/dados['clientes_unicos']*100:.1f}% do total"
+                f"{hs_unicos_visao:,}",
+                delta=f"Por shopping: {hs_por_shopping_visao:,}",
+                help="HS únicos: cada cliente contado uma vez. Por shopping: soma inclui quem é HS em múltiplos shoppings"
             )
 
         with col4:
