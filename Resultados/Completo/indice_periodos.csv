@@ -1,0 +1,43 @@
+tipo,codigo,nome,pasta
+Completo,Completo,Período Completo,Completo
+Ano,2023,Ano 2023,Por_Ano/2023
+Ano,2024,Ano 2024,Por_Ano/2024
+Ano,2025,Ano 2025,Por_Ano/2025
+Ano,2026,Ano 2026,Por_Ano/2026
+Trimestre,2023_Q4,2023 - Q4,Por_Trimestre/2023_Q4
+Trimestre,2024_Q1,2024 - Q1,Por_Trimestre/2024_Q1
+Trimestre,2024_Q2,2024 - Q2,Por_Trimestre/2024_Q2
+Trimestre,2024_Q3,2024 - Q3,Por_Trimestre/2024_Q3
+Trimestre,2024_Q4,2024 - Q4,Por_Trimestre/2024_Q4
+Trimestre,2025_Q1,2025 - Q1,Por_Trimestre/2025_Q1
+Trimestre,2025_Q2,2025 - Q2,Por_Trimestre/2025_Q2
+Trimestre,2025_Q3,2025 - Q3,Por_Trimestre/2025_Q3
+Trimestre,2025_Q4,2025 - Q4,Por_Trimestre/2025_Q4
+Trimestre,2026_Q1,2026 - Q1,Por_Trimestre/2026_Q1
+Mes,2023_11,Nov/2023,Por_Mes/2023_11
+Mes,2023_12,Dez/2023,Por_Mes/2023_12
+Mes,2024_01,Jan/2024,Por_Mes/2024_01
+Mes,2024_02,Fev/2024,Por_Mes/2024_02
+Mes,2024_03,Mar/2024,Por_Mes/2024_03
+Mes,2024_04,Abr/2024,Por_Mes/2024_04
+Mes,2024_05,Mai/2024,Por_Mes/2024_05
+Mes,2024_06,Jun/2024,Por_Mes/2024_06
+Mes,2024_07,Jul/2024,Por_Mes/2024_07
+Mes,2024_08,Ago/2024,Por_Mes/2024_08
+Mes,2024_09,Set/2024,Por_Mes/2024_09
+Mes,2024_10,Out/2024,Por_Mes/2024_10
+Mes,2024_11,Nov/2024,Por_Mes/2024_11
+Mes,2024_12,Dez/2024,Por_Mes/2024_12
+Mes,2025_01,Jan/2025,Por_Mes/2025_01
+Mes,2025_02,Fev/2025,Por_Mes/2025_02
+Mes,2025_03,Mar/2025,Por_Mes/2025_03
+Mes,2025_04,Abr/2025,Por_Mes/2025_04
+Mes,2025_05,Mai/2025,Por_Mes/2025_05
+Mes,2025_06,Jun/2025,Por_Mes/2025_06
+Mes,2025_07,Jul/2025,Por_Mes/2025_07
+Mes,2025_08,Ago/2025,Por_Mes/2025_08
+Mes,2025_09,Set/2025,Por_Mes/2025_09
+Mes,2025_10,Out/2025,Por_Mes/2025_10
+Mes,2025_11,Nov/2025,Por_Mes/2025_11
+Mes,2025_12,Dez/2025,Por_Mes/2025_12
+Mes,2026_01,Jan/2026,Por_Mes/2026_01

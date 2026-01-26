@@ -1,31 +1,31 @@
 ﻿faixa_etaria,segmento,valor,clientes,ranking
-16-24 (Gen Z),Moda,5835249.97,7094,1
-16-24 (Gen Z),Beleza e Bem-estar,1380886.68,3334,2
-16-24 (Gen Z),Joalheria,1226352.1,982,3
-16-24 (Gen Z),Gastronomia,1222406.03,4083,4
-16-24 (Gen Z),Calçados,1114147.86,2408,5
-25-39 (Millennials),Moda,51395368.93,49395,1
-25-39 (Millennials),Joalheria,12820703.95,5771,2
-25-39 (Millennials),Calçados,9693918.03,19074,3
-25-39 (Millennials),Beleza e Bem-estar,9645922.64,20720,4
-25-39 (Millennials),Gastronomia,8030570.51,26268,5
-40-54 (Gen X),Moda,60907216.51,48651,1
-40-54 (Gen X),Joalheria,15937676.94,6771,2
-40-54 (Gen X),Calçados,11864552.34,20361,3
-40-54 (Gen X),Beleza e Bem-estar,11306027.57,20661,4
-40-54 (Gen X),Gastronomia,9808071.7,27551,5
-55-69 (Boomers),Moda,18641443.19,15923,1
-55-69 (Boomers),Joalheria,5617214.41,1905,2
-55-69 (Boomers),Calçados,3641469.04,6281,3
-55-69 (Boomers),Beleza e Bem-estar,3124751.11,5959,4
-55-69 (Boomers),Casa e Decoração,2969417.38,4437,5
-70+ (Silent),Moda,2928392.28,2734,1
-70+ (Silent),Joalheria,1725017.48,358,2
-70+ (Silent),Calçados,670833.82,1117,3
-70+ (Silent),Serviços,647524.13,168,4
-70+ (Silent),Telefonia,567007.71,174,5
-Nao Informado,Moda,116996.52,143,1
-Nao Informado,Gastronomia,55751.659999999996,107,2
-Nao Informado,Serviços,41132.37,14,3
-Nao Informado,Calçados,23316.93,48,4
-Nao Informado,Eletrônicos,17632.8,7,5
+16-24 (Gen Z),Moda,8006239.05,9370,1
+16-24 (Gen Z),Beleza e Bem-estar,2060419.03,4624,2
+16-24 (Gen Z),Gastronomia,1658640.29,5346,3
+16-24 (Gen Z),Calçados,1635205.72,3523,4
+16-24 (Gen Z),Joalheria,1619563.61,1306,5
+25-39 (Millennials),Moda,68662508.98,62601,1
+25-39 (Millennials),Joalheria,18517943.43,7801,2
+25-39 (Millennials),Beleza e Bem-estar,14171848.1,27826,3
+25-39 (Millennials),Calçados,13879666.72,26409,4
+25-39 (Millennials),Gastronomia,11266281.26,34365,5
+40-54 (Gen X),Moda,83502165.43,61754,1
+40-54 (Gen X),Joalheria,22846645.45,8996,2
+40-54 (Gen X),Calçados,17045392.26,28110,3
+40-54 (Gen X),Beleza e Bem-estar,16713981.41,27974,4
+40-54 (Gen X),Gastronomia,14020563.33,36334,5
+55-69 (Boomers),Moda,26410021.75,20639,1
+55-69 (Boomers),Joalheria,8616629.54,2630,2
+55-69 (Boomers),Calçados,5386712.4,8917,3
+55-69 (Boomers),Beleza e Bem-estar,4634080.24,8177,4
+55-69 (Boomers),Casa e Decoração,4094469.48,5763,5
+70+ (Silent),Moda,4306262.62,3637,1
+70+ (Silent),Joalheria,2620739.25,494,2
+70+ (Silent),Calçados,960782.3,1554,3
+70+ (Silent),Serviços,779401.66,216,4
+70+ (Silent),Moda Feminina,779163.6900000001,563,5
+Nao Informado,Moda,118008.12,146,1
+Nao Informado,Serviços,82587.52,12,2
+Nao Informado,Gastronomia,74370.11,109,3
+Nao Informado,Calçados,26687.19,55,4
+Nao Informado,Beleza e Bem-estar,18745.37,59,5
