@@ -25,13 +25,15 @@ O Dashboard de Perfil de Cliente e uma ferramenta de Business Intelligence desen
 
 ### 1.2 Resumo Geral dos Dados
 
-| Metrica | Valor |
-|---------|-------|
-| Total de Clientes | 271.110 |
-| Total de Transacoes | 1.643.751 |
-| Valor Total | R$ 550.508.465,26 |
-| Ticket Medio Geral | R$ 2.030,89 |
-| High Spenders | 27.115 (10% do total) |
+| Metrica | Valor | Observacao |
+|---------|-------|------------|
+| Clientes Unicos | 253.946 | Cada cliente contado uma vez |
+| Clientes por Shopping | 271.110 | Soma inclui quem compra em multiplos shoppings |
+| Total de Transacoes | 1.643.751 | |
+| Valor Total | R$ 550.508.465,26 | |
+| Ticket Medio Geral | R$ 2.167,82 | Valor Total / Clientes Unicos |
+| High Spenders Unicos | 25.397 (10%) | Top 10% de cada shopping |
+| High Spenders por Shopping | 27.115 | Soma inclui quem e HS em multiplos shoppings |
 
 ---
 

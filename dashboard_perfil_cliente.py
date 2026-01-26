@@ -2289,7 +2289,13 @@ elif pagina == "📚 Documentação":
     tab1, tab2, tab3, tab4, tab5 = st.tabs(["📋 Visão Geral", "📊 Métricas", "🎭 Personas & HS", "📁 Dados", "❓ Glossário"])
 
     with tab1:
-        st.markdown("""
+        # Calcular valores dinâmicos para documentação
+        hs_unicos_doc = int(dados['comparacao_hs'].loc[dados['comparacao_hs']['Metrica'] == 'Qtd Clientes', 'High Spenders'].values[0])
+        ticket_medio_doc = dados['resumo']['valor_total'].sum() / dados['clientes_unicos']
+        transacoes_doc = int(dados['resumo']['transacoes'].sum())
+        diff_clientes_doc = dados['clientes_por_shopping'] - dados['clientes_unicos']
+
+        st.markdown(f"""
         ## Sobre o Dashboard
 
         O **Dashboard de Perfil de Cliente** é uma ferramenta de Business Intelligence desenvolvida para analisar
@@ -2315,12 +2321,14 @@ elif pagina == "📚 Documentação":
 
         | Métrica | Valor | Observação |
         |---------|-------|------------|
-        | Clientes Únicos | 253.946 | Cada cliente contado uma vez |
-        | Clientes por Shopping | 271.110 | Soma inclui quem compra em múltiplos shoppings |
-        | Total de Transações | 1.643.751 | |
-        | Valor Total | R$ 550.508.465 | |
-        | Ticket Médio | R$ 2.168 | Valor Total ÷ Clientes Únicos |
-        | High Spenders | 25.397 (10%) | Top 10% de cada shopping |
+        | Clientes Únicos | {dados['clientes_unicos']:,} | Cada cliente contado uma vez |
+        | Clientes por Shopping | {dados['clientes_por_shopping']:,} | Soma inclui quem compra em múltiplos shoppings |
+        | Total de Transações | {transacoes_doc:,} | |
+        | Valor Total | R$ {dados['resumo']['valor_total'].sum():,.0f} | |
+        | Ticket Médio | R$ {ticket_medio_doc:,.0f} | Valor Total ÷ Clientes Únicos |
+        | High Spenders | {hs_unicos_doc:,} (10%) | Top 10% de cada shopping |
+
+        > 🔄 **{diff_clientes_doc:,}** clientes frequentam mais de 1 shopping
 
         ### Páginas do Dashboard
 
