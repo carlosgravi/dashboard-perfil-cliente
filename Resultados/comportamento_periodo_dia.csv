@@ -1,16 +1,16 @@
 ﻿faixa_etaria,periodo_dia,valor,transacoes
-16-24 (Gen Z),Manha (6h-12h),4050549.05,14638
-16-24 (Gen Z),Noite (18h-22h),10506871.93,38404
-16-24 (Gen Z),Tarde (12h-18h),7925729.32,30582
-25-39 (Millennials),Manha (6h-12h),39080459.86,116459
-25-39 (Millennials),Noite (18h-22h),84899041.69,270061
-25-39 (Millennials),Tarde (12h-18h),69216512.99,228312
-40-54 (Gen X),Manha (6h-12h),49697959.07,141764
-40-54 (Gen X),Noite (18h-22h),99315554.51,297708
-40-54 (Gen X),Tarde (12h-18h),92685569.59,279917
-55-69 (Boomers),Manha (6h-12h),15509387.67,37727
-55-69 (Boomers),Noite (18h-22h),29633767.91,75454
-55-69 (Boomers),Tarde (12h-18h),32485681.07,80427
+16-24 (Gen Z),Manha (6h-12h),4050004.75,14631
+16-24 (Gen Z),Noite (18h-22h),10495939.43,38388
+16-24 (Gen Z),Tarde (12h-18h),7922884.09,30551
+25-39 (Millennials),Manha (6h-12h),39080990.0,116464
+25-39 (Millennials),Noite (18h-22h),84900063.54,270076
+25-39 (Millennials),Tarde (12h-18h),69218609.79,228338
+40-54 (Gen X),Manha (6h-12h),49693270.01,141693
+40-54 (Gen X),Noite (18h-22h),99307618.98,297642
+40-54 (Gen X),Tarde (12h-18h),92681588.15,279892
+55-69 (Boomers),Manha (6h-12h),15492208.19,37723
+55-69 (Boomers),Noite (18h-22h),29633631.63,75449
+55-69 (Boomers),Tarde (12h-18h),32484203.34,80416
 70+ (Silent),Manha (6h-12h),2744288.11,5283
 70+ (Silent),Noite (18h-22h),5058668.97,10751
 70+ (Silent),Tarde (12h-18h),7274170.32,14737

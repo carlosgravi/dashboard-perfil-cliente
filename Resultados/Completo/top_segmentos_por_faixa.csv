@@ -1,23 +1,23 @@
 ﻿faixa_etaria,segmento,valor,clientes,ranking
-16-24 (Gen Z),Moda,8006239.05,9370,1
-16-24 (Gen Z),Beleza e Bem-estar,2060419.03,4624,2
-16-24 (Gen Z),Gastronomia,1658640.29,5346,3
-16-24 (Gen Z),Calçados,1635205.72,3523,4
+16-24 (Gen Z),Moda,8005524.34,9369,1
+16-24 (Gen Z),Beleza e Bem-estar,2059360.43,4623,2
+16-24 (Gen Z),Gastronomia,1658434.34,5344,3
+16-24 (Gen Z),Calçados,1635005.82,3522,4
 16-24 (Gen Z),Joalheria,1619563.61,1306,5
-25-39 (Millennials),Moda,68662508.98,62601,1
-25-39 (Millennials),Joalheria,18517943.43,7801,2
-25-39 (Millennials),Beleza e Bem-estar,14171848.1,27826,3
-25-39 (Millennials),Calçados,13879666.72,26409,4
-25-39 (Millennials),Gastronomia,11266281.26,34365,5
-40-54 (Gen X),Moda,83502165.43,61754,1
+25-39 (Millennials),Moda,68664969.58,62601,1
+25-39 (Millennials),Joalheria,18518028.33,7802,2
+25-39 (Millennials),Beleza e Bem-estar,14171712.2,27825,3
+25-39 (Millennials),Calçados,13879166.73,26408,4
+25-39 (Millennials),Gastronomia,11268347.11,34364,5
+40-54 (Gen X),Moda,83498027.33,61749,1
 40-54 (Gen X),Joalheria,22846645.45,8996,2
-40-54 (Gen X),Calçados,17045392.26,28110,3
-40-54 (Gen X),Beleza e Bem-estar,16713981.41,27974,4
-40-54 (Gen X),Gastronomia,14020563.33,36334,5
-55-69 (Boomers),Moda,26410021.75,20639,1
+40-54 (Gen X),Calçados,17040834.94,28108,3
+40-54 (Gen X),Beleza e Bem-estar,16710210.56,27970,4
+40-54 (Gen X),Gastronomia,14020102.48,36331,5
+55-69 (Boomers),Moda,26410001.66,20638,1
 55-69 (Boomers),Joalheria,8616629.54,2630,2
-55-69 (Boomers),Calçados,5386712.4,8917,3
-55-69 (Boomers),Beleza e Bem-estar,4634080.24,8177,4
+55-69 (Boomers),Calçados,5386112.5,8916,3
+55-69 (Boomers),Beleza e Bem-estar,4633599.54,8175,4
 55-69 (Boomers),Casa e Decoração,4094469.48,5763,5
 70+ (Silent),Moda,4306262.62,3637,1
 70+ (Silent),Joalheria,2620739.25,494,2
