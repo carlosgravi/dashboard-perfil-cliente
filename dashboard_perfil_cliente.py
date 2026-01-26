@@ -1969,10 +1969,13 @@ elif pagina == "🤖 Assistente":
             **Principais Personas:**
             | Persona | % Clientes | Perfil |
             |---------|------------|--------|
-            | Mãe Moderna | 20,5% | Mulheres 35-45, alta frequência |
-            | Cliente Regular | 40,4% | Perfil diverso, ticket baixo |
-            | Executivo Exigente | 3,3% | Alta renda, ticket alto |
-            | Fashionista Premium | 2,2% | Jovens, foco em moda |
+            | Cliente Regular | 39,4% | Perfil diverso, ticket baixo |
+            | Mãe Moderna | 18,6% | Mulheres 30-50, alta frequência |
+            | Senior Tradicional | 12,9% | 55+ anos, baixa frequência |
+            | Jovem Explorer | 11,4% | Jovens <30, explorando marcas |
+            | Executiva Premium | 3,2% | Mulheres 40-54, High Spender |
+            | Executivo Exigente | 2,7% | Homens High Spender |
+            | Fashionista Premium | 2,4% | Mulheres 25-39, High Spender |
             """)
 
         with st.expander("❓ O que significa cada faixa etária?", expanded=False):
@@ -2365,19 +2368,21 @@ elif pagina == "📚 Documentação":
         - Idade
         - Gênero
 
-        ### 9 Personas Identificadas
+        ### 11 Personas Identificadas
 
         | Persona | % Clientes | % Valor | Perfil |
         |---------|------------|---------|--------|
-        | **Mãe Moderna** | 20,5% | 26,5% | Mulheres 35-45, alta frequência |
-        | **Cliente Regular** | 40,4% | 20,8% | Perfil diverso, ticket baixo |
-        | **Executivo Exigente** | 3,3% | 15,7% | Alta renda, ticket alto |
-        | **Fashionista Premium** | 2,2% | 10,5% | Jovens, foco em moda |
-        | **Senior Tradicional** | 12,7% | 6,7% | 55+ anos, baixa frequência |
-        | **Comprador Seletivo** | 4,1% | 6,4% | Compras pontuais de alto valor |
-        | **Senior VIP** | 1,1% | 5,7% | 60+ anos, alto poder aquisitivo |
-        | **Jovem Engajado** | 4,2% | 4,1% | 18-25, alta frequência |
-        | **Jovem Explorer** | 11,6% | 3,6% | 18-25, explorando marcas |
+        | **Cliente Regular** | 39,4% | 17,0% | Perfil diverso, ticket baixo |
+        | **Executiva Premium** | 3,2% | 16,7% | Mulheres 40-54, High Spender |
+        | **Mãe Moderna** | 18,6% | 14,5% | Mulheres 30-50, alta frequência |
+        | **Executivo Exigente** | 2,7% | 12,9% | Homens High Spender |
+        | **Fashionista Premium** | 2,4% | 11,2% | Mulheres 25-39, High Spender |
+        | **Senior VIP** | 1,7% | 8,9% | 55+ anos, High Spender |
+        | **Senior Tradicional** | 12,9% | 6,8% | 55+ anos, baixa frequência |
+        | **Comprador Seletivo** | 3,5% | 5,0% | Compras pontuais de alto valor |
+        | **Jovem Engajado** | 4,3% | 3,5% | <30 anos, alta frequência |
+        | **Jovem Explorer** | 11,4% | 3,4% | <30 anos, explorando marcas |
+        | **Cliente Premium** | 0,0% | 0,0% | High Spender (outros gêneros) |
 
         ---
 
