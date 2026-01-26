@@ -264,6 +264,11 @@ def carregar_dados(periodo_pasta='Completo'):
             if os.path.exists(hs_path):
                 dados['por_shopping'][sigla]['hs_stats'] = pd.read_csv(hs_path)
 
+    # Calcular clientes únicos (total real sem duplicação entre shoppings)
+    # Um cliente que compra em múltiplos shoppings é contado apenas uma vez
+    dados['clientes_unicos'] = int(dados['personas']['qtd_clientes'].sum())
+    dados['clientes_por_shopping'] = int(dados['resumo']['clientes'].sum())  # soma com duplicação
+
     return dados
 
 # Sidebar
@@ -365,11 +370,12 @@ if modo_comparativo:
     for nome_p in periodos_selecionados:
         d = dados_periodos[nome_p]
         st.sidebar.markdown(f"**{nome_p}:**")
-        st.sidebar.caption(f"Clientes: {d['resumo']['clientes'].sum():,} | Valor: R$ {d['resumo']['valor_total'].sum()/1e6:.1f}M")
+        st.sidebar.caption(f"Clientes: {d['clientes_unicos']:,} | Valor: R$ {d['resumo']['valor_total'].sum()/1e6:.1f}M")
 else:
     st.sidebar.markdown("### 📊 Totais do Período")
-    st.sidebar.metric("Clientes", f"{dados['resumo']['clientes'].sum():,}")
+    st.sidebar.metric("Clientes Únicos", f"{dados['clientes_unicos']:,}")
     st.sidebar.metric("Valor Total", f"R$ {dados['resumo']['valor_total'].sum()/1e6:.1f}M")
+    st.sidebar.caption(f"Por shopping: {dados['clientes_por_shopping']:,}")
 
 # Cores para períodos (para comparação)
 CORES_PERIODOS = ['#E74C3C', '#3498DB', '#2ECC71', '#9B59B6']
@@ -390,9 +396,9 @@ if pagina == "📊 Visão Geral":
             d = dados_periodos[nome_p]
             df_comparativo.append({
                 'Período': nome_p,
-                'Clientes': d['resumo']['clientes'].sum(),
+                'Clientes': d['clientes_unicos'],
                 'Valor Total': d['resumo']['valor_total'].sum(),
-                'Ticket Médio': d['resumo']['valor_total'].sum() / d['resumo']['clientes'].sum(),
+                'Ticket Médio': d['resumo']['valor_total'].sum() / d['clientes_unicos'],
                 'High Spenders': d['resumo']['qtd_high_spenders'].sum()
             })
         df_comp = pd.DataFrame(df_comparativo)
@@ -404,9 +410,9 @@ if pagina == "📊 Visão Geral":
             with cols[i]:
                 d = dados_periodos[nome_p]
                 st.markdown(f"**{nome_p}**")
-                st.metric("Clientes", f"{d['resumo']['clientes'].sum():,}")
+                st.metric("Clientes Únicos", f"{d['clientes_unicos']:,}")
                 st.metric("Valor Total", f"R$ {d['resumo']['valor_total'].sum()/1e6:.1f}M")
-                ticket = d['resumo']['valor_total'].sum() / d['resumo']['clientes'].sum()
+                ticket = d['resumo']['valor_total'].sum() / d['clientes_unicos']
                 st.metric("Ticket Médio", f"R$ {ticket:,.0f}")
                 st.metric("High Spenders", f"{d['resumo']['qtd_high_spenders'].sum():,}")
 
@@ -430,7 +436,7 @@ if pagina == "📊 Visão Geral":
             st.plotly_chart(fig, use_container_width=True)
 
         with col2:
-            st.subheader("👥 Clientes por Período")
+            st.subheader("👥 Clientes Únicos por Período")
             fig = px.bar(
                 df_comp,
                 x='Período',
@@ -510,6 +516,7 @@ if pagina == "📊 Visão Geral":
         df_comp_display['Ticket Médio'] = df_comp_display['Ticket Médio'].apply(lambda x: f'R$ {x:,.2f}')
         df_comp_display['Clientes'] = df_comp_display['Clientes'].apply(lambda x: f'{x:,}')
         df_comp_display['High Spenders'] = df_comp_display['High Spenders'].apply(lambda x: f'{x:,}')
+        df_comp_display = df_comp_display.rename(columns={'Clientes': 'Clientes Únicos'})
         st.dataframe(df_comp_display, use_container_width=True, hide_index=True)
 
     else:
@@ -521,31 +528,32 @@ if pagina == "📊 Visão Geral":
 
         with col1:
             st.metric(
-                "Total de Clientes",
-                f"{dados['resumo']['clientes'].sum():,}",
-                delta="6 shoppings"
+                "Clientes Únicos",
+                f"{dados['clientes_unicos']:,}",
+                delta=f"Por shopping: {dados['clientes_por_shopping']:,}",
+                help="Clientes únicos: cada pessoa contada uma vez. Por shopping: soma dos clientes de cada shopping (inclui quem compra em múltiplos shoppings)"
             )
 
         with col2:
             st.metric(
                 "Valor Total",
                 f"R$ {dados['resumo']['valor_total'].sum()/1e6:.1f}M",
-                delta=f"Ticket: R$ {dados['resumo']['valor_total'].sum()/dados['resumo']['clientes'].sum():,.0f}"
+                delta=f"Ticket: R$ {dados['resumo']['valor_total'].sum()/dados['clientes_unicos']:,.0f}"
             )
 
         with col3:
             st.metric(
                 "High Spenders",
                 f"{dados['resumo']['qtd_high_spenders'].sum():,}",
-                delta=f"{dados['resumo']['qtd_high_spenders'].sum()/dados['resumo']['clientes'].sum()*100:.1f}% do total"
+                delta=f"{dados['resumo']['qtd_high_spenders'].sum()/dados['clientes_unicos']*100:.1f}% do total"
             )
 
         with col4:
-            ticket_medio_geral = dados['resumo']['valor_total'].sum() / dados['resumo']['clientes'].sum()
+            ticket_medio_geral = dados['resumo']['valor_total'].sum() / dados['clientes_unicos']
             st.metric(
                 "Ticket Médio",
                 f"R$ {ticket_medio_geral:,.0f}",
-                delta="valor total / clientes"
+                delta="valor total / clientes únicos"
             )
 
         st.markdown("---")
@@ -580,14 +588,16 @@ if pagina == "📊 Visão Geral":
             )
             fig.update_layout(height=400)
             st.plotly_chart(fig, use_container_width=True)
+            st.caption("⚠️ Soma inclui clientes que frequentam múltiplos shoppings")
 
         # Tabela resumo
         st.subheader("📋 Resumo por Shopping")
         df_display = dados['resumo'][['shopping', 'sigla', 'clientes', 'valor_total', 'ticket_medio', 'qtd_high_spenders']].copy()
         df_display['valor_total'] = df_display['valor_total'].apply(lambda x: f'R$ {x:,.2f}')
         df_display['ticket_medio'] = df_display['ticket_medio'].apply(lambda x: f'R$ {x:,.2f}')
-        df_display.columns = ['Shopping', 'Sigla', 'Clientes', 'Valor Total', 'Ticket Médio', 'High Spenders']
+        df_display.columns = ['Shopping', 'Sigla', 'Clientes*', 'Valor Total', 'Ticket Médio', 'High Spenders']
         st.dataframe(df_display, use_container_width=True, hide_index=True)
+        st.caption("*Clientes por shopping: um cliente que compra em 2 shoppings é contado em ambos. Clientes únicos: {:,}".format(dados['clientes_unicos']))
 
 # ============================================================================
 # PÁGINA: PERSONAS
@@ -1101,17 +1111,21 @@ elif pagina == "⭐ High Spenders":
         st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
         # Métricas gerais
-        col1, col2, col3 = st.columns(3)
+        col1, col2, col3, col4 = st.columns(4)
 
         total_hs = dados['resumo']['qtd_high_spenders'].sum()
-        total_clientes = dados['resumo']['clientes'].sum()
+        clientes_unicos = dados['clientes_unicos']
 
         with col1:
             st.metric("Total High Spenders", f"{total_hs:,}")
         with col2:
-            st.metric("% dos Clientes", f"{total_hs/total_clientes*100:.1f}%")
+            st.metric("% dos Clientes Únicos", f"{total_hs/clientes_unicos*100:.1f}%",
+                     help="Percentual sobre clientes únicos (253.946)")
         with col3:
             st.metric("Média por Shopping", f"{total_hs//6:,}")
+        with col4:
+            st.metric("Clientes Únicos", f"{clientes_unicos:,}",
+                     help="Cada cliente contado uma única vez, independente de quantos shoppings frequenta")
 
         st.markdown("---")
 
@@ -2284,13 +2298,14 @@ elif pagina == "📚 Documentação":
 
         ### Resumo Geral
 
-        | Métrica | Valor |
-        |---------|-------|
-        | Total de Clientes | 271.110 |
-        | Total de Transações | 1.643.751 |
-        | Valor Total | R$ 550.508.465 |
-        | Ticket Médio | R$ 2.031 |
-        | High Spenders | 27.115 (10%) |
+        | Métrica | Valor | Observação |
+        |---------|-------|------------|
+        | Clientes Únicos | 253.946 | Cada cliente contado uma vez |
+        | Clientes por Shopping | 271.110 | Soma inclui quem compra em múltiplos shoppings |
+        | Total de Transações | 1.643.751 | |
+        | Valor Total | R$ 550.508.465 | |
+        | Ticket Médio | R$ 2.168 | Valor Total ÷ Clientes Únicos |
+        | High Spenders | 25.397 (10%) | Top 10% de cada shopping |
 
         ### Páginas do Dashboard
 
