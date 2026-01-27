@@ -2850,7 +2850,7 @@ elif pagina == "🤖 Assistente":
 elif pagina == "📚 Documentação":
     st.markdown('<p class="main-header">📚 Documentação do Dashboard</p>', unsafe_allow_html=True)
 
-    tab1, tab2, tab3, tab4, tab5 = st.tabs(["📋 Visão Geral", "📊 Métricas", "🎭 Personas & HS", "📁 Dados", "❓ Glossário"])
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["📋 Visão Geral", "📊 Métricas", "🎯 RFV", "🎭 Personas & HS", "📁 Dados", "❓ Glossário"])
 
     with tab1:
         # Calcular valores dinâmicos para documentação
@@ -2897,13 +2897,14 @@ elif pagina == "📚 Documentação":
         ### Páginas do Dashboard
 
         1. **📊 Visão Geral** - Panorama consolidado de todos os shoppings
-        2. **🎭 Personas** - 9 perfis comportamentais de clientes
+        2. **🎭 Personas** - 14 perfis comportamentais de clientes
         3. **🏬 Por Shopping** - Análise detalhada de cada unidade
         4. **👥 Perfil Demográfico** - Distribuição por gênero e faixa etária
         5. **⭐ High Spenders** - Clientes top 10% em valor
         6. **🛒 Segmentos** - Análise por categoria de produto
-        7. **⏰ Comportamento** - Padrões temporais de compra
-        8. **📈 Comparativo** - Comparação entre shoppings
+        7. **🎯 RFV** - Análise de Recência, Frequência e Valor
+        8. **⏰ Comportamento** - Padrões temporais de compra
+        9. **📈 Comparativo** - Comparação entre shoppings
         """)
 
     with tab2:
@@ -2960,6 +2961,104 @@ elif pagina == "📚 Documentação":
         """)
 
     with tab3:
+        st.markdown("""
+        ## Metodologia RFV (Recência, Frequência, Valor)
+
+        A metodologia **RFV** é uma técnica de segmentação de clientes baseada em três dimensões
+        fundamentais do comportamento de compra:
+
+        ### As 3 Dimensões
+
+        | Dimensão | O que mede | Por que é importante |
+        |----------|-----------|----------------------|
+        | **R**ecência | Tempo desde a última compra | Clientes recentes têm maior probabilidade de comprar novamente |
+        | **F**requência | Quantidade de compras no período | Alta frequência indica engajamento e fidelidade |
+        | **V**alor | Total gasto pelo cliente | Identifica os clientes mais valiosos financeiramente |
+
+        ---
+
+        ### Classificação de Perfis
+
+        Os clientes são classificados em **4 perfis** baseados no **Valor Histórico Total**:
+
+        | Perfil | Critério de Valor | Descrição | Estratégia Recomendada |
+        |--------|-------------------|-----------|------------------------|
+        | **🏆 VIP** | R$ 5.000+ | Altíssimo valor, responsáveis pela maior parte do faturamento | Retenção prioritária, benefícios exclusivos, atendimento personalizado |
+        | **⭐ Premium** | R$ 2.500 - R$ 4.999 | Alto valor com potencial de se tornarem VIP | Programas de upgrade, incentivos para aumentar ticket |
+        | **🎯 Potencial** | R$ 1.000 - R$ 2.499 | Bom potencial de crescimento | Campanhas de engajamento, cross-sell |
+        | **👤 Pontual** | < R$ 1.000 | Clientes ocasionais ou novos | Campanhas de ativação, conhecer melhor o perfil |
+
+        ---
+
+        ### Score RFV Detalhado
+
+        Cada dimensão recebe uma nota de 1 a 5:
+
+        **Recência (R1-R5) - Dias desde última compra:**
+        | Score | Critério | Interpretação |
+        |-------|----------|---------------|
+        | R5 | 0-7 dias | Comprou na última semana - muito ativo |
+        | R4 | 8-15 dias | Comprou nas últimas 2 semanas |
+        | R3 | 16-30 dias | Comprou no último mês |
+        | R2 | 31-60 dias | Comprou nos últimos 2 meses |
+        | R1 | 60+ dias | Não compra há mais de 2 meses - risco de churn |
+
+        **Frequência (F1-F5) - Compras no trimestre:**
+        | Score | Critério | Interpretação |
+        |-------|----------|---------------|
+        | F5 | 20+ compras | Comprador muito frequente |
+        | F4 | 10-19 compras | Comprador frequente |
+        | F3 | 5-9 compras | Comprador regular |
+        | F2 | 2-4 compras | Comprador ocasional |
+        | F1 | 0-1 compra | Comprador raro |
+
+        **Valor (V1-V5) - Gasto no trimestre:**
+        | Score | Critério | Perfil Associado |
+        |-------|----------|------------------|
+        | V5 | R$ 2.000+ | VIP |
+        | V4 | R$ 1.000-1.999 | Premium |
+        | V3 | R$ 500-999 | Potencial |
+        | V2 | R$ 200-499 | Pontual |
+        | V1 | < R$ 200 | Pontual |
+
+        ---
+
+        ### Exemplos de Interpretação
+
+        | Score RFV | Interpretação | Ação Recomendada |
+        |-----------|---------------|------------------|
+        | **R5F5V5** | Cliente ideal - compra frequente, recente e de alto valor | Manter relacionamento, programa VIP |
+        | **R1F5V5** | Era muito bom mas parou de comprar | Campanha de reativação urgente! |
+        | **R5F1V1** | Comprou recentemente mas pouco | Conhecer melhor, oferecer produtos complementares |
+        | **R1F1V1** | Cliente distante | Avaliar custo/benefício de reativação |
+
+        ---
+
+        ### Princípio de Pareto Aplicado
+
+        A análise RFV confirma o **Princípio de Pareto** (80/20):
+
+        > **~10% dos clientes (VIP + Premium) geram ~55% do faturamento**
+
+        Isso demonstra a importância de:
+        - Identificar e proteger os clientes de maior valor
+        - Investir em programas de retenção para VIPs
+        - Criar estratégias de upgrade para Potenciais
+
+        ---
+
+        ### Arquivos RFV Disponíveis
+
+        | Arquivo | Conteúdo |
+        |---------|----------|
+        | `metricas_perfil_historico_v3.csv` | Métricas agregadas por perfil |
+        | `metricas_shopping_historico_v3.csv` | Métricas por shopping |
+        | `metricas_segmento_historico_v3.csv` | Métricas por segmento |
+        | `TOP10_SEGMENTOS_POR_PERFIL_SHOPPING.csv` | Top segmentos por perfil e shopping |
+        | `TOP10_LOJAS_POR_GENERO_SHOPPING_PERFIL.csv` | Top lojas por gênero, shopping e perfil |
+        """)
+
+    with tab4:
         st.markdown("""
         ## Personas de Clientes
 
@@ -3029,7 +3128,7 @@ elif pagina == "📚 Documentação":
         | % Feminino | 66,9% | 61,6% |
         """)
 
-    with tab4:
+    with tab5:
         st.markdown("""
         ## Arquivos de Dados
 
@@ -3075,10 +3174,11 @@ elif pagina == "📚 Documentação":
         | Pandas 2.0+ | Manipulação de dados |
         """)
 
-    with tab5:
+    with tab6:
         st.markdown("""
         ## Glossário de Termos
 
+        ### Métricas Gerais
         | Termo | Definição |
         |-------|-----------|
         | **Ticket Médio** | Valor médio gasto por cliente (Valor Total / Clientes) |
@@ -3087,15 +3187,37 @@ elif pagina == "📚 Documentação":
         | **Persona** | Perfil comportamental de cliente baseado em cluster |
         | **Frequência** | Número médio de compras por cliente |
         | **Segmento** | Categoria de produto/serviço da loja |
+
+        ### RFV (Recência, Frequência, Valor)
+        | Termo | Definição |
+        |-------|-----------|
+        | **RFV** | Metodologia de segmentação baseada em Recência, Frequência e Valor |
+        | **Recência** | Tempo (em dias) desde a última compra do cliente |
+        | **Score RFV** | Código composto (ex: R5F4V3) indicando comportamento do cliente |
+        | **VIP** | Perfil de cliente com valor histórico ≥ R$ 5.000 |
+        | **Premium** | Perfil de cliente com valor histórico entre R$ 2.500 e R$ 4.999 |
+        | **Potencial** | Perfil de cliente com valor histórico entre R$ 1.000 e R$ 2.499 |
+        | **Pontual** | Perfil de cliente com valor histórico < R$ 1.000 |
+        | **Churn** | Risco de perda do cliente (baixa recência) |
+        | **Reativação** | Estratégia para recuperar clientes inativos |
+
+        ### Faixas Etárias
+        | Termo | Definição |
+        |-------|-----------|
         | **Faixa Etária** | Agrupamento de clientes por idade |
-        | **Gen Z** | Geração nascida entre 1997-2012 |
-        | **Millennials** | Geração nascida entre 1981-1996 |
-        | **Gen X** | Geração nascida entre 1965-1980 |
-        | **Boomers** | Geração nascida entre 1946-1964 |
-        | **Silent** | Geração nascida antes de 1946 |
+        | **Gen Z** | Geração nascida entre 1997-2012 (16-24 anos) |
+        | **Millennials** | Geração nascida entre 1981-1996 (25-39 anos) |
+        | **Gen X** | Geração nascida entre 1965-1980 (40-54 anos) |
+        | **Boomers** | Geração nascida entre 1946-1964 (55-69 anos) |
+        | **Silent** | Geração nascida antes de 1946 (70+ anos) |
+
+        ### Visualizações
+        | Termo | Definição |
+        |-------|-----------|
         | **Matriz Cruzada** | Tabela que cruza duas dimensões (ex: gênero x idade) |
         | **Heatmap** | Mapa de calor visual para identificar padrões |
         | **Radar Chart** | Gráfico radar para comparar múltiplas métricas |
+        | **Treemap** | Visualização hierárquica de proporções |
 
         ---
 
