@@ -1,7 +1,7 @@
 """
 DASHBOARD - PERFIL DE CLIENTE POR SHOPPING
 Visualização interativa dos dados de perfil de cliente
-Atualizado em: 2026-01-23 - Correção de mapeamento de shoppings
+Atualizado em: 2026-01-27 - Adicionado controle de acesso
 """
 
 import streamlit as st
@@ -13,6 +13,9 @@ import os
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+import streamlit_authenticator as stauth
+import yaml
+from yaml.loader import SafeLoader
 
 # Função para enviar email via SMTP
 def enviar_email(destinatario, assunto, corpo, remetente_nome, remetente_email):
@@ -79,6 +82,106 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+# =============================================================================
+# SISTEMA DE AUTENTICAÇÃO
+# =============================================================================
+
+def carregar_config_auth():
+    """Carrega configuração de autenticação dos secrets do Streamlit"""
+    try:
+        # Tentar carregar dos secrets do Streamlit Cloud
+        if "credentials" in st.secrets:
+            config = {
+                'credentials': dict(st.secrets['credentials']),
+                'cookie': dict(st.secrets['cookie']),
+                'preauthorized': dict(st.secrets.get('preauthorized', {'emails': []}))
+            }
+
+            # Converter usernames para estrutura correta
+            if 'usernames' in config['credentials']:
+                usernames_dict = {}
+                for username, user_data in config['credentials']['usernames'].items():
+                    usernames_dict[username] = dict(user_data)
+                config['credentials']['usernames'] = usernames_dict
+
+            return config
+        else:
+            # Configuração padrão para desenvolvimento local
+            return None
+    except Exception as e:
+        st.error(f"Erro ao carregar configuração: {e}")
+        return None
+
+def verificar_autenticacao():
+    """Verifica se o usuário está autenticado"""
+    config = carregar_config_auth()
+
+    if config is None:
+        # Modo desenvolvimento - sem autenticação
+        st.warning("⚠️ Modo desenvolvimento - Autenticação desabilitada")
+        return True, "dev_user", "Desenvolvedor", "admin"
+
+    # Criar autenticador
+    authenticator = stauth.Authenticate(
+        config['credentials'],
+        config['cookie']['name'],
+        config['cookie']['key'],
+        config['cookie']['expiry_days'],
+        config.get('preauthorized', {})
+    )
+
+    # Tela de login
+    name, authentication_status, username = authenticator.login('Login', 'main')
+
+    if authentication_status == False:
+        st.error('❌ Usuário ou senha incorretos')
+        return False, None, None, None
+    elif authentication_status == None:
+        st.info('👋 Por favor, faça login para acessar o dashboard')
+
+        # Mostrar informações de contato para solicitar acesso
+        st.markdown("---")
+        st.markdown("""
+        ### 🔐 Acesso Restrito
+
+        Este dashboard é de uso exclusivo da equipe Almeida Junior.
+
+        **Para solicitar acesso, entre em contato:**
+        - 📧 Email: ti@almeidajunior.com.br
+        - 📱 WhatsApp: (47) 99999-9999
+        """)
+        return False, None, None, None
+    else:
+        # Usuário autenticado - obter role
+        user_role = config['credentials']['usernames'][username].get('role', 'viewer')
+
+        # Armazenar informações do usuário na sessão
+        st.session_state['authenticator'] = authenticator
+        st.session_state['username'] = username
+        st.session_state['name'] = name
+        st.session_state['role'] = user_role
+
+        return True, username, name, user_role
+
+def mostrar_logout():
+    """Mostra botão de logout na sidebar"""
+    if 'authenticator' in st.session_state:
+        st.session_state['authenticator'].logout('Sair', 'sidebar')
+
+def get_user_role():
+    """Retorna o papel do usuário atual"""
+    return st.session_state.get('role', 'viewer')
+
+def is_admin():
+    """Verifica se o usuário é administrador"""
+    return get_user_role() == 'admin'
+
+# Verificar autenticação
+autenticado, username, nome_usuario, user_role = verificar_autenticacao()
+
+if not autenticado:
+    st.stop()
 
 # CSS customizado - Simples e funcional
 st.markdown("""
@@ -279,6 +382,16 @@ if os.path.exists(logo_file):
 
 st.sidebar.title("🛍️ Almeida Junior")
 st.sidebar.markdown("**Dashboard Perfil de Cliente**")
+
+# Informações do usuário logado
+st.sidebar.markdown("---")
+st.sidebar.markdown(f"👤 **{nome_usuario}**")
+role_display = "Administrador" if user_role == "admin" else "Visualizador"
+st.sidebar.caption(f"Perfil: {role_display}")
+
+# Botão de logout
+mostrar_logout()
+
 st.sidebar.markdown("---")
 
 # Seletor de Período (Multiselect para comparação)
@@ -359,9 +472,18 @@ except Exception as e:
     st.error(f"Erro ao carregar dados: {e}")
     st.stop()
 
+# Menu de navegação - Admin tem opções extras
+opcoes_menu = ["📊 Visão Geral", "🎭 Personas", "🏬 Por Shopping", "👥 Perfil Demográfico",
+               "⭐ High Spenders", "🛒 Segmentos", "⏰ Comportamento", "📈 Comparativo",
+               "📥 Exportar Dados", "🤖 Assistente", "📚 Documentação"]
+
+# Adicionar opção de administração apenas para admins
+if is_admin():
+    opcoes_menu.append("⚙️ Administração")
+
 pagina = st.sidebar.radio(
     "Selecione a visão:",
-    ["📊 Visão Geral", "🎭 Personas", "🏬 Por Shopping", "👥 Perfil Demográfico", "⭐ High Spenders", "🛒 Segmentos", "⏰ Comportamento", "📈 Comparativo", "📥 Exportar Dados", "🤖 Assistente", "📚 Documentação"]
+    opcoes_menu
 )
 
 st.sidebar.markdown("---")
@@ -2544,6 +2666,217 @@ elif pagina == "📚 Documentação":
         ---
 
         *Documentação atualizada em Janeiro/2026*
+        """)
+
+# ============================================================================
+# PÁGINA: ADMINISTRAÇÃO (apenas para admins)
+# ============================================================================
+elif pagina == "⚙️ Administração":
+    if not is_admin():
+        st.error("❌ Acesso negado. Esta página é exclusiva para administradores.")
+        st.stop()
+
+    st.markdown('<p class="main-header">⚙️ Painel de Administração</p>', unsafe_allow_html=True)
+
+    tab1, tab2, tab3, tab4 = st.tabs(["👥 Usuários", "📊 Logs de Acesso", "⚙️ Configurações", "📋 Instruções"])
+
+    with tab1:
+        st.subheader("👥 Gerenciamento de Usuários")
+
+        st.info("""
+        **Como gerenciar usuários:**
+
+        Os usuários são configurados no arquivo `secrets.toml` do Streamlit Cloud.
+        Para adicionar, editar ou remover usuários, acesse:
+
+        1. [Streamlit Cloud](https://share.streamlit.io/)
+        2. Selecione o app `dashboard-perfil-cliente`
+        3. Clique em **Settings** → **Secrets**
+        4. Edite a configuração conforme instruções abaixo
+        """)
+
+        st.markdown("### Usuários Atuais")
+
+        # Mostrar lista de usuários (sem senhas)
+        config = carregar_config_auth()
+        if config and 'credentials' in config and 'usernames' in config['credentials']:
+            usuarios = []
+            for username, user_data in config['credentials']['usernames'].items():
+                usuarios.append({
+                    'Usuário': username,
+                    'Nome': user_data.get('name', 'N/A'),
+                    'Email': user_data.get('email', 'N/A'),
+                    'Perfil': 'Administrador' if user_data.get('role', 'viewer') == 'admin' else 'Visualizador'
+                })
+
+            df_usuarios = pd.DataFrame(usuarios)
+            st.dataframe(df_usuarios, use_container_width=True, hide_index=True)
+
+            st.metric("Total de Usuários", len(usuarios))
+
+            # Estatísticas
+            col1, col2 = st.columns(2)
+            with col1:
+                admins = len([u for u in usuarios if u['Perfil'] == 'Administrador'])
+                st.metric("Administradores", admins)
+            with col2:
+                viewers = len([u for u in usuarios if u['Perfil'] == 'Visualizador'])
+                st.metric("Visualizadores", viewers)
+        else:
+            st.warning("Não foi possível carregar a lista de usuários.")
+
+        st.markdown("---")
+
+        st.markdown("### Gerar Hash de Senha")
+        st.caption("Use esta ferramenta para gerar o hash de uma nova senha")
+
+        nova_senha = st.text_input("Digite a nova senha:", type="password", key="nova_senha_hash")
+        if st.button("Gerar Hash"):
+            if nova_senha:
+                # Gerar hash da senha
+                hashed = stauth.Hasher([nova_senha]).generate()[0]
+                st.code(hashed, language=None)
+                st.success("✅ Hash gerado! Copie e cole no secrets.toml")
+            else:
+                st.warning("Digite uma senha para gerar o hash")
+
+    with tab2:
+        st.subheader("📊 Logs de Acesso")
+
+        st.info("""
+        **Logs de acesso** não estão disponíveis nesta versão.
+
+        Para monitoramento avançado, considere:
+        - Integração com Google Analytics
+        - Logs do Streamlit Cloud (disponível no painel)
+        - Ferramenta externa de monitoramento
+        """)
+
+        # Informações da sessão atual
+        st.markdown("### Sessão Atual")
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric("Usuário", st.session_state.get('username', 'N/A'))
+        with col2:
+            st.metric("Nome", st.session_state.get('name', 'N/A'))
+        with col3:
+            st.metric("Perfil", "Admin" if st.session_state.get('role') == 'admin' else "Viewer")
+
+    with tab3:
+        st.subheader("⚙️ Configurações do Sistema")
+
+        st.markdown("### Informações do Dashboard")
+        col1, col2 = st.columns(2)
+        with col1:
+            st.metric("Clientes Únicos", f"{dados['clientes_unicos']:,}")
+            st.metric("Valor Total", f"R$ {dados['resumo']['valor_total'].sum()/1e6:.1f}M")
+        with col2:
+            st.metric("Shoppings", len(dados['resumo']))
+            st.metric("Personas", len(dados['personas']))
+
+        st.markdown("---")
+
+        st.markdown("### Links Úteis")
+        st.markdown("""
+        - [Streamlit Cloud - Configurações](https://share.streamlit.io/)
+        - [GitHub - Repositório](https://github.com/carlosgravi/dashboard-perfil-cliente)
+        - [Documentação Streamlit Authenticator](https://github.com/mkhorasani/Streamlit-Authenticator)
+        """)
+
+    with tab4:
+        st.subheader("📋 Instruções de Configuração")
+
+        st.markdown("""
+        ## Como Adicionar Novos Usuários
+
+        ### 1. Gerar Hash da Senha
+
+        Use a ferramenta na aba **"Usuários"** ou execute localmente:
+
+        ```python
+        import streamlit_authenticator as stauth
+        hashed = stauth.Hasher(['senha123']).generate()
+        print(hashed[0])
+        ```
+
+        ### 2. Editar secrets.toml no Streamlit Cloud
+
+        Acesse: **Settings → Secrets** no Streamlit Cloud e adicione:
+
+        ```toml
+        [credentials]
+        [credentials.usernames]
+
+        [credentials.usernames.novo_usuario]
+        name = "Nome do Usuário"
+        email = "email@empresa.com"
+        password = "$2b$12$hash_gerado_aqui"
+        role = "viewer"  # ou "admin"
+
+        [cookie]
+        name = "dashboard_perfil_cliente"
+        key = "sua_chave_secreta_aqui"
+        expiry_days = 30
+
+        [preauthorized]
+        emails = []
+        ```
+
+        ### 3. Níveis de Acesso
+
+        | Perfil | Permissões |
+        |--------|------------|
+        | **admin** | Acesso total + Painel de Administração |
+        | **viewer** | Visualização de todas as páginas (exceto Admin) |
+
+        ### 4. Exemplo Completo
+
+        ```toml
+        [credentials]
+        [credentials.usernames]
+
+        [credentials.usernames.admin]
+        name = "Administrador"
+        email = "admin@almeidajunior.com.br"
+        password = "$2b$12$..."
+        role = "admin"
+
+        [credentials.usernames.maria]
+        name = "Maria Silva"
+        email = "maria.silva@almeidajunior.com.br"
+        password = "$2b$12$..."
+        role = "viewer"
+
+        [credentials.usernames.joao]
+        name = "João Santos"
+        email = "joao.santos@almeidajunior.com.br"
+        password = "$2b$12$..."
+        role = "viewer"
+
+        [cookie]
+        name = "dashboard_perfil_cliente"
+        key = "chave_secreta_muito_longa_e_aleatoria_123456"
+        expiry_days = 30
+
+        [preauthorized]
+        emails = []
+        ```
+
+        ### 5. Remover Usuário
+
+        Simplesmente delete o bloco do usuário no secrets.toml.
+
+        ### 6. Alterar Senha
+
+        1. Gere novo hash com a ferramenta
+        2. Substitua o campo `password` do usuário
+
+        ---
+
+        **Importante:**
+        - Nunca compartilhe senhas em texto claro
+        - Use senhas fortes (mínimo 8 caracteres, letras, números e símbolos)
+        - O cookie permite login automático por 30 dias
         """)
 
 # Footer
