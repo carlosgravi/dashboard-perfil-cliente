@@ -122,22 +122,26 @@ def verificar_autenticacao():
         st.warning("⚠️ Modo desenvolvimento - Autenticação desabilitada")
         return True, "dev_user", "Desenvolvedor", "admin"
 
-    # Criar autenticador
+    # Criar autenticador (API v0.3+)
     authenticator = stauth.Authenticate(
         config['credentials'],
         config['cookie']['name'],
         config['cookie']['key'],
-        config['cookie']['expiry_days'],
-        config.get('preauthorized', {})
+        config['cookie']['expiry_days']
     )
 
-    # Tela de login
-    name, authentication_status, username = authenticator.login('Login', 'main')
+    # Armazenar authenticator na sessão para logout
+    st.session_state['authenticator'] = authenticator
+    st.session_state['config'] = config
 
-    if authentication_status == False:
+    # Tela de login (API v0.3+)
+    authenticator.login()
+
+    # Verificar status de autenticação
+    if st.session_state.get('authentication_status') == False:
         st.error('❌ Usuário ou senha incorretos')
         return False, None, None, None
-    elif authentication_status == None:
+    elif st.session_state.get('authentication_status') == None:
         st.info('👋 Por favor, faça login para acessar o dashboard')
 
         # Mostrar informações de contato para solicitar acesso
@@ -153,13 +157,12 @@ def verificar_autenticacao():
         """)
         return False, None, None, None
     else:
-        # Usuário autenticado - obter role
-        user_role = config['credentials']['usernames'][username].get('role', 'viewer')
+        # Usuário autenticado - obter dados da sessão
+        username = st.session_state.get('username')
+        name = st.session_state.get('name')
 
-        # Armazenar informações do usuário na sessão
-        st.session_state['authenticator'] = authenticator
-        st.session_state['username'] = username
-        st.session_state['name'] = name
+        # Obter role do usuário
+        user_role = config['credentials']['usernames'][username].get('role', 'viewer')
         st.session_state['role'] = user_role
 
         return True, username, name, user_role
@@ -167,7 +170,7 @@ def verificar_autenticacao():
 def mostrar_logout():
     """Mostra botão de logout na sidebar"""
     if 'authenticator' in st.session_state:
-        st.session_state['authenticator'].logout('Sair', 'sidebar')
+        st.session_state['authenticator'].logout('Sair', 'sidebar', key='logout_btn')
 
 def get_user_role():
     """Retorna o papel do usuário atual"""
