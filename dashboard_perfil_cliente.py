@@ -295,6 +295,22 @@ st.markdown("""
         color: #FFFFFF;
     }
 
+    /* Botão de logout na sidebar */
+    section[data-testid="stSidebar"] button {
+        background-color: #E74C3C !important;
+        color: #FFFFFF !important;
+        border: none !important;
+        border-radius: 8px !important;
+        padding: 0.5rem 1rem !important;
+        font-weight: 600 !important;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    section[data-testid="stSidebar"] button:hover {
+        background-color: #C0392B !important;
+    }
+
     /* Dataframe */
     .stDataFrame {
         border: 1px solid #e0e0e0;
