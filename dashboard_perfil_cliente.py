@@ -295,8 +295,8 @@ st.markdown("""
         color: #FFFFFF;
     }
 
-    /* Botão de logout na sidebar */
-    section[data-testid="stSidebar"] button {
+    /* Botão de logout na sidebar - apenas botões de formulário, não os de controle */
+    section[data-testid="stSidebar"] .stButton > button {
         background-color: #E74C3C !important;
         color: #FFFFFF !important;
         border: none !important;
@@ -307,7 +307,7 @@ st.markdown("""
         transition: background-color 0.3s ease;
     }
 
-    section[data-testid="stSidebar"] button:hover {
+    section[data-testid="stSidebar"] .stButton > button:hover {
         background-color: #C0392B !important;
     }
 
