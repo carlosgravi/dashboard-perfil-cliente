@@ -530,7 +530,7 @@ except Exception as e:
 
 # Menu de navegação - Admin tem opções extras
 opcoes_menu = ["📊 Visão Geral", "🎭 Personas", "🏬 Por Shopping", "👥 Perfil Demográfico",
-               "⭐ High Spenders", "🛒 Segmentos", "⏰ Comportamento", "📈 Comparativo",
+               "⭐ High Spenders", "🛒 Segmentos", "🎯 RFV", "⏰ Comportamento", "📈 Comparativo",
                "📥 Exportar Dados", "🤖 Assistente", "📚 Documentação"]
 
 # Adicionar opção de administração apenas para admins
@@ -1599,6 +1599,382 @@ elif pagina == "🛒 Segmentos":
             )
             fig.update_layout(height=300)
             st.plotly_chart(fig, use_container_width=True)
+
+# ============================================================================
+# PÁGINA: RFV (Recência, Frequência, Valor)
+# ============================================================================
+elif pagina == "🎯 RFV":
+    st.markdown('<p class="main-header">🎯 Análise RFV - Recência, Frequência e Valor</p>', unsafe_allow_html=True)
+
+    st.markdown("""
+    A metodologia **RFV** classifica clientes com base em três dimensões:
+    - **R**ecência: Tempo desde a última compra
+    - **F**requência: Quantidade de compras no período
+    - **V**alor: Total gasto pelo cliente
+    """)
+
+    # Carregar dados RFV
+    @st.cache_data
+    def carregar_dados_rfv():
+        try:
+            perfil = pd.read_csv('Resultados/RFV/metricas_perfil_historico_v3.csv')
+            shopping = pd.read_csv('Resultados/RFV/metricas_shopping_historico_v3.csv')
+            segmento = pd.read_csv('Resultados/RFV/metricas_segmento_historico_v3.csv')
+            seg_perfil_shop = pd.read_csv('Resultados/RFV/TOP10_SEGMENTOS_POR_PERFIL_SHOPPING.csv')
+            lojas = pd.read_csv('Resultados/RFV/TOP10_LOJAS_POR_GENERO_SHOPPING_PERFIL.csv', sep=';', decimal=',')
+            return {
+                'perfil': perfil,
+                'shopping': shopping,
+                'segmento': segmento,
+                'seg_perfil_shop': seg_perfil_shop,
+                'lojas': lojas
+            }
+        except Exception as e:
+            st.error(f"Erro ao carregar dados RFV: {e}")
+            return None
+
+    dados_rfv = carregar_dados_rfv()
+
+    if dados_rfv is not None:
+        # Mapeamento de perfis antigos para novos
+        MAPA_PERFIL = {
+            'VIP': 'VIP',
+            'Premium': 'Premium',
+            'Medio': 'Potencial',
+            'Basico': 'Pontual',
+            'Entry': 'Pontual'
+        }
+
+        CORES_PERFIL = {
+            'VIP': '#9B59B6',
+            'Premium': '#3498DB',
+            'Potencial': '#2ECC71',
+            'Pontual': '#95A5A6'
+        }
+
+        ORDEM_PERFIL = ['VIP', 'Premium', 'Potencial', 'Pontual']
+
+        # Aplicar mapeamento ao dataframe de perfil
+        df_perfil = dados_rfv['perfil'].copy()
+        df_perfil['perfil_novo'] = df_perfil['perfil_cliente'].map(MAPA_PERFIL)
+        df_perfil_agrupado = df_perfil.groupby('perfil_novo').agg({
+            'qtd_clientes': 'sum',
+            'valor_total': 'sum',
+            'ticket_medio': 'mean'
+        }).reset_index()
+        df_perfil_agrupado['pct_clientes'] = df_perfil_agrupado['qtd_clientes'] / df_perfil_agrupado['qtd_clientes'].sum() * 100
+        df_perfil_agrupado['pct_valor'] = df_perfil_agrupado['valor_total'] / df_perfil_agrupado['valor_total'].sum() * 100
+
+        # Ordenar por ordem definida
+        df_perfil_agrupado['ordem'] = df_perfil_agrupado['perfil_novo'].map({p: i for i, p in enumerate(ORDEM_PERFIL)})
+        df_perfil_agrupado = df_perfil_agrupado.sort_values('ordem')
+
+        # Tabs principais
+        tab1, tab2, tab3, tab4 = st.tabs(["📊 Visão Geral", "🏬 Por Shopping", "🛒 Segmentos & Lojas", "📋 Lista de Clientes"])
+
+        with tab1:
+            st.subheader("Distribuição por Perfil de Cliente")
+
+            # KPIs
+            col1, col2, col3, col4 = st.columns(4)
+            for i, perfil in enumerate(ORDEM_PERFIL):
+                dados_p = df_perfil_agrupado[df_perfil_agrupado['perfil_novo'] == perfil]
+                if not dados_p.empty:
+                    qtd = int(dados_p['qtd_clientes'].values[0])
+                    valor = dados_p['valor_total'].values[0]
+                    pct = dados_p['pct_valor'].values[0]
+                    with [col1, col2, col3, col4][i]:
+                        st.metric(
+                            f"🏆 {perfil}" if perfil == 'VIP' else f"{'⭐' if perfil == 'Premium' else '🎯' if perfil == 'Potencial' else '👤'} {perfil}",
+                            f"{qtd:,}",
+                            f"{pct:.1f}% do valor"
+                        )
+
+            col1, col2 = st.columns(2)
+
+            with col1:
+                # Gráfico de pizza - distribuição de clientes
+                fig_pizza = px.pie(
+                    df_perfil_agrupado,
+                    values='qtd_clientes',
+                    names='perfil_novo',
+                    title='Distribuição de Clientes por Perfil',
+                    color='perfil_novo',
+                    color_discrete_map=CORES_PERFIL,
+                    hole=0.4
+                )
+                fig_pizza.update_traces(textposition='inside', textinfo='percent+label')
+                st.plotly_chart(fig_pizza, use_container_width=True)
+
+            with col2:
+                # Gráfico de pizza - distribuição de valor
+                fig_valor = px.pie(
+                    df_perfil_agrupado,
+                    values='valor_total',
+                    names='perfil_novo',
+                    title='Distribuição de Valor por Perfil',
+                    color='perfil_novo',
+                    color_discrete_map=CORES_PERFIL,
+                    hole=0.4
+                )
+                fig_valor.update_traces(textposition='inside', textinfo='percent+label')
+                st.plotly_chart(fig_valor, use_container_width=True)
+
+            # Tabela resumo
+            st.subheader("Resumo por Perfil")
+            df_resumo = df_perfil_agrupado[['perfil_novo', 'qtd_clientes', 'valor_total', 'ticket_medio', 'pct_clientes', 'pct_valor']].copy()
+            df_resumo.columns = ['Perfil', 'Clientes', 'Valor Total', 'Ticket Médio', '% Clientes', '% Valor']
+            df_resumo['Valor Total'] = df_resumo['Valor Total'].apply(lambda x: f"R$ {x:,.2f}")
+            df_resumo['Ticket Médio'] = df_resumo['Ticket Médio'].apply(lambda x: f"R$ {x:,.2f}")
+            df_resumo['% Clientes'] = df_resumo['% Clientes'].apply(lambda x: f"{x:.1f}%")
+            df_resumo['% Valor'] = df_resumo['% Valor'].apply(lambda x: f"{x:.1f}%")
+            st.dataframe(df_resumo, use_container_width=True, hide_index=True)
+
+            # Insight
+            st.info("""
+            💡 **Princípio de Pareto:** Os clientes **VIP** representam apenas ~9% da base,
+            mas geram **~35%** do faturamento total. Investir na retenção desses clientes é fundamental.
+            """)
+
+        with tab2:
+            st.subheader("Análise RFV por Shopping")
+
+            df_shopping = dados_rfv['shopping'].copy()
+
+            # Filtro de shopping
+            shopping_selecionado = st.selectbox(
+                "Selecione o Shopping:",
+                ["Todos"] + list(df_shopping['shopping_principal'].unique()),
+                key='rfv_shopping_filter'
+            )
+
+            if shopping_selecionado != "Todos":
+                df_shopping = df_shopping[df_shopping['shopping_principal'] == shopping_selecionado]
+
+            col1, col2 = st.columns(2)
+
+            with col1:
+                # Valor por shopping
+                fig_shop_valor = px.bar(
+                    df_shopping.sort_values('valor_total', ascending=True),
+                    x='valor_total',
+                    y='shopping_principal',
+                    orientation='h',
+                    title='Valor Total por Shopping',
+                    color='valor_total',
+                    color_continuous_scale='Blues'
+                )
+                fig_shop_valor.update_layout(showlegend=False, yaxis_title='', xaxis_title='Valor (R$)')
+                st.plotly_chart(fig_shop_valor, use_container_width=True)
+
+            with col2:
+                # Clientes VIP por shopping
+                fig_shop_vip = px.bar(
+                    df_shopping.sort_values('clientes_vip', ascending=True),
+                    x='clientes_vip',
+                    y='shopping_principal',
+                    orientation='h',
+                    title='Clientes VIP por Shopping',
+                    color='clientes_vip',
+                    color_continuous_scale='Purples'
+                )
+                fig_shop_vip.update_layout(showlegend=False, yaxis_title='', xaxis_title='Qtd VIP')
+                st.plotly_chart(fig_shop_vip, use_container_width=True)
+
+            # Tabela detalhada
+            st.subheader("Métricas por Shopping")
+            df_shop_display = df_shopping.copy()
+            df_shop_display['valor_total'] = df_shop_display['valor_total'].apply(lambda x: f"R$ {x:,.2f}")
+            df_shop_display['ticket_medio'] = df_shop_display['ticket_medio'].apply(lambda x: f"R$ {x:.2f}")
+            df_shop_display['pct_valor'] = df_shop_display['pct_valor'].apply(lambda x: f"{x:.1f}%")
+            df_shop_display.columns = ['Shopping', 'Clientes', 'Valor Total', 'Ticket Médio', 'High Spenders', 'Clientes VIP', '% Valor']
+            st.dataframe(df_shop_display, use_container_width=True, hide_index=True)
+
+        with tab3:
+            st.subheader("Segmentos e Lojas por Perfil")
+
+            # Sub-tabs para segmentos e lojas
+            subtab1, subtab2 = st.tabs(["🏷️ Segmentos", "🏪 Lojas"])
+
+            with subtab1:
+                # Filtros
+                col1, col2 = st.columns(2)
+                with col1:
+                    perfil_filtro = st.selectbox(
+                        "Filtrar por Perfil:",
+                        ["Todos", "VIP", "Premium"],
+                        key='rfv_perfil_seg'
+                    )
+                with col2:
+                    shopping_filtro = st.selectbox(
+                        "Filtrar por Shopping:",
+                        ["Todos"] + list(dados_rfv['seg_perfil_shop']['shopping'].unique()),
+                        key='rfv_shopping_seg'
+                    )
+
+                df_seg = dados_rfv['seg_perfil_shop'].copy()
+
+                if perfil_filtro != "Todos":
+                    df_seg = df_seg[df_seg['perfil_historico'] == perfil_filtro]
+                if shopping_filtro != "Todos":
+                    df_seg = df_seg[df_seg['shopping'] == shopping_filtro]
+
+                # Top 10 segmentos
+                df_seg_top = df_seg.groupby('segmento').agg({
+                    'valor': 'sum',
+                    'cupons': 'sum',
+                    'clientes': 'sum'
+                }).reset_index().sort_values('valor', ascending=False).head(10)
+
+                fig_seg = px.bar(
+                    df_seg_top,
+                    x='segmento',
+                    y='valor',
+                    title=f'Top 10 Segmentos por Valor{" - " + perfil_filtro if perfil_filtro != "Todos" else ""}{" - " + shopping_filtro if shopping_filtro != "Todos" else ""}',
+                    color='valor',
+                    color_continuous_scale='Viridis'
+                )
+                fig_seg.update_layout(xaxis_tickangle=-45)
+                st.plotly_chart(fig_seg, use_container_width=True)
+
+                # Tabela detalhada
+                df_seg_display = df_seg[['shopping', 'perfil_historico', 'segmento', 'valor', 'cupons', 'clientes', 'pct_valor']].copy()
+                df_seg_display['valor'] = df_seg_display['valor'].apply(lambda x: f"R$ {x:,.2f}")
+                df_seg_display['pct_valor'] = df_seg_display['pct_valor'].apply(lambda x: f"{x:.1f}%")
+                df_seg_display.columns = ['Shopping', 'Perfil', 'Segmento', 'Valor', 'Cupons', 'Clientes', '% Valor']
+                st.dataframe(df_seg_display.head(20), use_container_width=True, hide_index=True)
+
+            with subtab2:
+                # Filtros para lojas
+                col1, col2, col3 = st.columns(3)
+                with col1:
+                    perfil_filtro_loja = st.selectbox(
+                        "Filtrar por Perfil:",
+                        ["Todos", "VIP", "Premium"],
+                        key='rfv_perfil_loja'
+                    )
+                with col2:
+                    shopping_filtro_loja = st.selectbox(
+                        "Filtrar por Shopping:",
+                        ["Todos"] + list(dados_rfv['lojas']['shopping'].unique()),
+                        key='rfv_shopping_loja'
+                    )
+                with col3:
+                    genero_filtro = st.selectbox(
+                        "Filtrar por Gênero:",
+                        ["Todos", "Feminino", "Masculino"],
+                        key='rfv_genero_loja'
+                    )
+
+                df_lojas = dados_rfv['lojas'].copy()
+
+                if perfil_filtro_loja != "Todos":
+                    df_lojas = df_lojas[df_lojas['perfil'] == perfil_filtro_loja]
+                if shopping_filtro_loja != "Todos":
+                    df_lojas = df_lojas[df_lojas['shopping'] == shopping_filtro_loja]
+                if genero_filtro != "Todos":
+                    df_lojas = df_lojas[df_lojas['genero'] == genero_filtro]
+
+                # Top 10 lojas
+                df_lojas_top = df_lojas.groupby('loja').agg({
+                    'valor': 'sum',
+                    'cupons': 'sum',
+                    'clientes': 'sum'
+                }).reset_index().sort_values('valor', ascending=False).head(10)
+
+                fig_lojas = px.bar(
+                    df_lojas_top,
+                    x='loja',
+                    y='valor',
+                    title='Top 10 Lojas por Valor',
+                    color='valor',
+                    color_continuous_scale='Oranges'
+                )
+                fig_lojas.update_layout(xaxis_tickangle=-45)
+                st.plotly_chart(fig_lojas, use_container_width=True)
+
+                # Tabela detalhada
+                df_lojas_display = df_lojas[['perfil', 'shopping', 'genero', 'loja', 'valor', 'cupons', 'clientes', 'pct_valor']].copy()
+                df_lojas_display['valor'] = df_lojas_display['valor'].apply(lambda x: f"R$ {x:,.2f}")
+                df_lojas_display['pct_valor'] = df_lojas_display['pct_valor'].apply(lambda x: f"{x:.1f}%")
+                df_lojas_display.columns = ['Perfil', 'Shopping', 'Gênero', 'Loja', 'Valor', 'Cupons', 'Clientes', '% Valor']
+                st.dataframe(df_lojas_display.head(20), use_container_width=True, hide_index=True)
+
+        with tab4:
+            st.subheader("Lista de Clientes RFV")
+
+            st.info("""
+            📋 A lista completa de clientes RFV está disponível para download na página **Exportar Dados**.
+            Aqui você pode visualizar um resumo das métricas por perfil e shopping.
+            """)
+
+            # Resumo cruzado Perfil x Shopping
+            st.subheader("Matriz: Perfil x Shopping")
+
+            df_seg_shop = dados_rfv['seg_perfil_shop'].copy()
+
+            # Criar matriz pivoteada
+            matriz = df_seg_shop.groupby(['shopping', 'perfil_historico']).agg({
+                'valor': 'sum',
+                'clientes': 'sum'
+            }).reset_index()
+
+            # Pivot para clientes
+            matriz_clientes = matriz.pivot(index='shopping', columns='perfil_historico', values='clientes').fillna(0)
+            matriz_clientes = matriz_clientes.reindex(columns=['VIP', 'Premium'], fill_value=0)
+
+            # Pivot para valor
+            matriz_valor = matriz.pivot(index='shopping', columns='perfil_historico', values='valor').fillna(0)
+            matriz_valor = matriz_valor.reindex(columns=['VIP', 'Premium'], fill_value=0)
+
+            col1, col2 = st.columns(2)
+
+            with col1:
+                st.markdown("**Quantidade de Clientes**")
+                fig_heat_cli = px.imshow(
+                    matriz_clientes,
+                    labels=dict(x="Perfil", y="Shopping", color="Clientes"),
+                    color_continuous_scale='Blues',
+                    text_auto=True
+                )
+                fig_heat_cli.update_layout(height=400)
+                st.plotly_chart(fig_heat_cli, use_container_width=True)
+
+            with col2:
+                st.markdown("**Valor Total (R$)**")
+                fig_heat_val = px.imshow(
+                    matriz_valor / 1e6,
+                    labels=dict(x="Perfil", y="Shopping", color="Valor (M)"),
+                    color_continuous_scale='Greens',
+                    text_auto='.1f'
+                )
+                fig_heat_val.update_layout(height=400)
+                st.plotly_chart(fig_heat_val, use_container_width=True)
+
+            # Metodologia
+            with st.expander("📖 Metodologia RFV"):
+                st.markdown("""
+                ### Classificação de Perfis (Baseado no Valor Histórico Total)
+
+                | Perfil | Critério | Descrição |
+                |--------|----------|-----------|
+                | **VIP** | R$ 5.000+ | Clientes de altíssimo valor, responsáveis pela maior parte do faturamento |
+                | **Premium** | R$ 2.500 - R$ 4.999 | Clientes de alto valor com potencial de se tornarem VIP |
+                | **Potencial** | R$ 1.000 - R$ 2.499 | Clientes com bom potencial de crescimento |
+                | **Pontual** | < R$ 1.000 | Clientes ocasionais ou novos |
+
+                ### Score RFV
+
+                O score é composto por três dimensões (R1-R5, F1-F5, V1-V5):
+
+                - **Recência (R):** R5 = comprou há 0-7 dias, R1 = 60+ dias
+                - **Frequência (F):** F5 = 20+ compras/trimestre, F1 = 0-1 compra
+                - **Valor (V):** V5 = R$ 2.000+/trimestre, V1 = < R$ 200
+
+                **Exemplo:** Um cliente R5F4V5 comprou recentemente, com alta frequência e alto valor.
+                """)
+    else:
+        st.warning("⚠️ Dados RFV não encontrados. Verifique se os arquivos estão na pasta Resultados/RFV/")
 
 # ============================================================================
 # PÁGINA: COMPORTAMENTO
