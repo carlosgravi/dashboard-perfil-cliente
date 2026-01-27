@@ -1537,9 +1537,19 @@ elif pagina == "🛒 Segmentos":
 
         # Ler dados de segmentos por faixa
         try:
-            df_seg_faixa = pd.read_csv(f'Resultados/{periodo_pasta}/top_segmentos_por_faixa.csv')
+            df_seg_faixa = pd.read_csv('Resultados/top_segmentos_por_faixa.csv')
 
-            ordem_faixas = ['Gen Z (1997-2012)', 'Millennials (1981-1996)', 'Gen X (1965-1980)', 'Boomers (1946-1964)', 'Silent (antes 1946)']
+            # Usar as faixas existentes no arquivo
+            ordem_faixas = ['16-24 (Gen Z)', '25-39 (Millennials)', '40-54 (Gen X)', '55-69 (Boomers)', '70+ (Silent)']
+
+            # Cores para cada faixa
+            cores_faixas = {
+                '16-24 (Gen Z)': 'Purples',
+                '25-39 (Millennials)': 'Blues',
+                '40-54 (Gen X)': 'Greens',
+                '55-69 (Boomers)': 'Oranges',
+                '70+ (Silent)': 'Reds'
+            }
 
             for faixa in ordem_faixas:
                 df_f = df_seg_faixa[df_seg_faixa['faixa_etaria'] == faixa].head(5)
@@ -1551,14 +1561,14 @@ elif pagina == "🛒 Segmentos":
                         y='segmento',
                         orientation='h',
                         color='valor',
-                        color_continuous_scale='Oranges',
+                        color_continuous_scale=cores_faixas.get(faixa, 'Oranges'),
                         text=df_f['valor'].apply(lambda x: f'R$ {x/1e6:.1f}M')
                     )
                     fig.update_layout(height=200, showlegend=False, yaxis={'categoryorder': 'total ascending'})
                     fig.update_traces(textposition='outside')
                     st.plotly_chart(fig, use_container_width=True)
-        except:
-            st.info("Dados de segmentos por faixa etária não disponíveis.")
+        except Exception as e:
+            st.info(f"Dados de segmentos por faixa etária não disponíveis. Erro: {e}")
 
     with tab3:
         st.subheader("Matrizes Cruzadas: Gênero x Faixa Etária")
