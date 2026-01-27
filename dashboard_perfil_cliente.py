@@ -1866,12 +1866,20 @@ elif pagina == "🎯 RFV":
                 perfis_cols = [f'vip{sufixo}', f'premium{sufixo}', f'potencial{sufixo}', f'pontual{sufixo}']
                 tem_perfis = all(col in df_shopping.columns for col in perfis_cols)
 
-                # Filtro de shopping
-                shopping_selecionado = st.selectbox(
-                    "Selecione o Shopping:",
-                    ["Todos"] + list(df_shopping['shopping_principal'].unique()),
-                    key='rfv_shopping_filter'
-                )
+                # Filtros
+                col_filtro1, col_filtro2 = st.columns(2)
+                with col_filtro1:
+                    shopping_selecionado = st.selectbox(
+                        "Filtrar por Shopping:",
+                        ["Todos"] + list(df_shopping['shopping_principal'].unique()),
+                        key='rfv_shopping_filter'
+                    )
+                with col_filtro2:
+                    perfil_filtro_shop = st.selectbox(
+                        "Filtrar por Perfil:",
+                        ["Todos", "VIP", "Premium", "Potencial", "Pontual"],
+                        key='rfv_perfil_shop_filter'
+                    )
 
                 if shopping_selecionado != "Todos":
                     df_shopping = df_shopping[df_shopping['shopping_principal'] == shopping_selecionado]
@@ -1898,19 +1906,30 @@ elif pagina == "🎯 RFV":
                         # Preparar dados para gráfico empilhado
                         df_perfis_shop = df_shopping[['shopping_principal'] + perfis_cols].copy()
                         df_perfis_shop.columns = ['Shopping', 'VIP', 'Premium', 'Potencial', 'Pontual']
+
+                        # Filtrar perfis se selecionado
+                        if perfil_filtro_shop != "Todos":
+                            perfis_mostrar = [perfil_filtro_shop]
+                        else:
+                            perfis_mostrar = ['VIP', 'Premium', 'Potencial', 'Pontual']
+
                         df_melted = df_perfis_shop.melt(
                             id_vars=['Shopping'],
-                            value_vars=['VIP', 'Premium', 'Potencial', 'Pontual'],
+                            value_vars=perfis_mostrar,
                             var_name='Perfil',
                             value_name='Clientes'
                         )
+
+                        titulo_grafico = f'Distribuição de Perfis por Shopping ({tipo_rfv.split(" (")[0]})'
+                        if perfil_filtro_shop != "Todos":
+                            titulo_grafico = f'Clientes {perfil_filtro_shop} por Shopping ({tipo_rfv.split(" (")[0]})'
 
                         fig_perfis = px.bar(
                             df_melted,
                             x='Shopping',
                             y='Clientes',
                             color='Perfil',
-                            title=f'Distribuição de Perfis por Shopping ({tipo_rfv.split(" (")[0]})',
+                            title=titulo_grafico,
                             color_discrete_map=CORES_PERFIL,
                             category_orders={'Perfil': ORDEM_PERFIL}
                         )
@@ -1920,9 +1939,12 @@ elif pagina == "🎯 RFV":
                         st.info("Dados de perfis por shopping não disponíveis. Execute novamente o script de geração.")
 
                 # KPIs por perfil (apenas se temos os dados)
-                if tem_perfis and shopping_selecionado == "Todos":
-                    st.subheader("Total de Clientes por Perfil (Todos os Shoppings)")
-                    col1, col2, col3, col4 = st.columns(4)
+                if tem_perfis:
+                    titulo_kpi = "Total de Clientes por Perfil"
+                    if shopping_selecionado != "Todos":
+                        titulo_kpi += f" - {shopping_selecionado}"
+                    st.subheader(titulo_kpi)
+
                     totais = {
                         'VIP': int(df_shopping[f'vip{sufixo}'].sum()),
                         'Premium': int(df_shopping[f'premium{sufixo}'].sum()),
@@ -1931,11 +1953,27 @@ elif pagina == "🎯 RFV":
                     }
                     total_geral = sum(totais.values())
 
-                    for i, (perfil, qtd) in enumerate(totais.items()):
+                    # Se filtro de perfil está ativo, mostrar apenas esse perfil em destaque
+                    if perfil_filtro_shop != "Todos":
+                        col1, col2, col3 = st.columns(3)
+                        perfil = perfil_filtro_shop
+                        qtd = totais[perfil]
                         pct = (qtd / total_geral * 100) if total_geral > 0 else 0
                         icone = "🏆" if perfil == 'VIP' else "⭐" if perfil == 'Premium' else "🎯" if perfil == 'Potencial' else "👤"
-                        with [col1, col2, col3, col4][i]:
-                            st.metric(f"{icone} {perfil}", f"{qtd:,}", f"{pct:.1f}%")
+                        with col1:
+                            st.metric(f"{icone} {perfil}", f"{qtd:,}", f"{pct:.1f}% do total")
+                        with col2:
+                            st.metric("Total de Clientes", f"{total_geral:,}")
+                        with col3:
+                            valor_total = df_shopping['valor_total'].sum()
+                            st.metric("Valor Total", f"R$ {valor_total:,.2f}")
+                    else:
+                        col1, col2, col3, col4 = st.columns(4)
+                        for i, (perfil, qtd) in enumerate(totais.items()):
+                            pct = (qtd / total_geral * 100) if total_geral > 0 else 0
+                            icone = "🏆" if perfil == 'VIP' else "⭐" if perfil == 'Premium' else "🎯" if perfil == 'Potencial' else "👤"
+                            with [col1, col2, col3, col4][i]:
+                                st.metric(f"{icone} {perfil}", f"{qtd:,}", f"{pct:.1f}%")
 
                 # Tabela detalhada com todos os perfis
                 st.subheader("Métricas Detalhadas por Shopping")
@@ -1977,7 +2015,7 @@ elif pagina == "🎯 RFV":
                     with col1:
                         perfil_filtro = st.selectbox(
                             "Filtrar por Perfil:",
-                            ["Todos", "VIP", "Premium"],
+                            ["Todos", "VIP", "Premium", "Potencial", "Pontual"],
                             key='rfv_perfil_seg'
                         )
                     with col2:
@@ -2031,7 +2069,7 @@ elif pagina == "🎯 RFV":
                     with col1:
                         perfil_filtro_loja = st.selectbox(
                             "Filtrar por Perfil:",
-                            ["Todos", "VIP", "Premium"],
+                            ["Todos", "VIP", "Premium", "Potencial", "Pontual"],
                             key='rfv_perfil_loja'
                         )
                     with col2:
@@ -2108,11 +2146,11 @@ elif pagina == "🎯 RFV":
 
                 # Pivot para clientes
                 matriz_clientes = matriz.pivot(index='shopping', columns='perfil_historico', values='clientes').fillna(0)
-                matriz_clientes = matriz_clientes.reindex(columns=['VIP', 'Premium'], fill_value=0)
+                matriz_clientes = matriz_clientes.reindex(columns=['VIP', 'Premium', 'Potencial', 'Pontual'], fill_value=0)
 
                 # Pivot para valor
                 matriz_valor = matriz.pivot(index='shopping', columns='perfil_historico', values='valor').fillna(0)
-                matriz_valor = matriz_valor.reindex(columns=['VIP', 'Premium'], fill_value=0)
+                matriz_valor = matriz_valor.reindex(columns=['VIP', 'Premium', 'Potencial', 'Pontual'], fill_value=0)
 
                 col1, col2 = st.columns(2)
 

@@ -1,4 +1,244 @@
 ﻿perfil;shopping;genero;ranking;loja;valor;pct_valor;cupons;clientes
+Pontual;Balneário Shopping;Feminino;1;Renner;3117,5;19,21;13;13
+Pontual;Balneário Shopping;Feminino;2;O Boticário;2831,13;17,45;14;11
+Pontual;Balneário Shopping;Feminino;3;Zara;2443,5;15,06;6;6
+Pontual;Balneário Shopping;Feminino;4;Sephora;1652,0;10,18;4;4
+Pontual;Balneário Shopping;Feminino;5;Centauro;1149,94;7,09;2;2
+Pontual;Balneário Shopping;Feminino;6;Riachuelo;1135,8899999999999;7,0;6;6
+Pontual;Balneário Shopping;Feminino;7;Outback Steakhouse;1116,33;6,88;3;3
+Pontual;Balneário Shopping;Feminino;8;Usaflex;939,97;5,79;1;1
+Pontual;Balneário Shopping;Feminino;9;Livrarias Catarinense;926,1;5,71;8;7
+Pontual;Balneário Shopping;Feminino;10;KFC;913,6;5,63;21;2
+Pontual;Balneário Shopping;Masculino;1;Centauro;2395,8900000000003;16,08;7;7
+Pontual;Balneário Shopping;Masculino;2;Renner;2228,0;14,95;7;7
+Pontual;Balneário Shopping;Masculino;3;Zara;2076,5;13,94;4;4
+Pontual;Balneário Shopping;Masculino;4;C&A;1633,8500000000001;10,97;5;5
+Pontual;Balneário Shopping;Masculino;5;Riachuelo;1589,69;10,67;5;5
+Pontual;Balneário Shopping;Masculino;6;Democrata;1309,6;8,79;2;2
+Pontual;Balneário Shopping;Masculino;7;Hering Store;1059,94;7,11;2;2
+Pontual;Balneário Shopping;Masculino;8;O Boticário;949,28;6,37;4;4
+Pontual;Balneário Shopping;Masculino;9;FORUM;897,0;6,02;1;1
+Pontual;Balneário Shopping;Masculino;10;Life Vivara;760,0;5,1;1;1
+Pontual;Continente Shopping;Feminino;1;Nike Unite;5091,76;20,06;13;13
+Pontual;Continente Shopping;Feminino;2;Riachuelo;4551,85;17,94;15;13
+Pontual;Continente Shopping;Feminino;3;C&A;4353,58;17,15;15;13
+Pontual;Continente Shopping;Feminino;4;Renner;3323,1;13,09;11;11
+Pontual;Continente Shopping;Feminino;5;Centauro;1889,89;7,45;6;6
+Pontual;Continente Shopping;Feminino;6;IDELI.OUI;1368,68;5,39;4;4
+Pontual;Continente Shopping;Feminino;7;Pernambucanas;1294,19;5,1;5;5
+Pontual;Continente Shopping;Feminino;8;Vivara;1225,0;4,83;2;2
+Pontual;Continente Shopping;Feminino;9;Usaflex ;1139,96;4,49;2;2
+Pontual;Continente Shopping;Feminino;10;Lojas Americanas;1139,92;4,49;17;12
+Pontual;Continente Shopping;Masculino;1;Nike Unite;10576,41;45,1;22;22
+Pontual;Continente Shopping;Masculino;2;Renner;2409,06;10,27;8;7
+Pontual;Continente Shopping;Masculino;3;Maze Vale Comercio LTDA;1719,81;7,33;2;2
+Pontual;Continente Shopping;Masculino;4;C&A;1497,91;6,39;6;6
+Pontual;Continente Shopping;Masculino;5;Centauro;1359,89;5,8;7;6
+Pontual;Continente Shopping;Masculino;6;Bagaggio;1319,9;5,63;2;2
+Pontual;Continente Shopping;Masculino;7;Decathlon;1201,09;5,12;5;5
+Pontual;Continente Shopping;Masculino;8;Democrata;1199,6;5,12;2;2
+Pontual;Continente Shopping;Masculino;9;Brooksfield;1167,76;4,98;2;2
+Pontual;Continente Shopping;Masculino;10;Tommy Hilfiger;998,0;4,26;1;1
+Pontual;Garten Shopping;Feminino;1;C&A;2539,77;30,74;5;5
+Pontual;Garten Shopping;Feminino;2;Renner;1140,5;13,8;8;7
+Pontual;Garten Shopping;Feminino;3;Centauro;779,95;9,44;3;3
+Pontual;Garten Shopping;Feminino;4;Livrarias Curitiba;685,6;8,3;4;4
+Pontual;Garten Shopping;Feminino;5;Damyller;598,0;7,24;1;1
+Pontual;Garten Shopping;Feminino;6;Riachuelo;562,83;6,81;6;5
+Pontual;Garten Shopping;Feminino;7;Pittol;550,9399999999999;6,67;2;2
+Pontual;Garten Shopping;Feminino;8;Hering;535,94;6,49;1;1
+Pontual;Garten Shopping;Feminino;9;Kings Sneakers;479,94;5,81;1;1
+Pontual;Garten Shopping;Feminino;10;Magazine Luiza;389,0;4,71;1;1
+Pontual;Garten Shopping;Masculino;1;Renner;1095,3;14,56;3;3
+Pontual;Garten Shopping;Masculino;2;Polo Wear;1051,93;13,99;4;3
+Pontual;Garten Shopping;Masculino;3;Centauro;1024,93;13,63;4;4
+Pontual;Garten Shopping;Masculino;4;Kalunga;800,8;10,65;3;2
+Pontual;Garten Shopping;Masculino;5;Pittol;782,46;10,4;2;2
+Pontual;Garten Shopping;Masculino;6;Tennis Place;699,99;9,31;1;1
+Pontual;Garten Shopping;Masculino;7;Havan;601,85;8,0;4;2
+Pontual;Garten Shopping;Masculino;8;Riachuelo;584,87;7,78;3;3
+Pontual;Garten Shopping;Masculino;9;Livrarias Curitiba;459,29999999999995;6,11;5;5
+Pontual;Garten Shopping;Masculino;10;Pop Me;419,8;5,58;1;1
+Pontual;Nações Shopping;Feminino;1;Renner;14553,12;54,83;43;37
+Pontual;Nações Shopping;Feminino;2;C&A;3535,53;13,32;18;16
+Pontual;Nações Shopping;Feminino;3;Riachuelo;2566,03;9,67;8;8
+Pontual;Nações Shopping;Feminino;4;FATIMA ESPORTES;1214,94;4,58;3;3
+Pontual;Nações Shopping;Feminino;5;Americanas;883,2900000000001;3,33;10;9
+Pontual;Nações Shopping;Feminino;6;Samsung;867,0;3,27;2;1
+Pontual;Nações Shopping;Feminino;7;Calvin Klein e Tommy Hilfiger;808,0;3,04;1;1
+Pontual;Nações Shopping;Feminino;8;Hope Nacoes Shopping;784,4;2,96;2;2
+Pontual;Nações Shopping;Feminino;9;Kings ;679,8;2,56;2;2
+Pontual;Nações Shopping;Feminino;10;Polo Wear;650,9100000000001;2,45;3;3
+Pontual;Nações Shopping;Masculino;1;Renner;6246,98;46,68;15;13
+Pontual;Nações Shopping;Masculino;2;Fátima Criança;1454,49;10,87;2;2
+Pontual;Nações Shopping;Masculino;3;Centauro;1129,92;8,44;5;5
+Pontual;Nações Shopping;Masculino;4;C&A;1081,9;8,08;6;6
+Pontual;Nações Shopping;Masculino;5;Luz da Lua;899,9;6,72;1;1
+Pontual;Nações Shopping;Masculino;6;Kopenhagen;604,2;4,51;11;3
+Pontual;Nações Shopping;Masculino;7;Polo Wear;569,95;4,26;3;3
+Pontual;Nações Shopping;Masculino;8;BelShop;529,84;3,96;1;1
+Pontual;Nações Shopping;Masculino;9;Cobasi;437,29;3,27;3;3
+Pontual;Nações Shopping;Masculino;10;Riachuelo;427,87;3,2;2;2
+Pontual;Neumarkt Shopping;Feminino;1;Bottero;3653,7;27,22;9;9
+Pontual;Neumarkt Shopping;Feminino;2;Renner;2114,4;15,75;10;9
+Pontual;Neumarkt Shopping;Feminino;3;Studio Z;1218,92;9,08;5;4
+Pontual;Neumarkt Shopping;Feminino;4;Riachuelo;1198,94;8,93;3;3
+Pontual;Neumarkt Shopping;Feminino;5;Havan;1069,85;7,97;4;4
+Pontual;Neumarkt Shopping;Feminino;6;Lojas Americanas;991,85;7,39;13;7
+Pontual;Neumarkt Shopping;Feminino;7;Farm;875,2;6,52;1;1
+Pontual;Neumarkt Shopping;Feminino;8;Usaflex;822,97;6,13;2;2
+Pontual;Neumarkt Shopping;Feminino;9;Clube Melissa;756,33;5,63;1;1
+Pontual;Neumarkt Shopping;Feminino;10;Hering Store;719,95;5,36;2;2
+Pontual;Neumarkt Shopping;Masculino;1;Havan;2135,01;25,11;4;4
+Pontual;Neumarkt Shopping;Masculino;2;Idéli.Oui;1719,0;20,21;2;2
+Pontual;Neumarkt Shopping;Masculino;3;Democrata;929,4000000000001;10,93;2;2
+Pontual;Neumarkt Shopping;Masculino;4;Damyller;928,0;10,91;1;1
+Pontual;Neumarkt Shopping;Masculino;5;Cavezzale;569,8;6,7;1;1
+Pontual;Neumarkt Shopping;Masculino;6;Cabanas;524,9;6,17;1;1
+Pontual;Neumarkt Shopping;Masculino;7;Brooksfield;479,84;5,64;1;1
+Pontual;Neumarkt Shopping;Masculino;8;Natura ;439,79;5,17;1;1
+Pontual;Neumarkt Shopping;Masculino;9;Centauro;399,99;4,7;1;1
+Pontual;Neumarkt Shopping;Masculino;10;McDonald's;378,2;4,45;6;2
+Pontual;Norte Shopping;Feminino;1;Havan;1230,56;28,81;5;4
+Pontual;Norte Shopping;Feminino;2;Renner;919,0;21,51;3;3
+Pontual;Norte Shopping;Feminino;3;World Tennis;499,99;11,7;1;1
+Pontual;Norte Shopping;Feminino;4;Leo Cosméticos;362,0;8,47;2;2
+Pontual;Norte Shopping;Feminino;5;Pittol;351,97;8,24;2;2
+Pontual;Norte Shopping;Feminino;6;Provin Joias;234,0;5,48;2;1
+Pontual;Norte Shopping;Feminino;7;Natura;182,7;4,28;1;1
+Pontual;Norte Shopping;Feminino;8;Cobasi;178,2;4,17;2;1
+Pontual;Norte Shopping;Feminino;9;Burger King;159,6;3,74;1;1
+Pontual;Norte Shopping;Feminino;10;Cinépolis;154,0;3,6;2;2
+Pontual;Norte Shopping;Masculino;1;Atacadão;869,21;36,03;2;2
+Pontual;Norte Shopping;Masculino;2;Centauro;369,98;15,34;1;1
+Pontual;Norte Shopping;Masculino;3;Cobasi;347,8;14,42;4;4
+Pontual;Norte Shopping;Masculino;4;Avatim;335,0;13,89;1;1
+Pontual;Norte Shopping;Masculino;5;Pratafina;108,0;4,48;1;1
+Pontual;Norte Shopping;Masculino;6;Kfc;100,5;4,17;2;2
+Pontual;Norte Shopping;Masculino;7;Mc Donalds ;84,0;3,48;3;1
+Pontual;Norte Shopping;Masculino;8;Lojas Americanas;74,48;3,09;1;1
+Pontual;Norte Shopping;Masculino;9;Orientali;73,38;3,04;1;1
+Pontual;Norte Shopping;Masculino;10;Norte Shopping - Estacionamento;50,0;2,07;3;3
+Potencial;Balneário Shopping;Feminino;1;Renner;13369,2;25,77;34;27
+Potencial;Balneário Shopping;Feminino;2;Zara;8799,75;16,96;17;16
+Potencial;Balneário Shopping;Feminino;3;Life Vivara;5631,0599999999995;10,85;6;6
+Potencial;Balneário Shopping;Feminino;4;Sephora;4450,09;8,58;8;7
+Potencial;Balneário Shopping;Feminino;5;C&A;4262,04;8,21;13;12
+Potencial;Balneário Shopping;Feminino;6;Luz da Lua;3799,5;7,32;3;3
+Potencial;Balneário Shopping;Feminino;7;Centauro;3736,02;7,2;8;7
+Potencial;Balneário Shopping;Feminino;8;Riachuelo;3271,59;6,31;9;9
+Potencial;Balneário Shopping;Feminino;9;Arezzo;2379,5;4,59;3;3
+Potencial;Balneário Shopping;Feminino;10;Magazine Luiza;2185,0;4,21;1;1
+Potencial;Balneário Shopping;Masculino;1;C&A;3181,57;17,6;6;5
+Potencial;Balneário Shopping;Masculino;2;Boiko;2153,0;11,91;1;1
+Potencial;Balneário Shopping;Masculino;3;Paris Cosméticos;2072,96;11,46;6;5
+Potencial;Balneário Shopping;Masculino;4;Oakley;1982,0;10,96;1;1
+Potencial;Balneário Shopping;Masculino;5;Swarovski;1678,0;9,28;1;1
+Potencial;Balneário Shopping;Masculino;6;Renner;1659,3;9,18;4;4
+Potencial;Balneário Shopping;Masculino;7;L'Oréal Kerastase  ;1455,0;8,05;1;1
+Potencial;Balneário Shopping;Masculino;8;Track&Field;1329,3;7,35;1;1
+Potencial;Balneário Shopping;Masculino;9;Vivara;1321,0;7,31;1;1
+Potencial;Balneário Shopping;Masculino;10;World Tennis;1249,98;6,91;1;1
+Potencial;Continente Shopping;Feminino;1;Nike Unite;6469,77;19,99;9;9
+Potencial;Continente Shopping;Feminino;2;Renner;4776,4;14,76;20;18
+Potencial;Continente Shopping;Feminino;3;C&A;4129,63;12,76;14;13
+Potencial;Continente Shopping;Feminino;4;Riachuelo;3279,54;10,13;12;11
+Potencial;Continente Shopping;Feminino;5;Ótica Diniz;2907,0;8,98;2;2
+Potencial;Continente Shopping;Feminino;6;Centauro;2474,8900000000003;7,65;5;5
+Potencial;Continente Shopping;Feminino;7;Audithorium Menswear;2459,2;7,6;3;2
+Potencial;Continente Shopping;Feminino;8;Vivara;2352,0;7,27;3;3
+Potencial;Continente Shopping;Feminino;9;Live!;1759,21;5,44;3;3
+Potencial;Continente Shopping;Feminino;10;Ravelli;1757,7;5,43;1;1
+Potencial;Continente Shopping;Masculino;1;Nike Unite;11560,58;35,05;17;16
+Potencial;Continente Shopping;Masculino;2;Renner;3877,0;11,76;8;7
+Potencial;Continente Shopping;Masculino;3;Tommy Hilfiger;3696,0;11,21;3;3
+Potencial;Continente Shopping;Masculino;4;C&A;2590,8100000000004;7,86;6;5
+Potencial;Continente Shopping;Masculino;5;Centauro;2454,84;7,44;6;5
+Potencial;Continente Shopping;Masculino;6;Sunglass Hut;2259,0;6,85;1;1
+Potencial;Continente Shopping;Masculino;7;Riachuelo;1800,65;5,46;4;3
+Potencial;Continente Shopping;Masculino;8;JCanedo;1653,98;5,02;1;1
+Potencial;Continente Shopping;Masculino;9;Polo Wear;1602,91;4,86;2;2
+Potencial;Continente Shopping;Masculino;10;Decathlon;1482,87;4,5;5;5
+Potencial;Garten Shopping;Feminino;1;Riachuelo;3153,64;18,63;9;9
+Potencial;Garten Shopping;Feminino;2;Havan;2648,12;15,65;7;5
+Potencial;Garten Shopping;Feminino;3;Renner;2632,2;15,55;10;10
+Potencial;Garten Shopping;Feminino;4;Damyller;2224,0;13,14;2;2
+Potencial;Garten Shopping;Feminino;5;Idéli Oui;1362,5900000000001;8,05;5;3
+Potencial;Garten Shopping;Feminino;6;C&A;1299,82;7,68;5;5
+Potencial;Garten Shopping;Feminino;7;Arezzo;1099,9;6,5;1;1
+Potencial;Garten Shopping;Feminino;8;Pop Me;989,0999999999999;5,84;2;2
+Potencial;Garten Shopping;Feminino;9;Purpurata;799,2;4,72;2;2
+Potencial;Garten Shopping;Feminino;10;Polo Wear;716,8;4,24;1;1
+Potencial;Garten Shopping;Masculino;1;Riachuelo;2149,74;19,91;3;3
+Potencial;Garten Shopping;Masculino;2;Levi's;1367,62;12,67;1;1
+Potencial;Garten Shopping;Masculino;3;Damyller;1283,4;11,89;1;1
+Potencial;Garten Shopping;Masculino;4;Centauro;1279,87;11,85;3;3
+Potencial;Garten Shopping;Masculino;5;Óticas Carol;1169,7;10,83;1;1
+Potencial;Garten Shopping;Masculino;6;Valenttina;929,3;8,61;3;1
+Potencial;Garten Shopping;Masculino;7;Brooksfield;799,84;7,41;1;1
+Potencial;Garten Shopping;Masculino;8;Maze Skate;749,9;6,95;1;1
+Potencial;Garten Shopping;Masculino;9;Democrata;535,7;4,96;1;1
+Potencial;Garten Shopping;Masculino;10;Outback Steakhouse;531,32;4,92;3;2
+Potencial;Nações Shopping;Feminino;1;Renner;7614,72;31,27;18;17
+Potencial;Nações Shopping;Feminino;2;Centauro;3523,88;14,47;8;7
+Potencial;Nações Shopping;Feminino;3;Riachuelo;3454,32;14,19;11;11
+Potencial;Nações Shopping;Feminino;4;C&A;2698,73;11,08;14;13
+Potencial;Nações Shopping;Feminino;5;Engenharia do Corpo Academia;1757,58;7,22;1;1
+Potencial;Nações Shopping;Feminino;6;Vivara;1327,0;5,45;2;2
+Potencial;Nações Shopping;Feminino;7;Beagle;1309,97;5,38;4;2
+Potencial;Nações Shopping;Feminino;8;Arezzo;1218,12;5,0;3;3
+Potencial;Nações Shopping;Feminino;9;Ri Happy;917,99;3,77;3;3
+Potencial;Nações Shopping;Feminino;10;Cobasi;529,09;2,17;3;3
+Potencial;Nações Shopping;Masculino;1;Renner;6538,0;33,25;8;7
+Potencial;Nações Shopping;Masculino;2;FATIMA ESPORTES;2118,9700000000003;10,78;3;2
+Potencial;Nações Shopping;Masculino;3;Centauro;2028,8600000000001;10,32;4;3
+Potencial;Nações Shopping;Masculino;4;Las Leñas Parrilla Uruguaya;1504,25;7,65;6;1
+Potencial;Nações Shopping;Masculino;5;Kings ;1439,8;7,32;1;1
+Potencial;Nações Shopping;Masculino;6;Samsung;1397,0;7,1;1;1
+Potencial;Nações Shopping;Masculino;7;Fátima Criança;1345,06;6,84;2;2
+Potencial;Nações Shopping;Masculino;8;Bagaggio;1292,02;6,57;2;2
+Potencial;Nações Shopping;Masculino;9;Beagle;1048,0;5,33;2;1
+Potencial;Nações Shopping;Masculino;10;Riachuelo;950,75;4,84;2;2
+Potencial;Neumarkt Shopping;Feminino;1;Renner;5135,15;22,32;13;13
+Potencial;Neumarkt Shopping;Feminino;2;Havan;4276,69;18,59;16;13
+Potencial;Neumarkt Shopping;Feminino;3;Idéli.Oui;2443,0;10,62;3;3
+Potencial;Neumarkt Shopping;Feminino;4;Swarovski;2169,0;9,43;1;1
+Potencial;Neumarkt Shopping;Feminino;5;Bottero;1879,2;8,17;3;3
+Potencial;Neumarkt Shopping;Feminino;6;Riachuelo;1735,26;7,54;7;6
+Potencial;Neumarkt Shopping;Feminino;7;Óticas Carol;1539,5;6,69;1;1
+Potencial;Neumarkt Shopping;Feminino;8;Usaflex;1499,96;6,52;2;2
+Potencial;Neumarkt Shopping;Feminino;9;Ótica Chilli Beans;1289,0;5,6;1;1
+Potencial;Neumarkt Shopping;Feminino;10;Me.Linda;1043,3;4,53;8;7
+Potencial;Neumarkt Shopping;Masculino;1;Cia do Homem;1669,1;16,77;2;2
+Potencial;Neumarkt Shopping;Masculino;2;Vivara;1500,0;15,07;2;2
+Potencial;Neumarkt Shopping;Masculino;3;Aramis;1459,7;14,67;1;1
+Potencial;Neumarkt Shopping;Masculino;4;Havan;1414,69;14,22;6;6
+Potencial;Neumarkt Shopping;Masculino;5;L'Occitane en Provence;1094,0;10,99;2;1
+Potencial;Neumarkt Shopping;Masculino;6;Renner;824,9000000000001;8,29;2;2
+Potencial;Neumarkt Shopping;Masculino;7;Reserva;608,9;6,12;2;2
+Potencial;Neumarkt Shopping;Masculino;8;Hering Store;519,98;5,23;1;1
+Potencial;Neumarkt Shopping;Masculino;9;Democrata;465,8;4,68;1;1
+Potencial;Neumarkt Shopping;Masculino;10;Avatim;394,0;3,96;1;1
+Potencial;Norte Shopping;Feminino;1;Havan;3004,0;25,42;12;10
+Potencial;Norte Shopping;Feminino;2;Tim;2349,0;19,88;1;1
+Potencial;Norte Shopping;Feminino;3;Atacadão;1894,77;16,03;7;6
+Potencial;Norte Shopping;Feminino;4;Riachuelo;1618,86;13,7;4;4
+Potencial;Norte Shopping;Feminino;5;Renner;1128,8;9,55;2;2
+Potencial;Norte Shopping;Feminino;6;Cacau Show;581,8199999999999;4,92;4;4
+Potencial;Norte Shopping;Feminino;7;Pittol;430,98;3,65;3;3
+Potencial;Norte Shopping;Feminino;8;Leo Cosméticos;323,55;2,74;6;6
+Potencial;Norte Shopping;Feminino;9;Livrarias Catarinense;300,6;2,54;3;3
+Potencial;Norte Shopping;Feminino;10;Miss Make;185,6;1,57;1;1
+Potencial;Norte Shopping;Masculino;1;Claro;1018,0;23,95;2;1
+Potencial;Norte Shopping;Masculino;2;Havan;849,85;19,99;2;2
+Potencial;Norte Shopping;Masculino;3;Renner;649,5;15,28;1;1
+Potencial;Norte Shopping;Masculino;4;Polo Wear;579,95;13,64;2;2
+Potencial;Norte Shopping;Masculino;5;Riachuelo;349,84000000000003;8,23;2;2
+Potencial;Norte Shopping;Masculino;6;O Boticário;349,6;8,22;2;2
+Potencial;Norte Shopping;Masculino;7;Pittol;169,0;3,98;1;1
+Potencial;Norte Shopping;Masculino;8;Natura;164,9;3,88;1;1
+Potencial;Norte Shopping;Masculino;9;Lojas Americanas;88,44;2,08;2;2
+Potencial;Norte Shopping;Masculino;10;Norte Shopping - Estacionamento;32,0;0,75;2;2
 Premium;Balneário Shopping;Feminino;1;Zara;12484,25;24,39;20;17
 Premium;Balneário Shopping;Feminino;2;Renner;10051,1;19,64;30;24
 Premium;Balneário Shopping;Feminino;3;Centauro;5159,79;10,08;5;5
