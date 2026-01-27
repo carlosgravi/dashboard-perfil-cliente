@@ -152,8 +152,8 @@ def verificar_autenticacao():
         Este dashboard é de uso exclusivo da equipe Almeida Junior.
 
         **Para solicitar acesso, entre em contato:**
-        - 📧 Email: ti@almeidajunior.com.br
-        - 📱 WhatsApp: (47) 99999-9999
+        - 📧 Email: carlos.gravi@almeidajunior.com.br
+        - 📱 WhatsApp: (48) 98472-8399
         """)
         return False, None, None, None
     else:
