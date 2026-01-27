@@ -311,21 +311,34 @@ st.markdown("""
         background-color: #C0392B !important;
     }
 
-    /* Botão de recolher/expandir sidebar */
-    button[data-testid="stSidebarCollapseButton"],
-    button[data-testid="baseButton-headerNoPadding"] {
+    /* Botão de recolher/expandir sidebar - forçar visibilidade */
+    [data-testid="collapsedControl"],
+    [data-testid="stSidebarCollapsedControl"],
+    [data-testid="stSidebarNav"] button,
+    .stSidebar button[kind="header"],
+    div[data-testid="stSidebarCollapsedControl"] button,
+    section[data-testid="stSidebar"] > div:first-child button {
         background-color: #2C3E50 !important;
         color: #FFFFFF !important;
-        border: 1px solid #FFFFFF !important;
+        border: 1px solid #B0C4DE !important;
         border-radius: 4px !important;
         opacity: 1 !important;
         visibility: visible !important;
     }
 
-    button[data-testid="stSidebarCollapseButton"] svg,
-    button[data-testid="baseButton-headerNoPadding"] svg {
+    [data-testid="collapsedControl"] svg,
+    [data-testid="stSidebarCollapsedControl"] svg,
+    section[data-testid="stSidebar"] > div:first-child button svg {
         fill: #FFFFFF !important;
         stroke: #FFFFFF !important;
+        color: #FFFFFF !important;
+    }
+
+    /* Garantir que o ícone do botão collapse seja visível */
+    button[kind="header"] svg,
+    .stAppHeader button svg {
+        fill: #1E3A5F !important;
+        color: #1E3A5F !important;
     }
 
     /* Dataframe */
