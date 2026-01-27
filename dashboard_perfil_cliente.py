@@ -87,23 +87,30 @@ st.set_page_config(
 # SISTEMA DE AUTENTICAÇÃO
 # =============================================================================
 
+def converter_para_dict(obj):
+    """Converte recursivamente objetos AttrDict do Streamlit para dict Python padrão"""
+    if hasattr(obj, 'to_dict'):
+        return obj.to_dict()
+    elif hasattr(obj, 'items'):
+        return {k: converter_para_dict(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [converter_para_dict(item) for item in obj]
+    else:
+        return obj
+
 def carregar_config_auth():
     """Carrega configuração de autenticação dos secrets do Streamlit"""
     try:
         # Tentar carregar dos secrets do Streamlit Cloud
         if "credentials" in st.secrets:
-            config = {
-                'credentials': dict(st.secrets['credentials']),
-                'cookie': dict(st.secrets['cookie']),
-                'preauthorized': dict(st.secrets.get('preauthorized', {'emails': []}))
-            }
+            # Converter todos os objetos para dict Python padrão recursivamente
+            credentials = converter_para_dict(st.secrets['credentials'])
+            cookie = converter_para_dict(st.secrets['cookie'])
 
-            # Converter usernames para estrutura correta
-            if 'usernames' in config['credentials']:
-                usernames_dict = {}
-                for username, user_data in config['credentials']['usernames'].items():
-                    usernames_dict[username] = dict(user_data)
-                config['credentials']['usernames'] = usernames_dict
+            config = {
+                'credentials': credentials,
+                'cookie': cookie
+            }
 
             return config
         else:
