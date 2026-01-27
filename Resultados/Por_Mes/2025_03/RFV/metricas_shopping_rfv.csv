@@ -1,7 +1,7 @@
-﻿shopping_principal,qtd_clientes,valor_total,ticket_medio,clientes_vip_historico,clientes_vip_periodo,high_spenders,pct_valor
-Balneário Shopping,499,666785.43,387.1835742604971,389,85,91,29.38
-Neumarkt Shopping,524,472109.39,197.01501405110176,417,56,65,20.8
-Continente Shopping,616,422408.62,187.51642956006796,390,35,43,18.61
-Garten Shopping,467,417987.04,311.8343582587985,324,33,36,18.41
-Nações Shopping,301,186532.26,183.650143594536,165,14,15,8.22
-Norte Shopping,195,104019.59,149.99336182895982,113,9,11,4.58
+﻿shopping_principal,qtd_clientes,valor_total,ticket_medio,vip_hist,premium_hist,potencial_hist,pontual_hist,vip_periodo,premium_periodo,potencial_periodo,pontual_periodo,high_spenders,pct_valor
+Balneário Shopping,499,666785.43,387.1835742604971,389,48,31,31,85,90,115,209,91,29.38
+Neumarkt Shopping,524,472109.39,197.01501405110176,417,44,38,25,56,95,109,264,65,20.8
+Continente Shopping,616,422408.62,187.51642956006796,390,82,76,68,35,79,122,380,43,18.61
+Garten Shopping,467,417987.04,311.8343582587985,324,67,41,35,33,67,105,262,36,18.41
+Nações Shopping,301,186532.26,183.650143594536,165,52,41,43,14,39,54,194,15,8.22
+Norte Shopping,195,104019.59,149.99336182895982,113,38,26,18,9,21,32,133,11,4.58

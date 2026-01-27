@@ -1859,8 +1859,12 @@ elif pagina == "🎯 RFV":
             if 'shopping' in dados_rfv and dados_rfv['shopping'] is not None:
                 df_shopping = dados_rfv['shopping'].copy()
 
-                # Verificar colunas disponíveis para VIP
-                vip_col = 'clientes_vip_historico' if usar_historico and 'clientes_vip_historico' in df_shopping.columns else 'clientes_vip_periodo' if 'clientes_vip_periodo' in df_shopping.columns else None
+                # Definir sufixo baseado no tipo de classificação
+                sufixo = '_hist' if usar_historico else '_periodo'
+
+                # Verificar se as colunas de perfil existem
+                perfis_cols = [f'vip{sufixo}', f'premium{sufixo}', f'potencial{sufixo}', f'pontual{sufixo}']
+                tem_perfis = all(col in df_shopping.columns for col in perfis_cols)
 
                 # Filtro de shopping
                 shopping_selecionado = st.selectbox(
@@ -1889,28 +1893,73 @@ elif pagina == "🎯 RFV":
                     st.plotly_chart(fig_shop_valor, use_container_width=True)
 
                 with col2:
-                    # Clientes VIP por shopping
-                    if vip_col and vip_col in df_shopping.columns:
-                        fig_shop_vip = px.bar(
-                            df_shopping.sort_values(vip_col, ascending=True),
-                            x=vip_col,
-                            y='shopping_principal',
-                            orientation='h',
-                            title=f'Clientes VIP por Shopping ({tipo_rfv.split(" (")[0]})',
-                            color=vip_col,
-                            color_continuous_scale='Purples'
+                    # Distribuição de perfis por shopping (gráfico de barras empilhadas)
+                    if tem_perfis:
+                        # Preparar dados para gráfico empilhado
+                        df_perfis_shop = df_shopping[['shopping_principal'] + perfis_cols].copy()
+                        df_perfis_shop.columns = ['Shopping', 'VIP', 'Premium', 'Potencial', 'Pontual']
+                        df_melted = df_perfis_shop.melt(
+                            id_vars=['Shopping'],
+                            value_vars=['VIP', 'Premium', 'Potencial', 'Pontual'],
+                            var_name='Perfil',
+                            value_name='Clientes'
                         )
-                        fig_shop_vip.update_layout(showlegend=False, yaxis_title='', xaxis_title='Qtd VIP')
-                        st.plotly_chart(fig_shop_vip, use_container_width=True)
-                    else:
-                        st.info("Dados de VIP por shopping não disponíveis.")
 
-                # Tabela detalhada
-                st.subheader("Métricas por Shopping")
+                        fig_perfis = px.bar(
+                            df_melted,
+                            x='Shopping',
+                            y='Clientes',
+                            color='Perfil',
+                            title=f'Distribuição de Perfis por Shopping ({tipo_rfv.split(" (")[0]})',
+                            color_discrete_map=CORES_PERFIL,
+                            category_orders={'Perfil': ORDEM_PERFIL}
+                        )
+                        fig_perfis.update_layout(xaxis_tickangle=-45, barmode='stack')
+                        st.plotly_chart(fig_perfis, use_container_width=True)
+                    else:
+                        st.info("Dados de perfis por shopping não disponíveis. Execute novamente o script de geração.")
+
+                # KPIs por perfil (apenas se temos os dados)
+                if tem_perfis and shopping_selecionado == "Todos":
+                    st.subheader("Total de Clientes por Perfil (Todos os Shoppings)")
+                    col1, col2, col3, col4 = st.columns(4)
+                    totais = {
+                        'VIP': int(df_shopping[f'vip{sufixo}'].sum()),
+                        'Premium': int(df_shopping[f'premium{sufixo}'].sum()),
+                        'Potencial': int(df_shopping[f'potencial{sufixo}'].sum()),
+                        'Pontual': int(df_shopping[f'pontual{sufixo}'].sum())
+                    }
+                    total_geral = sum(totais.values())
+
+                    for i, (perfil, qtd) in enumerate(totais.items()):
+                        pct = (qtd / total_geral * 100) if total_geral > 0 else 0
+                        icone = "🏆" if perfil == 'VIP' else "⭐" if perfil == 'Premium' else "🎯" if perfil == 'Potencial' else "👤"
+                        with [col1, col2, col3, col4][i]:
+                            st.metric(f"{icone} {perfil}", f"{qtd:,}", f"{pct:.1f}%")
+
+                # Tabela detalhada com todos os perfis
+                st.subheader("Métricas Detalhadas por Shopping")
                 df_shop_display = df_shopping.copy()
-                df_shop_display['valor_total'] = df_shop_display['valor_total'].apply(lambda x: f"R$ {x:,.2f}")
-                df_shop_display['ticket_medio'] = df_shop_display['ticket_medio'].apply(lambda x: f"R$ {x:.2f}")
-                df_shop_display['pct_valor'] = df_shop_display['pct_valor'].apply(lambda x: f"{x:.1f}%")
+
+                # Selecionar e renomear colunas para exibição
+                colunas_exibir = ['shopping_principal', 'qtd_clientes', 'valor_total', 'ticket_medio']
+                nomes_colunas = ['Shopping', 'Total Clientes', 'Valor Total', 'Ticket Médio']
+
+                if tem_perfis:
+                    colunas_exibir.extend(perfis_cols)
+                    nomes_colunas.extend(['VIP', 'Premium', 'Potencial', 'Pontual'])
+
+                colunas_exibir.extend(['high_spenders', 'pct_valor'])
+                nomes_colunas.extend(['High Spenders', '% Valor'])
+
+                df_shop_display = df_shop_display[colunas_exibir].copy()
+                df_shop_display.columns = nomes_colunas
+
+                # Formatar valores
+                df_shop_display['Valor Total'] = df_shop_display['Valor Total'].apply(lambda x: f"R$ {x:,.2f}")
+                df_shop_display['Ticket Médio'] = df_shop_display['Ticket Médio'].apply(lambda x: f"R$ {x:.2f}")
+                df_shop_display['% Valor'] = df_shop_display['% Valor'].apply(lambda x: f"{x:.1f}%")
+
                 st.dataframe(df_shop_display, use_container_width=True, hide_index=True)
             else:
                 st.warning("Dados de shopping não disponíveis para este período.")
