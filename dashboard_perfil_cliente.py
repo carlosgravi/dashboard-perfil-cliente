@@ -311,6 +311,23 @@ st.markdown("""
         background-color: #C0392B !important;
     }
 
+    /* Botão de recolher/expandir sidebar */
+    button[data-testid="stSidebarCollapseButton"],
+    button[data-testid="baseButton-headerNoPadding"] {
+        background-color: #2C3E50 !important;
+        color: #FFFFFF !important;
+        border: 1px solid #FFFFFF !important;
+        border-radius: 4px !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    button[data-testid="stSidebarCollapseButton"] svg,
+    button[data-testid="baseButton-headerNoPadding"] svg {
+        fill: #FFFFFF !important;
+        stroke: #FFFFFF !important;
+    }
+
     /* Dataframe */
     .stDataFrame {
         border: 1px solid #e0e0e0;
