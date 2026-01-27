@@ -1,43 +1,43 @@
 ﻿faixa_etaria,dia_semana,valor,transacoes
-16-24 (Gen Z),Domingo,4639400.71,16994
-16-24 (Gen Z),Quarta,2461648.72,9400
-16-24 (Gen Z),Quinta,2373817.1,9401
-16-24 (Gen Z),Sabado,4146928.6,15528
-16-24 (Gen Z),Segunda,3279103.7600000002,11662
+16-24 (Gen Z),Domingo,4633993.61,16988
+16-24 (Gen Z),Quarta,2460142.04,9394
+16-24 (Gen Z),Quinta,2373499.88,9399
+16-24 (Gen Z),Sabado,4145786.42,15524
+16-24 (Gen Z),Segunda,3287204.6,11746
 16-24 (Gen Z),Sexta,2807534.48,10516
-16-24 (Gen Z),Terca,2741019.5,10176
-25-39 (Millennials),Domingo,40274295.47,130544
-25-39 (Millennials),Quarta,21023915.89,67019
-25-39 (Millennials),Quinta,21456716.03,68332
-25-39 (Millennials),Sabado,35404510.71,114990
-25-39 (Millennials),Segunda,27958595.63,85046
-25-39 (Millennials),Sexta,23788998.1,76950
-25-39 (Millennials),Terca,23401242.33,73201
-40-54 (Gen X),Domingo,46284160.16,144592
-40-54 (Gen X),Quarta,27107240.11,78828
-40-54 (Gen X),Quinta,27604391.42,81360
-40-54 (Gen X),Sabado,43613240.14,134578
-40-54 (Gen X),Segunda,36151808.76,103491
-40-54 (Gen X),Sexta,30624493.62,91061
-40-54 (Gen X),Terca,30672321.98,87877
-55-69 (Boomers),Domingo,13186847.5,35176
-55-69 (Boomers),Quarta,8740059.11,22287
-55-69 (Boomers),Quinta,9985135.7,23788
-55-69 (Boomers),Sabado,13275674.61,34230
-55-69 (Boomers),Segunda,11651323.48,28235
-55-69 (Boomers),Sexta,10590577.51,25736
-55-69 (Boomers),Terca,10446245.66,24884
-70+ (Silent),Domingo,2317067.58,5507
+16-24 (Gen Z),Terca,2740984.6,10175
+25-39 (Millennials),Domingo,40272722.81,130528
+25-39 (Millennials),Quarta,21024226.34,67013
+25-39 (Millennials),Quinta,21456117.9,68329
+25-39 (Millennials),Sabado,35396918.94,114962
+25-39 (Millennials),Segunda,27998860.76,85331
+25-39 (Millennials),Sexta,23783478.97,76923
+25-39 (Millennials),Terca,23397769.06,73183
+40-54 (Gen X),Domingo,46303037.01,144603
+40-54 (Gen X),Quarta,27083716.39,78800
+40-54 (Gen X),Quinta,27601114.67,81348
+40-54 (Gen X),Sabado,43627112.41,134585
+40-54 (Gen X),Segunda,36159588.16,103733
+40-54 (Gen X),Sexta,30616728.72,91064
+40-54 (Gen X),Terca,30661875.14,87883
+55-69 (Boomers),Domingo,13188065.21,35180
+55-69 (Boomers),Quarta,8765314.1,22325
+55-69 (Boomers),Quinta,9989032.27,23804
+55-69 (Boomers),Sabado,13282878.57,34237
+55-69 (Boomers),Segunda,11708719.87,28312
+55-69 (Boomers),Sexta,10604610.56,25760
+55-69 (Boomers),Terca,10458605.79,24889
+70+ (Silent),Domingo,2318385.66,5513
 70+ (Silent),Quarta,1835288.44,3792
 70+ (Silent),Quinta,1985660.55,3879
-70+ (Silent),Sabado,2622385.84,5331
-70+ (Silent),Segunda,2210716.37,4124
-70+ (Silent),Sexta,2243837.32,4418
-70+ (Silent),Terca,1903350.54,3834
+70+ (Silent),Sabado,2626585.28,5354
+70+ (Silent),Segunda,2210937.67,4127
+70+ (Silent),Sexta,2244019.1,4421
+70+ (Silent),Terca,1904927.42,3841
 Nao Informado,Domingo,74053.17,304
 Nao Informado,Quarta,36033.81,192
 Nao Informado,Quinta,33725.6,173
 Nao Informado,Sabado,62497.159999999996,226
-Nao Informado,Segunda,109511.05,262
+Nao Informado,Segunda,109843.05,267
 Nao Informado,Sexta,71691.22,207
 Nao Informado,Terca,41005.9,190

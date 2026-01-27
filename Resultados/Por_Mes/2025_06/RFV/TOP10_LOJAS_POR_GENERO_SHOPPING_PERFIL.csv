@@ -1,0 +1,241 @@
+﻿perfil;shopping;genero;ranking;loja;valor;pct_valor;cupons;clientes
+Premium;Balneário Shopping;Feminino;1;Zara;283193,19;35,67;436;336
+Premium;Balneário Shopping;Feminino;2;Renner;157014,68;19,78;366;277
+Premium;Balneário Shopping;Feminino;3;Sephora;68959,93;8,69;150;125
+Premium;Balneário Shopping;Feminino;4;C&A;61207,57;7,71;174;135
+Premium;Balneário Shopping;Feminino;5;Centauro;60736,020000000004;7,65;104;95
+Premium;Balneário Shopping;Feminino;6;Arezzo;40621,31;5,12;60;55
+Premium;Balneário Shopping;Feminino;7;Riachuelo;39248,58;4,94;107;93
+Premium;Balneário Shopping;Feminino;8;Bottero;28617,26;3,6;44;41
+Premium;Balneário Shopping;Feminino;9;Shoulder;27372,0;3,45;27;26
+Premium;Balneário Shopping;Feminino;10;Magazine Luiza;26926,0;3,39;9;9
+Premium;Balneário Shopping;Masculino;1;Zara;101718,19;27,34;149;107
+Premium;Balneário Shopping;Masculino;2;Vivara;61683,0;16,58;28;27
+Premium;Balneário Shopping;Masculino;3;Brooksfield;39889,92;10,72;18;17
+Premium;Balneário Shopping;Masculino;4;Renner;33358,9;8,97;80;57
+Premium;Balneário Shopping;Masculino;5;Centauro;29032,53;7,8;51;42
+Premium;Balneário Shopping;Masculino;6;Padrão;24973,35;6,71;13;12
+Premium;Balneário Shopping;Masculino;7;Paris Cosméticos;22909,739999999998;6,16;24;23
+Premium;Balneário Shopping;Masculino;8;Magazine Luiza;21478,61;5,77;8;7
+Premium;Balneário Shopping;Masculino;9;C&A;19054,14;5,12;42;36
+Premium;Balneário Shopping;Masculino;10;The North Face;17922,2;4,82;9;9
+Premium;Continente Shopping;Feminino;1;Renner;84817,97;22,48;226;179
+Premium;Continente Shopping;Feminino;2;Nike Unite;42191,200000000004;11,18;82;69
+Premium;Continente Shopping;Feminino;3;C&A;40870,200000000004;10,83;106;83
+Premium;Continente Shopping;Feminino;4;Riachuelo;35310,450000000004;9,36;101;84
+Premium;Continente Shopping;Feminino;5;Centauro;34984,270000000004;9,27;87;67
+Premium;Continente Shopping;Feminino;6;Óticas Carol;29643,699999999997;7,86;15;13
+Premium;Continente Shopping;Feminino;7;Ótica Diniz;28860,9;7,65;15;14
+Premium;Continente Shopping;Feminino;8;Arezzo;27234,9;7,22;48;41
+Premium;Continente Shopping;Feminino;9;Empório Du Homem;26855,09;7,12;28;23
+Premium;Continente Shopping;Feminino;10;Claro;26504,92;7,03;9;8
+Premium;Continente Shopping;Masculino;1;Vivara;46462,8;18,01;21;18
+Premium;Continente Shopping;Masculino;2;Magazine Luiza;30042,989999999998;11,65;8;8
+Premium;Continente Shopping;Masculino;3;Óticas Carol;29203,0;11,32;13;12
+Premium;Continente Shopping;Masculino;4;Empório Du Homem;27886,47;10,81;23;18
+Premium;Continente Shopping;Masculino;5;Renner;26210,56;10,16;64;52
+Premium;Continente Shopping;Masculino;6;Nike Unite;21446,190000000002;8,31;42;33
+Premium;Continente Shopping;Masculino;7;Claro;21115,4;8,19;6;6
+Premium;Continente Shopping;Masculino;8;Brooksfield;20669,5;8,01;13;12
+Premium;Continente Shopping;Masculino;9;Clifield;19259,8;7,47;23;21
+Premium;Continente Shopping;Masculino;10;TIM ;15657,08;6,07;5;5
+Premium;Garten Shopping;Feminino;1;Renner;85252,92;24,65;249;190
+Premium;Garten Shopping;Feminino;2;Riachuelo;46614,450000000004;13,48;140;120
+Premium;Garten Shopping;Feminino;3;C&A;39803,47;11,51;124;107
+Premium;Garten Shopping;Feminino;4;Hering;30590,030000000002;8,84;78;69
+Premium;Garten Shopping;Feminino;5;Idéli Oui;29883,29;8,64;36;30
+Premium;Garten Shopping;Feminino;6;Shoulder;28490,86;8,24;27;21
+Premium;Garten Shopping;Feminino;7;Havan;24411,26;7,06;99;82
+Premium;Garten Shopping;Feminino;8;Centauro;20929,84;6,05;65;59
+Premium;Garten Shopping;Feminino;9;Levi's;20415,14;5,9;35;29
+Premium;Garten Shopping;Feminino;10;Makenji;19468,79;5,63;22;17
+Premium;Garten Shopping;Masculino;1;Vivara ;53081,55;23,33;21;21
+Premium;Garten Shopping;Masculino;2;Brooksfield;22115,04;9,72;15;14
+Premium;Garten Shopping;Masculino;3;Renner;21878,34;9,62;59;48
+Premium;Garten Shopping;Masculino;4;Hering;21551,420000000002;9,47;42;36
+Premium;Garten Shopping;Masculino;5;Life Vivara;21531,56;9,46;16;15
+Premium;Garten Shopping;Masculino;6;Samsung;19285,0;8,48;6;6
+Premium;Garten Shopping;Masculino;7;Idéli Oui;17323,89;7,61;13;10
+Premium;Garten Shopping;Masculino;8;Padrao Joinville Ltda;17261,7;7,59;8;8
+Premium;Garten Shopping;Masculino;9;Vivo;16920,0;7,44;5;5
+Premium;Garten Shopping;Masculino;10;Riachuelo;16593,62;7,29;43;36
+Premium;Nações Shopping;Feminino;1;Renner;72607,3;28,42;182;134
+Premium;Nações Shopping;Feminino;2;Luz da Lua;30117,13;11,79;31;27
+Premium;Nações Shopping;Feminino;3;C&A;26770,78;10,48;81;68
+Premium;Nações Shopping;Feminino;4;Calvin Klein e Tommy Hilfiger;24279,0;9,5;21;17
+Premium;Nações Shopping;Feminino;5;Riachuelo;21722,91;8,5;62;51
+Premium;Nações Shopping;Feminino;6;Essence Parfums;19403,49;7,6;18;14
+Premium;Nações Shopping;Feminino;7;Centauro;15887,28;6,22;37;32
+Premium;Nações Shopping;Feminino;8;Cassol Centerlar;15829,31;6,2;29;21
+Premium;Nações Shopping;Feminino;9;Empório Du Homem;14875,46;5,82;13;12
+Premium;Nações Shopping;Feminino;10;Youcom;13972,0;5,47;31;26
+Premium;Nações Shopping;Masculino;1;Vivara;23512,06;15,38;12;11
+Premium;Nações Shopping;Masculino;2;Empório Du Homem;21082,92;13,79;13;9
+Premium;Nações Shopping;Masculino;3;Békko;18218,66;11,92;14;13
+Premium;Nações Shopping;Masculino;4;Samsung;16444,0;10,76;6;4
+Premium;Nações Shopping;Masculino;5;Ortobom ;15957,01;10,44;5;5
+Premium;Nações Shopping;Masculino;6;Centauro;14420,800000000001;9,43;28;23
+Premium;Nações Shopping;Masculino;7;Renner;13734,6;8,98;30;24
+Premium;Nações Shopping;Masculino;8;Cassol Centerlar;12228,47;8,0;11;10
+Premium;Nações Shopping;Masculino;9;Essence Parfums;9741,27;6,37;8;7
+Premium;Nações Shopping;Masculino;10;Santo Boteco;7540,07;4,93;22;10
+Premium;Neumarkt Shopping;Feminino;1;Renner;67148,82;21,36;201;165
+Premium;Neumarkt Shopping;Feminino;2;Havan;45672,52;14,53;137;105
+Premium;Neumarkt Shopping;Feminino;3;Luz da Lua;36423,729999999996;11,59;34;30
+Premium;Neumarkt Shopping;Feminino;4;Idéli.Oui;30976,0;9,85;27;27
+Premium;Neumarkt Shopping;Feminino;5;Shoulder;28933,12;9,2;35;33
+Premium;Neumarkt Shopping;Feminino;6;Riachuelo;26210,25;8,34;92;81
+Premium;Neumarkt Shopping;Feminino;7;Centauro;21654,31;6,89;65;57
+Premium;Neumarkt Shopping;Feminino;8;Hering Store;20756,86;6,6;40;38
+Premium;Neumarkt Shopping;Feminino;9;Damyller;20095,0;6,39;29;25
+Premium;Neumarkt Shopping;Feminino;10;Track & Field;16515,93;5,25;26;21
+Premium;Neumarkt Shopping;Masculino;1;Cia do Homem;35775,61;16,67;26;25
+Premium;Neumarkt Shopping;Masculino;2;Vivara;27888,5;13,0;15;15
+Premium;Neumarkt Shopping;Masculino;3;Havan;24666,46;11,5;46;40
+Premium;Neumarkt Shopping;Masculino;4;Renner;21372,7;9,96;62;53
+Premium;Neumarkt Shopping;Masculino;5;Centauro;19954,99;9,3;42;37
+Premium;Neumarkt Shopping;Masculino;6;Brooksfield;19373,1;9,03;20;16
+Premium;Neumarkt Shopping;Masculino;7;JCanedo;18331,64;8,54;16;16
+Premium;Neumarkt Shopping;Masculino;8;Óticas Carol;17132,0;7,98;7;7
+Premium;Neumarkt Shopping;Masculino;9;Democrata;15755,36;7,34;26;23
+Premium;Neumarkt Shopping;Masculino;10;Idéli.Oui;14307,0;6,67;18;15
+Premium;Norte Shopping;Feminino;1;Casas Bahia;47018,8;18,94;17;15
+Premium;Norte Shopping;Feminino;2;Samsung;41079,0;16,55;12;12
+Premium;Norte Shopping;Feminino;3;Magazine Luiza;40980,71;16,51;16;15
+Premium;Norte Shopping;Feminino;4;Havan;30657,04;12,35;84;62
+Premium;Norte Shopping;Feminino;5;Renner;23982,14;9,66;66;55
+Premium;Norte Shopping;Feminino;6;Atacadão;16252,52;6,55;98;57
+Premium;Norte Shopping;Feminino;7;Pittol;15339,86;6,18;55;47
+Premium;Norte Shopping;Feminino;8;CVC;12357,83;4,98;4;4
+Premium;Norte Shopping;Feminino;9;Riachuelo;11358,25;4,58;37;34
+Premium;Norte Shopping;Feminino;10;Claro;9198,84;3,71;5;3
+Premium;Norte Shopping;Masculino;1;Casas Bahia;48240,82;23,81;19;17
+Premium;Norte Shopping;Masculino;2;Magazine Luiza;36164,65;17,85;12;12
+Premium;Norte Shopping;Masculino;3;Samsung;25111,010000000002;12,39;8;8
+Premium;Norte Shopping;Masculino;4;Atacadão;19910,24;9,83;58;30
+Premium;Norte Shopping;Masculino;5;Havan;16808,3;8,3;47;34
+Premium;Norte Shopping;Masculino;6;Pittol;14733,960000000001;7,27;36;26
+Premium;Norte Shopping;Masculino;7;Renner;12926,7;6,38;34;28
+Premium;Norte Shopping;Masculino;8;Centauro;9816,42;4,85;23;21
+Premium;Norte Shopping;Masculino;9;Idéli.oui;9769,68;4,82;9;9
+Premium;Norte Shopping;Masculino;10;Tim;9116,9;4,5;5;3
+VIP;Balneário Shopping;Feminino;1;Zara;734109,36;34,92;978;691
+VIP;Balneário Shopping;Feminino;2;Vivara;288571,55;13,72;70;61
+VIP;Balneário Shopping;Feminino;3;Renner;282458,82;13,43;677;482
+VIP;Balneário Shopping;Feminino;4;Sephora;219913,65;10,46;342;277
+VIP;Balneário Shopping;Feminino;5;iPlace Mobile;103705,15;4,93;24;20
+VIP;Balneário Shopping;Feminino;6;Live!;101343,13;4,82;90;84
+VIP;Balneário Shopping;Feminino;7;Shoulder;99726,17;4,74;88;70
+VIP;Balneário Shopping;Feminino;8;LE LIS BLANC DEUX;95918,72;4,56;55;47
+VIP;Balneário Shopping;Feminino;9;C&A;92061,94;4,38;261;204
+VIP;Balneário Shopping;Feminino;10;BOSS;84734,38;4,03;36;31
+VIP;Balneário Shopping;Masculino;1;Vivara;303268,18;28,42;50;44
+VIP;Balneário Shopping;Masculino;2;Zara;190971,96;17,9;217;151
+VIP;Balneário Shopping;Masculino;3;iPlace Mobile;117166,28;10,98;22;16
+VIP;Balneário Shopping;Masculino;4;Samsung;83848,0;7,86;10;10
+VIP;Balneário Shopping;Masculino;5;BOSS;70732,0;6,63;20;19
+VIP;Balneário Shopping;Masculino;6;Kulkes;67794,0;6,35;1;1
+VIP;Balneário Shopping;Masculino;7;Padrão;66004,26;6,19;24;20
+VIP;Balneário Shopping;Masculino;8;Renner;62116,11;5,82;115;78
+VIP;Balneário Shopping;Masculino;9;Aramis;57044,54;5,35;27;24
+VIP;Balneário Shopping;Masculino;10;Centauro;47977,61;4,5;89;75
+VIP;Continente Shopping;Feminino;1;Vivara;164828,54;25,8;30;25
+VIP;Continente Shopping;Feminino;2;Renner;109075,91;17,07;312;231
+VIP;Continente Shopping;Feminino;3;Nike Unite;63678,21;9,97;113;92
+VIP;Continente Shopping;Feminino;4;iPlace Mobile;52937,72;8,28;19;12
+VIP;Continente Shopping;Feminino;5;Riachuelo;49633,5;7,77;163;128
+VIP;Continente Shopping;Feminino;6;C&A;49167,39;7,69;161;125
+VIP;Continente Shopping;Feminino;7;Empório Du Homem;41596,81;6,51;38;27
+VIP;Continente Shopping;Feminino;8;Altenburg;39982,7;6,26;19;17
+VIP;Continente Shopping;Feminino;9;IDELI.OUI;34391,66;5,38;45;34
+VIP;Continente Shopping;Feminino;10;Centauro;33674,19;5,27;97;85
+VIP;Continente Shopping;Masculino;1;Vivara;203902,0;42,26;32;27
+VIP;Continente Shopping;Masculino;2;iPlace Mobile;50452,24;10,46;9;7
+VIP;Continente Shopping;Masculino;3;Brooksfield;36492,4;7,56;17;16
+VIP;Continente Shopping;Masculino;4;Claro;36149,8;7,49;8;6
+VIP;Continente Shopping;Masculino;5;Nike Unite;34502,85;7,15;55;48
+VIP;Continente Shopping;Masculino;6;Vivo;33995,0;7,05;10;5
+VIP;Continente Shopping;Masculino;7;Magazine Luiza;26305,57;5,45;6;5
+VIP;Continente Shopping;Masculino;8;Empório Du Homem;21282,55;4,41;18;15
+VIP;Continente Shopping;Masculino;9;C&A;19995,21;4,14;45;36
+VIP;Continente Shopping;Masculino;10;Renner;19371,3;4,02;57;47
+VIP;Garten Shopping;Feminino;1;Renner;153674,65;18,65;445;308
+VIP;Garten Shopping;Feminino;2;CVC;109101,56999999999;13,24;4;4
+VIP;Garten Shopping;Feminino;3;Le Lis Blanc;95338,05;11,57;59;54
+VIP;Garten Shopping;Feminino;4;IPLACE MOBILE;92990,84;11,29;24;19
+VIP;Garten Shopping;Feminino;5;Riachuelo;83179,14;10,1;228;176
+VIP;Garten Shopping;Feminino;6;Vivara ;68849,4;8,36;18;16
+VIP;Garten Shopping;Feminino;7;Maze Skate;60877,56;7,39;38;25
+VIP;Garten Shopping;Feminino;8;Havan;53540,03;6,5;161;124
+VIP;Garten Shopping;Feminino;9;Makenji;53314,4;6,47;43;33
+VIP;Garten Shopping;Feminino;10;Levi's;52947,17;6,43;68;57
+VIP;Garten Shopping;Masculino;1;Bergerson;252755,5;29,78;7;7
+VIP;Garten Shopping;Masculino;2;Vivara ;215673,27;25,41;46;42
+VIP;Garten Shopping;Masculino;3;Brooksfield;108821,32;12,82;31;27
+VIP;Garten Shopping;Masculino;4;Nxt;50670,0;5,97;6;5
+VIP;Garten Shopping;Masculino;5;IPLACE MOBILE;50155,41;5,91;11;8
+VIP;Garten Shopping;Masculino;6;CVC;43918,350000000006;5,17;5;5
+VIP;Garten Shopping;Masculino;7;Aramis Menswear;36658,0;4,32;19;17
+VIP;Garten Shopping;Masculino;8;Padrao Joinville Ltda;35132,2;4,14;11;11
+VIP;Garten Shopping;Masculino;9;Samsung;28220,0;3,32;7;6
+VIP;Garten Shopping;Masculino;10;Life Vivara;26818,4;3,16;17;14
+VIP;Nações Shopping;Feminino;1;Renner;85370,97;23,75;214;135
+VIP;Nações Shopping;Feminino;2;Colcci;56306,3;15,67;32;18
+VIP;Nações Shopping;Feminino;3;Vivara;50042,78;13,92;19;18
+VIP;Nações Shopping;Feminino;4;Luz da Lua;34480,25;9,59;32;29
+VIP;Nações Shopping;Feminino;5;Empório Du Homem;26275,41;7,31;17;16
+VIP;Nações Shopping;Feminino;6;C&A;26119,97;7,27;79;59
+VIP;Nações Shopping;Feminino;7;Samsung;23530,8;6,55;4;3
+VIP;Nações Shopping;Feminino;8;Békko;20633,2;5,74;11;10
+VIP;Nações Shopping;Feminino;9;Riachuelo;19553,100000000002;5,44;70;55
+VIP;Nações Shopping;Feminino;10;Calvin Klein e Tommy Hilfiger;17071,0;4,75;17;14
+VIP;Nações Shopping;Masculino;1;Vivara;57414,55;24,95;13;11
+VIP;Nações Shopping;Masculino;2;Empório Du Homem;38871,0;16,89;12;10
+VIP;Nações Shopping;Masculino;3;Samsung;37746,0;16,41;13;7
+VIP;Nações Shopping;Masculino;4;Békko;21332,73;9,27;10;10
+VIP;Nações Shopping;Masculino;5;Ortobom ;16569,03;7,2;2;2
+VIP;Nações Shopping;Masculino;6;Renner;15460,51;6,72;40;34
+VIP;Nações Shopping;Masculino;7;Essence Parfums;15108,28;6,57;24;9
+VIP;Nações Shopping;Masculino;8;Calvin Klein e Tommy Hilfiger;10564,0;4,59;6;6
+VIP;Nações Shopping;Masculino;9;Colcci;10168,0;4,42;3;2
+VIP;Nações Shopping;Masculino;10;Pandora;6853,15;2,98;5;1
+VIP;Neumarkt Shopping;Feminino;1;Renner;201720,65;18,14;614;410
+VIP;Neumarkt Shopping;Feminino;2;Vivara;161480,39;14,52;45;35
+VIP;Neumarkt Shopping;Feminino;3;Cvc Viagens;150085,93;13,5;18;15
+VIP;Neumarkt Shopping;Feminino;4;Le Lis ;121425,02;10,92;73;63
+VIP;Neumarkt Shopping;Feminino;5;Havan;109679,63;9,86;322;214
+VIP;Neumarkt Shopping;Feminino;6;Shoulder;103031,09;9,27;97;78
+VIP;Neumarkt Shopping;Feminino;7;Riachuelo;73823,89;6,64;254;192
+VIP;Neumarkt Shopping;Feminino;8;Luz da Lua;65212,65;5,86;64;55
+VIP;Neumarkt Shopping;Feminino;9;Life by Vivara;63775,6;5,74;67;57
+VIP;Neumarkt Shopping;Feminino;10;Anjos Colchões & Sofás;61750,009999999995;5,55;6;5
+VIP;Neumarkt Shopping;Masculino;1;Vivara;197589,7;27,77;37;35
+VIP;Neumarkt Shopping;Masculino;2;Brooksfield;96513,94;13,57;43;32
+VIP;Neumarkt Shopping;Masculino;3;Cvc Viagens;88394,16;12,42;9;7
+VIP;Neumarkt Shopping;Masculino;4;Vivo;66742,0;9,38;22;11
+VIP;Neumarkt Shopping;Masculino;5;Samsung;59886,0;8,42;8;8
+VIP;Neumarkt Shopping;Masculino;6;Baier Joalheria;55813,63;7,84;12;10
+VIP;Neumarkt Shopping;Masculino;7;Havan;43741,69;6,15;76;60
+VIP;Neumarkt Shopping;Masculino;8;Anjos Colchões & Sofás;37100,0;5,21;3;3
+VIP;Neumarkt Shopping;Masculino;9;Renner;34180,5;4,8;88;68
+VIP;Neumarkt Shopping;Masculino;10;Aramis;31524,36;4,43;17;13
+VIP;Norte Shopping;Feminino;1;Havan;61236,97;15,57;145;109
+VIP;Norte Shopping;Feminino;2;NXT Eletric;60540,0;15,4;8;8
+VIP;Norte Shopping;Feminino;3;CVC;60219,079999999994;15,31;5;5
+VIP;Norte Shopping;Feminino;4;Renner;42974,8;10,93;119;99
+VIP;Norte Shopping;Feminino;5;Magazine Luiza;36507,51;9,28;13;12
+VIP;Norte Shopping;Feminino;6;Atacadão;31751,11;8,07;195;93
+VIP;Norte Shopping;Feminino;7;Pittol;31085,760000000002;7,91;79;60
+VIP;Norte Shopping;Feminino;8;Samsung;26192,0;6,66;5;5
+VIP;Norte Shopping;Feminino;9;Casas Bahia;25593,02;6,51;12;10
+VIP;Norte Shopping;Feminino;10;Riachuelo;17130,99;4,36;76;63
+VIP;Norte Shopping;Masculino;1;NXT Eletric;177910,0;34,21;19;18
+VIP;Norte Shopping;Masculino;2;CVC;131059,06;25,2;11;10
+VIP;Norte Shopping;Masculino;3;Samsung;48495,0;9,33;7;7
+VIP;Norte Shopping;Masculino;4;Casas Bahia;43156,17;8,3;12;10
+VIP;Norte Shopping;Masculino;5;Magazine Luiza;36472,82;7,01;14;10
+VIP;Norte Shopping;Masculino;6;Atacadão;26863,51;5,17;88;39
+VIP;Norte Shopping;Masculino;7;Vivara;23565,0;4,53;8;8
+VIP;Norte Shopping;Masculino;8;Havan;14711,02;2,83;39;30
+VIP;Norte Shopping;Masculino;9;Boiko Joalheiros;9349,0;1,8;3;2
+VIP;Norte Shopping;Masculino;10;Claro;8411,2;1,62;2;1

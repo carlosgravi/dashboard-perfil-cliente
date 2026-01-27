@@ -1,0 +1,121 @@
+﻿shopping,perfil_historico,ranking,segmento,valor,pct_valor,cupons,clientes
+Balneário Shopping,Premium,1,Moda,48294.85,40.94,194,99
+Balneário Shopping,Premium,2,Beleza e Bem-estar,12577.67,10.66,50,35
+Balneário Shopping,Premium,3,Gastronomia,12402.77,10.51,179,69
+Balneário Shopping,Premium,4,Esportes,9475.68,8.03,26,25
+Balneário Shopping,Premium,5,Calçados,8378.1,7.1,33,25
+Balneário Shopping,Premium,6,Infantil,8243.1,6.99,42,33
+Balneário Shopping,Premium,7,Ótica,7983.95,6.77,14,6
+Balneário Shopping,Premium,8,Presentes e Acessórios,4846.25,4.11,22,18
+Balneário Shopping,Premium,9,Casa e Decoração,3188.4300000000003,2.7,8,8
+Balneário Shopping,Premium,10,Livrarias,2567.6,2.18,30,25
+Balneário Shopping,VIP,1,Moda,404506.5,42.91,859,407
+Balneário Shopping,VIP,2,Beleza e Bem-estar,89196.86,9.46,278,195
+Balneário Shopping,VIP,3,Gastronomia,83597.24,8.87,1060,329
+Balneário Shopping,VIP,4,Joalheria,83059.91,8.81,34,31
+Balneário Shopping,VIP,5,Moda Feminina,73177.73,7.76,43,33
+Balneário Shopping,VIP,6,Esportes,50494.91,5.36,119,89
+Balneário Shopping,VIP,7,Presentes e Acessórios,45431.979999999996,4.82,115,74
+Balneário Shopping,VIP,8,Infantil,44080.38,4.68,181,126
+Balneário Shopping,VIP,9,Calçados,39814.38,4.22,91,77
+Balneário Shopping,VIP,10,Casa e Decoração,29267.23,3.1,76,54
+Continente Shopping,Premium,1,Moda,84324.0,43.96,226,125
+Continente Shopping,Premium,2,Gastronomia,26944.93,14.05,505,161
+Continente Shopping,Premium,3,Telefonia,20246.14,10.56,8,6
+Continente Shopping,Premium,4,Esportes,17956.5,9.36,58,34
+Continente Shopping,Premium,5,Calçados,13799.5,7.19,53,45
+Continente Shopping,Premium,6,Beleza e Bem-estar,8140.63,4.24,76,56
+Continente Shopping,Premium,7,Não informado,6447.79,3.36,21,6
+Continente Shopping,Premium,8,Joalheria,5790.0,3.02,5,5
+Continente Shopping,Premium,9,Eletrodomésticos,4341.04,2.26,83,42
+Continente Shopping,Premium,10,Papelaria,3810.09,1.99,40,31
+Continente Shopping,VIP,1,Moda,272447.83,37.33,749,360
+Continente Shopping,VIP,2,Gastronomia,98573.17,13.5,1552,425
+Continente Shopping,VIP,3,Calçados,60536.67,8.29,171,114
+Continente Shopping,VIP,4,Eletrodomésticos,58299.97,7.99,263,151
+Continente Shopping,VIP,5,Joalheria,57735.85,7.91,31,26
+Continente Shopping,VIP,6,Beleza e Bem-estar,42495.89,5.82,247,171
+Continente Shopping,VIP,7,Esportes,41196.63,5.64,145,111
+Continente Shopping,VIP,8,Ótica,41146.56,5.64,18,12
+Continente Shopping,VIP,9,Telefonia,37772.9,5.18,22,10
+Continente Shopping,VIP,10,Farmácias,19698.89,2.7,155,117
+Garten Shopping,Premium,1,Moda,25269.01,39.89,118,64
+Garten Shopping,Premium,2,Gastronomia,7850.17,12.39,170,63
+Garten Shopping,Premium,3,Calçados,7333.16,11.58,21,20
+Garten Shopping,Premium,4,Joalheria,5909.0,9.33,2,2
+Garten Shopping,Premium,5,Casa e Decoração,4497.37,7.1,28,22
+Garten Shopping,Premium,6,Beleza e Bem-estar,4352.04,6.87,27,17
+Garten Shopping,Premium,7,Eletrodomésticos,2391.0,3.77,2,2
+Garten Shopping,Premium,8,Esportes,2294.88,3.62,6,6
+Garten Shopping,Premium,9,Infantil,2184.53,3.45,19,15
+Garten Shopping,Premium,10,Farmácias,1267.6,2.0,12,6
+Garten Shopping,VIP,1,Moda,129298.91,35.07,485,238
+Garten Shopping,VIP,2,Gastronomia,57805.36,15.68,936,295
+Garten Shopping,VIP,3,Joalheria,33385.39,9.06,27,21
+Garten Shopping,VIP,4,Beleza e Bem-estar,30787.47,8.35,118,87
+Garten Shopping,VIP,5,Calçados,30192.09,8.19,81,67
+Garten Shopping,VIP,6,Esportes,23161.82,6.28,67,57
+Garten Shopping,VIP,7,Casa e Decoração,19296.04,5.23,112,82
+Garten Shopping,VIP,8,Eletrodomésticos,18771.75,5.09,9,5
+Garten Shopping,VIP,9,Telefonia,13460.15,3.65,7,4
+Garten Shopping,VIP,10,Infantil,12493.22,3.39,76,52
+Nações Shopping,Premium,1,Moda,56851.11,48.21,169,81
+Nações Shopping,Premium,2,Gastronomia,21639.97,18.35,290,83
+Nações Shopping,Premium,3,Farmácias,10537.97,8.94,65,30
+Nações Shopping,Premium,4,Calçados,7811.889999999999,6.62,25,13
+Nações Shopping,Premium,5,Esportes,5294.650000000001,4.49,18,13
+Nações Shopping,Premium,6,Beleza e Bem-estar,3852.58,3.27,22,19
+Nações Shopping,Premium,7,Casa e Decoração,3439.35,2.92,21,15
+Nações Shopping,Premium,8,Hub da Saúde,3006.0,2.55,1,1
+Nações Shopping,Premium,9,Infantil,2826.96,2.4,12,11
+Nações Shopping,Premium,10,Joalheria,2659.5,2.26,5,4
+Nações Shopping,VIP,1,Moda,122245.86,43.34,340,158
+Nações Shopping,VIP,2,Gastronomia,57323.9,20.32,698,175
+Nações Shopping,VIP,3,Eletrônicos,21097.0,7.48,10,2
+Nações Shopping,VIP,4,Beleza e Bem-estar,15210.32,5.39,88,62
+Nações Shopping,VIP,5,Casa e Decoração,14080.89,4.99,73,49
+Nações Shopping,VIP,6,Esportes,13274.93,4.71,40,35
+Nações Shopping,VIP,7,Calçados,12436.03,4.41,39,31
+Nações Shopping,VIP,8,Farmácias,10667.58,3.78,71,56
+Nações Shopping,VIP,9,Joalheria,10297.97,3.65,6,6
+Nações Shopping,VIP,10,Pets,5404.17,1.92,49,37
+Neumarkt Shopping,Premium,1,Moda,45737.92,32.67,155,100
+Neumarkt Shopping,Premium,2,Gastronomia,27745.54,19.82,482,124
+Neumarkt Shopping,Premium,3,Esportes,16182.17,11.56,41,34
+Neumarkt Shopping,Premium,4,Calçados,9692.26,6.92,29,27
+Neumarkt Shopping,Premium,5,Casa e Decoração,9090.85,6.49,56,41
+Neumarkt Shopping,Premium,6,Infantil,8154.9400000000005,5.83,41,18
+Neumarkt Shopping,Premium,7,Moda Feminina,6878.2,4.91,4,4
+Neumarkt Shopping,Premium,8,Beleza e Bem-estar,6198.27,4.43,50,42
+Neumarkt Shopping,Premium,9,Eletrodomésticos,5592.49,4.0,124,49
+Neumarkt Shopping,Premium,10,Joalheria,4708.46,3.36,7,7
+Neumarkt Shopping,VIP,1,Moda,268993.1,30.82,749,405
+Neumarkt Shopping,VIP,2,Gastronomia,148670.56,17.03,2501,520
+Neumarkt Shopping,VIP,3,Beleza e Bem-estar,75263.33,8.62,381,250
+Neumarkt Shopping,VIP,4,Ótica,71514.02,8.19,31,21
+Neumarkt Shopping,VIP,5,Joalheria,69847.39,8.0,55,45
+Neumarkt Shopping,VIP,6,Calçados,66818.24,7.66,165,131
+Neumarkt Shopping,VIP,7,Casa e Decoração,59121.74,6.77,279,187
+Neumarkt Shopping,VIP,8,Esportes,55153.4,6.32,165,125
+Neumarkt Shopping,VIP,9,Moda Feminina,31596.72,3.62,43,37
+Neumarkt Shopping,VIP,10,Infantil,25825.29,2.96,124,98
+Norte Shopping,Premium,1,Moda,64967.85,28.96,182,108
+Norte Shopping,Premium,2,Supermercado,28814.18,12.85,208,76
+Norte Shopping,Premium,3,Casa e Decoração,25231.02,11.25,88,63
+Norte Shopping,Premium,4,Gastronomia,23295.47,10.39,471,109
+Norte Shopping,Premium,5,Eletrodomésticos,17703.01,7.89,77,56
+Norte Shopping,Premium,6,Calçados,17636.18,7.86,57,45
+Norte Shopping,Premium,7,Eletrônicos,14545.5,6.48,14,9
+Norte Shopping,Premium,8,Esportes,12900.79,5.75,51,40
+Norte Shopping,Premium,9,Joalheria,9858.4,4.39,12,8
+Norte Shopping,Premium,10,Telefonia,9363.07,4.17,20,15
+Norte Shopping,VIP,1,Moda,81167.89,22.96,243,134
+Norte Shopping,VIP,2,Casa e Decoração,53378.659999999996,15.1,171,103
+Norte Shopping,VIP,3,Eletrônicos,38748.1,10.96,23,12
+Norte Shopping,VIP,4,Supermercado,36602.93,10.35,259,109
+Norte Shopping,VIP,5,Eletrodomésticos,34190.66,9.67,132,71
+Norte Shopping,VIP,6,Telefonia,27483.469999999998,7.77,24,16
+Norte Shopping,VIP,7,Calçados,26233.43,7.42,85,66
+Norte Shopping,VIP,8,Gastronomia,23803.22,6.73,518,167
+Norte Shopping,VIP,9,Esportes,17232.4,4.87,55,44
+Norte Shopping,VIP,10,Beleza e Bem-estar,14730.08,4.17,128,76

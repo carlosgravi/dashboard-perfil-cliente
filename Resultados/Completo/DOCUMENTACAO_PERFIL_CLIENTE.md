@@ -69,12 +69,7 @@ Analisar o perfil demográfico e comportamental dos clientes de cada shopping da
 | Continente Shopping | CS | 53.052 | R$ 94.699.585 | R$ 1.785 | 5.306 | R$ 3.864 |
 | Norte Shopping | NR | 30.636 | R$ 43.005.957 | R$ 1.403 | 3.064 | R$ 3.013 |
 | Nações Shopping | NS | 25.012 | R$ 35.959.742 | R$ 1.437 | 2.502 | R$ 3.052 |
-| **TOTAL (por shopping)** | - | **271.110*** | **R$ 550.508.465** | **R$ 2.030** | **27.115*** | - |
-
-> **Nota:** Os totais por shopping incluem clientes que frequentam múltiplos shoppings.
-> - **Clientes Únicos:** 253.946 (cada pessoa contada uma vez)
-> - **High Spenders Únicos:** 25.397 (10% dos clientes únicos)
-> - **Diferença:** 17.164 clientes frequentam mais de 1 shopping
+| **TOTAL** | - | **271.110** | **R$ 550.508.465** | **R$ 2.030** | **27.115** | - |
 
 ### 4.2 Participação por Shopping
 
@@ -202,16 +197,9 @@ Isso demonstra a importância de estratégias de retenção e fidelização dess
 
 ## 10. Considerações Técnicas
 
-1. **Clientes únicos vs por shopping:** Um cliente pode aparecer em mais de um shopping.
-   - **Clientes por shopping:** 271.110 (soma com duplicação)
-   - **Clientes únicos:** 253.946 (cada pessoa contada uma vez)
-   - **Diferença:** 17.164 clientes frequentam mais de 1 shopping
+1. **Clientes únicos por shopping:** Um cliente pode aparecer em mais de um shopping. O total consolidado (271.110) é maior que o total de clientes únicos da base (253.946) devido a essa sobreposição.
 
-2. **High Spenders únicos vs por shopping:** Similar aos clientes, um cliente pode ser HS em múltiplos shoppings.
-   - **HS por shopping:** 27.115 (soma com duplicação)
-   - **HS únicos:** 25.397 (cada cliente contado uma vez)
-
-3. **Threshold de High Spender:** Calculado individualmente para cada shopping (top 10%), refletindo a realidade de consumo de cada unidade.
+2. **Threshold de High Spender:** Calculado individualmente para cada shopping, refletindo a realidade de consumo de cada unidade.
 
 3. **Dados não informados:** Percentual de idade e gênero não informados varia por shopping. Recomenda-se ações para melhorar a captação desses dados.
 
