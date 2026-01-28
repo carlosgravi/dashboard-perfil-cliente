@@ -817,8 +817,8 @@ elif pagina == "🎭 Personas":
     st.markdown('<p class="main-header">🎭 Personas de Clientes</p>', unsafe_allow_html=True)
 
     st.markdown("""
-    As **Personas** representam perfis comportamentais de clientes, agrupados por características
-    similares de consumo, frequência e valor gasto.
+    As **14 Personas** representam perfis comportamentais de clientes, classificados por regras baseadas em
+    gênero, faixa etária, nível de gasto (High Spender ou não) e frequência de compras.
     """)
 
     if modo_comparativo:
@@ -1647,10 +1647,14 @@ elif pagina == "🎯 RFV":
         st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
     st.markdown("""
-    A metodologia **RFV** classifica clientes com base em três dimensões:
-    - **R**ecência: Tempo desde a última compra
-    - **F**requência: Quantidade de compras no período
-    - **V**alor: Total gasto pelo cliente
+    A análise **RFV** segmenta clientes em **4 perfis** com base no **valor gasto**,
+    utilizando **faixas de valor fixas** (thresholds) para classificação:
+
+    - **Classificação Histórica:** baseada no valor total acumulado do cliente
+    - **Classificação por Período:** baseada no valor gasto no período selecionado
+
+    As métricas de **Recência** (dias desde a última compra) e **Frequência** (quantidade de compras)
+    são calculadas e disponibilizadas, mas a segmentação dos perfis é feita exclusivamente pelo **Valor**.
     """)
 
     # Constantes de configuração
@@ -2274,38 +2278,42 @@ elif pagina == "🎯 RFV":
             # Metodologia
             with st.expander("📖 Metodologia RFV"):
                 st.markdown("""
-                ### Classificação de Perfis
+                ### Método Aplicado
 
-                **Classificação Histórica (Valor Total Acumulado):**
-                | Perfil | Critério | Descrição |
-                |--------|----------|-----------|
-                | **VIP** | R$ 5.000+ | Clientes de altíssimo valor, responsáveis pela maior parte do faturamento |
-                | **Premium** | R$ 2.500 - R$ 4.999 | Clientes de alto valor com potencial de se tornarem VIP |
-                | **Potencial** | R$ 1.000 - R$ 2.499 | Clientes com bom potencial de crescimento |
+                A segmentação utiliza **faixas de valor fixas (thresholds)** para classificar cada cliente
+                em um dos 4 perfis. A classificação é baseada exclusivamente no **Valor** gasto.
+
+                As métricas de Recência (dias desde a última compra) e Frequência (quantidade de compras)
+                são calculadas e armazenadas por cliente, mas **não são utilizadas como critério de classificação**.
+
+                ### Classificação Histórica (Valor Total Acumulado)
+
+                | Perfil | Faixa de Valor | Descrição |
+                |--------|----------------|-----------|
+                | **VIP** | >= R$ 5.000 | Clientes de altíssimo valor, responsáveis pela maior parte do faturamento |
+                | **Premium** | R$ 2.500 a R$ 4.999 | Clientes de alto valor com potencial de se tornarem VIP |
+                | **Potencial** | R$ 1.000 a R$ 2.499 | Clientes com bom potencial de crescimento |
                 | **Pontual** | < R$ 1.000 | Clientes ocasionais ou novos |
 
-                **Classificação Por Período (Valor no Período):**
-                | Perfil | Critério | Descrição |
-                |--------|----------|-----------|
-                | **VIP** | R$ 2.000+ | Alto gasto no período selecionado |
-                | **Premium** | R$ 1.000 - R$ 1.999 | Gasto relevante no período |
-                | **Potencial** | R$ 500 - R$ 999 | Gasto moderado no período |
+                ### Classificação Por Período (Valor no Período Selecionado)
+
+                | Perfil | Faixa de Valor | Descrição |
+                |--------|----------------|-----------|
+                | **VIP** | >= R$ 2.000 | Alto gasto no período selecionado |
+                | **Premium** | R$ 1.000 a R$ 1.999 | Gasto relevante no período |
+                | **Potencial** | R$ 500 a R$ 999 | Gasto moderado no período |
                 | **Pontual** | < R$ 500 | Baixo gasto no período |
 
                 ### Quando usar cada classificação?
 
-                - **Histórica:** Para segmentação estratégica de longo prazo, identificação de clientes fiéis, programas de fidelidade.
-                - **Por Período:** Para campanhas táticas, análise de sazonalidade, ativação de clientes recentes.
+                - **Histórica:** Segmentação estratégica de longo prazo, identificação de clientes fiéis, programas de fidelidade.
+                - **Por Período:** Campanhas táticas, análise de sazonalidade, ativação de clientes recentes.
 
-                ### Score RFV
+                ### Cálculo do Ticket Médio
 
-                O score é composto por três dimensões (R1-R5, F1-F5, V1-V5):
-
-                - **Recência (R):** R5 = comprou há 0-7 dias, R1 = 60+ dias
-                - **Frequência (F):** F5 = 20+ compras/trimestre, F1 = 0-1 compra
-                - **Valor (V):** V5 = R$ 2.000+/trimestre, V1 = < R$ 200
-
-                **Exemplo:** Um cliente R5F4V5 comprou recentemente, com alta frequência e alto valor.
+                ```
+                Ticket Médio = Valor Total do Perfil / Quantidade de Clientes do Perfil
+                ```
                 """)
 
 # ============================================================================
@@ -3020,37 +3028,50 @@ elif pagina == "🤖 Assistente":
 
         with st.expander("❓ Como são definidas as Personas?", expanded=False):
             st.markdown("""
-            As **9 Personas** foram identificadas através de **análise de cluster (K-Means)** considerando:
+            As **14 Personas** foram identificadas através de **classificação baseada em regras** considerando:
 
-            - Valor total gasto
+            - Se o cliente é High Spender (top 10% de valor por shopping)
+            - Gênero e faixa etária
             - Frequência de compras
-            - Ticket médio
-            - Idade média
-            - Gênero predominante
+            - Segmento de consumo principal
+            - Valor total gasto (percentil 75 para Comprador Seletivo)
 
-            **Principais Personas:**
-            | Persona | % Clientes | Perfil |
-            |---------|------------|--------|
-            | Cliente Regular | 37,1% | Perfil diverso, não categorizado |
-            | Senior Tradicional | 11,4% | 55+ anos, baixa frequência |
-            | Jovem Explorer | 10,5% | Jovens <30, explorando marcas |
-            | Mãe Moderna | 9,3% | Mulheres 30-50, Moda/Infantil |
-            | Foodie | 8,8% | Alta freq. em Gastronomia |
-            | Beauty Lover | 3,4% | Mulheres, segmento Beleza |
-            | Fitness | 1,8% | Segmento Esportes |
+            **Personas High Spender (Top 10%):**
+            | Persona | Critério |
+            |---------|----------|
+            | Executiva Premium | Mulheres 40-54, High Spender |
+            | Executivo Exigente | Homens High Spender |
+            | Fashionista Premium | Mulheres 25-39 (ou <25), High Spender |
+            | Senior VIP | 55+ anos, High Spender |
+            | Cliente Premium | High Spender (outros) |
+
+            **Personas Regulares:**
+            | Persona | Critério |
+            |---------|----------|
+            | Jovem Engajado | < 30 anos, frequência >= 5 |
+            | Mãe Moderna | Mulheres 30-49, freq >= 3, Moda/Infantil/Calçados |
+            | Beauty Lover | Mulheres 25-54, freq >= 3, Beleza |
+            | Foodie | Freq >= 3, Gastronomia |
+            | Fitness | Freq >= 3, Esportes |
+            | Comprador Seletivo | Valor >= percentil 75, freq <= 3 |
+            | Senior Tradicional | 55+ anos |
+            | Jovem Explorer | < 30 anos |
+            | Cliente Regular | Demais clientes |
             """)
 
         with st.expander("❓ O que significa cada faixa etária?", expanded=False):
             st.markdown("""
-            As faixas etárias são baseadas nas **gerações**:
+            As faixas etárias são definidas por **intervalos fixos de idade**:
 
-            | Geração | Nascidos | Idade Atual |
-            |---------|----------|-------------|
-            | **Gen Z** | 1997-2012 | 14-29 anos |
-            | **Millennials** | 1981-1996 | 30-45 anos |
-            | **Gen X** | 1965-1980 | 46-61 anos |
-            | **Boomers** | 1946-1964 | 62-80 anos |
-            | **Silent** | Antes de 1946 | 81+ anos |
+            | Faixa | Idade | Geração Aproximada |
+            |-------|-------|-------------------|
+            | **16-24 (Gen Z)** | Menos de 25 anos | Geração Z |
+            | **25-39 (Millennials)** | 25 a 39 anos | Millennials |
+            | **40-54 (Gen X)** | 40 a 54 anos | Geração X |
+            | **55-69 (Boomers)** | 55 a 69 anos | Baby Boomers |
+            | **70+ (Silent)** | 70 anos ou mais | Geração Silenciosa |
+
+            A classificação é feita pela idade calculada a partir da data de nascimento do cliente.
             """)
 
         with st.expander("❓ Como é calculado o Ticket Médio?", expanded=False):
@@ -3398,13 +3419,13 @@ elif pagina == "📚 Documentação":
 
         **Por Faixa Etária:**
 
-        | Faixa | Geração | Nascidos |
-        |-------|---------|----------|
-        | Gen Z | 1997-2012 | 14-29 anos |
-        | Millennials | 1981-1996 | 30-45 anos |
-        | Gen X | 1965-1980 | 46-61 anos |
-        | Boomers | 1946-1964 | 62-80 anos |
-        | Silent | Antes de 1946 | 81+ anos |
+        | Faixa | Idade | Geração Aproximada |
+        |-------|-------|-------------------|
+        | Gen Z | Menos de 25 anos | Geração Z |
+        | Millennials | 25 a 39 anos | Millennials |
+        | Gen X | 40 a 54 anos | Geração X |
+        | Boomers | 55 a 69 anos | Baby Boomers |
+        | Silent | 70 anos ou mais | Geração Silenciosa |
 
         ### Métricas de Segmentos
 
@@ -3420,10 +3441,10 @@ elif pagina == "📚 Documentação":
 
         ### Comportamento Temporal
 
-        **Períodos do Dia:**
-        - Manhã: 6h às 12h
-        - Tarde: 12h às 18h
-        - Noite: 18h às 22h
+        **Períodos do Dia (baseados na hora da transação):**
+        - Manhã: 0h às 11:59
+        - Tarde: 12h às 17:59
+        - Noite: 18h às 23:59
 
         **Dias da Semana:**
         - Segunda a Domingo
@@ -3431,170 +3452,140 @@ elif pagina == "📚 Documentação":
 
     with tab3:
         st.markdown("""
-        ## Metodologia RFV (Recência, Frequência, Valor)
+        ## Análise RFV - Segmentação por Valor
 
-        A metodologia **RFV** é uma técnica de segmentação de clientes baseada em três dimensões
-        fundamentais do comportamento de compra:
+        A análise classifica clientes em **4 perfis** utilizando **faixas de valor fixas (thresholds)**.
 
-        ### As 3 Dimensões
+        ### Método Aplicado
 
-        | Dimensão | O que mede | Por que é importante |
-        |----------|-----------|----------------------|
-        | **R**ecência | Tempo desde a última compra | Clientes recentes têm maior probabilidade de comprar novamente |
-        | **F**requência | Quantidade de compras no período | Alta frequência indica engajamento e fidelidade |
-        | **V**alor | Total gasto pelo cliente | Identifica os clientes mais valiosos financeiramente |
+        A segmentação é baseada exclusivamente no **Valor** gasto pelo cliente.
+        As métricas de Recência (dias desde a última compra) e Frequência (quantidade de compras)
+        são calculadas e armazenadas, mas **não são utilizadas como critério de classificação**.
 
-        ---
-
-        ### Classificação de Perfis
-
-        Os clientes são classificados em **4 perfis** baseados no **Valor Histórico Total**:
-
-        | Perfil | Critério de Valor | Descrição | Estratégia Recomendada |
-        |--------|-------------------|-----------|------------------------|
-        | **🏆 VIP** | R$ 5.000+ | Altíssimo valor, responsáveis pela maior parte do faturamento | Retenção prioritária, benefícios exclusivos, atendimento personalizado |
-        | **⭐ Premium** | R$ 2.500 - R$ 4.999 | Alto valor com potencial de se tornarem VIP | Programas de upgrade, incentivos para aumentar ticket |
-        | **🎯 Potencial** | R$ 1.000 - R$ 2.499 | Bom potencial de crescimento | Campanhas de engajamento, cross-sell |
-        | **👤 Pontual** | < R$ 1.000 | Clientes ocasionais ou novos | Campanhas de ativação, conhecer melhor o perfil |
+        **Não é utilizado scoring por quintis (R1-R5, F1-F5, V1-V5).**
 
         ---
 
-        ### Score RFV Detalhado
+        ### Classificação Histórica (Valor Total Acumulado)
 
-        Cada dimensão recebe uma nota de 1 a 5:
+        | Perfil | Faixa de Valor | Descrição | Estratégia Recomendada |
+        |--------|----------------|-----------|------------------------|
+        | **VIP** | >= R$ 5.000 | Altíssimo valor, responsáveis pela maior parte do faturamento | Retenção prioritária, benefícios exclusivos |
+        | **Premium** | R$ 2.500 a R$ 4.999 | Alto valor com potencial de se tornarem VIP | Programas de upgrade, incentivos para aumentar ticket |
+        | **Potencial** | R$ 1.000 a R$ 2.499 | Bom potencial de crescimento | Campanhas de engajamento, cross-sell |
+        | **Pontual** | < R$ 1.000 | Clientes ocasionais ou novos | Campanhas de ativação |
 
-        **Recência (R1-R5) - Dias desde última compra:**
-        | Score | Critério | Interpretação |
-        |-------|----------|---------------|
-        | R5 | 0-7 dias | Comprou na última semana - muito ativo |
-        | R4 | 8-15 dias | Comprou nas últimas 2 semanas |
-        | R3 | 16-30 dias | Comprou no último mês |
-        | R2 | 31-60 dias | Comprou nos últimos 2 meses |
-        | R1 | 60+ dias | Não compra há mais de 2 meses - risco de churn |
+        ### Classificação por Período (Valor no Período Selecionado)
 
-        **Frequência (F1-F5) - Compras no trimestre:**
-        | Score | Critério | Interpretação |
-        |-------|----------|---------------|
-        | F5 | 20+ compras | Comprador muito frequente |
-        | F4 | 10-19 compras | Comprador frequente |
-        | F3 | 5-9 compras | Comprador regular |
-        | F2 | 2-4 compras | Comprador ocasional |
-        | F1 | 0-1 compra | Comprador raro |
-
-        **Valor (V1-V5) - Gasto no trimestre:**
-        | Score | Critério | Perfil Associado |
-        |-------|----------|------------------|
-        | V5 | R$ 2.000+ | VIP |
-        | V4 | R$ 1.000-1.999 | Premium |
-        | V3 | R$ 500-999 | Potencial |
-        | V2 | R$ 200-499 | Pontual |
-        | V1 | < R$ 200 | Pontual |
+        | Perfil | Faixa de Valor | Descrição |
+        |--------|----------------|-----------|
+        | **VIP** | >= R$ 2.000 | Alto gasto no período selecionado |
+        | **Premium** | R$ 1.000 a R$ 1.999 | Gasto relevante no período |
+        | **Potencial** | R$ 500 a R$ 999 | Gasto moderado no período |
+        | **Pontual** | < R$ 500 | Baixo gasto no período |
 
         ---
 
-        ### Exemplos de Interpretação
+        ### Métricas Calculadas por Cliente
 
-        | Score RFV | Interpretação | Ação Recomendada |
-        |-----------|---------------|------------------|
-        | **R5F5V5** | Cliente ideal - compra frequente, recente e de alto valor | Manter relacionamento, programa VIP |
-        | **R1F5V5** | Era muito bom mas parou de comprar | Campanha de reativação urgente! |
-        | **R5F1V1** | Comprou recentemente mas pouco | Conhecer melhor, oferecer produtos complementares |
-        | **R1F1V1** | Cliente distante | Avaliar custo/benefício de reativação |
+        | Métrica | Descrição | Uso na Classificação |
+        |---------|-----------|----------------------|
+        | **Valor Total** | Soma de todas as transações do cliente | Sim - critério de classificação |
+        | **Valor no Período** | Soma das transações no período selecionado | Sim - classificação por período |
+        | **Recência** | Dias desde a última compra até o final do período | Calculado, não usado na classificação |
+        | **Frequência** | Quantidade de transações no período | Calculado, não usado na classificação |
+        | **Ticket Médio** | Valor Total / Quantidade de Clientes | Exibido nos relatórios |
 
         ---
 
-        ### Princípio de Pareto Aplicado
+        ### Quando usar cada classificação?
 
-        A análise RFV confirma o **Princípio de Pareto** (80/20):
+        - **Histórica:** Segmentação estratégica de longo prazo, programas de fidelidade, identificação de clientes fiéis
+        - **Por Período:** Campanhas táticas, análise de sazonalidade, ativação de clientes recentes
+
+        ---
+
+        ### Princípio de Pareto
+
+        A análise confirma o **Princípio de Pareto** (80/20):
 
         > **~10% dos clientes (VIP + Premium) geram ~55% do faturamento**
 
-        Isso demonstra a importância de:
-        - Identificar e proteger os clientes de maior valor
-        - Investir em programas de retenção para VIPs
-        - Criar estratégias de upgrade para Potenciais
-
         ---
 
-        ### Arquivos RFV Disponíveis
+        ### Arquivos RFV Gerados por Período
 
         | Arquivo | Conteúdo |
         |---------|----------|
-        | `metricas_perfil_historico_v3.csv` | Métricas agregadas por perfil |
-        | `metricas_shopping_historico_v3.csv` | Métricas por shopping |
-        | `metricas_segmento_historico_v3.csv` | Métricas por segmento |
-        | `TOP10_SEGMENTOS_POR_PERFIL_SHOPPING.csv` | Top segmentos por perfil e shopping |
-        | `TOP10_LOJAS_POR_GENERO_SHOPPING_PERFIL.csv` | Top lojas por gênero, shopping e perfil |
+        | `metricas_perfil_historico.csv` | Métricas agregadas por perfil (classificação histórica) |
+        | `metricas_perfil_periodo.csv` | Métricas agregadas por perfil (classificação por período) |
+        | `metricas_shopping_rfv.csv` | Métricas por shopping com valor e ticket por perfil |
+        | `TOP10_SEGMENTOS_POR_PERFIL_SHOPPING.csv` | Top 10 segmentos por perfil e shopping |
+        | `TOP10_LOJAS_POR_GENERO_SHOPPING_PERFIL.csv` | Top 10 lojas por gênero, shopping e perfil |
+        | `resumo_rfv.csv` | Resumo geral do RFV |
         """)
 
     with tab4:
         st.markdown("""
         ## Personas de Clientes
 
-        As personas foram identificadas através de **análise de cluster (K-Means)** considerando:
-        - Valor total gasto
-        - Frequência de compras
-        - Ticket médio
-        - Idade
-        - Gênero
+        ### Método Aplicado
+
+        As personas foram identificadas através de **classificação baseada em regras (if/elif)**,
+        avaliando sequencialmente os seguintes critérios para cada cliente:
+
+        1. Se é **High Spender** (top 10% de valor por shopping) - classifica nas personas HS
+        2. **Gênero** e **faixa etária**
+        3. **Frequência de compras** (quantidade de transações)
+        4. **Segmento de consumo principal** (categoria da loja mais frequentada)
+        5. **Valor total gasto** (percentil 75 para Comprador Seletivo)
+
+        A classificação é **determinística e hierárquica**: cada cliente recebe a primeira persona
+        cujos critérios satisfaz, na ordem definida abaixo.
 
         ### 14 Personas Identificadas
 
-        **HIGH SPENDERS (Top 10%):**
-        | Persona | % Clientes | % Valor | Perfil |
-        |---------|------------|---------|--------|
-        | **Executiva Premium** | 3,2% | 16,7% | Mulheres 40-54, High Spender |
-        | **Executivo Exigente** | 2,7% | 12,9% | Homens High Spender |
-        | **Fashionista Premium** | 2,4% | 11,2% | Mulheres 25-39, High Spender |
-        | **Senior VIP** | 1,7% | 8,9% | 55+ anos, High Spender |
-        | **Cliente Premium** | 0,0% | 0,0% | High Spender (outros gêneros) |
+        **HIGH SPENDERS (Top 10% de valor por shopping):**
+        | Persona | Critério |
+        |---------|----------|
+        | **Fashionista Premium** | Mulheres < 25 ou 25-39, High Spender |
+        | **Executiva Premium** | Mulheres 40-54, High Spender |
+        | **Senior VIP** | 55+ anos, High Spender |
+        | **Executivo Exigente** | Homens, High Spender |
+        | **Cliente Premium** | High Spender (demais) |
 
-        **CLIENTES REGULARES (baseados em segmento + comportamento):**
-        | Persona | % Clientes | % Valor | Perfil |
-        |---------|------------|---------|--------|
-        | **Cliente Regular** | 37,1% | 15,4% | Perfil diverso, não categorizado |
-        | **Mãe Moderna** | 9,3% | 8,0% | Mulheres 30-50 + Moda/Infantil/Calçados |
-        | **Foodie** | 8,8% | 6,0% | Freq ≥3 + Gastronomia |
-        | **Senior Tradicional** | 11,4% | 5,7% | 55+ anos |
-        | **Comprador Seletivo** | 3,4% | 5,0% | Alto valor + baixa frequência |
-        | **Jovem Engajado** | 4,3% | 3,5% | <30 anos + freq ≥5 |
-        | **Jovem Explorer** | 10,5% | 3,1% | <30 anos |
-        | **Beauty Lover** | 3,4% | 2,3% | Mulheres 25-55 + Beleza |
-        | **Fitness** | 1,8% | 1,2% | Freq ≥3 + Esportes |
+        **CLIENTES REGULARES (avaliados nesta ordem):**
+        | Persona | Critério |
+        |---------|----------|
+        | **Jovem Engajado** | < 30 anos, frequência >= 5 |
+        | **Mãe Moderna** | Mulheres 30-49, freq >= 3, segmento Moda/Infantil/Calçados |
+        | **Beauty Lover** | Mulheres 25-54, freq >= 3, segmento Beleza |
+        | **Foodie** | Freq >= 3, segmento Gastronomia |
+        | **Fitness** | Freq >= 3, segmento Esportes |
+        | **Comprador Seletivo** | Valor >= percentil 75, freq <= 3 |
+        | **Senior Tradicional** | 55+ anos |
+        | **Jovem Explorer** | < 30 anos |
+        | **Cliente Regular** | Demais clientes (fallback) |
 
         ---
 
         ## High Spenders
 
         ### Definição
-        Um cliente é **High Spender** se está no **percentil 90** de gastos do seu shopping.
+        Um cliente é **High Spender** se está no **percentil 90** de valor total gasto no seu shopping.
+        O threshold é calculado **individualmente por shopping**.
 
         ### Cálculo
-        ```python
-        threshold = valor_por_cliente.quantile(0.90)
-        high_spenders = clientes[valor >= threshold]
+        ```
+        Para cada shopping:
+          threshold = percentil 90 do valor_total dos clientes daquele shopping
+          high_spender = cliente com valor_total >= threshold
         ```
 
-        ### Thresholds por Shopping
-
-        | Shopping | Threshold |
-        |----------|-----------|
-        | CS | R$ 5.800 |
-        | NK | R$ 5.177 |
-        | NR | R$ 4.299 |
-        | BS | R$ 4.000 |
-        | GS | R$ 3.266 |
-        | NS | R$ 3.129 |
-
-        ### Comparação HS vs Demais
-
-        | Métrica | High Spenders | Demais |
-        |---------|---------------|--------|
-        | % Clientes | 10% | 90% |
-        | % Valor | 50% | 50% |
-        | Ticket Médio | R$ 10.792 | R$ 1.209 |
-        | Freq. Média | 26,1x | 4,3x |
-        | % Feminino | 66,9% | 61,6% |
+        ### Observações
+        - Os thresholds variam por shopping conforme o perfil de consumo da região
+        - Um cliente é avaliado apenas no shopping onde mais compra (shopping preferido)
+        - Os valores dos thresholds são recalculados a cada atualização dos dados
         """)
 
     with tab5:
@@ -3606,7 +3597,7 @@ elif pagina == "📚 Documentação":
         | Arquivo | Descrição |
         |---------|-----------|
         | `resumo_por_shopping.csv` | Métricas consolidadas por shopping |
-        | `personas_clientes.csv` | 9 personas identificadas |
+        | `personas_clientes.csv` | 14 personas identificadas |
         | `comparacao_high_spenders.csv` | HS vs Demais Clientes |
         | `high_spenders_por_genero.csv` | HS por gênero |
         | `high_spenders_por_faixa.csv` | HS por faixa etária |
@@ -3619,6 +3610,17 @@ elif pagina == "📚 Documentação":
         | `comportamento_dia_semana.csv` | Dados por dia |
         | `consolidado_genero_por_shopping.csv` | Gênero por shopping |
         | `consolidado_faixa_etaria_por_shopping.csv` | Faixa por shopping |
+
+        ### Dados RFV (Resultados/RFV/)
+
+        | Arquivo | Descrição |
+        |---------|-----------|
+        | `metricas_perfil_historico.csv` | Classificação por valor total acumulado |
+        | `metricas_perfil_periodo.csv` | Classificação por valor do período |
+        | `metricas_shopping_rfv.csv` | Métricas RFV agregadas por shopping |
+        | `TOP10_SEGMENTOS_POR_PERFIL_SHOPPING.csv` | Top segmentos por perfil e shopping |
+        | `TOP10_LOJAS_POR_GENERO_SHOPPING_PERFIL.csv` | Top lojas por gênero, shopping e perfil |
+        | `resumo_rfv.csv` | Resumo geral da classificação RFV |
 
         ### Dados por Shopping (Resultados/Por_Shopping/{SIGLA}/)
 
@@ -3653,32 +3655,30 @@ elif pagina == "📚 Documentação":
         | **Ticket Médio** | Valor médio gasto por cliente (Valor Total / Clientes) |
         | **High Spender** | Cliente no top 10% de gastos do shopping |
         | **Threshold** | Valor mínimo para ser High Spender |
-        | **Persona** | Perfil comportamental de cliente baseado em cluster |
+        | **Persona** | Perfil comportamental de cliente baseado em regras hierárquicas (gênero, idade, gasto, frequência) |
         | **Frequência** | Número médio de compras por cliente |
         | **Segmento** | Categoria de produto/serviço da loja |
 
-        ### RFV (Recência, Frequência, Valor)
+        ### RFV (Classificação por Valor)
         | Termo | Definição |
         |-------|-----------|
-        | **RFV** | Metodologia de segmentação baseada em Recência, Frequência e Valor |
-        | **Recência** | Tempo (em dias) desde a última compra do cliente |
-        | **Score RFV** | Código composto (ex: R5F4V3) indicando comportamento do cliente |
-        | **VIP** | Perfil de cliente com valor histórico ≥ R$ 5.000 |
-        | **Premium** | Perfil de cliente com valor histórico entre R$ 2.500 e R$ 4.999 |
-        | **Potencial** | Perfil de cliente com valor histórico entre R$ 1.000 e R$ 2.499 |
-        | **Pontual** | Perfil de cliente com valor histórico < R$ 1.000 |
-        | **Churn** | Risco de perda do cliente (baixa recência) |
-        | **Reativação** | Estratégia para recuperar clientes inativos |
+        | **RFV** | Metodologia de segmentação baseada em faixas de valor de compra |
+        | **Classificação Histórica** | Perfil baseado no valor total acumulado do cliente |
+        | **Classificação por Período** | Perfil baseado no valor gasto no período selecionado |
+        | **VIP** | Perfil de cliente com valor histórico ≥ R$ 5.000 (ou ≥ R$ 2.000 no período) |
+        | **Premium** | Perfil de cliente com valor histórico R$ 2.500-R$ 4.999 (ou R$ 1.000-R$ 1.999 no período) |
+        | **Potencial** | Perfil de cliente com valor histórico R$ 1.000-R$ 2.499 (ou R$ 500-R$ 999 no período) |
+        | **Pontual** | Perfil de cliente com valor histórico < R$ 1.000 (ou < R$ 500 no período) |
 
         ### Faixas Etárias
         | Termo | Definição |
         |-------|-----------|
-        | **Faixa Etária** | Agrupamento de clientes por idade |
-        | **Gen Z** | Geração nascida entre 1997-2012 (16-24 anos) |
-        | **Millennials** | Geração nascida entre 1981-1996 (25-39 anos) |
-        | **Gen X** | Geração nascida entre 1965-1980 (40-54 anos) |
-        | **Boomers** | Geração nascida entre 1946-1964 (55-69 anos) |
-        | **Silent** | Geração nascida antes de 1946 (70+ anos) |
+        | **Faixa Etária** | Agrupamento de clientes por idade (calculada a partir da data de nascimento) |
+        | **Gen Z** | Menos de 25 anos |
+        | **Millennials** | 25 a 39 anos |
+        | **Gen X** | 40 a 54 anos |
+        | **Boomers** | 55 a 69 anos |
+        | **Silent** | 70 anos ou mais |
 
         ### Visualizações
         | Termo | Definição |
