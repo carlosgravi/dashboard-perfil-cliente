@@ -1,0 +1,2603 @@
+﻿cliente_id,valor_periodo,frequencia,recencia_dias,shopping_principal,genero,segmento_principal,R_score,F_score,V_score,score_total,perfil_quintis
+151,704.6,4,19,Norte Shopping,Masculino,Gastronomia,2,3,4,9,Potencial
+152,69.48,3,15,Garten Shopping,Feminino,Gastronomia,3,3,1,7,Potencial
+169,696.72,3,27,Continente Shopping,Masculino,Pets,1,3,4,8,Potencial
+195,157.2,1,29,Continente Shopping,Feminino,Moda,1,1,2,4,Pontual
+235,492.11,3,5,Continente Shopping,Masculino,Gastronomia,4,3,3,10,Premium
+241,1638.53,3,15,Balneário Shopping,Feminino,Gastronomia,3,3,5,11,Premium
+259,76.0,2,1,Neumarkt Shopping,Masculino,Gastronomia,5,2,1,8,Potencial
+277,390.14,4,21,Neumarkt Shopping,Feminino,Casa e Decoração,2,3,3,8,Potencial
+349,464.93,5,3,Norte Shopping,Masculino,Moda,4,4,3,11,Premium
+375,247.70000000000002,4,18,Garten Shopping,Feminino,Gastronomia,2,3,2,7,Potencial
+568,100.78999999999999,5,5,Neumarkt Shopping,Feminino,Gastronomia,4,4,1,9,Potencial
+649,551.05,17,0,Continente Shopping,Masculino,Gastronomia,5,5,3,13,VIP
+736,41.5,1,15,Norte Shopping,Masculino,Gastronomia,3,1,1,5,Pontual
+752,4261.88,49,0,Neumarkt Shopping,Masculino,Gastronomia,5,5,5,15,VIP
+878,167.8,2,12,Garten Shopping,Feminino,Livrarias,3,2,2,7,Potencial
+986,126.25,2,11,Nações Shopping,Feminino,Eletrodomésticos,3,2,2,7,Potencial
+1391,194.97,1,17,Nações Shopping,Feminino,Eletrodomésticos,2,1,2,5,Pontual
+1427,696.97,4,22,Continente Shopping,Feminino,Calçados,2,3,4,9,Potencial
+1941,379.0,1,2,Nações Shopping,Feminino,Esportes,5,1,3,9,Potencial
+2040,290.98,2,2,Balneário Shopping,Feminino,Moda,5,2,2,9,Potencial
+2213,1825.77,12,3,Norte Shopping,Masculino,Supermercado,4,5,5,14,VIP
+2363,233.93,2,24,Neumarkt Shopping,Feminino,Esportes,1,2,2,5,Pontual
+2374,9206.78,27,2,Neumarkt Shopping,Masculino,Gastronomia,5,5,5,15,VIP
+2542,3749.0,1,24,Neumarkt Shopping,Masculino,Moda,1,1,5,7,Potencial
+2600,902.8299999999999,5,1,Garten Shopping,Feminino,Beleza e Bem-estar,5,4,4,13,VIP
+2643,2492.16,11,1,Nações Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+2945,269.31,3,4,Garten Shopping,Feminino,Esportes,4,3,2,9,Potencial
+2955,223.95,3,0,Neumarkt Shopping,Feminino,Esportes,5,3,2,10,Premium
+3019,732.17,7,23,Nações Shopping,Masculino,Gastronomia,2,4,4,10,Premium
+3052,19.99,1,0,Garten Shopping,Feminino,Moda,5,1,1,7,Potencial
+3107,559.65,5,0,Balneário Shopping,Feminino,Moda,5,4,3,12,Premium
+3184,1944.18,15,6,Neumarkt Shopping,Feminino,Beleza e Bem-estar,4,5,5,14,VIP
+3428,1560.46,4,10,Nações Shopping,Feminino,Gastronomia,3,3,5,11,Premium
+3582,422.38,6,4,Continente Shopping,Feminino,Papelaria,4,4,3,11,Premium
+3765,898.88,3,30,Garten Shopping,Feminino,Gastronomia,1,3,4,8,Potencial
+3828,185.05,2,1,Neumarkt Shopping,Feminino,Gastronomia,5,2,2,9,Potencial
+3992,96.0,3,28,Garten Shopping,Masculino,Gastronomia,1,3,1,5,Pontual
+4042,579.55,3,29,Norte Shopping,Masculino,Casa e Decoração,1,3,3,7,Potencial
+4094,849.7,1,16,Nações Shopping,Feminino,Calçados,2,1,4,7,Potencial
+4141,530.76,3,14,Continente Shopping,Feminino,Gastronomia,3,3,3,9,Potencial
+4290,387.20000000000005,2,14,Neumarkt Shopping,Feminino,Esportes,3,2,3,8,Potencial
+4292,119.0,1,16,Neumarkt Shopping,Masculino,Casa e Decoração,2,1,1,4,Pontual
+4322,1276.25,6,1,Nações Shopping,Masculino,Gastronomia,5,4,5,14,VIP
+4384,2850.0,1,16,Continente Shopping,Feminino,Ótica,2,1,5,8,Potencial
+4449,1183.08,16,5,Continente Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+4623,2942.19,30,2,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+4624,1002.74,6,1,Nações Shopping,Feminino,Gastronomia,5,4,4,13,VIP
+4661,171.06,5,21,Nações Shopping,Feminino,Gastronomia,2,4,2,8,Potencial
+4682,564.9399999999999,11,3,Nações Shopping,Feminino,Gastronomia,4,5,3,12,Premium
+4683,577.5,4,19,Continente Shopping,Feminino,Gastronomia,2,3,3,8,Potencial
+4898,150.6,2,28,Balneário Shopping,Feminino,Gastronomia,1,2,2,5,Pontual
+5097,544.78,3,22,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,3,3,8,Potencial
+5114,366.78,4,8,Nações Shopping,Feminino,Esportes,4,3,3,10,Premium
+5123,452.8,2,23,Continente Shopping,Feminino,Gastronomia,2,2,3,7,Potencial
+5322,307.6,5,5,Neumarkt Shopping,Feminino,Gastronomia,4,4,3,11,Premium
+5685,258.7,4,1,Continente Shopping,Feminino,Gastronomia,5,3,2,10,Premium
+5737,560.2,2,1,Nações Shopping,Masculino,Moda,5,2,3,10,Premium
+5825,161.96,5,1,Continente Shopping,Feminino,Gastronomia,5,4,2,11,Premium
+6023,39.98,1,19,Continente Shopping,Feminino,Moda,2,1,1,4,Pontual
+6058,1983.17,13,4,Neumarkt Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+6122,121.3,2,15,Norte Shopping,Masculino,Gastronomia,3,2,1,6,Pontual
+6380,173.48000000000002,5,1,Neumarkt Shopping,Masculino,Casa e Decoração,5,4,2,11,Premium
+6652,633.54,3,28,Neumarkt Shopping,Masculino,Casa e Decoração,1,3,4,8,Potencial
+6706,416.94,3,20,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,3,3,8,Potencial
+7640,172.74,2,21,Nações Shopping,Feminino,Casa e Decoração,2,2,2,6,Pontual
+7676,1967.03,16,27,Continente Shopping,Feminino,Gastronomia,1,5,5,11,Premium
+7691,363.6,5,7,Garten Shopping,Masculino,Moda,4,4,3,11,Premium
+7789,902.39,8,2,Continente Shopping,Masculino,Gastronomia,5,5,4,14,VIP
+7928,173.26,1,5,Nações Shopping,Feminino,Gastronomia,4,1,2,7,Potencial
+8001,1304.1000000000001,16,2,Neumarkt Shopping,Feminino,Moda,5,5,5,15,VIP
+8273,1190.6,5,9,Continente Shopping,Feminino,Beleza e Bem-estar,3,4,5,12,Premium
+8640,83.37,2,24,Continente Shopping,Feminino,Eletrodomésticos,1,2,1,4,Pontual
+8723,397.9,4,22,Neumarkt Shopping,Masculino,Gastronomia,2,3,3,8,Potencial
+8849,372.36,2,24,Nações Shopping,Feminino,Beleza e Bem-estar,1,2,3,6,Pontual
+8859,890.87,2,14,Continente Shopping,Feminino,Farmácias,3,2,4,9,Potencial
+8892,9601.630000000001,11,6,Balneário Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+8920,433.24,3,3,Nações Shopping,Feminino,Beleza e Bem-estar,4,3,3,10,Premium
+9000,2044.6499999999999,19,1,Neumarkt Shopping,Feminino,Casa e Decoração,5,5,5,15,VIP
+9129,1084.58,20,2,Continente Shopping,Masculino,Gastronomia,5,5,4,14,VIP
+9145,1131.23,6,13,Norte Shopping,Feminino,Supermercado,3,4,4,11,Premium
+9273,544.32,3,17,Nações Shopping,Feminino,Beleza e Bem-estar,2,3,3,8,Potencial
+9497,1500.01,11,1,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+10059,226.0,1,9,Norte Shopping,Feminino,Gastronomia,3,1,2,6,Pontual
+10061,51.47,1,30,Neumarkt Shopping,Masculino,Pets,1,1,1,3,Pontual
+10401,55.4,3,13,Nações Shopping,Feminino,Gastronomia,3,3,1,7,Potencial
+10493,176.0,1,20,Continente Shopping,Feminino,Calçados,2,1,2,5,Pontual
+10858,696.71,2,19,Norte Shopping,Feminino,Joalheria,2,2,4,8,Potencial
+10913,308.0,4,6,Garten Shopping,Feminino,Gastronomia,4,3,3,10,Premium
+11021,1545.1599999999999,4,1,Nações Shopping,Feminino,Moda,5,3,5,13,VIP
+11272,1154.47,3,2,Neumarkt Shopping,Masculino,Casa e Decoração,5,3,4,12,Premium
+11563,595.53,8,1,Neumarkt Shopping,Masculino,Gastronomia,5,5,4,14,VIP
+11803,270.58,8,2,Continente Shopping,Feminino,Gastronomia,5,5,2,12,Premium
+12023,616.35,8,6,Balneário Shopping,Masculino,Gastronomia,4,5,4,13,VIP
+12417,199.9,4,27,Continente Shopping,Masculino,Gastronomia,1,3,2,6,Pontual
+12531,659.78,2,18,Nações Shopping,Masculino,Moda,2,2,4,8,Potencial
+12681,1163.06,13,1,Neumarkt Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+12714,1432.8600000000001,10,3,Nações Shopping,Masculino,Gastronomia,4,5,5,14,VIP
+12838,462.89,3,22,Garten Shopping,Feminino,Gastronomia,2,3,3,8,Potencial
+12885,80.32,1,29,Nações Shopping,Masculino,Gastronomia,1,1,1,3,Pontual
+12970,1272.19,5,8,Neumarkt Shopping,Feminino,Beleza e Bem-estar,4,4,5,13,VIP
+13041,462.0,1,16,Balneário Shopping,Feminino,Beleza e Bem-estar,2,1,3,6,Pontual
+13291,2860.86,9,9,Continente Shopping,Masculino,Gastronomia,3,5,5,13,VIP
+13330,945.18,12,3,Neumarkt Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+13332,637.64,8,14,Neumarkt Shopping,Feminino,Serviços,3,5,4,12,Premium
+13428,194.70000000000002,3,2,Continente Shopping,Feminino,Gastronomia,5,3,2,10,Premium
+13457,118.49,4,9,Continente Shopping,Masculino,Gastronomia,3,3,1,7,Potencial
+13633,146.87,1,14,Nações Shopping,Feminino,Casa e Decoração,3,1,2,6,Pontual
+13824,456.78,16,0,Neumarkt Shopping,Feminino,Gastronomia,5,5,3,13,VIP
+13983,649.4,2,2,Balneário Shopping,Feminino,Moda,5,2,4,11,Premium
+14350,220.57999999999998,2,12,Neumarkt Shopping,Masculino,Esportes,3,2,2,7,Potencial
+14376,535.85,9,1,Nações Shopping,Masculino,Gastronomia,5,5,3,13,VIP
+14544,145.69,2,28,Garten Shopping,Feminino,Papelaria,1,2,2,5,Pontual
+14691,296.51,2,28,Garten Shopping,Feminino,Beleza e Bem-estar,1,2,3,6,Pontual
+14722,467.87,3,16,Garten Shopping,Feminino,Moda,2,3,3,8,Potencial
+14780,369.48,2,28,Garten Shopping,Feminino,Moda,1,2,3,6,Pontual
+14815,70.4,2,1,Garten Shopping,Feminino,Gastronomia,5,2,1,8,Potencial
+14836,29.0,1,15,Garten Shopping,Feminino,Gastronomia,3,1,1,5,Pontual
+15202,55.8,2,0,Neumarkt Shopping,Masculino,Casa e Decoração,5,2,1,8,Potencial
+15309,221.73,3,5,Garten Shopping,Feminino,Farmácias,4,3,2,9,Potencial
+15397,591.9,2,19,Neumarkt Shopping,Feminino,Livrarias,2,2,4,8,Potencial
+15432,39.0,1,3,Balneário Shopping,Masculino,Gastronomia,4,1,1,6,Pontual
+15570,1538.8400000000001,7,13,Continente Shopping,Feminino,Moda,3,4,5,12,Premium
+15599,702.37,5,28,Garten Shopping,Feminino,Gastronomia,1,4,4,9,Potencial
+15600,221.3,1,4,Nações Shopping,Feminino,Moda,4,1,2,7,Potencial
+15722,1520.87,4,7,Balneário Shopping,Feminino,Beleza e Bem-estar,4,3,5,12,Premium
+15775,558.0,2,9,Balneário Shopping,Feminino,Gastronomia,3,2,3,8,Potencial
+16234,2540.67,4,19,Neumarkt Shopping,Feminino,Moda,2,3,5,10,Premium
+16385,1.0,1,22,Balneário Shopping,Masculino,Moda,2,1,1,4,Pontual
+16544,39.5,1,29,Nações Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+17039,1003.77,7,5,Norte Shopping,Feminino,Gastronomia,4,4,4,12,Premium
+17194,313.95,1,28,Nações Shopping,Masculino,Moda,1,1,3,5,Pontual
+17281,193.3,4,9,Continente Shopping,Feminino,Gastronomia,3,3,2,8,Potencial
+17440,60.33,1,19,Continente Shopping,Masculino,Gastronomia,2,1,1,4,Pontual
+18497,467.40000000000003,2,19,Neumarkt Shopping,Feminino,Gastronomia,2,2,3,7,Potencial
+18973,2028.5,10,14,Balneário Shopping,Feminino,Moda,3,5,5,13,VIP
+19101,58.98,1,29,Neumarkt Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+19304,1769.98,8,6,Continente Shopping,Feminino,Moda,4,5,5,14,VIP
+19368,975.62,7,19,Garten Shopping,Feminino,Infantil,2,4,4,10,Premium
+19532,173.68,3,26,Neumarkt Shopping,Feminino,Calçados,1,3,2,6,Pontual
+19666,766.53,2,15,Garten Shopping,Feminino,Moda,3,2,4,9,Potencial
+19743,189.99,1,3,Balneário Shopping,Feminino,Moda,4,1,2,7,Potencial
+19800,214.6,2,7,Continente Shopping,Feminino,Beleza e Bem-estar,4,2,2,8,Potencial
+19837,1214.39,5,16,Balneário Shopping,Masculino,Beleza e Bem-estar,2,4,5,11,Premium
+19839,2683.27,14,8,Neumarkt Shopping,Feminino,Moda,4,5,5,14,VIP
+19869,339.56,8,12,Neumarkt Shopping,Feminino,Gastronomia,3,5,3,11,Premium
+19894,121.19999999999999,5,11,Neumarkt Shopping,Feminino,Moda,3,4,1,8,Potencial
+19940,1298.6,4,2,Neumarkt Shopping,Feminino,Calçados,5,3,5,13,VIP
+20019,259.89,2,21,Garten Shopping,Masculino,Moda,2,2,2,6,Pontual
+20034,741.59,3,2,Balneário Shopping,Feminino,Farmácias,5,3,4,12,Premium
+20188,496.28999999999996,6,3,Neumarkt Shopping,Feminino,Gastronomia,4,4,3,11,Premium
+20239,44.0,1,13,Continente Shopping,Masculino,Gastronomia,3,1,1,5,Pontual
+20324,479.1,4,10,Nações Shopping,Feminino,Beleza e Bem-estar,3,3,3,9,Potencial
+20537,182.06,4,1,Garten Shopping,Feminino,Livrarias,5,3,2,10,Premium
+20643,152.3,5,8,Balneário Shopping,Feminino,Gastronomia,4,4,2,10,Premium
+20765,767.84,1,10,Neumarkt Shopping,Masculino,Moda,3,1,4,8,Potencial
+20797,267.88,2,16,Neumarkt Shopping,Feminino,Eletrodomésticos,2,2,2,6,Pontual
+20901,844.9300000000001,3,20,Balneário Shopping,Feminino,Casa e Decoração,2,3,4,9,Potencial
+20912,3189.1,5,18,Balneário Shopping,Feminino,Beleza e Bem-estar,2,4,5,11,Premium
+20919,312.7,3,22,Neumarkt Shopping,Feminino,Moda,2,3,3,8,Potencial
+20948,239.0,1,25,Balneário Shopping,Feminino,Moda,1,1,2,4,Pontual
+21180,1380.93,5,22,Neumarkt Shopping,Masculino,Beleza e Bem-estar,2,4,5,11,Premium
+21239,976.48,7,10,Norte Shopping,Feminino,Casa e Decoração,3,4,4,11,Premium
+21331,1353.18,4,16,Neumarkt Shopping,Masculino,Gastronomia,2,3,5,10,Premium
+21433,1035.68,4,13,Neumarkt Shopping,Feminino,Eletrodomésticos,3,3,4,10,Premium
+21460,4264.56,17,2,Balneário Shopping,Feminino,Moda,5,5,5,15,VIP
+21499,24.9,1,3,Neumarkt Shopping,Feminino,Gastronomia,4,1,1,6,Pontual
+21509,355.68,2,28,Neumarkt Shopping,Masculino,Eletrodomésticos,1,2,3,6,Pontual
+21552,647.77,6,4,Neumarkt Shopping,Feminino,Beleza e Bem-estar,4,4,4,12,Premium
+21699,900.61,8,17,Neumarkt Shopping,Feminino,Farmácias,2,5,4,11,Premium
+21726,789.99,7,15,Neumarkt Shopping,Feminino,Gastronomia,3,4,4,11,Premium
+21790,456.98,5,19,Neumarkt Shopping,Feminino,Serviços,2,4,3,9,Potencial
+21799,311.75,7,25,Neumarkt Shopping,Feminino,Gastronomia,1,4,3,8,Potencial
+21858,158.8,6,0,Neumarkt Shopping,Masculino,Gastronomia,5,4,2,11,Premium
+21877,162.9,2,17,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,2,2,6,Pontual
+22175,1725.99,15,30,Neumarkt Shopping,Feminino,Gastronomia,1,5,5,11,Premium
+22208,128.64000000000001,5,5,Nações Shopping,Feminino,Gastronomia,4,4,2,10,Premium
+22224,1162.4,7,10,Garten Shopping,Masculino,Moda,3,4,4,11,Premium
+22387,198.7,5,1,Neumarkt Shopping,Feminino,Gastronomia,5,4,2,11,Premium
+22426,248.12,2,1,Neumarkt Shopping,Masculino,Infantil,5,2,2,9,Potencial
+22597,6369.98,14,11,Balneário Shopping,Feminino,Casa e Decoração,3,5,5,13,VIP
+22738,1361.77,6,23,Neumarkt Shopping,Feminino,Moda,2,4,5,11,Premium
+22917,1593.38,5,1,Neumarkt Shopping,Feminino,Moda,5,4,5,14,VIP
+23018,1543.45,7,11,Neumarkt Shopping,Feminino,Casa e Decoração,3,4,5,12,Premium
+23242,732.89,3,23,Norte Shopping,Feminino,Casa e Decoração,2,3,4,9,Potencial
+23310,1900.94,5,0,Neumarkt Shopping,Feminino,Moda,5,4,5,14,VIP
+23434,74.0,1,29,Balneário Shopping,Feminino,Infantil,1,1,1,3,Pontual
+23483,76.0,1,19,Balneário Shopping,Feminino,Calçados,2,1,1,4,Pontual
+23659,139.89,2,22,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,2,2,6,Pontual
+23676,274.0,2,19,Balneário Shopping,Masculino,Infantil,2,2,2,6,Pontual
+23749,616.69,5,9,Continente Shopping,Masculino,Gastronomia,3,4,4,11,Premium
+23799,369.87,3,27,Neumarkt Shopping,Feminino,Casa e Decoração,1,3,3,7,Potencial
+23806,3627.55,42,0,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+23933,395.6,4,15,Neumarkt Shopping,Feminino,Beleza e Bem-estar,3,3,3,9,Potencial
+23971,1041.84,4,19,Neumarkt Shopping,Feminino,Gastronomia,2,3,4,9,Potencial
+24098,5705.78,7,2,Balneário Shopping,Masculino,Gastronomia,5,4,5,14,VIP
+24210,120.49,2,15,Nações Shopping,Masculino,Farmácias,3,2,1,6,Pontual
+24600,792.6800000000001,9,22,Neumarkt Shopping,Masculino,Papelaria,2,5,4,11,Premium
+24920,3583.61,6,1,Neumarkt Shopping,Masculino,Beleza e Bem-estar,5,4,5,14,VIP
+24936,17.97,1,6,Continente Shopping,Masculino,Esportes,4,1,1,6,Pontual
+25044,91.09,2,0,Norte Shopping,Feminino,Serviços,5,2,1,8,Potencial
+25441,309.61,5,10,Norte Shopping,Feminino,Supermercado,3,4,3,10,Premium
+25476,36.0,1,24,Continente Shopping,Feminino,Infantil,1,1,1,3,Pontual
+25720,344.4,3,0,Neumarkt Shopping,Masculino,Beleza e Bem-estar,5,3,3,11,Premium
+25734,138.99,5,6,Neumarkt Shopping,Masculino,Gastronomia,4,4,2,10,Premium
+25973,133.98000000000002,3,2,Neumarkt Shopping,Feminino,Beleza e Bem-estar,5,3,2,10,Premium
+26054,1080.03,7,17,Neumarkt Shopping,Feminino,Gastronomia,2,4,4,10,Premium
+26095,14.9,1,26,Norte Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+26103,101.92,1,15,Neumarkt Shopping,Feminino,Moda,3,1,1,5,Pontual
+26151,635.55,8,3,Neumarkt Shopping,Masculino,Gastronomia,4,5,4,13,VIP
+26193,940.36,8,2,Garten Shopping,Feminino,Farmácias,5,5,4,14,VIP
+26373,1652.84,10,4,Neumarkt Shopping,Feminino,Esportes,4,5,5,14,VIP
+26845,179.0,1,27,Norte Shopping,Feminino,Moda,1,1,2,4,Pontual
+27168,3394.5099999999998,10,2,Neumarkt Shopping,Masculino,Gastronomia,5,5,5,15,VIP
+27302,346.63,2,2,Balneário Shopping,Feminino,Gastronomia,5,2,3,10,Premium
+27431,5172.2,8,13,Balneário Shopping,Feminino,Moda,3,5,5,13,VIP
+27452,50.7,1,2,Balneário Shopping,Masculino,Gastronomia,5,1,1,7,Potencial
+27699,359.6,2,2,Neumarkt Shopping,Feminino,Moda,5,2,3,10,Premium
+27745,2146.9,35,0,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+27869,589.29,2,1,Neumarkt Shopping,Feminino,Moda,5,2,4,11,Premium
+27893,147.75,2,21,Continente Shopping,Feminino,Gastronomia,2,2,2,6,Pontual
+28022,529.96,1,20,Neumarkt Shopping,Feminino,Moda,2,1,3,6,Pontual
+28284,163.11,1,16,Neumarkt Shopping,Feminino,Gastronomia,2,1,2,5,Pontual
+28505,214.51,3,23,Continente Shopping,Feminino,Eletrodomésticos,2,3,2,7,Potencial
+28565,152.24,1,2,Neumarkt Shopping,Feminino,Gastronomia,5,1,2,8,Potencial
+28760,251.06,5,3,Neumarkt Shopping,Feminino,Beleza e Bem-estar,4,4,2,10,Premium
+29013,600.84,6,14,Balneário Shopping,Feminino,Livrarias,3,4,4,11,Premium
+29080,433.29999999999995,2,20,Continente Shopping,Masculino,Gastronomia,2,2,3,7,Potencial
+29157,598.65,10,5,Neumarkt Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+29244,106.63,2,16,Neumarkt Shopping,Feminino,Eletrodomésticos,2,2,1,5,Pontual
+29417,6304.0,2,7,Balneário Shopping,Feminino,Beleza e Bem-estar,4,2,5,11,Premium
+29585,209.8,1,18,Garten Shopping,Feminino,Beleza e Bem-estar,2,1,2,5,Pontual
+29615,385.12,5,14,Balneário Shopping,Feminino,Esportes,3,4,3,10,Premium
+29893,294.19,5,21,Neumarkt Shopping,Masculino,Gastronomia,2,4,3,9,Potencial
+29989,26.99,1,26,Norte Shopping,Masculino,Gastronomia,1,1,1,3,Pontual
+30246,1140.98,8,6,Nações Shopping,Masculino,Gastronomia,4,5,4,13,VIP
+30362,495.29,6,14,Balneário Shopping,Feminino,Gastronomia,3,4,3,10,Premium
+30566,789.79,2,30,Nações Shopping,Feminino,Moda,1,2,4,7,Potencial
+30622,999.0,1,13,Neumarkt Shopping,Feminino,Beleza e Bem-estar,3,1,4,8,Potencial
+30783,1200.76,9,3,Garten Shopping,Feminino,Moda,4,5,5,14,VIP
+30899,382.37,6,23,Neumarkt Shopping,Feminino,Gastronomia,2,4,3,9,Potencial
+30935,44.0,1,21,Norte Shopping,Masculino,Supermercado,2,1,1,4,Pontual
+31257,785.3,3,19,Neumarkt Shopping,Feminino,Eletrônicos,2,3,4,9,Potencial
+31270,89.9,1,4,Garten Shopping,Feminino,Telefonia,4,1,1,6,Pontual
+31317,35.0,1,18,Garten Shopping,Masculino,Papelaria,2,1,1,4,Pontual
+31383,733.15,11,0,Neumarkt Shopping,Masculino,Gastronomia,5,5,4,14,VIP
+31450,193.29000000000002,3,27,Continente Shopping,Feminino,Gastronomia,1,3,2,6,Pontual
+31476,1093.71,2,7,Nações Shopping,Feminino,Gastronomia,4,2,4,10,Premium
+31540,981.3,5,1,Neumarkt Shopping,Feminino,Beleza e Bem-estar,5,4,4,13,VIP
+31609,1319.66,22,3,Neumarkt Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+31683,1196.98,1,1,Norte Shopping,Feminino,Beleza e Bem-estar,5,1,5,11,Premium
+32756,1083.84,12,9,Neumarkt Shopping,Feminino,Beleza e Bem-estar,3,5,4,12,Premium
+32825,46.5,2,21,Nações Shopping,Masculino,Gastronomia,2,2,1,5,Pontual
+32921,62.989999999999995,3,18,Norte Shopping,Feminino,Gastronomia - Sorvetes,2,3,1,6,Pontual
+33140,5070.69,9,6,Balneário Shopping,Feminino,Moda,4,5,5,14,VIP
+33143,1199.7,1,4,Balneário Shopping,Masculino,Moda,4,1,5,10,Premium
+33243,392.1,4,14,Neumarkt Shopping,Feminino,Beleza e Bem-estar,3,3,3,9,Potencial
+33314,20.0,1,12,Neumarkt Shopping,Masculino,Gastronomia,3,1,1,5,Pontual
+33489,89.0,1,11,Balneário Shopping,Masculino,Gastronomia,3,1,1,5,Pontual
+33558,546.77,15,2,Neumarkt Shopping,Feminino,Gastronomia,5,5,3,13,VIP
+33817,245.89999999999998,5,17,Norte Shopping,Masculino,Serviços,2,4,2,8,Potencial
+33839,700.17,11,5,Neumarkt Shopping,Feminino,Eletrodomésticos,4,5,4,13,VIP
+34799,1427.73,4,26,Balneário Shopping,Feminino,Moda,1,3,5,9,Potencial
+34860,79.0,1,27,Neumarkt Shopping,Feminino,Moda,1,1,1,3,Pontual
+35026,2668.07,9,1,Balneário Shopping,Feminino,Moda,5,5,5,15,VIP
+35042,3660.0,2,11,Neumarkt Shopping,Masculino,Joalheria,3,2,5,10,Premium
+35429,669.9,1,7,Balneário Shopping,Masculino,Presentes e Acessórios,4,1,4,9,Potencial
+36848,1669.5700000000002,4,18,Balneário Shopping,Feminino,Infantil,2,3,5,10,Premium
+37043,465.8,1,2,Balneário Shopping,Feminino,Moda,5,1,3,9,Potencial
+37165,105.7,1,10,Norte Shopping,Masculino,Gastronomia,3,1,1,5,Pontual
+37282,49.9,1,28,Nações Shopping,Feminino,Beleza e Bem-estar,1,1,1,3,Pontual
+37452,2501.1,3,2,Balneário Shopping,Feminino,Beleza e Bem-estar,5,3,5,13,VIP
+37770,309.98,1,16,Neumarkt Shopping,Feminino,Casa e Decoração,2,1,3,6,Pontual
+37919,96.0,2,9,Balneário Shopping,Masculino,Gastronomia,3,2,1,6,Pontual
+38073,1920.1100000000001,13,0,Balneário Shopping,Masculino,Gastronomia,5,5,5,15,VIP
+38243,592.89,8,6,Continente Shopping,Feminino,Moda,4,5,4,13,VIP
+38461,5336.1,16,3,Neumarkt Shopping,Feminino,Eletrodomésticos,4,5,5,14,VIP
+38701,199.0,1,11,Norte Shopping,Feminino,Calçados,3,1,2,6,Pontual
+38767,121.27,3,28,Continente Shopping,Feminino,Gastronomia,1,3,1,5,Pontual
+39089,79.9,1,9,Nações Shopping,Feminino,Moda,3,1,1,5,Pontual
+39841,389.87,2,8,Neumarkt Shopping,Feminino,Beleza e Bem-estar,4,2,3,9,Potencial
+40111,196.66,4,13,Balneário Shopping,Feminino,Gastronomia,3,3,2,8,Potencial
+40200,839.71,2,20,Garten Shopping,Feminino,Casa e Decoração,2,2,4,8,Potencial
+40284,380.63,10,1,Balneário Shopping,Feminino,Gastronomia,5,5,3,13,VIP
+40339,624.07,9,3,Continente Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+40517,320.1,1,23,Neumarkt Shopping,Masculino,Gastronomia,2,1,3,6,Pontual
+40522,239.92,1,29,Nações Shopping,Masculino,Casa e Decoração,1,1,2,4,Pontual
+40620,979.0999999999999,3,24,Continente Shopping,Feminino,Moda,1,3,4,8,Potencial
+40723,130.69,4,19,Neumarkt Shopping,Feminino,Gastronomia,2,3,2,7,Potencial
+40861,574.1600000000001,4,20,Continente Shopping,Feminino,Moda,2,3,3,8,Potencial
+41029,1766.04,13,0,Balneário Shopping,Masculino,Gastronomia,5,5,5,15,VIP
+41113,1190.9,3,2,Balneário Shopping,Feminino,Gastronomia,5,3,5,13,VIP
+41148,205.07,1,22,Balneário Shopping,Masculino,Gastronomia,2,1,2,5,Pontual
+41232,945.06,2,4,Balneário Shopping,Feminino,Gastronomia,4,2,4,10,Premium
+41638,466.98,7,4,Neumarkt Shopping,Feminino,Gastronomia,4,4,3,11,Premium
+41731,1565.38,9,7,Balneário Shopping,Feminino,Moda,4,5,5,14,VIP
+42187,3220.92,9,3,Balneário Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+42320,200.46,3,3,Garten Shopping,Feminino,Gastronomia,4,3,2,9,Potencial
+42620,300.25,1,26,Balneário Shopping,Feminino,Moda,1,1,3,5,Pontual
+42705,1388.78,4,9,Garten Shopping,Feminino,Casa e Decoração,3,3,5,11,Premium
+42788,679.8,1,24,Norte Shopping,Feminino,Moda,1,1,4,6,Pontual
+43591,111.0,1,24,Norte Shopping,Feminino,Beleza e Bem-estar,1,1,1,3,Pontual
+43613,398.0,1,2,Balneário Shopping,Feminino,Moda Feminina,5,1,3,9,Potencial
+43951,544.0,2,14,Continente Shopping,Feminino,Farmácias,3,2,3,8,Potencial
+44060,387.69,3,16,Continente Shopping,Masculino,Calçados,2,3,3,8,Potencial
+44425,1001.16,9,3,Neumarkt Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+45692,244.93,2,0,Garten Shopping,Masculino,Casa e Decoração,5,2,2,9,Potencial
+45805,3502.6,2,2,Neumarkt Shopping,Feminino,Moda Feminina,5,2,5,12,Premium
+46161,2284.51,9,2,Balneário Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+46441,60.0,1,16,Continente Shopping,Feminino,Gastronomia,2,1,1,4,Pontual
+46490,409.4,2,22,Balneário Shopping,Masculino,Livrarias,2,2,3,7,Potencial
+46730,305.09000000000003,2,4,Continente Shopping,Feminino,Papelaria,4,2,3,9,Potencial
+46784,711.48,6,16,Continente Shopping,Feminino,Moda,2,4,4,10,Premium
+47405,256.09,6,0,Norte Shopping,Feminino,Gastronomia,5,4,2,11,Premium
+47461,295.95,2,30,Balneário Shopping,Feminino,Beleza e Bem-estar,1,2,3,6,Pontual
+47883,319.1,9,1,Norte Shopping,Feminino,Gastronomia,5,5,3,13,VIP
+47887,337.24,10,15,Continente Shopping,Masculino,Gastronomia,3,5,3,11,Premium
+48758,1409.3200000000002,3,23,Continente Shopping,Masculino,Moda,2,3,5,10,Premium
+49024,115.69999999999999,2,12,Nações Shopping,Feminino,Gastronomia,3,2,1,6,Pontual
+49044,1540.5800000000002,29,1,Continente Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+49113,185.7,4,21,Continente Shopping,Masculino,Gastronomia,2,3,2,7,Potencial
+49336,826.13,5,1,Continente Shopping,Feminino,Moda,5,4,4,13,VIP
+49350,2187.77,8,1,Continente Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+49376,1374.52,12,17,Continente Shopping,Feminino,Gastronomia,2,5,5,12,Premium
+49497,165.32,4,6,Continente Shopping,Masculino,Gastronomia,4,3,2,9,Potencial
+49545,83.79,3,3,Continente Shopping,Feminino,Gastronomia,4,3,1,8,Potencial
+49550,414.67,3,9,Garten Shopping,Feminino,Moda,3,3,3,9,Potencial
+49555,445.06,5,14,Continente Shopping,Feminino,Gastronomia,3,4,3,10,Premium
+49805,1995.76,11,3,Neumarkt Shopping,Feminino,Moda,4,5,5,14,VIP
+50452,729.85,2,21,Balneário Shopping,Feminino,Moda,2,2,4,8,Potencial
+50539,569.65,6,7,Neumarkt Shopping,Feminino,Esportes,4,4,3,11,Premium
+50691,705.0,6,2,Norte Shopping,Feminino,Gastronomia,5,4,4,13,VIP
+50725,319.96999999999997,2,27,Neumarkt Shopping,Feminino,Casa e Decoração,1,2,3,6,Pontual
+50792,110.0,1,26,Neumarkt Shopping,Masculino,Presentes e Acessórios,1,1,1,3,Pontual
+50947,179.8,2,18,Garten Shopping,Feminino,Calçados,2,2,2,6,Pontual
+50978,3305.17,15,2,Neumarkt Shopping,Masculino,Gastronomia,5,5,5,15,VIP
+51063,315.69,2,6,Nações Shopping,Feminino,Calçados,4,2,3,9,Potencial
+51862,307.76,4,11,Continente Shopping,Feminino,Calçados,3,3,3,9,Potencial
+51976,911.48,6,8,Continente Shopping,Feminino,Gastronomia,4,4,4,12,Premium
+52216,158.5,4,5,Continente Shopping,Masculino,Gastronomia,4,3,2,9,Potencial
+52234,3154.83,12,14,Neumarkt Shopping,Feminino,Livrarias,3,5,5,13,VIP
+52282,702.4,2,19,Balneário Shopping,Feminino,Beleza e Bem-estar,2,2,4,8,Potencial
+52334,411.56,6,2,Neumarkt Shopping,Feminino,Gastronomia,5,4,3,12,Premium
+52366,97.5,1,29,Nações Shopping,Masculino,Infantil,1,1,1,3,Pontual
+52404,1820.0,3,0,Continente Shopping,Feminino,Joalheria,5,3,5,13,VIP
+52604,2388.17,19,7,Neumarkt Shopping,Feminino,Moda,4,5,5,14,VIP
+52734,49.01,1,12,Continente Shopping,Masculino,Gastronomia,3,1,1,5,Pontual
+52777,979.47,11,1,Neumarkt Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+52818,459.79999999999995,2,30,Continente Shopping,Masculino,Gastronomia,1,2,3,6,Pontual
+52831,451.16,7,2,Neumarkt Shopping,Feminino,Gastronomia,5,4,3,12,Premium
+52879,672.8,1,11,Garten Shopping,Feminino,Casa e Decoração,3,1,4,8,Potencial
+53071,259.98,1,21,Continente Shopping,Feminino,Moda,2,1,2,5,Pontual
+53118,211.09,6,14,Continente Shopping,Feminino,Gastronomia,3,4,2,9,Potencial
+53219,379.98,1,9,Norte Shopping,Feminino,Moda,3,1,3,7,Potencial
+53327,326.5,3,4,Nações Shopping,Feminino,Gastronomia,4,3,3,10,Premium
+53476,1454.52,4,25,Balneário Shopping,Feminino,Beleza e Bem-estar,1,3,5,9,Potencial
+53506,404.15,12,2,Norte Shopping,Feminino,Gastronomia,5,5,3,13,VIP
+53627,34.19,1,3,Neumarkt Shopping,Feminino,Gastronomia,4,1,1,6,Pontual
+53820,463.95,4,23,Garten Shopping,Feminino,Farmácias,2,3,3,8,Potencial
+53825,1147.3899999999999,34,1,Nações Shopping,Masculino,Gastronomia,5,5,4,14,VIP
+53831,417.1,5,4,Nações Shopping,Feminino,Gastronomia,4,4,3,11,Premium
+53846,76.79,6,29,Nações Shopping,Masculino,Casa e Decoração,1,4,1,6,Pontual
+53876,58.699999999999996,2,30,Garten Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+54041,937.62,4,22,Continente Shopping,Feminino,Calçados,2,3,4,9,Potencial
+54338,569.6,1,20,Nações Shopping,Masculino,Moda,2,1,3,6,Pontual
+55010,297.0,2,5,Continente Shopping,Feminino,Beleza e Bem-estar,4,2,3,9,Potencial
+55055,3068.06,13,1,Neumarkt Shopping,Feminino,Beleza e Bem-estar,5,5,5,15,VIP
+55254,527.66,2,19,Continente Shopping,Feminino,Moda,2,2,3,7,Potencial
+55309,164.98,3,19,Garten Shopping,Feminino,Moda,2,3,2,7,Potencial
+55363,129.8,3,15,Garten Shopping,Feminino,Gastronomia,3,3,2,8,Potencial
+55495,1634.1,12,2,Continente Shopping,Feminino,Moda,5,5,5,15,VIP
+55498,312.31,6,20,Continente Shopping,Feminino,Moda,2,4,3,9,Potencial
+55509,56.0,2,13,Continente Shopping,Feminino,Gastronomia,3,2,1,6,Pontual
+55571,86.9,2,4,Garten Shopping,Feminino,Gastronomia,4,2,1,7,Potencial
+55622,368.09999999999997,5,16,Balneário Shopping,Feminino,Gastronomia,2,4,3,9,Potencial
+55624,138.5,3,2,Continente Shopping,Feminino,Gastronomia,5,3,2,10,Premium
+55634,39.13,1,4,Continente Shopping,Feminino,Gastronomia,4,1,1,6,Pontual
+55697,34.99,1,17,Garten Shopping,Feminino,Casa e Decoração,2,1,1,4,Pontual
+55764,435.9,2,15,Garten Shopping,Feminino,Calçados,3,2,3,8,Potencial
+55771,268.98,2,1,Continente Shopping,Feminino,Calçados,5,2,2,9,Potencial
+55865,43.46,3,13,Balneário Shopping,Feminino,Supermercado,3,3,1,7,Potencial
+55902,747.9,6,20,Garten Shopping,Feminino,Gastronomia,2,4,4,10,Premium
+55926,397.69,10,11,Continente Shopping,Feminino,Gastronomia,3,5,3,11,Premium
+55971,306.0,2,30,Norte Shopping,Feminino,Beleza e Bem-estar,1,2,3,6,Pontual
+56013,51.0,2,2,Continente Shopping,Feminino,Gastronomia,5,2,1,8,Potencial
+56480,68.97999999999999,3,2,Norte Shopping,Masculino,Gastronomia,5,3,1,9,Potencial
+56622,379.23,7,2,Continente Shopping,Feminino,Gastronomia,5,4,3,12,Premium
+56644,2685.5099999999998,5,0,Garten Shopping,Masculino,Moda,5,4,5,14,VIP
+56706,433.89,5,1,Garten Shopping,Feminino,Moda,5,4,3,12,Premium
+56730,346.89,9,29,Garten Shopping,Feminino,Gastronomia,1,5,3,9,Potencial
+56755,99.0,1,30,Garten Shopping,Feminino,Infantil,1,1,1,3,Pontual
+56783,10.0,1,28,Nações Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+56813,188.82,2,0,Nações Shopping,Feminino,Livrarias,5,2,2,9,Potencial
+57064,2930.88,9,2,Garten Shopping,Feminino,Moda,5,5,5,15,VIP
+57105,89.99,1,25,Garten Shopping,Feminino,Moda,1,1,1,3,Pontual
+57108,289.9,2,10,Garten Shopping,Feminino,Farmácias,3,2,2,7,Potencial
+57164,85.8,1,0,Norte Shopping,Feminino,Gastronomia,5,1,1,7,Potencial
+57228,59.9,1,15,Garten Shopping,Feminino,Moda,3,1,1,5,Pontual
+57273,201.0,3,27,Neumarkt Shopping,Feminino,Gastronomia,1,3,2,6,Pontual
+57325,411.08,5,4,Neumarkt Shopping,Feminino,Gastronomia,4,4,3,11,Premium
+57333,3725.4300000000003,20,2,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+57458,270.96000000000004,3,1,Garten Shopping,Feminino,Infantil,5,3,2,10,Premium
+57467,3288.45,8,0,Garten Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+57491,3687.79,19,4,Neumarkt Shopping,Feminino,Beleza e Bem-estar,4,5,5,14,VIP
+57509,224.57999999999998,4,22,Garten Shopping,Feminino,Calçados,2,3,2,7,Potencial
+57624,1159.33,5,20,Balneário Shopping,Feminino,Esportes,2,4,4,10,Premium
+57632,55.8,1,29,Garten Shopping,Feminino,Moda,1,1,1,3,Pontual
+57653,278.25,2,18,Garten Shopping,Feminino,Kids,2,2,2,6,Pontual
+57733,664.0799999999999,5,3,Continente Shopping,Feminino,Gastronomia,4,4,4,12,Premium
+57753,819.05,7,0,Garten Shopping,Feminino,Gastronomia,5,4,4,13,VIP
+57754,50026.0,3,6,Balneário Shopping,Feminino,Moda,4,3,5,12,Premium
+57782,9.99,1,15,Balneário Shopping,Feminino,Calçados,3,1,1,5,Pontual
+57851,1450.8300000000002,6,24,Balneário Shopping,Feminino,Gastronomia,1,4,5,10,Premium
+58033,417.90000000000003,5,2,Neumarkt Shopping,Masculino,Gastronomia,5,4,3,12,Premium
+58041,262.39,10,0,Garten Shopping,Feminino,Gastronomia,5,5,2,12,Premium
+58320,72.98,3,27,Nações Shopping,Masculino,Gastronomia,1,3,1,5,Pontual
+58359,711.6800000000001,6,29,Garten Shopping,Feminino,Calçados,1,4,4,9,Potencial
+58528,1017.7299999999999,10,0,Norte Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+58668,144.79,5,13,Nações Shopping,Masculino,Gastronomia,3,4,2,9,Potencial
+58679,143.96,2,16,Balneário Shopping,Feminino,Esportes,2,2,2,6,Pontual
+58705,1015.85,5,19,Garten Shopping,Feminino,Moda,2,4,4,10,Premium
+58733,25.95,1,17,Continente Shopping,Masculino,Gastronomia,2,1,1,4,Pontual
+58851,1017.48,12,1,Balneário Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+59005,805.1200000000001,2,25,Garten Shopping,Masculino,Gastronomia,1,2,4,7,Potencial
+59068,1924.04,8,5,Norte Shopping,Masculino,Moda,4,5,5,14,VIP
+59436,3345.56,8,4,Continente Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+59741,446.07,7,15,Nações Shopping,Masculino,Gastronomia,3,4,3,10,Premium
+59901,245.7,1,25,Norte Shopping,Masculino,Papelaria,1,1,2,4,Pontual
+59991,42.0,1,15,Neumarkt Shopping,Feminino,Gastronomia,3,1,1,5,Pontual
+60045,1199.75,6,1,Garten Shopping,Feminino,Moda,5,4,5,14,VIP
+60113,614.5,18,1,Balneário Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+60337,556.06,3,9,Neumarkt Shopping,Feminino,Gastronomia,3,3,3,9,Potencial
+60366,160.6,1,26,Neumarkt Shopping,Masculino,Gastronomia,1,1,2,4,Pontual
+60415,163.09,1,29,Norte Shopping,Feminino,Pets,1,1,2,4,Pontual
+60450,727.5,8,14,Neumarkt Shopping,Feminino,Gastronomia,3,5,4,12,Premium
+60451,125.9,2,12,Garten Shopping,Feminino,Pets,3,2,2,7,Potencial
+60476,912.6800000000001,3,28,Neumarkt Shopping,Feminino,Beleza e Bem-estar,1,3,4,8,Potencial
+60496,215.96,2,7,Norte Shopping,Feminino,Casa e Decoração,4,2,2,8,Potencial
+60509,642.86,13,6,Garten Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+60638,197.79,1,1,Nações Shopping,Masculino,Gastronomia,5,1,2,8,Potencial
+60704,273.97,7,10,Balneário Shopping,Feminino,Gastronomia,3,4,2,9,Potencial
+60827,102.87,2,23,Neumarkt Shopping,Feminino,Gastronomia,2,2,1,5,Pontual
+60923,513.63,5,0,Garten Shopping,Feminino,Gastronomia,5,4,3,12,Premium
+60946,835.19,5,23,Continente Shopping,Feminino,Beleza e Bem-estar,2,4,4,10,Premium
+60968,736.2,11,5,Garten Shopping,Masculino,Gastronomia - Restaurante,4,5,4,13,VIP
+60984,5677.7,13,0,Balneário Shopping,Feminino,Moda,5,5,5,15,VIP
+61040,2042.9099999999999,8,8,Balneário Shopping,Feminino,Moda,4,5,5,14,VIP
+61199,217.9,2,3,Garten Shopping,Feminino,Farmácias,4,2,2,8,Potencial
+61660,850.52,10,7,Garten Shopping,Masculino,Gastronomia,4,5,4,13,VIP
+61663,558.6,3,20,Continente Shopping,Feminino,Moda,2,3,3,8,Potencial
+61717,1838.47,6,7,Norte Shopping,Feminino,Calçados,4,4,5,13,VIP
+61753,52.7,2,7,Continente Shopping,Feminino,Beleza e Bem-estar,4,2,1,7,Potencial
+61794,72.98,2,8,Continente Shopping,Feminino,Eletrodomésticos,4,2,1,7,Potencial
+61800,615.5699999999999,8,12,Continente Shopping,Feminino,Gastronomia,3,5,4,12,Premium
+61802,332.8,2,22,Neumarkt Shopping,Feminino,Gastronomia,2,2,3,7,Potencial
+61814,1109.35,3,13,Norte Shopping,Feminino,Moda,3,3,4,10,Premium
+61947,288.84000000000003,3,25,Nações Shopping,Feminino,Moda,1,3,2,6,Pontual
+62061,247.23,4,3,Neumarkt Shopping,Feminino,Gastronomia,4,3,2,9,Potencial
+62265,515.8,2,28,Neumarkt Shopping,Feminino,Beleza e Bem-estar,1,2,3,6,Pontual
+62348,3357.39,3,18,Balneário Shopping,Feminino,Beleza e Bem-estar,2,3,5,10,Premium
+62393,26.0,1,13,Norte Shopping,Feminino,Gastronomia,3,1,1,5,Pontual
+62396,1630.74,8,0,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+62423,309.98,2,16,Balneário Shopping,Feminino,Gastronomia,2,2,3,7,Potencial
+62517,887.9200000000001,13,1,Continente Shopping,Masculino,Gastronomia,5,5,4,14,VIP
+62586,342.88,2,8,Neumarkt Shopping,Feminino,Beleza e Bem-estar,4,2,3,9,Potencial
+62822,271.66999999999996,4,28,Garten Shopping,Feminino,Moda,1,3,2,6,Pontual
+63212,30.0,1,22,Balneário Shopping,Nao Informado,Serviços,2,1,1,4,Pontual
+63246,119.0,1,12,Continente Shopping,Feminino,Beleza e Bem-estar,3,1,1,5,Pontual
+63297,278.75,2,6,Neumarkt Shopping,Masculino,Gastronomia,4,2,2,8,Potencial
+63457,294.9,9,2,Continente Shopping,Feminino,Livrarias,5,5,3,13,VIP
+63461,770.6,2,24,Garten Shopping,Feminino,Moda,1,2,4,7,Potencial
+63474,173.06,3,19,Garten Shopping,Feminino,Gastronomia,2,3,2,7,Potencial
+63689,733.68,6,17,Continente Shopping,Feminino,Gastronomia,2,4,4,10,Premium
+63721,286.70000000000005,2,23,Continente Shopping,Feminino,Gastronomia,1,2,2,5,Pontual
+63789,457.87,5,2,Garten Shopping,Feminino,Moda,5,4,3,12,Premium
+64128,297.71,3,14,Nações Shopping,Feminino,Calçados,3,3,3,9,Potencial
+64356,110.75,3,22,Neumarkt Shopping,Masculino,Gastronomia,2,3,1,6,Pontual
+64426,1354.36,18,0,Nações Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+64597,46.9,1,23,Neumarkt Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+64743,944.2,7,22,Neumarkt Shopping,Feminino,Gastronomia,2,4,4,10,Premium
+64859,776.65,10,0,Garten Shopping,Masculino,Moda,5,5,4,14,VIP
+64946,708.17,6,0,Neumarkt Shopping,Feminino,Casa e Decoração,5,4,4,13,VIP
+64995,137.8,1,4,Garten Shopping,Feminino,Presentes e Acessórios,4,1,2,7,Potencial
+65288,2465.3,4,22,Neumarkt Shopping,Masculino,Beleza e Bem-estar,2,3,5,10,Premium
+65321,1907.81,4,23,Balneário Shopping,Feminino,Moda,1,3,5,9,Potencial
+65421,2.0,1,4,Garten Shopping,Masculino,Gastronomia,4,1,1,6,Pontual
+65539,875.1,1,19,Balneário Shopping,Feminino,Moda,2,1,4,7,Potencial
+66462,557.37,9,1,Continente Shopping,Feminino,Gastronomia,5,5,3,13,VIP
+66485,229.98,1,11,Garten Shopping,Feminino,Moda,3,1,2,6,Pontual
+66524,850.58,3,1,Balneário Shopping,Feminino,Moda,5,3,4,12,Premium
+66590,1567.6,3,22,Garten Shopping,Feminino,Moda,2,3,5,10,Premium
+66638,1192.0,6,3,Neumarkt Shopping,Masculino,Beleza e Bem-estar,4,4,5,13,VIP
+66671,2707.34,8,2,Neumarkt Shopping,Feminino,Esportes,5,5,5,15,VIP
+66775,802.07,2,20,Continente Shopping,Masculino,Gastronomia,2,2,4,8,Potencial
+66813,648.73,4,24,Continente Shopping,Feminino,Gastronomia,1,3,4,8,Potencial
+66819,955.61,4,15,Continente Shopping,Feminino,Gastronomia,3,3,4,10,Premium
+67008,79.25999999999999,2,27,Continente Shopping,Feminino,Eletrodomésticos,1,2,1,4,Pontual
+67129,370.6,7,1,Garten Shopping,Feminino,Gastronomia,5,4,3,12,Premium
+67147,129.99,1,19,Balneário Shopping,Feminino,Moda,2,1,2,5,Pontual
+67381,719.5500000000001,4,7,Garten Shopping,Feminino,Eletrônicos,4,3,4,11,Premium
+67429,546.0,1,29,Garten Shopping,Feminino,Beleza e Bem-estar,1,1,3,5,Pontual
+67700,547.17,5,24,Garten Shopping,Masculino,Gastronomia,1,4,3,8,Potencial
+67703,240.02,9,4,Nações Shopping,Feminino,Gastronomia,4,5,2,11,Premium
+67789,723.37,6,17,Neumarkt Shopping,Feminino,Calçados,2,4,4,10,Premium
+67791,108.0,2,23,Garten Shopping,Masculino,Gastronomia,1,2,1,4,Pontual
+67852,1433.3200000000002,12,16,Norte Shopping,Feminino,Beleza e Bem-estar,2,5,5,12,Premium
+67860,811.0799999999999,10,21,Continente Shopping,Feminino,Beleza e Bem-estar,2,5,4,11,Premium
+67882,549.99,1,9,Balneário Shopping,Feminino,Esportes,3,1,3,7,Potencial
+68267,79.98,1,24,Neumarkt Shopping,Feminino,Moda,1,1,1,3,Pontual
+68354,514.79,12,8,Neumarkt Shopping,Feminino,Eletrodomésticos,4,5,3,12,Premium
+68677,43.9,1,30,Continente Shopping,Feminino,Papelaria,1,1,1,3,Pontual
+68850,415.6,1,15,Nações Shopping,Feminino,Moda,3,1,3,7,Potencial
+69044,523.69,4,0,Neumarkt Shopping,Masculino,Esportes,5,3,3,11,Premium
+69051,108.96000000000001,3,2,Neumarkt Shopping,Feminino,Gastronomia,5,3,1,9,Potencial
+69172,589.88,3,19,Neumarkt Shopping,Feminino,Calçados,2,3,4,9,Potencial
+69269,39.9,1,30,Garten Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+69465,947.48,5,23,Nações Shopping,Feminino,Gastronomia,1,4,4,9,Potencial
+69489,1305.8899999999999,4,9,Garten Shopping,Feminino,Beleza e Bem-estar,3,3,5,11,Premium
+69528,1114.69,16,1,Continente Shopping,Feminino,Beleza e Bem-estar,5,5,4,14,VIP
+69637,1923.6299999999999,27,3,Neumarkt Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+69716,29.9,1,29,Garten Shopping,Masculino,Gastronomia,1,1,1,3,Pontual
+69861,105.8,2,27,Garten Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+70423,1697.36,8,4,Garten Shopping,Masculino,Gastronomia,4,5,5,14,VIP
+70425,1267.83,3,16,Balneário Shopping,Masculino,Casa e Decoração,2,3,5,10,Premium
+70625,108.0,1,17,Garten Shopping,Masculino,Gastronomia,2,1,1,4,Pontual
+70845,1556.59,5,3,Norte Shopping,Feminino,Moda,4,4,5,13,VIP
+70846,770.04,5,3,Continente Shopping,Feminino,Gastronomia,4,4,4,12,Premium
+70910,999.99,1,14,Balneário Shopping,Masculino,Moda,3,1,4,8,Potencial
+70988,3262.28,14,1,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+71133,1922.38,7,5,Neumarkt Shopping,Feminino,Livrarias,4,4,5,13,VIP
+71277,35.9,1,2,Norte Shopping,Masculino,Gastronomia,5,1,1,7,Potencial
+71589,39.99,1,23,Balneário Shopping,Feminino,Infantil,1,1,1,3,Pontual
+71660,225.69,4,7,Garten Shopping,Feminino,Calçados,4,3,2,9,Potencial
+71864,1743.5900000000001,6,5,Balneário Shopping,Feminino,Beleza e Bem-estar,4,4,5,13,VIP
+72148,1133.9,8,3,Balneário Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+72582,292.0,3,1,Neumarkt Shopping,Feminino,Gastronomia,5,3,3,11,Premium
+72661,1367.6499999999999,7,7,Garten Shopping,Feminino,Calçados,4,4,5,13,VIP
+72767,222.0,2,1,Continente Shopping,Masculino,Gastronomia,5,2,2,9,Potencial
+73051,209.6,2,15,Nações Shopping,Masculino,Gastronomia,3,2,2,7,Potencial
+73056,172.24,4,19,Continente Shopping,Feminino,Gastronomia,2,3,2,7,Potencial
+73300,189.98,1,23,Nações Shopping,Feminino,Esportes,1,1,2,4,Pontual
+73453,2713.29,21,1,Norte Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+73555,924.05,13,13,Continente Shopping,Feminino,Gastronomia,3,5,4,12,Premium
+73577,872.5799999999999,10,5,Continente Shopping,Feminino,Presentes e Acessórios,4,5,4,13,VIP
+73696,155.75,2,17,Nações Shopping,Feminino,Eletrodomésticos,2,2,2,6,Pontual
+73836,389.7,1,7,Neumarkt Shopping,Feminino,Moda,4,1,3,8,Potencial
+73971,543.7,7,13,Garten Shopping,Feminino,Gastronomia,3,4,3,10,Premium
+74428,122.49000000000001,4,22,Continente Shopping,Feminino,Beleza e Bem-estar,2,3,1,6,Pontual
+74582,81.1,4,0,Garten Shopping,Feminino,Gastronomia,5,3,1,9,Potencial
+74639,1238.6399999999999,4,2,Garten Shopping,Feminino,Gastronomia,5,3,5,13,VIP
+75215,44.99,1,26,Balneário Shopping,Masculino,Calçados,1,1,1,3,Pontual
+75301,344.45,5,28,Neumarkt Shopping,Feminino,Beleza e Bem-estar,1,4,3,8,Potencial
+75490,196.27,2,27,Continente Shopping,Feminino,Gastronomia,1,2,2,5,Pontual
+75792,217.8,3,24,Nações Shopping,Masculino,Gastronomia,1,3,2,6,Pontual
+75943,169.7,1,0,Nações Shopping,Feminino,Moda,5,1,2,8,Potencial
+75967,1293.13,4,15,Garten Shopping,Feminino,Esportes,3,3,5,11,Premium
+75999,1380.69,7,9,Garten Shopping,Feminino,Moda,3,4,5,12,Premium
+76025,332.76,2,21,Continente Shopping,Feminino,Beleza e Bem-estar,2,2,3,7,Potencial
+76399,90.80000000000001,3,15,Garten Shopping,Masculino,Gastronomia,3,3,1,7,Potencial
+76509,532.67,9,0,Garten Shopping,Masculino,Gastronomia,5,5,3,13,VIP
+76845,3600.58,13,5,Neumarkt Shopping,Feminino,Moda,4,5,5,14,VIP
+76904,191.36,4,19,Neumarkt Shopping,Feminino,Gastronomia,2,3,2,7,Potencial
+77079,2649.98,18,10,Neumarkt Shopping,Feminino,Gastronomia,3,5,5,13,VIP
+77081,927.6800000000001,4,3,Balneário Shopping,Feminino,Calçados,4,3,4,11,Premium
+77268,26.0,1,24,Continente Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+77299,511.54,7,4,Continente Shopping,Feminino,Gastronomia,4,4,3,11,Premium
+77335,14579.8,2,25,Garten Shopping,Masculino,Eletrodomésticos,1,2,5,8,Potencial
+77394,473.5,4,13,Garten Shopping,Feminino,Gastronomia,3,3,3,9,Potencial
+77473,2299.87,4,10,Balneário Shopping,Feminino,Presentes e Acessórios,3,3,5,11,Premium
+77523,1964.4,3,1,Garten Shopping,Feminino,Calçados,5,3,5,13,VIP
+77561,1086.39,8,4,Neumarkt Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+77789,142.69,2,23,Nações Shopping,Masculino,Esportes,1,2,2,5,Pontual
+78609,1015.0,2,0,Continente Shopping,Masculino,Gastronomia - Sorvetes,5,2,4,11,Premium
+78841,3255.16,7,20,Balneário Shopping,Feminino,Moda,2,4,5,11,Premium
+79485,918.63,5,26,Balneário Shopping,Feminino,Calçados,1,4,4,9,Potencial
+80187,765.49,2,15,Balneário Shopping,Feminino,Casa e Decoração,3,2,4,9,Potencial
+80569,731.62,6,15,Continente Shopping,Feminino,Beleza e Bem-estar,3,4,4,11,Premium
+80775,91.68,3,1,Nações Shopping,Feminino,Livrarias,5,3,1,9,Potencial
+80835,629.85,2,12,Balneário Shopping,Feminino,Beleza e Bem-estar,3,2,4,9,Potencial
+80838,770.55,4,8,Balneário Shopping,Feminino,Gastronomia,4,3,4,11,Premium
+80961,2177.82,7,1,Balneário Shopping,Masculino,Moda,5,4,5,14,VIP
+81353,228.98,4,30,Continente Shopping,Feminino,Gastronomia,1,3,2,6,Pontual
+81466,149.69,2,22,Continente Shopping,Masculino,Moda,2,2,2,6,Pontual
+81586,523.8,3,5,Garten Shopping,Feminino,Gastronomia,4,3,3,10,Premium
+81761,54.74,1,27,Nações Shopping,Masculino,Pets,1,1,1,3,Pontual
+81765,748.54,20,1,Neumarkt Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+81951,215.89,1,6,Nações Shopping,Masculino,Moda,4,1,2,7,Potencial
+82038,110.98,3,28,Neumarkt Shopping,Feminino,Gastronomia,1,3,1,5,Pontual
+82052,198.7,4,1,Continente Shopping,Feminino,Gastronomia,5,3,2,10,Premium
+82099,2003.75,19,12,Neumarkt Shopping,Masculino,Gastronomia,3,5,5,13,VIP
+82304,515.63,6,11,Neumarkt Shopping,Feminino,Gastronomia,3,4,3,10,Premium
+82340,134.98,3,0,Continente Shopping,Masculino,Gastronomia,5,3,2,10,Premium
+82412,1089.69,2,29,Balneário Shopping,Feminino,Gastronomia,1,2,4,7,Potencial
+82573,71.95,3,4,Norte Shopping,Masculino,Gastronomia,4,3,1,8,Potencial
+82589,249.97,1,22,Continente Shopping,Feminino,Calçados,2,1,2,5,Pontual
+82650,149.0,1,29,Continente Shopping,Feminino,Moda,1,1,2,4,Pontual
+82813,59.99,1,28,Continente Shopping,Feminino,Moda,1,1,1,3,Pontual
+82816,1634.1,4,0,Neumarkt Shopping,Feminino,Gastronomia,5,3,5,13,VIP
+83041,548.43,5,16,Garten Shopping,Masculino,Moda,2,4,3,9,Potencial
+83245,2064.04,13,4,Continente Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+83284,271.93,2,6,Nações Shopping,Feminino,Beleza e Bem-estar,4,2,2,8,Potencial
+83357,441.03,9,8,Continente Shopping,Masculino,Gastronomia,4,5,3,12,Premium
+83512,10.0,1,12,Neumarkt Shopping,Feminino,Gastronomia,3,1,1,5,Pontual
+83518,62.8,1,1,Garten Shopping,Feminino,Gastronomia,5,1,1,7,Potencial
+83797,911.5,4,21,Continente Shopping,Feminino,Moda,2,3,4,9,Potencial
+84056,1423.55,6,2,Garten Shopping,Masculino,Gastronomia,5,4,5,14,VIP
+84118,1894.06,20,21,Continente Shopping,Feminino,Gastronomia,2,5,5,12,Premium
+84842,161.7,3,0,Norte Shopping,Masculino,Calçados,5,3,2,10,Premium
+84871,1940.26,24,2,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+85116,670.67,8,4,Norte Shopping,Feminino,Moda,4,5,4,13,VIP
+85229,308.99,2,29,Garten Shopping,Feminino,Infantil,1,2,3,6,Pontual
+85320,25.9,1,23,Continente Shopping,Feminino,Papelaria,1,1,1,3,Pontual
+85329,63.0,1,30,Garten Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+85396,1575.0,2,26,Continente Shopping,Feminino,Esportes,1,2,5,8,Potencial
+85464,3526.44,4,22,Continente Shopping,Feminino,Farmácias,2,3,5,10,Premium
+85682,228.39999999999998,3,11,Balneário Shopping,Feminino,Gastronomia,3,3,2,8,Potencial
+85734,2816.6,3,6,Balneário Shopping,Masculino,Beleza e Bem-estar,4,3,5,12,Premium
+85839,190.7,5,12,Neumarkt Shopping,Feminino,Gastronomia,3,4,2,9,Potencial
+85842,1928.99,14,1,Balneário Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+85854,157.9,3,27,Nações Shopping,Masculino,Gastronomia,1,3,2,6,Pontual
+86076,484.70000000000005,7,16,Norte Shopping,Feminino,Gastronomia,2,4,3,9,Potencial
+86214,1416.83,4,7,Garten Shopping,Feminino,Moda,4,3,5,12,Premium
+86386,125.0,2,14,Garten Shopping,Feminino,Gastronomia,3,2,2,7,Potencial
+86653,745.13,5,23,Nações Shopping,Masculino,Moda,1,4,4,9,Potencial
+86834,473.23,4,3,Garten Shopping,Feminino,Calçados,4,3,3,10,Premium
+87054,523.96,4,1,Balneário Shopping,Feminino,Beleza e Bem-estar,5,3,3,11,Premium
+87475,530.41,12,20,Neumarkt Shopping,Feminino,Gastronomia,2,5,3,10,Premium
+87478,1355.75,9,4,Norte Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+87598,776.11,9,3,Balneário Shopping,Masculino,Gastronomia,4,5,4,13,VIP
+87632,232.71,3,12,Neumarkt Shopping,Feminino,Gastronomia,3,3,2,8,Potencial
+87663,214.9,3,0,Continente Shopping,Feminino,Gastronomia,5,3,2,10,Premium
+87697,89.9,3,11,Continente Shopping,Feminino,Gastronomia,3,3,1,7,Potencial
+87733,528.81,4,16,Continente Shopping,Feminino,Beleza e Bem-estar,2,3,3,8,Potencial
+88040,391.36999999999995,4,18,Nações Shopping,Feminino,Gastronomia,2,3,3,8,Potencial
+88063,1883.78,3,22,Balneário Shopping,Feminino,Casa e Decoração,2,3,5,10,Premium
+88137,994.08,11,4,Continente Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+88327,1727.8899999999999,3,15,Balneário Shopping,Feminino,Infantil,3,3,5,11,Premium
+88426,503.11,5,2,Neumarkt Shopping,Feminino,Gastronomia,5,4,3,12,Premium
+88434,609.86,3,11,Neumarkt Shopping,Feminino,Moda,3,3,4,10,Premium
+88974,570.39,3,7,Garten Shopping,Feminino,Papelaria,4,3,3,10,Premium
+88992,249.70000000000002,2,22,Neumarkt Shopping,Feminino,Moda,2,2,2,6,Pontual
+89006,367.14,11,2,Neumarkt Shopping,Feminino,Eletrodomésticos,5,5,3,13,VIP
+89031,471.0,2,22,Garten Shopping,Feminino,Gastronomia,2,2,3,7,Potencial
+89065,469.19000000000005,6,28,Norte Shopping,Feminino,Calçados,1,4,3,8,Potencial
+89196,328.0,1,21,Continente Shopping,Feminino,Moda,2,1,3,6,Pontual
+89246,1020.13,18,14,Neumarkt Shopping,Feminino,Gastronomia,3,5,4,12,Premium
+89264,1268.5,2,15,Garten Shopping,Feminino,Beleza e Bem-estar,3,2,5,10,Premium
+89318,649.5,1,3,Balneário Shopping,Feminino,Moda,4,1,4,9,Potencial
+89664,139.0,1,15,Garten Shopping,Feminino,Moda,3,1,2,6,Pontual
+89796,718.91,12,2,Continente Shopping,Masculino,Gastronomia,5,5,4,14,VIP
+89836,229.7,1,0,Neumarkt Shopping,Feminino,Moda,5,1,2,8,Potencial
+89961,149.98,1,2,Continente Shopping,Feminino,Esportes,5,1,2,8,Potencial
+90490,68.42,1,10,Continente Shopping,Feminino,Gastronomia,3,1,1,5,Pontual
+90504,269.7,1,1,Nações Shopping,Feminino,Moda,5,1,2,8,Potencial
+90727,28.0,1,25,Norte Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+90756,101.4,1,10,Norte Shopping,Feminino,Papelaria,3,1,1,5,Pontual
+91153,688.73,8,27,Continente Shopping,Feminino,Gastronomia,1,5,4,10,Premium
+91223,699.19,4,19,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,3,4,9,Potencial
+91285,179.0,1,8,Balneário Shopping,Feminino,Moda,4,1,2,7,Potencial
+91728,159.9,1,1,Nações Shopping,Feminino,Moda,5,1,2,8,Potencial
+92047,141.88,3,29,Neumarkt Shopping,Feminino,Gastronomia,1,3,2,6,Pontual
+92294,329.8,1,16,Nações Shopping,Feminino,Calçados,2,1,3,6,Pontual
+92419,3810.5699999999997,5,0,Garten Shopping,Feminino,Moda,5,4,5,14,VIP
+92435,76.0,1,2,Continente Shopping,Feminino,Gastronomia,5,1,1,7,Potencial
+92452,498.38,4,14,Balneário Shopping,Feminino,Beleza e Bem-estar,3,3,3,9,Potencial
+92482,57.6,2,14,Neumarkt Shopping,Feminino,Gastronomia,3,2,1,6,Pontual
+92542,367.62,1,14,Norte Shopping,Feminino,Supermercado,3,1,3,7,Potencial
+92982,325.77,3,0,Garten Shopping,Feminino,Casa e Decoração,5,3,3,11,Premium
+93128,116.0,1,0,Garten Shopping,Feminino,Presentes e Acessórios,5,1,1,7,Potencial
+93456,962.08,6,15,Balneário Shopping,Feminino,Moda,3,4,4,11,Premium
+93508,339.8,1,15,Balneário Shopping,Feminino,Moda,3,1,3,7,Potencial
+93647,17.97,1,5,Continente Shopping,Feminino,Eletrodomésticos,4,1,1,6,Pontual
+93741,55.27,1,12,Balneário Shopping,Feminino,Gastronomia,3,1,1,5,Pontual
+94241,279.98,1,22,Nações Shopping,Feminino,Moda,2,1,2,5,Pontual
+94263,1268.1,3,28,Balneário Shopping,Masculino,Infantil,1,3,5,9,Potencial
+94339,219.1,3,14,Continente Shopping,Masculino,Gastronomia,3,3,2,8,Potencial
+94503,765.45,5,12,Continente Shopping,Masculino,Gastronomia,3,4,4,11,Premium
+94793,379.1,6,1,Continente Shopping,Feminino,Gastronomia,5,4,3,12,Premium
+94820,919.56,2,2,Neumarkt Shopping,Feminino,Moda,5,2,4,11,Premium
+95035,1639.87,5,7,Continente Shopping,Feminino,Joalheria,4,4,5,13,VIP
+95359,67.47999999999999,2,22,Norte Shopping,Masculino,Gastronomia,2,2,1,5,Pontual
+95458,795.89,7,7,Balneário Shopping,Feminino,Beleza e Bem-estar,4,5,4,13,VIP
+95697,2827.14,9,1,Continente Shopping,Feminino,Moda,5,5,5,15,VIP
+95726,1336.21,8,8,Continente Shopping,Masculino,Gastronomia,4,5,5,14,VIP
+95745,981.8,3,6,Balneário Shopping,Feminino,Livrarias,4,3,4,11,Premium
+96082,49.8,2,30,Continente Shopping,Masculino,Gastronomia,1,2,1,4,Pontual
+96103,1560.1699999999998,3,10,Nações Shopping,Feminino,Beleza e Bem-estar,3,3,5,11,Premium
+96368,268.6,1,25,Balneário Shopping,Masculino,Papelaria,1,1,2,4,Pontual
+96373,554.49,2,11,Balneário Shopping,Feminino,Beleza e Bem-estar,3,2,3,8,Potencial
+96404,752.1700000000001,6,7,Balneário Shopping,Feminino,Farmácias,4,4,4,12,Premium
+96539,7392.2,11,26,Neumarkt Shopping,Feminino,Gastronomia,1,5,5,11,Premium
+96631,2270.33,7,0,Nações Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+96670,101.5,1,28,Garten Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+96689,909.3499999999999,3,12,Balneário Shopping,Feminino,Moda,3,3,4,10,Premium
+96708,1.0,1,16,Balneário Shopping,Feminino,Moda,2,1,1,4,Pontual
+96809,458.39,4,12,Nações Shopping,Feminino,Moda,3,3,3,9,Potencial
+96888,638.07,12,1,Continente Shopping,Feminino,Eletrodomésticos,5,5,4,14,VIP
+96897,155.3,6,15,Continente Shopping,Feminino,Gastronomia,3,4,2,9,Potencial
+97070,6015.719999999999,19,20,Neumarkt Shopping,Feminino,Pets,2,5,5,12,Premium
+97333,114.0,2,22,Garten Shopping,Feminino,Gastronomia,2,2,1,5,Pontual
+97600,44.89,3,21,Neumarkt Shopping,Masculino,Gastronomia,2,3,1,6,Pontual
+98077,75.7,1,22,Nações Shopping,Masculino,Gastronomia,2,1,1,4,Pontual
+98462,106.1,2,27,Continente Shopping,Masculino,Gastronomia,1,2,1,4,Pontual
+98841,34.0,1,10,Neumarkt Shopping,Feminino,Gastronomia,3,1,1,5,Pontual
+98962,256.95,3,1,Balneário Shopping,Feminino,Farmácias,5,3,2,10,Premium
+99049,159.0,1,28,Balneário Shopping,Feminino,Moda,1,1,2,4,Pontual
+99479,4681.2,7,0,Neumarkt Shopping,Feminino,Livrarias,5,5,5,15,VIP
+99589,2431.38,8,19,Nações Shopping,Feminino,Calçados,2,5,5,12,Premium
+100109,3252.92,6,8,Balneário Shopping,Feminino,Moda,4,4,5,13,VIP
+100360,929.87,5,2,Continente Shopping,Feminino,Gastronomia,5,4,4,13,VIP
+100572,22.2,1,21,Norte Shopping,Feminino,Papelaria,2,1,1,4,Pontual
+100576,529.67,11,2,Neumarkt Shopping,Masculino,Gastronomia,5,5,3,13,VIP
+100592,1195.24,9,0,Garten Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+100723,20.44,1,21,Continente Shopping,Feminino,Eletrodomésticos,2,1,1,4,Pontual
+100795,866.9,5,11,Garten Shopping,Feminino,Moda,3,4,4,11,Premium
+100796,123.99,2,12,Continente Shopping,Feminino,Beleza e Bem-estar,3,2,2,7,Potencial
+100815,294.39,5,12,Continente Shopping,Masculino,Gastronomia,3,4,3,10,Premium
+100929,1149.0,1,26,Nações Shopping,Feminino,Esportes,1,1,4,6,Pontual
+101143,821.9499999999999,15,2,Continente Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+101246,3030.58,4,2,Continente Shopping,Masculino,Gastronomia,5,3,5,13,VIP
+101492,390.4,3,9,Continente Shopping,Feminino,Gastronomia,3,3,3,9,Potencial
+101511,463.5,3,2,Balneário Shopping,Feminino,Beleza e Bem-estar,5,3,3,11,Premium
+101632,43.47,1,19,Balneário Shopping,Feminino,Gastronomia,2,1,1,4,Pontual
+101743,255.38,5,2,Continente Shopping,Feminino,Moda,5,4,2,11,Premium
+101759,209.96,4,0,Continente Shopping,Feminino,Gastronomia,5,3,2,10,Premium
+101920,690.83,12,17,Continente Shopping,Feminino,Gastronomia,2,5,4,11,Premium
+101951,227.98,2,15,Nações Shopping,Feminino,Gastronomia,3,2,2,7,Potencial
+102133,751.01,2,11,Continente Shopping,Feminino,Gastronomia,3,2,4,9,Potencial
+102157,200.88,2,30,Continente Shopping,Feminino,Livrarias,1,2,2,5,Pontual
+102185,32.89,2,27,Balneário Shopping,Feminino,Infantil,1,2,1,4,Pontual
+102423,498.0,2,26,Continente Shopping,Feminino,Esportes,1,2,3,6,Pontual
+102439,433.65,3,1,Neumarkt Shopping,Feminino,Moda,5,3,3,11,Premium
+102471,349.95,1,3,Balneário Shopping,Feminino,Moda,4,1,3,8,Potencial
+102667,420.88,6,16,Continente Shopping,Feminino,Serviços,2,4,3,9,Potencial
+102838,644.4,3,7,Nações Shopping,Feminino,Moda,4,3,4,11,Premium
+102929,60.79,2,22,Neumarkt Shopping,Feminino,Gastronomia,2,2,1,5,Pontual
+103018,99.93,2,8,Continente Shopping,Masculino,Gastronomia,4,2,1,7,Potencial
+103108,617.29,7,3,Balneário Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+103213,130.95,4,21,Continente Shopping,Feminino,Gastronomia,2,3,2,7,Potencial
+103573,425.71999999999997,10,12,Continente Shopping,Feminino,Gastronomia,3,5,3,11,Premium
+103644,260.29,8,2,Nações Shopping,Masculino,Gastronomia,5,5,2,12,Premium
+103673,410.88,3,30,Balneário Shopping,Masculino,Moda,1,3,3,7,Potencial
+103968,624.38,4,1,Neumarkt Shopping,Feminino,Gastronomia,5,3,4,12,Premium
+104143,98.97999999999999,2,3,Continente Shopping,Masculino,Esportes,4,2,1,7,Potencial
+104236,112.92,2,1,Continente Shopping,Masculino,Eletrodomésticos,5,2,1,8,Potencial
+104820,435.66999999999996,2,4,Balneário Shopping,Feminino,Esportes,4,2,3,9,Potencial
+105206,6650.88,6,8,Nações Shopping,Masculino,Moda,4,4,5,13,VIP
+105416,588.86,4,1,Nações Shopping,Feminino,Infantil,5,3,4,12,Premium
+105655,69.2,3,10,Balneário Shopping,Feminino,Supermercado,3,3,1,7,Potencial
+106096,194.31,6,0,Continente Shopping,Feminino,Farmácias,5,4,2,11,Premium
+106178,28.5,1,24,Continente Shopping,Masculino,Gastronomia,1,1,1,3,Pontual
+106195,47.8,1,8,Nações Shopping,Masculino,Gastronomia,4,1,1,6,Pontual
+106584,103.37,5,1,Continente Shopping,Feminino,Gastronomia,5,4,1,10,Premium
+106627,14.99,1,11,Nações Shopping,Feminino,Farmácias,3,1,1,5,Pontual
+106758,549.95,2,29,Balneário Shopping,Feminino,Gastronomia,1,2,3,6,Pontual
+107198,54.5,1,12,Continente Shopping,Masculino,Gastronomia,3,1,1,5,Pontual
+107256,149.7,1,11,Nações Shopping,Feminino,Pets,3,1,2,6,Pontual
+107294,159.9,1,27,Garten Shopping,Feminino,Moda,1,1,2,4,Pontual
+107298,1229.98,2,1,Balneário Shopping,Feminino,Infantil,5,2,5,12,Premium
+107372,265.7,1,7,Garten Shopping,Feminino,Moda,4,1,2,7,Potencial
+107451,2060.48,2,1,Continente Shopping,Masculino,Esportes,5,2,5,12,Premium
+107452,212.20000000000002,3,2,Balneário Shopping,Masculino,Beleza e Bem-estar,5,3,2,10,Premium
+107629,71.09,3,4,Continente Shopping,Feminino,Gastronomia,4,3,1,8,Potencial
+107804,205.93,5,14,Norte Shopping,Feminino,Eletrodomésticos,3,4,2,9,Potencial
+107852,139.8,2,13,Garten Shopping,Feminino,Livrarias,3,2,2,7,Potencial
+108065,546.25,7,10,Continente Shopping,Feminino,Eletrodomésticos,3,5,3,11,Premium
+108262,34.62,2,21,Nações Shopping,Feminino,Eletrodomésticos,2,2,1,5,Pontual
+108281,228.19,3,24,Nações Shopping,Feminino,Farmácias,1,3,2,6,Pontual
+108328,2420.74,12,9,Norte Shopping,Feminino,Beleza e Bem-estar,3,5,5,13,VIP
+108498,195.89,4,1,Continente Shopping,Masculino,Gastronomia,5,3,2,10,Premium
+108665,368.71,4,13,Continente Shopping,Feminino,Beleza e Bem-estar,3,3,3,9,Potencial
+108801,708.92,10,13,Balneário Shopping,Masculino,Calçados,3,5,4,12,Premium
+108811,843.1,5,24,Balneário Shopping,Feminino,Livrarias,1,4,4,9,Potencial
+109239,2218.65,11,0,Norte Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+109432,119.9,1,29,Nações Shopping,Masculino,Gastronomia,1,1,1,3,Pontual
+109835,798.6800000000001,6,11,Balneário Shopping,Feminino,Moda,3,4,4,11,Premium
+110153,87.44,2,1,Nações Shopping,Feminino,Moda,5,2,1,8,Potencial
+110300,806.96,5,22,Norte Shopping,Masculino,Supermercado,2,4,4,10,Premium
+110737,915.6,10,16,Balneário Shopping,Feminino,Gastronomia,2,5,4,11,Premium
+110870,539.75,2,0,Nações Shopping,Feminino,Beleza e Bem-estar,5,2,3,10,Premium
+110885,289.12,10,17,Neumarkt Shopping,Feminino,Casa e Decoração,2,5,2,9,Potencial
+111184,695.9200000000001,3,8,Balneário Shopping,Feminino,Esportes,4,3,4,11,Premium
+111547,324.78,3,11,Continente Shopping,Feminino,Beleza e Bem-estar,3,3,3,9,Potencial
+111605,262.88,2,23,Garten Shopping,Feminino,Casa e Decoração,1,2,2,5,Pontual
+111622,319.70000000000005,2,21,Neumarkt Shopping,Feminino,Gastronomia,2,2,3,7,Potencial
+111714,209.76,4,7,Norte Shopping,Feminino,Gastronomia,4,3,2,9,Potencial
+111832,3309.93,4,5,Balneário Shopping,Feminino,Joalheria,4,3,5,12,Premium
+111880,777.4,4,0,Balneário Shopping,Feminino,Livrarias,5,3,4,12,Premium
+112029,745.0,7,18,Balneário Shopping,Feminino,Beleza e Bem-estar,2,5,4,11,Premium
+112226,2166.85,12,1,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+112262,441.92,5,16,Continente Shopping,Feminino,Gastronomia,2,4,3,9,Potencial
+112311,2489.19,9,2,Garten Shopping,Feminino,Farmácias,5,5,5,15,VIP
+112473,139.5,1,11,Balneário Shopping,Feminino,Beleza e Bem-estar,3,1,2,6,Pontual
+112560,249.9,1,26,Garten Shopping,Feminino,Calçados,1,1,2,4,Pontual
+112660,606.6,1,19,Balneário Shopping,Feminino,Eletrônicos,2,1,4,7,Potencial
+112821,173.37,2,17,Garten Shopping,Feminino,Gastronomia,2,2,2,6,Pontual
+113096,452.47,3,23,Garten Shopping,Feminino,Infantil,1,3,3,7,Potencial
+113136,1634.8,7,1,Norte Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+113432,322.73,11,4,Garten Shopping,Masculino,Gastronomia - Restaurante,4,5,3,12,Premium
+113433,1258.7,3,14,Garten Shopping,Feminino,Moda,3,3,5,11,Premium
+113540,898.08,5,5,Nações Shopping,Feminino,Beleza e Bem-estar,4,4,4,12,Premium
+113609,1191.3,5,2,Neumarkt Shopping,Masculino,Casa e Decoração,5,4,5,14,VIP
+113805,408.98,2,12,Continente Shopping,Feminino,Calçados,3,2,3,8,Potencial
+113864,396.19,6,4,Nações Shopping,Feminino,Gastronomia,4,4,3,11,Premium
+114341,830.5,4,6,Neumarkt Shopping,Feminino,Livrarias,4,3,4,11,Premium
+114434,258.9,2,27,Continente Shopping,Feminino,Calçados,1,2,2,5,Pontual
+114493,1696.21,7,1,Garten Shopping,Feminino,Livrarias,5,5,5,15,VIP
+114526,590.92,3,11,Garten Shopping,Masculino,Gastronomia,3,3,4,10,Premium
+114570,78.9,2,21,Nações Shopping,Masculino,Eletrodomésticos,2,2,1,5,Pontual
+114634,1063.3,4,19,Garten Shopping,Masculino,Moda,2,3,4,9,Potencial
+114644,37.45,1,2,Continente Shopping,Feminino,Gastronomia,5,1,1,7,Potencial
+114694,1564.04,18,3,Continente Shopping,Feminino,Pets,4,5,5,14,VIP
+115026,139.0,1,9,Neumarkt Shopping,Feminino,Beleza e Bem-estar,3,1,2,6,Pontual
+115045,532.0,1,24,Balneário Shopping,Feminino,Beleza e Bem-estar,1,1,3,5,Pontual
+115046,179.86,2,2,Norte Shopping,Feminino,Calçados,5,2,2,9,Potencial
+115108,477.85,9,1,Continente Shopping,Feminino,Gastronomia,5,5,3,13,VIP
+115180,921.52,7,4,Garten Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+115199,1053.23,14,0,Neumarkt Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+115303,1931.1,20,2,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+115306,1148.19,4,20,Balneário Shopping,Masculino,Moda,2,3,4,9,Potencial
+115327,863.8,3,14,Balneário Shopping,Masculino,Casa e Decoração,3,3,4,10,Premium
+115355,58.11,3,5,Garten Shopping,Feminino,Gastronomia,4,3,1,8,Potencial
+115517,3295.0,2,16,Neumarkt Shopping,Masculino,Joalheria,2,2,5,9,Potencial
+115563,2601.92,9,17,Balneário Shopping,Feminino,Moda,2,5,5,12,Premium
+115712,2507.49,28,2,Garten Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+115794,284.09000000000003,5,2,Garten Shopping,Feminino,Gastronomia,5,4,2,11,Premium
+116174,193.97,3,1,Continente Shopping,Feminino,Esportes,5,3,2,10,Premium
+116289,299.96,1,23,Neumarkt Shopping,Masculino,Esportes,1,1,3,5,Pontual
+116364,1450.02,8,12,Neumarkt Shopping,Feminino,Beleza e Bem-estar,3,5,5,13,VIP
+116369,323.4,2,4,Neumarkt Shopping,Feminino,Beleza e Bem-estar,4,2,3,9,Potencial
+116435,1145.3700000000001,4,15,Nações Shopping,Masculino,Moda,3,3,4,10,Premium
+116519,30.5,1,16,Nações Shopping,Masculino,Gastronomia,2,1,1,4,Pontual
+116545,1427.9,3,22,Garten Shopping,Feminino,Beleza e Bem-estar,2,3,5,10,Premium
+116568,619.94,3,3,Garten Shopping,Feminino,Calçados,4,3,4,11,Premium
+116672,600.0,1,24,Balneário Shopping,Feminino,Beleza e Bem-estar,1,1,4,6,Pontual
+116706,24.34,1,12,Neumarkt Shopping,Masculino,Eletrodomésticos,3,1,1,5,Pontual
+116779,284.8,5,3,Continente Shopping,Masculino,Gastronomia,4,4,2,10,Premium
+116848,484.53,5,9,Garten Shopping,Feminino,Gastronomia,3,4,3,10,Premium
+116861,292.43,3,30,Garten Shopping,Feminino,Casa e Decoração,1,3,3,7,Potencial
+116872,1455.83,5,9,Nações Shopping,Feminino,Moda,3,4,5,12,Premium
+116917,182.3,6,0,Garten Shopping,Masculino,Gastronomia,5,4,2,11,Premium
+116929,712.34,9,3,Neumarkt Shopping,Feminino,Beleza e Bem-estar,4,5,4,13,VIP
+117015,99.99,1,14,Garten Shopping,Masculino,Infantil,3,1,1,5,Pontual
+117022,273.98,2,24,Garten Shopping,Feminino,Farmácias,1,2,2,5,Pontual
+117048,270.35,4,16,Neumarkt Shopping,Feminino,Gastronomia,2,3,2,7,Potencial
+117056,21.95,1,29,Balneário Shopping,Masculino,Gastronomia,1,1,1,3,Pontual
+117073,1424.33,12,10,Garten Shopping,Masculino,Gastronomia,3,5,5,13,VIP
+117081,127.6,3,14,Nações Shopping,Feminino,Gastronomia,3,3,2,8,Potencial
+117146,612.71,9,3,Garten Shopping,Feminino,Moda,4,5,4,13,VIP
+117248,439.17,4,5,Neumarkt Shopping,Feminino,Gastronomia,4,3,3,10,Premium
+117291,98.9,4,4,Continente Shopping,Feminino,Gastronomia,4,3,1,8,Potencial
+117302,291.86,3,6,Continente Shopping,Feminino,Moda,4,3,3,10,Premium
+117303,321.0,1,19,Balneário Shopping,Masculino,Beleza e Bem-estar,2,1,3,6,Pontual
+117524,1046.34,15,10,Nações Shopping,Masculino,Gastronomia,3,5,4,12,Premium
+117530,743.0,4,0,Continente Shopping,Feminino,Gastronomia,5,3,4,12,Premium
+117549,337.77,2,0,Continente Shopping,Feminino,Moda,5,2,3,10,Premium
+117567,1393.44,13,10,Continente Shopping,Feminino,Gastronomia,3,5,5,13,VIP
+117584,4939.599999999999,2,0,Balneário Shopping,Masculino,Livrarias,5,2,5,12,Premium
+117722,458.45,7,12,Neumarkt Shopping,Feminino,Gastronomia,3,5,3,11,Premium
+117735,2168.46,9,8,Balneário Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+117758,1243.3,2,12,Garten Shopping,Feminino,Gastronomia,3,2,5,10,Premium
+117863,224.88,3,28,Nações Shopping,Feminino,Casa e Decoração,1,3,2,6,Pontual
+117868,779.86,4,27,Garten Shopping,Masculino,Moda,1,3,4,8,Potencial
+118013,598.98,2,23,Garten Shopping,Feminino,Calçados,1,2,4,7,Potencial
+118020,526.36,5,11,Continente Shopping,Feminino,Gastronomia,3,4,3,10,Premium
+118035,1956.88,6,2,Garten Shopping,Feminino,Beleza e Bem-estar,5,4,5,14,VIP
+118103,325.94,1,14,Continente Shopping,Feminino,Moda,3,1,3,7,Potencial
+118185,388.86,2,28,Garten Shopping,Feminino,Gastronomia,1,2,3,6,Pontual
+118286,128.49,3,27,Garten Shopping,Masculino,Gastronomia,1,3,2,6,Pontual
+118327,371.92,5,2,Balneário Shopping,Feminino,Beleza e Bem-estar,5,4,3,12,Premium
+118431,177.56,4,1,Neumarkt Shopping,Feminino,Livrarias,5,3,2,10,Premium
+118663,1617.53,11,22,Garten Shopping,Masculino,Moda,2,5,5,12,Premium
+118707,62.89,2,3,Norte Shopping,Feminino,Casa e Decoração,4,2,1,7,Potencial
+118740,245.82,4,14,Nações Shopping,Feminino,Casa e Decoração,3,3,2,8,Potencial
+118818,488.79999999999995,4,20,Continente Shopping,Feminino,Gastronomia,2,3,3,8,Potencial
+118878,2414.8900000000003,4,11,Garten Shopping,Feminino,Beleza e Bem-estar,3,3,5,11,Premium
+118998,954.4,2,27,Garten Shopping,Feminino,Moda,1,2,4,7,Potencial
+119033,3863.26,9,3,Neumarkt Shopping,Feminino,Moda,4,5,5,14,VIP
+119067,600.53,5,0,Neumarkt Shopping,Feminino,Gastronomia,5,4,4,13,VIP
+119113,647.0,1,17,Balneário Shopping,Feminino,Moda,2,1,4,7,Potencial
+119140,144.9,6,0,Continente Shopping,Masculino,Gastronomia,5,4,2,11,Premium
+119183,276.32,4,0,Garten Shopping,Feminino,Moda,5,3,2,10,Premium
+119187,724.04,3,3,Balneário Shopping,Feminino,Moda,4,3,4,11,Premium
+119191,708.87,4,26,Balneário Shopping,Feminino,Moda,1,3,4,8,Potencial
+119263,1332.99,6,9,Neumarkt Shopping,Masculino,Gastronomia,3,4,5,12,Premium
+119289,958.6899999999999,6,5,Nações Shopping,Feminino,Gastronomia,4,4,4,12,Premium
+119412,3309.6,5,4,Nações Shopping,Feminino,Beleza e Bem-estar,4,4,5,13,VIP
+119417,355.9,3,21,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,3,3,8,Potencial
+119473,553.98,2,22,Nações Shopping,Feminino,Calçados,2,2,3,7,Potencial
+119524,681.5,4,14,Neumarkt Shopping,Feminino,Beleza e Bem-estar,3,3,4,10,Premium
+119604,22.0,1,14,Nações Shopping,Masculino,Gastronomia,3,1,1,5,Pontual
+119643,1135.81,8,5,Continente Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+119646,149.99,1,2,Balneário Shopping,Feminino,Infantil,5,1,2,8,Potencial
+119669,1766.73,10,24,Balneário Shopping,Feminino,Gastronomia,1,5,5,11,Premium
+119685,338.89,3,26,Continente Shopping,Feminino,Beleza e Bem-estar,1,3,3,7,Potencial
+119710,59.9,1,11,Neumarkt Shopping,Feminino,Moda,3,1,1,5,Pontual
+119799,426.25,3,13,Garten Shopping,Feminino,Joalheria,3,3,3,9,Potencial
+119829,1880.73,14,5,Garten Shopping,Masculino,Gastronomia,4,5,5,14,VIP
+119910,10141.84,17,2,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+120285,1916.1100000000001,9,4,Continente Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+120307,202.3,4,9,Balneário Shopping,Feminino,Gastronomia,3,3,2,8,Potencial
+120365,3503.27,9,4,Balneário Shopping,Feminino,Moda,4,5,5,14,VIP
+120405,69.8,1,1,Balneário Shopping,Masculino,Livrarias,5,1,1,7,Potencial
+120429,1206.3,4,9,Nações Shopping,Feminino,Esportes,3,3,5,11,Premium
+120556,400.82000000000005,2,2,Continente Shopping,Feminino,Gastronomia,5,2,3,10,Premium
+120563,189.98,1,24,Garten Shopping,Feminino,Moda,1,1,2,4,Pontual
+120566,155.09,5,8,Nações Shopping,Feminino,Eletrodomésticos,4,4,2,10,Premium
+120655,1395.84,8,2,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+120660,250.76,3,3,Neumarkt Shopping,Masculino,Infantil,4,3,2,9,Potencial
+120789,1316.79,3,2,Neumarkt Shopping,Feminino,Beleza e Bem-estar,5,3,5,13,VIP
+120964,3880.75,7,27,Neumarkt Shopping,Feminino,Moda,1,5,5,11,Premium
+121003,969.11,3,9,Nações Shopping,Feminino,Farmácias,3,3,4,10,Premium
+121042,119.98,1,15,Continente Shopping,Feminino,Moda,3,1,1,5,Pontual
+121060,782.2,1,15,Nações Shopping,Feminino,Moda,3,1,4,8,Potencial
+121085,34.93,1,19,Neumarkt Shopping,Feminino,Gastronomia,2,1,1,4,Pontual
+121091,99.0,2,29,Continente Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+121165,2114.8599999999997,5,5,Nações Shopping,Masculino,Beleza e Bem-estar,4,4,5,13,VIP
+121366,946.73,5,2,Neumarkt Shopping,Feminino,Casa e Decoração,5,4,4,13,VIP
+121409,319.4,7,16,Garten Shopping,Feminino,Gastronomia,2,5,3,10,Premium
+121415,1553.79,10,8,Balneário Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+121522,1182.51,4,24,Continente Shopping,Feminino,Moda,1,3,5,9,Potencial
+121608,607.01,6,2,Garten Shopping,Feminino,Moda,5,4,4,13,VIP
+121810,45.98,2,3,Garten Shopping,Feminino,Gastronomia,4,2,1,7,Potencial
+121845,129.99,1,1,Neumarkt Shopping,Feminino,Esportes,5,1,2,8,Potencial
+121851,193.04999999999998,3,21,Neumarkt Shopping,Feminino,Moda,2,3,2,7,Potencial
+121856,5194.42,13,1,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+121875,678.78,3,7,Balneário Shopping,Feminino,Infantil,4,3,4,11,Premium
+121881,899.99,2,5,Neumarkt Shopping,Feminino,Joalheria,4,2,4,10,Premium
+121959,7659.77,12,6,Neumarkt Shopping,Feminino,Moda,4,5,5,14,VIP
+121966,1377.5,4,27,Continente Shopping,Feminino,Moda,1,3,5,9,Potencial
+121977,3224.51,9,14,Continente Shopping,Feminino,Calçados,3,5,5,13,VIP
+121994,359.87,3,13,Garten Shopping,Feminino,Moda,3,3,3,9,Potencial
+122068,2000.58,2,11,Garten Shopping,Feminino,Infantil,3,2,5,10,Premium
+122141,457.9,4,6,Continente Shopping,Feminino,Calçados,4,3,3,10,Premium
+122157,455.53,6,11,Neumarkt Shopping,Feminino,Gastronomia,3,4,3,10,Premium
+122161,129.99,1,11,Continente Shopping,Feminino,Moda,3,1,2,6,Pontual
+122189,474.9,7,5,Garten Shopping,Masculino,Gastronomia,4,5,3,12,Premium
+122234,168.7,4,18,Neumarkt Shopping,Masculino,Gastronomia,2,3,2,7,Potencial
+122411,992.5,3,13,Nações Shopping,Feminino,Moda,3,3,4,10,Premium
+122448,57.8,1,8,Balneário Shopping,Feminino,Gastronomia,4,1,1,6,Pontual
+122546,714.8,1,30,Balneário Shopping,Feminino,Presentes e Acessórios,1,1,4,6,Pontual
+122607,2533.02,19,2,Continente Shopping,Masculino,Gastronomia,5,5,5,15,VIP
+122627,690.3900000000001,7,18,Nações Shopping,Feminino,Gastronomia,2,5,4,11,Premium
+122790,359.09,3,25,Continente Shopping,Masculino,Farmácias,1,3,3,7,Potencial
+122881,815.27,7,16,Continente Shopping,Masculino,Gastronomia,2,5,4,11,Premium
+123045,720.67,2,3,Neumarkt Shopping,Feminino,Gastronomia,4,2,4,10,Premium
+123228,1438.37,5,21,Garten Shopping,Feminino,Moda,2,4,5,11,Premium
+123278,248.18,2,1,Garten Shopping,Feminino,Beleza e Bem-estar,5,2,2,9,Potencial
+123318,2538.3,3,1,Balneário Shopping,Masculino,Beleza e Bem-estar,5,3,5,13,VIP
+123347,47.8,1,24,Continente Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+123349,1857.6,1,21,Continente Shopping,Feminino,Moda Feminina,2,1,5,8,Potencial
+123364,340.07,4,25,Nações Shopping,Feminino,Calçados,1,3,3,7,Potencial
+123389,3427.8,7,1,Continente Shopping,Masculino,Gastronomia,5,5,5,15,VIP
+123512,1146.08,14,14,Continente Shopping,Masculino,Gastronomia,3,5,4,12,Premium
+123537,1348.88,6,6,Continente Shopping,Feminino,Moda,4,4,5,13,VIP
+123563,4335.25,12,4,Continente Shopping,Feminino,Moda,4,5,5,14,VIP
+123627,864.4,4,28,Neumarkt Shopping,Feminino,Moda,1,3,4,8,Potencial
+123768,494.98,5,26,Continente Shopping,Feminino,Gastronomia,1,4,3,8,Potencial
+123783,19820.25,9,3,Balneário Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+123784,632.99,6,1,Neumarkt Shopping,Feminino,Gastronomia,5,4,4,13,VIP
+123877,95.5,3,28,Garten Shopping,Feminino,Gastronomia,1,3,1,5,Pontual
+123960,6835.829999999999,7,1,Neumarkt Shopping,Feminino,Beleza e Bem-estar,5,5,5,15,VIP
+124016,195.64000000000001,3,11,Continente Shopping,Feminino,Eletrodomésticos,3,3,2,8,Potencial
+124033,1041.01,6,5,Garten Shopping,Feminino,Calçados,4,4,4,12,Premium
+124039,460.32,9,0,Continente Shopping,Masculino,Papelaria,5,5,3,13,VIP
+124095,1590.3,18,0,Continente Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+124108,1886.75,4,22,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,3,5,10,Premium
+124118,1221.98,7,11,Balneário Shopping,Feminino,Esportes,3,5,5,13,VIP
+124153,1643.75,2,5,Garten Shopping,Masculino,Infantil,4,2,5,11,Premium
+124165,44.0,1,25,Continente Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+124191,571.52,3,11,Continente Shopping,Feminino,Gastronomia,3,3,3,9,Potencial
+124223,287.0,3,30,Neumarkt Shopping,Feminino,Gastronomia,1,3,2,6,Pontual
+124310,3025.56,12,18,Neumarkt Shopping,Feminino,Gastronomia,2,5,5,12,Premium
+124377,6148.66,5,15,Neumarkt Shopping,Feminino,Casa e Decoração,3,4,5,12,Premium
+124407,37.2,1,11,Norte Shopping,Feminino,Gastronomia,3,1,1,5,Pontual
+124413,500.99,6,12,Neumarkt Shopping,Feminino,Farmácias,3,4,3,10,Premium
+124516,160.99,1,7,Continente Shopping,Masculino,Moda,4,1,2,7,Potencial
+124526,789.4,1,18,Neumarkt Shopping,Feminino,Moda,2,1,4,7,Potencial
+124534,299.0,1,28,Norte Shopping,Feminino,Moda,1,1,3,5,Pontual
+124562,319.8,5,10,Neumarkt Shopping,Feminino,Gastronomia,3,4,3,10,Premium
+124565,1219.1100000000001,8,0,Continente Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+124578,773.76,5,8,Balneário Shopping,Feminino,Gastronomia,4,4,4,12,Premium
+124579,53.0,1,7,Balneário Shopping,Masculino,Beleza e Bem-estar,4,1,1,6,Pontual
+124622,61.9,1,22,Neumarkt Shopping,Masculino,Pets,2,1,1,4,Pontual
+124660,169.65,1,15,Norte Shopping,Masculino,Supermercado,3,1,2,6,Pontual
+124676,329.3,1,27,Neumarkt Shopping,Masculino,Moda,1,1,3,5,Pontual
+124706,928.0,1,2,Garten Shopping,Masculino,Beleza e Bem-estar,5,1,4,10,Premium
+124713,1276.17,20,3,Garten Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+124735,329.0,1,29,Nações Shopping,Masculino,Moda,1,1,3,5,Pontual
+124816,599.9,1,16,Nações Shopping,Feminino,Calçados,2,1,4,7,Potencial
+125049,81.4,1,25,Garten Shopping,Masculino,Gastronomia,1,1,1,3,Pontual
+125098,61.94,2,16,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,2,1,5,Pontual
+125179,1463.9,10,11,Garten Shopping,Feminino,Infantil,3,5,5,13,VIP
+125209,717.59,5,27,Neumarkt Shopping,Feminino,Moda,1,4,4,9,Potencial
+125246,3033.69,6,1,Neumarkt Shopping,Feminino,Casa e Decoração,5,4,5,14,VIP
+125286,558.89,6,25,Neumarkt Shopping,Feminino,Gastronomia,1,4,3,8,Potencial
+125373,1316.78,8,11,Garten Shopping,Masculino,Gastronomia,3,5,5,13,VIP
+125402,644.6,7,1,Neumarkt Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+125479,98.0,1,3,Continente Shopping,Feminino,Lazer,4,1,1,6,Pontual
+125506,760.4499999999999,3,13,Neumarkt Shopping,Masculino,Moda,3,3,4,10,Premium
+125719,397.99,2,13,Balneário Shopping,Feminino,Beleza e Bem-estar,3,2,3,8,Potencial
+125926,247.48,4,18,Nações Shopping,Feminino,Gastronomia,2,3,2,7,Potencial
+125953,1126.95,17,2,Continente Shopping,Masculino,Gastronomia,5,5,4,14,VIP
+126014,240.49,7,0,Neumarkt Shopping,Feminino,Casa e Decoração,5,5,2,12,Premium
+126173,13528.96,8,2,Balneário Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+126322,565.47,6,1,Nações Shopping,Feminino,Eletrodomésticos,5,4,3,12,Premium
+126355,143.6,2,21,Continente Shopping,Masculino,Livrarias,2,2,2,6,Pontual
+126365,143.42,2,15,Neumarkt Shopping,Feminino,Eletrodomésticos,3,2,2,7,Potencial
+126434,1447.78,6,2,Balneário Shopping,Feminino,Moda,5,4,5,14,VIP
+126497,1410.69,14,1,Neumarkt Shopping,Feminino,Moda,5,5,5,15,VIP
+126538,1782.28,12,0,Garten Shopping,Feminino,Moda,5,5,5,15,VIP
+126601,4030.45,4,16,Norte Shopping,Feminino,Eletrodomésticos,2,3,5,10,Premium
+126693,60.400000000000006,2,12,Garten Shopping,Feminino,Beleza e Bem-estar,3,2,1,6,Pontual
+126697,249.99,1,0,Garten Shopping,Feminino,Infantil,5,1,2,8,Potencial
+126715,389.4,4,18,Neumarkt Shopping,Masculino,Gastronomia,2,3,3,8,Potencial
+126718,703.74,6,2,Nações Shopping,Feminino,Moda,5,4,4,13,VIP
+126734,349.03999999999996,2,22,Garten Shopping,Feminino,Beleza e Bem-estar,2,2,3,7,Potencial
+126755,867.99,4,23,Balneário Shopping,Feminino,Moda,1,3,4,8,Potencial
+126812,1248.19,10,16,Garten Shopping,Feminino,Moda,2,5,5,12,Premium
+126833,251.67000000000002,4,2,Norte Shopping,Masculino,Beleza e Bem-estar,5,3,2,10,Premium
+126867,144.0,2,0,Garten Shopping,Feminino,Kids,5,2,2,9,Potencial
+126878,1122.64,10,2,Neumarkt Shopping,Masculino,Eletrônicos,5,5,4,14,VIP
+126968,1075.6,11,6,Balneário Shopping,Feminino,Presentes e Acessórios,4,5,4,13,VIP
+126971,585.76,4,14,Continente Shopping,Feminino,Moda,3,3,4,10,Premium
+126980,284.8,3,13,Neumarkt Shopping,Feminino,Gastronomia,3,3,2,8,Potencial
+127011,1726.33,5,1,Balneário Shopping,Feminino,Gastronomia,5,4,5,14,VIP
+127037,766.4,5,12,Balneário Shopping,Feminino,Moda,3,4,4,11,Premium
+127041,943.77,5,12,Continente Shopping,Feminino,Beleza e Bem-estar,3,4,4,11,Premium
+127159,67.99000000000001,2,8,Garten Shopping,Feminino,Gastronomia,4,2,1,7,Potencial
+127182,240.73,4,22,Continente Shopping,Masculino,Gastronomia,2,3,2,7,Potencial
+127203,1242.76,4,14,Neumarkt Shopping,Masculino,Pets,3,3,5,11,Premium
+127211,2556.63,6,2,Garten Shopping,Feminino,Beleza e Bem-estar,5,4,5,14,VIP
+127237,154.7,2,2,Garten Shopping,Feminino,Moda,5,2,2,9,Potencial
+127379,1884.37,12,6,Continente Shopping,Feminino,Beleza e Bem-estar,4,5,5,14,VIP
+127412,54.6,2,22,Neumarkt Shopping,Masculino,Casa e Decoração,2,2,1,5,Pontual
+127632,708.32,7,5,Garten Shopping,Masculino,Gastronomia,4,5,4,13,VIP
+127663,110.0,2,28,Garten Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+127753,36.0,1,27,Garten Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+127761,624.3499999999999,5,1,Neumarkt Shopping,Feminino,Casa e Decoração,5,4,4,13,VIP
+127817,130.37,2,14,Continente Shopping,Feminino,Gastronomia,3,2,2,7,Potencial
+127907,19.9,1,30,Nações Shopping,Masculino,Moda,1,1,1,3,Pontual
+128028,1078.66,5,4,Nações Shopping,Masculino,Moda,4,4,4,12,Premium
+128111,829.3,2,1,Nações Shopping,Masculino,Moda,5,2,4,11,Premium
+128166,467.8,6,9,Balneário Shopping,Masculino,Livrarias,3,4,3,10,Premium
+128429,1019.83,6,27,Balneário Shopping,Feminino,Infantil,1,4,4,9,Potencial
+128434,455.64,4,23,Continente Shopping,Feminino,Gastronomia,1,3,3,7,Potencial
+128451,445.75,7,2,Neumarkt Shopping,Feminino,Beleza e Bem-estar,5,5,3,13,VIP
+128553,558.17,5,5,Neumarkt Shopping,Feminino,Gastronomia,4,4,3,11,Premium
+128639,16428.49,17,3,Nações Shopping,Feminino,Calçados,4,5,5,14,VIP
+128652,259.9,1,29,Neumarkt Shopping,Feminino,Moda,1,1,2,4,Pontual
+128780,39.0,1,16,Neumarkt Shopping,Masculino,Casa e Decoração,2,1,1,4,Pontual
+128806,219.5,1,3,Continente Shopping,Feminino,Presentes e Acessórios,4,1,2,7,Potencial
+128846,327.92,1,21,Neumarkt Shopping,Feminino,Eletrodomésticos,2,1,3,6,Pontual
+128852,1117.6299999999999,12,23,Neumarkt Shopping,Feminino,Farmácias,1,5,4,10,Premium
+128961,1973.03,5,10,Continente Shopping,Feminino,Moda,3,4,5,12,Premium
+129056,824.66,9,15,Norte Shopping,Masculino,Supermercado,3,5,4,12,Premium
+129075,80.48,2,27,Norte Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+129197,1895.94,20,1,Continente Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+129224,866.9,7,8,Nações Shopping,Feminino,Beleza e Bem-estar,4,5,4,13,VIP
+129310,1335.29,6,0,Continente Shopping,Masculino,Gastronomia,5,4,5,14,VIP
+129421,950.23,5,9,Continente Shopping,Feminino,Moda,3,4,4,11,Premium
+129660,330.8,2,14,Continente Shopping,Feminino,Calçados,3,2,3,8,Potencial
+129669,895.68,5,15,Garten Shopping,Feminino,Gastronomia,3,4,4,11,Premium
+129820,1150.9,5,7,Neumarkt Shopping,Masculino,Gastronomia,4,4,4,12,Premium
+129848,1587.72,5,1,Nações Shopping,Feminino,Moda,5,4,5,14,VIP
+130072,595.26,3,18,Neumarkt Shopping,Feminino,Moda,2,3,4,9,Potencial
+130087,142.44,2,20,Balneário Shopping,Feminino,Moda,2,2,2,6,Pontual
+130117,161.92000000000002,3,12,Balneário Shopping,Feminino,Casa e Decoração,3,3,2,8,Potencial
+130141,590.7,4,20,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,3,4,9,Potencial
+130173,578.68,4,8,Garten Shopping,Feminino,Calçados,4,3,3,10,Premium
+130196,2556.55,6,9,Nações Shopping,Masculino,Moda,3,4,5,12,Premium
+130239,339.69,3,27,Garten Shopping,Feminino,Moda,1,3,3,7,Potencial
+130425,239.98000000000002,2,15,Norte Shopping,Masculino,Calçados,3,2,2,7,Potencial
+130539,4453.28,7,2,Nações Shopping,Masculino,Beleza e Bem-estar,5,5,5,15,VIP
+130657,398.0,1,7,Balneário Shopping,Feminino,Beleza e Bem-estar,4,1,3,8,Potencial
+130753,969.8199999999999,2,11,Balneário Shopping,Feminino,Esportes,3,2,4,9,Potencial
+130881,126.97,4,1,Nações Shopping,Feminino,Gastronomia,5,3,2,10,Premium
+130977,1326.01,16,2,Norte Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+130990,43.1,1,15,Neumarkt Shopping,Feminino,Gastronomia,3,1,1,5,Pontual
+131106,289.0,5,27,Continente Shopping,Feminino,Gastronomia,1,4,2,7,Potencial
+131240,2144.0699999999997,18,1,Neumarkt Shopping,Masculino,Gastronomia,5,5,5,15,VIP
+131249,2156.11,10,4,Balneário Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+131336,1371.16,11,1,Continente Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+131522,1017.3,5,2,Garten Shopping,Masculino,Moda,5,4,4,13,VIP
+131534,120.9,2,12,Neumarkt Shopping,Feminino,Esportes,3,2,1,6,Pontual
+131542,3030.2999999999997,10,0,Garten Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+131707,125.0,1,25,Neumarkt Shopping,Feminino,Presentes e Acessórios,1,1,2,4,Pontual
+131729,211.5,5,22,Garten Shopping,Feminino,Gastronomia,2,4,2,8,Potencial
+131797,377.95000000000005,2,23,Balneário Shopping,Feminino,Farmácias,1,2,3,6,Pontual
+131828,2546.62,6,14,Neumarkt Shopping,Masculino,Beleza e Bem-estar,3,4,5,12,Premium
+131833,309.77,8,0,Balneário Shopping,Masculino,Gastronomia,5,5,3,13,VIP
+131856,589.49,8,1,Neumarkt Shopping,Feminino,Moda,5,5,4,14,VIP
+131916,1019.06,9,23,Neumarkt Shopping,Feminino,Gastronomia,1,5,4,10,Premium
+131966,654.0799999999999,11,1,Garten Shopping,Masculino,Gastronomia,5,5,4,14,VIP
+131968,98.05,4,26,Continente Shopping,Feminino,Gastronomia,1,3,1,5,Pontual
+131987,436.35,2,26,Continente Shopping,Feminino,Moda,1,2,3,6,Pontual
+131991,636.52,5,11,Neumarkt Shopping,Feminino,Calçados,3,4,4,11,Premium
+132029,157.67000000000002,4,16,Norte Shopping,Outro,Gastronomia,2,3,2,7,Potencial
+132048,507.6,4,10,Neumarkt Shopping,Feminino,Moda,3,3,3,9,Potencial
+132198,37.9,1,19,Garten Shopping,Feminino,Gastronomia,2,1,1,4,Pontual
+132300,148.0,3,2,Continente Shopping,Feminino,Gastronomia,5,3,2,10,Premium
+132303,533.8,2,14,Garten Shopping,Feminino,Casa e Decoração,3,2,3,8,Potencial
+132330,1463.0,8,1,Norte Shopping,Feminino,Moda,5,5,5,15,VIP
+132334,24.9,2,30,Neumarkt Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+132362,660.41,4,7,Neumarkt Shopping,Feminino,Moda,4,3,4,11,Premium
+132379,696.19,4,22,Continente Shopping,Feminino,Esportes,2,3,4,9,Potencial
+132574,199.9,1,1,Neumarkt Shopping,Feminino,Moda,5,1,2,8,Potencial
+132615,80.0,1,6,Norte Shopping,Masculino,Gastronomia,4,1,1,6,Pontual
+132772,217.55,1,15,Balneário Shopping,Feminino,Casa e Decoração,3,1,2,6,Pontual
+132835,528.0799999999999,4,8,Garten Shopping,Feminino,Gastronomia,4,3,3,10,Premium
+132900,266.58,3,30,Nações Shopping,Feminino,Moda,1,3,2,6,Pontual
+133030,23.96,1,15,Nações Shopping,Feminino,Eletrodomésticos,3,1,1,5,Pontual
+133048,70.0,1,28,Continente Shopping,Masculino,Gastronomia,1,1,1,3,Pontual
+133190,431.25,3,14,Balneário Shopping,Feminino,Moda,3,3,3,9,Potencial
+133317,94.9,3,24,Continente Shopping,Masculino,Gastronomia,1,3,1,5,Pontual
+133348,38.98,1,5,Nações Shopping,Feminino,Beleza e Bem-estar,4,1,1,6,Pontual
+133532,1222.9,2,16,Balneário Shopping,Masculino,Casa e Decoração,2,2,5,9,Potencial
+133599,640.0799999999999,6,19,Garten Shopping,Feminino,Gastronomia,2,4,4,10,Premium
+133610,202.57999999999998,4,1,Garten Shopping,Feminino,Gastronomia,5,3,2,10,Premium
+133677,159.98,1,28,Neumarkt Shopping,Feminino,Casa e Decoração,1,1,2,4,Pontual
+133706,1108.19,6,1,Continente Shopping,Feminino,Beleza e Bem-estar,5,4,4,13,VIP
+133716,2136.93,11,2,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+133728,367.86,1,10,Continente Shopping,Feminino,Moda,3,1,3,7,Potencial
+133757,485.17,5,19,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,4,3,9,Potencial
+133802,1465.25,7,11,Balneário Shopping,Feminino,Moda,3,5,5,13,VIP
+133823,202.76,6,3,Continente Shopping,Feminino,Gastronomia,4,4,2,10,Premium
+133866,2984.2,2,26,Continente Shopping,Feminino,Eletrônicos,1,2,5,8,Potencial
+133869,271.38,4,7,Neumarkt Shopping,Feminino,Gastronomia,4,3,2,9,Potencial
+133942,209.92,1,15,Nações Shopping,Masculino,Pets,3,1,2,6,Pontual
+134027,996.1600000000001,7,1,Garten Shopping,Feminino,Moda,5,5,4,14,VIP
+134048,1014.4300000000001,17,9,Neumarkt Shopping,Feminino,Gastronomia,3,5,4,12,Premium
+134101,163.02,1,3,Garten Shopping,Feminino,Beleza e Bem-estar,4,1,2,7,Potencial
+134163,201.38,1,2,Continente Shopping,Masculino,Gastronomia,5,1,2,8,Potencial
+134230,3118.58,5,19,Balneário Shopping,Feminino,Presentes e Acessórios,2,4,5,11,Premium
+134343,470.9,3,26,Continente Shopping,Feminino,Gastronomia,1,3,3,7,Potencial
+134352,382.6,4,3,Neumarkt Shopping,Masculino,Gastronomia,4,3,3,10,Premium
+134500,54.5,1,21,Nações Shopping,Feminino,Gastronomia,2,1,1,4,Pontual
+134639,1070.68,14,7,Nações Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+134669,110.80000000000001,2,11,Garten Shopping,Feminino,Papelaria,3,2,1,6,Pontual
+134778,659.76,4,0,Neumarkt Shopping,Feminino,Moda,5,3,4,12,Premium
+134782,1074.43,7,12,Neumarkt Shopping,Feminino,Moda,3,5,4,12,Premium
+134802,104.97,2,13,Balneário Shopping,Feminino,Moda,3,2,1,6,Pontual
+134803,54.8,2,7,Nações Shopping,Feminino,Gastronomia,4,2,1,7,Potencial
+134808,882.18,4,8,Garten Shopping,Feminino,Moda Feminina,4,3,4,11,Premium
+134829,492.61,6,4,Continente Shopping,Feminino,Pets,4,4,3,11,Premium
+134843,153.99,4,3,Neumarkt Shopping,Feminino,Gastronomia,4,3,2,9,Potencial
+134874,2639.86,10,5,Garten Shopping,Feminino,Moda,4,5,5,14,VIP
+134878,845.09,15,1,Neumarkt Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+134881,9.99,1,16,Balneário Shopping,Feminino,Supermercado,2,1,1,4,Pontual
+134906,945.8,3,2,Balneário Shopping,Feminino,Infantil,5,3,4,12,Premium
+134981,2052.7400000000002,19,10,Balneário Shopping,Feminino,Gastronomia,3,5,5,13,VIP
+135146,5.99,1,13,Balneário Shopping,Feminino,Beleza e Bem-estar,3,1,1,5,Pontual
+135260,37.0,2,27,Continente Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+135309,1160.81,6,0,Continente Shopping,Feminino,Esportes,5,4,4,13,VIP
+135344,131.96,3,3,Neumarkt Shopping,Masculino,Moda,4,3,2,9,Potencial
+135372,515.53,3,2,Norte Shopping,Masculino,Supermercado,5,3,3,11,Premium
+135519,1963.8400000000001,3,0,Continente Shopping,Feminino,Calçados,5,3,5,13,VIP
+135702,535.9,2,21,Balneário Shopping,Feminino,Moda,2,2,3,7,Potencial
+135785,246.95,1,8,Balneário Shopping,Feminino,Presentes e Acessórios,4,1,2,7,Potencial
+135989,365.69,7,8,Neumarkt Shopping,Feminino,Gastronomia,4,5,3,12,Premium
+136032,2388.9,4,9,Garten Shopping,Feminino,Calçados,3,3,5,11,Premium
+136054,7962.37,1,30,Garten Shopping,Masculino,Telefonia,1,1,5,7,Potencial
+136078,970.0,2,14,Garten Shopping,Feminino,Beleza e Bem-estar,3,2,4,9,Potencial
+136099,199.98000000000002,2,22,Continente Shopping,Feminino,Calçados,2,2,2,6,Pontual
+136132,206.60000000000002,3,4,Neumarkt Shopping,Masculino,Gastronomia,4,3,2,9,Potencial
+136133,422.1,3,6,Balneário Shopping,Masculino,Gastronomia,4,3,3,10,Premium
+136274,257.69,4,4,Neumarkt Shopping,Feminino,Moda,4,3,2,9,Potencial
+136538,208.76,2,26,Garten Shopping,Masculino,Beleza e Bem-estar,1,2,2,5,Pontual
+136543,1019.97,3,28,Garten Shopping,Feminino,Calçados,1,3,4,8,Potencial
+136544,12853.9,5,2,Balneário Shopping,Feminino,Gastronomia,5,4,5,14,VIP
+136643,420.1,4,20,Balneário Shopping,Feminino,Beleza e Bem-estar,2,3,3,8,Potencial
+136936,73.9,3,28,Norte Shopping,Feminino,Beleza e Bem-estar,1,3,1,5,Pontual
+137010,239.78000000000003,3,8,Neumarkt Shopping,Feminino,Calçados,4,3,2,9,Potencial
+137021,277.09999999999997,2,22,Balneário Shopping,Feminino,Beleza e Bem-estar,2,2,2,6,Pontual
+137290,119.97,1,1,Garten Shopping,Feminino,Moda,5,1,1,7,Potencial
+137316,873.35,4,6,Balneário Shopping,Feminino,Moda,4,3,4,11,Premium
+137353,789.65,12,2,Continente Shopping,Feminino,Moda,5,5,4,14,VIP
+137356,279.88,2,21,Balneário Shopping,Feminino,Esportes,2,2,2,6,Pontual
+137375,1720.65,2,27,Balneário Shopping,Feminino,Beleza e Bem-estar,1,2,5,8,Potencial
+137385,1791.75,5,1,Garten Shopping,Feminino,Gastronomia,5,4,5,14,VIP
+137406,204.32,5,13,Garten Shopping,Masculino,Livrarias,3,4,2,9,Potencial
+137426,36.91,1,22,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,1,1,4,Pontual
+137462,433.18999999999994,3,29,Continente Shopping,Masculino,Farmácias,1,3,3,7,Potencial
+137521,177.93,1,7,Neumarkt Shopping,Feminino,Casa e Decoração,4,1,2,7,Potencial
+137632,238.6,3,15,Continente Shopping,Feminino,Papelaria,3,3,2,8,Potencial
+137655,264.0,8,4,Neumarkt Shopping,Feminino,Gastronomia,4,5,2,11,Premium
+137785,565.8299999999999,7,27,Continente Shopping,Feminino,Beleza e Bem-estar,1,5,3,9,Potencial
+137840,1208.94,10,22,Continente Shopping,Feminino,Gastronomia,2,5,5,12,Premium
+137865,1088.96,11,0,Neumarkt Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+137899,1138.29,9,3,Neumarkt Shopping,Feminino,Eletrodomésticos,4,5,4,13,VIP
+138070,1311.3,8,20,Norte Shopping,Feminino,Moda,2,5,5,12,Premium
+138073,563.81,5,4,Continente Shopping,Feminino,Casa e Decoração,4,4,3,11,Premium
+138194,1332.37,11,6,Balneário Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+138233,599.8,1,8,Balneário Shopping,Feminino,Moda,4,1,4,9,Potencial
+138283,796.39,10,3,Garten Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+138335,358.86,3,23,Garten Shopping,Masculino,Gastronomia,1,3,3,7,Potencial
+138379,79.11,2,10,Neumarkt Shopping,Masculino,Gastronomia,3,2,1,6,Pontual
+138399,81.38,2,23,Nações Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+138514,77.47,3,20,Balneário Shopping,Feminino,Gastronomia,2,3,1,6,Pontual
+138536,9269.38,16,4,Continente Shopping,Feminino,Moda,4,5,5,14,VIP
+138573,610.0,1,19,Balneário Shopping,Feminino,Moda,2,1,4,7,Potencial
+138668,1006.8,2,8,Balneário Shopping,Feminino,Moda,4,2,4,10,Premium
+138876,1062.9,5,19,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,4,4,10,Premium
+138958,1368.77,3,23,Nações Shopping,Feminino,Casa e Decoração,1,3,5,9,Potencial
+139026,380.86,2,14,Continente Shopping,Feminino,Beleza e Bem-estar,3,2,3,8,Potencial
+139099,139.6,1,23,Nações Shopping,Feminino,Beleza e Bem-estar,1,1,2,4,Pontual
+139184,86.03,1,18,Nações Shopping,Masculino,Beleza e Bem-estar,2,1,1,4,Pontual
+139204,512.02,7,5,Continente Shopping,Masculino,Gastronomia,4,5,3,12,Premium
+139213,230.25,2,1,Neumarkt Shopping,Feminino,Moda,5,2,2,9,Potencial
+139413,394.0,3,23,Garten Shopping,Masculino,Gastronomia,1,3,3,7,Potencial
+139430,980.0,2,3,Balneário Shopping,Feminino,Beleza e Bem-estar,4,2,4,10,Premium
+139470,257.8,3,4,Balneário Shopping,Feminino,Gastronomia,4,3,2,9,Potencial
+139493,99.98,1,2,Garten Shopping,Feminino,Moda,5,1,1,7,Potencial
+139821,1355.75,7,4,Garten Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+140008,1159.76,3,3,Garten Shopping,Feminino,Moda,4,3,4,11,Premium
+140433,109.9,1,8,Nações Shopping,Feminino,Gastronomia,4,1,1,6,Pontual
+140450,1167.94,17,12,Garten Shopping,Feminino,Gastronomia,3,5,5,13,VIP
+140475,487.57,3,0,Neumarkt Shopping,Masculino,Gastronomia,5,3,3,11,Premium
+140533,1659.94,4,2,Neumarkt Shopping,Masculino,Eletrodomésticos,5,3,5,13,VIP
+140588,3422.0299999999997,13,5,Nações Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+140723,1420.31,5,18,Balneário Shopping,Feminino,Moda,2,4,5,11,Premium
+140795,286.43,6,8,Neumarkt Shopping,Feminino,Beleza e Bem-estar,4,4,2,10,Premium
+140872,89.0,1,25,Garten Shopping,Feminino,Joalheria,1,1,1,3,Pontual
+140893,272.0,1,2,Balneário Shopping,Feminino,Gastronomia,5,1,2,8,Potencial
+140935,3850.3700000000003,18,23,Garten Shopping,Feminino,Moda,1,5,5,11,Premium
+140996,1149.0,1,29,Neumarkt Shopping,Feminino,Casa e Decoração,1,1,4,6,Pontual
+141015,1690.74,13,1,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+141194,2020.08,10,4,Continente Shopping,Feminino,Moda,4,5,5,14,VIP
+141226,1360.03,9,1,Neumarkt Shopping,Feminino,Moda,5,5,5,15,VIP
+141353,217.68,2,21,Norte Shopping,Feminino,Beleza e Bem-estar,2,2,2,6,Pontual
+141503,3008.04,43,0,Norte Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+141558,253.88,5,11,Continente Shopping,Feminino,Gastronomia,3,4,2,9,Potencial
+141571,2250.84,5,26,Balneário Shopping,Feminino,Moda,1,4,5,10,Premium
+141784,289.76,4,28,Garten Shopping,Feminino,Gastronomia,1,4,2,7,Potencial
+141975,441.15,4,1,Nações Shopping,Feminino,Gastronomia,5,4,3,12,Premium
+141997,518.6800000000001,2,6,Balneário Shopping,Feminino,Infantil,4,2,3,9,Potencial
+142044,464.28000000000003,4,12,Norte Shopping,Feminino,Casa e Decoração,3,4,3,10,Premium
+142075,2141.1,23,3,Continente Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+142099,391.19,7,4,Garten Shopping,Feminino,Gastronomia,4,5,3,12,Premium
+142102,392.6,2,29,Garten Shopping,Feminino,Gastronomia - Restaurante,1,2,3,6,Pontual
+142214,534.64,5,12,Continente Shopping,Feminino,Gastronomia,3,4,3,10,Premium
+142314,69.9,1,0,Nações Shopping,Feminino,Moda,5,1,1,7,Potencial
+142316,66.0,1,12,Balneário Shopping,Feminino,Beleza e Bem-estar,3,1,1,5,Pontual
+142325,153.27,1,27,Nações Shopping,Masculino,Gastronomia,1,1,2,4,Pontual
+142403,54.4,2,2,Garten Shopping,Masculino,Gastronomia,5,2,1,8,Potencial
+142480,200.2,1,12,Continente Shopping,Masculino,Gastronomia,3,1,2,6,Pontual
+142578,1.18,1,15,Continente Shopping,Feminino,Infantil,3,1,1,5,Pontual
+142658,304.8,3,15,Nações Shopping,Feminino,Infantil,3,3,3,9,Potencial
+142800,1267.3,8,30,Neumarkt Shopping,Feminino,Beleza e Bem-estar,1,5,5,11,Premium
+142857,2020.27,5,2,Nações Shopping,Masculino,Casa e Decoração,5,4,5,14,VIP
+142937,1175.98,6,8,Garten Shopping,Feminino,Gastronomia,4,4,5,13,VIP
+142950,39.0,1,23,Garten Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+143009,119.9,1,30,Continente Shopping,Feminino,Moda,1,1,1,3,Pontual
+143129,599.0,1,25,Garten Shopping,Feminino,Telefonia,1,1,4,6,Pontual
+143145,62.7,2,13,Neumarkt Shopping,Masculino,Gastronomia,3,2,1,6,Pontual
+143173,299.7,1,9,Nações Shopping,Masculino,Moda,3,1,3,7,Potencial
+143205,69.99,1,0,Nações Shopping,Feminino,Moda,5,1,1,7,Potencial
+143206,448.78,10,4,Neumarkt Shopping,Feminino,Gastronomia,4,5,3,12,Premium
+143338,299.88,1,2,Nações Shopping,Feminino,Moda,5,1,3,9,Potencial
+143395,872.0,5,8,Garten Shopping,Feminino,Gastronomia,4,4,4,12,Premium
+143855,1671.69,5,2,Norte Shopping,Feminino,Beleza e Bem-estar,5,4,5,14,VIP
+143875,701.13,6,14,Neumarkt Shopping,Feminino,Moda,3,4,4,11,Premium
+143952,39.9,1,29,Garten Shopping,Feminino,Livrarias,1,1,1,3,Pontual
+144023,319.9,2,16,Balneário Shopping,Feminino,Infantil,2,2,3,7,Potencial
+144220,807.64,6,8,Balneário Shopping,Feminino,Casa e Decoração,4,4,4,12,Premium
+144261,115.0,3,19,Norte Shopping,Feminino,Gastronomia,2,3,1,6,Pontual
+144333,74.99,1,7,Balneário Shopping,Feminino,Infantil,4,1,1,6,Pontual
+144334,287.1,2,19,Neumarkt Shopping,Masculino,Gastronomia,2,2,2,6,Pontual
+144398,168.95,3,2,Continente Shopping,Feminino,Eletrodomésticos,5,3,2,10,Premium
+144471,249.9,1,4,Neumarkt Shopping,Feminino,Moda,4,1,2,7,Potencial
+144589,529.8,3,17,Garten Shopping,Feminino,Moda,2,3,3,8,Potencial
+144644,2421.16,16,1,Balneário Shopping,Feminino,Moda,5,5,5,15,VIP
+144686,2125.72,8,28,Continente Shopping,Feminino,Gastronomia,1,5,5,11,Premium
+144691,288.87,2,14,Nações Shopping,Masculino,Casa e Decoração,3,2,2,7,Potencial
+144710,159.99,1,21,Garten Shopping,Feminino,Moda,2,1,2,5,Pontual
+144776,99.0,1,22,Continente Shopping,Feminino,Infantil,2,1,1,4,Pontual
+144828,1723.5,2,29,Balneário Shopping,Feminino,Beleza e Bem-estar,1,2,5,8,Potencial
+144982,299.94,2,8,Norte Shopping,Masculino,Beleza e Bem-estar,4,2,3,9,Potencial
+145015,333.0,1,23,Neumarkt Shopping,Masculino,Beleza e Bem-estar,1,1,3,5,Pontual
+145026,791.18,9,1,Nações Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+145080,690.76,3,0,Continente Shopping,Feminino,Esportes,5,3,4,12,Premium
+145220,661.27,3,2,Neumarkt Shopping,Feminino,Beleza e Bem-estar,5,3,4,12,Premium
+145655,967.9,4,18,Neumarkt Shopping,Masculino,Moda,2,4,4,10,Premium
+145703,364.96,5,5,Continente Shopping,Feminino,Moda,4,4,3,11,Premium
+145750,1863.0700000000002,10,2,Balneário Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+145899,1450.56,7,3,Balneário Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+145986,1.0,1,23,Balneário Shopping,Feminino,Moda,1,1,1,3,Pontual
+146008,44.0,1,16,Neumarkt Shopping,Feminino,Gastronomia,2,1,1,4,Pontual
+146018,1522.66,7,3,Balneário Shopping,Masculino,Presentes e Acessórios,4,5,5,14,VIP
+146090,328.87,3,22,Continente Shopping,Feminino,Beleza e Bem-estar,2,3,3,8,Potencial
+146101,1323.57,3,2,Nações Shopping,Masculino,Moda,5,3,5,13,VIP
+146187,14.0,1,24,Balneário Shopping,Masculino,Gastronomia,1,1,1,3,Pontual
+146292,59.99,1,27,Garten Shopping,Feminino,Infantil,1,1,1,3,Pontual
+146673,2106.0,6,5,Garten Shopping,Feminino,Gastronomia,4,4,5,13,VIP
+146735,262.3,6,6,Norte Shopping,Feminino,Gastronomia,4,4,2,10,Premium
+146788,3576.63,17,1,Nações Shopping,Feminino,Moda,5,5,5,15,VIP
+147100,208.82,1,14,Norte Shopping,Masculino,Supermercado,3,1,2,6,Pontual
+147184,1299.0,1,22,Nações Shopping,Feminino,Esportes,2,1,5,8,Potencial
+147188,2022.32,12,8,Neumarkt Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+147503,2950.1,5,12,Balneário Shopping,Feminino,Moda,3,4,5,12,Premium
+147518,639.5,2,0,Continente Shopping,Feminino,Moda,5,2,4,11,Premium
+147540,2148.99,2,21,Balneário Shopping,Masculino,Beleza e Bem-estar,2,2,5,9,Potencial
+147883,529.85,1,20,Nações Shopping,Feminino,Calçados,2,1,3,6,Pontual
+147907,625.9,3,27,Garten Shopping,Feminino,Beleza e Bem-estar,1,3,4,8,Potencial
+147966,535.96,4,28,Neumarkt Shopping,Feminino,Moda,1,4,3,8,Potencial
+148091,2649.69,6,15,Neumarkt Shopping,Feminino,Moda,3,4,5,12,Premium
+148308,139.3,2,7,Garten Shopping,Feminino,Gastronomia,4,2,2,8,Potencial
+148381,1937.8000000000002,8,0,Balneário Shopping,Masculino,Gastronomia,5,5,5,15,VIP
+148417,1551.23,5,1,Continente Shopping,Feminino,Gastronomia,5,4,5,14,VIP
+148460,486.43,7,6,Garten Shopping,Feminino,Casa e Decoração,4,5,3,12,Premium
+148548,859.76,4,14,Balneário Shopping,Feminino,Moda,3,4,4,11,Premium
+148555,379.98,2,16,Balneário Shopping,Feminino,Beleza e Bem-estar,2,2,3,7,Potencial
+148606,1406.5700000000002,6,28,Balneário Shopping,Feminino,Beleza e Bem-estar,1,4,5,10,Premium
+148717,6283.31,10,17,Balneário Shopping,Feminino,Moda,2,5,5,12,Premium
+148932,3905.15,6,22,Norte Shopping,Feminino,Pets,2,4,5,11,Premium
+149166,101.9,3,23,Neumarkt Shopping,Masculino,Gastronomia,1,3,1,5,Pontual
+149259,239.98,1,0,Balneário Shopping,Feminino,Moda,5,1,2,8,Potencial
+149461,372.9,3,0,Garten Shopping,Feminino,Presentes e Acessórios,5,3,3,11,Premium
+149473,6393.1,10,3,Continente Shopping,Masculino,Gastronomia,4,5,5,14,VIP
+149643,572.46,3,1,Continente Shopping,Feminino,Eletrodomésticos,5,3,3,11,Premium
+149959,30.0,1,21,Balneário Shopping,Feminino,Serviços,2,1,1,4,Pontual
+150183,1191.49,25,10,Neumarkt Shopping,Feminino,Gastronomia,3,5,5,13,VIP
+150307,289.7,1,4,Continente Shopping,Feminino,Moda,4,1,2,7,Potencial
+150329,521.1800000000001,5,2,Neumarkt Shopping,Feminino,Eletrodomésticos,5,4,3,12,Premium
+150481,501.77,3,16,Neumarkt Shopping,Feminino,Esportes,2,3,3,8,Potencial
+150552,145.64,1,8,Neumarkt Shopping,Masculino,Gastronomia,4,1,2,7,Potencial
+150607,15.8,1,25,Neumarkt Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+150702,30.3,1,12,Neumarkt Shopping,Feminino,Gastronomia,3,1,1,5,Pontual
+150728,1184.37,9,0,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+150740,1376.1399999999999,4,15,Continente Shopping,Masculino,Esportes,3,4,5,12,Premium
+150814,253.4,3,23,Garten Shopping,Masculino,Gastronomia,1,3,2,6,Pontual
+150816,1166.07,4,3,Neumarkt Shopping,Feminino,Beleza e Bem-estar,4,4,4,12,Premium
+150915,771.64,5,23,Continente Shopping,Feminino,Beleza e Bem-estar,1,4,4,9,Potencial
+150927,1777.4,2,1,Norte Shopping,Feminino,Supermercado,5,2,5,12,Premium
+151057,640.17,13,1,Garten Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+151097,401.39,2,25,Norte Shopping,Feminino,Livrarias,1,2,3,6,Pontual
+151115,354.70000000000005,3,24,Nações Shopping,Feminino,Moda,1,3,3,7,Potencial
+151197,332.70000000000005,2,25,Balneário Shopping,Feminino,Moda,1,2,3,6,Pontual
+151311,413.0,9,6,Garten Shopping,Feminino,Gastronomia,4,5,3,12,Premium
+151326,642.8,8,22,Garten Shopping,Feminino,Presentes e Acessórios,2,5,4,11,Premium
+151462,635.04,4,7,Garten Shopping,Feminino,Gastronomia,4,4,4,12,Premium
+151683,1148.83,9,1,Garten Shopping,Masculino,Gastronomia - Restaurante,5,5,4,14,VIP
+151988,125.98,2,15,Continente Shopping,Masculino,Esportes,3,2,2,7,Potencial
+151990,1029.24,12,1,Continente Shopping,Feminino,Beleza e Bem-estar,5,5,4,14,VIP
+152043,755.89,5,22,Norte Shopping,Masculino,Beleza e Bem-estar,2,4,4,10,Premium
+152072,149.8,2,2,Nações Shopping,Feminino,Casa e Decoração,5,2,2,9,Potencial
+152162,518.45,6,17,Neumarkt Shopping,Masculino,Gastronomia,2,4,3,9,Potencial
+152183,568.86,8,15,Balneário Shopping,Feminino,Moda,3,5,3,11,Premium
+152578,446.49,8,11,Continente Shopping,Feminino,Beleza e Bem-estar,3,5,3,11,Premium
+152587,770.73,5,17,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,4,4,10,Premium
+152614,12.7,2,1,Continente Shopping,Feminino,Gastronomia,5,2,1,8,Potencial
+152992,764.9,2,28,Nações Shopping,Feminino,Farmácias,1,2,4,7,Potencial
+153178,139.9,1,27,Neumarkt Shopping,Feminino,Moda,1,1,2,4,Pontual
+153180,1645.8,9,5,Balneário Shopping,Feminino,Moda,4,5,5,14,VIP
+153292,390.5,3,12,Neumarkt Shopping,Feminino,Casa e Decoração,3,3,3,9,Potencial
+153307,259.0,1,30,Balneário Shopping,Masculino,Beleza e Bem-estar,1,1,2,4,Pontual
+153603,107.81,1,16,Continente Shopping,Masculino,Esportes,2,1,1,4,Pontual
+153632,2441.77,10,23,Garten Shopping,Masculino,Gastronomia,1,5,5,11,Premium
+153675,209.98,1,24,Garten Shopping,Feminino,Moda,1,1,2,4,Pontual
+153821,1406.31,3,18,Neumarkt Shopping,Masculino,Gastronomia,2,3,5,10,Premium
+153823,612.87,5,17,Balneário Shopping,Feminino,Esportes,2,4,4,10,Premium
+154002,215.89999999999998,3,15,Continente Shopping,Feminino,Gastronomia,3,3,2,8,Potencial
+154066,1687.98,2,27,Balneário Shopping,Feminino,Casa e Decoração,1,2,5,8,Potencial
+154085,539.9200000000001,2,25,Garten Shopping,Feminino,Moda,1,2,3,6,Pontual
+154321,179.9,1,17,Nações Shopping,Masculino,Moda,2,1,2,5,Pontual
+154399,439.84000000000003,3,11,Neumarkt Shopping,Masculino,Moda,3,3,3,9,Potencial
+154424,2167.73,13,4,Balneário Shopping,Feminino,Beleza e Bem-estar,4,5,5,14,VIP
+154515,94.0,1,21,Garten Shopping,Feminino,Livrarias,2,1,1,4,Pontual
+154528,44.9,1,16,Nações Shopping,Feminino,Livrarias,2,1,1,4,Pontual
+154591,515.5699999999999,6,5,Neumarkt Shopping,Feminino,Gastronomia,4,4,3,11,Premium
+154864,700.17,4,11,Balneário Shopping,Feminino,Gastronomia,3,4,4,11,Premium
+155032,136.0,2,23,Garten Shopping,Feminino,Moda,1,2,2,5,Pontual
+155245,243.97,2,0,Continente Shopping,Feminino,Gastronomia,5,2,2,9,Potencial
+155272,4230.0,1,23,Balneário Shopping,Feminino,Moda,1,1,5,7,Potencial
+155323,123.94,2,6,Continente Shopping,Feminino,Gastronomia,4,2,2,8,Potencial
+155347,812.66,3,22,Garten Shopping,Feminino,Moda,2,3,4,9,Potencial
+155421,108.97,1,30,Nações Shopping,Masculino,Gastronomia,1,1,1,3,Pontual
+155462,199.8,1,22,Garten Shopping,Feminino,Moda,2,1,2,5,Pontual
+155506,373.33,7,22,Garten Shopping,Feminino,Beleza e Bem-estar,2,5,3,10,Premium
+155628,1.5,1,24,Norte Shopping,Feminino,Beleza e Bem-estar,1,1,1,3,Pontual
+155658,268.45,3,22,Continente Shopping,Feminino,Gastronomia,2,3,2,7,Potencial
+155660,499.66,3,1,Continente Shopping,Feminino,Moda,5,3,3,11,Premium
+155687,543.18,3,0,Continente Shopping,Feminino,Gastronomia,5,3,3,11,Premium
+155699,178.77,3,7,Neumarkt Shopping,Feminino,Gastronomia,4,3,2,9,Potencial
+155710,94.96,1,5,Norte Shopping,Feminino,Presentes e Acessórios,4,1,1,6,Pontual
+155754,155.59,3,30,Continente Shopping,Feminino,Farmácias,1,3,2,6,Pontual
+155891,118.0,3,2,Continente Shopping,Feminino,Beleza e Bem-estar,5,3,1,9,Potencial
+155920,814.5,5,21,Continente Shopping,Feminino,Calçados,2,4,4,10,Premium
+155925,635.97,1,2,Neumarkt Shopping,Feminino,Esportes,5,1,4,10,Premium
+155928,658.8499999999999,5,27,Continente Shopping,Feminino,Moda,1,4,4,9,Potencial
+155930,203.99,2,27,Garten Shopping,Feminino,Gastronomia,1,2,2,5,Pontual
+156065,678.4100000000001,3,4,Neumarkt Shopping,Masculino,Pets,4,3,4,11,Premium
+156078,222.69,2,1,Nações Shopping,Feminino,Casa e Decoração,5,2,2,9,Potencial
+156147,526.49,3,12,Balneário Shopping,Masculino,Casa e Decoração,3,3,3,9,Potencial
+156164,833.96,2,13,Nações Shopping,Masculino,Calçados,3,2,4,9,Potencial
+156453,469.57,5,14,Garten Shopping,Feminino,Moda,3,4,3,10,Premium
+156580,608.8,3,10,Neumarkt Shopping,Feminino,Gastronomia,3,3,4,10,Premium
+156635,628.99,4,30,Continente Shopping,Feminino,Gastronomia,1,4,4,9,Potencial
+156643,44.0,1,20,Balneário Shopping,Feminino,Gastronomia,2,1,1,4,Pontual
+156752,1462.8899999999999,4,11,Neumarkt Shopping,Feminino,Beleza e Bem-estar,3,4,5,12,Premium
+156992,346.91,5,12,Norte Shopping,Feminino,Beleza e Bem-estar,3,4,3,10,Premium
+157121,938.16,10,23,Neumarkt Shopping,Feminino,Gastronomia,1,5,4,10,Premium
+157161,43.9,1,27,Norte Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+157279,442.9,3,17,Garten Shopping,Feminino,Gastronomia,2,3,3,8,Potencial
+157338,381.67,3,23,Continente Shopping,Feminino,Moda,1,3,3,7,Potencial
+157340,89.08999999999999,2,29,Garten Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+157405,6572.070000000001,14,2,Garten Shopping,Feminino,Moda,5,5,5,15,VIP
+157527,173.85,7,3,Continente Shopping,Feminino,Gastronomia,4,5,2,11,Premium
+157642,355.27,3,0,Neumarkt Shopping,Feminino,Gastronomia,5,3,3,11,Premium
+157722,7660.0,2,7,Balneário Shopping,Feminino,Joalheria,4,2,5,11,Premium
+157954,317.84000000000003,5,4,Continente Shopping,Masculino,Gastronomia,4,4,3,11,Premium
+157989,889.13,6,5,Nações Shopping,Feminino,Gastronomia,4,4,4,12,Premium
+158050,586.58,6,21,Balneário Shopping,Feminino,Papelaria,2,4,4,10,Premium
+158114,269.6,4,20,Garten Shopping,Feminino,Gastronomia,2,4,2,8,Potencial
+158445,59.9,1,13,Garten Shopping,Feminino,Livrarias,3,1,1,5,Pontual
+158451,251.42,6,15,Continente Shopping,Feminino,Gastronomia,3,4,2,9,Potencial
+158783,1415.19,7,17,Continente Shopping,Feminino,Moda,2,5,5,12,Premium
+158797,968.67,18,3,Continente Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+158871,808.8399999999999,4,22,Garten Shopping,Feminino,Livrarias,2,4,4,10,Premium
+159095,8321.7,5,6,Garten Shopping,Feminino,Moda,4,4,5,13,VIP
+159175,99.99,1,16,Continente Shopping,Feminino,Infantil,2,1,1,4,Pontual
+159292,509.87,2,2,Nações Shopping,Feminino,Calçados,5,2,3,10,Premium
+159507,857.14,8,19,Nações Shopping,Feminino,Beleza e Bem-estar,2,5,4,11,Premium
+159615,966.5699999999999,15,2,Continente Shopping,Feminino,Eletrodomésticos,5,5,4,14,VIP
+159657,1126.38,7,17,Balneário Shopping,Masculino,Esportes,2,5,4,11,Premium
+159714,838.7,2,3,Neumarkt Shopping,Masculino,Moda,4,2,4,10,Premium
+159781,753.1,7,28,Continente Shopping,Feminino,Beleza e Bem-estar,1,5,4,10,Premium
+159951,195.9,2,7,Neumarkt Shopping,Masculino,Beleza e Bem-estar,4,2,2,8,Potencial
+159956,711.86,5,1,Balneário Shopping,Feminino,Beleza e Bem-estar,5,4,4,13,VIP
+159980,961.76,5,2,Balneário Shopping,Feminino,Gastronomia,5,4,4,13,VIP
+160012,928.5,9,1,Norte Shopping,Masculino,Gastronomia,5,5,4,14,VIP
+160052,748.0,8,16,Continente Shopping,Masculino,Gastronomia,2,5,4,11,Premium
+160053,249.98,1,21,Continente Shopping,Masculino,Esportes,2,1,2,5,Pontual
+160428,609.32,3,26,Continente Shopping,Feminino,Moda,1,3,4,8,Potencial
+160601,389.3,2,15,Continente Shopping,Masculino,Gastronomia,3,2,3,8,Potencial
+160613,770.92,5,14,Balneário Shopping,Feminino,Livrarias,3,4,4,11,Premium
+160847,4667.4,3,1,Continente Shopping,Feminino,Gastronomia,5,3,5,13,VIP
+160860,169.9,1,3,Balneário Shopping,Feminino,Gastronomia,4,1,2,7,Potencial
+160911,1388.48,3,26,Nações Shopping,Feminino,Moda,1,3,5,9,Potencial
+160994,191.5,1,25,Garten Shopping,Feminino,Livrarias,1,1,2,4,Pontual
+161234,980.87,4,12,Neumarkt Shopping,Feminino,Moda,3,4,4,11,Premium
+161323,646.87,8,1,Garten Shopping,Feminino,Casa e Decoração,5,5,4,14,VIP
+161597,1328.8799999999999,12,1,Balneário Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+161689,75.8,1,30,Garten Shopping,Masculino,Casa e Decoração,1,1,1,3,Pontual
+161704,1780.17,5,4,Nações Shopping,Feminino,Moda,4,4,5,13,VIP
+161894,285.89,4,1,Continente Shopping,Feminino,Esportes,5,4,2,11,Premium
+161945,1410.74,6,12,Neumarkt Shopping,Feminino,Gastronomia,3,4,5,12,Premium
+161953,38.0,1,6,Neumarkt Shopping,Feminino,Gastronomia,4,1,1,6,Pontual
+162105,485.2,7,1,Nações Shopping,Feminino,Infantil,5,5,3,13,VIP
+162288,65.15,2,19,Balneário Shopping,Feminino,Beleza e Bem-estar,2,2,1,5,Pontual
+162427,819.97,8,12,Nações Shopping,Masculino,Moda,3,5,4,12,Premium
+162576,641.1999999999999,6,13,Continente Shopping,Feminino,Gastronomia,3,4,4,11,Premium
+162614,529.53,8,7,Continente Shopping,Feminino,Gastronomia,4,5,3,12,Premium
+162698,398.97,3,20,Neumarkt Shopping,Feminino,Farmácias,2,3,3,8,Potencial
+162818,1574.0,1,12,Nações Shopping,Feminino,Moda,3,1,5,9,Potencial
+162895,1362.3200000000002,19,3,Neumarkt Shopping,Masculino,Gastronomia,4,5,5,14,VIP
+162915,1183.7099999999998,5,0,Balneário Shopping,Feminino,Moda,5,4,5,14,VIP
+163133,197.98,4,2,Continente Shopping,Feminino,Beleza e Bem-estar,5,4,2,11,Premium
+163196,272.5,1,1,Neumarkt Shopping,Feminino,Moda,5,1,2,8,Potencial
+163289,1510.49,15,10,Balneário Shopping,Feminino,Gastronomia,3,5,5,13,VIP
+163381,801.44,7,17,Norte Shopping,Feminino,Gastronomia,2,5,4,11,Premium
+163635,154.7,3,1,Norte Shopping,Feminino,Livrarias,5,3,2,10,Premium
+163656,143.22,4,4,Continente Shopping,Feminino,Eletrodomésticos,4,4,2,10,Premium
+163750,278.71999999999997,4,23,Garten Shopping,Masculino,Gastronomia,1,4,2,7,Potencial
+163771,167.97,4,3,Neumarkt Shopping,Masculino,Gastronomia,4,4,2,10,Premium
+163776,53.25,1,11,Continente Shopping,Feminino,Gastronomia,3,1,1,5,Pontual
+163807,90.19999999999999,2,5,Neumarkt Shopping,Feminino,Gastronomia,4,2,1,7,Potencial
+163886,733.98,3,12,Continente Shopping,Feminino,Calçados,3,3,4,10,Premium
+163934,60.2,1,19,Balneário Shopping,Masculino,Gastronomia,2,1,1,4,Pontual
+163984,298.85999999999996,2,0,Continente Shopping,Feminino,Esportes,5,2,3,10,Premium
+164426,587.24,9,0,Neumarkt Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+164559,332.89,2,21,Norte Shopping,Feminino,Eletrodomésticos,2,2,3,7,Potencial
+164838,1149.56,8,10,Continente Shopping,Feminino,Moda,3,5,4,12,Premium
+164921,89.98,1,30,Continente Shopping,Feminino,Esportes,1,1,1,3,Pontual
+165282,442.02,5,2,Garten Shopping,Masculino,Gastronomia,5,4,3,12,Premium
+165348,68.9,2,8,Continente Shopping,Feminino,Infantil,4,2,1,7,Potencial
+165387,9.98,1,30,Nações Shopping,Feminino,Casa e Decoração,1,1,1,3,Pontual
+165516,1070.37,9,3,Neumarkt Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+165517,355.08000000000004,5,21,Garten Shopping,Feminino,Gastronomia,2,4,3,9,Potencial
+165850,359.53,6,23,Neumarkt Shopping,Feminino,Gastronomia,1,4,3,8,Potencial
+166022,235.6,2,18,Nações Shopping,Feminino,Gastronomia,2,2,2,6,Pontual
+166300,454.97,6,16,Continente Shopping,Feminino,Beleza e Bem-estar,2,4,3,9,Potencial
+166428,215.8,1,27,Garten Shopping,Masculino,Casa e Decoração,1,1,2,4,Pontual
+166445,417.3,1,22,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,1,3,6,Pontual
+166531,342.72,6,1,Continente Shopping,Masculino,Gastronomia,5,4,3,12,Premium
+166576,799.4100000000001,7,9,Balneário Shopping,Feminino,Gastronomia,3,5,4,12,Premium
+166733,123.9,2,19,Nações Shopping,Masculino,Gastronomia,2,2,1,5,Pontual
+167200,130.98000000000002,4,17,Continente Shopping,Masculino,Gastronomia,2,4,2,8,Potencial
+167220,1784.49,10,13,Garten Shopping,Feminino,Moda,3,5,5,13,VIP
+167266,215.26000000000002,5,1,Continente Shopping,Feminino,Eletrodomésticos,5,4,2,11,Premium
+167299,1139.0,1,23,Balneário Shopping,Feminino,Moda,1,1,4,6,Pontual
+167431,2224.36,10,2,Garten Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+167646,233.0,4,27,Nações Shopping,Masculino,Gastronomia,1,4,2,7,Potencial
+167700,2726.39,6,14,Balneário Shopping,Feminino,Moda,3,4,5,12,Premium
+167982,249.99,1,15,Garten Shopping,Feminino,Presentes e Acessórios,3,1,2,6,Pontual
+167988,362.79999999999995,2,1,Balneário Shopping,Feminino,Gastronomia,5,2,3,10,Premium
+168090,46.0,1,18,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,1,1,4,Pontual
+168149,121.5,1,4,Balneário Shopping,Feminino,Beleza e Bem-estar,4,1,1,6,Pontual
+168180,269.5,1,17,Balneário Shopping,Masculino,Moda,2,1,2,5,Pontual
+168528,1520.83,8,0,Balneário Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+168770,205.0,3,1,Nações Shopping,Feminino,Gastronomia,5,3,2,10,Premium
+168775,1154.69,5,12,Continente Shopping,Feminino,Calçados,3,4,4,11,Premium
+169081,430.66,3,30,Continente Shopping,Feminino,Eletrodomésticos,1,3,3,7,Potencial
+169189,139.8,1,18,Garten Shopping,Feminino,Moda,2,1,2,5,Pontual
+169237,119.94,2,26,Continente Shopping,Feminino,Infantil,1,2,1,4,Pontual
+169462,107.1,2,0,Garten Shopping,Feminino,Gastronomia - Sorvetes,5,2,1,8,Potencial
+169538,386.38,8,20,Nações Shopping,Feminino,Gastronomia,2,5,3,10,Premium
+169622,377.0,3,3,Balneário Shopping,Masculino,Gastronomia,4,3,3,10,Premium
+169666,325.77,1,23,Continente Shopping,Feminino,Moda,1,1,3,5,Pontual
+170061,1176.7,7,8,Balneário Shopping,Feminino,Moda,4,5,5,14,VIP
+170887,149.8,1,25,Balneário Shopping,Feminino,Moda,1,1,2,4,Pontual
+171070,49.5,2,30,Continente Shopping,Masculino,Gastronomia,1,2,1,4,Pontual
+171223,721.8,2,23,Balneário Shopping,Feminino,Gastronomia,1,2,4,7,Potencial
+171272,1199.27,6,24,Norte Shopping,Feminino,Casa e Decoração,1,4,5,10,Premium
+171549,423.8,4,13,Neumarkt Shopping,Feminino,Livrarias,3,4,3,10,Premium
+171582,1512.28,15,2,Neumarkt Shopping,Masculino,Gastronomia,5,5,5,15,VIP
+171759,2073.15,14,1,Balneário Shopping,Masculino,Gastronomia,5,5,5,15,VIP
+171773,7172.8,6,9,Balneário Shopping,Feminino,Moda,3,4,5,12,Premium
+172375,849.7,6,19,Neumarkt Shopping,Feminino,Farmácias,2,4,4,10,Premium
+172791,1004.89,8,1,Neumarkt Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+172844,98.72,1,2,Norte Shopping,Feminino,Esportes,5,1,1,7,Potencial
+172863,89.99,1,6,Continente Shopping,Feminino,Moda,4,1,1,6,Pontual
+173007,228.39999999999998,4,6,Garten Shopping,Feminino,Pets,4,4,2,10,Premium
+173048,388.7,3,13,Neumarkt Shopping,Feminino,Gastronomia,3,3,3,9,Potencial
+173216,1959.89,3,19,Continente Shopping,Feminino,Gastronomia,2,3,5,10,Premium
+173469,1190.7,3,2,Neumarkt Shopping,Feminino,Beleza e Bem-estar,5,3,5,13,VIP
+173521,271.0,1,15,Garten Shopping,Feminino,Presentes e Acessórios,3,1,2,6,Pontual
+174356,25.99,1,21,Continente Shopping,Feminino,Moda,2,1,1,4,Pontual
+174423,573.85,8,7,Balneário Shopping,Masculino,Gastronomia,4,5,3,12,Premium
+174538,1013.3599999999999,4,1,Balneário Shopping,Feminino,Infantil,5,4,4,13,VIP
+174578,189.39999999999998,4,15,Continente Shopping,Masculino,Beleza e Bem-estar,3,4,2,9,Potencial
+174911,58.0,2,15,Continente Shopping,Feminino,Gastronomia,3,2,1,6,Pontual
+175239,1238.67,14,12,Continente Shopping,Feminino,Gastronomia,3,5,5,13,VIP
+176300,963.09,4,1,Continente Shopping,Feminino,Gastronomia,5,4,4,13,VIP
+176543,109.98,1,17,Continente Shopping,Feminino,Moda,2,1,1,4,Pontual
+176739,282.77,5,15,Continente Shopping,Feminino,Moda,3,4,2,9,Potencial
+177250,116.6,1,27,Norte Shopping,Feminino,Beleza e Bem-estar,1,1,1,3,Pontual
+177476,8459.51,9,8,Continente Shopping,Masculino,Moda,4,5,5,14,VIP
+177508,253.37,2,16,Continente Shopping,Feminino,Beleza e Bem-estar,2,2,2,6,Pontual
+177518,2206.0,11,1,Balneário Shopping,Feminino,Infantil,5,5,5,15,VIP
+177573,203.89000000000001,2,2,Balneário Shopping,Feminino,Livrarias,5,2,2,9,Potencial
+177757,437.98,2,3,Balneário Shopping,Feminino,Infantil,4,2,3,9,Potencial
+177766,551.7,5,7,Nações Shopping,Feminino,Gastronomia,4,4,3,11,Premium
+177902,63.09,1,26,Norte Shopping,Masculino,Supermercado,1,1,1,3,Pontual
+178132,1009.79,27,0,Neumarkt Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+178571,53.0,1,3,Neumarkt Shopping,Masculino,Gastronomia,4,1,1,6,Pontual
+178919,319.95,3,1,Continente Shopping,Feminino,Eletrodomésticos,5,3,3,11,Premium
+179100,211.94,2,12,Balneário Shopping,Feminino,Esportes,3,2,2,7,Potencial
+179177,345.90999999999997,2,1,Nações Shopping,Feminino,Moda,5,2,3,10,Premium
+179217,23.9,1,2,Nações Shopping,Feminino,Gastronomia,5,1,1,7,Potencial
+179401,1129.77,5,18,Garten Shopping,Masculino,Moda,2,4,4,10,Premium
+179434,625.09,11,13,Continente Shopping,Masculino,Gastronomia,3,5,4,12,Premium
+179518,1307.77,16,4,Continente Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+179827,459.38,6,15,Continente Shopping,Feminino,Gastronomia,3,4,3,10,Premium
+180409,582.88,5,4,Garten Shopping,Feminino,Gastronomia,4,4,3,11,Premium
+180479,1777.83,3,22,Continente Shopping,Feminino,Beleza e Bem-estar,2,3,5,10,Premium
+181040,1562.68,23,12,Neumarkt Shopping,Feminino,Gastronomia,3,5,5,13,VIP
+181061,421.22,7,4,Garten Shopping,Masculino,Gastronomia,4,5,3,12,Premium
+181110,19.0,1,23,Neumarkt Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+181491,848.67,5,13,Balneário Shopping,Feminino,Moda,3,4,4,11,Premium
+181951,941.9,8,2,Neumarkt Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+182192,114.5,1,22,Garten Shopping,Feminino,Livrarias,2,1,1,4,Pontual
+182253,110.8,2,27,Nações Shopping,Masculino,Gastronomia,1,2,1,4,Pontual
+182330,90.18,5,29,Neumarkt Shopping,Masculino,Gastronomia,1,4,1,6,Pontual
+182583,5.19,1,26,Continente Shopping,Feminino,Eletrodomésticos,1,1,1,3,Pontual
+182649,3476.8,9,27,Neumarkt Shopping,Feminino,Joalheria,1,5,5,11,Premium
+182921,1637.29,7,2,Continente Shopping,Feminino,Beleza e Bem-estar,5,5,5,15,VIP
+182978,927.98,3,23,Garten Shopping,Feminino,Esportes,1,3,4,8,Potencial
+182989,439.94000000000005,5,12,Continente Shopping,Feminino,Gastronomia,3,4,3,10,Premium
+183021,582.96,2,21,Garten Shopping,Feminino,Gastronomia,2,2,4,8,Potencial
+183327,1436.65,9,25,Garten Shopping,Feminino,Gastronomia,1,5,5,11,Premium
+183498,393.57,4,1,Continente Shopping,Masculino,Calçados,5,4,3,12,Premium
+183531,779.1,2,15,Balneário Shopping,Feminino,Moda,3,2,4,9,Potencial
+183910,199.5,1,23,Balneário Shopping,Feminino,Moda,1,1,2,4,Pontual
+184642,1590.53,16,0,Nações Shopping,Masculino,Gastronomia,5,5,5,15,VIP
+184774,2157.9,4,22,Continente Shopping,Feminino,Moda,2,4,5,11,Premium
+184776,30.9,2,9,Norte Shopping,Feminino,Gastronomia,3,2,1,6,Pontual
+184778,1549.58,6,17,Nações Shopping,Feminino,Calçados,2,4,5,11,Premium
+184857,560.46,6,11,Neumarkt Shopping,Feminino,Farmácias,3,4,3,10,Premium
+184984,64.0,1,22,Norte Shopping,Outro,Beleza e Bem-estar,2,1,1,4,Pontual
+185021,841.05,9,0,Continente Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+185078,1600.2,4,8,Balneário Shopping,Feminino,Moda,4,4,5,13,VIP
+185223,2284.46,8,7,Continente Shopping,Feminino,Esportes,4,5,5,14,VIP
+185287,199.9,1,7,Garten Shopping,Masculino,Moda,4,1,2,7,Potencial
+185342,685.21,8,1,Neumarkt Shopping,Feminino,Casa e Decoração,5,5,4,14,VIP
+185419,64.98,2,15,Balneário Shopping,Masculino,Moda,3,2,1,6,Pontual
+185492,2410.25,3,3,Balneário Shopping,Feminino,Gastronomia,4,3,5,12,Premium
+185504,31.9,1,13,Continente Shopping,Masculino,Gastronomia,3,1,1,5,Pontual
+185513,291.89,3,15,Continente Shopping,Feminino,Moda,3,3,3,9,Potencial
+185581,1706.31,7,18,Neumarkt Shopping,Feminino,Eletrodomésticos,2,5,5,12,Premium
+185615,212.8,5,24,Nações Shopping,Feminino,Gastronomia,1,4,2,7,Potencial
+185780,299.98,1,1,Continente Shopping,Feminino,Moda,5,1,3,9,Potencial
+185782,445.79,7,1,Neumarkt Shopping,Masculino,Gastronomia,5,5,3,13,VIP
+185791,216.99,1,16,Balneário Shopping,Masculino,Moda,2,1,2,5,Pontual
+186071,759.76,5,1,Nações Shopping,Masculino,Gastronomia,5,4,4,13,VIP
+186102,525.52,16,12,Balneário Shopping,Feminino,Gastronomia,3,5,3,11,Premium
+186163,624.1800000000001,5,13,Neumarkt Shopping,Masculino,Beleza e Bem-estar,3,4,4,11,Premium
+186221,122.0,1,15,Garten Shopping,Masculino,Gastronomia,3,1,1,5,Pontual
+186251,74.2,3,27,Neumarkt Shopping,Masculino,Gastronomia,1,3,1,5,Pontual
+187022,172.2,3,27,Garten Shopping,Feminino,Gastronomia,1,3,2,6,Pontual
+187072,654.86,1,28,Norte Shopping,Masculino,Supermercado,1,1,4,6,Pontual
+187235,6259.57,11,1,Balneário Shopping,Masculino,Moda,5,5,5,15,VIP
+187490,449.97,1,14,Nações Shopping,Feminino,Moda,3,1,3,7,Potencial
+187569,981.1600000000001,2,17,Neumarkt Shopping,Feminino,Moda,2,2,4,8,Potencial
+187679,393.1,3,16,Garten Shopping,Masculino,Esportes,2,3,3,8,Potencial
+187898,191.92000000000002,2,30,Norte Shopping,Masculino,Casa e Decoração,1,2,2,5,Pontual
+187915,19.9,1,27,Norte Shopping,Feminino,Beleza e Bem-estar,1,1,1,3,Pontual
+187956,1689.92,2,12,Balneário Shopping,Masculino,Esportes,3,2,5,10,Premium
+188077,598.21,7,14,Garten Shopping,Feminino,Moda,3,5,4,12,Premium
+188100,303.21999999999997,6,14,Nações Shopping,Masculino,Gastronomia,3,4,3,10,Premium
+188140,748.53,11,2,Nações Shopping,Masculino,Gastronomia,5,5,4,14,VIP
+188213,8631.0,3,13,Balneário Shopping,Masculino,Joalheria,3,3,5,11,Premium
+188446,441.55,5,5,Norte Shopping,Feminino,Gastronomia,4,4,3,11,Premium
+188520,7201.87,10,1,Continente Shopping,Feminino,Moda,5,5,5,15,VIP
+188525,17.5,1,15,Neumarkt Shopping,Feminino,Gastronomia,3,1,1,5,Pontual
+188600,8634.4,14,9,Balneário Shopping,Feminino,Moda,3,5,5,13,VIP
+188636,1444.7,2,5,Balneário Shopping,Feminino,Beleza e Bem-estar,4,2,5,11,Premium
+188813,3482.7799999999997,6,1,Balneário Shopping,Feminino,Moda,5,4,5,14,VIP
+188984,968.9200000000001,3,0,Balneário Shopping,Feminino,Casa e Decoração,5,3,4,12,Premium
+189001,257.25,2,20,Norte Shopping,Feminino,Beleza e Bem-estar,2,2,2,6,Pontual
+189159,4323.58,8,10,Balneário Shopping,Masculino,Livrarias,3,5,5,13,VIP
+189441,277.21,1,2,Neumarkt Shopping,Masculino,Gastronomia,5,1,2,8,Potencial
+189508,59.8,1,16,Continente Shopping,Masculino,Gastronomia,2,1,1,4,Pontual
+189513,281.99,10,7,Norte Shopping,Feminino,Eletrodomésticos,4,5,2,11,Premium
+189531,1693.3,5,16,Balneário Shopping,Feminino,Moda,2,4,5,11,Premium
+189535,304.65,4,1,Norte Shopping,Feminino,Casa e Decoração,5,4,3,12,Premium
+189592,63.99,1,5,Garten Shopping,Feminino,Moda,4,1,1,6,Pontual
+189788,486.88,17,4,Nações Shopping,Masculino,Gastronomia,4,5,3,12,Premium
+189789,269.98,2,8,Continente Shopping,Feminino,Beleza e Bem-estar,4,2,2,8,Potencial
+189911,906.9,2,22,Balneário Shopping,Masculino,Calçados,2,2,4,8,Potencial
+189919,120.57,6,12,Neumarkt Shopping,Masculino,Gastronomia,3,4,1,8,Potencial
+190054,245.98,2,16,Continente Shopping,Feminino,Beleza e Bem-estar,2,2,2,6,Pontual
+190073,696.0,3,25,Garten Shopping,Masculino,Calçados,1,3,4,8,Potencial
+190305,55.8,1,27,Garten Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+190761,739.66,13,3,Continente Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+190951,5124.0,2,21,Balneário Shopping,Feminino,Beleza e Bem-estar,2,2,5,9,Potencial
+190992,18.1,1,7,Continente Shopping,Feminino,Papelaria,4,1,1,6,Pontual
+191199,736.54,4,7,Garten Shopping,Feminino,Infantil,4,4,4,12,Premium
+191643,58.0,4,10,Continente Shopping,Outro,Gastronomia,3,4,1,8,Potencial
+192046,39.0,1,26,Neumarkt Shopping,Masculino,Gastronomia,1,1,1,3,Pontual
+192090,866.94,9,8,Neumarkt Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+192260,1175.94,3,1,Continente Shopping,Feminino,Moda,5,3,5,13,VIP
+192342,649.99,1,15,Balneário Shopping,Masculino,Moda,3,1,4,8,Potencial
+192417,464.35,4,16,Balneário Shopping,Feminino,Gastronomia,2,4,3,9,Potencial
+192563,2186.16,8,5,Norte Shopping,Feminino,Supermercado,4,5,5,14,VIP
+192652,474.31,8,16,Neumarkt Shopping,Feminino,Gastronomia,2,5,3,10,Premium
+192734,209.57,3,25,Garten Shopping,Feminino,Calçados,1,3,2,6,Pontual
+193032,2316.05,11,22,Balneário Shopping,Feminino,Livrarias,2,5,5,12,Premium
+193113,1173.77,3,16,Neumarkt Shopping,Feminino,Moda,2,3,5,10,Premium
+193190,549.6800000000001,3,10,Garten Shopping,Feminino,Moda,3,3,3,9,Potencial
+193264,2034.35,4,8,Balneário Shopping,Feminino,Beleza e Bem-estar,4,4,5,13,VIP
+193367,90.33,1,2,Balneário Shopping,Feminino,Livrarias,5,1,1,7,Potencial
+193708,282.04,4,10,Continente Shopping,Masculino,Gastronomia,3,4,2,9,Potencial
+193771,14.9,1,2,Garten Shopping,Feminino,Gastronomia,5,1,1,7,Potencial
+193938,92.4,2,27,Nações Shopping,Masculino,Gastronomia,1,2,1,4,Pontual
+194081,69.5,3,15,Neumarkt Shopping,Masculino,Livrarias,3,3,1,7,Potencial
+194192,1767.07,13,0,Norte Shopping,Masculino,Calçados,5,5,5,15,VIP
+194425,1578.3200000000002,4,5,Garten Shopping,Feminino,Gastronomia,4,4,5,13,VIP
+194430,179.9,1,12,Garten Shopping,Masculino,Moda,3,1,2,6,Pontual
+194448,1097.6799999999998,11,1,Continente Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+194517,287.83,4,24,Garten Shopping,Feminino,Serviços,1,4,2,7,Potencial
+194754,1177.72,3,15,Balneário Shopping,Feminino,Gastronomia,3,3,5,11,Premium
+194955,3096.96,6,9,Balneário Shopping,Masculino,Gastronomia,3,4,5,12,Premium
+195078,258.47,3,27,Nações Shopping,Feminino,Moda,1,3,2,6,Pontual
+195107,1489.76,3,16,Balneário Shopping,Feminino,Moda,2,3,5,10,Premium
+195139,510.26,3,17,Norte Shopping,Feminino,Moda,2,3,3,8,Potencial
+195156,99.99,1,10,Neumarkt Shopping,Masculino,Calçados,3,1,1,5,Pontual
+195190,666.0,4,19,Continente Shopping,Masculino,Esportes,2,4,4,10,Premium
+195245,798.6700000000001,4,22,Balneário Shopping,Masculino,Esportes,2,4,4,10,Premium
+195414,710.61,4,21,Continente Shopping,Masculino,Moda,2,4,4,10,Premium
+195423,1549.0,1,1,Garten Shopping,Feminino,Esportes,5,1,5,11,Premium
+195559,359.35,11,6,Continente Shopping,Feminino,Gastronomia,4,5,3,12,Premium
+195726,454.98,1,9,Norte Shopping,Feminino,Esportes,3,1,3,7,Potencial
+195740,1402.67,4,16,Balneário Shopping,Feminino,Calçados,2,4,5,11,Premium
+195832,243.2,1,26,Continente Shopping,Feminino,Papelaria,1,1,2,4,Pontual
+195850,79.6,4,16,Continente Shopping,Feminino,Gastronomia,2,4,1,7,Potencial
+195946,2929.69,4,30,Garten Shopping,Masculino,Ótica,1,4,5,10,Premium
+196020,477.89,4,10,Continente Shopping,Feminino,Gastronomia,3,4,3,10,Premium
+196080,322.11,1,16,Balneário Shopping,Feminino,Beleza e Bem-estar,2,1,3,6,Pontual
+196192,971.09,3,2,Continente Shopping,Feminino,Calçados,5,3,4,12,Premium
+196231,516.08,9,0,Neumarkt Shopping,Feminino,Gastronomia,5,5,3,13,VIP
+196327,295.8,1,14,Nações Shopping,Feminino,Moda,3,1,3,7,Potencial
+196418,110.16,1,29,Balneário Shopping,Feminino,Moda,1,1,1,3,Pontual
+196497,129.95,1,7,Norte Shopping,Feminino,Casa e Decoração,4,1,2,7,Potencial
+196574,69.41,1,14,Neumarkt Shopping,Feminino,Beleza e Bem-estar,3,1,1,5,Pontual
+196719,386.5,2,21,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,2,3,7,Potencial
+196744,19.99,1,15,Nações Shopping,Feminino,Eletrodomésticos,3,1,1,5,Pontual
+196817,485.25,9,3,Nações Shopping,Feminino,Pets,4,5,3,12,Premium
+196857,2099.0,1,7,Garten Shopping,Feminino,Moda,4,1,5,10,Premium
+196871,40.36,1,0,Nações Shopping,Feminino,Eletrodomésticos,5,1,1,7,Potencial
+197014,2654.68,10,3,Neumarkt Shopping,Feminino,Moda,4,5,5,14,VIP
+197157,681.89,6,28,Continente Shopping,Feminino,Gastronomia,1,4,4,9,Potencial
+197182,378.57,6,2,Continente Shopping,Feminino,Farmácias,5,4,3,12,Premium
+197256,88.97,3,1,Continente Shopping,Feminino,Eletrodomésticos,5,3,1,9,Potencial
+197318,4147.28,15,2,Balneário Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+197533,603.4200000000001,5,12,Balneário Shopping,Masculino,Gastronomia,3,4,4,11,Premium
+197953,2438.65,9,1,Continente Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+198020,79.4,4,2,Neumarkt Shopping,Masculino,Gastronomia,5,4,1,10,Premium
+198139,884.87,11,12,Garten Shopping,Feminino,Gastronomia,3,5,4,12,Premium
+198155,110.99,2,9,Garten Shopping,Feminino,Farmácias,3,2,1,6,Pontual
+198279,4742.47,15,3,Garten Shopping,Feminino,Moda,4,5,5,14,VIP
+198683,2047.75,22,0,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+198697,33.95,1,21,Balneário Shopping,Feminino,Gastronomia,2,1,1,4,Pontual
+198834,172.4,2,21,Neumarkt Shopping,Feminino,Moda,2,2,2,6,Pontual
+198868,3259.7000000000003,9,11,Garten Shopping,Feminino,Moda,3,5,5,13,VIP
+199302,1276.63,15,3,Continente Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+199336,548.87,3,30,Norte Shopping,Masculino,Calçados,1,3,3,7,Potencial
+199349,6.77,1,30,Neumarkt Shopping,Masculino,Joalheria,1,1,1,3,Pontual
+199714,35.8,1,28,Continente Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+199724,1485.03,6,30,Neumarkt Shopping,Feminino,Gastronomia,1,4,5,10,Premium
+200217,683.0600000000001,5,3,Balneário Shopping,Feminino,Livrarias,4,4,4,12,Premium
+200304,118.99,2,23,Garten Shopping,Feminino,Casa e Decoração,1,2,1,4,Pontual
+200491,84.0,1,30,Norte Shopping,Masculino,Gastronomia,1,1,1,3,Pontual
+200629,2866.7400000000002,6,5,Balneário Shopping,Feminino,Casa e Decoração,4,4,5,13,VIP
+200917,249.4,1,27,Continente Shopping,Feminino,Papelaria,1,1,2,4,Pontual
+201195,249.9,2,17,Continente Shopping,Masculino,Moda,2,2,2,6,Pontual
+201361,1266.3400000000001,6,13,Nações Shopping,Feminino,Gastronomia,3,4,5,12,Premium
+201387,128.5,3,13,Continente Shopping,Feminino,Gastronomia,3,3,2,8,Potencial
+201568,85.0,1,4,Garten Shopping,Feminino,Moda Feminina,4,1,1,6,Pontual
+201587,399.0,1,16,Garten Shopping,Feminino,Moda Feminina,2,1,3,6,Pontual
+201713,3428.36,6,2,Continente Shopping,Feminino,Gastronomia,5,4,5,14,VIP
+201865,1189.86,8,15,Garten Shopping,Feminino,Gastronomia,3,5,5,13,VIP
+201942,130.82999999999998,3,30,Garten Shopping,Feminino,Calçados,1,3,2,6,Pontual
+202028,329.97,1,0,Balneário Shopping,Masculino,Moda,5,1,3,9,Potencial
+202041,344.93,2,22,Garten Shopping,Masculino,Infantil,2,2,3,7,Potencial
+202374,488.71,2,16,Neumarkt Shopping,Masculino,Gastronomia,2,2,3,7,Potencial
+202423,574.96,14,13,Continente Shopping,Feminino,Gastronomia,3,5,3,11,Premium
+202478,35.45,2,20,Neumarkt Shopping,Feminino,Eletrodomésticos,2,2,1,5,Pontual
+202741,538.37,5,2,Continente Shopping,Feminino,Gastronomia,5,4,3,12,Premium
+202984,239.9,1,4,Nações Shopping,Masculino,Moda,4,1,2,7,Potencial
+203060,1705.58,4,13,Balneário Shopping,Feminino,Moda,3,4,5,12,Premium
+203083,778.0,2,9,Garten Shopping,Feminino,Calçados,3,2,4,9,Potencial
+203264,317.87,3,2,Balneário Shopping,Feminino,Infantil,5,3,3,11,Premium
+203277,119.97,1,2,Continente Shopping,Feminino,Moda,5,1,1,7,Potencial
+203450,1579.5,9,1,Nações Shopping,Feminino,Moda,5,5,5,15,VIP
+203578,6.0,1,8,Garten Shopping,Feminino,Gastronomia,4,1,1,6,Pontual
+203892,304.8,1,22,Neumarkt Shopping,Masculino,Beleza e Bem-estar,2,1,3,6,Pontual
+203908,8396.35,3,2,Garten Shopping,Feminino,Gastronomia,5,3,5,13,VIP
+204059,3127.2,11,23,Balneário Shopping,Feminino,Gastronomia,1,5,5,11,Premium
+204136,64.9,1,16,Nações Shopping,Feminino,Gastronomia,2,1,1,4,Pontual
+204468,513.5,2,23,Nações Shopping,Feminino,Infantil,1,2,3,6,Pontual
+204480,1353.74,5,16,Nações Shopping,Feminino,Moda,2,4,5,11,Premium
+204598,416.92,2,1,Continente Shopping,Feminino,Calçados,5,2,3,10,Premium
+204751,450.12,13,0,Neumarkt Shopping,Feminino,Gastronomia,5,5,3,13,VIP
+204766,493.15,8,6,Garten Shopping,Feminino,Gastronomia,4,5,3,12,Premium
+204790,360.09000000000003,3,20,Garten Shopping,Feminino,Moda,2,3,3,8,Potencial
+204791,1003.75,7,2,Garten Shopping,Feminino,Esportes,5,5,4,14,VIP
+204872,125.5,5,22,Nações Shopping,Feminino,Gastronomia,2,4,2,8,Potencial
+204941,713.1800000000001,4,1,Balneário Shopping,Masculino,Calçados,5,4,4,13,VIP
+205487,529.96,2,14,Balneário Shopping,Masculino,Esportes,3,2,3,8,Potencial
+205521,427.39000000000004,3,11,Garten Shopping,Feminino,Casa e Decoração,3,3,3,9,Potencial
+205580,941.3,6,0,Continente Shopping,Feminino,Gastronomia,5,4,4,13,VIP
+205648,210.0,1,19,Neumarkt Shopping,Masculino,Presentes e Acessórios,2,1,2,5,Pontual
+205676,185.89000000000001,3,4,Continente Shopping,Feminino,Moda,4,3,2,9,Potencial
+205710,2382.25,7,2,Garten Shopping,Feminino,Moda,5,5,5,15,VIP
+206040,399.99,1,15,Neumarkt Shopping,Feminino,Esportes,3,1,3,7,Potencial
+206064,1310.97,3,23,Balneário Shopping,Feminino,Beleza e Bem-estar,1,3,5,9,Potencial
+206352,135.97,1,22,Garten Shopping,Feminino,Moda,2,1,2,5,Pontual
+206569,100.0,1,3,Neumarkt Shopping,Feminino,Gastronomia,4,1,1,6,Pontual
+206672,56.900000000000006,3,15,Balneário Shopping,Feminino,Gastronomia,3,3,1,7,Potencial
+206900,43.599999999999994,2,13,Continente Shopping,Feminino,Gastronomia,3,2,1,6,Pontual
+206975,150.3,3,0,Continente Shopping,Masculino,Gastronomia,5,3,2,10,Premium
+207278,378.0,7,9,Neumarkt Shopping,Feminino,Gastronomia,3,5,3,11,Premium
+207353,814.94,3,2,Garten Shopping,Masculino,Moda,5,3,4,12,Premium
+207382,689.95,6,21,Norte Shopping,Feminino,Beleza e Bem-estar,2,4,4,10,Premium
+207474,563.49,2,15,Balneário Shopping,Feminino,Livrarias,3,2,3,8,Potencial
+207478,74.0,2,1,Garten Shopping,Feminino,Gastronomia,5,2,1,8,Potencial
+207983,111.39,2,14,Continente Shopping,Masculino,Gastronomia,3,2,1,6,Pontual
+208690,701.9,4,11,Garten Shopping,Feminino,Gastronomia,3,4,4,11,Premium
+208901,548.28,6,1,Nações Shopping,Feminino,Gastronomia,5,4,3,12,Premium
+209060,181.51,1,23,Continente Shopping,Masculino,Gastronomia,1,1,2,4,Pontual
+209119,724.8199999999999,12,1,Nações Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+209208,1493.08,4,18,Balneário Shopping,Feminino,Beleza e Bem-estar,2,4,5,11,Premium
+209405,245.67,1,15,Norte Shopping,Feminino,Supermercado,3,1,2,6,Pontual
+209738,402.95000000000005,4,25,Continente Shopping,Feminino,Calçados,1,4,3,8,Potencial
+209788,11.5,1,11,Continente Shopping,Feminino,Gastronomia,3,1,1,5,Pontual
+210274,5.0,1,1,Garten Shopping,Masculino,Gastronomia,5,1,1,7,Potencial
+210435,101.99,1,23,Nações Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+210735,408.61,6,1,Nações Shopping,Masculino,Gastronomia,5,4,3,12,Premium
+210813,499.89,4,8,Continente Shopping,Feminino,Moda,4,4,3,11,Premium
+211173,74.9,1,21,Nações Shopping,Masculino,Joalheria,2,1,1,4,Pontual
+211754,123.71,5,27,Neumarkt Shopping,Feminino,Eletrodomésticos,1,4,1,6,Pontual
+211824,779.9200000000001,2,16,Continente Shopping,Feminino,Moda,2,2,4,8,Potencial
+212234,409.99,13,1,Balneário Shopping,Feminino,Gastronomia,5,5,3,13,VIP
+212277,407.58,7,8,Neumarkt Shopping,Feminino,Moda,4,5,3,12,Premium
+212387,309.88,2,20,Balneário Shopping,Masculino,Gastronomia,2,2,3,7,Potencial
+212493,1337.5,18,20,Garten Shopping,Feminino,Gastronomia,2,5,5,12,Premium
+213122,626.07,8,11,Neumarkt Shopping,Feminino,Gastronomia,3,5,4,12,Premium
+213187,728.9,2,22,Garten Shopping,Feminino,Calçados,2,2,4,8,Potencial
+213247,116.75,2,12,Continente Shopping,Feminino,Beleza e Bem-estar,3,2,1,6,Pontual
+213265,59.82,1,7,Nações Shopping,Feminino,Farmácias,4,1,1,6,Pontual
+213343,1007.88,3,27,Continente Shopping,Feminino,Esportes,1,3,4,8,Potencial
+213490,206.7,3,8,Balneário Shopping,Feminino,Infantil,4,3,2,9,Potencial
+213521,1317.18,3,14,Neumarkt Shopping,Feminino,Moda,3,3,5,11,Premium
+213703,1225.67,19,1,Continente Shopping,Feminino,Eletrodomésticos,5,5,5,15,VIP
+213833,434.79999999999995,2,16,Neumarkt Shopping,Masculino,Casa e Decoração,2,2,3,7,Potencial
+214051,559.93,1,20,Garten Shopping,Feminino,Calçados,2,1,3,6,Pontual
+214128,129.79,2,2,Balneário Shopping,Masculino,Moda,5,2,2,9,Potencial
+214172,136.9,4,15,Nações Shopping,Feminino,Gastronomia,3,4,2,9,Potencial
+214174,1086.6,7,27,Balneário Shopping,Feminino,Livrarias,1,5,4,10,Premium
+214324,591.9300000000001,13,1,Neumarkt Shopping,Feminino,Beleza e Bem-estar,5,5,4,14,VIP
+214452,954.96,2,25,Balneário Shopping,Feminino,Infantil,1,2,4,7,Potencial
+214473,17.98,2,15,Nações Shopping,Feminino,Eletrodomésticos,3,2,1,6,Pontual
+214510,1628.3899999999999,7,13,Garten Shopping,Feminino,Moda,3,5,5,13,VIP
+214548,652.87,6,17,Garten Shopping,Feminino,Gastronomia,2,4,4,10,Premium
+214655,339.78,1,0,Norte Shopping,Feminino,Moda,5,1,3,9,Potencial
+214737,78.97,1,25,Norte Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+214874,3152.56,5,30,Neumarkt Shopping,Feminino,Moda,1,4,5,10,Premium
+214952,234.89000000000001,3,29,Balneário Shopping,Feminino,Farmácias,1,3,2,6,Pontual
+215089,701.1899999999999,6,27,Balneário Shopping,Feminino,Gastronomia,1,4,4,9,Potencial
+215828,91.8,1,29,Garten Shopping,Masculino,Gastronomia,1,1,1,3,Pontual
+215901,146.0,1,1,Balneário Shopping,Masculino,Gastronomia,5,1,2,8,Potencial
+216236,173.49,5,30,Continente Shopping,Feminino,Gastronomia,1,4,2,7,Potencial
+216241,54.0,1,27,Garten Shopping,Masculino,Farmácias,1,1,1,3,Pontual
+216278,649.87,2,0,Nações Shopping,Masculino,Moda,5,2,4,11,Premium
+216367,2108.0299999999997,6,6,Balneário Shopping,Feminino,Moda,4,4,5,13,VIP
+216650,49.0,1,22,Garten Shopping,Feminino,Infantil,2,1,1,4,Pontual
+216981,359.0,1,28,Neumarkt Shopping,Masculino,Presentes e Acessórios,1,1,3,5,Pontual
+217156,2825.6,4,16,Neumarkt Shopping,Feminino,Calçados,2,4,5,11,Premium
+217162,171.98,2,21,Garten Shopping,Feminino,Gastronomia,2,2,2,6,Pontual
+217301,42.95,1,28,Balneário Shopping,Feminino,Supermercado,1,1,1,3,Pontual
+217399,400.87,2,19,Balneário Shopping,Feminino,Infantil,2,2,3,7,Potencial
+217492,36.0,1,0,Balneário Shopping,Masculino,Gastronomia,5,1,1,7,Potencial
+218055,2629.0,1,17,Neumarkt Shopping,Feminino,Moda,2,1,5,8,Potencial
+218115,2549.58,6,11,Balneário Shopping,Feminino,Casa e Decoração,3,4,5,12,Premium
+218448,148.28,4,18,Neumarkt Shopping,Feminino,Gastronomia,2,4,2,8,Potencial
+218519,23.9,1,28,Balneário Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+219012,565.8299999999999,6,0,Norte Shopping,Masculino,Casa e Decoração,5,4,3,12,Premium
+219062,325.1,2,10,Neumarkt Shopping,Masculino,Gastronomia,3,2,3,8,Potencial
+219066,36.97,1,16,Garten Shopping,Masculino,Gastronomia,2,1,1,4,Pontual
+219087,113.3,2,22,Neumarkt Shopping,Feminino,Eletrodomésticos,2,2,1,5,Pontual
+219129,390.36,8,4,Neumarkt Shopping,Feminino,Eletrodomésticos,4,5,3,12,Premium
+219157,796.0999999999999,4,4,Continente Shopping,Masculino,Beleza e Bem-estar,4,4,4,12,Premium
+219266,3757.31,8,1,Balneário Shopping,Feminino,Moda,5,5,5,15,VIP
+219481,2739.4,1,21,Neumarkt Shopping,Masculino,Moda,2,1,5,8,Potencial
+219802,1929.1,5,1,Nações Shopping,Masculino,Moda,5,4,5,14,VIP
+219805,83.3,2,8,Balneário Shopping,Feminino,Gastronomia,4,2,1,7,Potencial
+219900,299.99,1,17,Norte Shopping,Feminino,Calçados,2,1,3,6,Pontual
+220114,40.239999999999995,2,24,Balneário Shopping,Masculino,Casa e Decoração,1,2,1,4,Pontual
+220144,690.21,7,2,Continente Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+220328,178.98,2,0,Norte Shopping,Feminino,Moda,5,2,2,9,Potencial
+220352,579.86,3,29,Garten Shopping,Feminino,Moda,1,3,3,7,Potencial
+220558,1916.62,16,4,Neumarkt Shopping,Masculino,Gastronomia,4,5,5,14,VIP
+220575,59.85,1,19,Continente Shopping,Feminino,Gastronomia,2,1,1,4,Pontual
+220578,311.88,4,1,Norte Shopping,Feminino,Casa e Decoração,5,4,3,12,Premium
+220817,1048.9199999999998,6,19,Garten Shopping,Feminino,Moda,2,4,4,10,Premium
+221194,368.75,2,11,Nações Shopping,Feminino,Eletrodomésticos,3,2,3,8,Potencial
+221362,1037.92,6,3,Nações Shopping,Feminino,Beleza e Bem-estar,4,4,4,12,Premium
+221502,121.5,4,17,Continente Shopping,Feminino,Gastronomia,2,4,1,7,Potencial
+221731,297.98,6,14,Garten Shopping,Feminino,Gastronomia,3,4,3,10,Premium
+221893,170.9,1,2,Nações Shopping,Feminino,Livrarias,5,1,2,8,Potencial
+222142,1148.07,3,28,Nações Shopping,Feminino,Beleza e Bem-estar,1,3,4,8,Potencial
+222251,1552.6399999999999,6,2,Garten Shopping,Feminino,Gastronomia,4,4,5,13,VIP
+222266,45.69,2,10,Norte Shopping,Feminino,Gastronomia,3,2,1,6,Pontual
+222363,79.0,1,18,Continente Shopping,Feminino,Moda,2,1,1,4,Pontual
+222366,138.9,1,15,Nações Shopping,Feminino,Gastronomia,3,1,2,6,Pontual
+222375,707.67,7,3,Neumarkt Shopping,Masculino,Casa e Decoração,4,5,4,13,VIP
+222396,225.6,9,13,Neumarkt Shopping,Feminino,Gastronomia,3,5,2,10,Premium
+222519,1.63,1,2,Continente Shopping,Masculino,Beleza e Bem-estar,4,1,1,6,Pontual
+222844,219.39999999999998,3,20,Balneário Shopping,Feminino,Moda,2,3,2,7,Potencial
+222917,572.88,6,21,Continente Shopping,Feminino,Gastronomia,2,4,3,9,Potencial
+222994,122.4,1,4,Continente Shopping,Masculino,Papelaria,4,1,1,6,Pontual
+223167,227.43,5,21,Norte Shopping,Feminino,Gastronomia,2,4,2,8,Potencial
+223185,362.99,1,9,Balneário Shopping,Feminino,Beleza e Bem-estar,3,1,3,7,Potencial
+223186,449.97,1,29,Norte Shopping,Masculino,Moda,1,1,3,5,Pontual
+223851,245.99,2,13,Nações Shopping,Feminino,Infantil,3,2,2,7,Potencial
+223995,119.98,1,18,Neumarkt Shopping,Masculino,Moda,2,1,1,4,Pontual
+224119,26.9,1,29,Balneário Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+224155,323.9,2,23,Balneário Shopping,Feminino,Calçados,1,2,3,6,Pontual
+224293,598.33,5,2,Neumarkt Shopping,Feminino,Moda,4,4,4,12,Premium
+224385,46.9,1,24,Garten Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+224904,462.39,10,2,Nações Shopping,Feminino,Gastronomia,4,5,3,12,Premium
+225011,969.24,14,2,Nações Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+225432,127.8,2,12,Balneário Shopping,Feminino,Gastronomia,3,2,2,7,Potencial
+225548,444.99,6,21,Continente Shopping,Feminino,Casa e Decoração,2,4,3,9,Potencial
+225550,199.9,1,16,Nações Shopping,Feminino,Moda,2,1,2,5,Pontual
+225584,1546.5,4,20,Neumarkt Shopping,Feminino,Moda,2,4,5,11,Premium
+225605,656.41,3,8,Neumarkt Shopping,Feminino,Calçados,4,3,4,11,Premium
+225647,587.52,11,3,Garten Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+225784,1526.9,8,7,Neumarkt Shopping,Feminino,Beleza e Bem-estar,4,5,5,14,VIP
+225796,381.48,12,0,Continente Shopping,Masculino,Gastronomia,5,5,3,13,VIP
+225891,654.3299999999999,11,0,Norte Shopping,Feminino,Eletrodomésticos,5,5,4,14,VIP
+226036,1260.24,20,2,Continente Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+226047,1470.04,14,10,Continente Shopping,Feminino,Moda,3,5,5,13,VIP
+226098,14.9,1,15,Balneário Shopping,Feminino,Gastronomia,3,1,1,5,Pontual
+226282,296.5,3,2,Garten Shopping,Feminino,Beleza e Bem-estar,4,3,3,10,Premium
+226439,149.0,4,0,Continente Shopping,Masculino,Gastronomia,5,4,2,11,Premium
+226507,41.91,1,17,Continente Shopping,Feminino,Eletrodomésticos,2,1,1,4,Pontual
+226515,2295.95,21,1,Garten Shopping,Masculino,Gastronomia,5,5,5,15,VIP
+226630,554.89,4,2,Balneário Shopping,Masculino,Gastronomia,4,4,3,11,Premium
+226685,664.87,8,13,Garten Shopping,Feminino,Gastronomia,3,5,4,12,Premium
+226689,77.96,1,16,Nações Shopping,Feminino,Eletrodomésticos,2,1,1,4,Pontual
+226894,361.65,8,5,Continente Shopping,Masculino,Gastronomia,4,5,3,12,Premium
+227102,149.0,1,28,Garten Shopping,Feminino,Calçados,1,1,2,4,Pontual
+227123,279.52,10,3,Garten Shopping,Feminino,Gastronomia,4,5,2,11,Premium
+227157,417.88,3,19,Nações Shopping,Feminino,Beleza e Bem-estar,2,3,3,8,Potencial
+227242,177.02,3,1,Garten Shopping,Feminino,Beleza e Bem-estar,5,3,2,10,Premium
+227394,40.0,1,2,Neumarkt Shopping,Feminino,Casa e Decoração,4,1,1,6,Pontual
+227814,248.12,2,20,Nações Shopping,Feminino,Beleza e Bem-estar,2,2,2,6,Pontual
+228656,89.5,2,3,Norte Shopping,Feminino,Lazer,4,2,1,7,Potencial
+228699,1218.16,6,29,Garten Shopping,Feminino,Moda,1,4,5,10,Premium
+228827,364.85,7,9,Norte Shopping,Feminino,Moda,3,5,3,11,Premium
+228890,148.92000000000002,3,14,Continente Shopping,Masculino,Gastronomia,3,3,2,8,Potencial
+229018,189.6,2,13,Neumarkt Shopping,Feminino,Casa e Decoração,3,2,2,7,Potencial
+229069,50.0,1,18,Norte Shopping,Feminino,Pets,2,1,1,4,Pontual
+229174,79.99,1,25,Norte Shopping,Feminino,Moda,1,1,1,3,Pontual
+229202,127.99,3,11,Garten Shopping,Feminino,Gastronomia,3,3,2,8,Potencial
+229299,138.29000000000002,2,22,Norte Shopping,Feminino,Gastronomia,2,2,2,6,Pontual
+229552,128.6,3,23,Norte Shopping,Masculino,Gastronomia,1,3,2,6,Pontual
+229824,817.87,9,1,Norte Shopping,Feminino,Supermercado,5,5,4,14,VIP
+229832,693.79,5,8,Norte Shopping,Feminino,Gastronomia,4,4,4,12,Premium
+229967,115.0,1,22,Norte Shopping,Feminino,Presentes e Acessórios,2,1,1,4,Pontual
+230199,751.23,8,23,Norte Shopping,Feminino,Calçados,1,5,4,10,Premium
+230508,332.0,2,0,Norte Shopping,Feminino,Beleza e Bem-estar,5,2,3,10,Premium
+230707,184.07,1,24,Balneário Shopping,Feminino,Gastronomia,1,1,2,4,Pontual
+230818,647.36,6,3,Balneário Shopping,Feminino,Gastronomia,4,4,4,12,Premium
+230821,1703.92,30,3,Garten Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+230982,738.62,3,11,Norte Shopping,Feminino,Supermercado,3,3,4,10,Premium
+231014,209.0,2,17,Balneário Shopping,Feminino,Gastronomia,2,2,2,6,Pontual
+231505,129.99,1,29,Neumarkt Shopping,Feminino,Casa e Decoração,1,1,2,4,Pontual
+231889,489.99,9,19,Nações Shopping,Masculino,Eletrodomésticos,2,5,3,10,Premium
+232190,34.0,1,8,Nações Shopping,Feminino,Gastronomia,4,1,1,6,Pontual
+232201,80.28,1,27,Nações Shopping,Feminino,Beleza e Bem-estar,1,1,1,3,Pontual
+232211,39.0,2,15,Nações Shopping,Feminino,Gastronomia,3,2,1,6,Pontual
+232358,434.7,3,19,Nações Shopping,Feminino,Gastronomia,2,3,3,8,Potencial
+232567,1798.8,5,22,Nações Shopping,Feminino,Moda,2,4,5,11,Premium
+232941,792.0699999999999,6,20,Continente Shopping,Feminino,Casa e Decoração,2,4,4,10,Premium
+233029,2023.29,12,3,Norte Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+233056,759.48,6,16,Continente Shopping,Feminino,Eletrodomésticos,2,4,4,10,Premium
+233224,619.64,18,1,Continente Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+233408,309.7,2,16,Neumarkt Shopping,Feminino,Gastronomia,2,2,3,7,Potencial
+233733,424.0,1,9,Nações Shopping,Feminino,Moda,3,1,3,7,Potencial
+233794,1834.91,5,8,Nações Shopping,Masculino,Gastronomia,4,4,5,13,VIP
+233937,55.0,1,18,Continente Shopping,Feminino,Gastronomia,2,1,1,4,Pontual
+233953,1227.87,2,2,Nações Shopping,Feminino,Calçados,4,2,5,11,Premium
+233959,89.9,2,14,Garten Shopping,Feminino,Gastronomia,3,2,1,6,Pontual
+234185,1459.6499999999999,8,22,Continente Shopping,Masculino,Moda,2,5,5,12,Premium
+234362,261.9,10,1,Balneário Shopping,Feminino,Gastronomia,5,5,2,12,Premium
+234372,5274.7,9,5,Continente Shopping,Feminino,Moda,4,5,5,14,VIP
+234625,873.26,6,2,Nações Shopping,Feminino,Livrarias,4,4,4,12,Premium
+234697,215.74,2,4,Norte Shopping,Feminino,Beleza e Bem-estar,4,2,2,8,Potencial
+234855,71.8,2,20,Neumarkt Shopping,Feminino,Gastronomia,2,2,1,5,Pontual
+235168,1951.51,10,8,Garten Shopping,Feminino,Moda,4,5,5,14,VIP
+235348,1145.9,5,2,Continente Shopping,Feminino,Gastronomia,4,4,4,12,Premium
+235363,44.8,1,4,Continente Shopping,Feminino,Gastronomia,4,1,1,6,Pontual
+235390,318.98,2,9,Continente Shopping,Feminino,Calçados,3,2,3,8,Potencial
+235428,338.71000000000004,4,7,Norte Shopping,Masculino,Supermercado,4,4,3,11,Premium
+235883,2960.8,2,2,Norte Shopping,Feminino,Casa e Decoração,4,2,5,11,Premium
+235947,147.1,3,10,Garten Shopping,Masculino,Gastronomia,3,3,2,8,Potencial
+236109,407.4,2,18,Continente Shopping,Feminino,Beleza e Bem-estar,2,2,3,7,Potencial
+236231,323.99,2,27,Continente Shopping,Feminino,Calçados,1,2,3,6,Pontual
+236283,615.76,6,13,Balneário Shopping,Feminino,Beleza e Bem-estar,3,4,4,11,Premium
+236370,1590.97,11,0,Norte Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+236457,63.9,1,17,Balneário Shopping,Feminino,Livrarias,2,1,1,4,Pontual
+236760,755.86,10,3,Norte Shopping,Feminino,Supermercado,4,5,4,13,VIP
+236844,42.9,2,1,Continente Shopping,Feminino,Gastronomia,5,2,1,8,Potencial
+236986,174.97,2,20,Continente Shopping,Feminino,Eletrodomésticos,2,2,2,6,Pontual
+237047,728.0,1,9,Norte Shopping,Feminino,Moda,3,1,4,8,Potencial
+237108,475.7,13,5,Norte Shopping,Feminino,Gastronomia,4,5,3,12,Premium
+237257,249.0,1,23,Balneário Shopping,Feminino,Moda,1,1,2,4,Pontual
+237359,545.6,1,28,Balneário Shopping,Feminino,Gastronomia,1,1,3,5,Pontual
+237413,53.980000000000004,2,8,Garten Shopping,Feminino,Calçados,4,2,1,7,Potencial
+237532,1103.48,4,8,Neumarkt Shopping,Feminino,Joalheria,4,4,4,12,Premium
+237718,185.3,3,18,Continente Shopping,Feminino,Infantil,2,3,2,7,Potencial
+237748,1168.87,9,2,Continente Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+237782,39.0,1,30,Continente Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+237841,37.19,1,16,Continente Shopping,Feminino,Papelaria,2,1,1,4,Pontual
+237887,38.0,1,24,Norte Shopping,Feminino,Beleza e Bem-estar,1,1,1,3,Pontual
+238000,273.37,4,30,Balneário Shopping,Feminino,Beleza e Bem-estar,1,4,2,7,Potencial
+238365,678.99,4,5,Continente Shopping,Feminino,Moda,4,4,4,12,Premium
+238450,190.69,2,30,Continente Shopping,Masculino,Eletrodomésticos,1,2,2,5,Pontual
+238593,115.8,2,30,Nações Shopping,Feminino,Livrarias,1,2,1,4,Pontual
+238610,522.03,5,1,Norte Shopping,Feminino,Eletrodomésticos,5,4,3,12,Premium
+238695,212.14,4,24,Neumarkt Shopping,Feminino,Casa e Decoração,1,4,2,7,Potencial
+238718,4395.610000000001,3,16,Balneário Shopping,Masculino,Gastronomia,2,3,5,10,Premium
+238738,594.67,9,15,Continente Shopping,Masculino,Gastronomia,3,5,4,12,Premium
+238838,408.1,4,29,Balneário Shopping,Feminino,Moda,1,4,3,8,Potencial
+238977,1880.63,3,2,Balneário Shopping,Feminino,Calçados,4,3,5,12,Premium
+239321,57.1,1,1,Norte Shopping,Feminino,Supermercado,5,1,1,7,Potencial
+239324,825.38,4,23,Garten Shopping,Masculino,Farmácias,1,4,4,9,Potencial
+239339,600.9300000000001,5,16,Nações Shopping,Feminino,Gastronomia,2,4,4,10,Premium
+239516,83.7,1,1,Norte Shopping,Masculino,Gastronomia,5,1,1,7,Potencial
+239545,149.99,1,19,Garten Shopping,Feminino,Infantil,2,1,2,5,Pontual
+239601,284.44,4,16,Continente Shopping,Feminino,Beleza e Bem-estar,2,4,2,8,Potencial
+239608,1465.5,2,2,Garten Shopping,Feminino,Gastronomia,4,2,5,11,Premium
+239926,210.7,7,10,Neumarkt Shopping,Feminino,Gastronomia,3,5,2,10,Premium
+240104,1058.97,2,7,Neumarkt Shopping,Masculino,Moda,4,2,4,10,Premium
+240272,1530.0,1,3,Balneário Shopping,Masculino,Moda,4,1,5,10,Premium
+240319,239.97,1,26,Nações Shopping,Feminino,Moda,1,1,2,4,Pontual
+240320,26.8,2,29,Balneário Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+241636,88.89,4,16,Continente Shopping,Masculino,Gastronomia,2,4,1,7,Potencial
+241780,102.39,6,27,Continente Shopping,Feminino,Gastronomia,1,4,1,6,Pontual
+241802,178.97,3,22,Nações Shopping,Feminino,Calçados,2,3,2,7,Potencial
+241829,10.0,1,26,Neumarkt Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+241935,829.4,1,12,Balneário Shopping,Feminino,Moda,3,1,4,8,Potencial
+242615,1491.7,9,28,Continente Shopping,Feminino,Livrarias,1,5,5,11,Premium
+242643,5650.0,2,9,Balneário Shopping,Feminino,Ótica,3,2,5,10,Premium
+242832,1729.76,7,18,Balneário Shopping,Feminino,Moda,2,5,5,12,Premium
+243022,20.0,1,29,Nações Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+243159,1529.35,3,10,Neumarkt Shopping,Feminino,Calçados,3,3,5,11,Premium
+243232,2333.05,6,2,Balneário Shopping,Feminino,Beleza e Bem-estar,4,4,5,13,VIP
+243495,75.92,1,4,Balneário Shopping,Feminino,Supermercado,4,1,1,6,Pontual
+243905,388.40000000000003,3,16,Continente Shopping,Feminino,Beleza e Bem-estar,2,3,3,8,Potencial
+244015,701.4,2,15,Balneário Shopping,Feminino,Livrarias,3,2,4,9,Potencial
+244113,59.85,1,1,Continente Shopping,Feminino,Gastronomia,5,1,1,7,Potencial
+244152,1211.72,7,16,Garten Shopping,Feminino,Moda,2,5,5,12,Premium
+244249,358.85,4,23,Continente Shopping,Feminino,Gastronomia,1,4,3,8,Potencial
+244444,1787.49,5,4,Balneário Shopping,Masculino,Moda,4,4,5,13,VIP
+244507,630.84,12,1,Neumarkt Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+244703,793.73,6,13,Nações Shopping,Feminino,Esportes,3,4,4,11,Premium
+245014,447.93,8,20,Neumarkt Shopping,Feminino,Gastronomia,2,5,3,10,Premium
+245053,117.27,2,6,Neumarkt Shopping,Feminino,Beleza e Bem-estar,4,2,1,7,Potencial
+245086,2.97,1,28,Continente Shopping,Feminino,Eletrodomésticos,1,1,1,3,Pontual
+245114,549.86,2,3,Garten Shopping,Feminino,Moda,4,2,3,9,Potencial
+245153,1053.45,8,14,Balneário Shopping,Feminino,Gastronomia,3,5,4,12,Premium
+245282,187.6,3,4,Garten Shopping,Masculino,Gastronomia,4,3,2,9,Potencial
+245298,919.6,1,30,Balneário Shopping,Feminino,Moda,1,1,4,6,Pontual
+245343,2027.8,3,8,Balneário Shopping,Feminino,Beleza e Bem-estar,4,3,5,12,Premium
+245413,4041.04,8,3,Balneário Shopping,Feminino,Moda,4,5,5,14,VIP
+245437,853.79,10,7,Continente Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+245619,1567.2,10,8,Neumarkt Shopping,Masculino,Gastronomia,4,5,5,14,VIP
+245750,2112.1,5,19,Garten Shopping,Masculino,Moda,2,4,5,11,Premium
+245822,403.98,2,15,Norte Shopping,Feminino,Beleza e Bem-estar,3,2,3,8,Potencial
+245944,3249.0,1,24,Continente Shopping,Masculino,Moda,1,1,5,7,Potencial
+245967,175.8,2,11,Garten Shopping,Feminino,Calçados,3,2,2,7,Potencial
+246488,241.03,4,30,Norte Shopping,Feminino,Eletrodomésticos,1,4,2,7,Potencial
+246569,172.18,3,29,Balneário Shopping,Masculino,Gastronomia,1,3,2,6,Pontual
+247058,299.98,1,24,Balneário Shopping,Masculino,Moda,1,1,3,5,Pontual
+247562,1067.5700000000002,4,0,Garten Shopping,Feminino,Moda,5,4,4,13,VIP
+247619,2276.51,6,1,Nações Shopping,Feminino,Moda,5,4,5,14,VIP
+247721,259.95,1,27,Balneário Shopping,Feminino,Moda,1,1,2,4,Pontual
+247752,452.40999999999997,15,3,Norte Shopping,Feminino,Gastronomia,4,5,3,12,Premium
+247779,99.9,1,16,Garten Shopping,Feminino,Presentes e Acessórios,2,1,1,4,Pontual
+247956,99.9,1,28,Balneário Shopping,Feminino,Livrarias,1,1,1,3,Pontual
+248017,289.99,2,27,Continente Shopping,Masculino,Calçados,1,2,2,5,Pontual
+248144,321.7,5,4,Nações Shopping,Masculino,Gastronomia,4,4,3,11,Premium
+248416,871.98,4,16,Garten Shopping,Feminino,Calçados,2,4,4,10,Premium
+248527,535.55,6,0,Neumarkt Shopping,Feminino,Gastronomia,5,4,3,12,Premium
+249177,6199.7,3,4,Balneário Shopping,Masculino,Moda,4,3,5,12,Premium
+249188,1393.72,4,17,Nações Shopping,Feminino,Casa e Decoração,2,4,5,11,Premium
+249912,651.8,6,22,Neumarkt Shopping,Feminino,Gastronomia,2,4,4,10,Premium
+249985,3229.8999999999996,6,11,Garten Shopping,Masculino,Moda,3,4,5,12,Premium
+250003,1138.07,7,17,Balneário Shopping,Feminino,Moda,2,5,4,11,Premium
+250350,2200.2200000000003,6,29,Balneário Shopping,Feminino,Moda,1,4,5,10,Premium
+250391,250.98,2,2,Neumarkt Shopping,Masculino,Esportes,4,2,2,8,Potencial
+250557,716.45,4,3,Neumarkt Shopping,Feminino,Moda,4,4,4,12,Premium
+250562,864.21,2,9,Balneário Shopping,Feminino,Beleza e Bem-estar,3,2,4,9,Potencial
+250695,79.8,1,15,Balneário Shopping,Feminino,Gastronomia,3,1,1,5,Pontual
+251047,52.5,1,15,Garten Shopping,Masculino,Gastronomia,3,1,1,5,Pontual
+251310,708.7199999999999,4,30,Norte Shopping,Masculino,Moda,1,4,4,9,Potencial
+251521,852.5799999999999,14,10,Garten Shopping,Feminino,Gastronomia,3,5,4,12,Premium
+252207,100.0,3,22,Continente Shopping,Feminino,Gastronomia,2,3,1,6,Pontual
+252216,1865.46,7,8,Balneário Shopping,Feminino,Moda,4,5,5,14,VIP
+252554,478.58000000000004,11,5,Neumarkt Shopping,Feminino,Gastronomia,4,5,3,12,Premium
+252729,2926.58,12,2,Balneário Shopping,Feminino,Moda,4,5,5,14,VIP
+252734,352.74,2,8,Norte Shopping,Feminino,Casa e Decoração,4,2,3,9,Potencial
+252899,709.16,5,0,Neumarkt Shopping,Feminino,Moda,5,4,4,13,VIP
+253114,588.97,2,17,Balneário Shopping,Masculino,Gastronomia,2,2,4,8,Potencial
+253180,32.0,2,16,Norte Shopping,Feminino,Serviços,2,2,1,5,Pontual
+253248,149.99,1,29,Balneário Shopping,Feminino,Moda,1,1,2,4,Pontual
+254249,12840.599999999999,5,1,Continente Shopping,Feminino,Joalheria,5,4,5,14,VIP
+254309,78.75,3,11,Continente Shopping,Masculino,Gastronomia,3,3,1,7,Potencial
+255068,1447.37,7,13,Neumarkt Shopping,Masculino,Gastronomia,3,5,5,13,VIP
+255594,69.99,1,28,Neumarkt Shopping,Feminino,Esportes,1,1,1,3,Pontual
+256015,112.88999999999999,2,27,Garten Shopping,Feminino,Esportes,1,2,1,4,Pontual
+256137,1608.23,8,19,Neumarkt Shopping,Feminino,Gastronomia,2,5,5,12,Premium
+256587,339.6,1,30,Continente Shopping,Feminino,Moda,1,1,3,5,Pontual
+256724,549.0,1,15,Nações Shopping,Feminino,Infantil,3,1,3,7,Potencial
+257029,109.0,1,28,Continente Shopping,Masculino,Gastronomia,1,1,1,3,Pontual
+257050,137.98000000000002,4,2,Continente Shopping,Feminino,Gastronomia,4,4,2,10,Premium
+257072,354.98,2,16,Balneário Shopping,Feminino,Gastronomia,2,2,3,7,Potencial
+257144,874.69,14,21,Continente Shopping,Feminino,Gastronomia,2,5,4,11,Premium
+257181,213.13,3,25,Norte Shopping,Feminino,Casa e Decoração,1,3,2,6,Pontual
+257392,481.03,9,4,Garten Shopping,Feminino,Gastronomia,4,5,3,12,Premium
+257580,114.8,4,24,Garten Shopping,Masculino,Gastronomia,1,4,1,6,Pontual
+257671,309.7,1,14,Garten Shopping,Feminino,Moda,3,1,3,7,Potencial
+257878,59.8,2,30,Norte Shopping,Masculino,Gastronomia,1,2,1,4,Pontual
+258296,115.0,1,22,Neumarkt Shopping,Feminino,Gastronomia,2,1,1,4,Pontual
+258321,99.89,1,21,Nações Shopping,Feminino,Moda,2,1,1,4,Pontual
+258634,1096.12,28,13,Garten Shopping,Feminino,Serviços,3,5,4,12,Premium
+258814,421.0,3,0,Garten Shopping,Masculino,Calçados,5,3,3,11,Premium
+258875,71.91,1,4,Balneário Shopping,Feminino,Beleza e Bem-estar,4,1,1,6,Pontual
+259052,159.8,1,1,Balneário Shopping,Feminino,Moda,5,1,2,8,Potencial
+259101,1354.78,4,0,Balneário Shopping,Masculino,Moda,5,4,5,14,VIP
+259145,80.5,3,24,Neumarkt Shopping,Feminino,Gastronomia,1,3,1,5,Pontual
+259153,573.27,5,12,Continente Shopping,Masculino,Moda,3,4,3,10,Premium
+259443,105.0,1,23,Balneário Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+259582,642.14,10,15,Continente Shopping,Masculino,Gastronomia,3,5,4,12,Premium
+259718,164.79,6,5,Continente Shopping,Masculino,Gastronomia,4,4,2,10,Premium
+259785,470.32000000000005,3,15,Nações Shopping,Feminino,Livrarias,3,3,3,9,Potencial
+259990,87.0,3,30,Garten Shopping,Feminino,Gastronomia,1,3,1,5,Pontual
+260506,199.0,1,1,Continente Shopping,Feminino,Infantil,5,1,2,8,Potencial
+261408,79.75,2,22,Neumarkt Shopping,Feminino,Gastronomia,2,2,1,5,Pontual
+261659,754.29,3,4,Garten Shopping,Feminino,Casa e Decoração,4,3,4,11,Premium
+261686,73.85,3,19,Neumarkt Shopping,Masculino,Gastronomia,2,3,1,6,Pontual
+261800,364.71000000000004,4,10,Balneário Shopping,Feminino,Farmácias,3,4,3,10,Premium
+261992,1135.43,5,9,Garten Shopping,Masculino,Moda,3,4,4,11,Premium
+262226,199.89,1,30,Garten Shopping,Feminino,Moda,1,1,2,4,Pontual
+262695,637.25,1,24,Balneário Shopping,Feminino,Beleza e Bem-estar,1,1,4,6,Pontual
+263107,599.92,1,25,Continente Shopping,Feminino,Moda,1,1,4,6,Pontual
+263255,1093.91,5,6,Balneário Shopping,Feminino,Moda,4,4,4,12,Premium
+263614,7416.43,18,0,Balneário Shopping,Feminino,Moda,5,5,5,15,VIP
+263745,34.95,1,18,Continente Shopping,Feminino,Gastronomia,2,1,1,4,Pontual
+263887,1779.0,1,1,Balneário Shopping,Feminino,Calçados,5,1,5,11,Premium
+263927,95.19999999999999,3,16,Norte Shopping,Feminino,Gastronomia,2,3,1,6,Pontual
+264063,2651.73,29,11,Garten Shopping,Feminino,Gastronomia,3,5,5,13,VIP
+264095,19.0,1,2,Garten Shopping,Masculino,Gastronomia,4,1,1,6,Pontual
+264098,521.36,5,0,Garten Shopping,Masculino,Moda,5,4,3,12,Premium
+264427,874.0,2,23,Balneário Shopping,Feminino,Moda,1,2,4,7,Potencial
+264954,626.5,5,8,Balneário Shopping,Feminino,Beleza e Bem-estar,4,4,4,12,Premium
+265804,158.15,4,0,Continente Shopping,Masculino,Gastronomia,5,4,2,11,Premium
+265864,400.49,4,30,Continente Shopping,Feminino,Beleza e Bem-estar,1,4,3,8,Potencial
+265924,3.0,1,19,Garten Shopping,Feminino,Papelaria,2,1,1,4,Pontual
+265956,221.92,3,18,Continente Shopping,Masculino,Moda,2,3,2,7,Potencial
+266031,779.3499999999999,2,20,Garten Shopping,Feminino,Moda,2,2,4,8,Potencial
+266070,792.68,3,28,Balneário Shopping,Feminino,Calçados,1,3,4,8,Potencial
+266412,919.99,2,0,Balneário Shopping,Feminino,Moda,5,2,4,11,Premium
+266547,953.6999999999999,6,19,Continente Shopping,Feminino,Moda,2,4,4,10,Premium
+266551,1200.0,1,8,Balneário Shopping,Feminino,Presentes e Acessórios,4,1,5,10,Premium
+266847,539.4,2,14,Neumarkt Shopping,Feminino,Papelaria,3,2,3,8,Potencial
+267008,487.88,3,9,Continente Shopping,Masculino,Moda,3,3,3,9,Potencial
+267230,104.69999999999999,3,9,Continente Shopping,Masculino,Gastronomia,3,3,1,7,Potencial
+267411,3151.19,10,1,Balneário Shopping,Masculino,Eletrônicos,5,5,5,15,VIP
+267439,401.85,2,2,Neumarkt Shopping,Feminino,Casa e Decoração,4,2,3,9,Potencial
+267877,784.4,4,16,Garten Shopping,Feminino,Moda,2,4,4,10,Premium
+268033,657.0,2,26,Norte Shopping,Feminino,Casa e Decoração,1,2,4,7,Potencial
+269505,424.52,9,0,Nações Shopping,Feminino,Gastronomia,5,5,3,13,VIP
+269702,157.45999999999998,6,16,Norte Shopping,Feminino,Gastronomia - Sorvetes,2,4,2,8,Potencial
+269939,159.99,1,8,Balneário Shopping,Feminino,Infantil,4,1,2,7,Potencial
+270381,399.98,1,14,Balneário Shopping,Feminino,Ótica,3,1,3,7,Potencial
+270733,232.5,3,17,Neumarkt Shopping,Feminino,Gastronomia,2,3,2,7,Potencial
+270832,1558.8,2,6,Balneário Shopping,Feminino,Moda,4,2,5,11,Premium
+271064,614.5799999999999,4,21,Balneário Shopping,Masculino,Moda,2,4,4,10,Premium
+271192,85.98,1,10,Nações Shopping,Feminino,Moda,3,1,1,5,Pontual
+271259,500.57,9,10,Continente Shopping,Feminino,Gastronomia,3,5,3,11,Premium
+271476,202.28,2,1,Norte Shopping,Feminino,Casa e Decoração,5,2,2,9,Potencial
+271739,175.99,2,23,Continente Shopping,Feminino,Gastronomia,1,2,2,5,Pontual
+271855,129.0,1,8,Balneário Shopping,Feminino,Beleza e Bem-estar,4,1,2,7,Potencial
+272121,639.1,1,23,Continente Shopping,Masculino,Moda,1,1,4,6,Pontual
+272487,194.48000000000002,3,2,Neumarkt Shopping,Feminino,Gastronomia,4,3,2,9,Potencial
+272498,453.43,8,9,Continente Shopping,Feminino,Beleza e Bem-estar,3,5,3,11,Premium
+272605,379.9,1,20,Balneário Shopping,Feminino,Moda,2,1,3,6,Pontual
+272720,41.0,1,18,Continente Shopping,Masculino,Gastronomia,2,1,1,4,Pontual
+273073,12.99,1,26,Balneário Shopping,Feminino,Infantil,1,1,1,3,Pontual
+273451,91.98,1,19,Garten Shopping,Feminino,Farmácias,2,1,1,4,Pontual
+273770,937.99,4,1,Balneário Shopping,Masculino,Beleza e Bem-estar,5,4,4,13,VIP
+273812,293.9,5,1,Nações Shopping,Masculino,Gastronomia,5,4,3,12,Premium
+273831,1090.65,8,20,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,5,4,11,Premium
+274264,359.79999999999995,2,25,Garten Shopping,Feminino,Calçados,1,2,3,6,Pontual
+274559,4084.99,15,3,Balneário Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+274586,243.14999999999998,2,30,Norte Shopping,Feminino,Supermercado,1,2,2,5,Pontual
+274629,169.7,2,28,Balneário Shopping,Masculino,Gastronomia,1,2,2,5,Pontual
+274698,797.0,1,21,Balneário Shopping,Feminino,Moda,2,1,4,7,Potencial
+275187,79.99,1,28,Balneário Shopping,Masculino,Esportes,1,1,1,3,Pontual
+275330,799.0,1,0,Continente Shopping,Feminino,Ótica,5,1,4,10,Premium
+275688,629.0,1,30,Balneário Shopping,Masculino,Infantil,1,1,4,6,Pontual
+275713,26.9,1,6,Continente Shopping,Feminino,Gastronomia,4,1,1,6,Pontual
+276088,363.8,6,6,Garten Shopping,Feminino,Papelaria,4,4,3,11,Premium
+276205,158.8,2,22,Balneário Shopping,Masculino,Moda,2,2,2,6,Pontual
+276689,119.0,2,14,Balneário Shopping,Masculino,Calçados,3,2,1,6,Pontual
+276811,2777.97,9,12,Balneário Shopping,Feminino,Gastronomia,3,5,5,13,VIP
+277134,267.0,4,4,Nações Shopping,Masculino,Gastronomia,4,4,2,10,Premium
+277461,63.93,1,9,Garten Shopping,Masculino,Gastronomia,3,1,1,5,Pontual
+277573,2137.7599999999998,7,23,Balneário Shopping,Feminino,Beleza e Bem-estar,1,5,5,11,Premium
+277621,764.8000000000001,2,28,Balneário Shopping,Feminino,Livrarias,1,2,4,7,Potencial
+277820,907.85,2,16,Nações Shopping,Masculino,Beleza e Bem-estar,2,2,4,8,Potencial
+277865,10.0,1,10,Nações Shopping,Feminino,Serviços,3,1,1,5,Pontual
+278354,148.72,2,27,Continente Shopping,Masculino,Gastronomia,1,2,2,5,Pontual
+279041,1015.3,7,0,Continente Shopping,Feminino,Beleza e Bem-estar,5,5,4,14,VIP
+279130,288.2,2,27,Garten Shopping,Masculino,Gastronomia,1,2,2,5,Pontual
+279218,311.89,4,0,Garten Shopping,Feminino,Papelaria,5,4,3,12,Premium
+279334,186.9,2,26,Balneário Shopping,Masculino,Joalheria,1,2,2,5,Pontual
+279847,675.2199999999999,2,17,Nações Shopping,Masculino,Casa e Decoração,2,2,4,8,Potencial
+279850,57.91,1,3,Continente Shopping,Masculino,Beleza e Bem-estar,4,1,1,6,Pontual
+279901,81.0,5,15,Nações Shopping,Masculino,Gastronomia,3,4,1,8,Potencial
+279903,804.86,7,0,Neumarkt Shopping,Feminino,Beleza e Bem-estar,5,5,4,14,VIP
+279920,144.2,2,29,Continente Shopping,Feminino,Gastronomia,1,2,2,5,Pontual
+279949,1195.2,4,25,Garten Shopping,Feminino,Gastronomia,1,4,5,10,Premium
+280418,657.3,9,1,Continente Shopping,Masculino,Gastronomia,5,5,4,14,VIP
+281147,59.9,1,19,Continente Shopping,Feminino,Beleza e Bem-estar,2,1,1,4,Pontual
+281197,113.9,1,21,Continente Shopping,Feminino,Eletrodomésticos,2,1,1,4,Pontual
+281311,719.45,11,2,Balneário Shopping,Feminino,Moda,4,5,4,13,VIP
+281373,688.88,3,9,Garten Shopping,Masculino,Calçados,3,3,4,10,Premium
+281959,715.5899999999999,12,0,Continente Shopping,Masculino,Gastronomia,5,5,4,14,VIP
+283362,269.78999999999996,4,28,Garten Shopping,Feminino,Gastronomia,1,4,2,7,Potencial
+283552,139.7,2,17,Garten Shopping,Feminino,Moda,2,2,2,6,Pontual
+283629,516.8299999999999,6,1,Garten Shopping,Feminino,Moda,5,4,3,12,Premium
+283756,79.9,1,22,Garten Shopping,Feminino,Moda,2,1,1,4,Pontual
+283912,258.5,5,28,Garten Shopping,Feminino,Gastronomia,1,4,2,7,Potencial
+283966,1045.2,3,13,Balneário Shopping,Feminino,Moda,3,3,4,10,Premium
+284346,125.78999999999999,2,21,Garten Shopping,Masculino,Moda,2,2,2,6,Pontual
+284543,146.0,2,22,Continente Shopping,Masculino,Gastronomia,2,2,2,6,Pontual
+284548,174.26,5,1,Nações Shopping,Masculino,Gastronomia,5,4,2,11,Premium
+284563,12.7,1,25,Norte Shopping,Feminino,Beleza e Bem-estar,1,1,1,3,Pontual
+284670,138.0,1,15,Continente Shopping,Feminino,Gastronomia,3,1,2,6,Pontual
+284825,486.72,3,18,Norte Shopping,Masculino,Casa e Decoração,2,3,3,8,Potencial
+284862,46.989999999999995,2,19,Nações Shopping,Feminino,Gastronomia,2,2,1,5,Pontual
+285043,1100.56,5,10,Neumarkt Shopping,Feminino,Moda,3,4,4,11,Premium
+285323,5487.0,1,7,Balneário Shopping,Masculino,Ótica,4,1,5,10,Premium
+285627,260.43,2,11,Continente Shopping,Feminino,Eletrodomésticos,3,2,2,7,Potencial
+285754,1693.0,3,5,Balneário Shopping,Feminino,Joalheria,4,3,5,12,Premium
+285870,139.98,2,19,Garten Shopping,Feminino,Gastronomia,2,2,2,6,Pontual
+286334,200.07,2,29,Balneário Shopping,Feminino,Farmácias,1,2,2,5,Pontual
+286672,110.96,1,29,Garten Shopping,Feminino,Calçados,1,1,1,3,Pontual
+286745,77.49000000000001,4,18,Continente Shopping,Feminino,Papelaria,2,4,1,7,Potencial
+286756,2761.98,9,11,Balneário Shopping,Feminino,Beleza e Bem-estar,3,5,5,13,VIP
+286867,196.4,2,24,Balneário Shopping,Feminino,Beleza e Bem-estar,1,2,2,5,Pontual
+287011,2367.77,6,4,Neumarkt Shopping,Feminino,Salão de Beleza | Barbearia,4,4,5,13,VIP
+287023,202.99,2,15,Nações Shopping,Feminino,Esportes,3,2,2,7,Potencial
+287181,661.87,4,8,Balneário Shopping,Feminino,Gastronomia,4,4,4,12,Premium
+287308,281.3,7,12,Balneário Shopping,Feminino,Beleza e Bem-estar,3,5,2,10,Premium
+287406,445.78999999999996,4,8,Neumarkt Shopping,Feminino,Casa e Decoração,4,4,3,11,Premium
+287435,485.7,1,27,Balneário Shopping,Masculino,Beleza e Bem-estar,1,1,3,5,Pontual
+288495,174.98,2,28,Balneário Shopping,Feminino,Moda,1,2,2,5,Pontual
+288750,1206.96,3,4,Balneário Shopping,Masculino,Moda,4,3,5,12,Premium
+288768,609.76,3,21,Garten Shopping,Feminino,Moda,2,3,4,9,Potencial
+289159,40.0,1,5,Continente Shopping,Feminino,Gastronomia,4,1,1,6,Pontual
+289337,439.69000000000005,3,19,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,3,3,8,Potencial
+289526,269.0,1,13,Balneário Shopping,Feminino,Calçados,3,1,2,6,Pontual
+289648,74.9,1,30,Garten Shopping,Feminino,Presentes e Acessórios,1,1,1,3,Pontual
+289879,1225.61,7,7,Garten Shopping,Feminino,Moda,4,5,5,14,VIP
+290202,1240.0,1,15,Balneário Shopping,Feminino,Joalheria,3,1,5,9,Potencial
+290448,169.8,1,23,Garten Shopping,Feminino,Moda,1,1,2,4,Pontual
+291139,270.6,3,0,Neumarkt Shopping,Masculino,Gastronomia,5,3,2,10,Premium
+291287,34.0,1,23,Continente Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+291374,24.9,1,21,Continente Shopping,Feminino,Papelaria,2,1,1,4,Pontual
+291510,521.6,3,0,Garten Shopping,Masculino,Moda,5,3,3,11,Premium
+291532,1054.97,5,3,Continente Shopping,Masculino,Gastronomia,4,4,4,12,Premium
+291609,1422.38,4,22,Garten Shopping,Feminino,Casa e Decoração,2,4,5,11,Premium
+291788,1612.95,6,7,Continente Shopping,Masculino,Moda,4,4,5,13,VIP
+292817,18.0,1,30,Garten Shopping,Feminino,Serviços,1,1,1,3,Pontual
+292925,630.38,6,24,Garten Shopping,Feminino,Livrarias,1,4,4,9,Potencial
+293351,271.56,4,9,Neumarkt Shopping,Masculino,Casa e Decoração,3,4,2,9,Potencial
+293428,280.7,3,21,Nações Shopping,Feminino,Beleza e Bem-estar,2,3,2,7,Potencial
+293466,3157.16,5,17,Balneário Shopping,Feminino,Moda,2,4,5,11,Premium
+293860,1841.99,3,15,Nações Shopping,Feminino,Moda,3,3,5,11,Premium
+294182,1561.37,3,22,Continente Shopping,Feminino,Moda,2,3,5,10,Premium
+294321,279.99,2,15,Continente Shopping,Feminino,Calçados,3,2,2,7,Potencial
+294399,629.98,1,15,Continente Shopping,Feminino,Esportes,3,1,4,8,Potencial
+294428,249.98,1,12,Garten Shopping,Feminino,Moda,3,1,2,6,Pontual
+294435,156.89,2,28,Balneário Shopping,Feminino,Gastronomia,1,2,2,5,Pontual
+294473,536.53,3,25,Garten Shopping,Feminino,Calçados,1,3,3,7,Potencial
+294539,1718.8600000000001,8,6,Neumarkt Shopping,Feminino,Moda,4,5,5,14,VIP
+294797,99.99,1,5,Balneário Shopping,Feminino,Infantil,4,1,1,6,Pontual
+295098,1.18,1,15,Continente Shopping,Feminino,Infantil,3,1,1,5,Pontual
+296019,406.87,4,19,Neumarkt Shopping,Feminino,Moda,2,4,3,9,Potencial
+296165,142.0,1,3,Neumarkt Shopping,Feminino,Gastronomia,4,1,2,7,Potencial
+296439,9846.859999999999,2,4,Continente Shopping,Feminino,Gastronomia,4,2,5,11,Premium
+296508,1926.55,2,12,Balneário Shopping,Masculino,Gastronomia,3,2,5,10,Premium
+296762,290.76,5,17,Continente Shopping,Feminino,Gastronomia,2,4,2,8,Potencial
+296842,112.33000000000001,3,24,Continente Shopping,Masculino,Gastronomia,1,3,1,5,Pontual
+297373,219.0,1,11,Balneário Shopping,Feminino,Infantil,3,1,2,6,Pontual
+297860,1156.23,13,2,Neumarkt Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+297918,713.0,1,2,Balneário Shopping,Masculino,Casa e Decoração,4,1,4,9,Potencial
+298096,1241.31,7,13,Balneário Shopping,Feminino,Moda,3,5,5,13,VIP
+298175,275.0,3,22,Garten Shopping,Feminino,Farmácias,2,3,2,7,Potencial
+298196,1026.8,14,0,Nações Shopping,Masculino,Beleza e Bem-estar,5,5,4,14,VIP
+298635,329.89,2,16,Nações Shopping,Feminino,Livrarias,2,2,3,7,Potencial
+299035,110.9,2,3,Garten Shopping,Feminino,Gastronomia,4,2,1,7,Potencial
+299450,579.57,5,27,Continente Shopping,Feminino,Moda,1,4,3,8,Potencial
+299611,96.04,2,13,Neumarkt Shopping,Feminino,Eletrodomésticos,3,2,1,6,Pontual
+300262,1004.76,3,3,Balneário Shopping,Feminino,Moda,4,3,4,11,Premium
+300516,6650.0,1,11,Continente Shopping,Masculino,Casa e Decoração,3,1,5,9,Potencial
+300675,303.33,1,29,Nações Shopping,Feminino,Casa e Decoração,1,1,3,5,Pontual
+300797,1374.92,3,2,Balneário Shopping,Feminino,Esportes,4,3,5,12,Premium
+300854,317.96,3,4,Neumarkt Shopping,Feminino,Beleza e Bem-estar,4,3,3,10,Premium
+300899,261.11,2,23,Continente Shopping,Feminino,Casa e Decoração,1,2,2,5,Pontual
+300924,647.0,2,6,Continente Shopping,Masculino,Eletrodomésticos,4,2,4,10,Premium
+301100,390.22,4,15,Garten Shopping,Feminino,Gastronomia,3,4,3,10,Premium
+301259,435.96,1,23,Garten Shopping,Feminino,Ótica,1,1,3,5,Pontual
+301567,143.15,2,22,Balneário Shopping,Masculino,Gastronomia,2,2,2,6,Pontual
+301743,404.78000000000003,2,14,Balneário Shopping,Feminino,Esportes,3,2,3,8,Potencial
+301890,418.6,2,21,Neumarkt Shopping,Feminino,Gastronomia,2,2,3,7,Potencial
+301907,128.7,1,20,Neumarkt Shopping,Feminino,Livrarias,2,1,2,5,Pontual
+302073,409.5,1,26,Nações Shopping,Feminino,Moda,1,1,3,5,Pontual
+302206,800.46,8,1,Continente Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+302365,67.9,1,24,Continente Shopping,Feminino,Gastronomia,1,1,1,3,Pontual
+302549,319.96,2,24,Continente Shopping,Feminino,Moda,1,2,3,6,Pontual
+302621,28.5,1,2,Neumarkt Shopping,Masculino,Gastronomia,4,1,1,6,Pontual
+302924,2358.57,6,12,Continente Shopping,Feminino,Moda,3,4,5,12,Premium
+303045,155.97,1,28,Nações Shopping,Feminino,Pets,1,1,2,4,Pontual
+303223,1215.29,6,9,Continente Shopping,Masculino,Beleza e Bem-estar,3,4,5,12,Premium
+303702,88.1,2,27,Continente Shopping,Feminino,Papelaria,1,2,1,4,Pontual
+304228,121.8,1,30,Garten Shopping,Feminino,Beleza e Bem-estar,1,1,1,3,Pontual
+304301,900.36,4,1,Neumarkt Shopping,Masculino,Moda,5,4,4,13,VIP
+304308,655.66,3,8,Neumarkt Shopping,Feminino,Moda,4,3,4,11,Premium
+304815,1969.9,4,7,Norte Shopping,Feminino,Beleza e Bem-estar,4,4,5,13,VIP
+304911,413.28,8,15,Nações Shopping,Feminino,Gastronomia,3,5,3,11,Premium
+305131,1231.9299999999998,6,10,Neumarkt Shopping,Masculino,Moda,3,4,5,12,Premium
+305419,41.9,2,22,Nações Shopping,Masculino,Gastronomia,2,2,1,5,Pontual
+305533,16.0,1,23,Nações Shopping,Feminino,Serviços,1,1,1,3,Pontual
+305660,118.88999999999999,2,8,Continente Shopping,Masculino,Esportes,4,2,1,7,Potencial
+305987,411.8,3,15,Nações Shopping,Feminino,Moda,3,3,3,9,Potencial
+306009,7038.0,2,27,Continente Shopping,Masculino,Moda,1,2,5,8,Potencial
+306048,2164.95,3,22,Balneário Shopping,Masculino,Calçados,2,3,5,10,Premium
+306989,268.97,3,27,Balneário Shopping,Masculino,Gastronomia,1,3,2,6,Pontual
+307175,913.0500000000001,7,8,Garten Shopping,Masculino,Moda,3,5,4,12,Premium
+308005,213.98000000000002,2,15,Nações Shopping,Feminino,Eletrodomésticos,3,2,2,7,Potencial
+308223,727.0,1,5,Nações Shopping,Feminino,Beleza e Bem-estar,4,1,4,9,Potencial
+308492,657.27,4,12,Garten Shopping,Feminino,Gastronomia,3,4,4,11,Premium
+309146,479.0,1,21,Balneário Shopping,Masculino,Moda,2,1,3,6,Pontual
+309226,122.95,2,11,Continente Shopping,Feminino,Gastronomia,3,2,1,6,Pontual
+309353,67.91,3,26,Continente Shopping,Feminino,Beleza e Bem-estar,1,3,1,5,Pontual
+309465,1783.0,4,13,Neumarkt Shopping,Feminino,Infantil,3,4,5,12,Premium
+309603,304.29,7,24,Continente Shopping,Feminino,Gastronomia,1,5,3,9,Potencial
+309907,373.36,13,3,Norte Shopping,Feminino,Gastronomia,4,5,3,12,Premium
+310131,89.65,4,1,Balneário Shopping,Feminino,Gastronomia,5,4,1,10,Premium
+310159,2556.4700000000003,12,25,Balneário Shopping,Feminino,Gastronomia,1,5,5,11,Premium
+310398,74.6,4,0,Balneário Shopping,Feminino,Gastronomia,5,4,1,10,Premium
+310607,69.9,3,29,Continente Shopping,Feminino,Beleza e Bem-estar,1,3,1,5,Pontual
+310758,353.84,6,23,Neumarkt Shopping,Feminino,Beleza e Bem-estar,1,4,3,8,Potencial
+311023,2763.2400000000002,15,2,Nações Shopping,Masculino,Gastronomia,4,5,5,14,VIP
+311062,329.97,3,12,Neumarkt Shopping,Feminino,Moda,3,3,3,9,Potencial
+311637,331.9,2,2,Continente Shopping,Masculino,Moda,4,2,3,9,Potencial
+311655,489.97,1,23,Continente Shopping,Feminino,Esportes,1,2,3,6,Pontual
+313192,1839.0,1,22,Continente Shopping,Masculino,Moda,2,2,5,9,Potencial
+313389,1414.95,2,3,Balneário Shopping,Feminino,Beleza e Bem-estar,4,2,5,11,Premium
+313870,1160.22,7,20,Neumarkt Shopping,Feminino,Moda,2,5,4,11,Premium
+314730,334.8,2,4,Balneário Shopping,Feminino,Gastronomia,4,2,3,9,Potencial
+314762,128.89,3,15,Balneário Shopping,Feminino,Moda,3,3,2,8,Potencial
+315414,288.69,3,8,Continente Shopping,Feminino,Moda,3,3,2,8,Potencial
+315447,382.21000000000004,4,11,Continente Shopping,Feminino,Casa e Decoração,3,4,3,10,Premium
+316751,234.88,4,24,Garten Shopping,Feminino,Infantil,1,4,2,7,Potencial
+319317,199.98,1,11,Garten Shopping,Masculino,Moda,3,2,2,7,Potencial
+319376,4921.29,19,0,Neumarkt Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+319912,76.17,1,27,Neumarkt Shopping,Masculino,Pets,1,2,1,4,Pontual
+320137,145.68,3,8,Garten Shopping,Masculino,Papelaria,3,3,2,8,Potencial
+320386,9.99,1,25,Neumarkt Shopping,Feminino,Moda,1,2,1,4,Pontual
+320751,167.7,7,1,Continente Shopping,Feminino,Gastronomia,5,5,2,12,Premium
+320839,639.92,1,22,Garten Shopping,Feminino,Esportes,2,2,4,8,Potencial
+321219,290.65,10,27,Norte Shopping,Feminino,Gastronomia,1,5,2,8,Potencial
+321536,33.99,1,5,Garten Shopping,Masculino,Gastronomia,4,2,1,7,Potencial
+322245,530.17,5,12,Neumarkt Shopping,Feminino,Casa e Decoração,3,4,3,10,Premium
+322649,39.9,1,16,Garten Shopping,Feminino,Moda,2,2,1,5,Pontual
+322749,447.97,9,15,Neumarkt Shopping,Feminino,Gastronomia,3,5,3,11,Premium
+322864,944.95,4,3,Garten Shopping,Feminino,Beleza e Bem-estar,4,4,4,12,Premium
+323423,1341.68,3,2,Balneário Shopping,Feminino,Beleza e Bem-estar,4,3,5,12,Premium
+323750,249.91,2,2,Balneário Shopping,Masculino,Esportes,4,2,2,8,Potencial
+324152,182.07999999999998,2,16,Continente Shopping,Masculino,Eletrodomésticos,2,2,2,6,Pontual
+324360,481.82,4,29,Garten Shopping,Feminino,Beleza e Bem-estar,1,4,3,8,Potencial
+324389,776.99,2,26,Balneário Shopping,Feminino,Esportes,1,2,4,7,Potencial
+324466,1308.03,24,15,Continente Shopping,Masculino,Gastronomia,3,5,5,13,VIP
+324482,369.71,1,7,Garten Shopping,Masculino,Gastronomia,4,2,3,9,Potencial
+325367,1089.6000000000001,2,26,Balneário Shopping,Feminino,Moda,1,2,4,7,Potencial
+325442,634.4399999999999,11,7,Continente Shopping,Feminino,Gastronomia,4,5,4,13,VIP
+325783,311.04,4,15,Continente Shopping,Feminino,Gastronomia,3,4,3,10,Premium
+325961,23.0,1,24,Continente Shopping,Masculino,Serviços,1,2,1,4,Pontual
+326378,370.87,2,29,Balneário Shopping,Masculino,Gastronomia,1,2,3,6,Pontual
+327132,2245.8,11,4,Continente Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+327360,55.98,1,22,Continente Shopping,Feminino,Calçados,2,2,1,5,Pontual
+327370,248.0,1,2,Continente Shopping,Feminino,Papelaria,4,2,2,8,Potencial
+327509,4.5,1,23,Garten Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+327531,34.5,1,29,Continente Shopping,Feminino,Farmácias,1,2,1,4,Pontual
+327542,649.1999999999999,2,16,Norte Shopping,Feminino,Eletrodomésticos,2,2,4,8,Potencial
+327875,587.05,6,27,Neumarkt Shopping,Feminino,Farmácias,1,4,4,9,Potencial
+327884,479.78999999999996,2,17,Continente Shopping,Feminino,Moda,2,2,3,7,Potencial
+328000,237.5,2,26,Continente Shopping,Feminino,Gastronomia,1,2,2,5,Pontual
+328115,1126.8,7,6,Neumarkt Shopping,Masculino,Casa e Decoração,4,5,4,13,VIP
+328368,445.5,2,1,Garten Shopping,Masculino,Gastronomia,5,2,3,10,Premium
+328579,507.99,6,4,Nações Shopping,Feminino,Gastronomia,4,4,3,11,Premium
+328905,55.51,1,22,Norte Shopping,Masculino,Pets,2,2,1,5,Pontual
+329162,462.97,4,9,Continente Shopping,Feminino,Gastronomia,3,4,3,10,Premium
+329300,475.88,2,15,Nações Shopping,Masculino,Esportes,3,2,3,8,Potencial
+329339,489.48,4,23,Continente Shopping,Feminino,Moda,1,4,3,8,Potencial
+329342,982.87,3,0,Continente Shopping,Feminino,Beleza e Bem-estar,5,3,4,12,Premium
+329791,599.94,3,28,Balneário Shopping,Feminino,Moda,1,3,4,8,Potencial
+329909,636.1700000000001,5,12,Balneário Shopping,Masculino,Calçados,3,4,4,11,Premium
+330043,270.26,5,15,Norte Shopping,Masculino,Gastronomia,3,4,2,9,Potencial
+330179,16.0,1,28,Norte Shopping,Masculino,Serviços,1,2,1,4,Pontual
+332077,272.0,5,1,Continente Shopping,Feminino,Gastronomia,5,4,2,11,Premium
+332444,578.05,10,5,Garten Shopping,Feminino,Gastronomia,4,5,3,12,Premium
+333184,1592.4,7,0,Continente Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+333754,158.62,4,11,Continente Shopping,Masculino,Eletrodomésticos,3,4,2,9,Potencial
+334305,219.98,1,24,Garten Shopping,Feminino,Esportes,1,2,2,5,Pontual
+334345,639.11,16,0,Balneário Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+334434,7661.96,22,2,Balneário Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+334523,23.0,1,23,Continente Shopping,Feminino,Serviços,1,2,1,4,Pontual
+334726,62.0,1,11,Neumarkt Shopping,Masculino,Gastronomia,3,2,1,6,Pontual
+334809,500.0,1,23,Garten Shopping,Masculino,Beleza e Bem-estar,1,2,3,6,Pontual
+334817,38.0,1,5,Garten Shopping,Feminino,Gastronomia,4,2,1,7,Potencial
+334895,1635.18,4,15,Neumarkt Shopping,Feminino,Livrarias,3,4,5,12,Premium
+334985,267.69,3,12,Continente Shopping,Feminino,Gastronomia,3,3,2,8,Potencial
+335012,10.0,1,1,Balneário Shopping,Feminino,Joalheria,5,2,1,8,Potencial
+335097,329.93,3,15,Continente Shopping,Masculino,Calçados,3,3,3,9,Potencial
+335122,279.9,2,5,Continente Shopping,Masculino,Gastronomia,4,3,2,9,Potencial
+335182,698.0,1,24,Neumarkt Shopping,Feminino,Moda Feminina,1,2,4,7,Potencial
+335256,289.85,2,27,Garten Shopping,Feminino,Beleza e Bem-estar,1,3,2,6,Pontual
+335271,33.95,1,27,Continente Shopping,Feminino,Eletrodomésticos,1,2,1,4,Pontual
+335323,799.98,4,1,Continente Shopping,Feminino,Moda,5,4,4,13,VIP
+335399,425.6,1,18,Continente Shopping,Feminino,Moda,2,2,3,7,Potencial
+335624,199.9,1,11,Balneário Shopping,Feminino,Moda,3,2,2,7,Potencial
+335678,304.93,11,4,Neumarkt Shopping,Masculino,Gastronomia,4,5,3,12,Premium
+335725,45.0,1,28,Continente Shopping,Feminino,Moda,1,2,1,4,Pontual
+335740,880.2,8,1,Continente Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+335826,139.0,1,20,Continente Shopping,Feminino,Infantil,2,2,2,6,Pontual
+336004,1005.0,1,29,Neumarkt Shopping,Feminino,Casa e Decoração,1,2,4,7,Potencial
+336050,143.0,4,15,Norte Shopping,Feminino,Supermercado,3,4,2,9,Potencial
+336150,581.62,9,12,Continente Shopping,Feminino,Moda,3,5,3,11,Premium
+336411,182.8,3,23,Continente Shopping,Masculino,Gastronomia,1,3,2,6,Pontual
+336471,24.45,1,12,Continente Shopping,Feminino,Beleza e Bem-estar,3,2,1,6,Pontual
+336619,138.98,2,11,Balneário Shopping,Feminino,Moda,3,3,2,8,Potencial
+336632,67.8,3,15,Continente Shopping,Feminino,Gastronomia,3,3,1,7,Potencial
+336654,1613.07,3,15,Balneário Shopping,Feminino,Gastronomia,3,3,5,11,Premium
+336664,374.88,2,30,Balneário Shopping,Feminino,Infantil,1,3,3,7,Potencial
+336668,158.91,1,16,Balneário Shopping,Feminino,Gastronomia,2,2,2,6,Pontual
+336733,271.89,3,16,Balneário Shopping,Feminino,Moda,2,3,2,7,Potencial
+336763,404.35,4,25,Neumarkt Shopping,Feminino,Calçados,1,4,3,8,Potencial
+336778,2217.48,10,0,Neumarkt Shopping,Feminino,Moda,5,5,5,15,VIP
+336843,185.99,4,12,Continente Shopping,Feminino,Gastronomia,3,4,2,9,Potencial
+336936,82.3,2,27,Neumarkt Shopping,Masculino,Eletrodomésticos,1,3,1,5,Pontual
+337310,123.01,1,26,Garten Shopping,Feminino,Beleza e Bem-estar,1,2,1,4,Pontual
+337334,69.1,3,27,Norte Shopping,Feminino,Eletrodomésticos,1,3,1,5,Pontual
+337337,628.6800000000001,6,23,Continente Shopping,Feminino,Moda,1,4,4,9,Potencial
+337587,1341.19,21,25,Continente Shopping,Masculino,Gastronomia,1,5,5,11,Premium
+337663,23.0,1,25,Norte Shopping,Masculino,Gastronomia,1,2,1,4,Pontual
+337671,264.73,3,3,Norte Shopping,Feminino,Casa e Decoração,4,3,2,9,Potencial
+337704,139.99,1,16,Continente Shopping,Masculino,Calçados,2,2,2,6,Pontual
+337775,719.5,1,0,Garten Shopping,Feminino,Moda,5,2,4,11,Premium
+337802,35.3,1,26,Nações Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+337873,199.3,3,29,Continente Shopping,Masculino,Livrarias,1,3,2,6,Pontual
+337881,12864.55,6,23,Balneário Shopping,Masculino,Gastronomia,1,4,5,10,Premium
+337901,232.09,4,6,Continente Shopping,Masculino,Moda,4,4,2,10,Premium
+337908,100.0,1,23,Continente Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+338132,384.99,3,0,Continente Shopping,Feminino,Gastronomia,5,3,3,11,Premium
+338183,1616.93,2,16,Continente Shopping,Masculino,Moda,2,3,5,10,Premium
+338195,283.97,2,16,Balneário Shopping,Feminino,Infantil,2,3,2,7,Potencial
+338305,1020.0,1,19,Continente Shopping,Feminino,Esportes,2,2,4,8,Potencial
+338407,163.59,6,5,Continente Shopping,Masculino,Gastronomia,4,4,2,10,Premium
+338558,260.99,4,12,Neumarkt Shopping,Feminino,Eletrodomésticos,3,4,2,9,Potencial
+338563,809.95,2,4,Garten Shopping,Feminino,Esportes,4,3,4,11,Premium
+338664,352.6,9,11,Balneário Shopping,Feminino,Gastronomia,3,5,3,11,Premium
+338750,559.72,7,5,Continente Shopping,Masculino,Eletrodomésticos,4,5,3,12,Premium
+338794,187.78,6,12,Garten Shopping,Feminino,Casa e Decoração,3,4,2,9,Potencial
+338979,35.95,1,26,Balneário Shopping,Masculino,Gastronomia,1,2,1,4,Pontual
+338980,207.57,3,18,Balneário Shopping,Masculino,Beleza e Bem-estar,2,3,2,7,Potencial
+339113,79.2,3,24,Continente Shopping,Feminino,Eletrodomésticos,1,3,1,5,Pontual
+339120,16.0,1,30,Continente Shopping,Feminino,Beleza e Bem-estar,1,2,1,4,Pontual
+339159,539.5699999999999,15,5,Garten Shopping,Feminino,Gastronomia,4,5,3,12,Premium
+339221,670.73,13,12,Norte Shopping,Feminino,Papelaria,3,5,4,12,Premium
+339277,330.0,2,22,Balneário Shopping,Feminino,Joalheria,2,3,3,8,Potencial
+339376,65.58,3,19,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,3,1,6,Pontual
+339497,749.98,4,25,Nações Shopping,Feminino,Moda,1,4,4,9,Potencial
+339622,107.39,4,26,Balneário Shopping,Feminino,Gastronomia,1,4,1,6,Pontual
+339648,32.0,1,11,Continente Shopping,Feminino,Eletrodomésticos,3,2,1,6,Pontual
+339723,388.84,3,2,Continente Shopping,Feminino,Beleza e Bem-estar,4,3,3,10,Premium
+339763,335.75,7,0,Continente Shopping,Masculino,Gastronomia,5,5,3,13,VIP
+339764,818.99,2,15,Garten Shopping,Masculino,Moda,3,3,4,10,Premium
+339771,403.9,3,27,Balneário Shopping,Feminino,Presentes e Acessórios,1,3,3,7,Potencial
+339873,668.48,3,22,Continente Shopping,Feminino,Calçados,2,3,4,9,Potencial
+339937,358.98,3,16,Garten Shopping,Masculino,Infantil,2,3,3,8,Potencial
+339955,132.0,2,0,Balneário Shopping,Feminino,Gastronomia,5,3,2,10,Premium
+339970,98.0,2,15,Garten Shopping,Masculino,Gastronomia,3,3,1,7,Potencial
+340052,598.5,1,29,Balneário Shopping,Masculino,Moda,1,2,4,7,Potencial
+340117,1194.1,7,0,Garten Shopping,Masculino,Gastronomia,5,5,5,15,VIP
+340295,100.45,1,18,Norte Shopping,Feminino,Beleza e Bem-estar,2,2,1,5,Pontual
+340394,1975.57,14,19,Continente Shopping,Masculino,Gastronomia,2,5,5,12,Premium
+340421,236.88,10,17,Continente Shopping,Feminino,Eletrodomésticos,2,5,2,9,Potencial
+340478,335.19,12,26,Garten Shopping,Feminino,Gastronomia,1,5,3,9,Potencial
+340576,166.85999999999999,7,9,Nações Shopping,Feminino,Gastronomia,3,5,2,10,Premium
+340584,139.9,1,16,Continente Shopping,Feminino,Moda,2,2,2,6,Pontual
+340733,160.7,3,29,Continente Shopping,Masculino,Gastronomia,1,3,2,6,Pontual
+340815,698.7,1,30,Continente Shopping,Feminino,Moda,1,2,4,7,Potencial
+340879,173.1,2,25,Continente Shopping,Feminino,Beleza e Bem-estar,1,3,2,6,Pontual
+340986,219.67000000000002,6,3,Continente Shopping,Feminino,Beleza e Bem-estar,4,4,2,10,Premium
+341002,377.08000000000004,7,14,Continente Shopping,Feminino,Livrarias,3,5,3,11,Premium
+341062,83.96,1,4,Nações Shopping,Feminino,Moda,4,2,1,7,Potencial
+341125,159.98,2,17,Nações Shopping,Feminino,Casa e Decoração,2,3,2,7,Potencial
+341128,342.5,4,20,Continente Shopping,Feminino,Gastronomia,2,4,3,9,Potencial
+341206,1117.07,13,1,Continente Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+341207,1653.69,2,23,Continente Shopping,Feminino,Gastronomia,1,3,5,9,Potencial
+341364,902.62,6,28,Garten Shopping,Feminino,Infantil,1,4,4,9,Potencial
+341548,62.9,1,30,Continente Shopping,Masculino,Gastronomia,1,2,1,4,Pontual
+341682,39.9,1,9,Continente Shopping,Feminino,Livrarias,3,2,1,6,Pontual
+341819,615.9100000000001,7,3,Neumarkt Shopping,Feminino,Esportes,4,5,4,13,VIP
+341916,1448.52,20,1,Continente Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+341980,879.0,2,29,Nações Shopping,Masculino,Moda,1,3,4,8,Potencial
+342060,195.82,5,1,Balneário Shopping,Masculino,Gastronomia,5,4,2,11,Premium
+342106,957.96,2,15,Nações Shopping,Feminino,Moda,2,3,4,9,Potencial
+342172,55.519999999999996,2,27,Balneário Shopping,Feminino,Supermercado,1,3,1,5,Pontual
+342298,284.87,1,11,Neumarkt Shopping,Feminino,Casa e Decoração,3,2,2,7,Potencial
+342302,780.42,16,14,Continente Shopping,Feminino,Gastronomia,3,5,4,12,Premium
+342303,291.34000000000003,4,27,Nações Shopping,Masculino,Beleza e Bem-estar,1,4,2,7,Potencial
+342304,727.2,12,0,Balneário Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+342305,322.3,4,30,Balneário Shopping,Feminino,Gastronomia,1,4,3,8,Potencial
+342306,243.8,8,14,Balneário Shopping,Masculino,Gastronomia,3,5,2,10,Premium
+342401,26.0,1,28,Norte Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+342414,265.0,1,30,Garten Shopping,Feminino,Moda,1,2,2,5,Pontual
+342422,14.99,1,30,Continente Shopping,Feminino,Calçados,1,2,1,4,Pontual
+342439,114.11,4,29,Norte Shopping,Feminino,Gastronomia,1,4,1,6,Pontual
+342464,479.02,10,22,Norte Shopping,Feminino,Beleza e Bem-estar,2,5,3,10,Premium
+342470,15.98,1,30,Continente Shopping,Feminino,Eletrodomésticos,1,2,1,4,Pontual
+342505,127.09,3,30,Norte Shopping,Masculino,Gastronomia,1,3,2,6,Pontual
+342530,18.0,1,30,Garten Shopping,Masculino,Serviços,1,2,1,4,Pontual
+342531,126.7,1,30,Norte Shopping,Feminino,Beleza e Bem-estar,1,2,2,5,Pontual
+342542,674.9,3,30,Garten Shopping,Masculino,Beleza e Bem-estar,1,3,4,8,Potencial
+342550,1574.54,13,10,Continente Shopping,Masculino,Gastronomia,3,5,5,13,VIP
+342583,117.3,4,13,Garten Shopping,Feminino,Gastronomia,3,4,1,8,Potencial
+342593,11.99,1,21,Garten Shopping,Masculino,Farmácias,2,2,1,5,Pontual
+342615,401.26,5,29,Continente Shopping,Feminino,Calçados,1,4,3,8,Potencial
+342670,1149.87,5,8,Continente Shopping,Feminino,Esportes,3,4,4,11,Premium
+342672,421.82,2,27,Continente Shopping,Outro,Livrarias,1,3,3,7,Potencial
+342697,399.98,2,28,Continente Shopping,Feminino,Moda,1,3,3,7,Potencial
+342704,249.99,1,28,Continente Shopping,Masculino,Moda,1,2,2,5,Pontual
+342711,254.29,9,22,Nações Shopping,Feminino,Gastronomia,2,5,2,9,Potencial
+342732,17.9,1,27,Nações Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+342750,38.5,2,28,Continente Shopping,Masculino,Gastronomia,1,3,1,5,Pontual
+342755,83.0,2,2,Norte Shopping,Feminino,Eletrodomésticos,4,3,1,8,Potencial
+342767,46.5,1,26,Nações Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+342769,732.86,1,27,Continente Shopping,Feminino,Moda,1,2,4,7,Potencial
+342801,7.9,1,27,Nações Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+342862,211.88,4,27,Nações Shopping,Feminino,Calçados,1,4,2,7,Potencial
+342870,119.99,1,3,Continente Shopping,Feminino,Moda,4,2,1,7,Potencial
+342873,240.57999999999998,4,9,Continente Shopping,Feminino,Eletrodomésticos,3,4,2,9,Potencial
+342878,41.0,1,26,Garten Shopping,Feminino,Presentes e Acessórios,1,2,1,4,Pontual
+342897,200.39999999999998,3,2,Garten Shopping,Feminino,Papelaria,4,3,2,9,Potencial
+342909,22.0,2,5,Neumarkt Shopping,Masculino,Gastronomia,4,3,1,8,Potencial
+342923,25.0,1,27,Nações Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+343009,1906.0,2,19,Balneário Shopping,Feminino,Beleza e Bem-estar,2,3,5,10,Premium
+343012,20.9,1,25,Continente Shopping,Feminino,Papelaria,1,2,1,4,Pontual
+343048,519.92,1,25,Balneário Shopping,Feminino,Moda,1,2,3,6,Pontual
+343078,1655.0,1,22,Garten Shopping,Masculino,Moda Feminina,2,2,5,9,Potencial
+343079,37.5,2,23,Continente Shopping,Feminino,Gastronomia - Sorvetes,1,3,1,5,Pontual
+343101,44.35,1,23,Nações Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+343113,35.0,1,24,Nações Shopping,Masculino,Gastronomia,1,2,1,4,Pontual
+343117,399.7,1,23,Balneário Shopping,Feminino,Calçados,1,2,3,6,Pontual
+343120,84.41,4,12,Nações Shopping,Feminino,Eletrodomésticos,3,4,1,8,Potencial
+343149,191.26000000000002,2,3,Nações Shopping,Feminino,Beleza e Bem-estar,4,3,2,9,Potencial
+343151,889.72,6,2,Garten Shopping,Masculino,Farmácias,4,4,4,12,Premium
+343178,43.38,1,23,Nações Shopping,Feminino,Gastronomia,1,2,1,4,Pontual
+343202,428.53,4,23,Neumarkt Shopping,Feminino,Farmácias,1,4,3,8,Potencial
+343314,2933.0,2,22,Balneário Shopping,Feminino,Beleza e Bem-estar,2,3,5,10,Premium
+343327,299.9,1,5,Continente Shopping,Masculino,Calçados,4,2,3,9,Potencial
+343390,152.91,2,22,Neumarkt Shopping,Feminino,Beleza e Bem-estar,2,3,2,7,Potencial
+343391,249.76000000000002,2,21,Neumarkt Shopping,Feminino,Livrarias,2,3,2,7,Potencial
+343397,74.95,1,22,Neumarkt Shopping,Feminino,Eletrodomésticos,2,2,1,5,Pontual
+343414,432.69000000000005,5,1,Neumarkt Shopping,Masculino,Casa e Decoração,5,4,3,12,Premium
+343464,76.89,1,22,Balneário Shopping,Feminino,Livrarias,2,2,1,5,Pontual
+343477,529.0,1,22,Garten Shopping,Feminino,Moda,2,2,3,7,Potencial
+343493,219.3,10,16,Balneário Shopping,Masculino,Beleza e Bem-estar,2,5,2,9,Potencial
+343500,183.91000000000003,2,21,Continente Shopping,Feminino,Gastronomia,2,3,2,7,Potencial
+343553,627.9,3,3,Garten Shopping,Feminino,Eletrônicos,4,3,4,11,Premium
+343559,73.0,1,1,Neumarkt Shopping,Feminino,Gastronomia,5,2,1,8,Potencial
+343568,239.99,1,20,Balneário Shopping,Feminino,Moda,2,2,2,6,Pontual
+343593,312.15,13,6,Continente Shopping,Feminino,Eletrodomésticos,4,5,3,12,Premium
+343645,65.8,2,19,Continente Shopping,Masculino,Gastronomia,2,3,1,6,Pontual
+343664,29.9,1,17,Continente Shopping,Feminino,Gastronomia,2,2,1,5,Pontual
+343670,424.78000000000003,7,2,Neumarkt Shopping,Feminino,Gastronomia,4,5,3,12,Premium
+343672,36.0,1,18,Continente Shopping,Masculino,Gastronomia,2,2,1,5,Pontual
+343684,287.08000000000004,4,11,Balneário Shopping,Feminino,Livrarias,3,4,2,9,Potencial
+343694,73.4,4,13,Continente Shopping,Masculino,Gastronomia,3,4,1,8,Potencial
+343711,2433.34,25,0,Balneário Shopping,Feminino,Gastronomia,5,5,5,15,VIP
+343729,245.93,5,15,Garten Shopping,Masculino,Farmácias,2,4,2,8,Potencial
+343810,55.0,2,17,Nações Shopping,Masculino,Gastronomia,2,3,1,6,Pontual
+343818,38.0,1,17,Nações Shopping,Feminino,Gastronomia,2,2,1,5,Pontual
+343823,29.9,1,17,Nações Shopping,Masculino,Gastronomia,2,2,1,5,Pontual
+343840,1618.45,4,4,Neumarkt Shopping,Masculino,Gastronomia,4,4,5,13,VIP
+343856,15.5,1,16,Norte Shopping,Masculino,Gastronomia,2,2,1,5,Pontual
+343895,846.71,6,15,Norte Shopping,Feminino,Beleza e Bem-estar,2,4,4,10,Premium
+343916,1142.67,3,12,Nações Shopping,Feminino,Moda,3,3,4,10,Premium
+343932,124.3,3,0,Garten Shopping,Masculino,Gastronomia,5,3,2,10,Premium
+343935,118.6,1,16,Nações Shopping,Feminino,Moda,2,2,1,5,Pontual
+343947,138.99,2,15,Continente Shopping,Masculino,Calçados,2,3,2,7,Potencial
+343970,107.3,2,16,Garten Shopping,Feminino,Farmácias,2,3,1,6,Pontual
+343990,1473.78,4,10,Neumarkt Shopping,Masculino,Moda,3,4,5,12,Premium
+344002,249.20999999999998,4,15,Continente Shopping,Feminino,Moda,2,4,2,8,Potencial
+344005,147.6,3,15,Neumarkt Shopping,Masculino,Gastronomia,2,3,2,7,Potencial
+344010,243.0,2,15,Balneário Shopping,Masculino,Presentes e Acessórios,2,3,2,7,Potencial
+344015,61.5,1,15,Balneário Shopping,Feminino,Gastronomia,2,2,1,5,Pontual
+344017,490.89,1,11,Norte Shopping,Masculino,Moda,3,2,3,8,Potencial
+344028,1443.64,4,2,Continente Shopping,Masculino,Moda,4,4,5,13,VIP
+344065,2428.2400000000002,15,2,Continente Shopping,Masculino,Gastronomia,4,5,5,14,VIP
+344074,180.35999999999999,2,5,Neumarkt Shopping,Feminino,Eletrodomésticos,4,3,2,9,Potencial
+344120,1326.28,26,3,Neumarkt Shopping,Feminino,Gastronomia,4,5,5,14,VIP
+344138,59.0,1,9,Norte Shopping,Masculino,Infantil,3,2,1,6,Pontual
+344188,3240.0,1,9,Balneário Shopping,Masculino,Joalheria,3,2,5,10,Premium
+344202,4985.0,1,3,Neumarkt Shopping,Masculino,Casa e Decoração,4,2,5,11,Premium
+344238,591.79,3,1,Garten Shopping,Feminino,Calçados,5,3,4,12,Premium
+344316,1011.55,2,8,Garten Shopping,Masculino,Moda,3,3,4,10,Premium
+344341,89.99,1,8,Garten Shopping,Feminino,Moda,3,2,1,6,Pontual
+344437,79.9,1,7,Neumarkt Shopping,Feminino,Moda,4,2,1,7,Potencial
+344466,7499.0,1,6,Garten Shopping,Feminino,Joalheria,4,2,5,11,Premium
+344524,75400.0,2,3,Garten Shopping,Feminino,Joalheria,4,3,5,12,Premium
+344564,14.0,1,5,Norte Shopping,Feminino,Serviços,4,2,1,7,Potencial
+344572,272.89,3,5,Balneário Shopping,Feminino,Gastronomia,4,3,2,9,Potencial
+344579,59.9,1,1,Balneário Shopping,Masculino,Gastronomia,5,2,1,8,Potencial
+344590,140.0,1,4,Nações Shopping,Feminino,Infantil,4,2,2,8,Potencial
+344591,899.0,1,4,Continente Shopping,Feminino,Moda,4,2,4,10,Premium
+344664,1140.68,26,0,Neumarkt Shopping,Feminino,Gastronomia,5,5,4,14,VIP
+344696,69.9,1,3,Norte Shopping,Masculino,Supermercado,4,2,1,7,Potencial
+344717,130.8,1,2,Garten Shopping,Feminino,Beleza e Bem-estar,4,2,2,8,Potencial
+344735,90.7,1,1,Garten Shopping,Masculino,Gastronomia,5,2,1,8,Potencial
+344790,600.96,1,2,Nações Shopping,Feminino,Beleza e Bem-estar,4,2,4,10,Premium
+344868,27.8,1,1,Neumarkt Shopping,Feminino,Gastronomia,5,2,1,8,Potencial
+344886,323.32,4,0,Neumarkt Shopping,Feminino,Gastronomia,5,4,3,12,Premium
+344912,1224.55,2,1,Continente Shopping,Masculino,Calçados,5,3,5,13,VIP
+344917,42.99,1,1,Garten Shopping,Feminino,Calçados,5,2,1,8,Potencial
+344920,243.7,5,1,Neumarkt Shopping,Feminino,Gastronomia,5,4,2,11,Premium
+344923,263.92,1,1,Continente Shopping,Masculino,Moda,5,2,2,9,Potencial
+344935,90.91,3,0,Garten Shopping,Feminino,Gastronomia,5,3,1,9,Potencial
+344937,113.0,1,1,Balneário Shopping,Masculino,Gastronomia,5,2,1,8,Potencial
+344966,2212.88,6,0,Garten Shopping,Feminino,Esportes,5,4,5,14,VIP
+344975,207.43,4,0,Neumarkt Shopping,Feminino,Gastronomia,5,4,2,11,Premium
+403976,219.0,2,3,Neumarkt Shopping,Feminino,Esportes,4,3,2,9,Potencial

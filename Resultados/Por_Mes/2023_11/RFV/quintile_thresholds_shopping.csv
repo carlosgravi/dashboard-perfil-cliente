@@ -1,0 +1,25 @@
+﻿quantil,recencia_dias,frequencia,valor_periodo,escopo
+20%,4.0,1.0,95.59400000000004,Continente Shopping
+40%,8.0,1.0,243.97600000000006,Continente Shopping
+60%,14.599999999999994,1.0,362.976,Continente Shopping
+80%,27.0,2.0,705.6460000000002,Continente Shopping
+20%,3.0,1.0,78.9,Garten Shopping
+40%,5.0,1.0,433.6180000000001,Garten Shopping
+60%,8.399999999999999,1.0,854.692,Garten Shopping
+80%,11.0,2.0,1831.5700000000002,Garten Shopping
+20%,4.0,1.0,258.6,Balneário Shopping
+40%,7.0,1.0,423.90000000000003,Balneário Shopping
+60%,12.0,1.0,658.3,Balneário Shopping
+80%,19.0,2.0,1090.1000000000001,Balneário Shopping
+20%,3.0,1.0,98.32000000000001,Neumarkt Shopping
+40%,6.0,1.0,208.528,Neumarkt Shopping
+60%,8.0,2.0,353.6100000000001,Neumarkt Shopping
+80%,12.0,4.0,1008.2540000000001,Neumarkt Shopping
+20%,8.200000000000001,1.0,110.79800000000003,Nações Shopping
+40%,11.0,1.0,289.72200000000004,Nações Shopping
+60%,13.399999999999999,1.0,535.77,Nações Shopping
+80%,20.800000000000004,2.0,778.0960000000003,Nações Shopping
+20%,5.0,1.0,35.992000000000004,Norte Shopping
+40%,6.200000000000001,1.0,145.46400000000003,Norte Shopping
+60%,8.0,1.0,329.55600000000004,Norte Shopping
+80%,14.400000000000002,3.0,1627.736,Norte Shopping
