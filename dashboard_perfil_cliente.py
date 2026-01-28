@@ -1963,9 +1963,7 @@ elif pagina == "🎯 RFV":
 
                         # Verificar se temos as colunas de valor e ticket por perfil
                         col_valor = f'{perfil_lower}_valor{sufixo}'
-                        col_ticket = f'{perfil_lower}_ticket{sufixo}'
                         tem_valor = col_valor in df_shopping.columns
-                        tem_ticket = col_ticket in df_shopping.columns
 
                         col1, col2, col3, col4 = st.columns(4)
                         with col1:
@@ -1977,8 +1975,9 @@ elif pagina == "🎯 RFV":
                             else:
                                 st.metric("Total de Clientes", f"{total_geral:,}")
                         with col3:
-                            if tem_ticket:
-                                ticket_perfil = df_shopping[col_ticket].mean()
+                            if tem_valor and qtd > 0:
+                                valor_perfil = df_shopping[col_valor].sum()
+                                ticket_perfil = valor_perfil / qtd
                                 st.metric(f"Ticket Médio {perfil}", f"R$ {ticket_perfil:,.2f}")
                             else:
                                 valor_total = df_shopping['valor_total'].sum()
