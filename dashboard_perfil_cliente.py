@@ -1953,20 +1953,44 @@ elif pagina == "🎯 RFV":
                     }
                     total_geral = sum(totais.values())
 
-                    # Se filtro de perfil está ativo, mostrar apenas esse perfil em destaque
+                    # Se filtro de perfil está ativo, mostrar métricas detalhadas do perfil
                     if perfil_filtro_shop != "Todos":
-                        col1, col2, col3 = st.columns(3)
                         perfil = perfil_filtro_shop
+                        perfil_lower = perfil.lower()
                         qtd = totais[perfil]
                         pct = (qtd / total_geral * 100) if total_geral > 0 else 0
                         icone = "🏆" if perfil == 'VIP' else "⭐" if perfil == 'Premium' else "🎯" if perfil == 'Potencial' else "👤"
+
+                        # Verificar se temos as colunas de valor e ticket por perfil
+                        col_valor = f'{perfil_lower}_valor{sufixo}'
+                        col_ticket = f'{perfil_lower}_ticket{sufixo}'
+                        tem_valor = col_valor in df_shopping.columns
+                        tem_ticket = col_ticket in df_shopping.columns
+
+                        col1, col2, col3, col4 = st.columns(4)
                         with col1:
-                            st.metric(f"{icone} {perfil}", f"{qtd:,}", f"{pct:.1f}% do total")
+                            st.metric(f"{icone} Clientes {perfil}", f"{qtd:,}", f"{pct:.1f}% do total")
                         with col2:
-                            st.metric("Total de Clientes", f"{total_geral:,}")
+                            if tem_valor:
+                                valor_perfil = df_shopping[col_valor].sum()
+                                st.metric(f"Valor {perfil}", f"R$ {valor_perfil:,.2f}")
+                            else:
+                                st.metric("Total de Clientes", f"{total_geral:,}")
                         with col3:
-                            valor_total = df_shopping['valor_total'].sum()
-                            st.metric("Valor Total", f"R$ {valor_total:,.2f}")
+                            if tem_ticket:
+                                ticket_perfil = df_shopping[col_ticket].mean()
+                                st.metric(f"Ticket Médio {perfil}", f"R$ {ticket_perfil:,.2f}")
+                            else:
+                                valor_total = df_shopping['valor_total'].sum()
+                                st.metric("Valor Total", f"R$ {valor_total:,.2f}")
+                        with col4:
+                            if tem_valor:
+                                valor_perfil = df_shopping[col_valor].sum()
+                                valor_total = df_shopping['valor_total'].sum()
+                                pct_valor = (valor_perfil / valor_total * 100) if valor_total > 0 else 0
+                                st.metric(f"% do Faturamento", f"{pct_valor:.1f}%")
+                            else:
+                                st.metric("High Spenders", f"{int(df_shopping['high_spenders'].sum()):,}")
                     else:
                         col1, col2, col3, col4 = st.columns(4)
                         for i, (perfil, qtd) in enumerate(totais.items()):
@@ -1979,24 +2003,52 @@ elif pagina == "🎯 RFV":
                 st.subheader("Métricas Detalhadas por Shopping")
                 df_shop_display = df_shopping.copy()
 
-                # Selecionar e renomear colunas para exibição
-                colunas_exibir = ['shopping_principal', 'qtd_clientes', 'valor_total', 'ticket_medio']
-                nomes_colunas = ['Shopping', 'Total Clientes', 'Valor Total', 'Ticket Médio']
+                # Verificar se temos as colunas de valor e ticket por perfil
+                perfil_lower = perfil_filtro_shop.lower() if perfil_filtro_shop != "Todos" else None
+                tem_metricas_perfil = perfil_lower and f'{perfil_lower}_valor{sufixo}' in df_shop_display.columns
 
-                if tem_perfis:
-                    colunas_exibir.extend(perfis_cols)
-                    nomes_colunas.extend(['VIP', 'Premium', 'Potencial', 'Pontual'])
+                if perfil_filtro_shop != "Todos" and tem_metricas_perfil:
+                    # Mostrar dados filtrados pelo perfil selecionado
+                    colunas_exibir = [
+                        'shopping_principal',
+                        f'{perfil_lower}{sufixo}',
+                        f'{perfil_lower}_valor{sufixo}',
+                        f'{perfil_lower}_ticket{sufixo}'
+                    ]
+                    nomes_colunas = ['Shopping', 'Clientes', 'Valor Total', 'Ticket Médio']
 
-                colunas_exibir.extend(['high_spenders', 'pct_valor'])
-                nomes_colunas.extend(['High Spenders', '% Valor'])
+                    df_shop_display = df_shop_display[colunas_exibir].copy()
+                    df_shop_display.columns = nomes_colunas
 
-                df_shop_display = df_shop_display[colunas_exibir].copy()
-                df_shop_display.columns = nomes_colunas
+                    # Calcular % do valor total
+                    total_valor_perfil = df_shop_display['Valor Total'].sum()
+                    df_shop_display['% Valor'] = (df_shop_display['Valor Total'] / total_valor_perfil * 100).round(1)
 
-                # Formatar valores
-                df_shop_display['Valor Total'] = df_shop_display['Valor Total'].apply(lambda x: f"R$ {x:,.2f}")
-                df_shop_display['Ticket Médio'] = df_shop_display['Ticket Médio'].apply(lambda x: f"R$ {x:.2f}")
-                df_shop_display['% Valor'] = df_shop_display['% Valor'].apply(lambda x: f"{x:.1f}%")
+                    # Formatar valores
+                    df_shop_display['Valor Total'] = df_shop_display['Valor Total'].apply(lambda x: f"R$ {x:,.2f}")
+                    df_shop_display['Ticket Médio'] = df_shop_display['Ticket Médio'].apply(lambda x: f"R$ {x:.2f}")
+                    df_shop_display['% Valor'] = df_shop_display['% Valor'].apply(lambda x: f"{x:.1f}%")
+
+                    st.caption(f"Mostrando dados do perfil **{perfil_filtro_shop}** ({tipo_rfv.split(' (')[0]})")
+                else:
+                    # Mostrar visão geral com todos os perfis
+                    colunas_exibir = ['shopping_principal', 'qtd_clientes', 'valor_total', 'ticket_medio']
+                    nomes_colunas = ['Shopping', 'Total Clientes', 'Valor Total', 'Ticket Médio']
+
+                    if tem_perfis:
+                        colunas_exibir.extend(perfis_cols)
+                        nomes_colunas.extend(['VIP', 'Premium', 'Potencial', 'Pontual'])
+
+                    colunas_exibir.extend(['high_spenders', 'pct_valor'])
+                    nomes_colunas.extend(['High Spenders', '% Valor'])
+
+                    df_shop_display = df_shop_display[colunas_exibir].copy()
+                    df_shop_display.columns = nomes_colunas
+
+                    # Formatar valores
+                    df_shop_display['Valor Total'] = df_shop_display['Valor Total'].apply(lambda x: f"R$ {x:,.2f}")
+                    df_shop_display['Ticket Médio'] = df_shop_display['Ticket Médio'].apply(lambda x: f"R$ {x:.2f}")
+                    df_shop_display['% Valor'] = df_shop_display['% Valor'].apply(lambda x: f"{x:.1f}%")
 
                 st.dataframe(df_shop_display, use_container_width=True, hide_index=True)
             else:
