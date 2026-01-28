@@ -1784,15 +1784,58 @@ elif pagina == "🎯 RFV":
         tab1, tab2, tab3, tab4 = st.tabs(["📊 Visão Geral", "🏬 Por Shopping", "🛒 Segmentos & Lojas", "📋 Resumo"])
 
         with tab1:
-            st.subheader(f"Distribuição por Perfil de Cliente ({tipo_rfv.split(' (')[0]})")
+            # Filtro de shopping
+            shoppings_disponiveis = ["Todos"]
+            if 'shopping' in dados_rfv and dados_rfv['shopping'] is not None:
+                shoppings_disponiveis += list(dados_rfv['shopping']['shopping_principal'].unique())
+
+            shopping_visao = st.selectbox(
+                "Filtrar por Shopping:",
+                shoppings_disponiveis,
+                key='rfv_shopping_visao_geral'
+            )
+
+            sufixo_vg = '_hist' if usar_historico else '_periodo'
+
+            # Montar dados de perfil conforme filtro de shopping
+            if shopping_visao != "Todos" and 'shopping' in dados_rfv and dados_rfv['shopping'] is not None:
+                df_shop_vg = dados_rfv['shopping']
+                row_shop = df_shop_vg[df_shop_vg['shopping_principal'] == shopping_visao]
+
+                if not row_shop.empty:
+                    row = row_shop.iloc[0]
+                    dados_perfil_list = []
+                    for perfil in ORDEM_PERFIL:
+                        p = perfil.lower()
+                        qtd = int(row.get(f'{p}{sufixo_vg}', 0))
+                        valor = float(row.get(f'{p}_valor{sufixo_vg}', 0))
+                        ticket = valor / qtd if qtd > 0 else 0
+                        dados_perfil_list.append({
+                            'perfil_cliente': perfil,
+                            'qtd_clientes': qtd,
+                            'valor_total': valor,
+                            'ticket_medio': ticket
+                        })
+                    df_perfil_filtrado = pd.DataFrame(dados_perfil_list)
+                    total_cli = df_perfil_filtrado['qtd_clientes'].sum()
+                    total_val = df_perfil_filtrado['valor_total'].sum()
+                    df_perfil_filtrado['pct_clientes'] = (df_perfil_filtrado['qtd_clientes'] / total_cli * 100).round(2) if total_cli > 0 else 0
+                    df_perfil_filtrado['pct_valor'] = (df_perfil_filtrado['valor_total'] / total_val * 100).round(2) if total_val > 0 else 0
+                else:
+                    df_perfil_filtrado = df_perfil.copy()
+
+                st.subheader(f"Distribuição por Perfil - {shopping_visao} ({tipo_rfv.split(' (')[0]})")
+            else:
+                df_perfil_filtrado = df_perfil.copy()
+                st.subheader(f"Distribuição por Perfil de Cliente ({tipo_rfv.split(' (')[0]})")
 
             # KPIs
             col1, col2, col3, col4 = st.columns(4)
             for i, perfil in enumerate(ORDEM_PERFIL):
-                dados_p = df_perfil[df_perfil['perfil_cliente'] == perfil]
+                dados_p = df_perfil_filtrado[df_perfil_filtrado['perfil_cliente'] == perfil]
                 if not dados_p.empty:
                     qtd = int(dados_p['qtd_clientes'].values[0])
-                    pct_valor = dados_p['pct_valor'].values[0]
+                    pct_valor = dados_p['pct_valor'].values[0] if isinstance(dados_p['pct_valor'].values[0], (int, float)) else 0
                     with [col1, col2, col3, col4][i]:
                         icone = "🏆" if perfil == 'VIP' else "⭐" if perfil == 'Premium' else "🎯" if perfil == 'Potencial' else "👤"
                         st.metric(
@@ -1806,7 +1849,7 @@ elif pagina == "🎯 RFV":
             with col1:
                 # Gráfico de pizza - distribuição de clientes
                 fig_pizza = px.pie(
-                    df_perfil,
+                    df_perfil_filtrado,
                     values='qtd_clientes',
                     names='perfil_cliente',
                     title='Distribuição de Clientes por Perfil',
@@ -1821,7 +1864,7 @@ elif pagina == "🎯 RFV":
             with col2:
                 # Gráfico de pizza - distribuição de valor
                 fig_valor = px.pie(
-                    df_perfil,
+                    df_perfil_filtrado,
                     values='valor_total',
                     names='perfil_cliente',
                     title='Distribuição de Valor por Perfil',
@@ -1835,7 +1878,7 @@ elif pagina == "🎯 RFV":
 
             # Tabela resumo
             st.subheader("Resumo por Perfil")
-            df_resumo = df_perfil[['perfil_cliente', 'qtd_clientes', 'valor_total', 'ticket_medio', 'pct_clientes', 'pct_valor']].copy()
+            df_resumo = df_perfil_filtrado[['perfil_cliente', 'qtd_clientes', 'valor_total', 'ticket_medio', 'pct_clientes', 'pct_valor']].copy()
             df_resumo.columns = ['Perfil', 'Clientes', 'Valor Total', 'Ticket Médio', '% Clientes', '% Valor']
             df_resumo['Valor Total'] = df_resumo['Valor Total'].apply(lambda x: f"R$ {x:,.2f}")
             df_resumo['Ticket Médio'] = df_resumo['Ticket Médio'].apply(lambda x: f"R$ {x:,.2f}")
@@ -1844,12 +1887,13 @@ elif pagina == "🎯 RFV":
             st.dataframe(df_resumo, use_container_width=True, hide_index=True)
 
             # Insight dinâmico
-            vip_data = df_perfil[df_perfil['perfil_cliente'] == 'VIP']
+            vip_data = df_perfil_filtrado[df_perfil_filtrado['perfil_cliente'] == 'VIP']
             if not vip_data.empty:
-                pct_cli_vip = vip_data['pct_clientes'].values[0]
-                pct_val_vip = vip_data['pct_valor'].values[0]
+                pct_cli_vip = vip_data['pct_clientes'].values[0] if isinstance(vip_data['pct_clientes'].values[0], (int, float)) else 0
+                pct_val_vip = vip_data['pct_valor'].values[0] if isinstance(vip_data['pct_valor'].values[0], (int, float)) else 0
+                label_shop = f" no **{shopping_visao}**" if shopping_visao != "Todos" else ""
                 st.info(f"""
-                💡 **Princípio de Pareto:** Os clientes **VIP** representam {pct_cli_vip:.1f}% da base,
+                💡 **Princípio de Pareto:** Os clientes **VIP**{label_shop} representam {pct_cli_vip:.1f}% da base,
                 mas geram **{pct_val_vip:.1f}%** do faturamento. Investir na retenção desses clientes é fundamental.
                 """)
 
