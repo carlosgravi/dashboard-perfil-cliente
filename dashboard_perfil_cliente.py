@@ -2595,6 +2595,22 @@ elif pagina == "📥 Exportar Dados":
         'Comportamento Dia Semana': dados['comportamento_dia']
     }
 
+    # Adicionar dados RFV ao Excel se disponíveis
+    dados_rfv_excel = dados.get('rfv')
+    if dados_rfv_excel is not None:
+        if dados_rfv_excel.get('perfil_historico') is not None:
+            dados_excel['RFV Perfil Historico'] = dados_rfv_excel['perfil_historico']
+        if dados_rfv_excel.get('perfil_periodo') is not None:
+            dados_excel['RFV Perfil Periodo'] = dados_rfv_excel['perfil_periodo']
+        if dados_rfv_excel.get('shopping') is not None:
+            dados_excel['RFV por Shopping'] = dados_rfv_excel['shopping']
+        if dados_rfv_excel.get('seg_perfil_shop') is not None:
+            dados_excel['RFV Segmentos Perfil Shop'] = dados_rfv_excel['seg_perfil_shop']
+        if dados_rfv_excel.get('lojas') is not None:
+            dados_excel['RFV Lojas Genero Perfil'] = dados_rfv_excel['lojas']
+        if dados_rfv_excel.get('resumo') is not None:
+            dados_excel['RFV Resumo'] = dados_rfv_excel['resumo']
+
     excel_completo = criar_excel_completo(dados_excel, periodo_selecionado)
 
     st.download_button(
@@ -2612,7 +2628,7 @@ elif pagina == "📥 Exportar Dados":
     st.markdown("Baixe cada relatório separadamente conforme sua necessidade.")
 
     # Organizar em tabs
-    tab1, tab2, tab3, tab4 = st.tabs(["📊 Resumos", "👥 Demografia", "⭐ High Spenders", "🛒 Comportamento"])
+    tab1, tab2, tab3, tab4, tab5 = st.tabs(["📊 Resumos", "👥 Demografia", "⭐ High Spenders", "🛒 Comportamento", "🎯 RFV"])
 
     with tab1:
         st.markdown("#### Resumos Gerais")
@@ -2696,6 +2712,16 @@ elif pagina == "📥 Exportar Dados":
                 file_name="matriz_valor_genero_idade.csv",
                 mime="text/csv",
                 key="download_matriz_val"
+            )
+
+            st.markdown("**Matriz Ticket Médio (Gênero x Idade)**")
+            st.caption("Ticket médio por combinação")
+            st.download_button(
+                label="⬇️ Baixar CSV",
+                data=converter_para_csv(dados['matriz_ticket']),
+                file_name="matriz_ticket_genero_idade.csv",
+                mime="text/csv",
+                key="download_matriz_ticket"
             )
 
     with tab3:
@@ -2782,6 +2808,84 @@ elif pagina == "📥 Exportar Dados":
                 key="download_seg_faixa"
             )
 
+    with tab5:
+        st.markdown("#### Análise RFV (Recência, Frequência, Valor)")
+
+        dados_rfv_export = dados.get('rfv')
+
+        if dados_rfv_export is not None:
+            col1, col2 = st.columns(2)
+
+            with col1:
+                if dados_rfv_export.get('perfil_historico') is not None:
+                    st.markdown("**Perfil Histórico (Valor Total)**")
+                    st.caption("Classificação por valor total acumulado do cliente")
+                    st.download_button(
+                        label="⬇️ Baixar CSV",
+                        data=converter_para_csv(dados_rfv_export['perfil_historico']),
+                        file_name="metricas_perfil_historico.csv",
+                        mime="text/csv",
+                        key="download_rfv_hist"
+                    )
+
+                if dados_rfv_export.get('perfil_periodo') is not None:
+                    st.markdown("**Perfil por Período (Valor do Período)**")
+                    st.caption("Classificação por valor gasto no período selecionado")
+                    st.download_button(
+                        label="⬇️ Baixar CSV",
+                        data=converter_para_csv(dados_rfv_export['perfil_periodo']),
+                        file_name="metricas_perfil_periodo.csv",
+                        mime="text/csv",
+                        key="download_rfv_periodo"
+                    )
+
+                if dados_rfv_export.get('shopping') is not None:
+                    st.markdown("**Métricas por Shopping**")
+                    st.caption("Clientes, valor e ticket médio por perfil e shopping")
+                    st.download_button(
+                        label="⬇️ Baixar CSV",
+                        data=converter_para_csv(dados_rfv_export['shopping']),
+                        file_name="metricas_shopping_rfv.csv",
+                        mime="text/csv",
+                        key="download_rfv_shopping"
+                    )
+
+            with col2:
+                if dados_rfv_export.get('seg_perfil_shop') is not None:
+                    st.markdown("**Top Segmentos por Perfil e Shopping**")
+                    st.caption("Top 10 segmentos para cada perfil em cada shopping")
+                    st.download_button(
+                        label="⬇️ Baixar CSV",
+                        data=converter_para_csv(dados_rfv_export['seg_perfil_shop']),
+                        file_name="top10_segmentos_por_perfil_shopping.csv",
+                        mime="text/csv",
+                        key="download_rfv_seg"
+                    )
+
+                if dados_rfv_export.get('lojas') is not None:
+                    st.markdown("**Top Lojas por Gênero, Shopping e Perfil**")
+                    st.caption("Top 10 lojas por combinação de perfil, shopping e gênero")
+                    st.download_button(
+                        label="⬇️ Baixar CSV",
+                        data=converter_para_csv(dados_rfv_export['lojas']),
+                        file_name="top10_lojas_por_genero_shopping_perfil.csv",
+                        mime="text/csv",
+                        key="download_rfv_lojas"
+                    )
+
+                if dados_rfv_export.get('resumo') is not None:
+                    st.markdown("**Resumo RFV**")
+                    st.caption("Resumo geral com totais de clientes e valores")
+                    st.download_button(
+                        label="⬇️ Baixar CSV",
+                        data=converter_para_csv(dados_rfv_export['resumo']),
+                        file_name="resumo_rfv.csv",
+                        mime="text/csv",
+                        key="download_rfv_resumo"
+                    )
+        else:
+            st.warning("⚠️ Dados RFV não disponíveis para este período. Execute o script `gerar_rfv_por_periodo.py`.")
+
     st.markdown("---")
 
     # ========== SEÇÃO 3: DADOS POR SHOPPING ==========
@@ -2807,36 +2911,79 @@ elif pagina == "📥 Exportar Dados":
             'Comportamento Periodo': shop_data['periodo'],
             'Comportamento Dia Semana': shop_data['dia_semana']
         }
+        if shop_data.get('hs_stats') is not None:
+            dados_shop_excel['High Spenders Stats'] = shop_data['hs_stats']
 
         excel_shopping = criar_excel_completo(dados_shop_excel, shopping_export)
 
+        # Excel completo
+        st.download_button(
+            label=f"⬇️ Relatório Completo {shopping_export} (Excel)",
+            data=excel_shopping,
+            file_name=f"relatorio_{shopping_export}_{periodo_pasta}.xlsx",
+            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            key="download_shop_excel"
+        )
+
+        # CSVs individuais
+        st.markdown("**Arquivos individuais (CSV):**")
         col1, col2, col3 = st.columns(3)
 
         with col1:
             st.download_button(
-                label=f"⬇️ Relatório Completo {shopping_export} (Excel)",
-                data=excel_shopping,
-                file_name=f"relatorio_{shopping_export}_{periodo_pasta}.xlsx",
-                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                key="download_shop_excel"
+                label=f"⬇️ Perfil Gênero",
+                data=converter_para_csv(shop_data['genero']),
+                file_name=f"perfil_genero_{shopping_export}.csv",
+                mime="text/csv",
+                key="download_shop_genero"
             )
-
-        with col2:
             st.download_button(
-                label=f"⬇️ Top Lojas {shopping_export} (CSV)",
+                label=f"⬇️ Top Lojas",
                 data=converter_para_csv(shop_data['lojas']),
                 file_name=f"top_lojas_{shopping_export}.csv",
                 mime="text/csv",
                 key="download_shop_lojas"
             )
 
+        with col2:
+            st.download_button(
+                label=f"⬇️ Perfil Faixa Etária",
+                data=converter_para_csv(shop_data['faixa']),
+                file_name=f"perfil_faixa_etaria_{shopping_export}.csv",
+                mime="text/csv",
+                key="download_shop_faixa"
+            )
+            st.download_button(
+                label=f"⬇️ Comportamento Período",
+                data=converter_para_csv(shop_data['periodo']),
+                file_name=f"comportamento_periodo_{shopping_export}.csv",
+                mime="text/csv",
+                key="download_shop_periodo"
+            )
+
         with col3:
             st.download_button(
-                label=f"⬇️ Top Segmentos {shopping_export} (CSV)",
+                label=f"⬇️ Top Segmentos",
                 data=converter_para_csv(shop_data['segmentos']),
                 file_name=f"top_segmentos_{shopping_export}.csv",
                 mime="text/csv",
                 key="download_shop_seg"
+            )
+            st.download_button(
+                label=f"⬇️ Comportamento Dia Semana",
+                data=converter_para_csv(shop_data['dia_semana']),
+                file_name=f"comportamento_dia_semana_{shopping_export}.csv",
+                mime="text/csv",
+                key="download_shop_dia"
+            )
+
+        if shop_data.get('hs_stats') is not None:
+            st.download_button(
+                label=f"⬇️ High Spenders Stats {shopping_export}",
+                data=converter_para_csv(shop_data['hs_stats']),
+                file_name=f"high_spenders_stats_{shopping_export}.csv",
+                mime="text/csv",
+                key="download_shop_hs"
             )
 
     st.markdown("---")
