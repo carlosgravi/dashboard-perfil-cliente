@@ -447,10 +447,61 @@ def carregar_dados(periodo_pasta='Completo'):
             resumo_path = f'{rfv_path}/resumo_rfv.csv'
             if os.path.exists(resumo_path):
                 dados['rfv']['resumo'] = pd.read_csv(resumo_path)
+
+            # =============================================
+            # NOVO: Dados RFV por Quintis
+            # =============================================
+            dados['rfv_quintis'] = {}
+
+            # Dados de clientes com scores - Escopo Global
+            quintis_global_path = f'{rfv_path}/rfv_quintis_global.csv'
+            if os.path.exists(quintis_global_path):
+                dados['rfv_quintis']['clientes_global'] = pd.read_csv(quintis_global_path)
+
+            # Dados de clientes com scores - Escopo Por Shopping
+            quintis_shopping_path = f'{rfv_path}/rfv_quintis_por_shopping.csv'
+            if os.path.exists(quintis_shopping_path):
+                dados['rfv_quintis']['clientes_shopping'] = pd.read_csv(quintis_shopping_path)
+
+            # Métricas agregadas por perfil - Global
+            perfil_quintis_global_path = f'{rfv_path}/metricas_perfil_quintis_global.csv'
+            if os.path.exists(perfil_quintis_global_path):
+                dados['rfv_quintis']['perfil_global'] = pd.read_csv(perfil_quintis_global_path)
+
+            # Métricas agregadas por perfil - Por Shopping
+            perfil_quintis_shopping_path = f'{rfv_path}/metricas_perfil_quintis_shopping.csv'
+            if os.path.exists(perfil_quintis_shopping_path):
+                dados['rfv_quintis']['perfil_shopping'] = pd.read_csv(perfil_quintis_shopping_path)
+
+            # Métricas por shopping - Escopo Global
+            shopping_quintis_global_path = f'{rfv_path}/metricas_shopping_quintis_global.csv'
+            if os.path.exists(shopping_quintis_global_path):
+                dados['rfv_quintis']['shopping_global'] = pd.read_csv(shopping_quintis_global_path)
+
+            # Métricas por shopping - Escopo Por Shopping
+            shopping_quintis_shopping_path = f'{rfv_path}/metricas_shopping_quintis_shopping.csv'
+            if os.path.exists(shopping_quintis_shopping_path):
+                dados['rfv_quintis']['shopping_shopping'] = pd.read_csv(shopping_quintis_shopping_path)
+
+            # Thresholds dos quintis para referência
+            thresholds_global_path = f'{rfv_path}/quintile_thresholds_global.csv'
+            if os.path.exists(thresholds_global_path):
+                dados['rfv_quintis']['thresholds_global'] = pd.read_csv(thresholds_global_path)
+
+            thresholds_shopping_path = f'{rfv_path}/quintile_thresholds_shopping.csv'
+            if os.path.exists(thresholds_shopping_path):
+                dados['rfv_quintis']['thresholds_shopping'] = pd.read_csv(thresholds_shopping_path)
+
+            # Verificar se há dados de quintis disponíveis
+            if not dados['rfv_quintis']:
+                dados['rfv_quintis'] = None
+
         except Exception as e:
             dados['rfv'] = None
+            dados['rfv_quintis'] = None
     else:
         dados['rfv'] = None
+        dados['rfv_quintis'] = None
 
     return dados
 
@@ -1646,16 +1697,76 @@ elif pagina == "🎯 RFV":
     else:
         st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
-    st.markdown("""
-    A análise **RFV** segmenta clientes em **4 perfis** com base no **valor gasto**,
-    utilizando **faixas de valor fixas** (thresholds) para classificação:
+    # =========================================================================
+    # TOGGLE PRINCIPAL: MÉTODO DE CLASSIFICAÇÃO
+    # =========================================================================
+    st.markdown("### Método de Classificação")
 
-    - **Classificação Histórica:** baseada no valor total acumulado do cliente
-    - **Classificação por Período:** baseada no valor gasto no período selecionado
+    # Verificar se dados de quintis estão disponíveis
+    tem_quintis = dados.get('rfv_quintis') is not None and len(dados.get('rfv_quintis', {})) > 0
 
-    As métricas de **Recência** (dias desde a última compra) e **Frequência** (quantidade de compras)
-    são calculadas e disponibilizadas, mas a segmentação dos perfis é feita exclusivamente pelo **Valor**.
-    """)
+    col_metodo1, col_metodo2 = st.columns([3, 1])
+    with col_metodo1:
+        metodo_rfv = st.radio(
+            "Selecione o método:",
+            ["Por Valor (R$)", "Por Quintis (R+F+V)"],
+            horizontal=True,
+            help="""
+            **Por Valor (R$):** Classificação baseada em thresholds fixos de valor em reais.
+            **Por Quintis (R+F+V):** Classificação baseada na soma de scores de Recência, Frequência e Valor (cada um de 1-5).
+            """,
+            key='rfv_metodo_principal'
+        )
+
+    usar_quintis = metodo_rfv == "Por Quintis (R+F+V)"
+
+    # Toggle de escopo (apenas para método Quintis)
+    escopo_quintis = "Global"
+    if usar_quintis:
+        with col_metodo2:
+            escopo_quintis = st.radio(
+                "Escopo:",
+                ["Global", "Por Shopping"],
+                horizontal=False,
+                help="""
+                **Global:** Quintis calculados sobre todos os clientes (comparação justa entre shoppings).
+                **Por Shopping:** Quintis calculados dentro de cada shopping (cada shopping tem seus "melhores").
+                """,
+                key='rfv_escopo_quintis'
+            )
+
+    # Descrição dinâmica do método
+    if usar_quintis:
+        if not tem_quintis:
+            st.warning("⚠️ Dados de Quintis não disponíveis para este período. Execute o script `gerar_rfv_por_periodo.py` para gerar os dados. Usando método Por Valor.")
+            usar_quintis = False
+        else:
+            st.markdown(f"""
+            **Método selecionado: Por Quintis ({escopo_quintis})**
+
+            Cada cliente recebe scores de 1-5 em cada dimensão (R, F, V):
+            - **Recência (R):** Score 5 = comprou recentemente, Score 1 = não compra há muito tempo
+            - **Frequência (F):** Score 5 = muitas compras, Score 1 = poucas compras
+            - **Valor (V):** Score 5 = alto valor gasto, Score 1 = baixo valor gasto
+
+            | Score Total (R+F+V) | Perfil | Descrição |
+            |---------------------|--------|-----------|
+            | 13 a 15 | **VIP** | Excelente em todas as dimensões |
+            | 10 a 12 | **Premium** | Bom desempenho geral |
+            | 7 a 9 | **Potencial** | Médio, com espaço para crescer |
+            | 3 a 6 | **Pontual** | Baixo engajamento |
+            """)
+
+    if not usar_quintis:
+        st.markdown("""
+        **Método selecionado: Por Valor (R$)**
+
+        Classificação baseada em **thresholds fixos** de valor:
+        - **Classificação Histórica:** baseada no valor total acumulado do cliente
+        - **Classificação por Período:** baseada no valor gasto no período selecionado
+
+        As métricas de Recência e Frequência são calculadas, mas a segmentação usa apenas o Valor.
+        """)
 
     # Constantes de configuração
     CORES_PERFIL = {
@@ -1766,32 +1877,73 @@ elif pagina == "🎯 RFV":
     else:
         # Modo período único
         dados_rfv = dados['rfv']
+        dados_rfv_quintis = dados.get('rfv_quintis')
 
-        # Toggle para tipo de classificação
-        tipo_rfv = st.radio(
-            "Tipo de Classificação:",
-            ["Histórica (Valor Total)", "Por Período (Valor do Período)"],
-            horizontal=True,
-            help="**Histórica:** classifica pelo valor total acumulado do cliente. **Por Período:** classifica pelo valor gasto no período selecionado.",
-            key='rfv_tipo_unico'
-        )
-        usar_historico = tipo_rfv == "Histórica (Valor Total)"
+        # =====================================================================
+        # LÓGICA PARA SELECIONAR DADOS CONFORME MÉTODO
+        # =====================================================================
+        if usar_quintis and dados_rfv_quintis:
+            # MÉTODO POR QUINTIS
+            # Selecionar dados conforme escopo
+            if escopo_quintis == "Global":
+                df_perfil = dados_rfv_quintis.get('perfil_global', pd.DataFrame()).copy()
+                df_shopping_quintis = dados_rfv_quintis.get('shopping_global', pd.DataFrame())
+                df_clientes_quintis = dados_rfv_quintis.get('clientes_global', pd.DataFrame())
+            else:
+                df_perfil = dados_rfv_quintis.get('perfil_shopping', pd.DataFrame()).copy()
+                df_shopping_quintis = dados_rfv_quintis.get('shopping_shopping', pd.DataFrame())
+                df_clientes_quintis = dados_rfv_quintis.get('clientes_shopping', pd.DataFrame())
 
-        # Selecionar dados conforme tipo
-        df_perfil = dados_rfv['perfil_historico' if usar_historico else 'perfil_periodo'].copy()
+            # Usar tipo_rfv_label para exibição
+            tipo_rfv_label = f"Quintis ({escopo_quintis})"
+            # Definir usar_historico como False para quintis (não aplicável)
+            usar_historico = False
+
+            if df_perfil.empty:
+                st.warning("⚠️ Dados de quintis não disponíveis. Usando método Por Valor.")
+                usar_quintis = False
+
+        if not usar_quintis:
+            # MÉTODO POR VALOR (existente)
+            # Toggle para tipo de classificação (Histórica vs Período)
+            tipo_rfv = st.radio(
+                "Tipo de Classificação:",
+                ["Histórica (Valor Total)", "Por Período (Valor do Período)"],
+                horizontal=True,
+                help="**Histórica:** classifica pelo valor total acumulado do cliente. **Por Período:** classifica pelo valor gasto no período selecionado.",
+                key='rfv_tipo_unico'
+            )
+            usar_historico = tipo_rfv == "Histórica (Valor Total)"
+
+            # Selecionar dados conforme tipo
+            df_perfil = dados_rfv['perfil_historico' if usar_historico else 'perfil_periodo'].copy()
+            tipo_rfv_label = tipo_rfv.split(' (')[0]
 
         # Garantir ordenação correta
         df_perfil['ordem'] = df_perfil['perfil_cliente'].map({p: i for i, p in enumerate(ORDEM_PERFIL)})
         df_perfil = df_perfil.sort_values('ordem')
 
-        # Tabs principais
-        tab1, tab2, tab3, tab4 = st.tabs(["📊 Visão Geral", "🏬 Por Shopping", "🛒 Segmentos & Lojas", "📋 Resumo"])
+        # Tabs principais - adicionar tab de Scores se usando quintis
+        if usar_quintis:
+            tab1, tab2, tab3, tab4, tab5 = st.tabs(["📊 Visão Geral", "📈 Scores R/F/V", "🏬 Por Shopping", "🛒 Segmentos & Lojas", "📋 Resumo"])
+        else:
+            tab1, tab2, tab3, tab4 = st.tabs(["📊 Visão Geral", "🏬 Por Shopping", "🛒 Segmentos & Lojas", "📋 Resumo"])
 
         with tab1:
             # Filtro de shopping
             shoppings_disponiveis = ["Todos"]
-            if 'shopping' in dados_rfv and dados_rfv['shopping'] is not None:
+            # Usar dados de shopping conforme método
+            if usar_quintis and 'df_shopping_quintis' in dir() and not df_shopping_quintis.empty:
+                shoppings_disponiveis += list(df_shopping_quintis['shopping_principal'].unique())
+                df_shop_vg = df_shopping_quintis
+                sufixo_vg = '_quintis'
+            elif 'shopping' in dados_rfv and dados_rfv['shopping'] is not None:
                 shoppings_disponiveis += list(dados_rfv['shopping']['shopping_principal'].unique())
+                df_shop_vg = dados_rfv['shopping']
+                sufixo_vg = '_hist' if usar_historico else '_periodo'
+            else:
+                df_shop_vg = None
+                sufixo_vg = '_hist'
 
             shopping_visao = st.selectbox(
                 "Filtrar por Shopping:",
@@ -1799,11 +1951,8 @@ elif pagina == "🎯 RFV":
                 key='rfv_shopping_visao_geral'
             )
 
-            sufixo_vg = '_hist' if usar_historico else '_periodo'
-
             # Montar dados de perfil conforme filtro de shopping
-            if shopping_visao != "Todos" and 'shopping' in dados_rfv and dados_rfv['shopping'] is not None:
-                df_shop_vg = dados_rfv['shopping']
+            if shopping_visao != "Todos" and df_shop_vg is not None:
                 row_shop = df_shop_vg[df_shop_vg['shopping_principal'] == shopping_visao]
 
                 if not row_shop.empty:
@@ -1828,10 +1977,10 @@ elif pagina == "🎯 RFV":
                 else:
                     df_perfil_filtrado = df_perfil.copy()
 
-                st.subheader(f"Distribuição por Perfil - {shopping_visao} ({tipo_rfv.split(' (')[0]})")
+                st.subheader(f"Distribuição por Perfil - {shopping_visao} ({tipo_rfv_label})")
             else:
                 df_perfil_filtrado = df_perfil.copy()
-                st.subheader(f"Distribuição por Perfil de Cliente ({tipo_rfv.split(' (')[0]})")
+                st.subheader(f"Distribuição por Perfil de Cliente ({tipo_rfv_label})")
 
             # KPIs
             col1, col2, col3, col4 = st.columns(4)
@@ -1901,19 +2050,190 @@ elif pagina == "🎯 RFV":
                 mas geram **{pct_val_vip:.1f}%** do faturamento. Investir na retenção desses clientes é fundamental.
                 """)
 
-        with tab2:
+        # =====================================================================
+        # TAB SCORES R/F/V (apenas para método Quintis)
+        # =====================================================================
+        if usar_quintis:
+            with tab2:
+                st.subheader(f"📈 Distribuição de Scores R/F/V ({escopo_quintis})")
+
+                if 'df_clientes_quintis' in dir() and not df_clientes_quintis.empty:
+                    # Distribuição de scores por dimensão
+                    col1, col2, col3 = st.columns(3)
+
+                    with col1:
+                        # Histograma de Recência
+                        fig_r = px.histogram(
+                            df_clientes_quintis,
+                            x='R_score',
+                            nbins=5,
+                            title='Distribuição Score Recência (R)',
+                            color_discrete_sequence=['#E74C3C'],
+                            labels={'R_score': 'Score R', 'count': 'Clientes'}
+                        )
+                        fig_r.update_layout(bargap=0.1, xaxis=dict(tickmode='linear', tick0=1, dtick=1))
+                        st.plotly_chart(fig_r, use_container_width=True)
+
+                        # Estatísticas R
+                        r_stats = df_clientes_quintis['R_score'].describe()
+                        st.caption(f"Média: {r_stats['mean']:.2f} | Mediana: {r_stats['50%']:.0f}")
+
+                    with col2:
+                        # Histograma de Frequência
+                        fig_f = px.histogram(
+                            df_clientes_quintis,
+                            x='F_score',
+                            nbins=5,
+                            title='Distribuição Score Frequência (F)',
+                            color_discrete_sequence=['#3498DB'],
+                            labels={'F_score': 'Score F', 'count': 'Clientes'}
+                        )
+                        fig_f.update_layout(bargap=0.1, xaxis=dict(tickmode='linear', tick0=1, dtick=1))
+                        st.plotly_chart(fig_f, use_container_width=True)
+
+                        # Estatísticas F
+                        f_stats = df_clientes_quintis['F_score'].describe()
+                        st.caption(f"Média: {f_stats['mean']:.2f} | Mediana: {f_stats['50%']:.0f}")
+
+                    with col3:
+                        # Histograma de Valor
+                        fig_v = px.histogram(
+                            df_clientes_quintis,
+                            x='V_score',
+                            nbins=5,
+                            title='Distribuição Score Valor (V)',
+                            color_discrete_sequence=['#2ECC71'],
+                            labels={'V_score': 'Score V', 'count': 'Clientes'}
+                        )
+                        fig_v.update_layout(bargap=0.1, xaxis=dict(tickmode='linear', tick0=1, dtick=1))
+                        st.plotly_chart(fig_v, use_container_width=True)
+
+                        # Estatísticas V
+                        v_stats = df_clientes_quintis['V_score'].describe()
+                        st.caption(f"Média: {v_stats['mean']:.2f} | Mediana: {v_stats['50%']:.0f}")
+
+                    # Distribuição do Score Total
+                    st.subheader("Distribuição do Score Total (R+F+V)")
+                    col1, col2 = st.columns([2, 1])
+
+                    with col1:
+                        fig_total = px.histogram(
+                            df_clientes_quintis,
+                            x='score_total',
+                            nbins=13,
+                            title='Distribuição do Score Total (3-15)',
+                            color_discrete_sequence=['#9B59B6'],
+                            labels={'score_total': 'Score Total', 'count': 'Clientes'}
+                        )
+                        # Adicionar linhas de corte dos perfis
+                        fig_total.add_vline(x=6.5, line_dash="dash", line_color="gray", annotation_text="Pontual/Potencial")
+                        fig_total.add_vline(x=9.5, line_dash="dash", line_color="gray", annotation_text="Potencial/Premium")
+                        fig_total.add_vline(x=12.5, line_dash="dash", line_color="gray", annotation_text="Premium/VIP")
+                        fig_total.update_layout(bargap=0.1, xaxis=dict(tickmode='linear', tick0=3, dtick=1))
+                        st.plotly_chart(fig_total, use_container_width=True)
+
+                    with col2:
+                        # Contagem por faixa de score
+                        st.markdown("**Distribuição por Faixa:**")
+                        faixas = {
+                            '3-6 (Pontual)': len(df_clientes_quintis[df_clientes_quintis['score_total'] <= 6]),
+                            '7-9 (Potencial)': len(df_clientes_quintis[(df_clientes_quintis['score_total'] >= 7) & (df_clientes_quintis['score_total'] <= 9)]),
+                            '10-12 (Premium)': len(df_clientes_quintis[(df_clientes_quintis['score_total'] >= 10) & (df_clientes_quintis['score_total'] <= 12)]),
+                            '13-15 (VIP)': len(df_clientes_quintis[df_clientes_quintis['score_total'] >= 13])
+                        }
+                        total = sum(faixas.values())
+                        for faixa, qtd in faixas.items():
+                            pct = (qtd / total * 100) if total > 0 else 0
+                            st.markdown(f"- **{faixa}:** {qtd:,} ({pct:.1f}%)")
+
+                    # Radar Chart - Scores médios por Perfil
+                    st.subheader("Radar Chart - Scores Médios por Perfil")
+
+                    # Calcular médias por perfil
+                    medias_perfil = df_clientes_quintis.groupby('perfil_quintis').agg({
+                        'R_score': 'mean',
+                        'F_score': 'mean',
+                        'V_score': 'mean'
+                    }).reset_index()
+
+                    # Criar radar chart
+                    fig_radar = go.Figure()
+
+                    cores_radar = {'VIP': '#9B59B6', 'Premium': '#3498DB', 'Potencial': '#2ECC71', 'Pontual': '#95A5A6'}
+
+                    for _, row in medias_perfil.iterrows():
+                        perfil = row['perfil_quintis']
+                        fig_radar.add_trace(go.Scatterpolar(
+                            r=[row['R_score'], row['F_score'], row['V_score'], row['R_score']],
+                            theta=['Recência (R)', 'Frequência (F)', 'Valor (V)', 'Recência (R)'],
+                            fill='toself',
+                            name=perfil,
+                            line_color=cores_radar.get(perfil, '#888888'),
+                            opacity=0.7
+                        ))
+
+                    fig_radar.update_layout(
+                        polar=dict(
+                            radialaxis=dict(visible=True, range=[0, 5])
+                        ),
+                        showlegend=True,
+                        title='Comparação de Scores Médios entre Perfis'
+                    )
+                    st.plotly_chart(fig_radar, use_container_width=True)
+
+                    st.info("""
+                    💡 **Interpretação do Radar Chart:**
+                    - Perfis **VIP** devem ter scores altos em todas as dimensões (área maior)
+                    - Perfis **Pontual** têm scores baixos em geral (área menor)
+                    - Perfis **desequilibrados** (ex: alto em V, baixo em R) indicam oportunidades de ação
+                    """)
+
+                    # Tabela com scores detalhados
+                    st.subheader("Tabela de Scores por Perfil")
+                    df_scores_tabela = medias_perfil.copy()
+                    df_scores_tabela.columns = ['Perfil', 'R Médio', 'F Médio', 'V Médio']
+                    df_scores_tabela['Score Total Médio'] = df_scores_tabela['R Médio'] + df_scores_tabela['F Médio'] + df_scores_tabela['V Médio']
+                    df_scores_tabela = df_scores_tabela.round(2)
+
+                    # Ordenar por perfil
+                    ordem = {'VIP': 0, 'Premium': 1, 'Potencial': 2, 'Pontual': 3}
+                    df_scores_tabela['ordem'] = df_scores_tabela['Perfil'].map(ordem)
+                    df_scores_tabela = df_scores_tabela.sort_values('ordem').drop('ordem', axis=1)
+
+                    st.dataframe(df_scores_tabela, use_container_width=True, hide_index=True)
+                else:
+                    st.warning("Dados de clientes com scores não disponíveis.")
+
+            # Definir tab de shopping como tab3 quando usando quintis
+            tab_shopping = tab3
+            tab_segmentos = tab4
+            tab_resumo = tab5
+        else:
+            # Quando não usa quintis, manter as tabs originais
+            tab_shopping = tab2
+            tab_segmentos = tab3
+            tab_resumo = tab4
+
+        with tab_shopping:
             st.subheader("Análise RFV por Shopping")
 
-            if 'shopping' in dados_rfv and dados_rfv['shopping'] is not None:
+            # Selecionar dados de shopping conforme método
+            if usar_quintis and 'df_shopping_quintis' in dir() and not df_shopping_quintis.empty:
+                df_shopping = df_shopping_quintis.copy()
+                sufixo = '_quintis'
+                perfis_cols = ['vip_quintis', 'premium_quintis', 'potencial_quintis', 'pontual_quintis']
+                tem_perfis = all(col in df_shopping.columns for col in perfis_cols)
+            elif 'shopping' in dados_rfv and dados_rfv['shopping'] is not None:
                 df_shopping = dados_rfv['shopping'].copy()
-
                 # Definir sufixo baseado no tipo de classificação
                 sufixo = '_hist' if usar_historico else '_periodo'
-
-                # Verificar se as colunas de perfil existem
                 perfis_cols = [f'vip{sufixo}', f'premium{sufixo}', f'potencial{sufixo}', f'pontual{sufixo}']
                 tem_perfis = all(col in df_shopping.columns for col in perfis_cols)
+            else:
+                df_shopping = None
+                tem_perfis = False
 
+            if df_shopping is not None:
                 # Filtros
                 col_filtro1, col_filtro2 = st.columns(2)
                 with col_filtro1:
@@ -1968,9 +2288,9 @@ elif pagina == "🎯 RFV":
                             value_name='Clientes'
                         )
 
-                        titulo_grafico = f'Distribuição de Perfis por Shopping ({tipo_rfv.split(" (")[0]})'
+                        titulo_grafico = f'Distribuição de Perfis por Shopping ({tipo_rfv_label})'
                         if perfil_filtro_shop != "Todos":
-                            titulo_grafico = f'Clientes {perfil_filtro_shop} por Shopping ({tipo_rfv.split(" (")[0]})'
+                            titulo_grafico = f'Clientes {perfil_filtro_shop} por Shopping ({tipo_rfv_label})'
 
                         fig_perfis = px.bar(
                             df_melted,
@@ -2076,7 +2396,7 @@ elif pagina == "🎯 RFV":
                     df_shop_display['Ticket Médio'] = df_shop_display['Ticket Médio'].apply(lambda x: f"R$ {x:.2f}")
                     df_shop_display['% Valor'] = df_shop_display['% Valor'].apply(lambda x: f"{x:.1f}%")
 
-                    st.caption(f"Mostrando dados do perfil **{perfil_filtro_shop}** ({tipo_rfv.split(' (')[0]})")
+                    st.caption(f"Mostrando dados do perfil **{perfil_filtro_shop}** ({tipo_rfv_label})")
                 else:
                     # Mostrar visão geral com todos os perfis
                     colunas_exibir = ['shopping_principal', 'qtd_clientes', 'valor_total', 'ticket_medio']
@@ -2086,8 +2406,13 @@ elif pagina == "🎯 RFV":
                         colunas_exibir.extend(perfis_cols)
                         nomes_colunas.extend(['VIP', 'Premium', 'Potencial', 'Pontual'])
 
-                    colunas_exibir.extend(['high_spenders', 'pct_valor'])
-                    nomes_colunas.extend(['High Spenders', '% Valor'])
+                    # High spenders só existe no método Por Valor
+                    if 'high_spenders' in df_shop_display.columns:
+                        colunas_exibir.append('high_spenders')
+                        nomes_colunas.append('High Spenders')
+
+                    colunas_exibir.append('pct_valor')
+                    nomes_colunas.append('% Valor')
 
                     df_shop_display = df_shop_display[colunas_exibir].copy()
                     df_shop_display.columns = nomes_colunas
@@ -2101,7 +2426,7 @@ elif pagina == "🎯 RFV":
             else:
                 st.warning("Dados de shopping não disponíveis para este período.")
 
-        with tab3:
+        with tab_segmentos:
             st.subheader("Segmentos e Lojas por Perfil")
 
             # Sub-tabs para segmentos e lojas
@@ -2223,7 +2548,7 @@ elif pagina == "🎯 RFV":
                 else:
                     st.warning("Dados de lojas não disponíveis para este período.")
 
-        with tab4:
+        with tab_resumo:
             st.subheader("Resumo RFV")
 
             st.info("""
@@ -2278,36 +2603,77 @@ elif pagina == "🎯 RFV":
             # Metodologia
             with st.expander("📖 Metodologia RFV"):
                 st.markdown("""
-                ### Método Aplicado
+                ## Métodos de Classificação Disponíveis
+
+                Este dashboard oferece **dois métodos** de classificação de clientes:
+
+                ---
+
+                ### 1️⃣ Método Por Valor (R$) - Thresholds Fixos
 
                 A segmentação utiliza **faixas de valor fixas (thresholds)** para classificar cada cliente
                 em um dos 4 perfis. A classificação é baseada exclusivamente no **Valor** gasto.
 
-                As métricas de Recência (dias desde a última compra) e Frequência (quantidade de compras)
-                são calculadas e armazenadas por cliente, mas **não são utilizadas como critério de classificação**.
+                As métricas de Recência e Frequência são calculadas, mas **não são utilizadas como critério**.
 
-                ### Classificação Histórica (Valor Total Acumulado)
-
-                | Perfil | Faixa de Valor | Descrição |
-                |--------|----------------|-----------|
-                | **VIP** | >= R$ 5.000 | Clientes de altíssimo valor, responsáveis pela maior parte do faturamento |
-                | **Premium** | R$ 2.500 a R$ 4.999 | Clientes de alto valor com potencial de se tornarem VIP |
-                | **Potencial** | R$ 1.000 a R$ 2.499 | Clientes com bom potencial de crescimento |
-                | **Pontual** | < R$ 1.000 | Clientes ocasionais ou novos |
-
-                ### Classificação Por Período (Valor no Período Selecionado)
+                #### Classificação Histórica (Valor Total Acumulado)
 
                 | Perfil | Faixa de Valor | Descrição |
                 |--------|----------------|-----------|
-                | **VIP** | >= R$ 2.000 | Alto gasto no período selecionado |
-                | **Premium** | R$ 1.000 a R$ 1.999 | Gasto relevante no período |
-                | **Potencial** | R$ 500 a R$ 999 | Gasto moderado no período |
-                | **Pontual** | < R$ 500 | Baixo gasto no período |
+                | **VIP** | >= R$ 5.000 | Clientes de altíssimo valor |
+                | **Premium** | R$ 2.500 a R$ 4.999 | Alto valor, potencial VIP |
+                | **Potencial** | R$ 1.000 a R$ 2.499 | Bom potencial de crescimento |
+                | **Pontual** | < R$ 1.000 | Ocasionais ou novos |
 
-                ### Quando usar cada classificação?
+                #### Classificação Por Período
 
-                - **Histórica:** Segmentação estratégica de longo prazo, identificação de clientes fiéis, programas de fidelidade.
-                - **Por Período:** Campanhas táticas, análise de sazonalidade, ativação de clientes recentes.
+                | Perfil | Faixa de Valor | Descrição |
+                |--------|----------------|-----------|
+                | **VIP** | >= R$ 2.000 | Alto gasto no período |
+                | **Premium** | R$ 1.000 a R$ 1.999 | Gasto relevante |
+                | **Potencial** | R$ 500 a R$ 999 | Gasto moderado |
+                | **Pontual** | < R$ 500 | Baixo gasto |
+
+                ---
+
+                ### 2️⃣ Método Por Quintis (R+F+V) - Scores Dinâmicos
+
+                A segmentação utiliza **quintis dinâmicos** que se adaptam à distribuição dos dados.
+                Cada cliente recebe scores de **1 a 5** em cada dimensão:
+
+                - **Recência (R):** Score 5 = comprou recentemente, Score 1 = há muito tempo
+                - **Frequência (F):** Score 5 = muitas compras, Score 1 = poucas compras
+                - **Valor (V):** Score 5 = alto valor, Score 1 = baixo valor
+
+                #### Classificação por Soma de Scores (R+F+V = 3 a 15)
+
+                | Score Total | Perfil | Descrição |
+                |-------------|--------|-----------|
+                | 13 a 15 | **VIP** | Excelente em todas as dimensões |
+                | 10 a 12 | **Premium** | Bom desempenho geral |
+                | 7 a 9 | **Potencial** | Médio, espaço para crescer |
+                | 3 a 6 | **Pontual** | Baixo engajamento |
+
+                #### Escopos Disponíveis
+
+                - **Global:** Quintis calculados sobre todos os clientes (comparação justa entre shoppings)
+                - **Por Shopping:** Quintis calculados dentro de cada shopping (cada um tem seus "melhores")
+
+                ---
+
+                ### 📊 Comparativo dos Métodos
+
+                | Aspecto | Por Valor (R$) | Por Quintis (R+F+V) |
+                |---------|----------------|---------------------|
+                | Dimensões | Apenas Valor | Recência + Frequência + Valor |
+                | Critério | Thresholds fixos em R$ | Distribuição percentual |
+                | Adaptabilidade | Pode ficar defasado | Ajusta automaticamente |
+                | Distribuição | Variável | ~20% por quintil |
+
+                ### 💡 Quando usar cada método?
+
+                - **Por Valor:** Análises históricas, comparação entre períodos diferentes, consistência de critérios.
+                - **Por Quintis:** Segmentação relativa, identificação de risco de churn (R baixo), análise multidimensional.
 
                 ### Cálculo do Ticket Médio
 
@@ -2891,6 +3257,82 @@ elif pagina == "📥 Exportar Dados":
                         mime="text/csv",
                         key="download_rfv_resumo"
                     )
+
+            # Dados de Quintis (se disponíveis)
+            dados_rfv_quintis_export = dados.get('rfv_quintis')
+            if dados_rfv_quintis_export:
+                st.markdown("---")
+                st.markdown("#### 📈 Dados RFV por Quintis (Scores R+F+V)")
+
+                col1, col2 = st.columns(2)
+
+                with col1:
+                    if dados_rfv_quintis_export.get('clientes_global') is not None:
+                        st.markdown("**Clientes com Scores (Escopo Global)**")
+                        st.caption("Lista de clientes com scores R, F, V e perfil quintis")
+                        st.download_button(
+                            label="⬇️ Baixar CSV",
+                            data=converter_para_csv(dados_rfv_quintis_export['clientes_global']),
+                            file_name="rfv_quintis_global.csv",
+                            mime="text/csv",
+                            key="download_quintis_clientes_global"
+                        )
+
+                    if dados_rfv_quintis_export.get('perfil_global') is not None:
+                        st.markdown("**Métricas por Perfil (Escopo Global)**")
+                        st.caption("Agregado por perfil com scores médios")
+                        st.download_button(
+                            label="⬇️ Baixar CSV",
+                            data=converter_para_csv(dados_rfv_quintis_export['perfil_global']),
+                            file_name="metricas_perfil_quintis_global.csv",
+                            mime="text/csv",
+                            key="download_quintis_perfil_global"
+                        )
+
+                    if dados_rfv_quintis_export.get('shopping_global') is not None:
+                        st.markdown("**Por Shopping (Escopo Global)**")
+                        st.caption("Métricas por shopping com perfis quintis")
+                        st.download_button(
+                            label="⬇️ Baixar CSV",
+                            data=converter_para_csv(dados_rfv_quintis_export['shopping_global']),
+                            file_name="metricas_shopping_quintis_global.csv",
+                            mime="text/csv",
+                            key="download_quintis_shopping_global"
+                        )
+
+                with col2:
+                    if dados_rfv_quintis_export.get('clientes_shopping') is not None:
+                        st.markdown("**Clientes com Scores (Por Shopping)**")
+                        st.caption("Quintis calculados dentro de cada shopping")
+                        st.download_button(
+                            label="⬇️ Baixar CSV",
+                            data=converter_para_csv(dados_rfv_quintis_export['clientes_shopping']),
+                            file_name="rfv_quintis_por_shopping.csv",
+                            mime="text/csv",
+                            key="download_quintis_clientes_shopping"
+                        )
+
+                    if dados_rfv_quintis_export.get('perfil_shopping') is not None:
+                        st.markdown("**Métricas por Perfil (Por Shopping)**")
+                        st.caption("Agregado por perfil com escopo por shopping")
+                        st.download_button(
+                            label="⬇️ Baixar CSV",
+                            data=converter_para_csv(dados_rfv_quintis_export['perfil_shopping']),
+                            file_name="metricas_perfil_quintis_shopping.csv",
+                            mime="text/csv",
+                            key="download_quintis_perfil_shopping"
+                        )
+
+                    if dados_rfv_quintis_export.get('thresholds_global') is not None:
+                        st.markdown("**Thresholds dos Quintis**")
+                        st.caption("Valores de corte dos quintis para auditoria")
+                        st.download_button(
+                            label="⬇️ Baixar CSV",
+                            data=converter_para_csv(dados_rfv_quintis_export['thresholds_global']),
+                            file_name="quintile_thresholds.csv",
+                            mime="text/csv",
+                            key="download_quintis_thresholds"
+                        )
         else:
             st.warning("⚠️ Dados RFV não disponíveis para este período. Execute o script `gerar_rfv_por_periodo.py`.")
 
