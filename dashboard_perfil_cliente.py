@@ -2006,6 +2006,22 @@ elif pagina == "🏆 Top Consumidores":
     if os.path.exists(arquivo_top):
         df_top = pd.read_csv(arquivo_top, sep=';', decimal=',', encoding='utf-8-sig')
 
+        # Filtrar dados pelos shoppings permitidos ao usuário
+        if shoppings_permitidos_filtro is not None:
+            # Mapear nomes de shopping para siglas
+            mapa_shopping_sigla = {
+                'Balneário Shopping': 'BS', 'Balneario Shopping': 'BS', 'Balneario': 'BS',
+                'Continente Shopping': 'CS', 'Continente': 'CS',
+                'Garten Shopping': 'GS', 'Garten': 'GS',
+                'Neumarkt Shopping': 'NK', 'Neumarkt': 'NK',
+                'Norte Shopping': 'NR', 'Norte': 'NR',
+                'Nações Shopping': 'NS', 'Nacoes Shopping': 'NS', 'Nacoes': 'NS', 'Nações': 'NS',
+            }
+            # Filtrar: manter apenas shoppings cuja sigla está nas permissões
+            df_top = df_top[df_top['Shopping'].apply(
+                lambda x: x in shoppings_permitidos_filtro or mapa_shopping_sigla.get(x, '') in shoppings_permitidos_filtro
+            )]
+
         # Métricas gerais
         col1, col2, col3, col4 = st.columns(4)
         with col1:
