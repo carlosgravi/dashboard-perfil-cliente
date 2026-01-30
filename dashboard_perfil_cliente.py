@@ -1244,6 +1244,11 @@ elif pagina == "🏬 Por Shopping":
         format_func=lambda x: f"{x} - {NOMES_SHOPPING[x]}"
     )
 
+    # Registrar filtro de shopping (se mudou)
+    if st.session_state.get('ultimo_shopping_selecionado') != shopping_selecionado:
+        registrar_filtro(username, "Por Shopping", "Shopping", NOMES_SHOPPING.get(shopping_selecionado, shopping_selecionado))
+        st.session_state['ultimo_shopping_selecionado'] = shopping_selecionado
+
     if shopping_selecionado in dados['por_shopping']:
         shop_data = dados['por_shopping'][shopping_selecionado]
         resumo_shop = dados['resumo'][dados['resumo']['sigla'] == shopping_selecionado].iloc[0]
@@ -1797,10 +1802,22 @@ elif pagina == "🏆 Top Consumidores":
         df_filtrado = df_top.copy()
         if shopping_filtro != "Todos":
             df_filtrado = df_filtrado[df_filtrado['Shopping'] == shopping_filtro]
+            # Registrar filtro (apenas se mudou)
+            if st.session_state.get('ultimo_shopping_filtro') != shopping_filtro:
+                registrar_filtro(username, "Top Consumidores", "Shopping", shopping_filtro)
+                st.session_state['ultimo_shopping_filtro'] = shopping_filtro
+
         if perfil_filtro != "Todos":
             df_filtrado = df_filtrado[df_filtrado['Perfil_Cliente'] == perfil_filtro]
+            if st.session_state.get('ultimo_perfil_filtro') != perfil_filtro:
+                registrar_filtro(username, "Top Consumidores", "Perfil", perfil_filtro)
+                st.session_state['ultimo_perfil_filtro'] = perfil_filtro
+
         if segmento_filtro != "Todos":
             df_filtrado = df_filtrado[df_filtrado['Segmento_Principal'] == segmento_filtro]
+            if st.session_state.get('ultimo_segmento_filtro') != segmento_filtro:
+                registrar_filtro(username, "Top Consumidores", "Segmento", segmento_filtro)
+                st.session_state['ultimo_segmento_filtro'] = segmento_filtro
 
         st.markdown(f"**Exibindo {len(df_filtrado):,} clientes**")
 
@@ -3238,6 +3255,12 @@ elif pagina == "📈 Comparativo":
         default=['BS', 'CS', 'NK'],
         format_func=lambda x: f"{x} - {NOMES_SHOPPING[x]}"
     )
+
+    # Registrar filtro de comparação (se mudou)
+    shoppings_str = ', '.join(shoppings_comparar)
+    if st.session_state.get('ultimo_shoppings_comparar') != shoppings_str:
+        registrar_filtro(username, "Comparativo", "Shoppings", shoppings_str)
+        st.session_state['ultimo_shoppings_comparar'] = shoppings_str
 
     if len(shoppings_comparar) >= 2:
         df_comp = dados['resumo'][dados['resumo']['sigla'].isin(shoppings_comparar)]
