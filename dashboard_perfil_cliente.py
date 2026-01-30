@@ -4438,8 +4438,8 @@ elif pagina == "⚙️ Administração":
         nova_senha = st.text_input("Digite a nova senha:", type="password", key="nova_senha_hash")
         if st.button("Gerar Hash"):
             if nova_senha:
-                # Gerar hash da senha
-                hashed = stauth.Hasher([nova_senha]).generate()[0]
+                # Gerar hash da senha (API v0.3+)
+                hashed = stauth.Hasher.hash(nova_senha)
                 st.code(hashed, language=None)
                 st.success("✅ Hash gerado! Copie e cole no secrets.toml")
             else:
@@ -4500,8 +4500,8 @@ elif pagina == "⚙️ Administração":
 
         ```python
         import streamlit_authenticator as stauth
-        hashed = stauth.Hasher(['senha123']).generate()
-        print(hashed[0])
+        hashed = stauth.Hasher.hash('senha123')
+        print(hashed)
         ```
 
         ### 2. Editar secrets.toml no Streamlit Cloud
