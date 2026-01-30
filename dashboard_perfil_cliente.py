@@ -357,6 +357,110 @@ def is_admin():
     """Verifica se o usuário é administrador"""
     return get_user_role() == 'admin'
 
+# =============================================================================
+# SISTEMA DE PERMISSÕES GRANULARES
+# =============================================================================
+
+def get_user_permissions(username):
+    """
+    Retorna as permissões do usuário (páginas e shoppings permitidos).
+    Se não definido, retorna None (acesso total).
+    """
+    config = st.session_state.get('config')
+    if config is None:
+        return {'paginas': None, 'shoppings': None}
+
+    user_data = config['credentials']['usernames'].get(username, {})
+
+    # Obter permissões (None significa acesso total)
+    paginas = user_data.get('paginas', None)
+    shoppings = user_data.get('shoppings', None)
+
+    # Converter para lista se for string
+    if isinstance(paginas, str):
+        paginas = [p.strip() for p in paginas.split(',')]
+    if isinstance(shoppings, str):
+        shoppings = [s.strip() for s in shoppings.split(',')]
+
+    return {'paginas': paginas, 'shoppings': shoppings}
+
+def usuario_tem_acesso_pagina(username, pagina):
+    """
+    Verifica se o usuário tem acesso a uma página específica.
+    Admin sempre tem acesso total.
+    """
+    if is_admin():
+        return True
+
+    permissoes = get_user_permissions(username)
+    paginas_permitidas = permissoes.get('paginas')
+
+    # Se não há restrição de páginas, permite tudo
+    if paginas_permitidas is None:
+        return True
+
+    # Remover emoji e verificar
+    pagina_nome = pagina.split(' ', 1)[-1] if ' ' in pagina else pagina
+
+    # Verificar se a página está na lista permitida (com ou sem emoji)
+    for p in paginas_permitidas:
+        p_nome = p.split(' ', 1)[-1] if ' ' in p else p
+        if p_nome.lower() == pagina_nome.lower() or p.lower() == pagina.lower():
+            return True
+
+    return False
+
+def get_shoppings_permitidos(username):
+    """
+    Retorna lista de shoppings que o usuário pode acessar.
+    None significa acesso a todos.
+    """
+    if is_admin():
+        return None  # Admin vê todos
+
+    permissoes = get_user_permissions(username)
+    return permissoes.get('shoppings')
+
+def filtrar_dados_por_shopping(df, coluna_shopping, shoppings_permitidos):
+    """
+    Filtra um DataFrame para mostrar apenas shoppings permitidos.
+    Se shoppings_permitidos é None, retorna o DataFrame original.
+    """
+    if shoppings_permitidos is None:
+        return df
+
+    if coluna_shopping not in df.columns:
+        return df
+
+    # Filtrar pelos shoppings permitidos
+    return df[df[coluna_shopping].isin(shoppings_permitidos)]
+
+def get_paginas_permitidas(username, todas_paginas):
+    """
+    Retorna lista de páginas que o usuário pode acessar.
+    """
+    if is_admin():
+        return todas_paginas
+
+    permissoes = get_user_permissions(username)
+    paginas_config = permissoes.get('paginas')
+
+    if paginas_config is None:
+        # Sem restrição - retorna todas exceto Admin (que já é controlado separadamente)
+        return [p for p in todas_paginas if p != "⚙️ Administração"]
+
+    # Filtrar páginas permitidas
+    paginas_filtradas = []
+    for pagina in todas_paginas:
+        pagina_nome = pagina.split(' ', 1)[-1] if ' ' in pagina else pagina
+        for p in paginas_config:
+            p_nome = p.split(' ', 1)[-1] if ' ' in p else p
+            if p_nome.lower() == pagina_nome.lower() or p.lower() == pagina.lower():
+                paginas_filtradas.append(pagina)
+                break
+
+    return paginas_filtradas
+
 # Verificar autenticação
 autenticado, username, nome_usuario, user_role = verificar_autenticacao()
 
@@ -782,14 +886,72 @@ except Exception as e:
     st.error(f"Erro ao carregar dados: {e}")
     st.stop()
 
-# Menu de navegação - Admin tem opções extras
-opcoes_menu = ["📊 Visão Geral", "🎭 Personas", "🏬 Por Shopping", "👥 Perfil Demográfico",
+# Obter shoppings permitidos para filtrar dados
+shoppings_permitidos_filtro = get_shoppings_permitidos(username)
+
+# Função para filtrar dados do período por shoppings permitidos
+def aplicar_filtro_shoppings(dados_periodo, shoppings_list):
+    """Aplica filtro de shoppings aos dados carregados"""
+    if shoppings_list is None:
+        return dados_periodo  # Sem filtro
+
+    dados_filtrados = dados_periodo.copy()
+
+    # Filtrar resumo por shopping
+    if 'resumo' in dados_filtrados and dados_filtrados['resumo'] is not None:
+        dados_filtrados['resumo'] = dados_filtrados['resumo'][
+            dados_filtrados['resumo']['sigla'].isin(shoppings_list)
+        ]
+
+    # Filtrar dados por_shopping
+    if 'por_shopping' in dados_filtrados and dados_filtrados['por_shopping'] is not None:
+        dados_filtrados['por_shopping'] = {
+            k: v for k, v in dados_filtrados['por_shopping'].items()
+            if k in shoppings_list
+        }
+
+    # Filtrar outras tabelas que têm coluna de shopping
+    colunas_shopping = ['sigla', 'shopping_principal', 'Shopping']
+    for chave, df in dados_filtrados.items():
+        if isinstance(df, pd.DataFrame):
+            for col in colunas_shopping:
+                if col in df.columns:
+                    dados_filtrados[chave] = df[df[col].isin(shoppings_list)]
+                    break
+
+    return dados_filtrados
+
+# Aplicar filtro de shoppings se necessário
+if shoppings_permitidos_filtro is not None:
+    if modo_comparativo:
+        for nome_periodo in dados_periodos:
+            dados_periodos[nome_periodo] = aplicar_filtro_shoppings(
+                dados_periodos[nome_periodo], shoppings_permitidos_filtro
+            )
+        dados = dados_periodos[periodos_selecionados[0]]
+    else:
+        dados = aplicar_filtro_shoppings(dados, shoppings_permitidos_filtro)
+        dados_periodos = {periodo_selecionado: dados}
+
+# Menu de navegação - Filtrado por permissões do usuário
+todas_paginas = ["📊 Visão Geral", "🎭 Personas", "🏬 Por Shopping", "👥 Perfil Demográfico",
                "⭐ High Spenders", "🏆 Top Consumidores", "🛒 Segmentos", "🎯 RFV", "⏰ Comportamento", "📈 Comparativo",
                "📥 Exportar Dados", "🤖 Assistente", "📚 Documentação"]
 
 # Adicionar opção de administração apenas para admins
 if is_admin():
-    opcoes_menu.append("⚙️ Administração")
+    todas_paginas.append("⚙️ Administração")
+
+# Filtrar páginas baseado nas permissões do usuário
+opcoes_menu = get_paginas_permitidas(username, todas_paginas)
+
+# Obter shoppings permitidos para o usuário
+shoppings_usuario = get_shoppings_permitidos(username)
+st.session_state['shoppings_permitidos'] = shoppings_usuario
+
+# Mostrar aviso se usuário tem restrições
+if shoppings_usuario is not None:
+    st.sidebar.info(f"🔒 Acesso: {', '.join(shoppings_usuario)}")
 
 pagina = st.sidebar.radio(
     "Selecione a visão:",
