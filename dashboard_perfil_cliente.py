@@ -134,7 +134,8 @@ def registrar_filtro(usuario, pagina, filtro, valor):
     try:
         spreadsheet = get_gsheets_connection()
         if spreadsheet is None:
-            return
+            st.session_state['gsheets_error'] = "registrar_filtro: conexão None"
+            return False
 
         worksheet = spreadsheet.worksheet('filtros')
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -144,8 +145,10 @@ def registrar_filtro(usuario, pagina, filtro, valor):
             valor = ', '.join(str(v) for v in valor)
 
         worksheet.append_row([timestamp, usuario, pagina, filtro, str(valor)])
-    except Exception:
-        pass
+        return True
+    except Exception as e:
+        st.session_state['gsheets_error'] = f"Erro registrar_filtro: {str(e)}"
+        return False
 
 def registrar_download(usuario, arquivo, registros, pagina):
     """Registra downloads realizados"""
@@ -1245,9 +1248,10 @@ elif pagina == "🏬 Por Shopping":
     )
 
     # Registrar filtro de shopping (se mudou)
-    if st.session_state.get('ultimo_shopping_selecionado') != shopping_selecionado:
+    chave_filtro = f'filtro_porshopping_{shopping_selecionado}'
+    if not st.session_state.get(chave_filtro):
         registrar_filtro(username, "Por Shopping", "Shopping", NOMES_SHOPPING.get(shopping_selecionado, shopping_selecionado))
-        st.session_state['ultimo_shopping_selecionado'] = shopping_selecionado
+        st.session_state[chave_filtro] = True
 
     if shopping_selecionado in dados['por_shopping']:
         shop_data = dados['por_shopping'][shopping_selecionado]
@@ -1802,22 +1806,25 @@ elif pagina == "🏆 Top Consumidores":
         df_filtrado = df_top.copy()
         if shopping_filtro != "Todos":
             df_filtrado = df_filtrado[df_filtrado['Shopping'] == shopping_filtro]
-            # Registrar filtro (apenas se mudou)
-            if st.session_state.get('ultimo_shopping_filtro') != shopping_filtro:
+            # Registrar filtro (apenas uma vez por combinação)
+            chave = f'filtro_top_shopping_{shopping_filtro}'
+            if not st.session_state.get(chave):
                 registrar_filtro(username, "Top Consumidores", "Shopping", shopping_filtro)
-                st.session_state['ultimo_shopping_filtro'] = shopping_filtro
+                st.session_state[chave] = True
 
         if perfil_filtro != "Todos":
             df_filtrado = df_filtrado[df_filtrado['Perfil_Cliente'] == perfil_filtro]
-            if st.session_state.get('ultimo_perfil_filtro') != perfil_filtro:
+            chave = f'filtro_top_perfil_{perfil_filtro}'
+            if not st.session_state.get(chave):
                 registrar_filtro(username, "Top Consumidores", "Perfil", perfil_filtro)
-                st.session_state['ultimo_perfil_filtro'] = perfil_filtro
+                st.session_state[chave] = True
 
         if segmento_filtro != "Todos":
             df_filtrado = df_filtrado[df_filtrado['Segmento_Principal'] == segmento_filtro]
-            if st.session_state.get('ultimo_segmento_filtro') != segmento_filtro:
+            chave = f'filtro_top_segmento_{segmento_filtro}'
+            if not st.session_state.get(chave):
                 registrar_filtro(username, "Top Consumidores", "Segmento", segmento_filtro)
-                st.session_state['ultimo_segmento_filtro'] = segmento_filtro
+                st.session_state[chave] = True
 
         st.markdown(f"**Exibindo {len(df_filtrado):,} clientes**")
 
@@ -3257,10 +3264,11 @@ elif pagina == "📈 Comparativo":
     )
 
     # Registrar filtro de comparação (se mudou)
-    shoppings_str = ', '.join(shoppings_comparar)
-    if st.session_state.get('ultimo_shoppings_comparar') != shoppings_str:
+    shoppings_str = ', '.join(sorted(shoppings_comparar))
+    chave_filtro = f'filtro_comparativo_{shoppings_str}'
+    if not st.session_state.get(chave_filtro):
         registrar_filtro(username, "Comparativo", "Shoppings", shoppings_str)
-        st.session_state['ultimo_shoppings_comparar'] = shoppings_str
+        st.session_state[chave_filtro] = True
 
     if len(shoppings_comparar) >= 2:
         df_comp = dados['resumo'][dados['resumo']['sigla'].isin(shoppings_comparar)]
