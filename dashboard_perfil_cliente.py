@@ -1627,7 +1627,8 @@ elif pagina == "🏆 Top Consumidores":
 
         # Colunas para exibição
         colunas_exibir = [
-            'Ranking', 'Shopping', 'Nome', 'Cidade', 'Estado', 'Valor_Total', 'Frequencia_Compras',
+            'Ranking', 'Shopping', 'Nome', 'Logradouro', 'Numero', 'Complemento', 'Bairro',
+            'Cidade', 'Estado', 'CEP', 'Valor_Total', 'Frequencia_Compras',
             'Perfil_Cliente', 'Segmento_Principal', 'Loja_Favorita',
             'Data_Primeira_Compra', 'Data_Ultima_Compra'
         ]
@@ -4273,6 +4274,7 @@ elif pagina == "📚 Documentação":
 
         **Colunas do arquivo:**
         - Ranking, Shopping, Cliente_ID, Nome, CPF, Email, Celular
+        - Logradouro, Numero, Complemento, Bairro, Cidade, Estado, CEP
         - Genero, Valor_Total, Frequencia_Compras, Recencia_Dias
         - Data_Primeira_Compra, Data_Ultima_Compra
         - Segmento_Principal, Valor_Segmento_Principal
