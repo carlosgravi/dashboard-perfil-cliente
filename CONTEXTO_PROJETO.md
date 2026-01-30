@@ -224,6 +224,24 @@ O dashboard possui autenticacao simples com dois perfis:
 
 Configurado em `.streamlit/secrets.toml` (no Streamlit Cloud)
 
+### Sistema de Logging (Google Sheets)
+
+O dashboard registra atividades dos usuarios em uma planilha Google Sheets.
+
+**Planilha:** `Dashboard_Logs` (ID: 1XLwVcZukRV9A70KSElZsfZxihnzZZk_ASPAQNztp4ss)
+
+**Abas de logs:**
+| Aba | Dados Registrados |
+|-----|-------------------|
+| `logins` | timestamp, usuario, nome, perfil, ip |
+| `navegacao` | timestamp, usuario, pagina, sessao_id |
+| `filtros` | timestamp, usuario, pagina, filtro, valor |
+| `downloads` | timestamp, usuario, arquivo, registros, pagina |
+
+**Service Account:** `streamlit-dashboard@dashboard-almeida-junior.iam.gserviceaccount.com`
+
+**Visualizacao:** Administracao → Logs de Acesso (com filtros por tipo e usuario)
+
 ---
 
 ## Estatisticas da Base Atual
@@ -268,11 +286,12 @@ streamlit run dashboard_perfil_cliente.py
 
 ## Commits Recentes (repositorio deploy_streamlit)
 
-1. `0850a6f` - fix: corrigir API do Hasher para streamlit_authenticator v0.3+
-2. `eec3d35` - docs: adicionar documento de contexto do projeto
-3. `829aa39` - feat: adicionar campos de endereco na lista de top consumidores
-4. `64064f5` - feat: adicionar pagina Top 150 Consumidores por shopping
-5. `3caa1bb` - feat: adicionar sistema de classificacao RFV por quintis (dashboard)
+1. `0933f49` - feat: adicionar registro de filtros nas paginas principais
+2. `872a4ec` - fix: melhorar debug e adicionar filtro de usuario nos logs
+3. `0b06fd3` - feat: implementar sistema de logging com Google Sheets
+4. `0850a6f` - fix: corrigir API do Hasher para streamlit_authenticator v0.3+
+5. `eec3d35` - docs: adicionar documento de contexto do projeto
+6. `829aa39` - feat: adicionar campos de endereco na lista de top consumidores
 
 ---
 
