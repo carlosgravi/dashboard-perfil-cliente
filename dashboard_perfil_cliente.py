@@ -28,6 +28,7 @@ def get_gsheets_connection():
     """Conecta ao Google Sheets usando credenciais do secrets"""
     try:
         if "gsheets" not in st.secrets:
+            st.session_state['gsheets_error'] = "Secrets 'gsheets' não configurado"
             return None
 
         # Criar credenciais a partir dos secrets
@@ -55,9 +56,10 @@ def get_gsheets_connection():
         spreadsheet_id = st.secrets["gsheets"]["spreadsheet_id"]
         spreadsheet = client.open_by_key(spreadsheet_id)
 
+        st.session_state['gsheets_error'] = None  # Limpar erro se conexão OK
         return spreadsheet
     except Exception as e:
-        # Silenciosamente falha - não interrompe o dashboard
+        st.session_state['gsheets_error'] = f"Erro conexão: {str(e)}"
         return None
 
 def inicializar_abas_logs(spreadsheet):
@@ -87,7 +89,7 @@ def registrar_login(usuario, nome, perfil):
     try:
         spreadsheet = get_gsheets_connection()
         if spreadsheet is None:
-            return
+            return False
 
         inicializar_abas_logs(spreadsheet)
 
@@ -98,8 +100,11 @@ def registrar_login(usuario, nome, perfil):
         ip = "N/A"
 
         worksheet.append_row([timestamp, usuario, nome, perfil, ip])
-    except Exception:
-        pass
+        st.session_state['ultimo_log'] = f"Login registrado: {usuario}"
+        return True
+    except Exception as e:
+        st.session_state['gsheets_error'] = f"Erro registrar_login: {str(e)}"
+        return False
 
 def registrar_navegacao(usuario, pagina):
     """Registra navegação entre páginas"""
@@ -107,20 +112,22 @@ def registrar_navegacao(usuario, pagina):
         # Evitar registros duplicados na mesma sessão/página
         chave_pagina = f'ultima_pagina_{usuario}'
         if st.session_state.get(chave_pagina) == pagina:
-            return
+            return False
         st.session_state[chave_pagina] = pagina
 
         spreadsheet = get_gsheets_connection()
         if spreadsheet is None:
-            return
+            return False
 
         worksheet = spreadsheet.worksheet('navegacao')
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         sessao_id = st.session_state.get('session_id', 'N/A')
 
         worksheet.append_row([timestamp, usuario, pagina, sessao_id])
-    except Exception:
-        pass
+        return True
+    except Exception as e:
+        st.session_state['gsheets_error'] = f"Erro registrar_navegacao: {str(e)}"
+        return False
 
 def registrar_filtro(usuario, pagina, filtro, valor):
     """Registra uso de filtros"""
@@ -4632,21 +4639,56 @@ elif pagina == "⚙️ Administração":
             Para ativar, configure as credenciais do Google Sheets no secrets.toml.
             """)
         else:
-            # Seletor de tipo de log
-            tipo_log = st.selectbox(
-                "Tipo de log:",
-                ["logins", "navegacao", "filtros", "downloads"],
-                format_func=lambda x: {
-                    "logins": "🔐 Logins",
-                    "navegacao": "📄 Navegação",
-                    "filtros": "🔍 Filtros",
-                    "downloads": "⬇️ Downloads"
-                }.get(x, x)
-            )
+            # Debug: Mostrar erros se houver
+            if st.session_state.get('gsheets_error'):
+                st.error(f"⚠️ Erro Google Sheets: {st.session_state.get('gsheets_error')}")
+
+            # Botão para testar conexão
+            col_test1, col_test2 = st.columns([1, 3])
+            with col_test1:
+                if st.button("🔄 Testar Conexão"):
+                    with st.spinner("Testando..."):
+                        spreadsheet = get_gsheets_connection()
+                        if spreadsheet:
+                            st.success(f"✅ Conectado! Planilha: {spreadsheet.title}")
+                            # Mostrar abas existentes
+                            abas = [ws.title for ws in spreadsheet.worksheets()]
+                            st.info(f"Abas encontradas: {', '.join(abas)}")
+                        else:
+                            st.error("❌ Falha na conexão")
+
+            st.markdown("---")
+
+            # Filtros em linha
+            col_filtro1, col_filtro2 = st.columns(2)
+
+            with col_filtro1:
+                tipo_log = st.selectbox(
+                    "Tipo de log:",
+                    ["logins", "navegacao", "filtros", "downloads"],
+                    format_func=lambda x: {
+                        "logins": "🔐 Logins",
+                        "navegacao": "📄 Navegação",
+                        "filtros": "🔍 Filtros",
+                        "downloads": "⬇️ Downloads"
+                    }.get(x, x)
+                )
 
             # Carregar logs
             with st.spinner("Carregando logs..."):
-                df_logs = carregar_logs(tipo_log, limite=200)
+                df_logs = carregar_logs(tipo_log, limite=500)
+
+            # Filtro de usuário (após carregar os dados)
+            with col_filtro2:
+                if df_logs is not None and len(df_logs) > 0 and 'usuario' in df_logs.columns:
+                    usuarios_disponiveis = ['Todos'] + sorted(df_logs['usuario'].unique().tolist())
+                    usuario_filtro = st.selectbox("Usuário:", usuarios_disponiveis)
+
+                    # Aplicar filtro de usuário
+                    if usuario_filtro != 'Todos':
+                        df_logs = df_logs[df_logs['usuario'] == usuario_filtro]
+                else:
+                    usuario_filtro = 'Todos'
 
             if df_logs is not None and len(df_logs) > 0:
                 # Métricas resumidas
