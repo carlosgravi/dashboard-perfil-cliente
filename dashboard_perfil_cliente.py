@@ -435,6 +435,52 @@ def filtrar_dados_por_shopping(df, coluna_shopping, shoppings_permitidos):
     # Filtrar pelos shoppings permitidos
     return df[df[coluna_shopping].isin(shoppings_permitidos)]
 
+def filtrar_opcoes_shopping(lista_shoppings, shoppings_permitidos):
+    """
+    Filtra uma lista de shoppings para mostrar apenas os permitidos.
+    Útil para filtrar opções de selectbox.
+    """
+    if shoppings_permitidos is None:
+        return lista_shoppings
+
+    # Mapeamento de nomes completos para siglas
+    mapa_nomes = {
+        'Balneário Shopping': 'BS',
+        'Balneario Shopping': 'BS',
+        'Balneario': 'BS',
+        'Continente Shopping': 'CS',
+        'Continente': 'CS',
+        'Garten Shopping': 'GS',
+        'Garten': 'GS',
+        'Neumarkt Shopping': 'NK',
+        'Neumarkt': 'NK',
+        'Norte Shopping': 'NR',
+        'Norte': 'NR',
+        'Nações Shopping': 'NS',
+        'Nacoes Shopping': 'NS',
+        'Nacoes': 'NS',
+        'Nações': 'NS',
+    }
+
+    resultado = []
+    for shop in lista_shoppings:
+        # Verificar se é "Todos"
+        if shop == "Todos":
+            resultado.append(shop)
+            continue
+
+        # Verificar se é sigla
+        if shop in shoppings_permitidos:
+            resultado.append(shop)
+            continue
+
+        # Verificar se o nome completo mapeia para uma sigla permitida
+        sigla = mapa_nomes.get(shop)
+        if sigla and sigla in shoppings_permitidos:
+            resultado.append(shop)
+
+    return resultado
+
 def get_paginas_permitidas(username, todas_paginas):
     """
     Retorna lista de páginas que o usuário pode acessar.
@@ -449,17 +495,47 @@ def get_paginas_permitidas(username, todas_paginas):
         # Sem restrição - retorna todas exceto Admin (que já é controlado separadamente)
         return [p for p in todas_paginas if p != "⚙️ Administração"]
 
+    # Mapeamento de nomes de páginas (sem emoji e variações)
+    mapa_paginas = {
+        'visão geral': '📊 Visão Geral',
+        'visao geral': '📊 Visão Geral',
+        'personas': '🎭 Personas',
+        'por shopping': '🏬 Por Shopping',
+        'perfil demográfico': '👥 Perfil Demográfico',
+        'perfil demografico': '👥 Perfil Demográfico',
+        'high spenders': '⭐ High Spenders',
+        'top consumidores': '🏆 Top Consumidores',
+        'segmentos': '🛒 Segmentos',
+        'rfv': '🎯 RFV',
+        'comportamento': '⏰ Comportamento',
+        'comparativo': '📈 Comparativo',
+        'exportar dados': '📥 Exportar Dados',
+        'assistente': '🤖 Assistente',
+        'documentação': '📚 Documentação',
+        'documentacao': '📚 Documentação',
+        'administração': '⚙️ Administração',
+        'administracao': '⚙️ Administração',
+    }
+
     # Filtrar páginas permitidas
     paginas_filtradas = []
-    for pagina in todas_paginas:
-        pagina_nome = pagina.split(' ', 1)[-1] if ' ' in pagina else pagina
-        for p in paginas_config:
-            p_nome = p.split(' ', 1)[-1] if ' ' in p else p
-            if p_nome.lower() == pagina_nome.lower() or p.lower() == pagina.lower():
-                paginas_filtradas.append(pagina)
-                break
+    for p_config in paginas_config:
+        p_lower = p_config.lower().strip()
+        # Tentar match direto no mapa
+        if p_lower in mapa_paginas:
+            pagina_completa = mapa_paginas[p_lower]
+            if pagina_completa in todas_paginas and pagina_completa not in paginas_filtradas:
+                paginas_filtradas.append(pagina_completa)
+        else:
+            # Tentar match parcial
+            for nome_lower, pagina_completa in mapa_paginas.items():
+                if p_lower in nome_lower or nome_lower in p_lower:
+                    if pagina_completa in todas_paginas and pagina_completa not in paginas_filtradas:
+                        paginas_filtradas.append(pagina_completa)
+                        break
 
-    return paginas_filtradas
+    # Manter a ordem original do menu
+    return [p for p in todas_paginas if p in paginas_filtradas]
 
 # Verificar autenticação
 autenticado, username, nome_usuario, user_role = verificar_autenticacao()
@@ -1402,10 +1478,11 @@ elif pagina == "🏬 Por Shopping":
     else:
         st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
-    # Seletor de shopping
+    # Seletor de shopping (filtrado por permissões)
+    opcoes_shopping_page = filtrar_opcoes_shopping(list(NOMES_SHOPPING.keys()), shoppings_permitidos_filtro)
     shopping_selecionado = st.selectbox(
         "Selecione o Shopping:",
-        options=list(NOMES_SHOPPING.keys()),
+        options=opcoes_shopping_page,
         format_func=lambda x: f"{x} - {NOMES_SHOPPING[x]}"
     )
 
@@ -1946,9 +2023,12 @@ elif pagina == "🏆 Top Consumidores":
         # Filtros
         col1, col2, col3 = st.columns(3)
         with col1:
+            # Filtrar opções de shopping pelas permissões do usuário
+            opcoes_shopping = ["Todos"] + sorted(df_top['Shopping'].unique().tolist())
+            opcoes_shopping = filtrar_opcoes_shopping(opcoes_shopping, shoppings_permitidos_filtro)
             shopping_filtro = st.selectbox(
                 "Filtrar por Shopping:",
-                ["Todos"] + sorted(df_top['Shopping'].unique().tolist()),
+                opcoes_shopping,
                 key="top_shopping_filtro"
             )
         with col2:
@@ -2536,6 +2616,9 @@ elif pagina == "🎯 RFV":
                 df_shop_vg = None
                 sufixo_vg = '_hist'
 
+            # Filtrar opções conforme permissões do usuário
+            shoppings_disponiveis = filtrar_opcoes_shopping(shoppings_disponiveis, shoppings_permitidos_filtro)
+
             shopping_visao = st.selectbox(
                 "Filtrar por Shopping:",
                 shoppings_disponiveis,
@@ -2828,9 +2911,11 @@ elif pagina == "🎯 RFV":
                 # Filtros
                 col_filtro1, col_filtro2 = st.columns(2)
                 with col_filtro1:
+                    opcoes_shopping_rfv = ["Todos"] + list(df_shopping['shopping_principal'].unique())
+                    opcoes_shopping_rfv = filtrar_opcoes_shopping(opcoes_shopping_rfv, shoppings_permitidos_filtro)
                     shopping_selecionado = st.selectbox(
                         "Filtrar por Shopping:",
-                        ["Todos"] + list(df_shopping['shopping_principal'].unique()),
+                        opcoes_shopping_rfv,
                         key='rfv_shopping_filter'
                     )
                 with col_filtro2:
@@ -3034,9 +3119,11 @@ elif pagina == "🎯 RFV":
                             key='rfv_perfil_seg'
                         )
                     with col2:
+                        opcoes_shopping_seg = ["Todos"] + list(dados_rfv['seg_perfil_shop']['shopping'].unique())
+                        opcoes_shopping_seg = filtrar_opcoes_shopping(opcoes_shopping_seg, shoppings_permitidos_filtro)
                         shopping_filtro = st.selectbox(
                             "Filtrar por Shopping:",
-                            ["Todos"] + list(dados_rfv['seg_perfil_shop']['shopping'].unique()),
+                            opcoes_shopping_seg,
                             key='rfv_shopping_seg'
                         )
 
@@ -3088,9 +3175,11 @@ elif pagina == "🎯 RFV":
                             key='rfv_perfil_loja'
                         )
                     with col2:
+                        opcoes_shopping_loja = ["Todos"] + list(dados_rfv['lojas']['shopping'].unique())
+                        opcoes_shopping_loja = filtrar_opcoes_shopping(opcoes_shopping_loja, shoppings_permitidos_filtro)
                         shopping_filtro_loja = st.selectbox(
                             "Filtrar por Shopping:",
-                            ["Todos"] + list(dados_rfv['lojas']['shopping'].unique()),
+                            opcoes_shopping_loja,
                             key='rfv_shopping_loja'
                         )
                     with col3:
@@ -3430,11 +3519,16 @@ elif pagina == "📈 Comparativo":
     else:
         st.markdown(f"**Período selecionado:** {periodo_selecionado}")
 
-    # Seletor de shoppings para comparar
+    # Seletor de shoppings para comparar (filtrado por permissões)
+    opcoes_comparativo = filtrar_opcoes_shopping(list(NOMES_SHOPPING.keys()), shoppings_permitidos_filtro)
+    # Definir default apenas com shoppings permitidos
+    default_comparativo = [s for s in ['BS', 'CS', 'NK'] if s in opcoes_comparativo]
+    if len(default_comparativo) < 2:
+        default_comparativo = opcoes_comparativo[:2] if len(opcoes_comparativo) >= 2 else opcoes_comparativo
     shoppings_comparar = st.multiselect(
         "Selecione os shoppings para comparar:",
-        options=list(NOMES_SHOPPING.keys()),
-        default=['BS', 'CS', 'NK'],
+        options=opcoes_comparativo,
+        default=default_comparativo,
         format_func=lambda x: f"{x} - {NOMES_SHOPPING[x]}"
     )
 
@@ -3940,9 +4034,10 @@ elif pagina == "📥 Exportar Dados":
     st.subheader("🏬 Dados por Shopping")
     st.markdown("Baixe os dados detalhados de cada shopping individualmente.")
 
+    opcoes_export = filtrar_opcoes_shopping(list(NOMES_SHOPPING.keys()), shoppings_permitidos_filtro)
     shopping_export = st.selectbox(
         "Selecione o Shopping:",
-        options=list(NOMES_SHOPPING.keys()),
+        options=opcoes_export,
         format_func=lambda x: f"{x} - {NOMES_SHOPPING[x]}",
         key="shopping_export"
     )
