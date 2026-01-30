@@ -2139,6 +2139,11 @@ elif pagina == "🎯 RFV":
 
     usar_quintis = metodo_rfv == "Por Quintis (R+F+V)"
 
+    # Registrar filtro de método RFV
+    if st.session_state.get('anterior_rfv_metodo') != metodo_rfv:
+        registrar_filtro(username, "RFV", "Método", metodo_rfv)
+        st.session_state['anterior_rfv_metodo'] = metodo_rfv
+
     # Toggle de escopo (apenas para método Quintis)
     escopo_quintis = "Global"
     if usar_quintis:
@@ -2153,6 +2158,11 @@ elif pagina == "🎯 RFV":
                 """,
                 key='rfv_escopo_quintis'
             )
+
+        # Registrar filtro de escopo
+        if st.session_state.get('anterior_rfv_escopo') != escopo_quintis:
+            registrar_filtro(username, "RFV", "Escopo", escopo_quintis)
+            st.session_state['anterior_rfv_escopo'] = escopo_quintis
 
     # Descrição dinâmica do método
     if usar_quintis:
