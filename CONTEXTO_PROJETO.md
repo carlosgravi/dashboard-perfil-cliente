@@ -268,10 +268,11 @@ streamlit run dashboard_perfil_cliente.py
 
 ## Commits Recentes (repositorio deploy_streamlit)
 
-1. `829aa39` - feat: adicionar campos de endereco na lista de top consumidores
-2. `64064f5` - feat: adicionar pagina Top 150 Consumidores por shopping
-3. `3caa1bb` - feat: adicionar sistema de classificacao RFV por quintis (dashboard)
-4. `333d2c7` - data: atualizacao automatica dos dados (336 arquivos de quintis)
+1. `0850a6f` - fix: corrigir API do Hasher para streamlit_authenticator v0.3+
+2. `eec3d35` - docs: adicionar documento de contexto do projeto
+3. `829aa39` - feat: adicionar campos de endereco na lista de top consumidores
+4. `64064f5` - feat: adicionar pagina Top 150 Consumidores por shopping
+5. `3caa1bb` - feat: adicionar sistema de classificacao RFV por quintis (dashboard)
 
 ---
 
