@@ -4674,14 +4674,22 @@ elif pagina == "⚙️ Administração":
             if st.session_state.get('gsheets_error'):
                 st.error(f"⚠️ Erro Google Sheets: {st.session_state.get('gsheets_error')}")
 
-            # Botão para testar conexão
-            col_test1, col_test2 = st.columns([1, 3])
+            # Botões de teste
+            col_test1, col_test2, col_test3 = st.columns([1, 1, 2])
             with col_test1:
                 if st.button("🔄 Testar Conexão"):
                     with st.spinner("Testando..."):
                         spreadsheet = get_gsheets_connection()
                         if spreadsheet:
                             st.success(f"✅ Conectado! Planilha: {spreadsheet.title}")
+
+            with col_test2:
+                if st.button("📝 Testar Registro Filtro"):
+                    resultado = registrar_filtro(username, "Teste Admin", "Filtro Teste", "Valor Teste")
+                    if resultado:
+                        st.success("✅ Filtro de teste registrado!")
+                    else:
+                        st.error(f"❌ Falha: {st.session_state.get('gsheets_error', 'Erro desconhecido')}")
                             # Mostrar abas existentes
                             abas = [ws.title for ws in spreadsheet.worksheets()]
                             st.info(f"Abas encontradas: {', '.join(abas)}")
