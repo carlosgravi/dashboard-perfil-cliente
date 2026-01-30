@@ -3785,6 +3785,11 @@ elif pagina == "📥 Exportar Dados":
         key="shopping_export"
     )
 
+    # Registrar filtro de shopping para exportação
+    if st.session_state.get('anterior_export_shopping') != shopping_export:
+        registrar_filtro(username, "Exportar Dados", "Shopping", NOMES_SHOPPING.get(shopping_export, shopping_export))
+        st.session_state['anterior_export_shopping'] = shopping_export
+
     if shopping_export in dados['por_shopping']:
         shop_data = dados['por_shopping'][shopping_export]
 
