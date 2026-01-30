@@ -1247,11 +1247,11 @@ elif pagina == "🏬 Por Shopping":
         format_func=lambda x: f"{x} - {NOMES_SHOPPING[x]}"
     )
 
-    # Registrar filtro de shopping (se mudou)
-    chave_filtro = f'filtro_porshopping_{shopping_selecionado}'
-    if not st.session_state.get(chave_filtro):
+    # Registrar filtro de shopping (quando muda)
+    chave_anterior = 'anterior_porshopping'
+    if st.session_state.get(chave_anterior) != shopping_selecionado:
         registrar_filtro(username, "Por Shopping", "Shopping", NOMES_SHOPPING.get(shopping_selecionado, shopping_selecionado))
-        st.session_state[chave_filtro] = True
+        st.session_state[chave_anterior] = shopping_selecionado
 
     if shopping_selecionado in dados['por_shopping']:
         shop_data = dados['por_shopping'][shopping_selecionado]
@@ -1804,27 +1804,30 @@ elif pagina == "🏆 Top Consumidores":
 
         # Aplicar filtros
         df_filtrado = df_top.copy()
+
+        # Registrar mudanças de filtro
+        if st.session_state.get('anterior_top_shopping') != shopping_filtro:
+            if shopping_filtro != "Todos":
+                registrar_filtro(username, "Top Consumidores", "Shopping", shopping_filtro)
+            st.session_state['anterior_top_shopping'] = shopping_filtro
+
+        if st.session_state.get('anterior_top_perfil') != perfil_filtro:
+            if perfil_filtro != "Todos":
+                registrar_filtro(username, "Top Consumidores", "Perfil", perfil_filtro)
+            st.session_state['anterior_top_perfil'] = perfil_filtro
+
+        if st.session_state.get('anterior_top_segmento') != segmento_filtro:
+            if segmento_filtro != "Todos":
+                registrar_filtro(username, "Top Consumidores", "Segmento", segmento_filtro)
+            st.session_state['anterior_top_segmento'] = segmento_filtro
+
+        # Aplicar filtros nos dados
         if shopping_filtro != "Todos":
             df_filtrado = df_filtrado[df_filtrado['Shopping'] == shopping_filtro]
-            # Registrar filtro (apenas uma vez por combinação)
-            chave = f'filtro_top_shopping_{shopping_filtro}'
-            if not st.session_state.get(chave):
-                registrar_filtro(username, "Top Consumidores", "Shopping", shopping_filtro)
-                st.session_state[chave] = True
-
         if perfil_filtro != "Todos":
             df_filtrado = df_filtrado[df_filtrado['Perfil_Cliente'] == perfil_filtro]
-            chave = f'filtro_top_perfil_{perfil_filtro}'
-            if not st.session_state.get(chave):
-                registrar_filtro(username, "Top Consumidores", "Perfil", perfil_filtro)
-                st.session_state[chave] = True
-
         if segmento_filtro != "Todos":
             df_filtrado = df_filtrado[df_filtrado['Segmento_Principal'] == segmento_filtro]
-            chave = f'filtro_top_segmento_{segmento_filtro}'
-            if not st.session_state.get(chave):
-                registrar_filtro(username, "Top Consumidores", "Segmento", segmento_filtro)
-                st.session_state[chave] = True
 
         st.markdown(f"**Exibindo {len(df_filtrado):,} clientes**")
 
@@ -3263,12 +3266,12 @@ elif pagina == "📈 Comparativo":
         format_func=lambda x: f"{x} - {NOMES_SHOPPING[x]}"
     )
 
-    # Registrar filtro de comparação (se mudou)
+    # Registrar filtro de comparação (quando muda)
     shoppings_str = ', '.join(sorted(shoppings_comparar))
-    chave_filtro = f'filtro_comparativo_{shoppings_str}'
-    if not st.session_state.get(chave_filtro):
+    chave_anterior = 'anterior_comparativo'
+    if st.session_state.get(chave_anterior) != shoppings_str:
         registrar_filtro(username, "Comparativo", "Shoppings", shoppings_str)
-        st.session_state[chave_filtro] = True
+        st.session_state[chave_anterior] = shoppings_str
 
     if len(shoppings_comparar) >= 2:
         df_comp = dados['resumo'][dados['resumo']['sigla'].isin(shoppings_comparar)]
