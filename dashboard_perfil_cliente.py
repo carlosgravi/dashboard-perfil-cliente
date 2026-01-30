@@ -16,6 +16,166 @@ from email.mime.multipart import MIMEMultipart
 import streamlit_authenticator as stauth
 import yaml
 from yaml.loader import SafeLoader
+from datetime import datetime
+import gspread
+from google.oauth2.service_account import Credentials
+
+# =============================================================================
+# SISTEMA DE LOGGING - GOOGLE SHEETS
+# =============================================================================
+
+def get_gsheets_connection():
+    """Conecta ao Google Sheets usando credenciais do secrets"""
+    try:
+        if "gsheets" not in st.secrets:
+            return None
+
+        # Criar credenciais a partir dos secrets
+        credentials_dict = {
+            "type": st.secrets["gsheets"]["type"],
+            "project_id": st.secrets["gsheets"]["project_id"],
+            "private_key_id": st.secrets["gsheets"]["private_key_id"],
+            "private_key": st.secrets["gsheets"]["private_key"],
+            "client_email": st.secrets["gsheets"]["client_email"],
+            "client_id": st.secrets["gsheets"]["client_id"],
+            "auth_uri": st.secrets["gsheets"]["auth_uri"],
+            "token_uri": st.secrets["gsheets"]["token_uri"],
+            "auth_provider_x509_cert_url": st.secrets["gsheets"]["auth_provider_x509_cert_url"],
+            "client_x509_cert_url": st.secrets["gsheets"]["client_x509_cert_url"],
+        }
+
+        scopes = [
+            'https://www.googleapis.com/auth/spreadsheets',
+            'https://www.googleapis.com/auth/drive'
+        ]
+
+        credentials = Credentials.from_service_account_info(credentials_dict, scopes=scopes)
+        client = gspread.authorize(credentials)
+
+        spreadsheet_id = st.secrets["gsheets"]["spreadsheet_id"]
+        spreadsheet = client.open_by_key(spreadsheet_id)
+
+        return spreadsheet
+    except Exception as e:
+        # Silenciosamente falha - não interrompe o dashboard
+        return None
+
+def inicializar_abas_logs(spreadsheet):
+    """Cria as abas de logs se não existirem"""
+    if spreadsheet is None:
+        return
+
+    try:
+        abas_necessarias = {
+            'logins': ['timestamp', 'usuario', 'nome', 'perfil', 'ip'],
+            'navegacao': ['timestamp', 'usuario', 'pagina', 'sessao_id'],
+            'filtros': ['timestamp', 'usuario', 'pagina', 'filtro', 'valor'],
+            'downloads': ['timestamp', 'usuario', 'arquivo', 'registros', 'pagina']
+        }
+
+        abas_existentes = [ws.title for ws in spreadsheet.worksheets()]
+
+        for aba, colunas in abas_necessarias.items():
+            if aba not in abas_existentes:
+                worksheet = spreadsheet.add_worksheet(title=aba, rows=1000, cols=len(colunas))
+                worksheet.append_row(colunas)
+    except Exception:
+        pass
+
+def registrar_login(usuario, nome, perfil):
+    """Registra login do usuário"""
+    try:
+        spreadsheet = get_gsheets_connection()
+        if spreadsheet is None:
+            return
+
+        inicializar_abas_logs(spreadsheet)
+
+        worksheet = spreadsheet.worksheet('logins')
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+        # IP não disponível diretamente no Streamlit Cloud
+        ip = "N/A"
+
+        worksheet.append_row([timestamp, usuario, nome, perfil, ip])
+    except Exception:
+        pass
+
+def registrar_navegacao(usuario, pagina):
+    """Registra navegação entre páginas"""
+    try:
+        # Evitar registros duplicados na mesma sessão/página
+        chave_pagina = f'ultima_pagina_{usuario}'
+        if st.session_state.get(chave_pagina) == pagina:
+            return
+        st.session_state[chave_pagina] = pagina
+
+        spreadsheet = get_gsheets_connection()
+        if spreadsheet is None:
+            return
+
+        worksheet = spreadsheet.worksheet('navegacao')
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        sessao_id = st.session_state.get('session_id', 'N/A')
+
+        worksheet.append_row([timestamp, usuario, pagina, sessao_id])
+    except Exception:
+        pass
+
+def registrar_filtro(usuario, pagina, filtro, valor):
+    """Registra uso de filtros"""
+    try:
+        spreadsheet = get_gsheets_connection()
+        if spreadsheet is None:
+            return
+
+        worksheet = spreadsheet.worksheet('filtros')
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+        # Converter valor para string se for lista
+        if isinstance(valor, list):
+            valor = ', '.join(str(v) for v in valor)
+
+        worksheet.append_row([timestamp, usuario, pagina, filtro, str(valor)])
+    except Exception:
+        pass
+
+def registrar_download(usuario, arquivo, registros, pagina):
+    """Registra downloads realizados"""
+    try:
+        spreadsheet = get_gsheets_connection()
+        if spreadsheet is None:
+            return
+
+        worksheet = spreadsheet.worksheet('downloads')
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+        worksheet.append_row([timestamp, usuario, arquivo, registros, pagina])
+    except Exception:
+        pass
+
+def carregar_logs(tipo='logins', limite=100):
+    """Carrega logs do Google Sheets"""
+    try:
+        spreadsheet = get_gsheets_connection()
+        if spreadsheet is None:
+            return None
+
+        worksheet = spreadsheet.worksheet(tipo)
+        dados = worksheet.get_all_records()
+
+        if not dados:
+            return None
+
+        df = pd.DataFrame(dados)
+
+        # Retornar os últimos N registros (mais recentes primeiro)
+        if len(df) > limite:
+            df = df.tail(limite)
+
+        return df.iloc[::-1]  # Inverter para mostrar mais recentes primeiro
+    except Exception:
+        return None
 
 # Função para enviar email via SMTP
 def enviar_email(destinatario, assunto, corpo, remetente_nome, remetente_email):
@@ -192,6 +352,15 @@ autenticado, username, nome_usuario, user_role = verificar_autenticacao()
 
 if not autenticado:
     st.stop()
+
+# Gerar ID de sessão único (para evitar duplicação de logs)
+if 'session_id' not in st.session_state:
+    st.session_state['session_id'] = datetime.now().strftime('%Y%m%d%H%M%S') + '_' + username
+
+# Registrar login (apenas uma vez por sessão)
+if 'login_registrado' not in st.session_state:
+    registrar_login(username, nome_usuario, user_role)
+    st.session_state['login_registrado'] = True
 
 # CSS customizado - Simples e funcional
 st.markdown("""
@@ -616,6 +785,9 @@ pagina = st.sidebar.radio(
     "Selecione a visão:",
     opcoes_menu
 )
+
+# Registrar navegação
+registrar_navegacao(username, pagina)
 
 st.sidebar.markdown("---")
 if modo_comparativo:
@@ -1651,22 +1823,26 @@ elif pagina == "🏆 Top Consumidores":
         col1, col2 = st.columns(2)
 
         with col1:
-            st.download_button(
+            if st.download_button(
                 label="⬇️ Baixar Lista Filtrada (CSV)",
                 data=converter_para_csv_top(df_filtrado),
                 file_name="top_consumidores_filtrado.csv",
                 mime="text/csv",
-                help="Download da lista com os filtros aplicados"
-            )
+                help="Download da lista com os filtros aplicados",
+                key="download_top_filtrado"
+            ):
+                registrar_download(username, "top_consumidores_filtrado.csv", len(df_filtrado), "Top Consumidores")
 
         with col2:
-            st.download_button(
+            if st.download_button(
                 label="⬇️ Baixar Lista Completa (CSV)",
                 data=converter_para_csv_top(df_top),
                 file_name="top_consumidores_completo.csv",
                 mime="text/csv",
-                help="Download da lista completa (900 clientes)"
-            )
+                help="Download da lista completa (900 clientes)",
+                key="download_top_completo"
+            ):
+                registrar_download(username, "top_consumidores_completo.csv", len(df_top), "Top Consumidores")
 
         # Análises adicionais
         st.markdown("---")
@@ -4448,14 +4624,94 @@ elif pagina == "⚙️ Administração":
     with tab2:
         st.subheader("📊 Logs de Acesso")
 
-        st.info("""
-        **Logs de acesso** não estão disponíveis nesta versão.
+        # Verificar se Google Sheets está configurado
+        if "gsheets" not in st.secrets:
+            st.warning("""
+            **Logs de acesso** não estão configurados.
 
-        Para monitoramento avançado, considere:
-        - Integração com Google Analytics
-        - Logs do Streamlit Cloud (disponível no painel)
-        - Ferramenta externa de monitoramento
-        """)
+            Para ativar, configure as credenciais do Google Sheets no secrets.toml.
+            """)
+        else:
+            # Seletor de tipo de log
+            tipo_log = st.selectbox(
+                "Tipo de log:",
+                ["logins", "navegacao", "filtros", "downloads"],
+                format_func=lambda x: {
+                    "logins": "🔐 Logins",
+                    "navegacao": "📄 Navegação",
+                    "filtros": "🔍 Filtros",
+                    "downloads": "⬇️ Downloads"
+                }.get(x, x)
+            )
+
+            # Carregar logs
+            with st.spinner("Carregando logs..."):
+                df_logs = carregar_logs(tipo_log, limite=200)
+
+            if df_logs is not None and len(df_logs) > 0:
+                # Métricas resumidas
+                st.markdown(f"### Resumo - {tipo_log.capitalize()}")
+
+                if tipo_log == "logins":
+                    col1, col2, col3 = st.columns(3)
+                    with col1:
+                        st.metric("Total de Logins", len(df_logs))
+                    with col2:
+                        usuarios_unicos = df_logs['usuario'].nunique() if 'usuario' in df_logs.columns else 0
+                        st.metric("Usuários Únicos", usuarios_unicos)
+                    with col3:
+                        if 'timestamp' in df_logs.columns and len(df_logs) > 0:
+                            ultimo = df_logs.iloc[0]['timestamp']
+                            st.metric("Último Login", ultimo[:16] if len(ultimo) > 16 else ultimo)
+
+                elif tipo_log == "navegacao":
+                    col1, col2, col3 = st.columns(3)
+                    with col1:
+                        st.metric("Total de Acessos", len(df_logs))
+                    with col2:
+                        if 'pagina' in df_logs.columns:
+                            pagina_mais_acessada = df_logs['pagina'].value_counts().idxmax()
+                            st.metric("Página Mais Acessada", pagina_mais_acessada[:20])
+                    with col3:
+                        usuarios_ativos = df_logs['usuario'].nunique() if 'usuario' in df_logs.columns else 0
+                        st.metric("Usuários Ativos", usuarios_ativos)
+
+                elif tipo_log == "downloads":
+                    col1, col2 = st.columns(2)
+                    with col1:
+                        st.metric("Total de Downloads", len(df_logs))
+                    with col2:
+                        if 'registros' in df_logs.columns:
+                            total_registros = pd.to_numeric(df_logs['registros'], errors='coerce').sum()
+                            st.metric("Registros Baixados", f"{int(total_registros):,}")
+
+                st.markdown("---")
+
+                # Gráfico de atividade (para logins e navegação)
+                if tipo_log in ["logins", "navegacao"] and 'timestamp' in df_logs.columns:
+                    st.markdown("### Atividade por Dia")
+                    df_logs['data'] = pd.to_datetime(df_logs['timestamp']).dt.date
+                    atividade_dia = df_logs.groupby('data').size().reset_index(name='acessos')
+                    fig = px.bar(atividade_dia, x='data', y='acessos', title="Acessos por Dia")
+                    fig.update_layout(height=300)
+                    st.plotly_chart(fig, use_container_width=True)
+
+                # Tabela de logs
+                st.markdown(f"### Últimos {len(df_logs)} Registros")
+                st.dataframe(df_logs, use_container_width=True, hide_index=True, height=400)
+
+                # Botão para baixar logs
+                csv_logs = df_logs.to_csv(index=False, sep=';', encoding='utf-8-sig')
+                st.download_button(
+                    label=f"⬇️ Baixar Logs ({tipo_log})",
+                    data=csv_logs,
+                    file_name=f"logs_{tipo_log}_{datetime.now().strftime('%Y%m%d')}.csv",
+                    mime="text/csv"
+                )
+            else:
+                st.info(f"Nenhum registro encontrado para **{tipo_log}**.")
+
+        st.markdown("---")
 
         # Informações da sessão atual
         st.markdown("### Sessão Atual")
