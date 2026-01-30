@@ -605,7 +605,7 @@ except Exception as e:
 
 # Menu de navegação - Admin tem opções extras
 opcoes_menu = ["📊 Visão Geral", "🎭 Personas", "🏬 Por Shopping", "👥 Perfil Demográfico",
-               "⭐ High Spenders", "🛒 Segmentos", "🎯 RFV", "⏰ Comportamento", "📈 Comparativo",
+               "⭐ High Spenders", "🏆 Top Consumidores", "🛒 Segmentos", "🎯 RFV", "⏰ Comportamento", "📈 Comparativo",
                "📥 Exportar Dados", "🤖 Assistente", "📚 Documentação"]
 
 # Adicionar opção de administração apenas para admins
@@ -1559,6 +1559,214 @@ elif pagina == "⭐ High Spenders":
             )
             fig.update_layout(height=400)
             st.plotly_chart(fig, use_container_width=True)
+
+# ============================================================================
+# PÁGINA: TOP CONSUMIDORES
+# ============================================================================
+elif pagina == "🏆 Top Consumidores":
+    st.markdown('<p class="main-header">🏆 Top 150 Consumidores por Shopping</p>', unsafe_allow_html=True)
+
+    st.markdown("""
+    Lista dos **150 maiores consumidores** de cada shopping, ordenados por valor total de compras.
+    Inclui dados de contato, métricas RFV e informações de comportamento de compra.
+
+    **Nota:** Colaboradores dos shoppings foram excluídos desta lista.
+    """)
+
+    # Carregar arquivo de top consumidores
+    arquivo_top = 'Resultados/top_consumidores_rfv.csv'
+
+    if os.path.exists(arquivo_top):
+        df_top = pd.read_csv(arquivo_top, sep=';', decimal=',', encoding='utf-8-sig')
+
+        # Métricas gerais
+        col1, col2, col3, col4 = st.columns(4)
+        with col1:
+            st.metric("Total na Lista", f"{len(df_top):,}")
+        with col2:
+            st.metric("Shoppings", f"{df_top['Shopping'].nunique()}")
+        with col3:
+            st.metric("Valor Total", f"R$ {df_top['Valor_Total'].sum()/1e6:.1f}M")
+        with col4:
+            pct_vip = len(df_top[df_top['Perfil_Cliente'] == 'VIP']) / len(df_top) * 100
+            st.metric("% VIP", f"{pct_vip:.1f}%")
+
+        st.markdown("---")
+
+        # Filtros
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            shopping_filtro = st.selectbox(
+                "Filtrar por Shopping:",
+                ["Todos"] + sorted(df_top['Shopping'].unique().tolist()),
+                key="top_shopping_filtro"
+            )
+        with col2:
+            perfil_filtro = st.selectbox(
+                "Filtrar por Perfil:",
+                ["Todos"] + sorted(df_top['Perfil_Cliente'].unique().tolist()),
+                key="top_perfil_filtro"
+            )
+        with col3:
+            segmento_filtro = st.selectbox(
+                "Filtrar por Segmento:",
+                ["Todos"] + sorted(df_top['Segmento_Principal'].dropna().unique().tolist()),
+                key="top_segmento_filtro"
+            )
+
+        # Aplicar filtros
+        df_filtrado = df_top.copy()
+        if shopping_filtro != "Todos":
+            df_filtrado = df_filtrado[df_filtrado['Shopping'] == shopping_filtro]
+        if perfil_filtro != "Todos":
+            df_filtrado = df_filtrado[df_filtrado['Perfil_Cliente'] == perfil_filtro]
+        if segmento_filtro != "Todos":
+            df_filtrado = df_filtrado[df_filtrado['Segmento_Principal'] == segmento_filtro]
+
+        st.markdown(f"**Exibindo {len(df_filtrado):,} clientes**")
+
+        # Colunas para exibição
+        colunas_exibir = [
+            'Ranking', 'Shopping', 'Nome', 'Cidade', 'Estado', 'Valor_Total', 'Frequencia_Compras',
+            'Perfil_Cliente', 'Segmento_Principal', 'Loja_Favorita',
+            'Data_Primeira_Compra', 'Data_Ultima_Compra'
+        ]
+
+        # Exibir tabela
+        st.dataframe(
+            df_filtrado[colunas_exibir],
+            use_container_width=True,
+            hide_index=True,
+            height=500
+        )
+
+        st.markdown("---")
+
+        # Botão de download
+        @st.cache_data
+        def converter_para_csv_top(df):
+            return df.to_csv(index=False, encoding='utf-8-sig', sep=';', decimal=',').encode('utf-8-sig')
+
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.download_button(
+                label="⬇️ Baixar Lista Filtrada (CSV)",
+                data=converter_para_csv_top(df_filtrado),
+                file_name="top_consumidores_filtrado.csv",
+                mime="text/csv",
+                help="Download da lista com os filtros aplicados"
+            )
+
+        with col2:
+            st.download_button(
+                label="⬇️ Baixar Lista Completa (CSV)",
+                data=converter_para_csv_top(df_top),
+                file_name="top_consumidores_completo.csv",
+                mime="text/csv",
+                help="Download da lista completa (900 clientes)"
+            )
+
+        # Análises adicionais
+        st.markdown("---")
+        st.subheader("📊 Análises")
+
+        tab1, tab2, tab3 = st.tabs(["Por Shopping", "Por Perfil", "Por Segmento"])
+
+        with tab1:
+            col1, col2 = st.columns(2)
+            with col1:
+                # Valor por shopping
+                df_shop = df_top.groupby('Shopping').agg({
+                    'Valor_Total': 'sum',
+                    'Cliente_ID': 'count'
+                }).reset_index()
+                df_shop.columns = ['Shopping', 'Valor_Total', 'Qtd_Clientes']
+
+                fig = px.bar(
+                    df_shop.sort_values('Valor_Total', ascending=True),
+                    x='Valor_Total',
+                    y='Shopping',
+                    orientation='h',
+                    title='Valor Total por Shopping',
+                    text=df_shop.sort_values('Valor_Total', ascending=True)['Valor_Total'].apply(lambda x: f'R$ {x/1e6:.1f}M')
+                )
+                fig.update_layout(showlegend=False, height=400)
+                fig.update_traces(textposition='outside')
+                st.plotly_chart(fig, use_container_width=True)
+
+            with col2:
+                # Top 10 geral
+                df_top10 = df_top.nlargest(10, 'Valor_Total')
+                fig = px.bar(
+                    df_top10,
+                    x='Valor_Total',
+                    y='Nome',
+                    orientation='h',
+                    color='Shopping',
+                    title='Top 10 Consumidores (Geral)',
+                    text=df_top10['Valor_Total'].apply(lambda x: f'R$ {x/1e3:.0f}K')
+                )
+                fig.update_layout(height=400, yaxis={'categoryorder': 'total ascending'})
+                fig.update_traces(textposition='outside')
+                st.plotly_chart(fig, use_container_width=True)
+
+        with tab2:
+            col1, col2 = st.columns(2)
+            with col1:
+                # Distribuição por perfil
+                df_perfil = df_top['Perfil_Cliente'].value_counts().reset_index()
+                df_perfil.columns = ['Perfil', 'Quantidade']
+                fig = px.pie(
+                    df_perfil,
+                    values='Quantidade',
+                    names='Perfil',
+                    title='Distribuição por Perfil RFV',
+                    color='Perfil',
+                    color_discrete_map={'VIP': '#FFD700', 'Premium': '#C0C0C0', 'Potencial': '#CD7F32', 'Pontual': '#808080'}
+                )
+                st.plotly_chart(fig, use_container_width=True)
+
+            with col2:
+                # Valor médio por perfil
+                df_perfil_valor = df_top.groupby('Perfil_Cliente')['Valor_Total'].mean().reset_index()
+                df_perfil_valor.columns = ['Perfil', 'Valor_Medio']
+                fig = px.bar(
+                    df_perfil_valor.sort_values('Valor_Medio', ascending=True),
+                    x='Valor_Medio',
+                    y='Perfil',
+                    orientation='h',
+                    title='Valor Médio por Perfil',
+                    text=df_perfil_valor.sort_values('Valor_Medio', ascending=True)['Valor_Medio'].apply(lambda x: f'R$ {x/1e3:.0f}K')
+                )
+                fig.update_layout(showlegend=False, height=400)
+                fig.update_traces(textposition='outside')
+                st.plotly_chart(fig, use_container_width=True)
+
+        with tab3:
+            # Top segmentos
+            df_seg = df_top.groupby('Segmento_Principal').agg({
+                'Valor_Total': 'sum',
+                'Cliente_ID': 'count'
+            }).reset_index()
+            df_seg.columns = ['Segmento', 'Valor_Total', 'Qtd_Clientes']
+            df_seg = df_seg.nlargest(10, 'Valor_Total')
+
+            fig = px.bar(
+                df_seg.sort_values('Valor_Total', ascending=True),
+                x='Valor_Total',
+                y='Segmento',
+                orientation='h',
+                title='Top 10 Segmentos (por Valor)',
+                text=df_seg.sort_values('Valor_Total', ascending=True)['Valor_Total'].apply(lambda x: f'R$ {x/1e6:.1f}M')
+            )
+            fig.update_layout(showlegend=False, height=450)
+            fig.update_traces(textposition='outside')
+            st.plotly_chart(fig, use_container_width=True)
+
+    else:
+        st.error(f"Arquivo de top consumidores não encontrado: {arquivo_top}")
+        st.info("Execute o script `gerar_top_consumidores_rfv.py` para gerar a lista.")
 
 # ============================================================================
 # PÁGINA: SEGMENTOS
@@ -3798,7 +4006,7 @@ elif pagina == "📚 Documentação":
         o comportamento de consumo dos clientes da rede **Almeida Junior Shoppings**.
 
         ### Período dos Dados
-        **Base completa:** 11/12/2022 a 19/01/2026
+        **Base completa:** 11/12/2022 a 28/01/2026
 
         **Filtros disponíveis:** Período Completo, Por Ano, Por Trimestre, Por Mês
 
@@ -3833,10 +4041,14 @@ elif pagina == "📚 Documentação":
         3. **🏬 Por Shopping** - Análise detalhada de cada unidade
         4. **👥 Perfil Demográfico** - Distribuição por gênero e faixa etária
         5. **⭐ High Spenders** - Clientes top 10% em valor
-        6. **🛒 Segmentos** - Análise por categoria de produto
-        7. **🎯 RFV** - Análise de Recência, Frequência e Valor
-        8. **⏰ Comportamento** - Padrões temporais de compra
-        9. **📈 Comparativo** - Comparação entre shoppings
+        6. **🏆 Top Consumidores** - Top 150 consumidores por shopping com dados de contato
+        7. **🛒 Segmentos** - Análise por categoria de produto
+        8. **🎯 RFV** - Análise de Recência, Frequência e Valor
+        9. **⏰ Comportamento** - Padrões temporais de compra
+        10. **📈 Comparativo** - Comparação entre shoppings
+        11. **📥 Exportar Dados** - Download de relatórios em CSV e Excel
+        12. **🤖 Assistente** - Chat para dúvidas e sugestões
+        13. **📚 Documentação** - Documentação completa do dashboard
         """)
 
     with tab2:
@@ -4052,6 +4264,22 @@ elif pagina == "📚 Documentação":
         | `comportamento_dia_semana.csv` | Dados por dia |
         | `consolidado_genero_por_shopping.csv` | Gênero por shopping |
         | `consolidado_faixa_etaria_por_shopping.csv` | Faixa por shopping |
+
+        ### Top Consumidores (Resultados/)
+
+        | Arquivo | Descrição |
+        |---------|-----------|
+        | `top_consumidores_rfv.csv` | Top 150 consumidores por shopping com dados de contato |
+
+        **Colunas do arquivo:**
+        - Ranking, Shopping, Cliente_ID, Nome, CPF, Email, Celular
+        - Genero, Valor_Total, Frequencia_Compras, Recencia_Dias
+        - Data_Primeira_Compra, Data_Ultima_Compra
+        - Segmento_Principal, Valor_Segmento_Principal
+        - Loja_Favorita, Valor_Loja_Favorita
+        - Score_Recencia, Score_Frequencia, Score_Valor, Score_Total_RFV, Perfil_Cliente
+
+        **Observação:** Colaboradores dos shoppings são excluídos da lista.
 
         ### Dados RFV (Resultados/RFV/)
 
