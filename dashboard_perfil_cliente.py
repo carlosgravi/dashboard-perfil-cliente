@@ -4682,6 +4682,10 @@ elif pagina == "⚙️ Administração":
                         spreadsheet = get_gsheets_connection()
                         if spreadsheet:
                             st.success(f"✅ Conectado! Planilha: {spreadsheet.title}")
+                            abas = [ws.title for ws in spreadsheet.worksheets()]
+                            st.info(f"Abas encontradas: {', '.join(abas)}")
+                        else:
+                            st.error("❌ Falha na conexão")
 
             with col_test2:
                 if st.button("📝 Testar Registro Filtro"):
@@ -4690,11 +4694,6 @@ elif pagina == "⚙️ Administração":
                         st.success("✅ Filtro de teste registrado!")
                     else:
                         st.error(f"❌ Falha: {st.session_state.get('gsheets_error', 'Erro desconhecido')}")
-                            # Mostrar abas existentes
-                            abas = [ws.title for ws in spreadsheet.worksheets()]
-                            st.info(f"Abas encontradas: {', '.join(abas)}")
-                        else:
-                            st.error("❌ Falha na conexão")
 
             st.markdown("---")
 
